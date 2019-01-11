@@ -1,1 +1,185 @@
 \chapter{Marco Teórico}
+
+\section{Mecánica de materiales}
+
+
+\section{Norma de cálculo en madera - NCh 1198}
+La norma NCh 1198 - Cálculo de construcciones en madera - establece los métodos y procedimientos de diseño estructural que determinarán las condiciones mínimas que debe cumplir cada elemento de la estructura. Esta incluye las construcciones de madera aserrada, elaborada, laminada-encolada y postes de madera, como también las uniones a través de elementos mecánicos, tales como: clavos, tirafondos, pernos, barras de acero, tornillos y conectores para madera.
+\subsection{Propiedades de la madera y factores de modificación}
+\subsubsection{Contenido de humedad}
+
+
+El contenido de humedad de una madera debe ser considerado por su susceptibilidad a los cambios de forma, volumen y para la determinación de las tensiones admisibiles debido a que es un material higroscópico. Para esto, se debe tomar en cuenta su humedad durante la construcción ($H_c$), como también, la humedad a la que estará en servicio ($H_s)$ o humedad de equilibrio. La humedad de equilibrio depende de la ubicación que tengan los elementos. Si se encuentra en un recinto cerrado sin calefacción o intermitente $H_s= 12\%$. Si es un recinto cerrado continuamente calefaccionado, entonces $H_s=9\%$. Si es un recinto cubierto abierto, entonces la humedad de equilibrio será igual a la humedad medida del lugar donde se ubicará. Finalmente, si los elementos se encuentran a la interperie, se puede utilizar la tabla que se encuentra en el anexo D, de la norma NCh 1198, para las diferentes regiones geográficas de Chile.\\
+
+Así la \textcolor{red}{Tabla (Tabla 3 norma)} se utiliza de criterio para clasificar la madera como verde o seca, las cuales se designan con las letras E y ES, respectivamente. Además, son agrupadas con un número que agrupa las especies madereras que crecen en Chile, de acuerdo a la norma NCh 1989 - Agrupamiento de especies madereras según su resistencia - mostrada en el anexo A de la norma NCh 1198. Para el pino radiata se considera la clasificación de la norma NCh 1207 - Pino radiata, clasificación visual para uso estructural, especificaciones de los grados de calidad.\\
+
+\textcolor{red}{COLOCAR TABLA 3}\\
+
+\subsubsection{Densidad}
+Debido a la característica higroscópica de la madera, su masa y volumen varían respecto al contenido de humedad. Por lo tanto, existen distintos tipos de densidad dependiendo de la información que sea necesaria o de los cálculos que se realicen. De acuerdo a la norma NCh 176/2, se definen los siguientes valores de densidad:
+\begin{itemize}
+	\item Densidad anhidra: Relaciona la masa y el volumen de la madera completamente seca (anhidra)
+	\item Densidad normal: Aquella que relaciona la masa y el volumen de la madera con un contenido de humedad del 12\%.
+	\item Densidad básica: Relaciona la masa anhidra de la madera y su volumen con humedad igual o superior al 30\%.
+	\item Densidad nominal: Es la que relaciona la masa anhidra de la madera y su volumen con un contenido de humedad del 12\%.
+	\item Densidad de referencia: Aquella que relaciona la masa y el volumen de la madera ambos con igual contenido de humedad.
+\end{itemize}
+
+\subsubsection{Tensiones admisibles y módulo de elasticidad}
+La madera es un material no homogéneo constituido por fibras naturales que mantienen su dirección, las cuales inciden en que SACO WEA su comportamiento mecánico, su flexibilidad y la resistencia a los esfuerzos sea distinta respecto al eje en que se usa, siendo un material ortotrópico donde su resistencia es mayor en el eje paralelo a las fibras que el normal a las fibras.
+
+Además, sus propiedades varían respecto a la especie del árbol, su edad, condiciones climáticas, humedad y la presencia de defectos, como nudos, rajaduras o agujeros. Para esto, la norma NCh 1970/1 y 1970/2 - Clasificación visual para uso estructural, especificaciones de los grados de calidad - junto a la norma NCh 1207, determinan el grado estructural desde el N$^\circ$1 al N$^\circ$4, a partir de una inspección visual de la madera procesada. Con esta clasificación, junto a la clasificación de madera seca o verde, determinan la clase estructural de la madera aserrada. Finalmente, con esta información es posible obtener la tensión admisible en flexión ($F_f$), compresión paralela a las fibras ($F_{cp}$), tracción paralela a las fibras ($F_{tp}$), cizalle ($F_{cz}$), compresión normal a las fibras ($F_{cn}$) y el módulo de elasticidad en flexión ($E_f$), de las tablas 4.a para todas las especias y 4.b para el pino radiata.
+
+\subsubsection{Factores de modificación}
+Existen otras variables externas a la madera que pueden afectar su correcto desempeño. Para esto, existen los factores de modificación que buscan corregir la tensión admisible para las distintas condiciones a las que puede estar sometido el elemento. Estas son:
+\begin{itemize}
+	\item Factor de modificación por contenido de humedad, $K_H$.
+	\item Factor de modificación por duración de la carga, $K_D$.
+	\item Factor de modificación por trabajo conjunto, $K_C$.
+	\item Factor de modificación por temperatura.
+	\item Factor de modificación por tratamiento químico
+\end{itemize}
+
+\subsection{Diseño de piezas}
+Para el diseño de piezas es necesario calcular las tensiones de diseño, que se determinan como el producto de las tensiones admisibles por los factores de modificación que resulten pertinentes y que se definen para cada tipo de solicitación a la que está sometida cada pieza de la estructura. Por lo tanto, las tensiones de trabajo no pueden ser superiores a las de diseño, debiendo establecerse, un factor de seguridad para los cálculos. \textcolor{red}{A continuación, se hablará solo de las solicitaciones a las que está sometida la estructura.}
+
+\subsubsection{Flexión}
+Para el diseño de elementos en flexión, se debe calcular la tensión de diseño en flexión en la zona flexo-traccionada ($F_{ft,dis}$) y flexo-comprimida ($F_{fv,dos}$). Que se definen según las ecuaciones \ref{eq:ft_dis} y \ref{eq:fv_dis}.
+\begin{subequations}
+\begin{align}
+	F_{ft,dis}&=F_f \cdot K_H \cdot K_D \cdot K_C \cdot K_{hf} &\text{(MPa)} \label{eq:ft_dis}\\	
+	F_{fv,dis}&=F_f \cdot K_H \cdot K_D \cdot K_C \cdot K_V &\text{(MPa)}	 \label{eq:fv_dis}
+\end{align}
+\end{subequations}
+
+Donde:
+\begin{itemize}
+	\item[] $K_{hf}$: Factor de modificación por altura.
+	\item[] $K_V$: Factor de modificación por volcamiento.
+\end{itemize}
+
+La tensión de trabajo de flexión de la fibra extrema de una viga simple de madera se debe determinar de acuerdo con la expresión:
+\begin{equation} \label{eq:f_f}
+	f_f=\frac{M_{max}}{W_n} \qquad \text{(MPa)}
+\end{equation}
+
+Donde $M_{max}$ es el momento máximo de flexión en $\text{N}\cdot\text{mm}$ y $W_n$ el módulo de flexión de la sección transversal neta respecto al eje neutro en mm.
+
+\subparagraph{Factor de modificación por altura, $K_{hf}.$}
+Para todas las especies forestales, con excepción del pino radiata, en piezas traccionadas o vigas rectangulares de ancho o altura superior de 50 mm, este factor se evualúa de acuerdo con la expresíon \ref{eq:khf}. Para pieza de Pino radiata de altura superior a 90 mm, se considera la expresión \ref{eq:khf}.
+
+\begin{subequations}
+\begin{align}
+	K_{hf}&=\left(\frac{50}{h}\right)^{\frac{1}{9}} \label{eq:khf}\\
+	K_{hf,radiata}&=\left(\frac{90}{h}\right)^{\frac{1}{5}} \label{eq:khfr}
+\end{align}
+\begin{subequations}
+
+Donde $h$ es el ancho de la viga traccionada o altura de la viga, en mm.
+\subparagraph{Factor de modificación por volcamiento, $K_V.$} Aquellos elementos estructurales que estén sometidos a flexión deben estar apoyados laterlamente en sus extremos para impedir desplazamientos laterales y rotaciones en el eje axial, donde se denomina luz a la distancia entre puntos de apoyo de un elemento de estructura. Para esto existen tres posible casos dependiendo de la configuración, donde $h$ es la altura de la viga y $b$ su ancho.
+\begin{enumerate}
+	\item Cuando los elementos en flexión cumplen con las especificaciones de la \textbf{Tabla 11}, de la sección \textbf{8.2.2.4} de la norma, $K_V= 1$.
+	\item Si los elementos no poseen apoyos laterales a lo largo de su luz, $K_V = 1$, si la razón $(h/b) < 2$.
+	\item Si en el punto anterior $(h/b) > 2$, $H_V$ se calcula en función de la esbeltez de volcamiento $\lambda_V$, de acuerdo a la sección \textbf{8.2.1.8}, la \textbf{Tabla 10} y \textbf{Tabla 12} de la norma.
+\end{enumerate}
+
+\subsubsection{Cizalle}
+La tensión de diseño de cizalle longitudinal se determina de la expresión \ref{eq:cz_dis} . El cizalle transversal no es necesario calcular o verificar debido a que nunca va a fallar por este esfuerzo, según la sección \textbf{8.2.3.1} de la norma.
+
+\begin{equation}\label{eq:cz_dis}
+	F_{cz.dis} = F_{cz} \cdot K_H \cdot K_D \cdot K_C \cdot K_r \qquad \text{(MPa)}
+\end{equation}
+
+Donde $K_r$ es el factor de modificación por rebaje (inferior o superior), calculado según la sección \textbf{8.2.3.5}. Debido a que no es una condición que se encuentra en este trabajo, no se profundizará en este factor.\\
+
+La tensión de trabajo máximo de cizalle longitudinal en elementos flexionados de madera, se calcula mediante la siguiente expresión:
+
+\begin{equation} \label{eq:f_cz}
+f_{cz} = \frac{1,5 \cdot Q}{b \cdot h} \cdot 10^{-3} \qquad \text{(MPa)}
+\end{equation}
+
+\subparagraph{Cizalle en viga simple}
+\textcolor{red}{CALCULAR}
+\subsubsection{Compresión paralela a la fibra}
+
+\subsubsection{Compresión normal a la fibra}
+
+\subsubsection{Nomenclatura y tipos de madera}
+Más allá de la especie, en el mercado es posible encontrar madera con distintas terminaciónes y dimensiones. Las principales diferencias se definen respecto al grado de manipulación del material y su uso final. Los tipos de madera relevantes a este trabajo son los siguientes:
+\begin{itemize}
+	\item Madera dimensionada: Tal como dice su nombre, es una madera cortada sin cepillar, conservando sus dimensiones en bruto.
+	\item Madera cepillada: Es el siguiente paso a la madera dimensionada. Recibe su nombre por el uso de la herramienta cepillo, la cual desbasta la superficie de la madera para suavizarla. Este SACO WEA formato mantiene sus dimensiones nominales en bruto, sin embargo, pierde sección respecto a la madera dimensionada.
+	\item Madera laminada: También conocida como laminada-encolada, es la unión de tablas similares, de canto o de tope, manteniendo la misma dirección de las fibras, utulizando adhesivos sobre sus caras.
+\end{itemize}
+
+Por otro lado, existen distintas configuraciones dependiendo de la escuadría y la forma de la sección:
+\begin{itemize}
+	\item Listón: Elemento de escuadría 1x2'', 2x2'', 2x3'' y 2x4''.
+	\item Tabla: Elemento donde prevalece el alto por sobre el espesor, comúnmente de escuadrías 1x4'', 1x5'' o 1x6''.
+	\item Tablón: Elemento más grueso que una tabla, de escuadría 2x6'', 2x8'' o 2x10''.
+	\item Cuartón: Elemento de sección cuadrada. Su nombre se debe a la sección 4x4'', pero puede ser de 5x5'' o 6x6''.
+	\item Base: Elemento de escuadría de 10x10'' o superior. 
+\end{itemize}
+
+Todas las dimensiones, independiente del formato o el tipo, son respecto a la madera en bruto. Por lo tanto, a pesar que las dimensiones reales de una madera cepillada o dimensionada son menores, se sigue denominando según su escuadría original. Así, las tablas \ref{anchodim} y \ref{espdim} muestran los valores reales para cada dimensión nominal.
+
+\begin{table}[H]
+\centering
+\caption{\textcolor{red}{Espesor}}
+\label{espdim}
+\begin{tabular}{@{}cccc@{}}
+\toprule
+\multirow{2}{*}{Espesor Nominal {[}in{]}} & \multicolumn{2}{c}{Dimensionado {[}mm{]}} & Cepillado {[}mm{]} \\ \cmidrule(l){2-4} 
+                                  & Verde                & Seco               & Seco               \\ \midrule
+1                                 & 23                   & 22                 & 19                 \\
+2                                 & 48                   & 45                 & 41                 \\ \midrule
+Tolerancia {[}mm{]}               & 0/+2                 & 0/+3               & 0/+2               \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{\textcolor{red}{Ancho}}
+\label{anchodim}
+\begin{tabular}{@{}cccc@{}}
+\toprule
+\multirow{2}{*}{Ancho Nominal {[}in{]}} & \multicolumn{2}{c}{Dimensionado {[}mm{]}} & Cepillado {[}mm{]} \\ \cmidrule(l){2-4} 
+                                        & Verde                & Seco               & Seco               \\ \midrule
+2                                       & 48                   & 45                 & 41                 \\
+3                                       & 73                   & 69                 & 65                 \\
+4                                       & 99                   & 94                 & 90                 \\
+5                                       & 127                  & 120                & 115                \\
+6                                       & 150                  & 142                & 138                \\
+8                                       & 200                  & 190                & 185                \\
+10                                      & 248                  & 235                & 230                \\ \midrule
+Tolerancia {[}mm{]}                     & 0/+2                 & 0/+3               & 0/+2               \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Uniones en la madera}
+
+\subsubsection{Generalidades}
+
+\subsubsection{Uniones con tirafondos}
+
+\subsubsection{Uniones con perno}
+
+
+
+\section{Vibraciones}
+La vibración es un término que describe el fenómeno de las oscilaciones de un sistema mecánico al rededor de un punto de equilibrio. Es una subdisciplina de la dinámica que estudia el movimiento repetitivo de los cuerpos y las fuerzas asociadas a los mismos.\\
+Un sistema vibratorio está compuesto, generalmente, por elementos de masa, elásticos y de amortiguamiento, cada uno de los cuales es un SACO WEA medio para almacenar energía cinética, potencial y de disipar la energia, respectivamente, los cuales se transfieren de manera alternante entre energía potencial y energía cinética.
+
+\subsection{Modelo Matemático}
+
+\subsection{Rigidez}
+
+\subsection{Método de energía}
+
+\subsection{Damping}
+
+\subsection{Vibraciones forzadas}
+
+\subsection{Sistema de dos grados de libertad}
+
+\subsection{Ecuaciones de energía para un sistema con amortiguamiento y forzado}

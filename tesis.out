@@ -4,8 +4,18 @@
 \BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 4
 \BOOKMARK [0][-]{chapter.2}{Estado del Arte}{}% 5
 \BOOKMARK [0][-]{chapter.3}{Marco Te\363rico}{}% 6
-\BOOKMARK [0][-]{chapter.4}{Weather Research and Forecast \(WRF\)}{}% 7
-\BOOKMARK [0][-]{chapter.5}{Metodolog\355a}{}% 8
-\BOOKMARK [0][-]{chapter.6}{Resultados}{}% 9
-\BOOKMARK [0][-]{chapter.7}{Conclusiones}{}% 10
-\BOOKMARK [0][-]{appendix.Alph1}{Incorporaci\363n de Bases de Datos de Alta Resoluci\363n}{}% 11
+\BOOKMARK [1][-]{section.3.1}{Mec\341nica de materiales}{chapter.3}% 7
+\BOOKMARK [1][-]{section.3.2}{Norma de c\341lculo en madera - NCh 1198}{chapter.3}% 8
+\BOOKMARK [2][-]{subsection.3.2.1}{Propiedades de la madera y factores de modificaci\363n}{section.3.2}% 9
+\BOOKMARK [2][-]{subsection.3.2.2}{Dise\361o de piezas}{section.3.2}% 10
+\BOOKMARK [2][-]{subsection.3.2.3}{Uniones en la madera}{section.3.2}% 11
+\BOOKMARK [1][-]{section.3.3}{Vibraciones}{chapter.3}% 12
+\BOOKMARK [2][-]{subsection.3.3.1}{Modelo Matem\341tico}{section.3.3}% 13
+\BOOKMARK [2][-]{subsection.3.3.2}{Rigidez}{section.3.3}% 14
+\BOOKMARK [2][-]{subsection.3.3.3}{M\351todo de energ\355a}{section.3.3}% 15
+\BOOKMARK [2][-]{subsection.3.3.4}{Damping}{section.3.3}% 16
+\BOOKMARK [2][-]{subsection.3.3.5}{Vibraciones forzadas}{section.3.3}% 17
+\BOOKMARK [2][-]{subsection.3.3.6}{Sistema de dos grados de libertad}{section.3.3}% 18
+\BOOKMARK [2][-]{subsection.3.3.7}{Ecuaciones de energ\355a para un sistema con amortiguamiento y forzado}{section.3.3}% 19
+\BOOKMARK [0][-]{appendix.Alph1}{Planos de la estructura}{}% 20
+\BOOKMARK [0][-]{appendix.Alph2}{Cotizaciones}{}% 21
