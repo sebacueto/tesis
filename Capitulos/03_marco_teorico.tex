@@ -1,7 +1,80 @@
 \chapter{Marco Teórico}
 
-\section{Mecánica de materiales}
+\section{Fatiga}
+El fenómeno en el cual una estructura se daña e incluso falla por cargas fluctuantes, es llamado fatiga. El estudio de este problema comenzó tempranamente en europa durante la mitad del siglo XIX, en pleno auge de la industralización europea, producto de la falla repentina de algunos componentes en máquinas y los ejes de los trenes de la época. Estos experimentaban un gradual debilitamiento de la resistencia, fallando aún cuando su esfuerzo último no fuese alcanzado. 
 
+Así, en 1837 fueron publicados los resultados del primer ensayo de fatiga, realizado a una cadena transportadora utilizada en minas de hierro en Alemania. Wilhelm Albert, quien realizó esta investigación, se vió motivado a realizar los estudios por los altos costos que significaba la falla de este componente producto las cargas cílicas a las que estaba sometida. Los pocos conocimientos existentes del fenómeno, llevo a que la solución al problema fuese la invención del cable de acero.
+
+Por otro lado, las primeras investigaciones enfocadas a comprender el fenómeno comenzaron en 1858 con August Wölher. Su acucioso estudio lo llevó a conclusiones que siguen teniendo importancia y validez hasta el día de hoy. Diseñó, durante la década de 1860, una máquina de ensayos de flexión y flexión rotativa. En 1870 presentó un informe en el cual parte de sus conclusiones cualitativas son llamadas ``Ley de Wöhler'', al establecer el esfuerzo alternante como el parámetro más importante para la vida de un componente, señalanado que ``the stress amplitudes are decisives for the destruction of the cohesion of the material. The maximum stress is of influence only in so far as the higher it is, the lower are the stress amplitudes which lead to failure''\textcolor{red}{citar schutz history of fatigue}, aunque destacando también que el esfuerzo medio tiene una influencia perjudicial en el material. 
+
+Es decir, desde 1853 hasta hoy, han transcurrido más de 160 años de investigación sobre la fatiga, logrando comprender distintas aristas del fenómeno, pero con muchas preguntas aún sin resolver. Por eso, la fatiga sigue siendo un problema necesario de abordar y seguir comprendiendo, por sus grandes implicaciones de costo que tiene en la industria y en distintos elementos que utilizamos en la vida diaria. Por otro lado, si bien muchas preguntas no han sido resueltas científicamente, diversas empresas han logrado evitar las fallas por fatiga y optimizar los diseños de manera operativa, sin comprender cabalmente el trasfondo de estos.  
+
+
+
+\subsection{Definiciones}
+La fatiga se puede definir, desde la perspectiva del material, como el proceso en el cual el daño se acumula producto de la aplicación de cargas repetitivas que se encuentran bajo el punto de fluencia. En metales, este proceso se divide en tres fases o etapas los cuales, dependiendo del autor, pueden ser llamados: fase de iniciación de la grieta, fase de crecimiento de la grieta y fractura.
+
+La primera fase es el inicio de una o más microgrietas, la cual ocurre tempranamente en la vida a fatiga de un material y que, incluso, pueden ocurrir inmediatamente si el esfuerzo cíclico se encuentra sobre el límite de fatiga. Lo característico de esta etapa es que las grietas no pueden verse a simple vista, fase que representa una parte considerable de la vida a fatiga total. Estas crecerán lentamente y de manera errática, debido al efecto de las microestructuras como los bordes de grano. Durante este período, las concentraciones de esfuerzo juegan un importante papel, al ser los lugares donde comenzará la nucleación de las grieta, sumado a las pocas restricciones de deslizamiento de la superficie del material, hace que esta sea relevante en el inicio de este proceso.
+
+En la segunda etapa, las microgrietas pasan a ser macrogrietas, es decir, son visibles al ojo humano. Estas grietas comienzan a tomar una dirección de crecimiento que es perpendicular a los esfuerzos principales producidos por la carga alternante. La resistencia al crecimiento de las grietas, cuando esta penetra el material, dependerá de las propiedades de grano. Así, se puede definir cualitativamente una separación entre ambas etapas, donde el periodo de iniciación o nucleación de las grietas termina cuando su crecimiento no es dependiente de las condiciones superficiales del material. Producto de la micro-deformación plástica cíclica se forman bandas de crecimiento conocidos como \textit{marcas de playa} o \textit{``striations patterns''}, abriendo, cerrandose y frotandose entre sí, como se puede ver en la imagen \textcolor{red}{Añadir figura 2.24 de Fatigueofstructuresandmaterial 2009}, dejando en evidencia el frente de grieta, las variaciones en la carga, su velocidad de crecimiento y la naturaleza corrosiva del entorno.
+
+Finalmente, la última etapa es la falla del material, que ocurre en el último ciclo de la carga, al no poder soportarla con el material restante. Esta fractura es rápida y es producto de una macro-deformación plástica, pudiendo ser frágil, dúctil o una combinación de ambas.
+
+Con esto en cuenta, es posible definir ciertos conceptos en base a las distintas etapas que experimenta un material. La vida a fatiga de un material (\textit{fatigue life}, $N_f$) es el número de ciclos aplicados a una probeta para lograr el criterio de falla \textcolor{red}{referencia a ISO 23718}. El límite de resistencia a la fatiga (\textit{endurance limit}) es frecuentemente explicado como la amplitud de esfuerzo para el cual la vida a fatiga tiende a infinito o a la asíntota de la curva S-N. Sin embargo, al comprender la fatiga como un proceso, es posible dar una definición más acertada para el límite a la fatiga, pasando a ser el umbral para el crecimiento de las microgrietas. Es decir, bajo este límite existe nucleación e iniciación de grites, sin embargo, su crecimiento está limitado a los bordes de grano del material.
+
+Por otra parte, para el estudio de este fenómeno existen tres modelos de falla por fatiga: de \textit{esfuerzo-vida} (S-N), de \textit{deformación-vida }($\epsilon$-N) y de la \textit{mecánica de fractura lineal elástica} (LEFM). Cada uno de ellos tiene ventajas y desventajas, sin embargo, la máquina que es objeto de evaluación en este trabajo utiliza el método \textit{esfuerzo-vida}. El criterio de elección entre los distintos modelos se divide principalmente por la cantidad de ciclos que se hará la medición, los que se clasifican en régimen de fatiga de ciclo bajo (\textit{low-cycle fatigue}, LCF) o un régimen de fatiga de ciclo alto (\textit{high-cycle fatigue}, HCF). La división entre ambos régimen dependerá de distintos autores, no obstante, por lo general se establece la separación en $10^3 \leq LCF$ y $10^3 > HCF$ \textcolor{red}{referencia al shigley - pag. 265}, debido a que la zona LCF está asociada a la existencia de macro-deformaciones plásticas en cada ciclo. De esta manera, el método de esfuerzo-vida se utiliza para ensayos de alto ciclaje debido a su poca precisión en casos LCF. A su vez, los métodos de deformación-vida y LEFM se aplican para casos LCF.
+
+En el método de esfuerzo-vida las muestras o probetas son sometidas a fuerzas de magnitudes especificadas, al mismo tiempo que se cuentan la cantidad de ciclos. Es por esto que es un modelo con base en el esfuerzo, con el cual se busca determinar una resistencia de fatiga o un límite de resistencia. 
+
+Estas fuerzas especificadas pueden ser constantes o variables en el tiempo y magnitud, sin embargo, se abordará principalmente los casos donde los esfuerzos fluctúan de manera constante en el tiempo y de una amplitud fija debido a las características de la máquina analizada en este trabajo. Esto permite trazar la curva de fatiga (S-N) del componente o material.
+
+Se hace necesario describir y definir elementos que surgen producto de una carga cíclica. Esta se caracteriza por el esfuerzo alternante (\textit{alternate stress} o \textit{amplitude stress}, $S_a$) y el esfuerzo medio (\textit{mean stress}, $S_m$) que se muestran en la ecuación \ref{eq:s_a} y \ref{eq:s_m}, respectivamente. A su vez, estas se definen por el esfuerzo máximo $S_{max}$ y $S_{min}$, siendo el esfuerzo máximo y mínimo alcanzado por la carga cíclica. Finalmente, el rango del esfuerzo, $\Delta S$ (eq. \ref{eq:ds}), y la razón de esfuerzos, $R$ (eq. \ref{eq:r_s}), también son opciones  para caracterizar la fatiga.
+
+\begin{align}
+	S_a &= \frac{S_{max} - S_{min}}{2} \label{eq:s_a} \\
+	S_m &= \frac{S_{max} + S_{min}}{2} \label{eq:s_m} \\
+	\Delta S &= S_{max} - S_{min} = 2S_a  \label{eq:ds} \\
+	R &= \frac{S_{min}}{S_{max}} \label{eq:r_s} 
+\end{align}
+
+Estos términos se pueden ver claramente en la figura \textcolor{red}{Insertar imagen que muestra Sa Sm etc}. Para el caso en donde $S_m = 0$, y así $R=-1$, se llama esfuerzo de ciclo invertido. Cuando $S_{min}=0$, y $R=0$, se llama esfuerzo repetido.
+
+\subsection{Curva S-N o de Wöhler}
+Como se señaló en el punto anterior, la curva S-N es el resultado de la aplicación del método esfuerzo-vida. Es quizás uno de las herramientas más importantes en el desarrollo empírico para lograr cuantificar el proceso de fatiga y poder diseñar contra este. El diagrama S-N se obtiene como resultado de un número de ensayos de fatiga a distintos niveles de esfuerzo, donde $S$ puede ser la amplitud ($S_a$), el rango de esfuerzo ($\Delta S$) o el esfuerzo máximo ($S_{max}$) que es aplicado a la probeta, siendo la amplitud lo más común. La variable $N$ hace referencia a la vida a fatiga del material, es decir, la cantidad de ciclos hasta que la probeta falle. Debido a que se desea analizar fallas en LCF y HCF, la cantidad de ciclos necesarios para fallar la probeta pueden llegar a ser demasiado altos, por esto, $N$ se grafica en escala logarítmica.
+
+La cantidad de ensayos requeridos para construir la curva S-N dependerá de distintos factores como, por ejemplo, la confiabilidad esperada, el uso final de la información o de los recursos disponibles. La norma E739-10 -- "Statistical Analysis of Linear or Linearized Stress-Life ($S-N$) and Strain-Life ($\varepsilon -N$) Fatigue Data", establece una guía dependiendo del tipo de prueba a realizar como se muestra en al tabla \ref{tab:type_test}. Además, se recomienda realizar la medición con, al menos, tres puntos de esfuerzos distintos. Con esto, es posible obtener el diagrama $S-N$ como el que se puede apreciar en la figura \textcolor{red}{Añadir figura 6-10, Shigley, pag 266}, donde se puede apreciar la diferencia entre la zona LCF, HCF y de vida infinita, para el caso de los aceros.
+
+
+\begin{table}[]
+\begin{center}
+\caption{Número mínimo de pruebas según tipo de prueba}
+\label{tab:type_test}
+\begin{tabular}{@{}lc@{}}
+\toprule
+\multicolumn{1}{c}{Tipo de prueba}                                                                                        & Cantidad mínima de probetas \\ \midrule
+\begin{tabular}[c]{@{}l@{}}Preliminar y exploratorio (investigación exploratoria \\ y ensayos de desarrollo)\end{tabular} & 6 a 12                      \\
+\begin{tabular}[c]{@{}l@{}}Pruebas de desarrollo e investigación de componentes \\ y probetas\end{tabular}                & 6 a 12                      \\
+Datos de diseños permisibles                                                                                              & 12 a 24                     \\
+Datos de confiabilidad                                                                                                    & 12 a 24                     \\ \bottomrule   
+\end{tabular}
+\end{center}
+\end{table}
+
+La curva $S-N$ varía ampliamente sus resultados para distintos tipos de materiales y, a su vez, estos se ven afectados por una variedad de factores. Estos pueden ser por modificaciones en las condiciones de ensayo, de la geometría de la probeta, de la naturaleza del material o de la forma de fabricación de la probeta. Todos estos factores crean ciertas tendencias en la obtención de datos que los distinguen unos de otros. 
+
+En concreto, las condiciones medioambientales hostiles pueden acelerar el proceso de iniciación y crecimiento de grietas, ya sean químicas o térmicas. Una probeta sometida a creep, fatiga y altas temperaturas puede disminuir drásticamente sus vida útil y, por tanto, la vida a fatiga del material. Por otra parte, se pueden realizar ensayos en una solución de sal para homologar las condiciones marinas, afectando también su vida a fatiga. \textcolor{red}{Agregar imagen, pag. 387 y 388 - Dowling}
+
+El esfuerzo residual también tiene incidencia en la curva de Wöhler, la cual puede incluso ser beneficiosa al utilizar técnicas como el granallado (\textit{shot peening}). El mecánizado de las piezas, como en el caso de la probeta utilizada por la máquina de fatiga, verá afectado los resultados de la curva $S-N$ dependiendo de las características con las que sea manufacturado. Como se indicó anteriormente, la primera etapa de la fatiga, la inicación de las grietas, es un fenómeno que depende de la superficie del material y como consecuencia, un mecánizado grueso o fino tendrá un impacto en esa etapa de la fatiga y no en la posterior, como se puede apreciar en la imagen \textcolor{red}{Imagen página 54 - Book of fatigue}. Así, aquellas probetas que tengan una mejor calidad superficial producto del afinado, tendrán una mejor resistencia a la fatiga respecto a otras.
+
+Es posible encontrar otros factores que inciden en los resultados de la curva, como pueden ser la geometría de la probeta o componente, sus dimensiones, el esfuerzo último ($\sigma_{uts}$), su microestructura, tratamientos químicos y el esfuerzo medio ($S_m$). Este último será analizado en la sección siguiente, debido a la importancia que posee al estar presente en la máquina a analizar. 
+
+%En último término, existen distintas formas de obtener la información necesario con el método esfuerzo-vida, ya sea por pruebas de fatiga axial, torsión, torsión-flexión, flexión o flexión en voladizo. Este último, es el utilizado por la máquina existente en el laboratorio de tecnología mećanica. 
+%
+%
+%%al ser este método el más utilizado existe una gran cantidad de datos para distintos materiales, configuraciones o elementos mecánicos. Con esto resulta más fácil poder comparar resultados o encontrar información al momento de diseñar componentes que sufrirán fatiga. Por otro lado, 
+
+\subsection{Esfuerzo medio, $S_m$}
+Como se escribió anteriormente, los distintos tipos de carga aplicado en una 
 
 \section{Norma de cálculo en madera - NCh 1198}
 La norma NCh 1198 - Cálculo de construcciones en madera - estab
