@@ -1,9 +1,10 @@
-\select@language {spanish}
+\babel@toc {spanish}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {3.1}{\ignorespaces N\IeC {\'u}mero m\IeC {\'\i }nimo de pruebas seg\IeC {\'u}n tipo de prueba\relax }}{24}{table.caption.10}
-\contentsline {table}{\numberline {3.2}{\ignorespaces \leavevmode {\color {red}Espesor}\relax }}{32}{table.caption.24}
-\contentsline {table}{\numberline {3.3}{\ignorespaces \leavevmode {\color {red}Ancho}\relax }}{32}{table.caption.25}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Factores de modificaci\IeC {\'o}n por tipo de carga, seg\IeC {\'u}n el modelo de Lee.\relax }}{31}{table.caption.20}
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces \leavevmode {\color {red}Espesor}\relax }}{40}{table.caption.24}
+\contentsline {table}{\numberline {A.2}{\ignorespaces \leavevmode {\color {red}Ancho}\relax }}{40}{table.caption.25}
 \addvspace {10\p@ }
