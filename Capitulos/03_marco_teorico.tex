@@ -68,11 +68,6 @@ El esfuerzo residual también tiene incidencia en la curva de Wöhler, la cual p
 
 Es posible encontrar otros factores que inciden en los resultados de la curva, como pueden ser la geometría de la probeta o componente, sus dimensiones, el esfuerzo último ($\sigma_{uts}$), su microestructura, tratamientos químicos y el esfuerzo medio ($S_m$). Este último será analizado en la sección siguiente, debido a la importancia que posee al estar presente en la máquina a analizar. 
 
-%En último término, existen distintas formas de obtener la información necesario con el método esfuerzo-vida, ya sea por pruebas de fatiga axial, torsión, torsión-flexión, flexión o flexión en voladizo. Este último, es el utilizado por la máquina existente en el laboratorio de tecnología mećanica. 
-%
-%
-%%al ser este método el más utilizado existe una gran cantidad de datos para distintos materiales, configuraciones o elementos mecánicos. Con esto resulta más fácil poder comparar resultados o encontrar información al momento de diseñar componentes que sufrirán fatiga. Por otro lado, 
-
 \subsection{Esfuerzo medio, $S_m$}
 Como se escribió anteriormente, el esfuerzo medio tiene influencia en los resultados de la curva $S$-$N$, dependiendo del tipo de ensayo realizado, con tal de lograr comparar los datos obtenidos entre distintas pruebas realizadas, como se muestra en la figura \textcolor{red}{añadir imagen 925  Dowling}. Para esto, se han desarrollado ecuaciones que buscan estimar el efecto una carga media dada cuando no existe información disponible.
 
@@ -147,45 +142,61 @@ Como se señaló anteriormente y se aprecia en la imagen REF, cada prueba entreg
 Algunos de estos modelos son: Manson y Muralidharan, Philipp, Lee y Esin. Cada metodología aborda de distinta forma el cálculo del factor de corrección $\phi$, ahora bien, se abordarán los modelos de Lee y Esin en este trabajo, ya que, de acuerdo a \textcolor{red}{agregar cita de analysis of axial papre}, son los modelos que se ajustan mejor al comportamiento de los datos empíricos entre ensayos de \textit{rotating bending} y de \textit{push-pull}. \textcolor{red}{corregir}
 
 \subsubsection{Modelo de Esin}
-El modelo propuesto por Esin en \textit{``A method for correlating different types of fatigue curve"}, relaciona las curvas \textit{push-pull}, \textit{alternating bending} y \textit{rotating bending}. Este depende del esfuerzo alternante, asumiendo que la curva base y la calculada por este método se intersectarán en el punto ($S_e,N_f$), es decir, el factor de correción es $\phi=1$ en esa posición. 
+El modelo propuesto por Esin en \textit{``A method for correlating different types of fatigue curve"}, relaciona las curvas $S$-$N$ de los ensayos \textit{push-pull}, \textit{alternating bending} y \textit{rotating bending}. Éste depende del esfuerzo alternante, asumiendo que la curva base y la calculada por este método se intersectarán en el punto ($S_e,N_f$), es decir, el factor de correción es $\phi=1$ en esa posición. 
 
-El método se basa en el análisis de la dependencia de la micro-plasticidad en la distribución de esfuerzos en la sección transversal, definiéndose la micro-plasticidad como el flujo plástico de un material sin haber alcanzado su punto de fluencia. Esta ocurre sobre cierto nivel de esfuerzos en el rango elástico, donde ese nivel se llama límite elástico real (\textit{true elastic limit}, en inglés o \textit{tel}) y bajo límite de resistencia a la fatiga, $S_e$. Así, siempre se cumplirá que:
+El método se basa en el análisis de la dependencia de la micro-plasticidad en la distribución de esfuerzos en la sección transversal, definiéndose la micro-plasticidad como el flujo plástico de un material sin haber alcanzado su punto de fluencia. Ésta ocurre sobre cierto nivel de esfuerzos en el rango elástico, llamado límite elástico real (\textit{true elastic limit}, en inglés o \textit{TEL}) y bajo el límite de resistencia a la fatiga, $S_e$. Así, siempre se cumplirá que:
 \begin{align*}
-	tel \leq S_e \leq S_f
+	\text{\textit{TEL}} \leq S_e \leq S_y
 \end{align*}
 
-La micro-plasticidad es un fenómeno altamente localizado que depende de las propiedades probabilísticas micro-estructurales del material como su micro-in-homogeneidad, anisotropía y micro-concentraciones de esfuerzos, los cuales explican la dispersión de datos en los ensayos de fatiga. Así, cuando los esfuerzos alternantes están sobre \textit{tel}, la micro-plasticidad influye en los macro-elementos. Dicho de otra forma, el comportamiento mecánico observado a un nivel macro es el comportamiento integrado de los micro-elementos.
+La micro-plasticidad es un fenómeno altamente localizado que depende de las propiedades probabilísticas micro-estructurales del material como su micro-inhomogeneidad, anisotropía y micro-concentraciones de esfuerzos, los cuales explican la dispersión de datos en los ensayos de fatiga. Así, cuando los esfuerzos alternantes están sobre valor del  \textit{TEL}, la micro-plasticidad influye en los macro-elementos. Dicho de otra forma, el comportamiento mecánico observado a un nivel macro es el comportamiento integrado de los micro-elementos.
 
-En la figura REF \textcolor{red}{agregar imagen 2 del paper}, se puede apreciar las áreas afectadas por fatiga para cada tipo de ensayo, los cuales, por sí mismo podrían explicar las diferencias en los resultados de cada prueba. Sin embargo, basándose en el criterio de fatiga de la deformación micro-plástica, la falla ocurre cuando la energía acumulada por la histérsis plástica es igual al valor de la energía de ruptura real (área bajo la curva de un diagrama $\sigma$-$\varepsilon$ real).
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{Imagenes/affectedarea_fatigue.pdf}
+\caption{Sección transversal de probetas sujetas a esfuerzo alternante uniaxial. \textit{a) push-pull}, \textit{b) alternating bending} y \textit{c) rotating bending}}
+\label{fig:affar_fat}
+\end{figure}
 
-\begin{equation}\label{eq:esin_n}
-	N = \frac{U \cdot T_t}{W} 
+
+En la figura \ref{fig:affar_fat}, se puede apreciar las áreas afectadas por fatiga para cada tipo de ensayo, los cuales, por sí mismo podrían explicar las diferencias en los resultados de cada prueba. Sin embargo, basándose en el criterio de fatiga de la deformación micro-plástica, la falla ocurre cuando la energía acumulada por la histérsis plástica, a una cantidad de ciclos $N_f$, es igual al valor de la energía de ruptura real (área bajo la curva de un diagrama $\sigma$-$\varepsilon$ real), como queda expresado en la ecuación \ref{eq:nfail_esin}.
+
+\begin{equation}\label{eq:nfail_esin}
+	N_f = \frac{U \cdot T_t}{W} 
 \end{equation}
 
 Donde:
 \begin{itemize*}
-	\item $N$: Número de ciclos a la falla.
+	\item $N_f$: Número de ciclos a la falla.
 	\item $U$: Energía total real bajo la curva del diagrama esfuerzo-deformación.
 	\item $W$: Energía total plástica disipada.
 	\item $T_t$: Número total de macro-elementos.
 \end{itemize*}
 
-De esta forma, el método de correlación utiliza el concepto de esfuerzo alternante equivalente, $S_e'$, utilizado para denotar un esfuerzo hipotético actuando sobre todos los elementos sometidos a fatiga. 
+De esta forma, el método utiliza varios factores para crear una correlación entre las distintas curvas, ocupando el esfuerzo alternante, $S$, como valor de entrada. El primero de ellos es el concepto de esfuerzo alternante equivalente, $S_{eq}$ (ecuación \ref{eq:esfalt_eq}), utilizado para denotar un esfuerzo hipotético actuando sobre todos los elementos sometidos a fatiga. 
 \begin{equation}\label{eq:esfalt_eq}
-	S_e' = \frac{\Sigma \sigma_i A_i}{\Sigma A_i}
+	S_{eq} = \frac{\Sigma \sigma_i A_i}{\Sigma A_i}
 \end{equation}
 Donde $A_i$ es el número o área de los macro-elementos con igual esfuerzo equivalente. A partir de esto, el esfuerzo equivalente para ensayos de \textit{rotating bending} y \textit{alternating bending}, están dados por las ecuaciones \ref{eq:seq_rotben} y \ref{eq:seq_altben}, respectivamente. 
-
 \begin{align}
-	S_{e,rt}' &= \frac{2S\cdot \sin^3 \theta}{3C} \label{eq:seq_rotben}\\
-	S_{e,ab}' &= \frac{2S}{3} \cdot \left(\frac{1-c^3}{1-c^2}\right) \label{eq:seq_altben}
+	S_{eq,rt} &= \frac{2S\cdot \sin^3 \theta}{3C} \label{eq:seq_rotben}\\
+	S_{eq,ab} &= \frac{2S}{3} \cdot \left(\frac{1-c^3}{1-c^2}\right) \label{eq:seq_altben}
 \end{align}
+Donde las variables $C$ y $c$ se definen cómo:
+\begin{equation}
+	C= \left(\frac{\pi\theta}{180} - \frac{\sin(2\theta)}{2}\right)\qquad ;\qquad c=\frac{r}{R}
+\end{equation}
+Los valores de $\theta$, $r$ y $R$ son propios de la geometría de la probeta utilizada y se definen de acuerdo a la figura \ref{fig:affar_fat}. De igual forma, se debe calcular el factor de fatiga, $FF$, ecuación que representa el ratio entre el área total de la sección transversal y el área de los elementos que contribuyen al proceso de fatiga. Así, las ecuaciones \ref{eq:ff_ab} y \ref{eq:ff_rb} representan los factores de fatiga para calcular la vida a fatiga equivalente, $N_{eq}$, de \textit{alternating bending} y \textit{rotating bending}, respectivamente.
+\begin{align}
+	FF_{ab} &= \frac{\pi}{2} \left(\frac{\pi\theta}{180} - \frac{\sin(2\theta)}{2}\right) \label{eq:ff_ab}\\		
+	FF_{rb} &= \frac{R^2}{(R^2 - r^2)} \label{eq:ff_rb}
+\end{align}
+Finalmente, con estos elementos es posible tomar del diagrama $S$-$N$ un punto ($S_i$,$N_i$) y, a través de las correlaciones, obtener un nuevo punto ($S_i'$,$N_i'$) que equivale a la curva $S$-$N$ de otro tipo de ensayo.
 
-DEFINIR C y c, escribir factor de fatiga para AB y RB. Describir uso del método. Mostrar imagenes comparativas. FIN.
+La metodología consiste en tomar un valor de esfuerzo alternante conveniente $S$ y calcular su esfuerzo alternante equivalente, $S_{eq}$. Utilizando este valor, se determinará a partir de la curva $S$-$N$ original el número de ciclos a la falla que se llamará vida a fatiga equivalente, $N_{eq}$. Este valor debe ser multiplicado por el factor de fatiga $FF$, obteniendo la vida a fatiga modificada, $N$. Así, el punto $P=(S,N)$, como se muestra en la figura REF \textcolor{red}{añadir fig 3} es el valor equivalente obtenido, teniendo que repetirse el procedimiento para todos los puntos que se requieran.
 
 \subsubsection{Modelo de Lee}
 La estimación del límite de fatiga, $S_e$, se calcula a través de distintos factores de modificación según el tipo de carga, calidad superficial, tamaño y confiabilidad de la muestra. El factor de modificación según el tipo de carga $C_L$ varía entre 0,7 y 0,9 para probetas sin muescas. Las recomendaciones para cada valor de $C_L$ se realizaron considerando los efectos del gradiente de esfuerzos y el tipo de esfuerzo involucrado, es decir, cortantes y normales. Estos también varían según el tipo de material, los cuales fueron obtenidos de manera empírica. Así la tabla \ref{tab:lee_factor} muestra los factores de modificación para algunos tipos de carga.
-
 
 \begin{table}[h]
 \centering
@@ -205,20 +216,209 @@ Además, es posible apreciar en la imagen REF \textcolor{red}{colocar imagen 416
 
 AÑADIR IMAGEN COMPARANDO AMBOS SISTEMAS.
 
-\section{Vibraciones}
-La vibración es un término que describe el fenómeno de las oscilaciones de un sistema mecánico al rededor de un punto de equilibrio. Es una subdisciplina de la dinámica que estudia el movimiento repetitivo de los cuerpos y las fuerzas asociadas a los mismos.\\
-Un sistema vibratorio está compuesto, generalmente, por elementos de masa, elásticos y de amortiguamiento, cada uno de los cuales es un medio para almacenar energía cinética, potencial y de disipar la energía, respectivamente, los cuales se transfieren de manera alternante entre energía potencial y energía cinética.
+\section{Dinámica}
+\textcolor{red}{AGREGAR APOSTROFE A TODOS LOS DALEMBERT, buscar por Alembert}
 
-\subsection{Modelo Matemático}
+El movimiento y la relación existente entre las fuerzas que actúan sobre un cuerpo rígido es estudiado por la dinámica, la cual busca predecir el movimiento y explicar su origen. En esta sección se hablará de cuerpos rígidos y no partículas, debido las características de lo que se analizará posteriormente, además, de ser la rotación un elemento importante a considerar. 
+\subsection{Ecuaciones de movimiento de un cuerpo rígido}
+\label{sec:ec_mov}
+Para describir el movimiento de un cuerpo es necesario recurrir a la segunda ley de movimiento de Newton, la cual permite trazar y predecir el movimiento de traslación y rotación del cuerpo.
+
+Si sobre una masa $m$ constante actúa una fuerza $\vec{F}(t)$ que da como resultado un vector de desplazamiento $\vec{x}(t)$, la segunda ley de Newton se expresa:
+\begin{equation}\label{eq:newton_lineal}
+	\vec{F}(t) = \frac{d}{dt}\left(m\frac{d\vec{x}(t)}{dt}\right) = m \frac{d^2\vec{x}(t)}{dt^2}
+\end{equation}
+De manera análoga para el mismo cuerpo rígido, de momento de inercia $I$, es sometido a un momento $\vec{M}(t)$, entonces el cuerpo girará con un vector de desplazamiento angular $\vec{\theta}$.
+\begin{equation}\label{eq:newton_angular}
+	\vec{M}(t) = I\frac{d^2\vec{\theta}(t)}{dt^2}
+\end{equation} 
+Con las ecuaciones \ref{eq:newton_lineal} y \ref{eq:newton_angular} se puede describir el movimiento de un sólido rígido.
+
+Por otro lado, el principio de D'Alembert nos permite establecer un equilibrio dinámico entre las suma de las fuerzas externas o momentos y el producto entre su masa y la aceleración resultante del sólido, que se le denominará fuerza efectiva. Ambos términos deben ser equipolentes sobre el sistema que actúan, de esta manera las ecuaciones \ref{eq:2l_newton} y \ref{eq:2l_euler} son el resultado de la aplicación de este principio.
+\begin{gather}
+	\sum \mathbf{F_i} = m\mathbf{\ddot{x_i}} \label{eq:2l_newton}\\
+	\nonumber \\
+	\sum \mathbf{M_i} = I\ddot{\theta_i} \label{eq:2l_euler}
+\end{gather}
+
+\subsection{Energía cinética de un cuerpo rígido}
+Un cuerpo rígido en movimiento tiene asociada una energía cinética que depende de su masa $m$, el momento de inercia $I$, su velocidad $v$ y la velocidad de rotación $\omega$. Así la energía cinética $T$ queda definida por la ecuación \ref{eq:e_cinetica}.
+\begin{equation}\label{eq:e_cinetica}
+	T = \frac{1}{2}mv^2 + \frac{1}{2}I\omega^2 
+\end{equation}
+
+
+\section{Vibraciones}
+Es el estudio del movimiento repetitivo de los objetos relativo a un marco de referencia estacionario y que oscila respecto a una posición nominal. Es un fenómeno que se da en todos los objetos, afectando naturalmente el diseño en ingeniería, pudiendo ser perjudicial o útil, dependiendo del objetivo que se busca. Por esto, es necesario conocer cabalmente el fenómeno de la vibración, es decir, saber como analizarlo, medirlo y controlarlo para poder manejar las distintas variables que lo afectan.
+
+Físicamente, la vibración es la interacción entre la energía potencial y cinética. De esta manera, un sistema vibratorio debe tener un componente que almacene la energía y la libere en forma de movimiento de una masa para, asimismo, este vuelva a ser almacenado en forma de energía potencial. Los elementos que componen un sistema mecánico y los métodos para describir los movimientos se explicarán en esta sección.
+
 
 \subsection{Rigidez}
+El comportamiento como resorte se puede aplicar a distintos elementos y componentes, dependiendo de su geometría y las propiedades del material. Así, a partir de la configuración del sistema, es posible calcular una rigidez $k$ para el movimiento longitudinal, transversal o torsional. 
 
-\subsection{Método de energía}
+El cálculo de la constante de rigidez para una viga de área $A$, módulo de Young $E$, largo $L$ y el segundo momento de área $I$, se puede obtener a través de las ecuaciones de energía. Así, la ecuación \ref{eq:k_cantilever}, muestra el valor de $k$ para una viga en voladizo con una carga $P$ en su extremo.
+\begin{equation}\label{eq:k_cantilever}
+	k = \frac{3EI}{L^3}
+\end{equation}
+
+Por otro lado, la ecuación \ref{eq:e_potelas}, muestra la energía potencial elástica asociada a un elemento que se comporta como un resorte.
+\begin{equation}\label{eq:e_potelas}
+	U_k = \frac{1}{2}k\,x(t)
+\end{equation}
+
 
 \subsection{Damping}
+\label{sec:damping}
+Los sistemas vibratorios predicen oscilaciones indefinidas si solo se considera la rígidez del resorte y la masa del sistema, sin embargo, la experiencia nos indica que los sistemas tienden a eventualmente reducir su movimiento hasta cero si estos no están afectados por fuerzas externas. Para esto es necesario añadir un modelo físico para disipar la energía y amortiguar el sistema mecánico. Así, el modelo expresado anteriormente debe ser modificado para considerar la reducción de movimiento en el tiempo. Para esto, se añade a las ecuaciones diferenciales un término de la forma $c\dot{x}(t)$, donde $c$ es una constante, el cual da como resultado una solución donde $x(t)$ tiende a un punto de reposo. Este tipo de \textit{damping} se llama amortiguamiento viscoso, en el cual su fuerza ($f_c$) es proporcional a la velocidad del sistema en la dirección opuesta del movimiento. Por lo tanto, la ecuación \ref{eq:f_damp} muestra la fuerza de amortiguamiento, de tipo viscoso, presente en un sistema mecánico.
+\begin{equation}\label{eq:f_damp}
+	f_c = c\dot{x}(t)
+\end{equation}
+
+Producto del amortiguamiento de la oscilación del sistema, la frecuencia es menor que la de un sistema no amortiguado, disminuyendo exponencialmente. A partir del valor de la constante $c$, existen tres casos posibles:
+\begin{enumerate}
+	\item \textbf{Subamortiguado}: El sistema continúa teniendo un movimiento oscilatorio, con un decaimiento exponencial de la amplitud hasta llegar a la posición de reposo.
+	\item \textbf{Sobreamortiguado}: El movimiento del sistema no alcanza a ser oscilatorio, sin embargo, vuelve a la posición de reposo exponencialmente.
+	\item \textbf{Críticamente amortiguado}: Es el caso que separa si el decaimiento es oscilatorio, siendo el movimiento que retorna al resposo más rápido sin oscilaciones.
+\end{enumerate}
+
+Por lo tanto, la ecuación que describe el movimiento de un sistema amortiguado es:
+\begin{gather*}
+	m\ddot{x} = -f_c - f_k \\
+	m\ddot{x}(t) + c\dot{x}(t) + kx(t) = 0 
+\end{gather*}
+
+Desde la perspectiva del método de eneríga, el amortiguamiento viscoso es una fuerza no conservativa que puede ser modelada por la función de disipación de Reyleigh, que toma la forma \ref{eq:rayleigh_function}.
+\begin{equation}\label{eq:rayleigh_function}
+	R = \frac{1}{2}c\,\dot{q_i}^2
+\end{equation} 
+Donde $n$ es el número de coordenadas generalizadas y $q$ cada coordenada generalizada. De esta manera, se puede obtener las fuerzas generalizadas para amortiguamiento viscoso derivando $R$ respecto a cada variable generalizada $q$, como se muestra en la ecuación \ref{eq:q_ri}.
+\begin{equation}\label{eq:q_ri}
+	Q_{Rj} = -\frac{\partial R}{\partial \dot{q_j}}, \; \text{para cada }\, j=1,2,...,n
+\end{equation}
 
 \subsection{Vibraciones forzadas}
+\label{sec:vib_forzadas}
+Los sistemas mecánicos están sometidos a una gama bastante amplia de fuerzas externas que actúan sobre ellos, las que pueden ser aleatorias, periódicas, no periódicas o transientes. La fuente puede ser variada, pero todas ellas pueden causar vibraciones en el sistema, las cuales se denominarán $F(t)$. Para el caso de este trabajo, el sistema a analizar contiene un disco sometido a rotación constante, impulsado por un motor eléctrico, que produce una fuerza periódica producto de su desbalanceo.
 
-\subsection{Sistema de dos grados de libertad}
+Si consideramos un desequilibrio de masa $m_0$, a una distancia $e$ del centro de rotación y rotando a una velocidad $\phi$, como se muestra en la figura \textcolor{red}{Hacer figura similar a 219 y 220 de Inman}, la componente vertical de la fuerza centrífuga $F(t)$ es:
+\begin{equation}
+	F_y(t) = m_0\ddot{y}(t)
+\end{equation}
+Tomando el centro de rotación como el punto cero del sistema de coordenadas y que la aceleración angular es distinta de cero, entonces las coordenadas de posición, velocidad y aceleración quedan de la siguiente manera:
+\begin{gather*}
+	y(t) = e \sin \phi\\
+	\dot{y}(t) = e \dot{\phi}\cos \phi\\
+	\ddot{y}(t) = e(\ddot{\phi}\cos\phi - \dot{\phi}^2\sin\phi)
+\end{gather*}
+Por lo tanto, la ecuación \ref{eq:vib_forzadas}, muestra la fuerza centrífuga en dirección del eje $y$ cuando una masa desbalanceada $m_0$ gira a una velocidad angular $\dot{\phi}$ y su aceleración angular es $\ddot{\phi} \neq 0$.
+\begin{equation}\label{eq:vib_forzadas}
+	F_y(t) = m_0e(\ddot{\phi}\cos\phi- \dot{\phi}^2\sin\phi)
+\end{equation}
+
+\subsection{Modeling}
+Es el proceso en el que se representan todos los detalles importantes del sistema con el objetivo de derivar las ecuaciones que  rigen el comportamiento del mismo. Para esto, los métodos existentes son la ley de movimiento de Newton, el principio de D$'$Alembert y principio de conservación de la energía. Los primeros, vistos en la sección \ref{sec:ec_mov}, se utilizan a través de un diagrama de cuerpo libre y la correcta identificación de las fuerzas y momentos que actúan sobre un cuerpo. Por otra parte, el método de conservación de la energía tiene la capacidad de derivar las ecuaciones de movimiento de un cuerpo sin la necesidad de recurrir a un diagrama de cuerpo libre, es decir, no se requiere identificar fuerzas ni momentos en el sistema. Éste método se verá en mayor profundidad en la sección \ref{sec:metodo_energia}.
+
+Si consideramos un sistema amortiguado forzado y de un solo grado de libertad, $x(t)$ o $\theta(t)$ según sea el caso, entonces la ecuación que describe el movimiento tendrá la siguiente forma:
+\begin{subequations}
+\begin{align}
+	m\,\ddot{x}(t) + c\,\dot{x}(t) + k\,x(t) = F(t) \label{eq:onedeglineal_damp}\\
+	I\,\ddot{\theta}(t) + c\,\dot{\theta}(t) + k\,\theta(t) = M(t) \label{eq:ondegangular_damp}
+\end{align}
+\end{subequations}
+Tanto la ecuación lineal (\ref{eq:onedeglineal_damp}) y angular (\ref{eq:ondegangular_damp}) son el resultado de derivarlas a través de cualquiera de los métodos expuestos anteriormente.  
+ 
+\subsection{Sistema de múltiples grados de libertad}
+El número de grados de libertad de un sistema es la cantidad de parámetros independientes necesarios para definir los movimientos que posee cada masa involucrada en el sistema. Para cada grado de libertad de una masa, corresponde una coordenada $x_i(t)$, describiendo su movimiento en esa dimensión. La figura \textcolor{red}{REF\{imagen 47 de Inman\}} muestra las posibilidades de movimiento de un elemento de masa $m$ que no está sometido a ninguna restricción.
+
+La forma de describir el movimiento de cada masa es a través del uso de matrices y vectores, de tal forma que es posible agrupar los distintos componentes que se vieron en las ecuaciones \ref{eq:onedeglineal_damp} y \ref{eq:ondegangular_damp} de un solo grado de libertad. De esta manera, las coordenadas $x_i(t)$ pueden ser escritas como un vector $\mathbf{x}(t)$ de $n \times 1$, donde $n$ es la cantidad de grados de libertad del sistema. Asimismo, se puede representar matricialmente la información de la masa del sistema y la rigidez de cada resorte, donde $\mathit{M}$ es la matriz de masas y $\mathit{K}$ es la matriz rigidez, ambas de dimensión $n \times n$. 
+\begin{equation}\label{eq:multi_degree}
+	\mathit{M}\mathbf{\ddot{x}}(t) + \mathit{K}\mathbf{x}(t) = 0
+\end{equation}
+La forma de la ecuación \ref{eq:multi_degree} permite resolver un sistema de $n$ grados de libertad, por lo tanto, la forma de la matriz de masas será:
+\begin{equation*}
+	\mathit{M}=\text{diag}(m_1,m_2,...,m_n)
+\end{equation*}
+Y el vector $\mathbf{x}(t)$ es:
+\begin{equation*}
+	\mathbf{x}(t) = \begin{bmatrix}
+	x_1(t)\\
+	x_2(t)\\
+	\vdots\\
+	x_n(t)
+	\end{bmatrix}
+\end{equation*} 
+
+Por otra parte, para sistemas con amortiguamiento viscoso se añade la matriz de amortiguamiento $\mathit{C}$ de dimensión $n \times n$. 
+\begin{equation}\label{eq:multi_degreedamp}
+	\mathit{M}\mathbf{\ddot{x}}(t) + \mathit{C}\mathbf{\dot{x}}(t) + \mathit{K}\mathbf{x}(t) = 0	
+\end{equation}
+Finalmente, se tendrá un sistema de $n$ ecuaciones diferenciales de segundo orden, con coeficientes constantes, cada una de las cuales requiere dos condiciones iniciales.
+\begin{equation}
+	\mathbf{x}(t_0) = \begin{bmatrix}
+	x_{10}(t_0)\\
+	x_{20}(t_0)\\
+	\vdots\\
+	x_{n0}(t_0)
+	\end{bmatrix} \quad ; \quad \mathbf{\dot{x}}(t_0) = \begin{bmatrix}
+	\dot{x}_{10}(t_0)\\
+	\dot{x}_{20}(t_0)\\
+	\vdots\\
+	\dot{x}_{n0}(t_0)
+	\end{bmatrix}
+\end{equation}
+Donde los valores de $\mathbf{x}(t)$, $\mathbf{\dot{x}}(t)$ y de las matrices $\mathit{M}$, $\mathit{K}$, y $\mathit{C}$ se deben conocer para poder resolver el sistema de ecuaciones. 
+
+\subsection{Método de energía}
+\label{sec:metodo_energia}
+El método de conservación de la energía puede ser combinado con los conceptos de trabajo virtual, lo cual lleva a las ecuaciones de Lagrange que pueden ser usadas para obtener la descripción del moviemiento del sistema, incluso si son amortiguados y forzados. Sin embargo, antes de explicar su funcionamiento se debe introducir el concepto de coordenadas generalizadas.
+
+Las ecuaciones de movimiento de un sistema vibratorio pueden estar compuestas por distintos sistemas de coordenadas, no obstante, aquellos sistemas de coordenadas independientes entre sí y de las condiciones de restricción se les llama coordenadas generalizadas, $q_j$. De igual forma, se designará como $Q_j$ a las fuerzas generalizadas que estén actuando sobre el sistema. Estas fuerzas se definen según la ecuación \ref{eq:fuerza_generalizada}, donde $U_j$ es el trabajo realizado al cambiar las coordenadas generalizadas $q_j$ y $\delta q_j$ la cantidad desplazada. 
+\begin{equation}\label{eq:fuerza_generalizada}
+	Q_j = \frac{U_j}{\delta q_j}
+\end{equation} 
+Análogamente a como se ha desarrollado anteriormente, $Q_j$ puede adquirir el valor de una fuerza o momento, así como $q_j$ puede ser una coordenada de desplazamiento lineal o angular. Así mismo, $\dot{q}_j$ y $Q_j^{(n)}$ representan la velocidad generalizada y la fuerza generalizada no conservativa, respectivamente.
+
+Con esto en consideración, el método de Lagrange define el concepto de lagrangiano $L$, como la resta entre la energía cinética $T$ y la energía potencial $U$ del sistema, ambos en términos de las coordenadas generalizadas $q_i(t)$.
+\begin{equation}\label{eq:lagrangiano}
+	L = T - U
+\end{equation} 
+Así, el método establece que para un sistema conservativo sin amortiguamiento, la ecuación \ref{eq:der_lag} tiene la forma:
+\begin{equation}\label{eq:der_lag}
+	\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{q}_i}\right) - \frac{\partial L}{\partial q_i} = 0
+\end{equation}
+Si se sustituye la ecuación \ref{eq:lagrangiano} en \ref{eq:der_lag}, entonces se obtiene:
+\begin{equation}\label{eq:der_lagconsv}
+	\frac{d}{dt}\left(\frac{\partial T}{\partial \dot{q}_i}\right) - \frac{\partial T}{\partial q_i} + \frac{\partial U}{\partial q_i} = 0
+\end{equation}
+Lo que resultará en una ecuación para cada coordenada generalizada. En resumen, es importante para que el sistema esté correctamente definido la identificación de los sistemas de energía y el uso de las coordenadas generalizadas. 
+
 
 \subsection{Ecuaciones de energía para un sistema con amortiguamiento y forzado}
+Finalmente, es posible obtener las ecuaciones de movimiento a través del método de conservación de energía para un sistema con dos grados de libertad, forzado y con amortiguamiento viscoso. Para esto, se utilizarán los elementos mostrados anteriormente y se derivará la ecuación. Además se añadirá el efecto de la energía potencial gravitatoria, factor importante en el caso estudiado en este trabajo, según la ecuación \ref{eq:e_potgrav}. 
+\begin{equation}\label{eq:e_potgrav}
+	U_g = mg\,q_i
+\end{equation}
+Por lo tanto, la energía potencial total del sistema, tendrá la siguiente forma:
+\begin{equation}\label{eq:e_potencial}
+	U = U_k + U_g = \frac{1}{2}k\,q_i^2 + mg\,q_i
+\end{equation}
+
+\textcolor{red}{utilizar figura 425 pag 382 Inman como referencia del sistema de coordenadas}
+
+
+
+A partir de la ecuación \ref{eq:der_lag}, considerando los valores de la energía cinética y potencial de las ecuaciones \ref{eq:e_cinetica} y \ref{eq:e_potencial}, es necesario añadir las fuerzas de amortiguamiento y las fuerzas externas no conservativas. La suma de estas fuerzas fue desarrollada en las secciones \ref{sec:damping} y \ref{sec:vib_forzadas}, dando como resultado las ecuaciones \ref{eq:q_ri} y \ref{eq:vib_forzadas}. \textcolor{red}{Revisar parrafo y ecuación, definir letras}
+\begin{equation}
+	Q_i = F_i(t) + Q_{Ri} = F_i(t) - \frac{\partial R}{\partial \dot{q}_i} 
+\end{equation}
+
+De esta manera, una vez identificado todos los sistemas de energía y sus respectivos valores, se obtiene:
+\begin{equation}
+	\frac{d}{dt}\left(\frac{\partial T}{\partial \dot{q}_i}\right) - \frac{\partial T}{\partial q_i} + \frac{\partial R}{\partial \dot{q_i}} + \frac{\partial U}{\partial q_i} = F_i(t)
+\end{equation}
+El cual, una vez derivado y escrito de forma matricial, adquiere la siguiente forma:
+\begin{equation}
+	\mathit{M}\mathbf{\ddot{q}_i} + \mathit{C}\mathbf{\dot{q}_i} + \mathit{K}\mathbf{q_i} = \mathbf{F}_i
+\end{equation}
+
