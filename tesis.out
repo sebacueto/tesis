@@ -21,23 +21,41 @@
 \BOOKMARK [2][-]{subsection.3.3.5}{Sistema de m\372ltiples grados de libertad}{section.3.3}% 21
 \BOOKMARK [2][-]{subsection.3.3.6}{M\351todo de energ\355a}{section.3.3}% 22
 \BOOKMARK [2][-]{subsection.3.3.7}{Ecuaciones de energ\355a para un sistema con amortiguamiento y forzado}{section.3.3}% 23
-\BOOKMARK [0][-]{appendix.Alph1}{Norma de c\341lculo en madera - NCh1198}{}% 24
-\BOOKMARK [1][-]{section.Alph1.1}{Propiedades de la madera y factores de modificaci\363n}{appendix.Alph1}% 25
-\BOOKMARK [2][-]{subsection.Alph1.1.1}{Contenido de humedad}{section.Alph1.1}% 26
-\BOOKMARK [2][-]{subsection.Alph1.1.2}{Densidad}{section.Alph1.1}% 27
-\BOOKMARK [2][-]{subsection.Alph1.1.3}{Tensiones admisibles y m\363dulo de elasticidad}{section.Alph1.1}% 28
-\BOOKMARK [2][-]{subsection.Alph1.1.4}{Factores de modificaci\363n}{section.Alph1.1}% 29
-\BOOKMARK [1][-]{section.Alph1.2}{Dise\361o de piezas}{appendix.Alph1}% 30
-\BOOKMARK [2][-]{subsection.Alph1.2.1}{Flexi\363n}{section.Alph1.2}% 31
-\BOOKMARK [2][-]{subsection.Alph1.2.2}{Cizalle}{section.Alph1.2}% 32
-\BOOKMARK [2][-]{subsection.Alph1.2.3}{Compresi\363n paralela a la fibra}{section.Alph1.2}% 33
-\BOOKMARK [2][-]{subsection.Alph1.2.4}{Compresi\363n normal a la fibra}{section.Alph1.2}% 34
-\BOOKMARK [2][-]{subsection.Alph1.2.5}{Tracci\363n paralela}{section.Alph1.2}% 35
-\BOOKMARK [2][-]{subsection.Alph1.2.6}{Nomenclatura y tipos de madera}{section.Alph1.2}% 36
-\BOOKMARK [1][-]{section.Alph1.3}{Uniones en la madera estrutural}{appendix.Alph1}% 37
-\BOOKMARK [2][-]{subsection.Alph1.3.1}{Generalidades}{section.Alph1.3}% 38
-\BOOKMARK [2][-]{subsection.Alph1.3.2}{Verificaciones tensionales}{section.Alph1.3}% 39
-\BOOKMARK [2][-]{subsection.Alph1.3.3}{N\372mero de elementos de uni\363n}{section.Alph1.3}% 40
-\BOOKMARK [2][-]{subsection.Alph1.3.4}{Uniones con perno}{section.Alph1.3}% 41
-\BOOKMARK [2][-]{subsection.Alph1.3.5}{Uniones con tirafondos}{section.Alph1.3}% 42
-\BOOKMARK [0][-]{appendix.Alph2}{Cotizaciones}{}% 43
+\BOOKMARK [0][-]{chapter.4}{Metodolog\355a}{}% 24
+\BOOKMARK [1][-]{section.4.1}{Levantamiento de informaci\363n}{chapter.4}% 25
+\BOOKMARK [2][-]{subsection.4.1.1}{Estado actual}{section.4.1}% 26
+\BOOKMARK [2][-]{subsection.4.1.2}{Mediciones}{section.4.1}% 27
+\BOOKMARK [2][-]{subsection.4.1.3}{Funcionamiento}{section.4.1}% 28
+\BOOKMARK [1][-]{section.4.2}{Dise\361o de estructura}{chapter.4}% 29
+\BOOKMARK [2][-]{subsection.4.2.1}{Dise\361o en soporte de acero}{section.4.2}% 30
+\BOOKMARK [2][-]{subsection.4.2.2}{Dise\361o en madera}{section.4.2}% 31
+\BOOKMARK [2][-]{subsection.4.2.3}{C\341lculo de cargas en estructura de madera}{section.4.2}% 32
+\BOOKMARK [2][-]{subsection.4.2.4}{Uniones}{section.4.2}% 33
+\BOOKMARK [2][-]{subsection.4.2.5}{Simulaciones}{section.4.2}% 34
+\BOOKMARK [1][-]{section.4.3}{Modelo del sistema de funcionamiento}{chapter.4}% 35
+\BOOKMARK [2][-]{subsection.4.3.1}{Diagrama del sistema}{section.4.3}% 36
+\BOOKMARK [2][-]{subsection.4.3.2}{Modelo del sistema}{section.4.3}% 37
+\BOOKMARK [2][-]{subsection.4.3.3}{Ecuaciones de movimiento de la m\341quina de fatiga}{section.4.3}% 38
+\BOOKMARK [2][-]{subsection.4.3.4}{Carga sobre la probeta}{section.4.3}% 39
+\BOOKMARK [1][-]{section.4.4}{An\341lisis de informaci\363n existente}{chapter.4}% 40
+\BOOKMARK [2][-]{subsection.4.4.1}{Simulaci\363n de cargas}{section.4.4}% 41
+\BOOKMARK [0][-]{appendix.Alph1}{Norma de c\341lculo en madera - NCh1198}{}% 42
+\BOOKMARK [1][-]{section.Alph1.1}{Propiedades de la madera y factores de modificaci\363n}{appendix.Alph1}% 43
+\BOOKMARK [2][-]{subsection.Alph1.1.1}{Contenido de humedad}{section.Alph1.1}% 44
+\BOOKMARK [2][-]{subsection.Alph1.1.2}{Densidad}{section.Alph1.1}% 45
+\BOOKMARK [2][-]{subsection.Alph1.1.3}{Tensiones admisibles y m\363dulo de elasticidad}{section.Alph1.1}% 46
+\BOOKMARK [2][-]{subsection.Alph1.1.4}{Factores de modificaci\363n}{section.Alph1.1}% 47
+\BOOKMARK [1][-]{section.Alph1.2}{Dise\361o de piezas}{appendix.Alph1}% 48
+\BOOKMARK [2][-]{subsection.Alph1.2.1}{Flexi\363n}{section.Alph1.2}% 49
+\BOOKMARK [2][-]{subsection.Alph1.2.2}{Cizalle}{section.Alph1.2}% 50
+\BOOKMARK [2][-]{subsection.Alph1.2.3}{Compresi\363n paralela a la fibra}{section.Alph1.2}% 51
+\BOOKMARK [2][-]{subsection.Alph1.2.4}{Compresi\363n normal a la fibra}{section.Alph1.2}% 52
+\BOOKMARK [2][-]{subsection.Alph1.2.5}{Tracci\363n paralela}{section.Alph1.2}% 53
+\BOOKMARK [2][-]{subsection.Alph1.2.6}{Nomenclatura y tipos de madera}{section.Alph1.2}% 54
+\BOOKMARK [1][-]{section.Alph1.3}{Uniones en la madera estrutural}{appendix.Alph1}% 55
+\BOOKMARK [2][-]{subsection.Alph1.3.1}{Generalidades}{section.Alph1.3}% 56
+\BOOKMARK [2][-]{subsection.Alph1.3.2}{Verificaciones tensionales}{section.Alph1.3}% 57
+\BOOKMARK [2][-]{subsection.Alph1.3.3}{N\372mero de elementos de uni\363n}{section.Alph1.3}% 58
+\BOOKMARK [2][-]{subsection.Alph1.3.4}{Uniones con perno}{section.Alph1.3}% 59
+\BOOKMARK [2][-]{subsection.Alph1.3.5}{Uniones con tirafondos}{section.Alph1.3}% 60
+\BOOKMARK [0][-]{appendix.Alph2}{Cotizaciones}{}% 61
