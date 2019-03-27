@@ -1,18 +1,35 @@
 %Apendice A
 %
 \chapter{Norma de cálculo en madera - NCh1198}
+\label{ch:anexo_a}
 
 La norma NCh 1198 - Cálculo de construcciones en madera - establece los métodos y procedimientos de diseño estructural que determinarán las condiciones mínimas que debe cumplir cada elemento de la estructura. Esta incluye las construcciones de madera aserrada, elaborada, laminada-encolada y postes de madera, como también las uniones a través de elementos mecánicos, tales como: clavos, tirafondos, pernos, barras de acero, tornillos y conectores para madera.
 
 \section{Propiedades de la madera y factores de modificación}
 \subsection{Contenido de humedad}
-
+\label{sec:contenido_humedad}
 
 El contenido de humedad de una madera debe ser considerado por su susceptibilidad a los cambios de forma, volumen y para la determinación de las tensiones admisibiles debido a que es un material higroscópico. Para esto, se debe tomar en cuenta su humedad durante la construcción ($H_c$), como también, la humedad a la que estará en servicio ($H_s)$ o humedad de equilibrio. La humedad de equilibrio depende de la ubicación que tengan los elementos. Si se encuentra en un recinto cerrado sin calefacción o intermitente $H_s= 12\%$. Si es un recinto cerrado continuamente calefaccionado, entonces $H_s=9\%$. Si es un recinto cubierto abierto, entonces la humedad de equilibrio será igual a la humedad medida del lugar donde se ubicará. Finalmente, si los elementos se encuentran a la interperie, se puede utilizar la tabla que se encuentra en el anexo D, de la norma NCh 1198, para las diferentes regiones geográficas de Chile.\\
 
-Así la \textcolor{red}{Tabla (Tabla 3 norma)} se utiliza de criterio para clasificar la madera como verde o seca, las cuales se designan con las letras E y ES, respectivamente. Además, son agrupadas con un número que agrupa las especies madereras que crecen en Chile, de acuerdo a la norma NCh 1989 - Agrupamiento de especies madereras según su resistencia - mostrada en el anexo A de la norma NCh 1198. Para el pino radiata se considera la clasificación de la norma NCh 1207 - Pino radiata, clasificación visual para uso estructural, especificaciones de los grados de calidad.\\
+Así la tabla \ref{tab:tabla3_1198} se utiliza de criterio para clasificar la madera como verde o seca, las cuales se designan con las letras E y ES, respectivamente. Además, son agrupadas con un número que clasifica las especies madereras que crecen en Chile, de acuerdo a la norma NCh 1989 - Agrupamiento de especies madereras según su resistencia - mostrada en el anexo A de la norma NCh 1198. Para el pino radiata se considera la clasificación de la norma NCh 1207 - Pino radiata, clasificación visual para uso estructural, especificaciones de los grados de calidad.
 
-\textcolor{red}{COLOCAR TABLA 3}\\
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}ccccc@{}}
+\toprule
+\multirow{2}{*}{Item} & \multicolumn{2}{c}{\begin{tabular}[c]{@{}c@{}}Condición de humedad \\ de la madera\end{tabular}} & \multicolumn{2}{c}{\begin{tabular}[c]{@{}c@{}}Condición considerada para la madera\\  en la determinación de su(s)\end{tabular}} \\ \cmidrule(l){2-5} 
+                      & Durante la construcción                              & En servicio                                  & Tensiones admisibles                                           & Módulo de elasticidad                                           \\ \midrule
+1                     & $H_c \geq 20\%$                                      & $H_s \geq 20\%$                              & Verde                                                          & Verde                                                           \\
+2                     & $H_c \geq 20\%$                                      & $H_s \leq 12\%$                              & Seca (H=12\%)                                                  & Seca (H=12\%)                                                   \\
+3                     & $H_c \leq 12\%$                                      & $H_s \leq 12\%$                              & Seca (H=12\%)                                                  & Seca (H=12\%)                                                   \\
+4                     & $H_c \leq 12\%$                                      & $H_s \geq 12\%$                              & Verde                                                          & Seca (H=12\%)                                                   \\ \bottomrule
+\end{tabular}%
+}
+\caption{Condiciones que se deben considerar en la determinación de tensiones admisibles y módulo de
+elasticidad}
+\label{tab:tabla3_1198}
+\end{table}
 
 \subsection{Densidad}
 Debido a la característica higroscópica de la madera, su masa y volumen varían respecto al contenido de humedad. Por lo tanto, existen distintos tipos de densidad dependiendo de la información que sea necesaria o de los cálculos que se realicen. De acuerdo a la norma NCh 176/2, se definen los siguientes valores de densidad:
@@ -40,7 +57,7 @@ Existen otras variables externas a la madera que pueden afectar su correcto dese
 \end{itemize}
 
 \section{Diseño de piezas}
-Para el diseño de piezas es necesario calcular las tensiones de diseño, que se determinan como el producto de las tensiones admisibles por los factores de modificación que resulten pertinentes y que se definen para cada tipo de solicitación a la que está sometida cada pieza de la estructura. Por lo tanto, las tensiones de trabajo no pueden ser superiores a las de diseño, debiendo establecerse, un factor de seguridad para los cálculos. \textcolor{red}{A continuación, se hablará solo de las solicitaciones a las que está sometida la estructura.}
+Para el diseño de piezas es necesario calcular las tensiones de diseño, que se determinan como el producto de las tensiones admisibles por los factores de modificación que resulten pertinentes y que se definen para cada tipo de solicitación a la que está sometida cada pieza de la estructura. Por lo tanto, las tensiones de trabajo no pueden ser superiores a las de diseño, debiendo establecerse, un factor de seguridad para los cálculos. A continuación se expondrán las solicitaciones utilizadas para el diseño de la mesa.
 
 \subsection{Flexión}
 La tensión de trabajo de flexión de la fibra extrema de una viga simple de madera se debe determinar de acuerdo con la expresión:
@@ -50,7 +67,7 @@ La tensión de trabajo de flexión de la fibra extrema de una viga simple de mad
 
 Donde $M_{max}$ es el momento máximo de flexión en $\text{N}\cdot\text{mm}$ y $W_n$ el módulo de flexión de la sección transversal neta respecto al eje neutro en mm.
 
-Para el diseño de elementos en flexión, se debe calcular la tensión de diseño en flexión en la zona flexo-traccionada ($F_{ft,dis}$) y flexo-comprimida ($F_{fv,dos}$). Que se definen según las ecuaciones \ref{eq:ft_dis} y \ref{eq:fv_dis}.
+Para el diseño de elementos en flexión, se debe calcular la tensión de diseño en flexión en la zona flexo-traccionada ($F_{ft,dis}$) y flexo-comprimida ($F_{fv,dis}$). Que se definen según las ecuaciones \ref{eq:ft_dis} y \ref{eq:fv_dis}.
 \begin{subequations}
 \begin{align}
 	F_{ft,dis}&=F_f \cdot K_H \cdot K_D \cdot K_C \cdot K_{hf} &\text{(MPa)} \label{eq:ft_dis}\\	
@@ -82,14 +99,19 @@ Donde $h$ es el ancho de la viga traccionada o altura de la viga, en mm.
 	\item Si en el punto anterior $(h/b) > 2$, $H_V$ se calcula en función de la esbeltez de volcamiento $\lambda_V$, de acuerdo a la sección \textbf{8.2.1.8}, la \textbf{Tabla 10} y \textbf{Tabla 12} de la norma.
 \end{enumerate}
 
-\subsection{Cizalle}
+En aquellos casos en los que la esbeltez de volcamiento ($\lambda_V$) sea mayor a la esbeltez del límite elástico ($\lambda_{vo}$), el factor de modificación se calcula como:
+\begin{equation}\label{eq:k_v}
+	K_v = \frac{0,4\cdot E_{f,dis}}{\lambda_{v}^2 \cdot F_{f,dis}'}
+\end{equation}
+
+\subsection{Cizalle en vigas simples}
 La tensión de trabajo máximo de cizalle longitudinal en elementos flexionados de madera, se calcula mediante la siguiente expresión:
 
 \begin{equation} \label{eq:f_cz}
-f_{cz} = \frac{1,5 \cdot Q}{b \cdot h} \cdot 10^{-3} \qquad \text{(MPa)}
+f_{cz} = \frac{1,5 \cdot Q}{b \cdot h} \qquad \text{(MPa)}
 \end{equation}
 \\
-La tensión de diseño de cizalle longitudinal se determina de la expresión \ref{eq:cz_dis} . El cizalle transversal no es necesario calcular o verificar debido a que nunca va a fallar por este esfuerzo, según la sección \textbf{8.2.3.1} de la norma.
+Donde $Q$ es el esfuerzo cortante máximo y $b$ y $h$ la base y altura en mm, respectivamente. La tensión de diseño de cizalle longitudinal se determina de la expresión \ref{eq:cz_dis} . El cizalle transversal no es necesario calcular o verificar debido a que nunca va a fallar por este esfuerzo, según la sección \textbf{8.2.3.1} de la norma.
 
 \begin{equation}\label{eq:cz_dis}
 	F_{cz.dis} = F_{cz} \cdot K_H \cdot K_D \cdot K_C \cdot K_r \qquad \text{(MPa)}
@@ -97,11 +119,11 @@ La tensión de diseño de cizalle longitudinal se determina de la expresión \re
 
 Donde $K_r$ es el factor de modificación por rebaje (inferior o superior), calculado según la sección \textbf{8.2.3.5}. Debido a que no es una condición que se encuentra en este trabajo, no se profundizará en este factor.\\
 
-\subsubsection{Cizalle en viga simple}
-\textcolor{red}{CALCULAR}
+
 \subsection{Compresión paralela a la fibra}
+\label{sec:cp}
 La tensión de trabajo de una columna simple sometida a compresión paralela a su fibra, se calcula:
-\begin{equation}
+\begin{equation}\label{eq:f_cp}
 	f_{cp}= \frac{N}{A} \cdot 10^{-3} \qquad \text{(MPa)}
 \end{equation}
 
@@ -116,8 +138,24 @@ La esbeltez se define como $\lambda = l_p/i$, donde $l_p$ es la longitud efectiv
 	F_{cp,\lambda,dis} &= F_{cp,dis} \cdot K_{\lambda} \label{eq:cp_dislambda}
 \end{align}
 \end{subequations}
-Donde $K_{\lambda}$ es el factor de modificación por esbeltez, calculado según la sección \textbf{8.3.2.3} de la norma. 
-Por lo tanto, si $\lambda < 5$, la tensión de diseño se calculará según \ref{eq:cp_dis}. Por otro lado, si $\lambda \geq 5$, entonces determina mediante la ecuación \ref{eq:cp_dislambda} debido a que el elemento presenta inestabilidad lateral.
+Donde $K_{\lambda}$ es el factor de modificación por esbeltez. Si $\lambda < 5$, la tensión de diseño se calculará según \ref{eq:cp_dis}. Por otro lado, si $\lambda \geq 5$, entonces determina mediante la ecuación \ref{eq:cp_dislambda} debido a que el elemento presenta inestabilidad lateral.
+
+El factor $K_{\lambda}$ se evalúa según la expresión:
+\begin{equation}\label{eq:k_lambda}
+	K_{\lambda} = A - \sqrt{A^2 - B}
+\end{equation}
+con:
+\begin{gather}
+	A = \frac{B\cdot c\cdot (1 + \frac{\lambda}{200}) + 1}{2\,c} \\
+	B = \frac{4\, E_{dis}}{c\cdot \lambda^2\cdot F_{cp,dis}}
+\end{gather}
+en que:
+\begin{itemize}
+	\item $c\:$: Corresponde al coeficiente de proporcionalidad y cuyos valores se obtienen de la tabla 19 de la norma a partir del grado estructural de la madera.
+	\item $E_{dis}\,$: Módulo elástico de diseño, calculado como el módulo elástico en flexión $E_f$ por los factores de modificación que resulten pertinentes.  
+	\item $F_{cp,dis}\,$: Tensión de diseño en compresíon paralela calculada según \ref{eq:cp_dis}, excluyendo el factor de modificación por trabajo conjunto, $K_C$, en MPa.
+\end{itemize}
+
 \subsection{Compresión normal a la fibra}
 La tensión de trabajo por aplastamiento en superficies de apoyo, solicitadas ortogonalmente a la fibra, se determina según la siguiente expresión:
 \begin{equation}
@@ -131,8 +169,8 @@ La tensión de diseño en compresión normal, se calcula a partir de la siguient
 \end{equation}
 Donde $K_{cn}$ es el factor de modificación por aplastamiento, que se calcula a partir de la sección \textbf{8.5.3} de la norma.
 
-\subsection{Tracción paralela}
-\textcolor{red}{LO COLOCO?????} página 58.
+%\subsection{Tracción paralela}
+%\textcolor{red}{LO COLOCO?????} página 58.
 
 \subsection{Nomenclatura y tipos de madera}
 Más allá de la especie, en el mercado es posible encontrar madera con distintas terminaciónes y dimensiones. Las principales diferencias se definen respecto al grado de manipulación del material y su uso final. Los tipos de madera relevantes a este trabajo son los siguientes:
@@ -151,12 +189,10 @@ Por otro lado, existen distintas configuraciones dependiendo de la escuadría y 
 	\item Base: Elemento de escuadría de 10x10'' o superior. 
 \end{itemize}
 
-Todas las dimensiones, independiente del formato o el tipo, son respecto a la madera en bruto. Por lo tanto, a pesar que las dimensiones reales de una madera cepillada o dimensionada son menores, se sigue denominando según su escuadría original. Así, las tablas \ref{anchodim} y \ref{espdim} muestran los valores reales para cada dimensión nominal.
+Todas las dimensiones, independiente del formato o el tipo, son respecto a la madera en bruto. Por lo tanto, a pesar que las dimensiones reales de una madera cepillada o dimensionada son menores, se sigue denominando según su escuadría original. Así, las tablas \ref{tab:anchodim} y \ref{tab:espdim} muestran los valores reales para cada dimensión nominal.
 
 \begin{table}[H]
 \centering
-\caption{\textcolor{red}{Espesor}}
-\label{espdim}
 \begin{tabular}{@{}cccc@{}}
 \toprule
 \multirow{2}{*}{Espesor Nominal {[}in{]}} & \multicolumn{2}{c}{Dimensionado {[}mm{]}} & Cepillado {[}mm{]} \\ \cmidrule(l){2-4} 
@@ -165,12 +201,12 @@ Todas las dimensiones, independiente del formato o el tipo, son respecto a la ma
 2                                 & 48                   & 45                 & 41                 \\ \midrule
 Tolerancia {[}mm{]}               & 0/+2                 & 0/+3               & 0/+2               \\ \bottomrule
 \end{tabular}
+\caption{Espesor nominal y real de la madera según el tratamiento recibido}
+\label{tab:espdim}
 \end{table}
 
 \begin{table}[H]
 \centering
-\caption{\textcolor{red}{Ancho}}
-\label{anchodim}
 \begin{tabular}{@{}cccc@{}}
 \toprule
 \multirow{2}{*}{Ancho Nominal {[}in{]}} & \multicolumn{2}{c}{Dimensionado {[}mm{]}} & Cepillado {[}mm{]} \\ \cmidrule(l){2-4} 
@@ -184,6 +220,8 @@ Tolerancia {[}mm{]}               & 0/+2                 & 0/+3               & 
 10                                      & 248                  & 235                & 230                \\ \midrule
 Tolerancia {[}mm{]}                     & 0/+2                 & 0/+3               & 0/+2               \\ \bottomrule
 \end{tabular}
+\caption{Ancho nominal y real de la madera según el tratamiento recibido}
+\label{tab:anchodim}
 \end{table}
 
 \section{Uniones en la madera estrutural}
@@ -258,6 +296,7 @@ La capacidad de carga admisible de una hilera es la suma de las capacidades de c
 Donde $\sum P_i$ es la suma de los valores admisibles de los elementos de unión individuales existentes en la hilera y $K_u$ es el factor de modificación por longitud de hilera, señalado en la sección \textbf{10.3.2.2} y las tablas 30 y 31 de la norma.
 
 \subsection{Uniones con perno}
+\label{sec:union_perno}
 Las especificaciones para pernos son aplicables para cualquier elemento cilíndrico de acero que atrevise perpendicularmente los planos de cizalle de la unión y que quedan solicitados preponderantemente en flexión induciendo sobre la madera tensiones de aplastamiento.
 
 Para su correcta instalación es necesario que los agujeros y las arandelas cumplan con ciertas dimensiones. El diámetro del agujero se debe mayorar respecto al del perno en función del tamaño del perno y las conduciones de humedad de servicio, siguiendo la tabla 33 de la sección \textbf{10.5.1.2} de la norma. Para las arandelas o golillas, se debe seleccionar primero si se utilizará una de forma circular o cuadrada, dando preferencia a esta última por ofrecer mayor resistencia al incustramiento en la madera. Luego , sus respectivas dimensiones están en función del diámetro del perno, siguiendo la tabla 34 de la norma.
@@ -296,7 +335,7 @@ Para casos distintos al establecido anteriormente, se deben realizar arreglos en
 	\item El valor determinado para una unión equivalente con todas sus piezas constituidas con la especie de la pieza central.
 \end{itemize*}
 
-Cuando se usen planchas de acero como piezas laterales, las cargas admisibles para solicitaciones orientadas según la dirección de la fibra, se peden mayorar en un 25\%, sin embargo estas mayoraciones no se permiten para las cargas admisibles calculadas con solicitaciones normales a la fibra.
+Cuando se usen planchas de acero como piezas laterales, las cargas admisibles para solicitaciones orientadas según la dirección de la fibra, se pueden mayorar en un 25\%, sin embargo estas mayoraciones no se permiten para las cargas admisibles calculadas con solicitaciones normales a la fibra.
 
 El valor obtenido de $P_{ad}$ según la ecuación \ref{eq:padm_ad}, considera el eventual aflojamiento de tuercas inherentes a la contracción de la madera.
 
@@ -308,9 +347,11 @@ Finalmente, para cizalle simple existen dos casos a considerar. Cuando la unión
 El segundo caso, cuando las piezas son de igual espesor, la carga admisible equivale a la mitad de la correspondiente a la de una unión de cizalle doble con una pieza central de espsor igual al de cada pieza.
 
 \subsubsection{Espaciamientos mínimos para pernos}
-Los espaciamientos mínimos que se deben respetar en las uniones con pernos se esquematizan en la figura \textcolor{red}{AÑADIR FIUGRA 26 NORMA}. El espaciemiento mínimo entre los pernos y los bordes cargados o descargados se establecen en función del diámetro del mismo, determinados por la tabla 36 de la sección \textbf{10.5.4} de la norma. El espaciamiento mínimo ente los pernos mismos, se establecen en la tabla 37 de la misma sección. 
+\label{sec:espaciamiento_pernos}
+Los espaciamientos mínimos que se deben respetar en las uniones con pernos se esquematizan en la figura \textcolor{red}{AÑADIR FIUGRA 26 NORMA}. El espaciamiento mínimo entre los pernos y los bordes cargados o descargados se establecen en función del diámetro del mismo, determinados por la tabla 36 de la sección \textbf{10.5.4} de la norma. El espaciamiento mínimo ente los pernos mismos, se establecen en la tabla 37 de la misma sección. 
 
 \subsection{Uniones con tirafondos}
+\label{sec:tirafondos}
 Los tirafondos son un tipo de unión mecánica similar a un tornillo, del cual se diferencia porque su longitud total está dividida en una zona roscada y otra lisa llamada vástago, como se muestra en la figura \textcolor{red}{AÑADIR IMAGEN 28 tirafondo}. Las especificaciones y cálculos indicado en esta norma son válidos para tirafondos que cumplan con las características del anexo M de la norma.
 
 Para obtener los valores de diseño para este tipo de unión, es necesario clasificar las especies madereras utilizadas según su densidad anhidra $\rho_o$ (obtenidas en el anexo E), de acuerdo a la tabla 38 de la norma.
@@ -326,7 +367,7 @@ Los tirafondos deben ser instalados en perforaciones guías con las característ
 		\item 65\% - 85\% para las de los grupos C y D.
 	\end{itemize*}
 \end{itemize*}
-Para tirafondos de diámetros iguales o mayores que $3/4"$ (ver anexo M) ocupar los porcentajes del límite superior de los intervalos señalados. Cuando los tirafondos con diámetros menores o iguales a 3/8" colocados en maderas del grupo A y B son sometidos a extracción directa, se puede evitar la perforación guía si los espaciamientos entre tirafondos y las distancias a los bordes de la pieza cumplen con las seccionas \textbf{10.5.4.1} y \textbf{10.5.4.2}.
+Para tirafondos de diámetros iguales o mayores que $3/4"$ (ver anexo M) ocupar los porcentajes del límite superior de los intervalos señalados. Cuando los tirafondos con diámetros menores o iguales a $3/8"$ colocados en maderas del grupo A y B son sometidos a extracción directa, se puede evitar la perforación guía si los espaciamientos entre tirafondos y las distancias a los bordes de la pieza cumplen con las seccionas \textbf{10.5.4.1} y \textbf{10.5.4.2}.
 La zona con rosca debe ser colocada en la perforación guía con una llave de tuerca. Se prohibe la aplicación de golpes de martillo en esta operación. Para facilitar la introducción y evitar daños en el tirafondo se acepta el empleo de lubricantes en la rosca o en la perforación.
 
 \subsubsection{Arandelas}
@@ -363,14 +404,14 @@ Cuando $P_{el,ad}$ es calculado para tirafondos colocados con su eje paralelo a 
 
 \subsubsection{Solicitaciones de extracción directa}
 La carga admisible de extracción directa de tirafondos colocados con su eje normal a las fibras de la madera, se determina con la expresión:
-\begin{equation}
-	P_{ed,ad} = \frac{P_{o}^{1,5} \cdot D^{0,75} \cdot l_{crit}}{978} \cdot 10^{-3} \qquad \text{(kN)}
+\begin{equation}\label{eq:ped_ad}
+	P_{ed,ad} = \frac{\rho_{o}^{1,5} \cdot D^{0,75} \cdot l_{crit}}{978} \cdot 10^{-3} \qquad \text{(kN)}
 \end{equation}
 Donde:
 
 \begin{align*}
 &P_{ed,ad} &= \quad &\text{carga admisible de extracción directa}\\
-&P_o &= \quad &\text{Densidad anhidra de la madera en} kg/m^3 \\
+&\rho_o &= \quad &\text{Densidad anhidra de la madera en} kg/m^3 \\
 &D &= \quad &\text{Diámetro del vástago del tirafondo en mm}\\
 &l &= \quad &\text{Longitud de penetración de la zona roscada del tirafondo (R-P) en la madera, en mm}\\
 &l_{crit} &= \quad &\text{Longitud de penetración de la zona roscada que desarrolla la capacidad admisible de}\\
