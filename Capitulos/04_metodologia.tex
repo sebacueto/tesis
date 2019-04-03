@@ -15,7 +15,7 @@ El departamento de ingeniería mecánica en el Campus Casa Central, posee una m�
 \subsection{Estado actual y antecedentes}
 Actualmente la máquina no puede ser utilizada por no estar anclada, estando apoyada sobre dos listones de madera, que a su vez, están sobre una mesa de madera como se aprecia en la figura REF. Por consiguiente, la máquina al ser utilizada comienza a vibrar, saltar y desplazarse lateralmente, lo que impide su uso prolongado por motivos de seguridad. Es decir, no es posible realizar correctamente un ensayo de fatiga de ningún material ni configuración.
 
-A partir de información verbal entregada por el profesor Fernando Rojas, se cree que la máquina fue adquirida por el departamento hace, al menos, 50 años atrás. Fue fabricada en Suiza por \textit{Alfred J. Amsler \& Co.} y su estructura completa es de acero fundido. Previo a la modificación actual del laboratorio, la máquina se encontraba anclada al piso con un bloque de concreto que fue demolido durante la remodelación, momento desde el cual se encuentra sin una solución definitiva. Más aún, varios equipos y máquinas de ensayo del laboratorio no se encuentran ancladas al piso ni con una instalación definitiva impidiendo su uso.
+A partir de información verbal entregada por el profesor Fernando Rojas, se cree que la máquina fue adquirida por el departamento hace, al menos, 50 años atrás. Fue fabricada en Suiza por \textit{Alfred J. Amsler \& Co.} y su estructura completa es de acero fundido. Previo a la remodelación del piso del laboratorio, la máquina se encontraba anclada al piso con un bloque de concreto que fue demolido durante los trabajos de remodelación, momento desde el cual se encuentra sin una solución definitiva. Más aún, varios equipos y máquinas de ensayo del laboratorio no se encuentran ancladas al piso ni con una instalación definitiva impidiendo su uso.
 
 La única modificación que posee la máquina, según la información recopilada, consiste en el cambio del contador de revoluciones o ciclos realizados en un ensayo de fatiga. Esta actualización consistió en sacar el contador mecánico original y reemplazarlo por un contador electrónico, el cual tiene sus controles y el display adosada a su estructura, como se puede apreciar en la figura \textcolor{red}{agregar imagen del contador}. 
 
@@ -47,7 +47,7 @@ Finalmente, para realizar los ensayos en distintas configuraciones existen disti
 La máquina de fatiga tiene como objetivo lograr que para cada ciclo se ejerza el mismo esfuerzo determinado sobre la probeta, en forma de flexión. Para lograr esto, el mecanismo utilizado es un disco desequilibrado girando a una velocidad constante $\dot{\theta}$, la fuerza es transmitida hasta un brazo que sostiene a su vez a la probeta, generando flexión en la probeta con un doble empotramiento. La velocidad $\dot{\theta}$ del disco se transmitida desde el motor eléctrico a través de poleas y una correa de transmisión en una relación de 1:1 \textcolor{red}{revisar}, a una velocidad de 1500 revoluciones por minuto. Así, para realizar las mediciones de fatiga a distintas cargas se modifica el desequilibrio del disco a través de un conjunto de masas, mostradas en la figura REF, que permiten generar distintas configuraciones y, por consiguiente, esfuerzos en la probeta.
 
 \textcolor{red}{Agregar imagen de contrapesos}
-
+ c
 Los elementos utilizados para desbalancear son 6 discos pequeños de X \textcolor{red}{medir radio masas} a Y de diámetro. Estos son enumerados del 1 al 5, donde el 1 es el más liviano y el 5 el más pesado, todos de distinto peso y el quinto se encuentra repetido. Estas se colocan en los extremos del disco giratorio, como se ve en la figura REFimagendisco, dependiendo de la carga que se desee generar. Para conocer que configuración corresponde a cada esfuerzo aplicado sobre la probeta, se utiliza la tabla de cargas explicada a continuación.
 
 
@@ -71,7 +71,7 @@ Con esto, la probeta a ensayar estará sometida a un esfuerzo en flexión, empot
 
 \textcolor{red}{Mordazas}
 \subsection{Mediciones}
-Para realizar un correcto diseño de la estructura soportante y la compresión de su funcionamiento, se hace vital poder contar con información confiable para obtener resultados correctos. Para esto, las mediciones se dividirán según su objetivo en el desarrollo de este trabajo.
+Para realizar un correcto diseño de la estructura soportante y la comprensión de su funcionamiento, se hace vital poder contar con información confiable para obtener resultados correctos. Para esto, las mediciones se dividirán según su objetivo en el desarrollo de este trabajo.
 \subsubsection{Diseño de estructura}
 Las medidas de la mesa actual son: 
 \begin{itemize}
@@ -92,8 +92,8 @@ V_{superior} &=(30,2\cdot 84\cdot 32 - 26\cdot 78\cdot 28,5) \; \text{cm}^3	\\
 	m_{maq} = \rho_{ac. fundido} \cdot V_{b+s} = 198,8 \: kg \approx 200 \: kg
 \end{equation}
 
-\subsubsection{Caracterización de los componentes}
-\subparagraph{Sistema de transmisión}
+\subsubsection{Componentes de la máquina de fatiga}
+\subparagraph{Sistema de transmisión.}
 El sistema de transmisión está compuesto por el motor eléctrico, cuyas características se detallaron anteriormente, la correa de transmisión y ambas poleas. Las dimensiones y características de las poleas conductora y conducida, como también de la correa se encuentran en la tabla \ref{tab:sist_transmision}. 
 
 \begin{table}[h]
@@ -112,7 +112,7 @@ Configuración            & Cruzada 			\\ \bottomrule
 \label{tab:sist_transmision}
 \end{table}
 
-\subparagraph{Barras de acero}
+\subparagraph{Barras de acero.}
 El conjunto de barras de acero que sostienen el disco en empotrado-libre, tienen medidas levemente distintas para las superiores respecto a las inferiores, separadas por una distancia de 32 mm. La tabla \ref{tab:medidas_barrasacero} muestra las medidas de cada una.
 \begin{table}[h]
 \centering
@@ -127,15 +127,17 @@ Largo        & 333                        & 333                        \\ \botto
 \label{tab:medidas_barrasacero}
 \end{table}
 
-\subparagraph{Sistema de transmisión de fuerzas}
-El brazo principal (figura REF) que ejerce la fuerza sobre la probeta proveniente del disco desbalanceado, está constituido por tres partes principales. La primera de ellas es la parte trasera, con forma regular de paralelepípedo, está hecho de una aleación de aluminio y dos tercios de su longitud es ahuecada. La segunda y principal, está hecha de acero fundido y añade el mayor porcentaje de masa al total del brazo. Finalmente, la última parte consiste en la mordaza, unida a la sección principal con dos pernos que permiten ajustar su posición. La longitud total del brazo es de 359 mm y su masa total 2,305 kg.
+Con estos datos, es posible calcular el segundo momento de área respecto a un eje central horizontal equidistante entre las barras superiores e inferiores, según el cual es obtiene $I=asfaf$. 
+
+\subparagraph{Sistema de transmisión de fuerzas.}
+El brazo principal (figura REF) que ejerce la fuerza sobre la probeta proveniente del disco desbalanceado, está constituido por tres partes principales. La primera de ellas es la parte trasera, con forma regular rectangular, está hecho de una aleación de aluminio y dos tercios de su longitud es ahuecada. La segunda y principal, está hecha de acero fundido y añade el mayor porcentaje de masa al total del brazo. Finalmente, la última parte consiste en la mordaza, unida a la sección principal con dos pernos que permiten ajustar su posición. La longitud total del brazo es de 359 mm y su masa total 2,305 kg.
 
 \textcolor{red}{Imagen brazo-mordaza}
 
-La transmisión de la carga entre el disco desbalanceado y el brazo se da a través de dos barras de acero, uno a cada lado del disco, de diámetro 6,2 mm y largo de 169 mm.
+La transmisión de la carga entre el disco desbalanceado y el brazo de carga se da a través de dos barras de acero redondas, uno a cada lado del disco, de diámetro 6,2 mm y largo de 169 mm.
 
-\subparagraph{Disco desbalanceado}
-En base a las características visuales y auditivas del disco, se cree que está construido en alguna aleación de aluminio. Su radio $R_d =$ 112 mm y espesor de . 
+\subparagraph{Disco desbalanceado.}
+En base a las características visuales y auditivas del disco, se cree que está construido en alguna aleación de aluminio. Su radio $R_d =$ 112 mm y espesor de 6,4 mm. 
 
 La masa de cada contrapeso, medidos en el laboratorio de metalúrgica con pesas blablabla.
 \begin{table}[H]
@@ -153,7 +155,10 @@ Contrapeso & Masa {[}g{]} \\ \midrule
 \label{tab:masa_contrapesos}
 \end{table}
 
+Por otra parte, no fue posible medir directamente la masa del disco al no poder desarmarlo ni separarlo de su eje. Por lo tanto, se midió de la flecha de la viga en voladizo producida por la masa del disco, la polea, el sistema de sujeción y las barras de acero, se pudo obtener la masa aproximada del disco. Sin embargo, si bien se restó la fuerza producida por la masa de las barras, se incluyó en el cálculo el resto de los elementos acompañantes del disco en la masa obtenida.
 
+\subparagraph{Probeta.} La probeta utilizada actualmente para el ensayo de fatiga es de acero AISI 1020. Su geometría, como se aprecia en la figura REF, consiste en una pequeña viga de largo 3\nicefrac{1}{2}'', de sección cuadrada en sus extremos y una entalladura en el medio de sección circular, de lado \nicefrac{1}{2}'' de lado y 0,3'' de diámetro respectivamente.
+ 
 \section{Diseño de estructura}
 El proceso de diseñar la estructura hasta su resultado final pasó por distintas etapas. Esto por el proceso de aprendizaje y comprensión de la norma de calculo de madera NCh 1198, como también por la restricción y disponibilidad de materiales, tecnología o medidas acorde a las necesidades. El diseño presentado en este trabajo se muestra en la figura REF, hecho principalmente de madera, junto a elementos de acero. El objetivo de esta estructura es fijar y soportar la máquina de fatiga tanto en reposo como en operación, buscando como características su durabilidad, lo modular de las piezas y la opción de modificarla en el futuro.
 
@@ -429,23 +434,289 @@ Para el caso de la extracción directa es la ecuación \ref{eq:ped_ad} la que de
 \end{equation} 
 
 \subsubsection{Herrajes y conectores}
+La elección de los conectores y herrajes utilizados se baso en tres aspectos principales: la disponibilidad de los productos en la región, la compatibilidad con los elementos de madera y con las cargas que pueden resistir según el fabricante. Estos consisten en un elemento de metal, acero generalmente, que permite la unión de dos o más piezas de madera para soportar determinadas cargas. Existen en distintas geometrías y el mecanismo de conexión entre acero y madera es a través de elementos de unión mecánica, es decir, pernos, clavos y tornillos, principalmente. Para este trabajo se utilizaron tres tipos, los cuales une las vigas A y B, B y D y B con el suelo del laboratorio, todos fabricados por la marca Simpson Strong-Tie.
 
+Para la primera unión se utilizó en el diseño un ángulo de apoyo modelo A66, donde cada brazo tiene una longitud de 6''. La unión mecánica utilizada son los clavos de \textcolor{red}{buscar dimensiones}. Como se puede apreciar en la figura REF, este ángulo busca responder a las fuerzas que son paralelas al plano horizontal.
+
+\textcolor{red}{imagen A66}
+
+Para la unión del pilar B y la viga D se utilizó \textcolor{red}{colocar nombre}. Este se une a través de un perno por cada brazo de \textcolor{red}{dimensiones}. Estos buscan soportar la carga provocada por el propio peso y evitar los desplazamientos horizontales. Su disposición se puede ver en la figura REF, donde se aprecia cómo se utilizan dos ángulos por conexión.
+
+\textcolor{red}{Detalle del diseño de la mesa}
+
+Por último, la unión entre el piso y el pilar B se escogió un ángulo de anclaje A24. Utiliza un perno de anclaje para el piso y otro normal que es adosado en el otro extremo del pilar por un segundo ángulo de anclaje, de manera similar a la unión B-D. La imagen REF muestra en detalle el diseño de la conexión.
+ 
 \subsection{Simulaciones}
+Las simulaciones de la máquina se utilizaron como apoyo y contraparte de los cálculos realizados manualmente. Éstas se realizaron en el software Inventor AutoCAD, en el ambiente ``\textit{Stress Analysis}''. A través de esto se busco confirmar que los resultados obtenidos en los cálculos estáticos se encuentran fuera de los rangos de falla y obtener las frecuencias naturales de la estructura, utilizando ``\textit{Static and Modal Analysis}'' respectivamente.
+
+Debido a las limitantes del programa utiilzado, se debieron adaptar las propiedades mecánicas ortotrópicas de la madera, las cuales no era posible simular directamente. Para esto, se utilizaron los valores mínimos del Módulo de Young y las tensiones admisibles en sus direcciones normales y perpendiculares, buscando representar de manera segura las propiedades ortotrópicas en una configuración isotrópica.
+
+Como condición del problema, en ambas simulaciones, los apoyos del pilar se consideraron empotrados, restringiendo cualquier grado de movimiento en su base. Además, las uniones se consideraron perfectas y sin desplazamientos.
 \subsubsection{Estática}
+Las condiciones...
 \subsubsection{Modal}
+La configuración...
 
+\section{Modelo del sistema de vibratorio}
+Luego del levantamiento de información, se busca analizar y predecir el comportamiento de la máquina en sus distintas configuraciones. Para esto se utiliza la información disponible para realizar un modelo del funcionamiento de la máquina de fatiga, en específico, de la carga aplicada a la probeta en función de la velocidad de rotación del disco y las distintas combinaciones de contrapesos. El disco se encuentra en voladizo, cuyo desequilibrio a partir de los contrapesos colocados produce una fuerza que es transmitida hacia un brazo de carga. Este, a su vez, aplica un momento de flexión sobre una probeta que está doblemente empotrada por mordazas.
 
-\section{Modelo del sistema de funcionamiento}
-\subsection{Diagrama del sistema}
+Para obtener el comportamiento y la fuerza que produce el desbalanceo en el disco sobre la probeta, se modelará un sistema de dos grados de libertad para representar el movimiento de la máquina y sus componentes, realizando ciertas simplificaciones y suposiciones. Se utilizará el método de energía para resolver el sistema.
+
+A través de esto, se pretende obtener la posición en reposo de la máquina y la deformación máxima que sufre la probeta según la combinación de contrapesos. En concreto, la posición en reposo de la máquina, en otras palabras, la deformación producto de la masa de los elementos, entregará información sobre cual es la carga media y esfuerzo medio que sufre la probeta. En cambio, la deformación máxima es la información relativa al esfuerzo alternante que se le aplica a la probeta según la configuración utilizada. Por ello, el modelo deberá partir de una posición a conveniencia en un tiempo inicial y sin fuerzas externas interviniendo. Posteriormente, una vez que se haya alcanzado la posición de equilibrio, la fuerza externa producida por el disco desbalanceado comenzará a funcionar hasta que vibre de manera estacionaria. Al respecto, al ser la fuerza dependiente de la velocidad angular del disco, se introducirá una función que llamaremos $\phi$ la cual controlará la aceleración y velocidad del disco.
+
+\subsection{Elementos del sistema}
+La imagen REF muestra todas los elementos que participan en el funcionamiento de la máquina y que afectan su comportamiento. Sin embargo, estos se llevarán a un diagrama que representará los elementos y las simplificaciones utilizadas para modelar el movimiento de la máquina, en específico, del brazo de carga.  
+
+\textcolor{red}{Foto de la máquina abierta}
 
 \subsection{Modelo del sistema}
-\subsubsection{Simplificaciones}
-\subsubsection{Modelo del disco desbalanceado}
-\subsubsection{Cálculo y obtención de valores del sistema}
+\label{sec:mod_sist}
+Como se señaló, para poder crear un modelo del sistema y obtener soluciones, se realizaron simplificaciones y suposiciones que permiten llegar a una solución. Así, la figura REF muestra el diagrama que se modelará con las ecuaciones de movimiento. Parte de estas simplificaciones es la exclusión de las fuerzas horizontales, en dirección de la coordenada $x$, de acuerdo a la referencia utilizada. Para esto, también es necesario quitarle los grados de libertad a la barra de transmisión de la carga y simplificar la carga producida por la rotación del disco, explicado en la sección siguiente. Por último, se asumirá que el movimiento angular del brazo de carga será lo suficientemente pequeño como linealizar la función trigonométrica del ángulo $\theta$, aproximándose los valores de $\sin(\theta) = \theta$ y $\cos(\theta)=1$.
 
-\subsection{Ecuaciones de movimiento de la máquina de fatiga}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.13]{Imagenes/mach_diagram.jpg}
+\caption{Diagrama del modelo utilizado y el sistema de coordenadas.}
+\label{fig:diag_modelo}
+\end{figure}
 
-\subsection{Carga sobre la probeta}
+Los sistemas de coordenadas $y(t)$ y $\theta (t)$ definen la posición y el movimiento del brazo de carga en cualquier instante $t$. Al ser independientes entre sí y no depender de ninguna restricción, es que las coordenadas generalizadas serán $q_1 = y$ y $q_2 = \theta$. A modo de conveniencia se establecerán las variables $y_1$ e $y_2$, las cuales describen el movimiento en ambos extremos del brazo.
+\begin{gather}
+	y_1(t) = y(t) - l_1\theta(t) \label{eq:y1}\\
+	y_2(t) = y(t) + l_2\theta(t) \label{eq:y2}
+\end{gather}
+Cuando $y(t_0) = 0$ y $\theta(t_0) = 0$ la deformación en ambos resortes será cero, por lo tanto las variables $y_1$ e $y_2$ son equivalentes a la deformación de los resortes. La rigidez de cada resorte se denotarán como $k_1$, relativo a las barras de acero, y $k_2$, relativo a la probeta.
 
-\section{Análisis de información existente}
-\subsection{Simulación de cargas}
+Por otro lado, la velocidad de las coordenadas se definirán como $\dot{y}(t)$ y $\dot{\theta}(t)$ y, de manera análoga, la aceleración como $\ddot{y}(t)$ y $\ddot{\theta}(t)$. A partir de las ecuaciones \ref{eq:y1} y \ref{eq:y2} se obtiene que:
+\begin{gather}
+	\dot{y_1}(t) = \dot{y}(t) - l_1\dot{\theta}(t) \quad ;\quad \ddot{y_1}(t) = \ddot{y}(t) - l_1\ddot{\theta}(t) \\
+ 	\dot{y_2}(t) = \dot{y}(t) - l_2\dot{\theta}(t) \quad ;\quad \ddot{y_2}(t) = \ddot{y}(t) - l_2\ddot{\theta}(t) 
+\end{gather}
+La variable $M_a$ representa la masa total del disco, que se expresa como:
+\begin{equation}\label{eq:m_a}
+	M_a = M_d + m_1 + m_2
+\end{equation}
+Donde $M_d$ es la masa del disco y $m_1$ y $m_2$ la suma de los contrapesos colocados en cada soporte. 
+
+Las constantes del brazo de carga, $M_b$ es la masa total del brazo de carga e $I_{gb}$ el momento de inercia con respecto al centro de masa. Las longitudes $l_1$ y $l_2$ corresponden a la distancia entre el centro de masa y la unión con la barra y la probeta, respectivamente. Por último, las constantes $c_1$ y $c_2$ son los amortiguamientos correspondientes a cada resorte.
+
+
+\subsubsection{Modelo del disco}
+Frente a la eliminación de las fuerzas horizontales del modelo, se simplificó la carga producida por el disco desbalanceado a una fuerza variable en el tiempo, que actúa solo en dirección vertical y es externa al sistema. Esta fuerza queda expresada de la siguiente forma:
+\begin{equation}\label{eq:fza_gen}
+	F(t) = M_a\, e_{ga}(\dot{\phi}^2 \sin\phi - \ddot{\phi} \cos\phi)
+\end{equation}
+La variable $e_{ga}$ corresponde a la excentricidad del centro de masa del disco provocada por el desequilibrio entre $m_1$ y $m_2$, el cual se detallará en la sección siguiente. También, la función $\phi$, con su respectiva velocidad y aceleración, es la coordenada angular del disco respecto al tiempo, la que será explicada en la sección \ref{sec:function_angle}.
+
+\subsubsection{Ecuaciones de movimiento}
+Utilizando el diagrama expuesto, entonces es posible escribir las ecuaciones que describen el movimiento del sistema utilizando el método de energía. Para esto, es necesario identificar los sistemas que actúan como parte de la energía cinética y potencial del sistema, además de las fuerzas externas que interactúan.
+
+A partir de la ecuación REF, se sabe que los elementos que actúan como resortes tienen el comportamiento de almacenar energía potencial. La ecuación REF, expresa los elementos que interactúan en el sistema:
+\begin{equation}
+	U_k = \frac{1}{2} \left(k_1\cdot y_1^2 + k_2\cdot y_2^2\right)
+\end{equation}
+La energía potencial gravitatoria se obtiene al utilizar la ecuación REF, por lo tanto, se obtiene:
+\begin{equation}
+	U_g = g\cdot \left(M_a\, y_1 + M_b\, y\right)
+\end{equation}
+Por otro lado, la energía cinética se calcula según la ecuación REF para cada masa del sistema.
+\begin{equation}
+	T = \frac{1}{2} \left(M_a\, \dot{y_1}\ 2 + M_b\, \dot{y}^2\right)
+\end{equation}
+La energía disipada por el amortiguamiento viscoso se modela utilizando la ecuación REF, llamada función de disipación de Reyleigh. 
+\begin{equation}
+	R = \frac{1}{2} \left(c_1\, \dot{y_1}^2 + c_2\, \dot{y_2}^2\right)
+\end{equation}
+Por último, la fuerza generalizada $Q_i$ es la fuerza variable \ref{eq:fza_gen} proveniente del disco desbalanceado.
+
+Con esto, el método de Lagrange define al lagrangiano $L$ como la resta entre la energía cinética $T$ y la energía potencial total $U$, la cual según la ecuación REF, es la suma de la energía potencial elástica y gravitatoria. Así, la ecuación de energía para un sistema con amortiguamiento y forzado, a través del método de Lagrange es:
+\begin{equation}
+	\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{q_i}}\right) - \frac{\partial L}{\partial q_i} = Q_i - \frac{\partial R}{\partial \dot{q_i}}
+\end{equation}
+Al reemplazar y derivar cada término para cada coordenada generalizada, quedan las siguientes expresiones:
+\begin{subequations}
+\begin{align}
+	M_b\, \ddot{y} + M_a\, \ddot{y_1} + k_1\, y_1 + k_2\, y_2 + M_a\, g + M_b\, g &= F(t) - c_1\, \dot{y_1} - c_2\, \dot{y_2} \\
+	I_{gb}\, \ddot{\theta} - M_a\, y_1\, l_1 - k_1\, y\, l_1 + k_2\, y_2\, l_2 - M_a\, g\, l_1 &= F(t)\cdot l_1 + c_1\, \dot{y_1}\, l_1 - c_2\, \dot{y_2}\, l_2 
+\end{align}
+\end{subequations}
+Al reemplazar las variables $y_1$ e $y_2$ y re acomodando los términos, se obtienen las dos ecuaciones de movimiento del brazo de carga:
+\begin{subequations}
+\begin{multline}\label{eq:mov_y}
+	\ddot{y}(M_a + M_b) - \ddot{\theta}M_al_1 + k_1(y - l_1\theta) + k_2(y + l_2\theta) + \dots \\
+	 M_a\, g + M_b\, g = F(t) - c_1(\dot{y} - l_1\dot{\theta}) - c_2(\dot{y} + l_2\dot{\theta}) 
+\end{multline} 
+\vspace{-17mm}
+\begin{multline}\label{eq:mov_theta}
+	\ddot{\theta}(I_{gb} - M_al_1) - \ddot{y}M_al_1 + k_1(y - l_1\theta)\cdot l_1 + k_2(y + l_2\theta)\cdot l_2 + \dots \\
+	M_a\, g\, l_1 = F(t)\cdot l_1 + c_1(\dot{y} - l_1\dot{\theta})\cdot l_1 - c_2(\dot{y} + l_2\dot{\theta})\cdot l_2 
+\end{multline}
+\end{subequations}
+
+Estas se pueden reescribir de forma matricial:
+
+\begin{equation}\label{eq:mov_matriz}
+\begin{split}
+\begin{bmatrix}
+	M_a + M_b	& -M_a\,l_1 \\
+	-M_a\,l_1	& I_{gb} - M_a\,l_1^2
+\end{bmatrix}
+\begin{bmatrix}
+	\ddot{y}\\
+	\ddot{\theta}
+\end{bmatrix} +
+\begin{bmatrix}
+	c_1 + c_2			& c_2\,l_2 - c_1\,l_1\\
+	c_2\,l_2 - c_1\,l_1	& c_2\,l_2^2 - c_1\,l_1^2\\
+\end{bmatrix}
+\begin{bmatrix}
+	\dot{y}\\
+	\dot{\theta}
+\end{bmatrix} + \dots \\
+\begin{bmatrix}
+	k_1 + k_2			& k_2\,l_2 - k_1\,l_1\\
+	k_2\,l_2 - k_1\,l_1	& k_2\,l_2^2 - k_1\,l_1^2
+\end{bmatrix}
+\begin{bmatrix}
+	y\\
+	\theta
+\end{bmatrix} =
+\begin{bmatrix}
+	F(t) - g(M_a + M_b)\\
+	F(t)\cdot l_1 + g\,M_a\,l_1
+\end{bmatrix}
+\end{split}
+\end{equation}
+
+\subsection{Cálculo y obtención de constantes características del sistema}
+ 
+\subsubsection{Rigidez y amortiguamiento} Las constantes de rigidez de las barras de acero $k_1$ y de la probeta $k_2$ se obtuvieron simulando su deformación elástica a través del software Inventor Autodesk. Para ello, se empotraron en un extremo y se les aplicaron distintas niveles de carga en el otro. Con los datos obtenidos fue posible ajustar una curva en una gráfica de deformación versus fuerza aplicada, donde la pendiente obtenida es la constante de rigidez del elemento. 
+
+Además, se realizaron cálculos para comprobar el orden de magnitud obtenido a través del software. Para esto se utilizó la ecuación \ref{eq:k_cantilever}, para una viga en voladizo.   La tabla REF muestra los resultados de ambos métodos.
+\begin{table}[h]
+\centering
+\begin{tabular}{ccc}
+\hline
+Método & Barras de acero & Probeta \\ \hline
+Simulación Inventor &  &  \\
+Cálculo &  &  \\ \hline
+\end{tabular}
+\caption{Valores obtenidos de la rigidez de las barras de acero y la probeta de acero}
+\label{tab:k_valor}
+\end{table}
+Los datos utilizados en el modelo corresponden a los obtenidos por simulación.
+
+Por otro lado, los valores de $c_1$ y $c_2$ se estimaron de manera cualitativa, visualizando la curvas de $y(t)$ y $\theta(t)$ para buscar que la vibración inicial se disipara antes del inicio de la función de aceleración del disco. Así, los valores obtenidos son:
+\begin{itemize}
+	\item $c_1= 100$
+	\item $c_2= 100$ 
+\end{itemize}
+\subsubsection{Segundo momento de área}
+El segundo momento de área o segundo momento de inercia, se calculó para obtener la rigidez de los dos elementos anteriores. Para el segundo momento de inercia de la probeta se utilizará la sección transversal de la sección media de la probeta. Así, su valor es:
+\begin{equation}
+	I_p = \frac{\pi \cdot d^4}{32} = 330,994\: \text{mm}^4
+\end{equation}
+
+\subsubsection{Momento de inercia del brazo de carga}
+El momento de inercia del brazo de carga se obtuvo a través del modelo CAD del mismo. Su valor es 
+
+\subsubsection{Longitud, masa y módulo de elasticidad}
+Los elementos del sistema explicados en la sección \ref{sec:mod_sist}, tienen un valor definido que fue medido como parte del levantamiento de información. La distancia correspondiente a cada extremo respecto al centro de masa es:
+\begin{itemize}
+	\item $l_1=$ 42,43 mm
+	\item $l_2=$ 158,07 mm
+\end{itemize}
+Además, la masa $M_b$ corresponde a la masa medida del brazo de carga, como se especificó en la sección
+\begin{itemize}
+	\item $M_b=$ 2,305 Kg
+\end{itemize}
+Por otro lado, la masa $M_a$ como se señaló en la ecuación \ref{eq:m_a}, corresponde a la suma de tres elementos. El primero de ellos, la masa del disco, tiene un valor de:
+\begin{itemize}
+	\item $M_d=$ 19,2029 kg
+\end{itemize}
+Los valores correspondientes a $m_1$ y $m_2$ son variables y pueden ir desde 0 g hasta 92,3469 g de acuerdo a la configuración escogida. Las distintas combinaciones y valores que pueden tener se encuetran en la tabla del anexo REF.
+
+Finalmente, el modulo de elasticidad utilizado corresponde al del material de la probeta que actualmente se utiliza. Al ser acero, su valor es:
+\begin{itemize}
+	\item $E_p=$ 200 GPa
+\end{itemize}
+\subsubsection{Excentricidad}
+La excentricidad del centro de masa $e_{ga}$ se calculó utilizando los datos del disco, la distancia de los soportes y la configuración de masas. Por lo tanto, se define como:
+\begin{equation}
+	e_{ga} = \frac{R_d\cdot (m_1 - m_2)}{(m_1 + m_2)}
+\end{equation}
+\subsection{Función de la aceleración del disco}
+\label{sec:function_angle}
+La filosofía detrás de la función $\phi$ es poder controlar el tiempo de retraso de la rotación del disco, que se designará como $T_i$, y suavizar la aceleración del mismo hasta que llega a la velocidad de rotación máxima $\omega_{max}$. Para esto, la función de la aceleración $\ddot{\phi}(t)$ se formuló como una función por partes, como se ve en la imagen \ref{fig:anglepp}, donde el parámetro $T$ indicará la suavidad con la que es acelerado el disco. Estas tres variables, $T_i$, $\omega_{max}$ y $T$, son valores de entrada que se eligen dependiendo de los resultados que se deseen.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.45,trim={6.5cm 2cm 10cm 2cm},clip]{Imagenes/anglepp_function.pdf}
+\caption{Función por parte de la aceleración del disco}
+\label{fig:anglepp}
+\end{figure}
+Así, la función $\ddot{\phi}$ adquiere la forma:
+\[ \ddot{\phi}(t) =
+\begin{dcases}
+	0																		&	t \leq T_i \\
+	\left(\frac{\omega_{max}}{T^2}\right)\left(t - T_i\right)				&	T_i < t \leq T_i + T\\
+	\left(\frac{\omega_{max}}{T}\right)\left(2 - \frac{t - T_i}{T}\right)	&	T_i + T < t \leq T_i + 2T\\
+	0																		&	T_i + 2T < t\\
+\end{dcases} 
+\]
+Para obtener la función de la velocidad $\dot{\phi}(t)$ se debe integrar la función anterior, donde las constantes de integración se obtienen por los valores extremos conocidos. Cuando $\dot{\phi}(T_i) = 0$ y $\dot{\phi}(T_i + 2T) = \omega_{max}$. Por lo tanto, se define como:
+\[ \dot{\phi}(t) =
+\begin{dcases}
+	0																												&	t \leq T_i \\
+	\left(\frac{\omega_{max}}{2T^2}\right)\left(t^2 - 2T_i\cdot t + T_i^2\right)									&	T_i < t \leq T_i + T\\
+	\left(\frac{\omega_{max}}{T}\right)\left(2t - 2T_i - 3T + \frac{4T^2 - T_i^2 - t^2 + 2T_i\cdot t}{2T}\right)	&	T_i + T < t \leq T_i + 2T\\
+	\omega_{max}																									&	T_i + 2T < t\\
+\end{dcases} 
+\]
+El resultado de la función por parte de la velocidad, se muestra en la imagen \ref{fig:anglep}.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.3,trim={5cm 0cm 4cm 0cm},clip]{Imagenes/anglep_function.pdf}
+\caption{Función por parte de la velocidad angular del disco}
+\label{fig:anglep}
+\end{figure}
+
+Para concluir, se repite el mismo procedimiento anterior para obtener la función $\phi (t)$, sin embargo, para conocer las constantes de integración, los puntos conocidos serán cuando $\phi(T_i) = 0$ y la igualdad de la función en el punto $T_i + T$. Así, es obtiene:
+\[ \phi (t) =
+\begin{dcases}
+	0																									&	t \leq T_i \\
+	\left(\frac{\omega_{max}}{6T^2}\right)\left(t^3 - 3T_i\cdot^2 t + 3T_i^2\cdot t - T_i^3\right)		&	T_i < t \leq T_i + T\\
+	\phi_3																								&	T_i + T < t \leq T_i + 2T\\
+	\omega_{max}\, t - \omega_{max}(T + T_i)															&	T_i + 2T < t\\
+\end{dcases} 
+\]
+La función $\phi_3$ correspondiente al dominio cuando $t$ es mayor $T_i + T$ y menor a $T_i  + 2T$ es:
+\begin{multline*}
+\Phi_3 = \left(\frac{\omega_{max}}{T}\right)\left(t^2 - 2T_i\cdot t - 3T\cdot t + \left(\frac{1}{2T}\right)\left(4T^2\cdot t - T_i^2\cdot t - \frac{t^3}{3} + T_i\cdot t^2\right)\right)\dots \\
+ + \left(\frac{1}{6T^2}\right) \left(2\omega_{max}T^3 + 6\omega_{max}T^2T_i + 6\omega_{max}T\,T_i + \omega_{max}T_i^3\right)
+\end{multline*}
+
+\subsection{Solución del modelo}
+Para resolver el sistema de ecuaciones que se obtuvo en \ref{eq:mov_matriz}, se utilizó el solver de ecuaciones diferenciales ordinarias de MATLAB, ode45. Se basa en el método de Runge-Kutta con un espacio de tiempo variable, buscando eficiencia computacional, para resolver sistemas de EDOs de primer orden y con condición inicial. El solver sigue los siguientes comandos:
+\begin{center}
+	\texttt{[t,x] = ode45(odefun,tspan,x0,options)}
+\end{center}
+
+El primero de ellos, \texttt{odefun} es el nombre del archivo que contiene a la función a evaluar, que será la entrada del sistema de primer orden a ser integrado. En segundo lugar, \texttt{tspan} es el vector que define el inicio y el final de los límites de integración. A continuación, \texttt{x0} es el vector de los valores iniciales correspondiente a cada variable que ingresa a través de \texttt{odefun}. Por último, \texttt{options} es un argumento opcional de integración, que se define a través de \texttt{odeset}. Definiendo \texttt{odeset}, es posible crear o modificar opciones de estructura para solvers de EDOs. A través de este, se definió la tolerancia de error relativa (`RelTol') y absoluta (`AbsTol').
+
+Por otra parte, el sistema a trabajar es un sistema de segundo orden, por lo tanto, es necesario realizar un cambio de variables para poder resolverlo. Se añadirán las nuevas variables $\gamma$ y $\beta$, realizando la siguiente derivación:
+\[ \left. 
+\begin{array}{ll}
+	\gamma = \dot{y}\\
+	\beta = \dot{\theta}\\
+\end{array}
+\right\}
+\begin{array}{ll}
+	\dot{\gamma} &= \ddot{y}\\
+	\dot{\theta} &= \ddot{\theta}\\
+\end{array}\]
+Una vez despejado los valores de $\ddot{y}$ y $\ddot{\theta}$, entonces la función a resolver estará dada por los elementos $(\gamma, \dot{\gamma}, \beta, \dot{\beta})$.  
+
+\subsubsection{Valores obtenidos}
+
+\section{Simulación de cargas}
+
