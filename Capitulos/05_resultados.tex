@@ -1,1 +1,64 @@
-\chapter{Resultados}
+\chapter{Análisis y Resultados}
+
+\section{Levantamiento de información}
+Por medio del levantamiento de información es posible hacer un pequeño análisis del estado actual y los datos obtenidos. Por un lado, la estructura actual responde a la necesidad de colocar la máquina en una ubicación transitoria, debido a los trabajos realizados en el piso del laboratorio durante el año 2012. Por lo mismo, no está diseñada para la operación de la máquina bajo ningún contexto por los peligros que conlleva. Aún cuando esta podría ser modificada, se desconocen las características y propiedades de la especie maderera con la que fue fabricada, lo que obliga a diseñar y construir un nuevo soporte para la máquina. 
+
+Por otra parte, la información obtenida de la máquina de fatiga da cuenta de tres puntos importantes. La antigüedad de sus componentes y la tecnología utilizada afecta directamente en su mantenimiento ante la dificultad de encontrar piezas de repuesto, debido a que las dimensiones de sus componentes, como la polea y la correa, se encuentran fuera de catálogo o de las dimensiones de fabricación de los proveedores. También la obsolescencia de la tecnología afecta su mantenimiento, siendo difícil poder encontrar no sólo las piezas de repuesto, sino que también personas que estén técnicamente calificadas. En segundo lugar, la máquina fue fabricada con estándares o líneas de desarrollo propias de la época, como sería esperable, las cuales no evolucionaron en la misma dirección de que los estándares actuales de ensayo a fatiga, dificultando la comparación de los resultados obtenidos. Finalmente, la robustez del diseño, la cual se puede apreciar fácilmente en la dimensiones de la estructura exterior de la máquina, tiene la dualidad de proveer un armazón macizo y duradero sobre el cual trabajar, sin embargo, resulta ser una estructura difícil de modificar por esta misma razón.
+
+En lo relativo a la exactitud de los datos obtenidos, la imposibilidad de desarmar gran parte de la máquina afectaron la precisión de las mediciones realizadas, sobre todo en partes específicas. Así, las dimensiones y la geometría de las barras de acero tuvieron que ser simplificadas ante la imposibilidad de tomar medidas en la unión barra-disco. Por la misma razón, la masa del disco desbalanceado, calculada a través de la deflexión de las barras de acero, incluye los errores de la medición anterior sumado a la masa de otros elemento que no son parte de la fuerza provocada por el desequilibrio del disco en rotación. Ante esto, surge la necesidad de poder desarmar la máquina para poder estudiarla con mayor detenimiento, obteniendo información que sea más precisa de sus elementos como también información útil para poder actualizar componentes que mejoren su desempeño y mantenibilidad. 
+ 
+\section{Diseño de la estructura}
+\subsection{Diseño en acero}
+A partir de las ecuaciones para el caso expuesto en metodología, se probó de forma iterativa para el acero A270ES de distintas dimensiones su comportamiento bajo la carga estática y dinámica. Los resultados que se obtuvieron se encuentran en la siguiente tabla:
+
+\textcolor{red}{agregar tabla}
+
+Con esta información en consideración, se optó por utilizar el acero número X de la tabla REF, el cual entrega un factor de seguridad aceptable a los requerimientos y espacio suficiente para una correcta ubicación de los pernos de unión. \textcolor{red}{añadir info de metodología - se encuetra en la zona inferior al limite de la resistencia a fatiga}
+
+\subsubsection{Diseño en madera}
+Para este caso, los resultados que obtenidos para el cuartón y la tabla de pino oregón, en los distintos pilares y vigas que se utilizaron, se encuentran en la siguiente tabla:
+
+\textcolor{red}{Añadir tabla resumen}
+
+Asimismo, las cargas calculadas para los elementos de unión mecánica como el perno y los tirafondos corresponden a:
+
+\textcolor{red}{tabla extracción directa de pernos y tirafondos}
+
+Las restricciones de separación entre los elementos de unión establecidas en REF, a partir de la información de la tabla REF, dan como resultado:
+
+\textcolor{red}{tabla de separación entre elementos}
+
+A modo de comparación, en la tabla REF, se pueden apreciar los valores obtenidos para tablas y cuartones de distintas dimensiones y especie maderera.
+
+\textcolor{red}{tabla comparacion}
+
+Finalmente, con la configuración escogida en la tabla REF, los resultados de las simulaciones estáticas y modal corresponden a:
+
+\textcolor{red}{resultados simulacion}
+
+Tanto los resultados obtenidos por la simulación como los obtenidos a través de la norma, nos indica que la mesa no tendrá problemas para soportar la carga estática de la máquina, por lo sobre dimensionado de la estructura. Para las cargas fluctuantes, la información sobre el comportamiento de la madera bajo fatiga es bastante escasa en la literatura y aún más para las especies madereras chilenas. 
+
+\section{Modelo del sistema}
+
+\subsection{Comportamiento del modelo para distintas configuraciones}
+Con la caracterización y el levantamiento de información de los distintos componentes, junto a la elección de $c_1$, $c_2$ y de las variables de la función $\phi$, nos permite resolver y obtener valores del movimiento lineal, angular y la carga a la que está sometida la probeta. El tiempo de integración para cada una de las soluciones será entre 0 y 10 segundos. Se utilizará una tolerancia relativa y absoluta de $10^{-8}$. En consecuencia, al resolverlo utilizando los códigos del anexo \ref{sec:sol_part} se obtienen las curvas para la posición y velocidad del brazo de carga respecto a su centro de masa. Las figuras de las imagenes REF y REF, muestran las curvas de posición y velocidad del sistema para dos configuraciones distintas de la tabla de cargas. 
+
+\textcolor{red}{cuatro imagenes de y y theta para dos configuraciones distintas}
+
+Utilizando la ecuación \ref{eq:fuerza_probeta} para cada valor de $y(t)$ y $\theta(t)$, se obtiene la curva de la carga aplicada sobre la probeta como se muestra en la figura REF, para los dos casos mostrados anteriormente.
+
+\textcolor{red}{dos imagenes de la fuerza para las configuraciones anteriores}
+ 
+En este conjunto de imágenes se aprecia como el sistema pasa de un estado inicial $(y(0), \dot{y(0)}, \theta(0), \dot{\theta}(0))$, donde la probeta y la barra de acero sólo están bajo la acción de la gravedad, hasta su posición de reposo producto del propio peso de los elementos del sistema. El decaimiento de la vibración inicial está determinado por el valor de $c_1$ y $c_2$, siendo un amortiguamiento subamortiguado. A continuación, desde el segundo 2 la función $\phi$ comienza a acelerar suavemente hasta llegar a la velocidad $\omega_{max} = 25$ [rad/s], punto en el cual la vibración es constante y estable en el tiempo. A partir de este punto, se extraen la información respectiva de la fuerza máxima, media y alternante, según se muestra en \ref{eq:f_max}, \ref{eq:f_m} y \ref{eq:f_a}. 
+
+A partir de las imágenes REF y REF, es posible apreciar que el desplazamiento lineal, angular y, por añadidura, la fuerza sobre la probeta pueden ser incluso mayores en la zona de amortiguamiento del sistema. Esto ocurre en las configuraciones donde la carga $F_p$ es muy baja en comparación a la masa total del sistema, siendo el punto de inflexión BUSCAR PUNTO DE INFLEXION. 
+
+De manera análoga, se puede comparar la influencia de la velocidad de giro máxima del disco desbalanceado sobre el movimiento del sistema. Las imágenes REF y REF, muestran la posición $y(t)$, $\theta(t)$ y $F(t)$ para dos velocidad distintas, es decir, $\,\mathbf{\omega}_{max,1} = 20$ [rad/s] (o 1200 [rpm]) y $\mathbf{\omega}_{max,2} = 10$ [rad/s] (o 600 [rpm]).
+
+\textcolor{red}{añadir imagenes}
+
+Ambas gráficos muestran no sólo como el período de la oscilación aumenta entre el caso 1 y 2, como es esperable, sino que también la fuerza sobre la probeta disminuye en la medida que la velocidad de rotación del disco es menor. Esta información, junto a la de distintas configuraciones, muestra que el modelo se comporta de una manera correcta respecto a lo físicamente esperable, respondiendo de manera adecuada a los distintos cambios de parámetro que se le realizan.
+
+\subsection{Comparación entre las distintas configuraciones} 
+
+

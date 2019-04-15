@@ -130,9 +130,14 @@ Largo        & 333                        & 333                        \\ \botto
 Con estos datos, es posible calcular el segundo momento de área respecto a un eje central horizontal equidistante entre las barras superiores e inferiores, según el cual es obtiene $I=asfaf$. 
 
 \subparagraph{Sistema de transmisión de fuerzas.}
-El brazo principal (figura REF) que ejerce la fuerza sobre la probeta proveniente del disco desbalanceado, está constituido por tres partes principales. La primera de ellas es la parte trasera, con forma regular rectangular, está hecho de una aleación de aluminio y dos tercios de su longitud es ahuecada. La segunda y principal, está hecha de acero fundido y añade el mayor porcentaje de masa al total del brazo. Finalmente, la última parte consiste en la mordaza, unida a la sección principal con dos pernos que permiten ajustar su posición. La longitud total del brazo es de 359 mm y su masa total 2,305 kg.
+El brazo principal (figura \ref{fig:brazo_carga}) que ejerce la fuerza sobre la probeta proveniente del disco desbalanceado, está constituido por tres partes principales. La primera de ellas es la parte trasera, con forma regular rectangular, está hecho de una aleación de aluminio y dos tercios de su longitud es ahuecada. La segunda y principal, está hecha de acero fundido y añade el mayor porcentaje de masa al total del brazo. Finalmente, la última parte consiste en la mordaza, unida a la sección principal con dos pernos que permiten ajustar su posición. La longitud total del brazo es de 359 mm y su masa total 2,305 kg.
 
-\textcolor{red}{Imagen brazo-mordaza}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\linewidth]{Imagenes/brazo_carga.jpg}
+\caption{Brazo de carga junto a su mordaza y la mordaza empotrada a la derecha.}
+\label{fig:brazo_carga}
+\end{figure}
 
 La transmisión de la carga entre el disco desbalanceado y el brazo de carga se da a través de dos barras de acero redondas, uno a cada lado del disco, de diámetro 6,2 mm y largo de 169 mm.
 
@@ -195,7 +200,7 @@ Por ende, el cálculo de la reacción en sus apoyos, el momento y esfuerzo flect
 	\begin{gather}
 		R_A = g\left(\frac{m_{maq}}{2} + \frac{q_{ac}L}{2}\right) \label{eq:reaccion_acero}\\ 
 		M_A = \left(\frac{gcq_{maq}}{24L}\right) \left(3L^2 - 4c^2 + \frac{6bc^2}{L} - \frac{3c^3}{L}\right) + \left(\frac{gq_{ac}L^2}{12}\right) \label{eq:mtofleca_acero} \\
-		\sigma_{max} = \frac{M_A \cdot h_p}{2I} \label{eq:esfmax_acero}
+		\sigma_{max,pl} = \frac{M_A \cdot h_p}{2I_{pl}} \label{eq:esfmax_acero}
 	\end{gather}
 \end{subequations}
 
@@ -203,11 +208,21 @@ Así, los valores obtenidos son:
 \begin{itemize}
 	\item $R_A = 754,85$ [N]
 	\item $M_A = 100,97$ [Nm]
-	\item $I = 4266,6$ [mm$^4$]
+	\item $I_{pl} = 4266,6$ [mm$^4$]
 	\item $\sigma_{max} = 94,66$ [MPa]
 \end{itemize}
 
-\textcolor{red}{agregar fatiga}
+Con relación a la cargas fluctuantes que recibirán las pletinas como parte del funcionamiento de la máquina, se considerará la carga mayor que es capaz de producir la máquina de todas sus configuraciones, de acuerdo a lo que se obtenga por medio del modelo que se expondrá en la sección \ref{sec:mod_sist}. Esta carga alternante sobre la pletina, $F_{a,pl}$, se considerará igual a la mitad de la carga máxima posible producida por el disco desbalanceado. Por lo tanto, considerando la configuración utilizada en las cargas estáticas, la carga distribuida alternante será $q_{a,pl} = F_{a,pl}/c$ y el momento flector máximo en el punto $A$ es la primera expresión de la ecuación \ref{eq:mtofleca_acero} y el esfuerzo sobre el mismo punto igual a la expresión \ref{eq:esfmax_acero}, quedando:
+\begin{gather}
+	M_{a,pl,A} = \left(\frac{cq_{a,pl}}{24L}\right) \left(3L^2 - 4c^2 + \frac{6bc^2}{L} - \frac{3c^3}{L}\right)\\
+	\sigma_{a,A} = \frac{M_{a,pl,A} \cdot h_p}{2I_{pl}}
+\end{gather}
+
+Para obtener el factor de seguridad, se utilizará la ecuación de Goodman modificada REFERENCIAR. Para esto, el límite de resistencia a la fatiga de un acero se puede estimar como $S_e = 0,5S_{ut}$ cuando el esfuerzo último es menor a 1400 MPa. Como el material utilizado es un acero A270ES, entonces su equivalente en la antigua nomenclatura chilena de acero es A42-27ES REFERENCIA, donde el esfuerzo último del material es $S_{ut} =$420 MPa, por lo tanto, $S_e = 210$ MPa. También, el esfuerzo medio será igual al esfuerzo estático calculado anteriormente, donde, $S_m = \sigma_{max,pl}$. Así, el factor de seguridad es:
+\begin{equation}
+	FS = \left(\frac{S_e\cdot S_{ut}}{S_a\cdot S_{ut} + S_m\cdot S_e}\right)
+\end{equation}
+
 
 \subsection{Diseño en madera}
 La elección de la madera como elemento principal de construcción se debió por su capacidad de disipar las vibraciones y la relación entre su resistencia y el peso, volviendo la estructura más liviana y útil para las necesidades. Para realizar los cálculos de la madera y sus uniones, se utilizó la norma \textbf{NCh 1198 Of. 91 -- Madera: Construcciones en madera -- Cálculo}, mostrada en el anexo \ref{ch:anexo_a}. Las dimensiones del diseño de la estructura se realizaron considerando dejar el espacio necesario para la operación de la máquina, conservando la altura actual de 900 [mm]. Si bien en el presente trabajo se expondrán los cálculos de una especia maderera y sus respectivas dimensiones, se realizaron cálculos con otras especies y en otros formatos para añadir flexibilidad al diseño propuesto. Las maderas consideradas en el trabajo son el pino Oregón, pino Radiata y la línea de pino radiata encolado Hilam de Arauco. Los resultados mostrados en la sección siguiente son los obtenidos al escoger el pino Oregón en formato de 110x110 [mm]. Los valores de las tensiones admisibles para distintas especies madereras se obtienen de la tabla 4 de la sección 6.2 de la NCh 1198, sin embargo, para la madera laminada encolada se encuentran en la norma NCh 2165. Finalmente, para la sección de diseño en madera se utilizará la nomenclatura utilizada por la norma NCh 1198, para evitar confusiones al momento de consultar el anexo o la norma misma.
@@ -504,7 +519,7 @@ Las constantes del brazo de carga, $M_b$ es la masa total del brazo de carga e $
 \subsubsection{Modelo del disco}
 Frente a la eliminación de las fuerzas horizontales del modelo, se simplificó la carga producida por el disco desbalanceado a una fuerza variable en el tiempo, que actúa solo en dirección vertical y es externa al sistema. Esta fuerza queda expresada de la siguiente forma:
 \begin{equation}\label{eq:fza_gen}
-	F(t) = M_a\, e_{ga}(\dot{\phi}^2 \sin\phi - \ddot{\phi} \cos\phi)
+	F_d(t) = M_a\, e_{ga}(\dot{\phi}^2 \sin\phi - \ddot{\phi} \cos\phi)
 \end{equation}
 La variable $e_{ga}$ corresponde a la excentricidad del centro de masa del disco provocada por el desequilibrio entre $m_1$ y $m_2$, el cual se detallará en la sección siguiente. También, la función $\phi$, con su respectiva velocidad y aceleración, es la coordenada angular del disco respecto al tiempo, la que será explicada en la sección \ref{sec:function_angle}.
 
@@ -521,7 +536,7 @@ La energía potencial gravitatoria se obtiene al utilizar la ecuación REF, por 
 \end{equation}
 Por otro lado, la energía cinética se calcula según la ecuación REF para cada masa del sistema.
 \begin{equation}
-	T = \frac{1}{2} \left(M_a\, \dot{y_1}\ 2 + M_b\, \dot{y}^2\right)
+	T = \frac{1}{2} \left(M_a\, \dot{y_1}^2 + M_b\, \dot{y}^2\right)
 \end{equation}
 La energía disipada por el amortiguamiento viscoso se modela utilizando la ecuación REF, llamada función de disipación de Reyleigh. 
 \begin{equation}
@@ -536,20 +551,20 @@ Con esto, el método de Lagrange define al lagrangiano $L$ como la resta entre l
 Al reemplazar y derivar cada término para cada coordenada generalizada, quedan las siguientes expresiones:
 \begin{subequations}
 \begin{align}
-	M_b\, \ddot{y} + M_a\, \ddot{y_1} + k_1\, y_1 + k_2\, y_2 + M_a\, g + M_b\, g &= F(t) - c_1\, \dot{y_1} - c_2\, \dot{y_2} \\
-	I_{gb}\, \ddot{\theta} - M_a\, y_1\, l_1 - k_1\, y\, l_1 + k_2\, y_2\, l_2 - M_a\, g\, l_1 &= F(t)\cdot l_1 + c_1\, \dot{y_1}\, l_1 - c_2\, \dot{y_2}\, l_2 
+	M_b\, \ddot{y} + M_a\, \ddot{y_1} + k_1\, y_1 + k_2\, y_2 + M_a\, g + M_b\, g &= F_d(t) - c_1\, \dot{y_1} - c_2\, \dot{y_2} \\
+	I_{gb}\, \ddot{\theta} - M_a\, y_1\, l_1 - k_1\, y\, l_1 + k_2\, y_2\, l_2 - M_a\, g\, l_1 &= F_d(t)\cdot l_1 + c_1\, \dot{y_1}\, l_1 - c_2\, \dot{y_2}\, l_2 
 \end{align}
 \end{subequations}
 Al reemplazar las variables $y_1$ e $y_2$ y re acomodando los términos, se obtienen las dos ecuaciones de movimiento del brazo de carga:
 \begin{subequations}
 \begin{multline}\label{eq:mov_y}
 	\ddot{y}(M_a + M_b) - \ddot{\theta}M_al_1 + k_1(y - l_1\theta) + k_2(y + l_2\theta) + \dots \\
-	 M_a\, g + M_b\, g = F(t) - c_1(\dot{y} - l_1\dot{\theta}) - c_2(\dot{y} + l_2\dot{\theta}) 
+	 M_a\, g + M_b\, g = F_d(t) - c_1(\dot{y} - l_1\dot{\theta}) - c_2(\dot{y} + l_2\dot{\theta}) 
 \end{multline} 
 \vspace{-17mm}
 \begin{multline}\label{eq:mov_theta}
 	\ddot{\theta}(I_{gb} - M_al_1) - \ddot{y}M_al_1 + k_1(y - l_1\theta)\cdot l_1 + k_2(y + l_2\theta)\cdot l_2 + \dots \\
-	M_a\, g\, l_1 = F(t)\cdot l_1 + c_1(\dot{y} - l_1\dot{\theta})\cdot l_1 - c_2(\dot{y} + l_2\dot{\theta})\cdot l_2 
+	M_a\, g\, l_1 = F_d(t)\cdot l_1 + c_1(\dot{y} - l_1\dot{\theta})\cdot l_1 - c_2(\dot{y} + l_2\dot{\theta})\cdot l_2 
 \end{multline}
 \end{subequations}
 
@@ -582,8 +597,8 @@ Estas se pueden reescribir de forma matricial:
 	\theta
 \end{bmatrix} =
 \begin{bmatrix}
-	F(t) - g(M_a + M_b)\\
-	F(t)\cdot l_1 + g\,M_a\,l_1
+	F_d(t) - g(M_a + M_b)\\
+	F_d(t)\cdot l_1 + g\,M_a\,l_1
 \end{bmatrix}
 \end{split}
 \end{equation}
@@ -647,7 +662,7 @@ La excentricidad del centro de masa $e_{ga}$ se calculó utilizando los datos de
 \end{equation}
 \subsection{Función de la aceleración del disco}
 \label{sec:function_angle}
-La filosofía detrás de la función $\phi$ es poder controlar el tiempo de retraso de la rotación del disco, que se designará como $T_i$, y suavizar la aceleración del mismo hasta que llega a la velocidad de rotación máxima $\omega_{max}$. Para esto, la función de la aceleración $\ddot{\phi}(t)$ se formuló como una función por partes, como se ve en la imagen \ref{fig:anglepp}, donde el parámetro $T$ indicará la suavidad con la que es acelerado el disco. Estas tres variables, $T_i$, $\omega_{max}$ y $T$, son valores de entrada que se eligen dependiendo de los resultados que se deseen.
+La filosofía detrás de la función $\phi$ es poder controlar el tiempo de retraso de la rotación del disco, que se designará como $T_i$, y suavizar la aceleración del mismo hasta que llega a la velocidad de rotación máxima $\omega_{max}$. Para esto, la función de la aceleración $\ddot{\phi}(t)$ se formuló como una función por partes, como se ve en la imagen \ref{fig:anglepp}, donde el parámetro $T$ indicará la suavidad con la que es acelerado el disco. Estas tres constantes, $T_i$, $\omega_{max}$ y $T$, son valores de entrada que se eligen dependiendo de los resultados que se deseen.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.45,trim={6.5cm 2cm 10cm 2cm},clip]{Imagenes/anglepp_function.pdf}
@@ -663,7 +678,7 @@ Así, la función $\ddot{\phi}$ adquiere la forma:
 	0																		&	T_i + 2T < t\\
 \end{dcases} 
 \]
-Para obtener la función de la velocidad $\dot{\phi}(t)$ se debe integrar la función anterior, donde las constantes de integración se obtienen por los valores extremos conocidos. Cuando $\dot{\phi}(T_i) = 0$ y $\dot{\phi}(T_i + 2T) = \omega_{max}$. Por lo tanto, se define como:
+Para obtener la función de la velocidad $\dot{\phi}(t)$ se debe integrar la función anterior, donde las constantes de integración se obtienen por los valores extremos conocidos, es decir, $\dot{\phi}(T_i) = 0$ y $\dot{\phi}(T_i + 2T) = \omega_{max}$. Entonces, la función se define como:
 \[ \dot{\phi}(t) =
 \begin{dcases}
 	0																												&	t \leq T_i \\
@@ -672,7 +687,7 @@ Para obtener la función de la velocidad $\dot{\phi}(t)$ se debe integrar la fun
 	\omega_{max}																									&	T_i + 2T < t\\
 \end{dcases} 
 \]
-El resultado de la función por parte de la velocidad, se muestra en la imagen \ref{fig:anglep}.
+El resultado de la función $\dot{\phi}(t)$, se muestra en la imagen \ref{fig:anglep}.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.3,trim={5cm 0cm 4cm 0cm},clip]{Imagenes/anglep_function.pdf}
@@ -685,7 +700,7 @@ Para concluir, se repite el mismo procedimiento anterior para obtener la funció
 \begin{dcases}
 	0																									&	t \leq T_i \\
 	\left(\frac{\omega_{max}}{6T^2}\right)\left(t^3 - 3T_i\cdot^2 t + 3T_i^2\cdot t - T_i^3\right)		&	T_i < t \leq T_i + T\\
-	\phi_3																								&	T_i + T < t \leq T_i + 2T\\
+	\Phi_3																								&	T_i + T < t \leq T_i + 2T\\
 	\omega_{max}\, t - \omega_{max}(T + T_i)															&	T_i + 2T < t\\
 \end{dcases} 
 \]
@@ -695,15 +710,14 @@ La función $\phi_3$ correspondiente al dominio cuando $t$ es mayor $T_i + T$ y 
  + \left(\frac{1}{6T^2}\right) \left(2\omega_{max}T^3 + 6\omega_{max}T^2T_i + 6\omega_{max}T\,T_i + \omega_{max}T_i^3\right)
 \end{multline*}
 
+Para el desarrollo de este trabajo, el tiempo de retraso de la aceleración del disco será de $T_i=2$, instante en el que la barra se encuentra en un estado de reposo en consecuencia del valor de los amortiguamientos $c_1$ y $c_2$. Por otro lado, se definirá $T = 2,5$ como un valor que logra suavizar la aceleración, pero sin dilatar en exceso la llegada al punto de velocidad máxima. Finalmente, $\omega_{max}\,$ el valor por defecto corresponderá a la velocidad actual de la máquina de 25 [rad/s] (1500 revoluciones por minuto), sin embargo, este se puede variar dependiendo de los resultados que se deseen obtener. 
+
 \subsection{Solución del modelo}
-Para resolver el sistema de ecuaciones que se obtuvo en \ref{eq:mov_matriz}, se utilizó el solver de ecuaciones diferenciales ordinarias de MATLAB, ode45. Se basa en el método de Runge-Kutta con un espacio de tiempo variable, buscando eficiencia computacional, para resolver sistemas de EDOs de primer orden y con condición inicial. El solver sigue los siguientes comandos:
-\begin{center}
-	\texttt{[t,x] = ode45(odefun,tspan,x0,options)}
-\end{center}
+Para resolver el sistema de ecuaciones que se obtuvo en \ref{eq:mov_matriz}, se utilizó el solver de ecuaciones diferenciales ordinarias de MATLAB, ode45, que se basa en el método de Runge-Kutta con un espacio de tiempo variable para resolver sistemas de EDOs de primer orden y con condición inicial. 
 
-El primero de ellos, \texttt{odefun} es el nombre del archivo que contiene a la función a evaluar, que será la entrada del sistema de primer orden a ser integrado. En segundo lugar, \texttt{tspan} es el vector que define el inicio y el final de los límites de integración. A continuación, \texttt{x0} es el vector de los valores iniciales correspondiente a cada variable que ingresa a través de \texttt{odefun}. Por último, \texttt{options} es un argumento opcional de integración, que se define a través de \texttt{odeset}. Definiendo \texttt{odeset}, es posible crear o modificar opciones de estructura para solvers de EDOs. A través de este, se definió la tolerancia de error relativa (`RelTol') y absoluta (`AbsTol').
+Es necesario ingresar datos de entrada que permitan resolver el sistema. Primero se debe escoger la configuración de contrapesos $m_1$ y $m_2$ a partir de la tabla de cargas. El segundo de ellos es el tiempo que define los límites de integración de la función, el que se escogerá según la cantidad de información que se desee obtener. En tercer lugar, se deben ingresar los valores de la condición inicial correspondiente a cada variable. Por último, es opcional añadir valores de tolerancia relativa y absoluta.
 
-Por otra parte, el sistema a trabajar es un sistema de segundo orden, por lo tanto, es necesario realizar un cambio de variables para poder resolverlo. Se añadirán las nuevas variables $\gamma$ y $\beta$, realizando la siguiente derivación:
+Al ser el sistema de ecuaciones de segundo orden, es necesario realizar un cambio de variables para poder resolverlo. Se añadirán las nuevas variables $\gamma$ y $\beta$, realizando la siguiente derivación:
 \[ \left. 
 \begin{array}{ll}
 	\gamma = \dot{y}\\
@@ -711,12 +725,26 @@ Por otra parte, el sistema a trabajar es un sistema de segundo orden, por lo tan
 \end{array}
 \right\}
 \begin{array}{ll}
-	\dot{\gamma} &= \ddot{y}\\
-	\dot{\theta} &= \ddot{\theta}\\
+	\ddot{y} &= \dot{\gamma}\\
+	\ddot{\theta} &= \dot{\beta}\\
 \end{array}\]
-Una vez despejado los valores de $\ddot{y}$ y $\ddot{\theta}$, entonces la función a resolver estará dada por los elementos $(\gamma, \dot{\gamma}, \beta, \dot{\beta})$.  
+Para esto es necesario despejar los valores de $\ddot{y}$ y $\ddot{\theta}$, entonces la función a resolver estará dada por los elementos $(\gamma, \dot{\gamma}, \beta, \dot{\beta})$ y los resultados obtenidos serán $(y, \dot{y}, \theta, \dot{\theta})$. A partir de los resultados, es posible calcular la fuerza sobre la probeta utilizando la deformación $y_2$ y la constante de rigidez $k_2$.
+\begin{equation}\label{eq:fuerza_probeta}
+	F(t) = k_2 \cdot y_2 = k_2(y + l_2\theta)
+\end{equation}
 
-\subsubsection{Valores obtenidos}
+\subsection{Matriz de carga sobre la probeta según velocidad del motor}
+Una vez que se puede resolver el sistema de ecuaciones para un configuración y velocidad del motor específica, entonces es posible obtener una matriz del valor de la fuerza máxima ($F_{max}$), media ($F_m$) y su amplitud ($F_a$) para cada una de las configuraciones existentes en la tabla de carga a una velocidad angular $\,\omega_{max}\,$ determinada.
+
+Para esto se itera la solución anterior para cada una de las 201 configuraciones de contrapeso existentes para distintas velocidades. De estas iteraciones se almacenan los valores de $F_{max}$, $F_m$, $F_a$, la diferencia de masa de los contrapeso $\Delta m$ y la multiplicación entre la masa total $M_a$ y la excentricidad del centro de masa del disco $e_{ga}$.
+
+\subsubsection{Carga máxima, media y amplitud}
+Los información que se busca de estos resultados corresponde a la carga que es producto de la fuerza del disco desbalanceado, es decir, $F_d(t)$. Producto del comportamiento con el que se diseñó el modelo donde el sistema se deja caer hasta su posición de equilibrio,  se utiliza una variable auxiliar $F_{aux}$ que extrae los datos de $F(t)$ desde el inicio de la aceleración angular del disco hasta el final de la integración para evitar que las fuerzas de la transición entre la posición inicial y el reposo den resultados incorrectos. Así, la carga máxima, media y la amplitud se definen:
+\begin{gather} 
+	F_{max} = \text{max}(|F_{aux}|) \label{eq:f_max}\\
+	F_m = \frac{\text{max}(F_{aux}) + \text{min}(F_{aux})}{2} \label{eq:f_m}\\
+	F_a = \frac{\text{max}(F_{aux}) - \text{min}(F_{aux})}{2} \label{eq:f_a}
+\end{gather}
 
 \section{Simulación de cargas}
 
