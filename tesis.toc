@@ -1,85 +1,86 @@
 \babel@toc {spanish}{}
-\contentsline {chapter}{\numberline {1}Marco Te\IeC {\'o}rico}{5}{chapter.1}
-\contentsline {section}{\numberline {1.1}Fatiga}{5}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Definiciones}{6}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Curva S-N o de W\IeC {\"o}hler}{8}{subsection.1.1.2}
-\contentsline {subsection}{\numberline {1.1.3}Esfuerzo medio, $S_m$}{10}{subsection.1.1.3}
-\contentsline {subsubsection}{Dise\IeC {\~n}o para esfuerzos uniaxiales fluctuantes}{10}{section*.4}
-\contentsline {subsubsection}{Diagramas de esfuerzos alternantes normalizados y medios}{12}{section*.5}
-\contentsline {subsection}{\numberline {1.1.4}Medici\IeC {\'o}n de la fatiga}{12}{subsection.1.1.4}
-\contentsline {subsubsection}{Ensayo de fatiga con una viga giratoria en flexi\IeC {\'o}n}{13}{section*.6}
-\contentsline {subsubsection}{Ensayo de fatiga axial}{14}{section*.7}
-\contentsline {subsubsection}{Ensayo de fatiga de flexi\IeC {\'o}n en voladizo}{14}{section*.8}
-\contentsline {subsection}{\numberline {1.1.5}Correlaci\IeC {\'o}n entre distintos m\IeC {\'e}todos de medici\IeC {\'o}n de la fatiga}{14}{subsection.1.1.5}
-\contentsline {subsubsection}{Modelo de Esin}{15}{section*.9}
-\contentsline {subsubsection}{Modelo de Lee}{17}{section*.10}
-\contentsline {section}{\numberline {1.2}Din\IeC {\'a}mica}{18}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Ecuaciones de movimiento de un cuerpo r\IeC {\'\i }gido}{18}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Energ\IeC {\'\i }a cin\IeC {\'e}tica de un cuerpo r\IeC {\'\i }gido}{19}{subsection.1.2.2}
-\contentsline {section}{\numberline {1.3}Vibraciones}{19}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Rigidez}{19}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Damping}{20}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}Vibraciones forzadas}{21}{subsection.1.3.3}
-\contentsline {subsection}{\numberline {1.3.4}Modeling}{22}{subsection.1.3.4}
-\contentsline {subsection}{\numberline {1.3.5}Sistema de m\IeC {\'u}ltiples grados de libertad}{22}{subsection.1.3.5}
-\contentsline {subsection}{\numberline {1.3.6}M\IeC {\'e}todo de energ\IeC {\'\i }a}{24}{subsection.1.3.6}
-\contentsline {subsection}{\numberline {1.3.7}Ecuaciones de energ\IeC {\'\i }a para un sistema con amortiguamiento y forzado}{25}{subsection.1.3.7}
-\contentsline {chapter}{\numberline {2}Metodolog\IeC {\'\i }a}{26}{chapter.2}
-\contentsline {section}{\numberline {2.1}Levantamiento de informaci\IeC {\'o}n}{26}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Estado actual y antecedentes}{27}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Funcionamiento}{28}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Mediciones}{30}{subsection.2.1.3}
-\contentsline {subsubsection}{Dise\IeC {\~n}o de estructura}{30}{section*.11}
-\contentsline {subsubsection}{Componentes de la m\IeC {\'a}quina de fatiga}{30}{section*.12}
-\contentsline {subparagraph}{Sistema de transmisi\IeC {\'o}n.}{30}{section*.13}
-\contentsline {subparagraph}{Barras de acero.}{31}{section*.14}
-\contentsline {subparagraph}{Sistema de transmisi\IeC {\'o}n de fuerzas.}{31}{section*.15}
-\contentsline {subparagraph}{Disco desbalanceado.}{32}{section*.16}
-\contentsline {subparagraph}{Probeta.}{33}{section*.17}
-\contentsline {section}{\numberline {2.2}Dise\IeC {\~n}o de estructura}{33}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Dise\IeC {\~n}o en acero}{33}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Dise\IeC {\~n}o en madera}{35}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}C\IeC {\'a}lculo de cargas en estructura de madera}{36}{subsection.2.2.3}
-\contentsline {subparagraph}{Tensiones admisibles y m\IeC {\'o}dulo de elasticidad del pino oreg\IeC {\'o}n.}{36}{section*.18}
-\contentsline {subparagraph}{Factores de modificaci\IeC {\'o}n.}{37}{section*.19}
-\contentsline {subsubsection}{Viga principal, A}{38}{section*.20}
-\contentsline {subsubsection}{Pilar de apoyo, B}{39}{section*.21}
-\contentsline {subsubsection}{Viga transversal, C}{40}{section*.22}
-\contentsline {subsection}{\numberline {2.2.4}Uniones}{41}{subsection.2.2.4}
-\contentsline {subsubsection}{Acero - madera}{41}{section*.23}
-\contentsline {subparagraph}{Espaciamiento}{42}{section*.24}
-\contentsline {subsubsection}{Madera - Madera}{42}{section*.25}
-\contentsline {subsubsection}{Tirafondos}{43}{section*.26}
-\contentsline {subparagraph}{Solicitaciones de extracci\IeC {\'o}n lateral}{43}{section*.27}
-\contentsline {subparagraph}{Factor de modificaci\IeC {\'o}n por espesor de la pieza lateral.}{43}{section*.28}
-\contentsline {subparagraph}{Factor de modificaci\IeC {\'o}n por penetraci\IeC {\'o}n del vastago en la pieza principal.}{44}{section*.29}
-\contentsline {subparagraph}{Factor de modificaci\IeC {\'o}n por di\IeC {\'a}metro.}{44}{section*.30}
-\contentsline {subparagraph}{Solicitaciones de extracci\IeC {\'o}n directa}{44}{section*.31}
-\contentsline {subsubsection}{Herrajes y conectores}{44}{section*.32}
-\contentsline {subsection}{\numberline {2.2.5}Simulaciones}{45}{subsection.2.2.5}
-\contentsline {subsubsection}{Est\IeC {\'a}tica}{45}{section*.33}
-\contentsline {subsubsection}{Modal}{46}{section*.34}
-\contentsline {section}{\numberline {2.3}Modelo del sistema de vibratorio}{46}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Elementos del sistema}{46}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Modelo del sistema}{47}{subsection.2.3.2}
-\contentsline {subsubsection}{Modelo del disco}{48}{section*.35}
-\contentsline {subsubsection}{Ecuaciones de movimiento}{49}{section*.36}
-\contentsline {subsection}{\numberline {2.3.3}C\IeC {\'a}lculo y obtenci\IeC {\'o}n de constantes caracter\IeC {\'\i }sticas del sistema}{50}{subsection.2.3.3}
-\contentsline {subsubsection}{Rigidez y amortiguamiento}{50}{section*.37}
-\contentsline {subsubsection}{Segundo momento de \IeC {\'a}rea}{51}{section*.38}
-\contentsline {subsubsection}{Momento de inercia del brazo de carga}{51}{section*.39}
-\contentsline {subsubsection}{Longitud, masa y m\IeC {\'o}dulo de elasticidad}{51}{section*.40}
-\contentsline {subsubsection}{Excentricidad}{52}{section*.41}
-\contentsline {subsection}{\numberline {2.3.4}Funci\IeC {\'o}n de la aceleraci\IeC {\'o}n del disco}{52}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Soluci\IeC {\'o}n del modelo}{54}{subsection.2.3.5}
-\contentsline {subsection}{\numberline {2.3.6}Matriz de carga sobre la probeta seg\IeC {\'u}n velocidad del motor}{55}{subsection.2.3.6}
-\contentsline {subsubsection}{Carga m\IeC {\'a}xima, media y amplitud}{55}{section*.42}
-\contentsline {section}{\numberline {2.4}Simulaci\IeC {\'o}n de cargas}{56}{section.2.4}
-\contentsline {chapter}{\numberline {3}An\IeC {\'a}lisis y Resultados}{57}{chapter.3}
-\contentsline {section}{\numberline {3.1}Levantamiento de informaci\IeC {\'o}n}{57}{section.3.1}
-\contentsline {section}{\numberline {3.2}Dise\IeC {\~n}o de la estructura}{58}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Dise\IeC {\~n}o en acero}{58}{subsection.3.2.1}
-\contentsline {subsubsection}{Dise\IeC {\~n}o en madera}{58}{section*.43}
-\contentsline {section}{\numberline {3.3}Modelo del sistema}{59}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Comportamiento del modelo para distintas configuraciones}{59}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Comparaci\IeC {\'o}n entre las distintas configuraciones}{60}{subsection.3.3.2}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{5}{chapter.1}
+\contentsline {chapter}{\numberline {2}Marco Te\IeC {\'o}rico}{8}{chapter.2}
+\contentsline {section}{\numberline {2.1}Fatiga}{8}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Definiciones}{9}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Curva S-N o de W\IeC {\"o}hler}{11}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Esfuerzo medio, $S_m$}{13}{subsection.2.1.3}
+\contentsline {subsubsection}{Dise\IeC {\~n}o para esfuerzos uniaxiales fluctuantes}{13}{section*.4}
+\contentsline {subsubsection}{Diagramas de esfuerzos alternantes normalizados y medios}{15}{section*.5}
+\contentsline {subsection}{\numberline {2.1.4}Medici\IeC {\'o}n de la fatiga}{15}{subsection.2.1.4}
+\contentsline {subsubsection}{Ensayo de fatiga con una viga giratoria en flexi\IeC {\'o}n}{16}{section*.6}
+\contentsline {subsubsection}{Ensayo de fatiga axial}{17}{section*.7}
+\contentsline {subsubsection}{Ensayo de fatiga de flexi\IeC {\'o}n en voladizo}{17}{section*.8}
+\contentsline {subsection}{\numberline {2.1.5}Correlaci\IeC {\'o}n entre distintos m\IeC {\'e}todos de medici\IeC {\'o}n de la fatiga}{17}{subsection.2.1.5}
+\contentsline {subsubsection}{Modelo de Esin}{18}{section*.9}
+\contentsline {subsubsection}{Modelo de Lee}{20}{section*.10}
+\contentsline {section}{\numberline {2.2}Din\IeC {\'a}mica}{21}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Ecuaciones de movimiento de un cuerpo r\IeC {\'\i }gido}{21}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Energ\IeC {\'\i }a cin\IeC {\'e}tica de un cuerpo r\IeC {\'\i }gido}{22}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Vibraciones}{22}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Rigidez}{22}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Damping}{23}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Vibraciones forzadas}{24}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Modeling}{25}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Sistema de m\IeC {\'u}ltiples grados de libertad}{25}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}M\IeC {\'e}todo de energ\IeC {\'\i }a}{27}{subsection.2.3.6}
+\contentsline {subsection}{\numberline {2.3.7}Ecuaciones de energ\IeC {\'\i }a para un sistema con amortiguamiento y forzado}{28}{subsection.2.3.7}
+\contentsline {chapter}{\numberline {3}Metodolog\IeC {\'\i }a}{29}{chapter.3}
+\contentsline {section}{\numberline {3.1}Levantamiento de informaci\IeC {\'o}n}{29}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Estado actual y antecedentes}{30}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Funcionamiento}{31}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Mediciones}{33}{subsection.3.1.3}
+\contentsline {subsubsection}{Dise\IeC {\~n}o de estructura}{33}{section*.11}
+\contentsline {subsubsection}{Componentes de la m\IeC {\'a}quina de fatiga}{33}{section*.12}
+\contentsline {subparagraph}{Sistema de transmisi\IeC {\'o}n.}{33}{section*.13}
+\contentsline {subparagraph}{Barras de acero.}{34}{section*.14}
+\contentsline {subparagraph}{Sistema de transmisi\IeC {\'o}n de fuerzas.}{34}{section*.15}
+\contentsline {subparagraph}{Disco desbalanceado.}{35}{section*.16}
+\contentsline {subparagraph}{Probeta.}{36}{section*.17}
+\contentsline {section}{\numberline {3.2}Dise\IeC {\~n}o de estructura}{36}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Dise\IeC {\~n}o en acero}{36}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Dise\IeC {\~n}o en madera}{38}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}C\IeC {\'a}lculo de cargas en estructura de madera}{39}{subsection.3.2.3}
+\contentsline {subparagraph}{Tensiones admisibles y m\IeC {\'o}dulo de elasticidad del pino oreg\IeC {\'o}n.}{39}{section*.18}
+\contentsline {subparagraph}{Factores de modificaci\IeC {\'o}n.}{40}{section*.19}
+\contentsline {subsubsection}{Viga principal, A}{41}{section*.20}
+\contentsline {subsubsection}{Pilar de apoyo, B}{42}{section*.21}
+\contentsline {subsubsection}{Viga transversal, C}{43}{section*.22}
+\contentsline {subsection}{\numberline {3.2.4}Uniones}{44}{subsection.3.2.4}
+\contentsline {subsubsection}{Acero - madera}{44}{section*.23}
+\contentsline {subparagraph}{Espaciamiento}{45}{section*.24}
+\contentsline {subsubsection}{Madera - Madera}{45}{section*.25}
+\contentsline {subsubsection}{Tirafondos}{46}{section*.26}
+\contentsline {subparagraph}{Solicitaciones de extracci\IeC {\'o}n lateral}{46}{section*.27}
+\contentsline {subparagraph}{Factor de modificaci\IeC {\'o}n por espesor de la pieza lateral.}{46}{section*.28}
+\contentsline {subparagraph}{Factor de modificaci\IeC {\'o}n por penetraci\IeC {\'o}n del vastago en la pieza principal.}{47}{section*.29}
+\contentsline {subparagraph}{Factor de modificaci\IeC {\'o}n por di\IeC {\'a}metro.}{47}{section*.30}
+\contentsline {subparagraph}{Solicitaciones de extracci\IeC {\'o}n directa}{47}{section*.31}
+\contentsline {subsubsection}{Herrajes y conectores}{47}{section*.32}
+\contentsline {subsection}{\numberline {3.2.5}Simulaciones}{48}{subsection.3.2.5}
+\contentsline {subsubsection}{Est\IeC {\'a}tica}{48}{section*.33}
+\contentsline {subsubsection}{Modal}{49}{section*.34}
+\contentsline {section}{\numberline {3.3}Modelo del sistema de vibratorio}{49}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Elementos del sistema}{49}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Modelo del sistema}{50}{subsection.3.3.2}
+\contentsline {subsubsection}{Modelo del disco}{51}{section*.35}
+\contentsline {subsubsection}{Ecuaciones de movimiento}{52}{section*.36}
+\contentsline {subsection}{\numberline {3.3.3}C\IeC {\'a}lculo y obtenci\IeC {\'o}n de constantes caracter\IeC {\'\i }sticas del sistema}{53}{subsection.3.3.3}
+\contentsline {subsubsection}{Rigidez y amortiguamiento}{53}{section*.37}
+\contentsline {subsubsection}{Segundo momento de \IeC {\'a}rea}{54}{section*.38}
+\contentsline {subsubsection}{Momento de inercia del brazo de carga}{54}{section*.39}
+\contentsline {subsubsection}{Longitud, masa y m\IeC {\'o}dulo de elasticidad}{54}{section*.40}
+\contentsline {subsubsection}{Excentricidad}{55}{section*.41}
+\contentsline {subsection}{\numberline {3.3.4}Funci\IeC {\'o}n de la aceleraci\IeC {\'o}n del disco}{55}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Soluci\IeC {\'o}n del modelo}{57}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Matriz de carga sobre la probeta seg\IeC {\'u}n velocidad del motor}{58}{subsection.3.3.6}
+\contentsline {subsubsection}{Carga m\IeC {\'a}xima, media y amplitud}{58}{section*.42}
+\contentsline {section}{\numberline {3.4}Simulaci\IeC {\'o}n de cargas}{59}{section.3.4}
+\contentsline {chapter}{\numberline {4}An\IeC {\'a}lisis y Resultados}{60}{chapter.4}
+\contentsline {section}{\numberline {4.1}Levantamiento de informaci\IeC {\'o}n}{60}{section.4.1}
+\contentsline {section}{\numberline {4.2}Dise\IeC {\~n}o de la estructura}{61}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Dise\IeC {\~n}o en acero}{61}{subsection.4.2.1}
+\contentsline {subsubsection}{Dise\IeC {\~n}o en madera}{61}{section*.43}
+\contentsline {section}{\numberline {4.3}Modelo del sistema}{62}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Comportamiento del modelo para distintas configuraciones}{62}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Comparaci\IeC {\'o}n entre las distintas configuraciones}{63}{subsection.4.3.2}
