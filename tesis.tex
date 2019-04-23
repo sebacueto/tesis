@@ -64,7 +64,7 @@
 %\usetikzlibrary{3d}
 %\usepackage{tikz-3dplot}
 \usepackage[thinlines]{easytable}
-\usepackage[none]{hyphenat}
+\usepackage[htt]{hyphenat}
 %Configuracion codigo c++
 \usepackage{listings}
 \usepackage[T1]{fontenc}
@@ -129,14 +129,17 @@ backgroundcolor=\color{gray75},
   belowcaptionskip=1\baselineskip,
   frame=L,
   xleftmargin=\parindent,
-  language=[x86masm]Assembler,
+  language=Matlab,
   basicstyle=\footnotesize\ttfamily,
   commentstyle=\itshape\color{purple!40!black},
+  breaklines=true,
+  breakatwhitespace=true,
+  linewidth=1.1\linewidth
 }
 
-\lstset{escapechar=@,style=customc,basicstyle=\small}
+\lstset{escapechar=@,style=customasm,basicstyle=\small}
 %
-
+%\lstset{breaklines=true, language=Matlab}
 
 
 %%##################################################################################################################################
@@ -212,15 +215,15 @@ backgroundcolor=\color{gray75},
 %%% Mirar el archivo "intro.tex" para un ejemplo y recomendaciones para
 %%% escribir.
 %
-\include{Capitulos/01_intro}
+%\include{Capitulos/01_intro}
 %
-%\include{Capitulos/02_antecedentes}
+\include{Capitulos/02_antecedentes}
 %
-\include{Capitulos/03_marco_teorico}
+%\include{Capitulos/03_marco_teorico}
 %
 \include{Capitulos/04_metodologia}
 %
-\include{Capitulos/05_resultados}
+%\include{Capitulos/05_resultados}
 %
 %\include{Capitulos/06_conclusiones}
 %%

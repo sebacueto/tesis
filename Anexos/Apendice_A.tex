@@ -146,7 +146,10 @@ El factor $K_{\lambda}$ se evalúa según la expresión:
 \end{equation}
 con:
 \begin{gather}
-	A = \frac{B\cdot c\cdot (1 + \frac{\lambda}{200}) + 1}{2\,c} \\
+	A = \frac{B\cdot c\cdot (1 + \frac{\lambda}{200}) + 1}{2\,c}
+\end{gather}
+\vspace{-8mm}
+\begin{gather}
 	B = \frac{4\, E_{dis}}{c\cdot \lambda^2\cdot F_{cp,dis}}
 \end{gather}
 en que:
@@ -169,8 +172,6 @@ La tensión de diseño en compresión normal, se calcula a partir de la siguient
 \end{equation}
 Donde $K_{cn}$ es el factor de modificación por aplastamiento, que se calcula a partir de la sección \textbf{8.5.3} de la norma.
 
-%\subsection{Tracción paralela}
-%\textcolor{red}{LO COLOCO?????} página 58.
 
 \subsection{Nomenclatura y tipos de madera}
 Más allá de la especie, en el mercado es posible encontrar madera con distintas terminaciónes y dimensiones. Las principales diferencias se definen respecto al grado de manipulación del material y su uso final. Los tipos de madera relevantes a este trabajo son los siguientes:
@@ -241,7 +242,7 @@ Antes de comenzar a hablar de las expresiones que determinan el comportamiento d
 			\item Espaciamiento mínimo entre un elemento de unión y un borde descargado medido en dirección paralela a la fibra de la pieza: $s_{bdp}$.
 			\item Espaciamiento mínimo entre un elemento de unión y un borde descargado medido en dirección normal a la fibra de la pieza: $s_{bdn}$.
 		\end{enumerate}
-		Y se muestran en la figura dsafasfsa.description \textcolor{red}{AGREGAR FIGURA 17 DE LA NORMA}
+		Y se muestran en la figura \ref{fig:nch_17}.
 		\item Duración de la carga: Las cargas admisibles definidas en este capítulo son aplicables para cargas de una duración de 10 años. Para valores distintos, se se debe seguir las indicaciones de la sección \textbf{7.1.2}.
 		\item Extracción directa: Se refiere a cuando una unión está siendo solicitada axialmente respecto al eje del elemento de unión. 
 		\item Extracción lateral: Se refiere a cuando una unión está siendo solicitada perpendicularmente al eje del elemento de unión, sometiendolo a esfuerzos de cizalle en su sección transversal, siendo el tipo de solicitación más común.
@@ -255,6 +256,17 @@ Antes de comenzar a hablar de las expresiones que determinan el comportamiento d
 \end{enumerate}
 
 Las cargas admisibles especificadas en el capítulo 10 de la norma son para uniones colocadas en madera seca y que se mantendrá seca después de su construcción. Para madera semiseca o verde durante su construcción y madera seca que durante su servicio aumenta su contenido de humedad por sobre el 19\%, se le deberá aplicar el factor de modificación $K_{UH}$ señalado en las tablas 28 y 29, de la sección \textbf{10.1.7} de la norma.
+
+\newpage
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{Imagenes/figura_17.pdf}
+\caption{Designaciones de espaciamientos y bordes. Fuente: NCh1198 - Madera - Construcciones en madera - Cálculo.}
+\label{fig:nch_17}
+\end{figure}
+
+\newpage
 
 \subsection{Verificaciones tensionales}
 \subsubsection{Sección transversal neta}
@@ -282,7 +294,15 @@ En uniones de pernos, barras de acero, tirafondos o conectores, solicitadas por 
 	\end{equation}		
 \end{itemize}
 
-Los valores $h$ y $h_e$ se muestran en la figura \textcolor{red}{COLOCAR FIGURA 19 DE LA NORMA}. El valor $h_e$ será distinto para conectores o para pernos, barras de acero y tirafondos. Para conectores $h_e$ corresponde a la altura de la pieza menos la distancia desde el borde descargado hasta el borde del conector más cercano, mientras que en el caso del resto de las uniones, se evalúa deduciendo de la altura, la distancia entre el borde descargado y el centro de la unión más próxima.
+Los valores $h$ y $h_e$ se muestran en la figura \ref{fig:nch_19}. El valor $h_e$ será distinto para conectores o para pernos, barras de acero y tirafondos. Para conectores $h_e$ corresponde a la altura de la pieza menos la distancia desde el borde descargado hasta el borde del conector más cercano, mientras que en el caso del resto de las uniones, se evalúa deduciendo de la altura, la distancia entre el borde descargado y el centro de la unión más próxima.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.45\linewidth]{Imagenes/figura_19.pdf}
+\caption{Valor de $h_e$, para los distintos elementos de unión. Fuente: NCh1198 - Madera - Construcciones en madera - Cálculo.}
+\label{fig:nch_19}
+\end{figure}
+
 
 \subsection{Número de elementos de unión}
 Las cargas admisibles que se indican en esta norma, rigen para un elemento de unión individual, según las solicitaciones correspondientes. Una hilera de elementos de unión consiste en dos o más elementos del mismo tipo y tamaño alineados. En madera, es usual el uso de más de un elemento para unir dos o más maderas, debido a las restricciones existentes en su tamaño y distanciamiento.
@@ -297,16 +317,16 @@ Donde $\sum P_i$ es la suma de los valores admisibles de los elementos de unión
 
 \subsection{Uniones con perno}
 \label{sec:union_perno}
-Las especificaciones para pernos son aplicables para cualquier elemento cilíndrico de acero que atrevise perpendicularmente los planos de cizalle de la unión y que quedan solicitados preponderantemente en flexión induciendo sobre la madera tensiones de aplastamiento.
+Las especificaciones para pernos son aplicables para cualquier elemento cilíndrico de acero que atreviese perpendicularmente los planos de cizalle de la unión y que quedan solicitados preponderantemente en flexión induciendo sobre la madera tensiones de aplastamiento.
 
-Para su correcta instalación es necesario que los agujeros y las arandelas cumplan con ciertas dimensiones. El diámetro del agujero se debe mayorar respecto al del perno en función del tamaño del perno y las conduciones de humedad de servicio, siguiendo la tabla 33 de la sección \textbf{10.5.1.2} de la norma. Para las arandelas o golillas, se debe seleccionar primero si se utilizará una de forma circular o cuadrada, dando preferencia a esta última por ofrecer mayor resistencia al incustramiento en la madera. Luego , sus respectivas dimensiones están en función del diámetro del perno, siguiendo la tabla 34 de la norma.
+Para su correcta instalación es necesario que los agujeros y las arandelas cumplan con ciertas dimensiones. El diámetro del agujero se debe mayorar respecto al del perno en función del tamaño del perno y las condiciones de humedad de servicio, siguiendo la tabla 33 de la sección \textbf{10.5.1.2} de la norma. Para las arandelas o golillas, se debe seleccionar primero si se utilizará una de forma circular o cuadrada, dando preferencia a esta última por ofrecer mayor resistencia al incrustramiento en la madera. Luego , sus respectivas dimensiones están en función del diámetro del perno, siguiendo la tabla 34 de la norma.
 
 Respecto a las características del perno, su diámetro nominal debe estar entre los 10 y 30 mm. Además, se exige una disposición mínima de dos pernos, exceptuando los casos donde un único perno no queda solicitado en un porcentaje superior al 50\% de su capacidad de diseño.
 
 \subsubsection{Cargas admisibles para un perno}
 Las cargas admisibles para este tipo de unión solo son aplicables cuando la dirección de la solicitación es perpendicular a su eje para duración normal y de madera seca que permanecerá seca en servicio. Para casos distintos es necesario aplicar los factores de modificación correspondientes. Por otro lado, en esta norma existen condiciones distintas para cizalle simple, doble o múltiple, sin embargo, cizalle simple y múltiple se calculan realizando modificaciones al cizalle doble, por lo tanto, sólo se efectuara una explicación de este caso.
 
-La capacidad de carga admisible ($P_{ad}$) se calcula estableciendo que la unión está establecida por la unión de tres piezas de la misma especia, con las piezas laterales paralelas entre sí y cada una de ellas de espesor igual a la mitad del espesor de la pieza central, e, como se muestra en la figura \textcolor{red}{COLOCAR FIGURA 23}. Así, es posible obtenerla a través de la tensión admisible de aplastamiento nominal ,$F_{ap}$ (\ref{eq:f_ap}) , la esbeltez de la unión $\lambda_u$ y el diámetro del perno ($D$), de acuerdo a la siguiente expresión:
+La capacidad de carga admisible ($P_{ad}$) se calcula estableciendo que la unión está establecida por la unión de tres piezas de la misma especia, con las piezas laterales paralelas entre sí y cada una de ellas de espesor igual a la mitad del espesor de la pieza central, e, como se muestra en la figura \ref{fig:nch_23}. Así, es posible obtenerla a través de la tensión admisible de aplastamiento nominal ,$F_{ap}$ (\ref{eq:f_ap}) , la esbeltez de la unión $\lambda_u$ y el diámetro del perno ($D$), de acuerdo a la siguiente expresión:
 \begin{equation} \label{eq:padm_ad}
 	P_{ad} = F_{ap} \cdot \lambda_u \cdot D^2 \leq Z \cdot D^2
 \end{equation}
@@ -329,6 +349,15 @@ Donde:
 &F_y &: \qquad &\text{Tensión de fluencia del acero, usando 240 MPa como referencia} 
 \end{align*}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{Imagenes/figura_23A.pdf}%
+\includegraphics[width=0.5\linewidth]{Imagenes/figura_23B.pdf}
+\caption{Uniones en cizalle doble. Fuente: NCh1198 - Madera - Construcciones en madera - Cálculo.}
+\label{fig:nch_23}
+\end{figure}
+
+
 Para casos distintos al establecido anteriormente, se deben realizar arreglos en la forma de cálcular $P_{ad}$. En caso que las piezas laterales tengan un espesor menor que la mitad del espesor de la pieza central $e$, la carga admisibles es igual a la de una unión de cizalle doble con una pieza central de espesor ficticio, $e*$, equivalente al doble del espesor de la pieza lateral más delgada. Si las piezas laterales están constituidas de una especie maderera distinta a la pieza central, se debe considerar la menor entre:
 \begin{itemize*}
 	\item El valor determinado para una unión equivalente con todas sus piezas de la especie usada en las piezas laterales.
@@ -348,13 +377,29 @@ El segundo caso, cuando las piezas son de igual espesor, la carga admisible equi
 
 \subsubsection{Espaciamientos mínimos para pernos}
 \label{sec:espaciamiento_pernos}
-Los espaciamientos mínimos que se deben respetar en las uniones con pernos se esquematizan en la figura \textcolor{red}{AÑADIR FIUGRA 26 NORMA}. El espaciamiento mínimo entre los pernos y los bordes cargados o descargados se establecen en función del diámetro del mismo, determinados por la tabla 36 de la sección \textbf{10.5.4} de la norma. El espaciamiento mínimo ente los pernos mismos, se establecen en la tabla 37 de la misma sección. 
+Los espaciamientos mínimos que se deben respetar en las uniones con pernos se esquematizan en la figura \ref{fig:nch_26}. El espaciamiento mínimo entre los pernos y los bordes cargados o descargados se establecen en función del diámetro del mismo, determinados por la tabla 36 de la sección \textbf{10.5.4} de la norma. El espaciamiento mínimo ente los pernos mismos, se establecen en la tabla 37 de la misma sección. 
+
+\newpage
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{Imagenes/figura_26.pdf}%
+\caption{Espaciamientos mínimos ntre pernos, barras de acero, tirafondos y a los bordes. Fuente: NCh1198 - Madera - Construcciones en madera - Cálculo.}
+\label{fig:nch_26}
+\end{figure}
 
 \subsection{Uniones con tirafondos}
 \label{sec:tirafondos}
-Los tirafondos son un tipo de unión mecánica similar a un tornillo, del cual se diferencia porque su longitud total está dividida en una zona roscada y otra lisa llamada vástago, como se muestra en la figura \textcolor{red}{AÑADIR IMAGEN 28 tirafondo}. Las especificaciones y cálculos indicado en esta norma son válidos para tirafondos que cumplan con las características del anexo M de la norma.
+Los tirafondos son un tipo de unión mecánica similar a un tornillo, del cual se diferencia porque su longitud total está dividida en una zona roscada y otra lisa llamada vástago, como se muestra en la figura \ref{fig:nch_28}. Las especificaciones y cálculos indicado en esta norma son válidos para tirafondos que cumplan con las características del anexo M de la norma.
 
 Para obtener los valores de diseño para este tipo de unión, es necesario clasificar las especies madereras utilizadas según su densidad anhidra $\rho_o$ (obtenidas en el anexo E), de acuerdo a la tabla 38 de la norma.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\linewidth]{Imagenes/figura_28.pdf}%
+\caption{Esquema de un tirafondo. Fuente: NCh1198 - Madera - Construcciones en madera - Cálculo.}
+\label{fig:nch_28}
+\end{figure}
 
 \subsubsection{Perforaciones guía}
 Los tirafondos deben ser instalados en perforaciones guías con las características siguientes:
@@ -387,7 +432,7 @@ Las cargas admisibles son aplicables sólo si se cumplen las siguientes condicio
 		\item $7D$ en maderas de los grupos C y D.
 		\item $11D$ en maderas de los grupos A y B.
 	\end{itemize}
-	\item La penetración del vástago es completa en la pieza lateral, sin que él penetre en la pieza principal, como se muestra en la figura 29 de la norma. \textcolor{red}{corregir si se añade la figura 29}
+	\item La penetración del vástago es completa en la pieza lateral, sin que él penetre en la pieza principal, como se muestra en la figura 29 de la norma. 
 \end{enumerate}
 
 En caso de no cumplirse las condiciones señaladas, es necesario multiplicas el valor $P_{el,ad}$ obtenido en la ecuación \ref{eq:pel_ad} por los factores de modificación correspondientes.
@@ -425,4 +470,3 @@ Cuando un tirafondo esté solicitado tanto en extracción directa como lateral, 
 
 \subsubsection{Espaciamiento}
 Las distancias entre tirafondos y entre tirafondos y bordes debe seguir lo establecido en la tabla 36 del capítulo de pernos de la norma, donde se reemplaza el diámetro del perno por el diámetro del vástago.
-

@@ -9,18 +9,161 @@ En lo relativo a la exactitud de los datos obtenidos, la imposibilidad de desarm
  
 \section{Diseño de la estructura}
 \subsection{Diseño en acero}
-A partir de las ecuaciones para el caso expuesto en metodología, se probó de forma iterativa para el acero A270ES de distintas dimensiones su comportamiento bajo la carga estática y dinámica. Los resultados que se obtuvieron se encuentran en la siguiente tabla:
+A partir de las ecuaciones \ref{eq:reaccion_acero}, \ref{eq:mtofleca_acero} y \ref{eq:esfmax_acero}, expuestas en la sección de diseño en acero en metodología, se probó de forma iterativa para distintas dimensiones del acero A270ES, su comportamiento bajo la carga estática. Como se señaló anteriormente, sólo se tomó en consideración pletinas de un ancho de 100 mm debido al espaciamiento necesario entre los pernos. Los resultados que se obtuvieron se encuentran en la siguiente tabla:
 
-\textcolor{red}{agregar tabla}
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}ccccccc@{}}
+\toprule
+N$^{\circ}$ & Dimensiones {[}mm{]} & I {[}mm$^4${]} & $R_A$ {[}N{]} & $M_A$ {[}Nm{]} & $\sigma_{max,pl}$ {[}MPa{]} & Factor de Seguridad {[}-{]} \\ \midrule
+1 & 100x10 & 8333,33 & 23,87 & 2,46 & 60,88 & 4,43 \\
+2 & 100x6 & 1800 & 14,32 & 1,48 & 167,46 & 1,61 \\
+3 & 100x5 & 1041,66 & 11,95 & 1,23 & 240,56 & 1,12 \\
+4 & 100x8 & 4266,66 & 19,09 & 1,97 & 94,66 & 2,85 \\ \bottomrule
+\end{tabular}%
+}
+\caption{Tabla aceros}
+\label{tab:itest_acero}
+\end{table}
 
-Con esta información en consideración, se optó por utilizar el acero número X de la tabla REF, el cual entrega un factor de seguridad aceptable a los requerimientos y espacio suficiente para una correcta ubicación de los pernos de unión. \textcolor{red}{añadir info de metodología - se encuetra en la zona inferior al limite de la resistencia a fatiga}
+Con esta información en consideración, se comprobará su comportamiento bajo las cargas dinámicas, descartando el acero número 1 por estar sobredimensionado. Utilizando la ecuación \ref{eq:mtofat_acero} se obtiene que el momento provocado por la carga alternante es $M_{a,pl,A} =$ 50,42 [Nm]. De esta manera, al aplicar las ecuaciones \ref{eq:esffat_acero} y \ref{eq:fs_fatacero} los resultados obtenidos se encuentran en la tabla \ref{tab:itfat_acero}.
 
-\subsubsection{Diseño en madera}
-Para este caso, los resultados que obtenidos para el cuartón y la tabla de pino oregón, en los distintos pilares y vigas que se utilizaron, se encuentran en la siguiente tabla:
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}cccc@{}}
+\toprule
+N$^{\circ}$ & Dimensiones [mm] & $\sigma_{a,A}$ [MPa] & Factor de Seguridad [-] \\ \midrule
+1 & 100x6 & 84,03 & 1,25 \\
+2 & 100x5 & 121,00 & 0,87 \\
+3 & 100x8 & 47,27 & 2,22 \\ \bottomrule
+\end{tabular}
+\caption{Tabla de fatiga en la pletina de acero.}
+\label{tab:itfat_acero}
+\end{table}
 
-\textcolor{red}{Añadir tabla resumen}
+Con esto, el factor de seguridad del acero N$^{\circ}$ 2 resulta por debajo de 1 [-], lo cual nos indica que sus esfuerzos están por sobre la recta de Goodman modificada. Por lo tanto, se trabajará a partir de las dimensiones del acero N$^{\circ}$ 3, por otorgar un factor de seguridad que no se encuentra cerca de la recta de Goodman como lo es en el caso del acero N$^{\circ}$ 1. 
+\textcolor{red}{añadir info de metodología - se encuetra en la zona inferior al limite de la resistencia a fatiga}
 
-Asimismo, las cargas calculadas para los elementos de unión mecánica como el perno y los tirafondos corresponden a:
+\subsection{Diseño en madera}
+Para este caso, los resultados se dividirán por cada uno de los componentes que se calcularon en la estructura. Se expondrán los cálculos realizados para dos formatos distintos de pino oregón a modo de comparación, tanto para los elementos A y B como el elemento C.
+
+\subsubsection{Pilar A} Los cálculos de reacción y momento flector máximo se obtiene a través de las ecuaciones \ref{eq:reac_vigappal} y \ref{eq:mto_vigappal}. Así, los resultados obtenidos para la sección flexo-comprimida, flexo-traccoinada y los esfuerzos cortantes son:
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{ccccccccc}
+\hline
+N$^{\circ}$ & Dimensiones [mm] & $R_o$ [N] & $M_o$ [Nm] & $f_f$ [MPa] & $F_{ft,dis}$ [MPa] & $F_{fv,dis}$ [MPa] & $f_{cz}$ [MPa] & $F_{cz}$ [MPa] \\ \hline
+1 & 110x110 & 795,02 & 122,26 & 0,551 & 7,08 & 7,74 & 0,77 & 0,09 \\
+2 & 85x85 & 781,24 & 119,57 & 1,168 & 7,29 & 7,73 & 0,16 & 0,77 \\ \hline
+\end{tabular}%
+}
+\caption{Resultados obtenidos para la flexión y cizalle de la viga A.}
+\label{tab:res_viga_a1}
+\end{table}
+
+En base a estos resultados, los factores de seguridad:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}ccccl@{}}
+\toprule
+N$^{\circ}$ & Dimensiones [mm] & $FS_{ft}$ & $FS_{fv}$ & $FS_{cz}$ \\ \midrule
+1 & 110x110 & 12,85 & 14,03 & 7,84 \\
+2 & 85x85 & 6,24 & 6,62 & 4,77 \\ \bottomrule
+\end{tabular}
+\caption{Factores de seguridad en la viga A.}
+\label{tab:res_viga_a2}
+\end{table}
+
+\subsubsection{Pilar B}
+Esta viga se encuentra en compresión paralela a la fibra, al soportar toda la carga y transmitirla hacia el piso. En la tabla \ref{tab:res_viga_b}, se actualizaron los cálculos realizados en la sección de metodología al incorporar el área neta de cada formato de madera, es decir, el área transversal menos el área de cada unión, en este caso, del perno de 0,5 pulgadas de diámetro que une el pilar B a la viga D.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}ccccccc@{}}
+\toprule
+N$^{\circ}$ & Dimensiones [mm] & $\lambda$ & $f_{cp}$ [MPa] & $F_{cp,dis}$ [MPa] & $F_{cp,\lambda,dis}$ [MPa] & $FS_{cp,\lambda}$ \\ \midrule
+1 & 110x110 & 37,32 & 0,0742 & 5,936 & 4,506 & 66,6 \\
+2 & 85x85 & 49,82 & 0,129 & 5,936 & 3,872 & 28,9 \\ \bottomrule
+\end{tabular}
+\caption{Esfuerzos y factor de seguridad por compresión paralela en la viga B.}
+\label{tab:res_viga_b}
+\end{table}
+
+\subsubsection{Viga C}
+Como se señaló en metodología, la viga C no recibe mayores cargas, por lo tanto los criterios de selección se fundamentan en la longitud necesaria de los tirafondos para lograr penetrar la viga A sin que el roscado toque la viga C. La tabla de cálculos para dos configuraciones de tablas distintas son:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}clccc@{}}
+\toprule
+Dimensiones & Estado & $I$ [mm] & $f_f$ [kPa] & $F_f$ [MPa] \\ \midrule
+1x8'' & Cepillada & 1,0$\cdot 10^7$ & 3,804 & 3,925 \\
+2x8'' & Cepillada & 2,16$\cdot 10^7$ & 1,763 & 3,925 \\ \bottomrule
+\end{tabular}
+\caption{Segundo momento de área y esfuerzos de carga y diseño en la viga C.}
+\label{tab:res_viga_c}
+\end{table}
+
+\subsubsection{Uniones mecánicas}
+
+Como se señaló en la metodología, los cálculos realizados corresponden a los pernos y tirafondos. En el caso del primero, el largo utilizado se fijó en 4,5 pulgadas para que sea capaz de atravesar todos los elementos a unir y los diámetros están sujetos a su disponibilidad en el mercado. Los resultados se muestran en la tabla \ref{tab:res_perno}. Al seleccionar el perno número 1, la tabla \ref{tab:res_seppernos} muestra las restricciones de separación en base a su diámetro.
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}cccccccc@{}}
+\toprule
+$N^{\circ}$ & Diámetro [in] & $\lambda_u$ & $F_{ap}$ [MPa] & $P_{ad,simple}$ [MPa] & $Z\cdot D^2$ & \begin{tabular}[c]{@{}c@{}}Cumple \\ $F_{ap} \lambda_u D^2\leq Z\cdot D^2$\end{tabular} & $FS_{perno}$ \\ \midrule
+1 & $1/4$ & 2,52 & 3,52 & 178,89 & 964,01 & Sí & 3,76 \\
+2 & $5/16$ & 2,02 & 3,46 & 219,82 & 1493,44 & Sí & 7,23 \\
+3 & $3/8$ & 1,68 & 3,40 & 259,24 & 2131,94 & Sí & 12,28 \\ \bottomrule
+\end{tabular}%
+}
+\caption{Cargas admisibles y factor de seguridad para distintos pernos hexagonales.}
+\label{tab:res_perno}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}cccc@{}}
+\toprule
+Diámetro [in] & $S_{bcn}$ [mm] & $S_{bdn}$ [mm] & $S_p$ [mm] \\ \midrule
+$1/4$ & 25,4 & 12,7 & 44,45 \\ \bottomrule
+\end{tabular}
+\caption{Separación del perno a borde cargado, descargado y entre pernos, a partir de su diámetro.}
+\label{tab:res_seppernos}
+\end{table}
+
+Para los tirafondos, el diámetro a utilizar se fijará en \nicefrac{1}{4}'' para poder cumplir con los espaciamientos recomendados  por la norma expuestos en la tabla \ref{tab:res_septirafondo} , por lo tanto, se probaron distintas longitudes existentes en el mercado.
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}ccccccc@{}}
+\toprule
+N$^{\circ}$ & Largo [in] & \begin{tabular}[c]{@{}c@{}}Profundidad mínima\\ de penetración\end{tabular} & \begin{tabular}[c]{@{}c@{}}Penetración mínima del\\ vastago en pieza central\end{tabular} & \begin{tabular}[c]{@{}c@{}}Esfuerzo admisible de\\ extracción lateral total \\ $P_{el,ad,total}$ [kN]\end{tabular} & \begin{tabular}[c]{@{}c@{}}Esfuerzo admisible de\\ extracción directa total \\ $P_{ed,ad,total}$ [kN]\end{tabular} & $FS_{tirafondo}$ \\ \midrule
+1 & 1 $1/2$ & Cumple & Cumple & 1245,07 & 5,53 & 1,38 \\
+2 & 2 & Cumple & Cumple & 1348,82 & 10,9 & 2,72 \\
+3 & 2 $1/2$ & Cumple & Cumple & 1452,58 & 15,52 & 3,87 \\ \bottomrule
+\end{tabular}%
+}
+\caption{Esfuerzos admisibles y factor de seguridad para distintas longitudes de tirafondo.}
+\label{tab:res_tirafondos}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}cccc@{}}
+\toprule
+Diámetro [in] & $S_{bcn}$ [mm] & $S_{bdn}$ [mm] & $S_p$ [mm] \\ \midrule
+$1/4$ & 25,6 & 12,8 & 44,8 \\ \bottomrule
+\end{tabular}
+\caption{Espaciamiento entre los bordes cargado, descargado y entre tirafondos, para un diámetro de 1/4 de pulgada.}
+\label{tab:res_septirafondo}
+\end{table}
 
 \textcolor{red}{tabla extracción directa de pernos y tirafondos}
 
@@ -28,9 +171,6 @@ Las restricciones de separación entre los elementos de unión establecidas en R
 
 \textcolor{red}{tabla de separación entre elementos}
 
-A modo de comparación, en la tabla REF, se pueden apreciar los valores obtenidos para tablas y cuartones de distintas dimensiones y especie maderera.
-
-\textcolor{red}{tabla comparacion}
 
 Finalmente, con la configuración escogida en la tabla REF, los resultados de las simulaciones estáticas y modal corresponden a:
 

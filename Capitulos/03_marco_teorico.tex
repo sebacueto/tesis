@@ -1,16 +1,6 @@
 \chapter{Marco Teórico}
 \section{Fatiga}
 
-El fenómeno en el cual una estructura se daña e incluso falla por cargas fluctuantes, es llamado fatiga. El estudio de este problema comenzó tempranamente en europa durante la mitad del siglo XIX, en pleno auge de la industralización europea, producto de la falla repentina de algunos componentes en máquinas y los ejes de los trenes de la época. Estos experimentaban un gradual debilitamiento de la resistencia, fallando aún cuando su esfuerzo último no fuese alcanzado. 
-
-Así, en 1837 fueron publicados los resultados del primer ensayo de fatiga, realizado a una cadena transportadora utilizada en minas de hierro en Alemania. Wilhelm Albert, quien realizó esta investigación, se vió motivado a realizar los estudios por los altos costos que significaba la falla de este componente producto de las cargas cílicas a las que estaba sometida. Los pocos conocimientos existentes del fenómeno en esa época, llevo a que la solución al problema fuese la invención del cable de acero.
-
-Por otro lado, las primeras investigaciones enfocadas a comprender el fenómeno comenzaron en 1858 con August Wölher. Su acucioso estudio lo llevó a conclusiones que siguen teniendo importancia y validez hasta el día de hoy. Diseñó, durante la década de 1860, una máquina de ensayos de flexión y flexión rotativa. En 1870 presentó un informe en el cual parte de sus conclusiones cualitativas son llamadas ``Ley de Wöhler'', al establecer el esfuerzo alternante como el parámetro más importante para la vida de un componente, señalanado que ``the stress amplitudes are decisives for the destruction of the cohesion of the material. The maximum stress is of influence only in so far as the higher it is, the lower are the stress amplitudes which lead to failure''\textcolor{red}{citar schutz history of fatigue}, aunque destacando también que el esfuerzo medio tiene una influencia perjudicial en el material. 
-
-Es decir, desde 1853 hasta hoy, han transcurrido más de 160 años de investigación sobre la fatiga, logrando comprender distintas aristas del fenómeno, pero con muchas preguntas aún sin resolver. Por eso, la fatiga sigue siendo un problema necesario de abordar y seguir comprendiendo, por sus grandes implicaciones de costo que tiene en la industria y en distintos elementos que utilizamos en la vida diaria. Por otro lado, si bien muchas preguntas no han sido resueltas científicamente, diversas empresas han logrado evitar las fallas por fatiga y optimizar los diseños de manera operativa, sin comprender cabalmente el trasfondo de estos.  
-
-
-
 \subsection{Definiciones}
 La fatiga se puede definir, desde la perspectiva del material, como el proceso en el cual el daño se acumula producto de la aplicación de cargas repetitivas que se encuentran bajo el punto de fluencia. En metales, este proceso se divide en tres fases o etapas las cuales, dependiendo del autor, pueden ser llamadas: fase de iniciación de la grieta, fase de crecimiento de la grieta y fractura.
 
@@ -66,7 +56,7 @@ En concreto, las condiciones medioambientales hostiles, ya sean químicas o tér
 
 El esfuerzo residual también tiene incidencia en la curva de Wöhler, la cual puede incluso ser beneficiosa al utilizar técnicas como el granallado (\textit{shot peening}). El mecánizado de las piezas, como en el caso de la probeta utilizada por la máquina de fatiga, verá afectado los resultados de la curva $S$-$N$ dependiendo de las características con las que sea manufacturado. Como se indicó anteriormente, la primera etapa de la fatiga, la inicación de las grietas, es un fenómeno que depende de la superficie del material y como consecuencia, un mecánizado grueso o fino tendrá un impacto en esa etapa de la fatiga y no en la posterior, como se puede apreciar en la imagen \textcolor{red}{Imagen página 54 - Book of fatigue}. Así, aquellas probetas que tengan una mejor calidad superficial producto del afinado, tendrán una mejor resistencia a la fatiga respecto a otras.
 
-Es posible encontrar otros factores que inciden en los resultados de la curva, como pueden ser la geometría de la probeta o componente, sus dimensiones, el esfuerzo último ($\sigma_{uts}$), su microestructura, tratamientos químicos y el esfuerzo medio ($S_m$). Este último será analizado en la sección siguiente, debido a la importancia que posee al estar presente en la máquina a analizar. 
+Es posible encontrar otros factores que inciden en los resultados de la curva, como pueden ser la geometría de la probeta o componente, sus dimensiones, el esfuerzo último ($\sigma_{uts}$), su microestructura, tratamientos químicos y el esfuerzo medio ($S_m$). Este último será analizado en la sección siguiente, debido a la importancia que posee al estar presente en la máquina que se estudia en este trabajo.
 
 \subsection{Esfuerzo medio, $S_m$}
 Como se escribió anteriormente, el esfuerzo medio tiene influencia en los resultados de la curva $S$-$N$, dependiendo del tipo de ensayo realizado, con tal de lograr comparar los datos obtenidos entre distintas pruebas realizadas, como se muestra en la figura \textcolor{red}{añadir imagen 925  Dowling}. Para esto, se han desarrollado ecuaciones que buscan estimar el efecto una carga media dada cuando no existe información disponible.
@@ -81,7 +71,7 @@ Existen distintas maneras de representar la información de un ensayo donde $S_m
 \end{figure}
 
 \subsubsection{Diseño para esfuerzos uniaxiales fluctuantes}
-Cuando elementos están sometidos a esfuerzos repetidos con componentes medios distintos de cero, estos deben tomarse en cuenta para el diseño. Para esto, se utiliza un diagrama de esfuerzo alternante versus esfuerzo normal en el cual se ajustan distintas curvas a los datos obtenidos. Como se muestra en la figura \textcolor{red}{añadir imagen 442 norton pag 324}, existe la línea de Goodman modificada, la parábola de Gerber y la línea de Soderberg. La parábola de Gerber es la que mejor se ajusta a los datos de falla experimental, de acuerdo a la ecuación \ref{eq:gerber}; mientras que la línea de Goodman modificada, ecuación \ref{eq:good_mod}, se ajusta por debajo de la dispersión de datos. Ambas curvas utilizan en el eje $\sigma_a$ el límite de resistencia a la fatiga $S_e$ y el esfuerzo último $S_u$ o $S_{ut}$ en el eje $\sigma_m$. En cambio, la línea de Soderberg, ecuación \ref{eq:soderberg}, une $S_e$ con la resistencia a la fluencia del material $S_y$ y es, por lo tanto, un criterio de falla más conservador que los demás. Sin embargo, la línea punteada que une ambos $S_y$ se debe utilizar en las dos primeras curvas como límite del primer ciclo de esfuerzo para evitar que ceda o falle. \textcolor{red}{Referencia a libro norton}
+Cuando elementos están sometidos a esfuerzos repetidos con componentes medios distintos de cero, estos deben tomarse en cuenta para el diseño. Para esto, se utiliza un diagrama de esfuerzo alternante versus esfuerzo normal en el cual se ajustan distintas curvas a los datos obtenidos. Como se muestra en la figura \textcolor{red}{añadir imagen 442 norton pag 324}, existe la línea de Goodman modificada, la parábola de Gerber y la línea de Soderberg. La parábola de Gerber es la que mejor se ajusta a los datos de falla experimental, de acuerdo a la ecuación \ref{eq:gerber}; mientras que la línea de Goodman modificada, ecuación \ref{eq:good_mod}, se ajusta por debajo de la dispersión de datos. Ambas curvas utilizan en el eje $\sigma_a$ el límite de resistencia a la fatiga $S_e$ y el esfuerzo último $S_u$ en el eje $\sigma_m$. En cambio, la línea de Soderberg, ecuación \ref{eq:soderberg}, une $S_e$ con la resistencia a la fluencia del material $S_y$ y es, por lo tanto, un criterio de falla más conservador que los demás. Sin embargo, la línea punteada que une ambos $S_y$ se debe utilizar en las dos primeras curvas como límite del primer ciclo de esfuerzo para evitar que ceda o falle. \textcolor{red}{Referencia a libro norton}
 
 \begin{centering}
 \begin{align}
@@ -121,101 +111,7 @@ Y una segunda modificación de la ecuación de Goodman, propuesta por J. Morrow,
 	\frac{\sigma_a}{\sigma_{ar}} + \frac{\sigma_m}{\tilde{\sigma}_{fB}} = 1 
 \end{equation}
 
-
-\subsection{Medición de la fatiga}
-Existen distintas técnicas para cuantificar la respuesta de un material o componente frente a esfuerzos o deformaciones fluctuantes. La primera de ellas, como se habló anteriormente, corresponde a una viga giratoria sometida a flexión en voladizo, diseñada por A. Wöhler. Con respecto a la información existente en la literatura la mayoría de los datos disponibles de resistencia a la fatiga se encuentra en las pruebas de viga giratoria (\textit{rotating bending}, en inglés) en ciclo de flexión invertida, seguido por cargas axiales (\textit{push-pull}, en inglés), flexión en voladizo (\textit{alternating bending}, en inglés) y en menor medida, en las pruebas de fatiga por torsión. \textcolor{red}{citar norton seccion 45}
-
-\subsubsection{Ensayo de fatiga con una viga giratoria en flexión} 
-Su uso es el más extendido para determinar la vida a fatiga de un material. La principal ventaja frente a otros sistemas radica en su capacidad de aplicar ciclos de cargas a altas velocidades, es decir, realizar pruebas de fatiga a altas frecuencias. Sin embargo, no es posible aplicar una carga media distinta de cero, por lo tanto, su uso principal se encuentra en la obtención de datos para el rango HCF y de ciclo invertido. Los datos obtenidos son más altos respecto a otros tipos de medición, como se puede ver en la figura REF.
-
-
-\subsubsection{Ensayo de fatiga axial}
-Esta configuración de prueba es más flexible que el resto, siendo posible cualquier combinación de esfuerzo alternante y medio, además de poder realizar ensayos con el modelo de deformación-vida. Su principal diferencia respecto al método de viga giratoria se encuentra en que la sección transversal está sometida a esfuerzos de manera uniforme, provocando que los resultados de resistencia a la fatiga obtenidos sean usualmente menores que las obtenidas por \textit{rotating bending} y \textit{alternating bending}. Se considera que esto se debe a la  probabilidad más alta de hallar una microgrieta en un campo de esfuerzos más grande. Asimismo, la superposición de momentos de flexión sobre las cargas axiales, producto de la dificultad de crear cargas axiales sin excentricidad, son un factor en la disminución en la obtención de valores de resistencia menores. En concreto, la reducción de las resistencias a la fatiga obtenidos pueden variar entre un 10$\%$ y un 30$\%$ o más si hay flexión producto de la excentricidad de las cargas. La figura REF \textcolor{red}{sacar imagen de paper A Esin} muestra las diferencias de los datos obtenidos entre un ensayo de fatiga axial y uno de viga giratorio.
-
-\subsubsection{Ensayo de fatiga de flexión en voladizo}
-Esta prueba consiste en someter a una viga en voladizo a oscilaciones en su extremo libre a través de algún mecanismo, pudiendo lograr combinaciones de esfuerzos medios y alternantes. La máquina analizada en esta memoria, utiliza este método para la obtención de los datos de vida de fatiga del material a analizar. Los resultados de este tipo de prueba son inferiores a los obtenidos por \textit{rotating bending} y mayores a los obtenidos por \textit{push-pull}.
-
-\subsection{Correlación entre distintos métodos de medición de la fatiga}
-Como se señaló anteriormente y se aprecia en la imagen REF, cada prueba entrega valores distintos aún cuando los niveles de esfuerzo sean iguales. Por esto, existen distintos intentos en la literatura de crear correlaciones entre los datos, evitando los costos asociados a realizar nuevos ensayos experimentales del mismo material o componente. La forma en que se ha abordado esta problemática es la utilización de un factor de corrección ($\phi$) calculado con distintas propuestas.
-
-Algunos de estos modelos son: Manson y Muralidharan, Philipp, Lee y Esin. Cada metodología aborda de distinta forma el cálculo del factor de corrección $\phi$, ahora bien, se abordarán los modelos de Lee y Esin en este trabajo, ya que, de acuerdo a \textcolor{red}{agregar cita de analysis of axial papre}, son los modelos que se ajustan mejor al comportamiento de los datos empíricos entre ensayos de \textit{rotating bending} y de \textit{push-pull}. \textcolor{red}{corregir}
-
-\subsubsection{Modelo de Esin}
-El modelo propuesto por Esin en \textit{``A method for correlating different types of fatigue curve"}, relaciona las curvas $S$-$N$ de los ensayos \textit{push-pull}, \textit{alternating bending} y \textit{rotating bending}. Éste depende del esfuerzo alternante, asumiendo que la curva base y la calculada por este método se intersectarán en el punto ($S_e,N_f$), es decir, el factor de correción es $\phi=1$ en esa posición. 
-
-El método se basa en el análisis de la dependencia de la micro-plasticidad en la distribución de esfuerzos en la sección transversal, definiéndose la micro-plasticidad como el flujo plástico de un material sin haber alcanzado su punto de fluencia. Ésta ocurre sobre cierto nivel de esfuerzos en el rango elástico, llamado límite elástico real (\textit{true elastic limit}, en inglés o \textit{TEL}) y bajo el límite de resistencia a la fatiga, $S_e$. Así, siempre se cumplirá que:
-\begin{align*}
-	\text{\textit{TEL}} \leq S_e \leq S_y
-\end{align*}
-
-La micro-plasticidad es un fenómeno altamente localizado que depende de las propiedades probabilísticas micro-estructurales del material como su micro-inhomogeneidad, anisotropía y micro-concentraciones de esfuerzos, los cuales explican la dispersión de datos en los ensayos de fatiga. Así, cuando los esfuerzos alternantes están sobre valor del  \textit{TEL}, la micro-plasticidad influye en los macro-elementos. Dicho de otra forma, el comportamiento mecánico observado a un nivel macro es el comportamiento integrado de los micro-elementos.
-
-\begin{figure}[h]
-\centering
-\includegraphics[scale=1]{Imagenes/affectedarea_fatigue.pdf}
-\caption{Sección transversal de probetas sujetas a esfuerzo alternante uniaxial. \textit{a) push-pull}, \textit{b) alternating bending} y \textit{c) rotating bending}}
-\label{fig:affar_fat}
-\end{figure}
-
-En la figura \ref{fig:affar_fat}, se puede apreciar las áreas afectadas por fatiga para cada tipo de ensayo, los cuales, por sí mismo podrían explicar las diferencias en los resultados de cada prueba. Sin embargo, basándose en el criterio de fatiga de la deformación micro-plástica, la falla ocurre cuando la energía acumulada por la histérsis plástica, a una cantidad de ciclos $N_f$, es igual al valor de la energía de ruptura real (área bajo la curva de un diagrama $\sigma$-$\varepsilon$ real), como queda expresado en la ecuación \ref{eq:nfail_esin}.
-
-\begin{equation}\label{eq:nfail_esin}
-	N_f = \frac{U \cdot T_t}{W} 
-\end{equation}
-
-Donde:
-\begin{itemize*}
-	\item $N_f$: Número de ciclos a la falla.
-	\item $U$: Energía total real bajo la curva del diagrama esfuerzo-deformación.
-	\item $W$: Energía total plástica disipada.
-	\item $T_t$: Número total de macro-elementos.
-\end{itemize*}
-
-De esta forma, el método utiliza varios factores para crear una correlación entre las distintas curvas, ocupando el esfuerzo alternante, $S$, como valor de entrada. El primero de ellos es el concepto de esfuerzo alternante equivalente, $S_{eq}$ (ecuación \ref{eq:esfalt_eq}), utilizado para denotar un esfuerzo hipotético actuando sobre todos los elementos sometidos a fatiga. 
-\begin{equation}\label{eq:esfalt_eq}
-	S_{eq} = \frac{\Sigma \sigma_i A_i}{\Sigma A_i}
-\end{equation}
-Donde $A_i$ es el número o área de los macro-elementos con igual esfuerzo equivalente. A partir de esto, el esfuerzo equivalente para ensayos de \textit{rotating bending} y \textit{alternating bending}, están dados por las ecuaciones \ref{eq:seq_rotben} y \ref{eq:seq_altben}, respectivamente. 
-\begin{align}
-	S_{eq,rt} &= \frac{2S\cdot \sin^3 \theta}{3C} \label{eq:seq_rotben}\\
-	S_{eq,ab} &= \frac{2S}{3} \cdot \left(\frac{1-c^3}{1-c^2}\right) \label{eq:seq_altben}
-\end{align}
-Donde las variables $C$ y $c$ se definen cómo:
-\begin{equation}
-	C= \left(\frac{\pi\theta}{180} - \frac{\sin(2\theta)}{2}\right)\qquad ;\qquad c=\frac{r}{R}
-\end{equation}
-Los valores de $\theta$, $r$ y $R$ son propios de la geometría de la probeta utilizada y se definen de acuerdo a la figura \ref{fig:affar_fat}. De igual forma, se debe calcular el factor de fatiga, $FF$, ecuación que representa el ratio entre el área total de la sección transversal y el área de los elementos que contribuyen al proceso de fatiga. Así, las ecuaciones \ref{eq:ff_ab} y \ref{eq:ff_rb} representan los factores de fatiga para calcular la vida a fatiga equivalente, $N_{eq}$, de \textit{alternating bending} y \textit{rotating bending}, respectivamente.
-\begin{align}
-	FF_{ab} &= \frac{\pi}{2} \left(\frac{\pi\theta}{180} - \frac{\sin(2\theta)}{2}\right) \label{eq:ff_ab}\\		
-	FF_{rb} &= \frac{R^2}{(R^2 - r^2)} \label{eq:ff_rb}
-\end{align}
-Finalmente, con estos elementos es posible tomar del diagrama $S$-$N$ un punto ($S_i$,$N_i$) y, a través de las correlaciones, obtener un nuevo punto ($S_i'$,$N_i'$) que equivale a la curva $S$-$N$ de otro tipo de ensayo.
-
-La metodología consiste en tomar un valor de esfuerzo alternante conveniente $S$ y calcular su esfuerzo alternante equivalente, $S_{eq}$. Utilizando este valor, se determinará a partir de la curva $S$-$N$ original el número de ciclos a la falla que se llamará vida a fatiga equivalente, $N_{eq}$. Este valor debe ser multiplicado por el factor de fatiga $FF$, obteniendo la vida a fatiga modificada, $N$. Así, el punto $P=(S,N)$, como se muestra en la figura REF \textcolor{red}{añadir fig 3} es el valor equivalente obtenido, teniendo que repetirse el procedimiento para todos los puntos que se requieran.
-
-\subsubsection{Modelo de Lee}
-La estimación del límite de fatiga, $S_e$, se calcula a través de distintos factores de modificación según el tipo de carga, calidad superficial, tamaño y confiabilidad de la muestra. El factor de modificación según el tipo de carga $C_L$ varía entre 0,7 y 0,9 para probetas sin muescas. Las recomendaciones para cada valor de $C_L$ se realizaron considerando los efectos del gradiente de esfuerzos y el tipo de esfuerzo involucrado, es decir, cortantes y normales. Estos también varían según el tipo de material, los cuales fueron obtenidos de manera empírica. Así la tabla \ref{tab:lee_factor} muestra los factores de modificación para algunos tipos de carga.
-
-\begin{table}[h]
-\centering
-\caption{Factores de modificación por tipo de carga, según el modelo de Lee.}
-\label{tab:lee_factor}
-\begin{tabular}{@{}llc@{}}
-\toprule
-Tipo de Carga                & $C_L$ & \multicolumn{1}{l}{Observaciones} \\ \midrule
-Carga axial pura             & 0,9   & -                                 \\
-Carga axial con leve flexión & 0,7   & -                                 \\
-Rotating bending             & 1,0   & -                                 \\
-Torsional                    & 0,58  & \multicolumn{1}{l}{Para aceros}   \\ \bottomrule
-\end{tabular}
-\end{table}
-
-Además, es posible apreciar en la imagen REF \textcolor{red}{colocar imagen 416 del texto de Lee} las diferencias que se generan por la aplicación del factor de corrección para los distintos tipos de carga que se buscan. 
-
-AÑADIR IMAGEN COMPARANDO AMBOS SISTEMAS.
-
 \section{Dinámica}
-\textcolor{red}{AGREGAR APOSTROFE A TODOS LOS DALEMBERT, buscar por Alembert}
 
 El movimiento y la relación existente entre las fuerzas que actúan sobre un cuerpo rígido es estudiado por la dinámica, la cual busca predecir el movimiento y explicar su origen. En esta sección se hablará de cuerpos rígidos y no partículas, debido las características de lo que se analizará posteriormente, además, de ser la rotación un elemento importante a considerar. 
 \subsection{Ecuaciones de movimiento de un cuerpo rígido}
@@ -232,7 +128,7 @@ De manera análoga para el mismo cuerpo rígido, de momento de inercia $I$, es s
 \end{equation} 
 Con las ecuaciones \ref{eq:newton_lineal} y \ref{eq:newton_angular} se puede describir el movimiento de un sólido rígido.
 
-Por otro lado, el principio de D'Alembert nos permite establecer un equilibrio dinámico entre las suma de las fuerzas externas o momentos y el producto entre su masa y la aceleración resultante del sólido, que se le denominará fuerza efectiva. Ambos términos deben ser equipolentes sobre el sistema que actúan, de esta manera las ecuaciones \ref{eq:2l_newton} y \ref{eq:2l_euler} son el resultado de la aplicación de este principio.
+Por otro lado, el principio de D\texttt{'}\kern-0.3em Alembert nos permite establecer un equilibrio dinámico entre las suma de las fuerzas externas o momentos y el producto entre su masa y la aceleración resultante del sólido, que se le denominará fuerza efectiva. Ambos términos deben ser equipolentes sobre el sistema que actúan, de esta manera las ecuaciones \ref{eq:2l_newton} y \ref{eq:2l_euler} son el resultado de la aplicación de este principio.
 \begin{gather}
 	\sum \mathbf{F_i} = m\mathbf{\ddot{x_i}} \label{eq:2l_newton}\\
 	\nonumber \\
@@ -299,7 +195,7 @@ Donde $n$ es el número de coordenadas generalizadas y $q$ cada coordenada gener
 \label{sec:vib_forzadas}
 Los sistemas mecánicos están sometidos a una gama bastante amplia de fuerzas externas que actúan sobre ellos, las que pueden ser aleatorias, periódicas, no periódicas o transientes. La fuente puede ser variada, pero todas ellas pueden causar vibraciones en el sistema, las cuales se denominarán $F(t)$. Para el caso de este trabajo, el sistema a analizar contiene un disco sometido a rotación constante, impulsado por un motor eléctrico, que produce una fuerza periódica producto de su desbalanceo.
 
-Si consideramos un desequilibrio de masa $m_0$, a una distancia $e$ del centro de rotación y rotando a una velocidad $\phi$, como se muestra en la figura \textcolor{red}{Hacer figura similar a 219 y 220 de Inman}, la componente vertical de la fuerza centrífuga $F(t)$ es:
+Si consideramos un desequilibrio de masa $m_0$, a una distancia $e$ del centro de rotación y rotando a una velocidad $\phi$, como se muestra en la figura \textcolor{red}{Hacer figura similar a 219 y 220 de Inman pag 160}, la componente vertical de la fuerza centrífuga $F(t)$ es:
 \begin{equation}
 	F_y(t) = m_0\ddot{y}(t)
 \end{equation}
@@ -315,7 +211,7 @@ Por lo tanto, la ecuación \ref{eq:vib_forzadas}, muestra la fuerza centrífuga 
 \end{equation}
 
 \subsection{Modeling}
-Es el proceso en el que se representan todos los detalles importantes del sistema con el objetivo de derivar las ecuaciones que  rigen el comportamiento del mismo. Para esto, los métodos existentes son la ley de movimiento de Newton, el principio de D$'$Alembert y principio de conservación de la energía. Los primeros, vistos en la sección \ref{sec:ec_mov}, se utilizan a través de un diagrama de cuerpo libre y la correcta identificación de las fuerzas y momentos que actúan sobre un cuerpo. Por otra parte, el método de conservación de la energía tiene la capacidad de derivar las ecuaciones de movimiento de un cuerpo sin la necesidad de recurrir a un diagrama de cuerpo libre, es decir, no se requiere identificar fuerzas ni momentos en el sistema. Éste método se verá en mayor profundidad en la sección \ref{sec:metodo_energia}.
+Es el proceso en el que se representan todos los detalles importantes del sistema con el objetivo de derivar las ecuaciones que  rigen el comportamiento del mismo. Para esto, los métodos existentes son la ley de movimiento de Newton, el principio de DD\texttt{'}\kern-0.3em Alembert y principio de conservación de la energía. Los primeros, vistos en la sección \ref{sec:ec_mov}, se utilizan a través de un diagrama de cuerpo libre y la correcta identificación de las fuerzas y momentos que actúan sobre un cuerpo. Por otra parte, el método de conservación de la energía tiene la capacidad de derivar las ecuaciones de movimiento de un cuerpo sin la necesidad de recurrir a un diagrama de cuerpo libre, es decir, no se requiere identificar fuerzas ni momentos en el sistema. Éste método se verá en mayor profundidad en la sección \ref{sec:metodo_energia}.
 
 Si consideramos un sistema amortiguado forzado y de un solo grado de libertad, $x(t)$ o $\theta(t)$ según sea el caso, entonces la ecuación que describe el movimiento tendrá la siguiente forma:
 \begin{subequations}
@@ -327,7 +223,7 @@ Si consideramos un sistema amortiguado forzado y de un solo grado de libertad, $
 Tanto la ecuación lineal (\ref{eq:onedeglineal_damp}) y angular (\ref{eq:ondegangular_damp}) son el resultado de derivarlas a través de cualquiera de los métodos expuestos anteriormente.  
  
 \subsection{Sistema de múltiples grados de libertad}
-El número de grados de libertad de un sistema es la cantidad de parámetros independientes necesarios para definir los movimientos que posee cada masa involucrada en el sistema. Para cada grado de libertad de una masa, corresponde una coordenada $x_i(t)$, describiendo su movimiento en esa dimensión. La figura \textcolor{red}{REF\{imagen 47 de Inman\}} muestra las posibilidades de movimiento de un elemento de masa $m$ que no está sometido a ninguna restricción.
+El número de grados de libertad de un sistema es la cantidad de parámetros independientes necesarios para definir los movimientos que posee cada masa involucrada en el sistema. Para cada grado de libertad de una masa, corresponde una coordenada $x_i(t)$, describiendo su movimiento en esa dimensión. La figura \textcolor{red}{REF\{hacer imagen 47 de Inman pag 341\}} muestra las posibilidades de movimiento de un elemento de masa $m$ que no está sometido a ninguna restricción.
 
 La forma de describir el movimiento de cada masa es a través del uso de matrices y vectores, de tal forma que es posible agrupar los distintos componentes que se vieron en las ecuaciones \ref{eq:onedeglineal_damp} y \ref{eq:ondegangular_damp} de un solo grado de libertad. De esta manera, las coordenadas $x_i(t)$ pueden ser escritas como un vector $\mathbf{x}(t)$ de $n \times 1$, donde $n$ es la cantidad de grados de libertad del sistema. Asimismo, se puede representar matricialmente la información de la masa del sistema y la rigidez de cada resorte, donde $\mathit{M}$ es la matriz de masas y $\mathit{K}$ es la matriz rigidez, ambas de dimensión $n \times n$. 
 \begin{equation}\label{eq:multi_degree}
@@ -375,6 +271,7 @@ Las ecuaciones de movimiento de un sistema vibratorio pueden estar compuestas po
 \begin{equation}\label{eq:fuerza_generalizada}
 	Q_j = \frac{U_j}{\delta q_j}
 \end{equation} 
+
 Análogamente a como se ha desarrollado anteriormente, $Q_j$ puede adquirir el valor de una fuerza o momento, así como $q_j$ puede ser una coordenada de desplazamiento lineal o angular. Así mismo, $\dot{q}_j$ y $Q_j^{(n)}$ representan la velocidad generalizada y la fuerza generalizada no conservativa, respectivamente.
 
 Con esto en consideración, el método de Lagrange define el concepto de lagrangiano $L$, como la resta entre la energía cinética $T$ y la energía potencial $U$ del sistema, ambos en términos de las coordenadas generalizadas $q_i(t)$.

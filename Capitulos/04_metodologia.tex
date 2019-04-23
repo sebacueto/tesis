@@ -218,7 +218,7 @@ Con relación a la cargas fluctuantes que recibirán las pletinas como parte del
 	\sigma_{a,A} = \frac{M_{a,pl,A} \cdot h_p}{2I_{pl}}
 \end{gather}
 
-Para obtener el factor de seguridad, se utilizará la ecuación de Goodman modificada REFERENCIAR. Para esto, el límite de resistencia a la fatiga de un acero se puede estimar como $S_e = 0,5S_{ut}$ cuando el esfuerzo último es menor a 1400 MPa. Como el material utilizado es un acero A270ES, entonces su equivalente en la antigua nomenclatura chilena de acero es A42-27ES REFERENCIA, donde el esfuerzo último del material es $S_{ut} =$420 MPa, por lo tanto, $S_e = 210$ MPa. También, el esfuerzo medio será igual al esfuerzo estático calculado anteriormente, donde, $S_m = \sigma_{max,pl}$. Así, el factor de seguridad es:
+Para obtener el factor de seguridad, se utilizará la ecuación de Goodman modificada (\ref{eq:good_mod}). Para esto, el límite de resistencia a la fatiga de un acero se puede estimar como $S_e = 0,5S_{ut}$ cuando el esfuerzo último es menor a 1400 MPa REFERNCIA. Como el material utilizado es un acero A270ES, entonces su equivalente en la antigua nomenclatura chilena de acero es A42-27ES REFERENCIA, donde el esfuerzo último del material es $S_{ut} =$420 MPa, por lo tanto, $S_e = 210$ MPa. También, el esfuerzo medio será igual al esfuerzo estático calculado anteriormente, donde, $S_m = \sigma_{max,pl}$. Así, el factor de seguridad es:
 \begin{equation}
 	FS = \left(\frac{S_e\cdot S_{ut}}{S_a\cdot S_{ut} + S_m\cdot S_e}\right)
 \end{equation}
@@ -234,7 +234,7 @@ Para identificar las distintas partes de madera en la estructura, se utilizará 
 
 \textcolor{red}{añadir imagen de vigas A, B, C y D}
 
-Como se nombró anteriormente, la madera utilizada será pino oregón, el cual bajo las consideraciones de la tabla \ref{tab:tabla3_1198} se considerará como seca tanto en construcción como en servicio al estar en un ambiente cerrado sin calefacción, como se señala en la sección \ref{sec:contenido_humedad} de contenido de humedad. Los valores de densidad, tanto anhidra como normal, se pueden obtener del Anexo E de la norma, a partir de este, la tabla \ref{tab:densidad_oregon} muestra los valores del pino oregón.
+Como se nombró anteriormente, la madera utilizada será pino oregón, el cual bajo las consideraciones de la tabla \ref{tab:tabla3_1198} se trabajará como madera seca tanto en construcción como en servicio al estar en un ambiente cerrado sin calefacción, como se señala en la sección \ref{sec:contenido_humedad} de contenido de humedad. Los valores de densidad, tanto anhidra como normal, se pueden obtener del Anexo E de la norma. A partir de este anexo, la tabla \ref{tab:densidad_oregon} muestra los valores del pino oregón.
 
 \begin{table}[h]
 \centering
@@ -621,7 +621,7 @@ Cálculo &  &  \\ \hline
 \end{table}
 Los datos utilizados en el modelo corresponden a los obtenidos por simulación.
 
-Por otro lado, los valores de $c_1$ y $c_2$ se estimaron de manera cualitativa, visualizando la curvas de $y(t)$ y $\theta(t)$ para buscar que la vibración inicial se disipara antes del inicio de la función de aceleración del disco. Así, los valores obtenidos son:
+Por otro lado, los valores de $c_1$ y $c_2$ se estimaron de manera cualitativa, visualizando la curvas de $y(t)$ y $\theta(t)$ para buscar que la vibración inicial se disipara antes del inicio de la función de aceleración del disco. Así, los valores utilizados son:
 \begin{itemize}
 	\item $c_1= 100$
 	\item $c_2= 100$ 
@@ -633,7 +633,7 @@ El segundo momento de área o segundo momento de inercia, se calculó para obten
 \end{equation}
 
 \subsubsection{Momento de inercia del brazo de carga}
-El momento de inercia del brazo de carga se obtuvo a través del modelo CAD del mismo. Su valor es 
+El momento de inercia del brazo de carga se obtuvo a través del modelo CAD del mismo, respecto a su centro de masa. Su valor es 
 
 \subsubsection{Longitud, masa y módulo de elasticidad}
 Los elementos del sistema explicados en la sección \ref{sec:mod_sist}, tienen un valor definido que fue medido como parte del levantamiento de información. La distancia correspondiente a cada extremo respecto al centro de masa es:

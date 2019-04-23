@@ -8,9 +8,173 @@
 
 \subsection{Función}
 
+\begin{lstlisting}
+
+function DERVAR = machfun(t, XVAR)
+
+% Valores de entrada
+
+% Configuracion 86
+m1= 0.7582e-3;       % m_1 y m_2 corresponden a los contrapesos.
+m2= 0;               % m_1 > m_2 [kg]
+
+% Tipo de probeta
+E_p= 2e11;           % Mod. de Young del material de la probeta [Pa]
+I_p= 3.309e-10;      % Segundo momento de area de la probeta [m4].
+
+% Parametros del sistema
+R_d = 0.1120 ;       % Radio disco de aluminio [m]
+Md = 19.2029;        % Masa disco y conjunto [kg]
+E_ac = 2e11;         % Modulo de Young acero [Pa]
+I_b1 = 5.6718e-8;    % Segundo momento de area brazo 1 [m4]
+L_b1 = 33.3e-2;      % Largo brazo 1 [m]
+l = 0.2005;          % Largo brazo 2 entre P y Q [m]
+l1 = 0.110337;       % Largo brazo 2 entre P y centro de masa Gb [m]
+l2 = 0.090163;       % Largo brazo 2 entre centro de masa Gb y Q [m]
+Mb = 2.3050;         % Masa brazo 2 [kg]
+Igb = 8.32726e-4;    % Momento de inercia brazo 2 [kg*m2]
+L_p = 0.0724;        % Largo de probeta [m]
+g = 9.806;           % Gravedad [m/s2]
+
+k1 = 98890.45;       % Coef. de elasticidad de las barras de acero
+k2 = 1809049.41;     % Coef. de elasticidad de la probeta de acero
+
+% Calculos
+Ma = m1 + m2 + Md;
+ega = (R_d*(m1-m2))/(m1+m2);
+c1 = 100;
+c2 = 100;
+
+% Funcion de aceleracion del disco
+[angle,anglep,anglepp] = vinput(t);
+
+% Asignacion de variables
+Y = XVAR(1);
+Yp = XVAR(2);
+B = XVAR(3);
+Bp = XVAR(4);
+
+DERVAR(1) = Yp;
+
+Ypp = (Ma*ega*(anglep*anglep*sin(angle) - anglepp*cos(angle))*(Igb + 2*Ma*l1*l1) - c1*(Yp - l1*Bp)*Igb - c2*(Yp + l2*Bp)*(Igb + Ma*l1*l1 + Ma*l1*l2) - k1*(Y - l1*B)*Igb - k2*(Y + l2*B)*(Igb + Ma*l1*l1 + Ma*l1*l2) - g*((Ma + Mb)*(Igb + Ma*l1*l1) - Ma*Ma*l1*l1))/((Ma + Mb)*(Igb + Ma*l1*l1) - Ma*Ma*l1*l1);
+
+DERVAR(2) = Ypp;
+
+DERVAR(3) = Bp;
+
+Bpp = (Ma*ega*(anglep*anglep*sin(angle) - anglepp*cos(angle))*(2*Ma*l1 + l1*Mb) + c1*(Yp - l1*Bp)*Mb*l1 - c2*(Yp + l2*Bp)*(Ma*l1 + l2*(Ma + Mb)) + k1*(Y - l1*B)*Mb*l1 - k2*(Y + l2*B)*(Ma*l1 + l2*(Ma + Mb)))/((Ma + Mb)*(Igb + Ma*l1*l1) - Ma*Ma*l1*l1);
+
+DERVAR(4) = Bpp;
+
+DERVAR = DERVAR';
+
+\end{lstlisting}
+
+
 \subsection{Solver}
+\begin{lstlisting}
+
+% Tolerancia relavita y absoluta
+opts = odeset('RelTol',1e-8,'AbsTol',1e-8);		
+
+% Solver
+[tp,x]=ode45(machfun, [0,10],[0;0;0;0],opts);
+
+
+% Valores auxiliares
+l2 = 0.1581;				
+k2 = 1809049.41;			
+
+% Fuerza sobre la probeta
+F2 = (x(:,1)+l2*x(:,3))*k2;						
+
+
+\end{lstlisting}
 
 \section{Función de la aceleración, velocidad y posición angular del disco}
 
+\begin{lstlisting}
+function [t,tp,tpp] = vinput(time)
+
+Ti = 2;
+WMAX = 25;
+T = 2.5;
+
+for i=1:length(time)
+    
+    if(time(i) < Ti)   
+    	t(i) = 0;
+    	tp(i)=0;
+    	tpp(i)=0;
+    
+    elseif (time(i) < (Ti + T)) 
+    	t(i) = (WMAX/(6*T^2))*((time(i)^3) - 3*Ti*(time(i)^2) + 3*time(i)*(Ti^2) - Ti^3);
+    	tp(i) = (WMAX/(2*T^2))*((time(i)^2) - 2*Ti*time(i) + Ti^2);
+    	tpp(i) = (WMAX/(T^2))*(time(i) - Ti);
+    
+    elseif (time(i) < (Ti + 2*T))
+    	t(i) = (WMAX/T)*(time(i)^2 - 2*Ti*time(i) - 3*T*time(i) + (1/(2*T))*(4*time(i)*T^2 - time(i)*Ti^2 - ((time(i)^3)/3) + Ti*time(i)^2)) + ((2*WMAX*T^3 + 6*WMAX*Ti*T^2 + 6*WMAX*T*Ti^2 + WMAX*Ti^3)/(6*T^2));  
+    	tp(i) = (WMAX/T)*(2*time(i) - 2*Ti - 3*T + (1/(2*T))*(4*T^2 - Ti^2 - (time(i)^2) + 2*Ti*time(i)));
+    	tpp(i) = (WMAX/T)*(2 - ((time(i) - Ti)/T));
+    
+    else
+    	t(i) = WMAX*time(i) - WMAX*(T + Ti);
+    	tp(i) = WMAX;
+    	tpp(i) = 0;
+    
+    end
+end
+\end{lstlisting}
 
 \section{Script para cargas máxima, media y alternante}
+\begin{lstlisting}
+MassT;
+F25 = zeros(length(M),1);
+dm = zeros(length(M),1);
+Me = zeros(length(M),1);
+Fmax25 = zeros(length(M),1);
+Fm25 = zeros(length(M),1);
+
+for i = 1:1:length(M)
+    i	% Contador
+
+    m1 = M(i,1); % Combinaciones contenidas en la matriz MassT
+    m2 = M(i,2);
+    
+    
+    opts = odeset('RelTol',1e-8,'AbsTol',1e-8);
+
+    [tp,x]=ode45((t,XVAR)machfun_test(t,XVAR,m1,m2), [0,10],[0;0;0;0],opts);
+
+    laux = length(tp);
+        
+    l2 = 0.090163;
+    k2 = 1809049.41;
+    l1 = 0.110337;
+        
+    dy = x(:,1) + l2*x(:,3);
+    Fp = dy*k2;
+    Faux = Fp(round(laux/2):laux,:); 
+    Fabs = abs(max(Faux) - min(Faux));
+    Fm = (abs(max(Faux) + min(Faux)))/2;
+    fmax = abs(max(Faux));
+    fmin = abs(min(Faux));
+        if fmax > fmin
+            Fmax25(i) = fmax;
+        else
+            Fmax25(i) = fmin;
+        end
+    F25(i) = Fabs/2;
+    Fm25(i) = Fm;
+    dm(i) = m1-m2;
+    
+    Rd = 0.1120 ;  
+    Md = 19.2029;   
+    ega = (Rd*(m1-m2))/(m1+m2);
+    Ma = Md + m1 + m2;
+    Me(i) = ega*Ma;
+    
+    save('resultados_tabla_25','F25','dm','Me','Fmax25');
+    
+end
+\end{lstlisting}
