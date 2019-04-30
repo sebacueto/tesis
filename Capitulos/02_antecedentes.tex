@@ -103,10 +103,51 @@ Además, es posible apreciar en la imagen REF \textcolor{red}{hacer imagen como 
 AÑADIR IMAGEN COMPARANDO AMBOS SISTEMAS.
 
 \section{Máquina de fatiga a flexión}
+El desarrollo de este trabajo se centrará en la máquina de fatiga que posee el departamento de ingeniería mecánica en el laboratorio de tecnología mecánica en Valparaíso. La información existente sobre la máquina de ensayo es escasa principalmente por su antigüedad, lo que ha llevado a la perdida de documentos y la obsolescencia de la tecnología de la parte eléctrica.  
+
+A partir de la información verbal entregada por el profesor Guillermo González, la máquina fue adquirida por el departamento durante la década del 50. Fue fabricada en Suiza por \textit{Alfred J. Amsler \& Co.} y su estructura completa es de acero fundido. Previo a la remodelación del piso del laboratorio durante el año 2012, la máquina se encontraba montada sobre un colchón de corcho, que a su vez se anclaba a un bloque hecho de concreto. Este fue demolido durante los trabajos, momento desde el cual se encuentra apoyada sobre la mesa de madera sin una solución definitiva. Más aún, varios equipos y máquinas de ensayo del laboratorio no se encuentran ancladas al piso ni con una instalación definitiva, impidiendo su correcto uso.
+
+La máquina consiste, en un primer acercamiento, en un disco desequilibrado de forma controlada por el usuario, el cual, al ser acelerado angularmente hasta una velocidad definida por su motor eléctrico, comienza a oscilar. Esta oscilación es transmitida, a través de un brazo de carga, hacia la probeta en forma de momento. La probeta se encuentra doblemente empotrada, por un lado está fija a la estructura de la máquina y, por el otro, empotrado al brazo de carga que le realiza el momento. Los elementos que generan el desequilibrio son pequeñas masas calibradas, como se puede apreciar en la imagen \ref{fig:contrapesos}, que se denominarán contrapesos. La máquina también entrega la posibilidad de realizar ensayos de fatiga a torsión, al girar los empotramientos 90 grados, sin embargo, esta configuración no se estudiará en este trabajo. Un estudio a mayor profundidad se realizará en la sección \ref{sec:lev_info}.
 
 \section{La madera como elemento constructivo}
+La madera es un material de construcción simple y liviano, con ciertas características que lo vuelven particular respecto a otros materiales de construcción. Esto hace que al momento de trabajar con la madera se requiera un conocimiento especial y se tomen en consideración reglas específicas que permitan realizar diseños de calidad que aprovechen al máximo las propiedades y beneficios que provee.
+
+Existen cientos de variedades de madera, donde cada una tiene propiedades distintas. Además, al haber sido parte de un organismo vegetal en crecimiento, hace que ninguna pieza de madera sea igual a otra y, dependiendo del tipo de corte, también varíen las propiedades mecánicas. Frente a esta importante variabilidad del material, surgen las normas en cada país que intentan delimitar y clasificar las distintas especies madereras que se encuentran en su región según el tipo de corte, contenido de humedad, su calidad o uso. Incluso, existen distintas metodologías de cálculo si se utiliza madera maciza, laminada encolada o aglutinada. En el caso de este trabajo, se utilizará exclusivamente madera maciza, por lo tanto, toda la metodología de cálculo e información respectiva a este tipo de madera, a excepción del pino radiata, se encuentra en la norma NCh 1198 Of - Madera - Construcciones en madera - Cálculo.
+
+\subsection{Anatomía de la madera}
+La madera es un material que es fabricado naturalmente por los vegetales leñosos, con un alto grado de especialización y complejidad. Esto lo vuelva altamente heterogéneo, al estar especializado en llevar a cabo las funciones fundamentales del vegetal, lo que se ve reflejado en sus propiedades físicas y mecánicas. 
+
+Una consecuencia de esta heterogeneidad es el comportamiento anisotrópico, teniendo un comportamiento distinto según la dirección en que se trabaja. Se establecen tres planos de referencia respecto a su propiedades físicas.
+\begin{itemize}
+	\item Longitudinal: Sigue la misma dirección de la fibra o el eje del tronco.
+	\item Radial: Pasa por el eje del tronco y es perpendicular a los anillos de crecimiento.
+	\item Tangencial: Paralela a un plano tangente a los anillos de crecimiento.
+\end{itemize}
+En relación a sus propiedades mecánicas se habla de dos direcciones, la paralela (longitudinal) y normal o perpendicular (englobando radial y tangencial). Esta diferencia hace que la madera sea capaz de soportar cargas de compresión de hasta 4 veces en dirección paralela respecto a la normal. Esto quiere decir que siempre que sea posible, se deben instalar las piezas madereras para que resistan las cargas en su dirección longitudinal para un uso eficiente del material. De esta forma, se habla que las propiedades mecánicas de la madera son ortotrópicas.
+
+Por último, es considerado un material higroscópico por su capacidad de captar o ceder agua del exterior, tanto en forma líquida como vapor. La cantidad de agua que contiene tenderá a estar en equilibrio con su entorno, lo que afectará sus propiedades físicas, mecánicas y en su posible degradación.
+
+\subsection{Propiedades mecánicas de la madera}
+Junto a la ortotropía de la madera, existen otras particularidades que influyen en sus propiedades, como la duración de la carga, el contenido de humedad y su calidad. En el primer caso, dado su carácter orgánico, es susceptible a degradarse por elementos externos como la lluvia, hongos, insectos o el sol protegiendola a través de tratamientos químicos, e internos, que se expresa en un factor de modificación por duración de carga para . En el segundo caso, a mayor cantidad de humedad la resistencia comienza a decaer, como también sus dimensiones se comienzan a modificar, afectando las uniones o ensambles. En último término, la calidad se reflejada en la cantidad de nudos, desviaciones de fibra o gemas que influyen en su comportamiento.
+
+La tracción y compresión tienen resistencias distintas, además de las diferencias existentes entre las cargas paralelas y perpendiculares a la madera. La resistencia a la tracción paralelamente es comúnmente más alta que la compresión paralela, en la cual se debe calcular además la inestabilidad lateral. En el caso de la compresión y tracción perpendicular, los valore de resistencia son considerablemente más bajos, llegando a ser 9 y 20 veces menos resistente que su par paralelo, respectivamente. Esto se debe a la eficiencia de construcción de los árboles al no estar solicitados fuertemente en estas direcciones. 
+
+Esta diferencia de resistencia y comportamiento entre la tracción y compresión de la madera implica que en el cálculo de la flexión se deban separar las zonas flexo-comprimidas y flexo-traccionadas, a pesar que la resistencia a la flexión de una madera sea única. Por otro lado, los esfuerzos cortante en un elemento de madera puede tener diversos modos:
+\begin{itemize}
+	\item Cortadura: las fibras son cortadas transversalmente.
+	\item Deslizamiento: las fibras se desplazan longitudinalmente.
+	\item Rodadura: las fibras se desplazan una sobre otra.
+\end{itemize}
+Donde la rotura se produce por deslizamiento al ser el plano más débil.
+
+En última instancia, la resistencia a la fatiga de la madera es muy buena en comparación a otros materiales estructurales con estructura cristalina como el acero\textcolor{red}{citar libro guia de madera}, siendo resistente a la acción cíclica de las cargas y al amortiguamiento de estas. 
 
 \section{Acero}
+El acero es una aleación basada principalmente en fierro y carbono, pudiendo tener concentraciones de otros elementos incluso. Sus propiedades mecánicas son fuertemente sensitivas al contenido de carbono, por lo que muchas veces es clasificado a partir de su porcentaje, como aceros de bajo, media y alto en carbono.
+
+La probeta utilizada en la máquina de fatiga se fabrica actualmente de acero de bajo carbono, los cuales bajo nomenclatura AISI/SAE se denominan 1020 y 1040, es decir, son aceros que sólo contienen concentraciones residuales de otros elementos distintos al carbono y su concentración es del 0,20\% y 0,40\% respectivamente.
+
+Los aceros de bajo carbono se caracterizan por ser más débiles, pero con una alta tenacidad. Además, son maquineables, soldables y más baratos respecto a otros tipos de aceros. 
 
 
 

@@ -2,8 +2,21 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Secci\IeC {\'o}n transversal de probetas sujetas a esfuerzo alternante uniaxial. \textit {a) push-pull}, \textit {b) alternating bending} y \textit {c) rotating bending}}}{10}{figure.1.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces M\IeC {\'a}quina de fatiga en flexi\IeC {\'o}n en el laboratorio de tecnolog\IeC {\'\i }a mec\IeC {\'a}nica}}{14}{figure.2.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Brazo de carga junto a su mordaza y la mordaza empotrada a la derecha.}}{20}{figure.2.2}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Diagrama del modelo utilizado y el sistema de coordenadas.}}{35}{figure.2.3}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Funci\IeC {\'o}n por parte de la aceleraci\IeC {\'o}n del disco}}{41}{figure.2.4}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Funci\IeC {\'o}n por parte de la velocidad angular del disco}}{42}{figure.2.5}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Diagrama de vida constante para aluminio 7075-T6}}{22}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Diagrama CFL normalizado}}{24}{figure.2.2}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces M\IeC {\'a}quina de fatiga en flexi\IeC {\'o}n en el laboratorio de tecnolog\IeC {\'\i }a mec\IeC {\'a}nica}}{33}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Contrapesos utilizados para desequilibrar el disco. De izquiera a derecha se aprecia el n$^{\circ }$ 5 al n$^{\circ }$ 1.}}{35}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Brazo de carga junto a su mordaza y la mordaza empotrada a la derecha.}}{39}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Diagrama de las cargas soportadas por la pletina de acero.}}{41}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagrama de las cargas soportadas por la viga A.}}{47}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Diagrama del modelo utilizado y el sistema de coordenadas.}}{56}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Funci\IeC {\'o}n por parte de la aceleraci\IeC {\'o}n del disco}}{61}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Funci\IeC {\'o}n por parte de la velocidad angular del disco}}{62}{figure.3.8}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Designaciones de espaciamientos y bordes. Fuente: NCh1198 - Madera - Construcciones en madera - C\IeC {\'a}lculo.}}{84}{figure.Alph1.1}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Valor de $h_e$, para los distintos elementos de uni\IeC {\'o}n. Fuente: NCh1198 - Madera - Construcciones en madera - C\IeC {\'a}lculo.}}{86}{figure.Alph1.2}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Uniones en cizalle doble. Fuente: NCh1198 - Madera - Construcciones en madera - C\IeC {\'a}lculo.}}{88}{figure.Alph1.3}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Espaciamientos m\IeC {\'\i }nimos ntre pernos, barras de acero, tirafondos y a los bordes. Fuente: NCh1198 - Madera - Construcciones en madera - C\IeC {\'a}lculo.}}{90}{figure.Alph1.4}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Esquema de un tirafondo. Fuente: NCh1198 - Madera - Construcciones en madera - C\IeC {\'a}lculo.}}{91}{figure.Alph1.5}

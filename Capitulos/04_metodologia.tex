@@ -1,6 +1,9 @@
 \chapter{Metodología}
 \section{Levantamiento de información}
-El departamento de ingeniería mecánica en el Campus Casa Central, posee una máquina de fatiga (MF) uniaxial en flexión en el laboratorio de tecnología mecánica que se encuentra en la universidad hace más de 50 años, sin saber su fecha exacta de adquisición. La medición de fatiga es realizada a través del método de \textit{esfuerzo-vida}, utilizando la configuración de \textit{rotating bending}, ambos descritos en el capítulo anterior. La información existente sobre la máquina de ensayos es escasa, principalmente por su antigüedad, la perdida de documentos y obsolescencia de la electrónica. Por lo mismo, parte del trabajo de esta memoria se centra en lograr rescatar información y su posterior comprensión para lograr tener operativa la máquina de fatiga.
+\label{sec:lev_info}
+Parte del trabajo de esta memoria se centra en lograr rescatar información y su posterior comprensión de la máquina de fatiga a flexión para lograr tenerla operativa para su uso en el laboratorio. El levantamiento de información consistirá en detallar su estado actual, describir el funcionamiento para realizar los ensayos y, finalmente, en poder cuantificar y medir los distintos componentes de la máquina.
+
+La medición de fatiga es realizada a través del método de \textit{esfuerzo-vida}, utilizando la configuración de \textit{alternating bending}, ambos descritos en los antecedentes.
 
 \begin{figure}[h]
 \centering
@@ -12,10 +15,8 @@ El departamento de ingeniería mecánica en el Campus Casa Central, posee una m�
 \label{fig:maq_fat}
 \end{figure}
 
-\subsection{Estado actual y antecedentes}
-Actualmente la máquina no puede ser utilizada por no estar anclada, estando apoyada sobre dos listones de madera, que a su vez, están sobre una mesa de madera como se aprecia en la figura REF. Por consiguiente, la máquina al ser utilizada comienza a vibrar, saltar y desplazarse lateralmente, lo que impide su uso prolongado por motivos de seguridad. Es decir, no es posible realizar correctamente un ensayo de fatiga de ningún material ni configuración.
-
-A partir de información verbal entregada por el profesor Fernando Rojas, se cree que la máquina fue adquirida por el departamento hace, al menos, 50 años atrás. Fue fabricada en Suiza por \textit{Alfred J. Amsler \& Co.} y su estructura completa es de acero fundido. Previo a la remodelación del piso del laboratorio, la máquina se encontraba anclada al piso con un bloque de concreto que fue demolido durante los trabajos de remodelación, momento desde el cual se encuentra sin una solución definitiva. Más aún, varios equipos y máquinas de ensayo del laboratorio no se encuentran ancladas al piso ni con una instalación definitiva impidiendo su uso.
+\subsection{Estado actual}
+Actualmente la máquina no puede ser utilizada por no estar anclada, estando apoyada sobre dos listones de madera, que a su vez, están sobre una mesa de madera como se aprecia en la figura \ref{fig:maq_fat}. Por consiguiente, la máquina al ser utilizada comienza a vibrar, saltar y desplazarse lateralmente, lo que impide su uso prolongado por motivos de seguridad. Es decir, no es posible realizar correctamente un ensayo de fatiga de ningún material ni en ninguna configuración.
 
 La única modificación que posee la máquina, según la información recopilada, consiste en el cambio del contador de revoluciones o ciclos realizados en un ensayo de fatiga. Esta actualización consistió en sacar el contador mecánico original y reemplazarlo por un contador electrónico, el cual tiene sus controles y el display adosada a su estructura, como se puede apreciar en la figura \textcolor{red}{agregar imagen del contador}. 
 
@@ -36,7 +37,7 @@ Velocidad                                         & 1500 {[}rev/min{]} 		\\ \hli
 \label{tab:motor_maq}
 \end{table}
 
-Otro elemento distinto al original consiste en la correa de transmisión entre el motor eléctrico y el disco desbalanceado. La original consistía en una correa de cuero plana y cruzada, sin información respecto a su empalme. La correa actual consiste también en una correa plana y cruzada, sin embargo, su material es tela y el empalme es realizado a mano con hilo acerado. Cabe destacar que lo poco usual de las dimensiones, características y la necesidad de hacer el empalme en la misma máquina, dificulta la búsqueda de una correa que pueda cumplir de manera óptima la transmisión de potencia. Parte de estas dificultades se deben a que el sistema de transmisión no ha sido modificado donde sus poleas tienen dimensiones, tanto de diámetro como de ancho, que no están normalizadas o se encuentran fuera de catálogo de mucho proveedores. 
+Otro elemento distinto al original consiste en la correa de transmisión entre el motor eléctrico y el disco desbalanceado. La original consistía en una correa de cuero plana y cruzada, sin información respecto a su empalme. La correa actual consiste también en una correa plana y cruzada, sin embargo, su material es tela y el empalme es realizado a mano con hilo acerado. Cabe destacar que lo poco usual de las dimensiones, características y la necesidad de hacer el empalme dentro de la misma máquina, dificulta la búsqueda de una correa que pueda cumplir de manera óptima la transmisión de potencia. Parte de estas dificultades se deben a que el sistema de transmisión no ha sido modificado, es decir, sus poleas tienen dimensiones, tanto de diámetro como de ancho, que no están normalizadas o se encuentran fuera de catálogo de mucho proveedores. 
 
 Por otro lado, los elementos de agarre de la probeta no tienen modificaciones conocidas, tanto el brazo que recibe el movimiento como el agarre empotrado a la estructura de la máquina. La fabricación de las probetas utilizadas se realiza en el mismo laboratorio a partir de acero AISI 1020 o 1040, el cual para conseguir las dimensiones de la figura REF. se debe cortar y tornear.
 
@@ -44,14 +45,18 @@ Finalmente, para realizar los ensayos en distintas configuraciones existen disti
 
 \subsection{Funcionamiento}
 \label{sec:funcionamiento}
-La máquina de fatiga tiene como objetivo lograr que para cada ciclo se ejerza el mismo esfuerzo determinado sobre la probeta, en forma de flexión. Para lograr esto, el mecanismo utilizado es un disco desequilibrado girando a una velocidad constante $\dot{\theta}$, la fuerza es transmitida hasta un brazo que sostiene a su vez a la probeta, generando flexión en la probeta con un doble empotramiento. La velocidad $\dot{\theta}$ del disco se transmitida desde el motor eléctrico a través de poleas y una correa de transmisión en una relación de 1:1 \textcolor{red}{revisar}, a una velocidad de 1500 revoluciones por minuto. Así, para realizar las mediciones de fatiga a distintas cargas se modifica el desequilibrio del disco a través de un conjunto de masas, mostradas en la figura REF, que permiten generar distintas configuraciones y, por consiguiente, esfuerzos en la probeta.
+La máquina de fatiga tiene como objetivo lograr que para cada ciclo se ejerza el mismo esfuerzo determinado sobre la probeta, en forma de flexión. Para lograr esto, el mecanismo utilizado es un disco desequilibrado girando a una velocidad constante $\dot{\theta}$, la fuerza es transmitida hasta un brazo que sostiene a su vez a la probeta, generando flexión en la probeta con un doble empotramiento. La velocidad $\dot{\theta}$ del disco se transmitida desde el motor eléctrico a través de poleas y una correa de transmisión en una relación de 1:1, a una velocidad de 1500 revoluciones por minuto. Así, para realizar las mediciones de fatiga a distintas cargas se modifica el desequilibrio del disco a través de un conjunto de masas, mostradas en la figura \ref{fig:contrapesos}, que permiten generar distintas configuraciones y, por consiguiente, esfuerzos en la probeta.
 
-\textcolor{red}{Agregar imagen de contrapesos}
- c
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\linewidth]{Imagenes/contrapesos.jpg}
+\label{fig:contrapesos}
+\caption{Contrapesos utilizados para desequilibrar el disco. De izquiera a derecha se aprecia el n$^{\circ}$ 5 al n$^{\circ}$ 1.}
+\end{figure}
+
 Los elementos utilizados para desbalancear son 6 discos pequeños de X \textcolor{red}{medir radio masas} a Y de diámetro. Estos son enumerados del 1 al 5, donde el 1 es el más liviano y el 5 el más pesado, todos de distinto peso y el quinto se encuentra repetido. Estas se colocan en los extremos del disco giratorio, como se ve en la figura REFimagendisco, dependiendo de la carga que se desee generar. Para conocer que configuración corresponde a cada esfuerzo aplicado sobre la probeta, se utiliza la tabla de cargas explicada a continuación.
 
-
-Esta tabla, con 3 columnas de información como se ve en el Anexo REF, nos entrega el esfuerzo normal $\sigma$, cortante $\tau$ y la combinación necesaria para generar esos esfuerzos. Los números entre paréntesis nos indican cuantos contrapesos se deben apilar en cada perno adosado al disco giratorio, los cuales llamaremos soportes de contrapeso (SC). Así, la tabla nos señala que la fuerza es función de la diferencia de masa entre cada soporte, es decir, la suma de las masas de cada paréntesis. A modo de ejemplo, en la tabla \ref{tab:ejemplo_config} se han colocado las 4 primeras filas de la tabla de cargas, añadiendo 4 columnas con información sobre el peso de cada combinación. En las columnas $m_1$ y $m_2$ se aprecia la suma de cada masa colocada en sus soportes de contrapeso señalado por la columna de ``Combinación''. Las columnas siguientes representan $\Delta m = m_1-m_2$ y $m_{total}=m_1+_2$. Como se puede apreciar, los esfuerzos normales y cortantes aumentan en la medida que $\Delta m$ de cada combinación aumenta, independiente de $m_{total}$.
+Esta tabla, con 3 columnas de información como se ve en el Anexo REF, nos entrega el esfuerzo normal $\sigma$, cortante $\tau$ y la combinación necesaria para generar esos esfuerzos. Los números entre paréntesis nos indican cuantos contrapesos se deben apilar en cada perno adosado al disco giratorio, los cuales llamaremos soportes de contrapeso (SC). Así, la tabla nos señala que la fuerza es función de la diferencia de masa entre cada soporte, es decir, la suma de las masas de cada paréntesis. A modo de ejemplo, en la tabla \ref{tab:ejemplo_config} se han colocado las 4 primeras filas de la tabla de cargas, añadiendo 4 columnas a la derecha de ``Combinación'' con información sobre el peso de cada combinación. En las columnas $m_1$ y $m_2$ se aprecia la suma de cada masa colocada en sus soportes de contrapeso señalado por la columna de ``Combinación''. Las columnas siguientes representan $\Delta m = m_1-m_2$ y $m_{total}=m_1+_2$. Como se puede apreciar, los esfuerzos normales y cortantes aumentan en la medida que $\Delta m$ de cada combinación aumenta, independiente de $m_{total}$.
 
 \begin{table}[h]
 \centering
@@ -88,7 +93,7 @@ V_{superior} &=(30,2\cdot 84\cdot 32 - 26\cdot 78\cdot 28,5) \; \text{cm}^3	\\
 \end{array}
 \right\} \\
 \quad V_{b+s} = 25323,3 \; \text{cm}^3 \]
-\begin{equation}
+\begin{equation}\label{eq:m_maq}
 	m_{maq} = \rho_{ac. fundido} \cdot V_{b+s} = 198,8 \: kg \approx 200 \: kg
 \end{equation}
 
@@ -173,7 +178,12 @@ La metodología de su diseño, se separará en las distintas etapas que se reali
 \subsection{Diseño en acero}
 La estructura se diseño para que la conexión con la máquina de fatiga fuera a través de pletinas de acero, utilizando los pernos existentes. Las pletinas, a su vez , están conectadas mediante pernos a las vigas principales de madera de cada extremo. Para llevar acabo los cálculo, se hará como suposición que cada pletina esta con un empotramiento en cada extremo, con dos cargas distribuidas. La primera de ellas es el apoyo de la maquina sobre la pletina y, la segunda, el peso propio del acero. Por lo tanto, la figura REF muestra el diagrama de las cargas que actúan y las distancias a utilizar. 
 
-\textcolor{red}{Diagrama de cargas}
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\linewidth,trim={9cm 4cm 6cm 6cm},clip]{Imagenes/dia_viga_acero.pdf}
+\caption{Diagrama de las cargas soportadas por la pletina de acero.}
+\label{fig:diagcargas_viga_acero}
+\end{figure}
 
 Por otro lado, al no conocerse la distribución de masa de la maquina de fatiga, se considerará la carga distribuida en cada pletina como:
 \begin{equation}
@@ -328,6 +338,13 @@ Finalmente, los valores de factor de seguridad (FS) para cada uno de las tension
 \end{gather}
 \end{subequations}
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\linewidth,trim={9cm 3cm 5.3cm 3.5cm},clip]{Imagenes/dia_viga_a.pdf}
+\caption{Diagrama de las cargas soportadas por la viga A.}
+\label{fig:diagcargas_viga_a}
+\end{figure}
+
 \subsubsection{Pilar de apoyo, B}
 El pilar B representa los cuatro apoyos de la estructura, recibiendo la carga de la máquina y su operación desde la viga principal y transmitiendola hasta el piso. Por la disposición del cuartón, estará sometido a compresión paralela (\ref{sec:cp}). Al igual que en la viga principal, se debe calcular la tensión de trabajo ($f_{cp}$) y la tensión de diseño en compresión paralela ($F_{cp,dis}$). Al ser el mismo formato y especie maderera de la viga principal, su área transversal sigue siendo de 110x110 mm, mientras que el largo del pilar ($L_v$) corresponde a 790 mm.
 
@@ -464,13 +481,39 @@ Por último, la unión entre el piso y el pilar B se escogió un ángulo de ancl
 \subsection{Simulaciones}
 Las simulaciones de la máquina se utilizaron como apoyo y contraparte de los cálculos realizados manualmente. Éstas se realizaron en el software Inventor AutoCAD, en el ambiente ``\textit{Stress Analysis}''. A través de esto se busco confirmar que los resultados obtenidos en los cálculos estáticos se encuentran fuera de los rangos de falla y obtener las frecuencias naturales de la estructura, utilizando ``\textit{Static and Modal Analysis}'' respectivamente.
 
-Debido a las limitantes del programa utiilzado, se debieron adaptar las propiedades mecánicas ortotrópicas de la madera, las cuales no era posible simular directamente. Para esto, se utilizaron los valores mínimos del Módulo de Young y las tensiones admisibles en sus direcciones normales y perpendiculares, buscando representar de manera segura las propiedades ortotrópicas en una configuración isotrópica.
+Debido a las limitantes del programa utiilzado, se debieron adaptar las propiedades mecánicas ortotrópicas de la madera, las cuales no era posible simular directamente. Para esto, se utilizaron los valores mínimos del Módulo de Young y las tensiones admisibles en las direcciones de mayor solicitación de cada elemento, buscando representar de manera segura las propiedades ortotrópicas en una configuración isotrópica.
 
-Como condición del problema, en ambas simulaciones, los apoyos del pilar se consideraron empotrados, restringiendo cualquier grado de movimiento en su base. Además, las uniones se consideraron perfectas y sin desplazamientos.
-\subsubsection{Estática}
-Las condiciones...
-\subsubsection{Modal}
-La configuración...
+Como condición del problema, en ambas simulaciones, las restricciones de los pilares de apoyo B se consideran fijos (\textit{fixed}), impidiendo cualquier grado de movimiento en su base. Además, las uniones se consideraron perfectas y sin desplazamientos. La carga fue aplicada en forma de presión sobre la parte superior de la máquina de fatiga para tener una distribución adecuada del peso de la misma, tomando en consideración la masa calculada en \ref{eq:m_maq} de 200 kg.
+
+\subsubsection{Análisis modal}
+La configuración utilizada para realizar esta simulación consistió en:
+\begin{itemize}
+	\item Número de modos: 6
+	\item Rango de frecuencias: 0 - 120 Hz
+	\item Precisión mejorada (\textit{Enhanced Accuracy)}
+	\item Contactos:
+		\begin{itemize}
+			\item Tolerancia: 0,1 mm
+			\item Tipo: \textit{Bonded}
+		\end{itemize}
+	\item Malla:
+		\begin{itemize}
+			\item Tamaño medio del elemento: 0,08
+			\item Tamaño mínimo del elemento: 0,15
+			\item Factor de modificación: 1,5 (default)
+			\item Ángulo máximo de giro: 60 grados (default)
+			\item Calcular modos precargados
+			\item Utilizar la medida para la malla según la pieza base del ensamblaje
+		\end{itemize}
+\end{itemize}
+
+\subsubsection{Análisis estático}
+Para realizar la simulación estática se retiraron todos los elementos de unión, es decir, pernos, tirafondos, conectores y ángulos, conservando solo las vigas de madera y las pletinas de acero. El fin de esto es analizar específicamente los esfuerzos a los que están sometidos estos elementos a la carga de la máquina de fatiga. La configuración principal de la simulación consiste en:
+\begin{itemize}
+	\item Detectar y eliminar modos de cuerpo rígido
+	\item Separar tensiones en superficies de contacto
+\end{itemize}
+La configuración de los contactos y la malla se conservó igual a la establecida en el análisis modal.
 
 \section{Modelo del sistema de vibratorio}
 Luego del levantamiento de información, se busca analizar y predecir el comportamiento de la máquina en sus distintas configuraciones. Para esto se utiliza la información disponible para realizar un modelo del funcionamiento de la máquina de fatiga, en específico, de la carga aplicada a la probeta en función de la velocidad de rotación del disco y las distintas combinaciones de contrapesos. El disco se encuentra en voladizo, cuyo desequilibrio a partir de los contrapesos colocados produce una fuerza que es transmitida hacia un brazo de carga. Este, a su vez, aplica un momento de flexión sobre una probeta que está doblemente empotrada por mordazas.
@@ -747,4 +790,4 @@ Los información que se busca de estos resultados corresponde a la carga que es 
 \end{gather}
 
 \section{Simulación de cargas}
-
+Con los datos de las cargas obtenidos a partir de la solución del modelo expuesto anteriormente, se obtendrán el esfuerzo máximo equivalente (de von Mises)y el esfuerzo cortante máximo a través de un softare de elementos finitos. Con esto, es posible saber los esfuerzos a los que está sometido la probeta a partir de cada configuración de los contrapesos. Finalmente, estos resultados son comparables a la tabla de carga que existe previamente. 

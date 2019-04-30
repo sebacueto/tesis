@@ -2,14 +2,31 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {1.1}{\ignorespaces Factores de modificaci\IeC {\'o}n por tipo de carga, seg\IeC {\'u}n el modelo de Lee.}}{12}{table.1.1}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Especificaciones del motor de la m\IeC {\'a}quina de fatiga.}}{15}{table.2.1}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Tabla de configuraci\IeC {\'o}n de las masas modificada, mostrando el peso, su diferencia y el total para cada combinaci\IeC {\'o}n}}{17}{table.2.2}
-\contentsline {table}{\numberline {2.3}{\ignorespaces Datos del sistema de transmisi\IeC {\'o}n}}{19}{table.2.3}
-\contentsline {table}{\numberline {2.4}{\ignorespaces Medidas de las barras de acero seg\IeC {\'u}n su posici\IeC {\'o}n}}{19}{table.2.4}
-\contentsline {table}{\numberline {2.5}{\ignorespaces Masa de cada contrapeso utilizado}}{20}{table.2.5}
-\contentsline {table}{\numberline {2.6}{\ignorespaces Dimensiones y caracter\IeC {\'\i }sticas de la viga de acero}}{22}{table.2.6}
-\contentsline {table}{\numberline {2.7}{\ignorespaces Valores de la densidad normal y anhidra del pino oreg\IeC {\'o}n. $^{\dagger }$: Definido con el percentil 5\% de exclusi\IeC {\'o}n.}}{24}{table.2.7}
-\contentsline {table}{\numberline {2.8}{\ignorespaces Tensiones admisibles y m\IeC {\'o}dulo de elasticidad en flexi\IeC {\'o}n para madera de pino oreg\IeC {\'o}n seg\IeC {\'u}n su clase estructural.}}{25}{table.2.8}
-\contentsline {table}{\numberline {2.9}{\ignorespaces Valores del factor de modificaci\IeC {\'o}n para el pino oreg\IeC {\'o}n.}}{25}{table.2.9}
-\contentsline {table}{\numberline {2.10}{\ignorespaces Dimensiones del tirafondo utilizado}}{31}{table.2.10}
-\contentsline {table}{\numberline {2.11}{\ignorespaces Valores obtenidos de la rigidez de las barras de acero y la probeta de acero}}{39}{table.2.11}
+\contentsline {table}{\numberline {2.1}{\ignorespaces N\IeC {\'u}mero m\IeC {\'\i }nimo de pruebas seg\IeC {\'u}n tipo de prueba}}{20}{table.2.1}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Especificaciones del motor de la m\IeC {\'a}quina de fatiga.}}{34}{table.3.1}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Tabla de configuraci\IeC {\'o}n de las masas modificada, mostrando el peso, su diferencia y el total para cada combinaci\IeC {\'o}n}}{36}{table.3.2}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Datos del sistema de transmisi\IeC {\'o}n}}{38}{table.3.3}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Medidas de las barras de acero seg\IeC {\'u}n su posici\IeC {\'o}n}}{38}{table.3.4}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Masa de cada contrapeso utilizado}}{39}{table.3.5}
+\contentsline {table}{\numberline {3.6}{\ignorespaces Dimensiones y caracter\IeC {\'\i }sticas de la viga de acero}}{41}{table.3.6}
+\contentsline {table}{\numberline {3.7}{\ignorespaces Valores de la densidad normal y anhidra del pino oreg\IeC {\'o}n. $^{\dagger }$: Definido con el percentil 5\% de exclusi\IeC {\'o}n.}}{44}{table.3.7}
+\contentsline {table}{\numberline {3.8}{\ignorespaces Tensiones admisibles y m\IeC {\'o}dulo de elasticidad en flexi\IeC {\'o}n para madera de pino oreg\IeC {\'o}n seg\IeC {\'u}n su clase estructural.}}{44}{table.3.8}
+\contentsline {table}{\numberline {3.9}{\ignorespaces Valores del factor de modificaci\IeC {\'o}n para el pino oreg\IeC {\'o}n.}}{45}{table.3.9}
+\contentsline {table}{\numberline {3.10}{\ignorespaces Dimensiones del tirafondo utilizado}}{51}{table.3.10}
+\contentsline {table}{\numberline {3.11}{\ignorespaces Valores obtenidos de la rigidez de las barras de acero y la probeta de acero}}{59}{table.3.11}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Tabla aceros}}{67}{table.4.1}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Tabla de fatiga en la pletina de acero.}}{68}{table.4.2}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Resultados obtenidos para la flexi\IeC {\'o}n y cizalle de la viga A.}}{68}{table.4.3}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Factores de seguridad en la viga A.}}{68}{table.4.4}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Esfuerzos y factor de seguridad por compresi\IeC {\'o}n paralela en la viga B.}}{69}{table.4.5}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Segundo momento de \IeC {\'a}rea y esfuerzos de carga y dise\IeC {\~n}o en la viga C.}}{69}{table.4.6}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Cargas admisibles y factor de seguridad para distintos pernos hexagonales.}}{70}{table.4.7}
+\contentsline {table}{\numberline {4.8}{\ignorespaces Separaci\IeC {\'o}n del perno a borde cargado, descargado y entre pernos, a partir de su di\IeC {\'a}metro.}}{70}{table.4.8}
+\contentsline {table}{\numberline {4.9}{\ignorespaces Esfuerzos admisibles y factor de seguridad para distintas longitudes de tirafondo.}}{71}{table.4.9}
+\contentsline {table}{\numberline {4.10}{\ignorespaces Espaciamiento entre los bordes cargado, descargado y entre tirafondos, para un di\IeC {\'a}metro de 1/4 de pulgada.}}{71}{table.4.10}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces Condiciones que se deben considerar en la determinaci\IeC {\'o}n de tensiones admisibles y m\IeC {\'o}dulo de elasticidad}}{74}{table.Alph1.1}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Espesor nominal y real de la madera seg\IeC {\'u}n el tratamiento recibido}}{80}{table.Alph1.2}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Ancho nominal y real de la madera seg\IeC {\'u}n el tratamiento recibido}}{81}{table.Alph1.3}

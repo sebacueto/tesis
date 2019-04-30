@@ -316,3 +316,23 @@ El cual, una vez derivado y escrito de forma matricial, adquiere la siguiente fo
 \begin{equation}
 	\mathit{M}\mathbf{\ddot{q}_i} + \mathit{C}\mathbf{\dot{q}_i} + \mathit{K}\mathbf{q_i} = \mathbf{F}_i
 \end{equation}
+
+\section{Método de elementos finitos}
+\subsection{Inventor - Análisis de esfuerzos}
+
+\subsubsection{Configuración análisis estático}
+Detectar y eliminar modos de cuerpo rígido: Elimina los modos de cuerpos rígidos con problemas donde el número de restricciones definido es insuficiente, pero hay una carga equilibrada con una solución de eslasticidad válida.
+
+Separar tensiones en superficies de contacto: Permite obtener una representación explícita de la tensión discontinua de la superficie de contacto.fea
+
+
+\subsubsection{Malla}
+Tamaño medio del elemento: Especifica la distancia media entre los nodos de los elementos de la malla. Su valor es una fracción de la dimensión más larga de la dimensión \textit{x}, \textit{y} o \textit{z}.
+
+Tamaño mínimo del elemento: Especifica la distancia mínima entre los nodos de la malla. El valor es una fracción del valor del tamaño medio de la malla.
+
+Factor de modificación: Especifica la proporción máxima de aristas de malla adyacentes para realizar la transición entre las regiones guresas y finas.
+
+Ángulo máximo de giro: Especifica el ángulo máximo para los arcos, de 1 a 90 grados. Dicho de otra manera, un ángulo menor genera elementos de malla más pequeños.
+
+
