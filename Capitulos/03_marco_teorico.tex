@@ -261,7 +261,7 @@ Finalmente, se tendrá un sistema de $n$ ecuaciones diferenciales de segundo ord
 	\dot{x}_{n0}(t_0)
 	\end{bmatrix}
 \end{equation}
-Donde los valores de $\mathbf{x}(t)$, $\mathbf{\dot{x}}(t)$ y de las matrices $\mathit{M}$, $\mathit{K}$, y $\mathit{C}$ se deben conocer para poder resolver el sistema de ecuaciones. 
+Donde los valores de $\mathbf{x}(t_0)$, $\mathbf{\dot{x}}(t_0)$ y de las matrices $\mathit{M}$, $\mathit{K}$, y $\mathit{C}$ se deben conocer para poder resolver el sistema de ecuaciones. 
 
 \subsection{Método de energía}
 \label{sec:metodo_energia}
@@ -317,11 +317,45 @@ El cual, una vez derivado y escrito de forma matricial, adquiere la siguiente fo
 	\mathit{M}\mathbf{\ddot{q}_i} + \mathit{C}\mathbf{\dot{q}_i} + \mathit{K}\mathbf{q_i} = \mathbf{F}_i
 \end{equation}
 
+\section{Plasticidad}
+La deformación plástica se le llama a la deformación permanente que se produce, en una escala microscópica, por el movimiento de un gran número de dislocaciones producto de la aplicación de una carga sobre el material. La zona de deformación plástica es permanente, se caracteriza por estar sobre el punto de fluencia y, por lo tanto, los esfuerzos y las deformaciones dejan de ser proporcionales en la curva de esfuerzo-deformación. Los mecanismos que producen la deformación elástica y plástica son distintos, lo que resulta en que ambas deformaciones convivan en la deformación total, teniendo como efecto que cuando un elemento es descargado exista una recuperación de la deformación elástica. 
+
+\subsection{Esfuerzo y deformación real}
+La curva de esfuerzo-deformación ingenieril se construye a partir de dividir la carga aplicada ($P$) en la probeta por el área transversal inicial de esta, sin embargo, esto omite la deformación sufrida. Así, el esfuerzo real (\textit{true stress} $\tilde{\sigma}$ se define como la fuerza aplicada en la probeta dividida por el área transversal en ese instante ($A$). 
+\begin{equation}
+	\tilde{\sigma} = \frac{P}{A}
+\end{equation} 
+Dada la disminución en el área $A$ el esfuerzo real crece por sobre el ingenieril y no baja al llegar al punto de esfuerzo último al considerar la estricción de la probeta. Por otro lado, la deformación real (\textit{true strain} $\tilde{\varepsilon}$) se define como:
+\begin{equation}
+	\tilde{\varepsilon} = \ln\frac{L}{L_i}
+\end{equation}
+Donde $L=L_i + \Delta L$ es el largo final. Si se asume que no existen cambios de volumen durante la deformación, es decir $A_iL_i = AL$,  al reemplazar en ambas ecuaciones, se obtiene que el esfuerzo y la deformación real es:
+\begin{gather}
+	\tilde{\sigma} = \sigma(1 + \varepsilon) \label{eq:true_esf}\\
+	\tilde{\varepsilon} = \ln (1 + \varepsilon) \label{eq:true_strain}
+\end{gather}
+
+\subsection{Factor de corrección de Bridgman}
+Cuando la probeta llega al punto de estricción, es decir, comienza la deformación local, lo esfuerzos dejan de ser uniaxiales y aparecen esfuerzos en otros componentes. Esto produce que los valores de esfuerzos axiales sean mayores que los reales y deban ser corregidos. El factor que intenta corregir esta diferencia fue desarrollada por Bridgman, entregando una nueva curva de esfuerzo $\tilde{\sigma}_B$ aplicando un factor $B$ al esfuerzo real que se obtiene por la ecuación \ref{eq:true_esf}. 
+\begin{equation}
+	\tilde{\sigma}_B = B\tilde{\sigma}
+\end{equation}
+Este factor de corrección es un polinomio que se calcula a través de la deformación real que se obtiene de la ecuación \ref{eq:true_strain}. Así, se define la variable $x = \log_{10} \tilde{\varepsilon}$, dando como resultado la siguiente ecuación:
+\begin{equation}
+B = 0\text{,}0684x^3 + 0\text{,}0461x^2 - 0\text{,}205x + 0\text{,}825 
+\end{equation}
+La corrección se aplica en el rango $0\text{,}12 \leq \tilde{\varepsilon} \leq 3$.
+
+\subsection{Endurecimiento por deformación}
+Se le denomina al incremento en la resistencia del material a medida que su deformación crece, luego de superar el punto de fluencia. 
+
+
+
 \section{Método de elementos finitos}
 \subsection{Inventor - Análisis de esfuerzos}
 
 \subsubsection{Configuración análisis estático}
-Detectar y eliminar modos de cuerpo rígido: Elimina los modos de cuerpos rígidos con problemas donde el número de restricciones definido es insuficiente, pero hay una carga equilibrada con una solución de eslasticidad válida.
+Detectar y eliminar modos de cuerpo rígido: Elimina los modos de cuerpos rígidos con problemas donde el número de restricciones definido es insuficiente, pero hay una carga equilibrada con una solución de elasticidad válida.
 
 Separar tensiones en superficies de contacto: Permite obtener una representación explícita de la tensión discontinua de la superficie de contacto.fea
 
