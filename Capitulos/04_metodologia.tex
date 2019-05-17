@@ -1,24 +1,21 @@
 \chapter{Metodología}
 \section{Levantamiento de información}
 \label{sec:lev_info}
-Parte del trabajo de esta memoria se centra en lograr rescatar información y su posterior comprensión de la máquina de fatiga a flexión para lograr tenerla operativa para su uso en el laboratorio. El levantamiento de información consistirá en detallar su estado actual, describir el funcionamiento para realizar los ensayos y, finalmente, en poder cuantificar y medir los distintos componentes de la máquina.
+Parte del trabajo de esta memoria se centra en lograr rescatar información y su posterior comprensión de la máquina de fatiga a flexión para tenerla operativa para su uso en el laboratorio. El levantamiento de información consistirá en detallar su estado actual, describir el funcionamiento para realizar los ensayos y, finalmente, en poder cuantificar y medir los distintos componentes de la máquina.
 
 La medición de fatiga es realizada a través del método de \textit{esfuerzo-vida}, utilizando la configuración de \textit{alternating bending}, ambos descritos en los antecedentes.
-
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.05]{Imagenes/maq_del.jpg}
-\label{fig:maq_del}
-\includegraphics[scale=0.05]{Imagenes/maqfull_post.jpg}
-\label{fig:maqfull_post}
-\caption{Máquina de fatiga en flexión en el laboratorio de tecnología mecánica}
-\label{fig:maq_fat}
-\end{figure}
 
 \subsection{Estado actual}
 Actualmente la máquina no puede ser utilizada por no estar anclada, estando apoyada sobre dos listones de madera, que a su vez, están sobre una mesa de madera como se aprecia en la figura \ref{fig:maq_fat}. Por consiguiente, la máquina al ser utilizada comienza a vibrar, saltar y desplazarse lateralmente, lo que impide su uso prolongado por motivos de seguridad. Es decir, no es posible realizar correctamente un ensayo de fatiga de ningún material ni en ninguna configuración.
 
-La única modificación que posee la máquina, según la información recopilada, consiste en el cambio del contador de revoluciones o ciclos realizados en un ensayo de fatiga. Esta actualización consistió en sacar el contador mecánico original y reemplazarlo por un contador electrónico, el cual tiene sus controles y el display adosada a su estructura, como se puede apreciar en la figura \textcolor{red}{agregar imagen del contador}. 
+La única modificación que posee la máquina, según la información recopilada, consiste en el cambio del contador de revoluciones o ciclos realizados en un ensayo de fatiga. Esta actualización consistió en sacar el contador mecánico original y reemplazarlo por un contador electrónico, el cual tiene sus controles y el display adosada a su estructura, como se puede apreciar en la figura \ref{fig:cont_elect}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.4\linewidth]{Imagenes/cont_elect.jpg}
+\caption{Control del contador electrónico}
+\label{fig:cont_elect}
+\end{figure}
 
 El sistema eléctrico de la máquina permanece intacto, la cual se encuentra conectada a la red de la universidad. Conserva su motor eléctrico original junto a un conjunto eléctrico cuya función es suministrar energía de manera continua y estable al motor, para evitar que el ensayo de fatiga se pueda ver afectado por problemas y las variaciones del suministro eléctrico. El motor es de \textcolor{red}{corriente continua} con velocidad constante y sus especificaciones se pueden ver en la tabla \ref{tab:motor_maq}:
 
@@ -54,7 +51,7 @@ La máquina de fatiga tiene como objetivo lograr que para cada ciclo se ejerza e
 \caption{Contrapesos utilizados para desequilibrar el disco. De izquiera a derecha se aprecia el n$^{\circ}$ 5 al n$^{\circ}$ 1.}
 \end{figure}
 
-Los elementos utilizados para desbalancear son 6 discos pequeños de X \textcolor{red}{medir radio masas} a Y de diámetro. Estos son enumerados del 1 al 5, donde el 1 es el más liviano y el 5 el más pesado, todos de distinto peso y el quinto se encuentra repetido. Estas se colocan en los extremos del disco giratorio, como se ve en la figura REFimagendisco, dependiendo de la carga que se desee generar. Para conocer que configuración corresponde a cada esfuerzo aplicado sobre la probeta, se utiliza la tabla de cargas explicada a continuación.
+Los elementos utilizados para desbalancear son 6 discos pequeños de X \textcolor{red}{medir radio masas} a Y de diámetro. Estos son enumerados del 1 al 5, donde el 1 es el más liviano y el 5 el más pesado, todos de distinto peso y el quinto se encuentra repetido. Estas se colocan en los extremos del disco giratorio, como se ve en la figura REFimagendisco, dependiendo de la carga que se desee generar. Para conocer que configuración corresponde a cada esfuerzo aplicado sobre la probeta se utiliza la tabla de cargas.
 
 Esta tabla, con 3 columnas de información como se ve en el Anexo REF, nos entrega el esfuerzo normal $\sigma$, cortante $\tau$ y la combinación necesaria para generar esos esfuerzos. Los números entre paréntesis nos indican cuantos contrapesos se deben apilar en cada perno adosado al disco giratorio, los cuales llamaremos soportes de contrapeso (SC). Así, la tabla nos señala que la fuerza es función de la diferencia de masa entre cada soporte, es decir, la suma de las masas de cada paréntesis. A modo de ejemplo, en la tabla \ref{tab:ejemplo_config} se han colocado las 4 primeras filas de la tabla de cargas, añadiendo 4 columnas a la derecha de ``Combinación'' con información sobre el peso de cada combinación. En las columnas $m_1$ y $m_2$ se aprecia la suma de cada masa colocada en sus soportes de contrapeso señalado por la columna de ``Combinación''. Las columnas siguientes representan $\Delta m = m_1-m_2$ y $m_{total}=m_1+_2$. Como se puede apreciar, los esfuerzos normales y cortantes aumentan en la medida que $\Delta m$ de cada combinación aumenta, independiente de $m_{total}$.
 
@@ -72,9 +69,33 @@ $\sigma \left[\frac{\text{kg}_f}{\text{cm}^2}\right]$ & {$\tau \left[\frac{\text
 \caption{Tabla de configuración de las masas modificada, mostrando el peso, su diferencia y el total para cada combinación}
 \end{table}
 
-Con esto, la probeta a ensayar estará sometida a un esfuerzo en flexión, empotrada en ambos lados por la mordaza del brazo y la mordaza empotrada a la estructura de la máquina, ambas mostradas en la figura REF. Una vez que se haya escogido la configuración de masas y la probeta se encuentre en su posición, una pequeña barra con una manilla ubicada entre las barras de acero, como se aprecia en la figura REF, eleva ambas barras con el objetivo de evitar que oscile durante el encendido y aceleración del motor hasta su velocidad final, dejando a la barra en una configuración de empotrado y apoyo simple. Una vez que el motor alcanza una velocidad estable, el sostén es girado nuevamente para dejar al disco giratorio en posición de empotrado-libre. Este sostén, permite que el ensayo de fatigue se realice siempre a una frecuencia constante y evitar la transición inicial del motor. Una vez que la probeta se fracture, provocarán un aumento en la amplitud de las oscilaciones del disco las cuales activarán el freno automático (figura REF) para detener el motor y, por lo tanto, el ensayo. Gracias a este sistema, es posible conocer la cantidad de ciclos que realizados hasta el momento de fractura sin la necesidad de supervisar de manera continua el ensayo.
+Con esto, la probeta a ensayar estará sometida a un esfuerzo en flexión, empotrada en ambos lados por la mordaza del brazo y la mordaza empotrada a la estructura de la máquina, ambas mostradas en la figura \ref{fig:mordazas}.
 
-\textcolor{red}{Mordazas}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\linewidth]{Imagenes/mordazas.jpg}
+\caption{A la izquierda se aprecia la mordaza de la barra de carga, a la derecha la mordaza empotrada sin la parte superior y apoyada sobre esta, la probeta.}
+\label{fig:mordazas}
+\end{figure}
+
+Una vez que se haya escogido la configuración de masas y la probeta se encuentre en su posición, una pequeña barra de bloqueo con una manilla ubicada entre las barras de acero, como se aprecia en la figura \ref{fig:freno_auto}, eleva ambas barras con el objetivo de evitar que oscile en su frecuencia natural durante el encendido y aceleración del motor hasta su velocidad final, dejando a la barra en una configuración de empotrado y apoyo simple. Una vez que el motor alcanza una velocidad estable, el sostén es girado nuevamente para dejar al disco giratorio en posición de empotrado-libre. Este sostén, permite que el ensayo de fatiga se realice siempre a una frecuencia constante y evitar la transición inicial del motor. Una vez que la probeta se fracture, provocarán un aumento en la amplitud de las oscilaciones del disco las cuales activarán el freno automático (figura \ref{fig:barra_bloqueo}) para detener el motor y, por lo tanto, el ensayo. Gracias a este sistema, es posible conocer la cantidad de ciclos que realizados hasta el momento de fractura sin la necesidad de supervisar de manera continua el ensayo.
+
+\begin{figure}[H]
+\centering
+	\begin{subfigure}{0.55\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{Imagenes/freno_automatico.jpg}
+		\caption{Freno automático.}\label{fig:freno_auto}
+	\end{subfigure}
+	\begin{subfigure}{0.365\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{Imagenes/barra_bloqueo.jpg}
+		\caption{Barra de bloqueo.}\label{fig:barra_bloqueo}
+	\end{subfigure}%
+\caption{En la imagen (a) se aprecia el botón del freno automático y la extensión que lo presiona. En la imagen (b) la barra de bloqueo sosteniendo las barras de acero.}
+\label{fig:barra_freno}
+\end{figure}
+
 \subsection{Mediciones}
 Para realizar un correcto diseño de la estructura soportante y la comprensión de su funcionamiento, se hace vital poder contar con información confiable para obtener resultados correctos. Para esto, las mediciones se dividirán según su objetivo en el desarrollo de este trabajo.
 \subsubsection{Diseño de estructura}
@@ -84,7 +105,7 @@ Las medidas de la mesa actual son:
 	\item Largo = 177 cm
 	\item Altura = 91 cm
 \end{itemize}
-Por otro lado, para diseñar correctamente la estructura se deben conocer las dimensiones de la máquina, su peso y la ubicación de los pernos de anclaje, así como también el tipo de perno utilizado. La figura REF\textcolor{red}{realizar diagrama con vistas frontal y lateral de la maquina con sus dimensiones} es un esquema representativo de la máquina, mostrando sus dimensiones de ancho, alto y largo, las dimensiones de su base y la ubicación de sus pernos. La masa de toda la máquina se aproximó a partir de las dimensiones externas, estimando el grosor de sus paredes y considerando el peso específico del acero fundido, sobrestimando el valor del espesor de sus paredes como factor de seguridad. Considerando el peso específico del acero $\rho_{acfund} = 7850 \, [Kg/m^3]$, entonces la masa total calculada es:
+Por otro lado, para diseñar correctamente la estructura se deben conocer las dimensiones de la máquina, su peso y la ubicación de los pernos de anclaje, así como también el tipo de perno utilizado. La figura \ref{fig:diag_maqfat} es un esquema representativo de la máquina, mostrando sus dimensiones de ancho, alto y largo, las dimensiones de su base y la ubicación de sus pernos. La masa de toda la máquina se aproximó a partir de las dimensiones externas, estimando el grosor de sus paredes y considerando el peso específico del acero fundido, sobrestimando el valor del espesor de sus paredes como factor de seguridad. Considerando el peso específico del acero $\rho_{acfund} = 7850 \, [Kg/m^3]$, entonces la masa total calculada es:
 
 \[ \left. 
 \begin{array}{ll}
@@ -93,9 +114,16 @@ V_{superior} &=(30,2\cdot 84\cdot 32 - 26\cdot 78\cdot 28,5) \; \text{cm}^3	\\
 \end{array}
 \right\} \\
 \quad V_{b+s} = 25323,3 \; \text{cm}^3 \]
-\begin{equation}\label{eq:m_maq}
+\begin{equation}\label{eq:masa_maq}
 	m_{maq} = \rho_{ac. fundido} \cdot V_{b+s} = 198,8 \: kg \approx 200 \: kg
 \end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\linewidth, trim={10cm 37cm 17cm 2cm},clip]{Imagenes/MaqFatiga-1.pdf}
+\caption{Esquema de la máquina de fatiga y sus dimensiones externas.}
+\label{fig:diag_maqfat}
+\end{figure}
 
 \subsubsection{Componentes de la máquina de fatiga}
 \subparagraph{Sistema de transmisión.}
@@ -132,7 +160,7 @@ Largo        & 333                        & 333                        \\ \botto
 \label{tab:medidas_barrasacero}
 \end{table}
 
-Con estos datos, es posible calcular el segundo momento de área respecto a un eje central horizontal equidistante entre las barras superiores e inferiores, según el cual es obtiene $I=asfaf$. 
+Con estos datos, es posible calcular el segundo momento de área respecto a un eje central horizontal equidistante entre las barras superiores e inferiores, según el cual se obtiene $I=asfaf$. 
 
 \subparagraph{Sistema de transmisión de fuerzas.}
 El brazo principal (figura \ref{fig:brazo_carga}) que ejerce la fuerza sobre la probeta proveniente del disco desbalanceado, está constituido por tres partes principales. La primera de ellas es la parte trasera, con forma regular rectangular, está hecho de una aleación de aluminio y dos tercios de su longitud es ahuecada. La segunda y principal, está hecha de acero fundido y añade el mayor porcentaje de masa al total del brazo. Finalmente, la última parte consiste en la mordaza, unida a la sección principal con dos pernos que permiten ajustar su posición. La longitud total del brazo es de 359 mm y su masa total 2,305 kg.
@@ -167,20 +195,33 @@ Contrapeso & Masa {[}g{]} \\ \midrule
 
 Por otra parte, no fue posible medir directamente la masa del disco al no poder desarmarlo ni separarlo de su eje. Por lo tanto, se midió de la flecha de la viga en voladizo producida por la masa del disco, la polea, el sistema de sujeción y las barras de acero, se pudo obtener la masa aproximada del disco. Sin embargo, si bien se restó la fuerza producida por la masa de las barras, se incluyó en el cálculo el resto de los elementos acompañantes del disco en la masa obtenida.
 
-\subparagraph{Probeta.} La probeta utilizada actualmente para el ensayo de fatiga es de acero AISI 1020. Su geometría, como se aprecia en la figura REF, consiste en una pequeña viga de largo 3\nicefrac{1}{2}'', de sección cuadrada en sus extremos y una entalladura en el medio de sección circular, de lado \nicefrac{1}{2}'' de lado y 0,3'' de diámetro respectivamente.
+\subparagraph{Probeta.} La probeta utilizada actualmente para el ensayo de fatiga es de acero AISI 1020. Su geometría, como se aprecia en la figura \ref{fig:probeta}, consiste en una pequeña viga de largo 3\nicefrac{1}{2}'', de sección cuadrada en sus extremos y una entalladura en el medio de sección circular, de lado \nicefrac{1}{2}'' de lado y 0,3'' de diámetro respectivamente.
+ 
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\linewidth, trim={2cm 13cm 4cm 1cm},clip]{Imagenes/Probeta.pdf}
+\caption{Vista en corte, lateral y frontal de la probeta con sus respectivas dimensiones.}
+\label{fig:probeta}
+\end{figure} 
  
 \section{Diseño de estructura}
-El proceso de diseñar la estructura hasta su resultado final pasó por distintas etapas. Esto por el proceso de aprendizaje y comprensión de la norma de calculo de madera NCh 1198, como también por la restricción y disponibilidad de materiales, tecnología o medidas acorde a las necesidades. El diseño presentado en este trabajo se muestra en la figura REF, hecho principalmente de madera, junto a elementos de acero. El objetivo de esta estructura es fijar y soportar la máquina de fatiga tanto en reposo como en operación, buscando como características su durabilidad, lo modular de las piezas y la opción de modificarla en el futuro.
-
-\textcolor{red}{imagen de vista en perspectiva}
-
-La metodología de su diseño, se separará en las distintas etapas que se realizó y los requerimientos que surgieron a partir de estas. Finalmente, se realizó una simulación estática y modal para comparar los cálculos realizados y conocer su frecuencia natural, respectivamente.
-\subsection{Diseño en acero}
-La estructura se diseño para que la conexión con la máquina de fatiga fuera a través de pletinas de acero, utilizando los pernos existentes. Las pletinas, a su vez , están conectadas mediante pernos a las vigas principales de madera de cada extremo. Para llevar acabo los cálculo, se hará como suposición que cada pletina esta con un empotramiento en cada extremo, con dos cargas distribuidas. La primera de ellas es el apoyo de la maquina sobre la pletina y, la segunda, el peso propio del acero. Por lo tanto, la figura REF muestra el diagrama de las cargas que actúan y las distancias a utilizar. 
+El proceso de diseñar la estructura hasta su resultado final pasó por distintas etapas. Esto por el proceso de aprendizaje y comprensión de la norma de calculo de madera NCh 1198, como también por la restricción y disponibilidad de materiales, tecnología o medidas acorde a las necesidades. El diseño presentado en este trabajo se muestra en la figura \ref{fig:mesa_persp}, hecho principalmente de madera, junto a elementos de acero. El objetivo de esta estructura es fijar y soportar la máquina de fatiga tanto en reposo como en operación, buscando como características su durabilidad, lo modular de las piezas y la opción de modificarla en el futuro.
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=1\linewidth,trim={9cm 4cm 6cm 6cm},clip]{Imagenes/dia_viga_acero.pdf}
+
+\includegraphics[width=0.9\linewidth, trim={5cm 5cm 5cm 5cm},clip]{Imagenes/mesa_persp.pdf}
+\caption{Diseño en perspectiva de la estructura.}
+\label{fig:mesa_persp}
+\end{figure}
+
+La metodología de su diseño, se separará en las distintas etapas que se realizó y los requerimientos que surgieron a partir de estas. Finalmente, se realizó una simulación estática y modal para comparar los cálculos realizados y conocer su frecuencia natural, respectivamente.
+\subsection{Diseño en acero}
+La estructura se diseño para que la conexión con la máquina de fatiga fuera a través de pletinas de acero, utilizando los pernos existentes. Las pletinas, a su vez , están conectadas mediante pernos a las vigas principales de madera de cada extremo. Para llevar acabo los cálculo, se hará como suposición que cada pletina esta con un empotramiento en cada extremo, con dos cargas distribuidas. La primera de ellas es el apoyo de la maquina sobre la pletina y, la segunda, el peso propio del acero. Por lo tanto, la figura \ref{fig:diagcargas_viga_acero} muestra el diagrama de las cargas que actúan y las distancias a utilizar. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\linewidth,trim={2cm 1cm 4cm 5cm},clip]{Imagenes/dia_viga_acero.pdf}
 \caption{Diagrama de las cargas soportadas por la pletina de acero.}
 \label{fig:diagcargas_viga_acero}
 \end{figure}
@@ -189,7 +230,7 @@ Por otro lado, al no conocerse la distribución de masa de la maquina de fatiga,
 \begin{equation}
 	 q_{maq} = \frac{0,75\cdot m_{maq}}{c} = 384,62 \; [\text{kg/m}]
 \end{equation}
-Donde $m_{maq}$ es la masa estimada en \ref{eq:masa_maquina}, multiplicada por 0,75 como factor de seguridad por la distribución irregular de peso de la máquina. Para obtener el esfuerzo máximo flector es necesario conocer la geometría de la viga, motivo por la cual se iteró entre las distintas opciones disponibles en el mercado de pletinas o barras planas de acero. Por razones estipuladas en la norma NCh 1198, la conexión entre la pletina de acero y la viga principal de madera se debe realizar con un mínimo de dos pernos, por lo tanto, se escogió el ancho máximo del mercad. Así, la tabla \ref{tab:dimycar_pletina} muestra las dimensiones de la pletina escogida.
+Donde $m_{maq}$ es la masa estimada en \ref{eq:masa_maq}, multiplicada por 0,75 como factor de seguridad por la distribución irregular de peso de la máquina. Para obtener el esfuerzo máximo flector es necesario conocer la geometría de la viga, motivo por la cual se iteró entre las distintas opciones disponibles en el mercado de pletinas o barras planas de acero. Por razones estipuladas en la norma NCh 1198, la conexión entre la pletina de acero y la viga principal de madera se debe realizar con un mínimo de dos pernos, por lo tanto, se escogió el ancho máximo del mercad. Así, la tabla \ref{tab:dimycar_pletina} muestra las dimensiones de la pletina escogida.
 \begin{table}[h]
 \centering
 \begin{tabular}{@{}ll@{}}
@@ -237,12 +278,15 @@ Para obtener el factor de seguridad, se utilizará la ecuación de Goodman modif
 \subsection{Diseño en madera}
 La elección de la madera como elemento principal de construcción se debió por su capacidad de disipar las vibraciones y la relación entre su resistencia y el peso, volviendo la estructura más liviana y útil para las necesidades. Para realizar los cálculos de la madera y sus uniones, se utilizó la norma \textbf{NCh 1198 Of. 91 -- Madera: Construcciones en madera -- Cálculo}, mostrada en el anexo \ref{ch:anexo_a}. Las dimensiones del diseño de la estructura se realizaron considerando dejar el espacio necesario para la operación de la máquina, conservando la altura actual de 900 [mm]. Si bien en el presente trabajo se expondrán los cálculos de una especia maderera y sus respectivas dimensiones, se realizaron cálculos con otras especies y en otros formatos para añadir flexibilidad al diseño propuesto. Las maderas consideradas en el trabajo son el pino Oregón, pino Radiata y la línea de pino radiata encolado Hilam de Arauco. Los resultados mostrados en la sección siguiente son los obtenidos al escoger el pino Oregón en formato de 110x110 [mm]. Los valores de las tensiones admisibles para distintas especies madereras se obtienen de la tabla 4 de la sección 6.2 de la NCh 1198, sin embargo, para la madera laminada encolada se encuentran en la norma NCh 2165. Finalmente, para la sección de diseño en madera se utilizará la nomenclatura utilizada por la norma NCh 1198, para evitar confusiones al momento de consultar el anexo o la norma misma.
 
-\textcolor{red}{añadir tabla con las dimensiones de la madera}
-
 \subsection{Cálculo de cargas en estructura de madera}
-Para identificar las distintas partes de madera en la estructura, se utilizará la figura REF como referencia. Tanto las vigas A, C, D y el pilar B, están diseñados de la misma madera y formato. En el anexo REF se pueden apreciar los planos del diseño de la estructura propuesta y sus uniones.
+Para identificar las distintas partes de madera en la estructura, se utilizará la figura \ref{fig:mesa_iso} como referencia. Tanto las vigas A, C, D y el pilar B, están diseñados en base a la misma especie maderera y las vigas A, C y el pilar B del mismo formato. En el anexo REF se pueden apreciar los planos del diseño de la estructura propuesta y sus uniones.
 
-\textcolor{red}{añadir imagen de vigas A, B, C y D}
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\linewidth, trim={10cm 5cm 7cm 3cm},clip]{Imagenes/mesa_iso.png}
+\caption{Identificación de las disintas partes de madera de la estructura.}
+\label{fig:mesa_iso}
+\end{figure}
 
 Como se nombró anteriormente, la madera utilizada será pino oregón, el cual bajo las consideraciones de la tabla \ref{tab:tabla3_1198} se trabajará como madera seca tanto en construcción como en servicio al estar en un ambiente cerrado sin calefacción, como se señala en la sección \ref{sec:contenido_humedad} de contenido de humedad. Los valores de densidad, tanto anhidra como normal, se pueden obtener del Anexo E de la norma. A partir de este anexo, la tabla \ref{tab:densidad_oregon} muestra los valores del pino oregón.
 
@@ -261,7 +305,7 @@ Pino oregón                                                                  & 
 \end{table}
 
 \subparagraph{Tensiones admisibles y módulo de elasticidad del pino oregón.}
-Para la determinación de estos valores es necesario catalogar el grado de calidad, si corresponde a madera verde o seca y la clasificación de la madera del pino oregón. El agrupamiento de las maderas crecidas en Chile se encuentran en el anexo A de la norma NCh 1198, según la cual el pino oregón se clasifica en el grupo ES 5 para madera seca y se asumirá un grado estructural N$^{\circ}$ 4. Con esta información, a través de la tabla 6 de la norma, obtenemos que la clase estructural es F8. Con esto, la tabla 4 y 5 entrega la información de las tensiones admisibles y el módulo de elasticidad. Así, la tabla REF los valores del pino oregón utilizado en este trabajo.
+Para la determinación de estos valores es necesario catalogar el grado de calidad, si corresponde a madera verde o seca y la clasificación de la madera del pino oregón. El agrupamiento de las maderas crecidas en Chile se encuentran en el anexo A de la norma NCh 1198, según la cual el pino oregón se clasifica en el grupo ES 5 para madera seca y se asumirá un grado estructural N$^{\circ}$ 4. Con esta información, a través de la tabla 6 de la norma, obtenemos que la clase estructural es F8. Con esto, la tabla 4 y 5 entrega la información de las tensiones admisibles y el módulo de elasticidad. Así, la tabla \ref{tab:tadm_oregon} muestra los valores del pino oregón utilizado en este trabajo.
 
 \begin{table}[h]
 \centering
@@ -301,7 +345,7 @@ Es la viga que soporta la carga de las pletinas que sostienen a la máquina y a 
 \begin{equation}\label{eq:q_pl}
 	q_{pl} = \frac{q_{maq}\,c + q_{ac}\,L}{2b_p}
 \end{equation}
-El diagrama y la distribución de la carga se puede apreciar en la figura REF. Por otro lado, el esfuerzo máximo se presenta en los extremos de la viga. Las ecuaciones \ref{eq:reac_vigappal} y \ref{eq:mto_vigappal}, muestran la obtención de las reacciones y del momento flector máximo.
+El diagrama y la distribución de la carga se puede apreciar en la figura \ref{fig:diagcargas_viga_a}. Por otro lado, el esfuerzo máximo se presenta en los extremos de la viga. Las ecuaciones \ref{eq:reac_vigappal} y \ref{eq:mto_vigappal}, muestran la obtención de las reacciones y del momento flector máximo.
 \begin{subequations}
 \begin{gather}
 	R_0 = g \left( q_{pl}\cdot b_p + \frac{L\cdot q_{mad}}{2}\right) \label{eq:reac_vigappal}\\
@@ -325,18 +369,21 @@ De este modo, la tensión de diseño en la zona flexo-traccionada y flexo-compri
 \end{gather}
 \end{subequations}
 Por otro lado, la tensión de trabajo en cizalle se obtiene a partir de la ecuación \ref{eq:f_cz} y la de diseño en cizalle por \ref{eq:cz_dis}. Dado que $K_r=1$ al no haber rebajo de la viga, entonces el valor obtenido para ambas tensiones son:
-\begin{gather}
-	f_{cz} = 0,098 \quad \text{(MPa)}\\
-	F_{cz,dis} = 0,774 \quad \text{(MPa)}
-\end{gather}
-Finalmente, los valores de factor de seguridad (FS) para cada uno de las tensiones calculadas son los siguientes:
-\begin{subequations}
-\begin{gather}
-	FS_{ft} = 12,85\\
-	FS_{fv} = 14,03\\
-	FS_{cz} = 7,85
-\end{gather}
-\end{subequations}
+\begin{align}
+	f_{cz} &= 0,098 \quad \text{(MPa)}\\
+	F_{cz,dis} &= 0,774 \quad \text{(MPa)}
+\end{align}
+
+%--------------------------------------------------------
+%Finalmente, los valores de factor de seguridad (FS) para cada uno de las tensiones calculadas son los siguientes:
+%\begin{subequations}
+%\begin{gather}
+%	FS_{ft} = 12,85\\
+%	FS_{fv} = 14,03\\
+%	FS_{cz} = 7,85
+%\end{gather}
+%\end{subequations}
+%--------------------------------------------------------
 
 \begin{figure}[h]
 \centering
@@ -346,32 +393,37 @@ Finalmente, los valores de factor de seguridad (FS) para cada uno de las tension
 \end{figure}
 
 \subsubsection{Pilar de apoyo, B}
-El pilar B representa los cuatro apoyos de la estructura, recibiendo la carga de la máquina y su operación desde la viga principal y transmitiendola hasta el piso. Por la disposición del cuartón, estará sometido a compresión paralela (\ref{sec:cp}). Al igual que en la viga principal, se debe calcular la tensión de trabajo ($f_{cp}$) y la tensión de diseño en compresión paralela ($F_{cp,dis}$). Al ser el mismo formato y especie maderera de la viga principal, su área transversal sigue siendo de 110x110 mm, mientras que el largo del pilar ($L_v$) corresponde a 790 mm.
+El pilar B representa los cuatro apoyos de la estructura, recibiendo la carga de la máquina y su operación desde la viga principal y transmitiendola hasta el piso. Por la disposición del cuartón, estará sometido a compresión paralela (\ref{sec:cp}). Al igual que en la viga principal, se debe calcular la tensión de trabajo ($f_{cp}$) y la tensión de diseño en compresión paralela ($F_{cp,dis}$). Al ser el mismo formato y especie maderera de la viga principal, su área transversal se mantiene, mientras que el largo del pilar ($L_v$) corresponde a 790 mm.
 
 Para el primero, se obtiene a través de la ecuación \ref{eq:f_cp}, donde la carga $N$ será igual a la reacción obtenida en \ref{eq:reac_vigappal}. Así, su valor es:
 
-\textcolor{red}{Corregir con área modificada por pernos}
+
 \begin{equation}
 	f_{cp} = 0,0657 \quad \text{(MPa)} 
 \end{equation}
+El valor de $f_{cp}$ será posteriormente corregido una vez que se seleccionen las dimensiones de las uniones mecánicas, recalculando la tensión de trabajo con el área neta.
+
 Para el segundo, el cálculo de la tensión de diseño dependerá de la inestabilidad lateral dado por la esbeltez $\lambda$. La longitud efectiva de pandeo se obtiene a través de la tabla 18 de la norma, de la cual se escogerá la configuración de apoyo con impedimento de giros y desplazamiento por un extremo y, para el otro lado, impedimento de giro con libertad de desplazamiento, es decir, $l_p/L_v = 1,5$. De esta forma, los valores obtenidos son:
 \begin{gather*}
 	l_p = 1,5\cdot L_v = 1,185 \: \text{(m)}\\
 	i = \sqrt{\frac{I}{A}} = \sqrt{\frac{0,11^4}{12\cdot 0,11^2}} = 0,032 \: \text{(m)}\\
 	\lambda = \frac{l_p}{i} = 37,32 \: \text{(-)}
 \end{gather*}
-Como $\lambda > 5$, entonces la tensión de trabajo de compresión paralela se debe calcular según \ref{eq:cp_dislambda} y se debe evaluar el factor de modificación por esbeltez $K_{\lambda}$ a partir de \ref{eq:k_lambda}. El coeficiente de proporcionalidad para una madera de grado n$^{\circ}$ 4 es $c = 0,8$ y el módulo de elástico de diseño es $E_{dis} = 6206,2\: \text{(MPa)}$. Por otro lado, la tensión de diseño $F_{cp,dis}$ se obtiene según \ref{eq:cp_dis} y los factores de modificación $K_D$ y $K_H$.
+Como $\lambda > 5$, entonces la tensión de trabajo de compresión paralela se debe calcular según \ref{eq:cp_dislambda} y se debe evaluar el factor de modificación por esbeltez $K_{\lambda}$ a partir de \ref{eq:k_lambda}. El coeficiente de proporcionalidad para una madera de grado n$^{\circ}$ 4 es $c = 0,8$ y el módulo de elástico de diseño es $E_{dis} = 6206,2\: \text{(MPa)}$. Por otro lado, la tensión de diseño $F_{cp,dis}$ se obtiene a partir de los factores de modificación $K_D$ y $K_H$ y la ecuación \ref{eq:cp_dis}.
 \begin{equation}
-	F_{cp,dis} = 5,936 \: \text{(MPa)}
+	F_{cp,dis} = 5,936 \quad \text{(MPa)}
 \end{equation}
-Con esto, los valores de las constantes y el factor de modificación serán $A = 2,852\;$ (-), $B = 3,754\;$ (-) y $K_{\lambda} = 0,759\:$ (-). Así, el factor de modificación final $F_{cp,\lambda, dis}$ será:
+Con esto, los valores de las constantes serán $A = 2,852\;$ (-), $B = 3,754\;$ (-) y $K_{\lambda} = 0,759\:$ (-). El factor de modificación final $F_{cp,\lambda, dis}$ será:
 \begin{equation}
-	F_{cp,\lambda, dis} = 4,506 \: \text{(MPa)}
+	F_{cp,\lambda, dis} = 4,506 \quad \text{(MPa)}
 \end{equation}
-Finalmente, el factor de seguridad con esta configuración es:
-\begin{equation}
-	FS_{cp,\lambda} = 68,6\: \text{(-)}
-\end{equation}
+
+%---------------------------------------------------------
+%Finalmente, el factor de seguridad con esta configuración es:
+%\begin{equation}
+%	FS_{cp,\lambda} = 68,6\: \text{(-)}
+%\end{equation}
+%---------------------------------------------------------
 
 \subsubsection{Viga transversal, C}
 Para esta viga se realizará el mismo procedimiento que para la viga A, sin embargo, las solicitaciones son menores y la única carga a la que está sometida es la de su propio peso. Las dimensiones nominales de la tabla son 1x8'' cepillada, es decir, según las tablas de valores \ref{tab:anchodim} y \ref{tab:espdim} son de 19x185 mm y su largo es de 800 milímetro. La carga distribuida de su peso es de $q_{tabla}=1,5$ [kg/m].
@@ -395,16 +447,16 @@ Así, la tensión de diseño en flexión de esta viga es de:
 	F_f = 3,9235 \: \text{(MPa)}
 \end{equation}
 \subsection{Uniones}
-Las uniones en madera se deben diseñar siguiendo las indicaciones establecidas en la sección 10 de la norma NCh1198, uniones en la madera estructural. Esta considera la condición de la madera en operación, el tipo de unión, la dirección de la solicitación repecto a la dirección de la fibra, el número de elementos de unión, el distanciamiento entre los elementos de unión y el tipo de cizalle. Para el diseño de la estructura se utilizaron tres elementos de unión distintos: tirafondos, pernos \textcolor{red}{ y, en menor medida, clavos.}
+Las uniones en madera se deben diseñar siguiendo las indicaciones establecidas en la sección 10 de la norma NCh1198, uniones en la madera estructural. Esta considera la condición de la madera en operación, el tipo de unión, la dirección de la solicitación repecto a la dirección de la fibra, el número de elementos de unión, el distanciamiento entre los elementos de unión y el tipo de cizalle. Para el diseño de la estructura se utilizaron tres elementos de unión distintos: tirafondos, pernos y, en menor medida, clavos.
 
 \subsubsection{Acero - madera}
-Para la unión entre la pletina de acero y la viga principal de madera, se utilizaron dos pernos de grado 2 de 4 \nicefrac{1}{2}'' de largo y  $3/8''$ de diámetro. Como se explica en la sección \ref{sec:union_perno} el mínimo de pernos por unión debe ser dos, con la excepción de que el único perno no esté solicitado en un porcentaje superior al 50\% de su capacidad de diseño. La unión está compuesta por la pletina de acero, seguido por la viga de madera con la dirección de sus fibras normal a las solicitaciones y nuevamente una placa de acero. Finalmente, para el cálculo de la capacidad de carga admisible y tensión admisible de aplastamiento nominal, se recurrirá a las ecuaciones \ref{eq:padm_ad} y \ref{eq:f_ap}, respectivamente. 
+Para la unión entre la pletina de acero y la viga principal de madera, se utilizaron dos pernos de grado 2 de 4 \nicefrac{1}{2}'' de largo y  $3/8''$ de diámetro. Como se explica en la sección \ref{sec:union_perno}, el mínimo de pernos por unión debe ser dos, con la excepción de que el único perno no esté solicitado en un porcentaje superior al 50\% de su capacidad de diseño. La unión está compuesta por la pletina de acero, seguido por la viga de madera con la dirección de sus fibras normal a las solicitaciones y nuevamente una placa de acero. Finalmente, para el cálculo de la capacidad de carga admisible y tensión admisible de aplastamiento nominal, se recurrirá a las ecuaciones \ref{eq:padm_ad} y \ref{eq:f_ap}, respectivamente. 
 
-Para calcular la capacidad de carga admisible, $P_{ad}$, se utilizaron las indicaciones para cizalle simple, las cuales indican que se determina como el menor valor de la mitad de la carga admisible de cizalle doble entre una pieza central de espesor igual a la pieza más grande y una pieza central igual al dobleasí  del espesor de la pieza más delgada. Para este diseño el valor menor consiste en considerar el espesor central ficticio $e*$ como dos veces el espesor menor, es decir, el espesor lateral $e_l$, así el valor de esbeltez del perno es:  
+Para calcular la capacidad de carga admisible, $P_{ad}$, se utilizaron las indicaciones para cizalle simple, las cuales indican que se determina como el menor valor de la mitad de la carga admisible de cizalle doble entre una pieza central de espesor igual a la pieza más grande y una pieza central igual al doblea del espesor de la pieza más delgada. Para este diseño el valor menor consiste en considerar el espesor central ficticio $e*$ como dos veces el espesor menor, es decir, el espesor lateral $e_l$, así el valor de esbeltez del perno es:  
 \begin{equation*}
 	\lambda_u = \frac{2\cdot e*}{D} = \frac{2\cdot 8\, \text{mm}}{9,525\, \text{mm}} = 1,679\: \text{(-)}
 \end{equation*}
-Para obtener los valores de $F_{ap}$ el valor del factor de reducción de zona elástica se obtiene a partir de la densidad anhidra de la madera (tabla \ref{tab:densidad_oregon}, siendo $\eta =$ 2,2. Por otro lado el ángulo $\theta$ es de $\pi/2$ al estar las fuerzas en dirección normal a la fibra de madera. Con esto, se obtiene:
+Para obtener los valores de $F_{ap}$ el valor del factor de reducción de zona elástica se obtiene a partir de la densidad anhidra de la madera (tabla \ref{tab:densidad_oregon}, siendo $\eta =$ 2,2). Por otro lado el ángulo $\theta$ es de $\pi/2$ al estar las fuerzas en dirección normal a la fibra de madera. Con esto, se obtiene:
 \begin{gather}
 	F_{ap} = 3,402 \: \text{(MPa)} \\
 	P_{ad,simple} =\frac{P_{ad,doble}}{2} = 259,24 \: \text{(MPa)}
@@ -427,14 +479,14 @@ El espaciamiento entre los pernos se especifica en la sección \ref{sec:espaciam
 Existen distintos componentes de unión para la conexión de elementos de madera. En este trabajo se utilizó el tirafondo, perno y clavo como elementos principales de unión.  Cada uno de ellos tiene distintas características que los vuelven ventajosos en ciertas situaciones. La utilización del tirafondo se utiliza para unir la viga C con el pilar B y la viga A, por su capacidad de ``empujar'' una madera contra la otra de manera eficiente. Los pernos, por otro lado, se utilizaran para la unión de herrajes entre la viga D y el pilar B, como también en los herrajes de anclaje del pilar B con el piso. En el caso de los clavos, estos se ocupan en los  herrajes o ángulos de apoyo entre las vigas A y B, para evitar su movimiento transversal. Para estos dos últimos elementos de unión, su elección está supeditada a las recomendaciones del fabricante de los herrajes o ángulos, quienes incluyen los valores de carga en la elección de los elementos de unión. Por lo mismo, la caracterización de estos elementos se realizará en la sección de herrajes.
 
 \subsubsection{Tirafondos}
-Las indicaciones para el cálculo, espaciamiento e instalación de los tirafondos se encuentran en la sección \ref{sec:tirafondos}. Al igual que el proceso de selección de vigas de madera, se iteró con distintas dimensiones de largo y diámetro. Así el tirafondo escogido fue de $1/4$x3\nicefrac{1}{2}'', lo cual se traduce a partir del anexo M de la norma en las medidas expuestas en la tabla \ref{tab:tirafondo}.
+Las indicaciones para el cálculo, espaciamiento e instalación de los tirafondos se encuentran en la sección \ref{sec:tirafondos}. Al igual que el proceso de selección de vigas de madera, se iteró con distintas dimensiones de largo y diámetro. De esta manera, el tirafondo escogido fue de $1/4$ x 3\nicefrac{1}{2}'', lo cual se traduce a partir del anexo M de la norma en las medidas expuestas en la tabla \ref{tab:tirafondo}.
 \begin{table}[h]
 \centering
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}cccccl@{}}
 \toprule
 \begin{tabular}[c]{@{}c@{}}Nomenclatura\\ tirafondo\end{tabular} & \begin{tabular}[c]{@{}c@{}}Diámetro Nominal \\ ($D_v$ o $D$) [mm]\end{tabular} & \begin{tabular}[c]{@{}c@{}}Diámetro de rosca\\  ($D_R$) [mm]\end{tabular} & \begin{tabular}[c]{@{}c@{}}Largo roscado\\  (R) [mm]\end{tabular} & \begin{tabular}[c]{@{}c@{}}Largo vástago\\ (V) [mm]\end{tabular} & \begin{tabular}[c]{@{}l@{}}Largo punta\\ (P) [mm]\end{tabular} \\ \midrule
-$1/4$x3\nicefrac{1}{2}''                                         & 6,4                                                                            & 4,4                                                                       & 51                                                                & 38                                                               & 4,8                                                            \\ \bottomrule
+$1/4$ x 3\nicefrac{1}{2}''                                         & 6,4                                                                            & 4,4                                                                       & 51                                                                & 38                                                               & 4,8                                                            \\ \bottomrule
 \end{tabular}%
 }
 \caption{Dimensiones del tirafondo utilizado}
@@ -443,76 +495,80 @@ $1/4$x3\nicefrac{1}{2}''                                         & 6,4          
 
 Para su instalación, la norma indica que es necesario realizar perforaciones guías, las cuales están en función de sus características. Así el agujero tendrá dimensiones para la zona del vástago y otra para la zona con rosca. Para la zona del vástago, el agujero deberá tener las dimensiones del diámetro nominal $D_v$ y el largo V. Para la segunda zona, la madera de pino oregón se categoriza en el grupo B según su densidad anhidra, a partir de la tabla 38 de la norma. Con esta información el largo del agujero debe ser de R - P  y el diámetro del entre el 60\% y el 70\%.
 \subparagraph{Solicitaciones de extracción lateral}
-La carga admisible de extracción lateral se calcula según la ecuación \ref{eq:pel_ad}. El valor K se obtiene a partir de la tabla 39 de la norma a partir de si la madera utilizada es conífera o latifoliada y su densidad anhidra. El pino oregón es una madera conífera y, según su densidad, el valor de K es de 11,7. Así el valor obtenido es de $P_{el,ad} = 0,48$ (kN). Sin embargo, la norma establece tres condiciones que se deben cumplir para que la expresión \ref{eq:pel_ad} sea aplicable, de las cuales no se cumple que el espesor $e_L$ de la pieza lateral atravesada por el tirafondo sea igual a $3,5\cdot D$. Por esto se debe mayorar el valor de la carga admisible por factores de modificación que pueden penalizar o ayudar, dependiendo de la configuración de la unión.
+La carga admisible de extracción lateral se calcula según la ecuación \ref{eq:pel_ad}. El valor K se obtiene a partir de la tabla 39 de la norma dependiendo de si la madera utilizada es conífera o latifoliada y su densidad anhidra. El pino oregón es una madera conífera y, según su densidad, el valor de K es de 11,7. Así el valor obtenido es de $P_{el,ad} = 0,48$ (kN). Sin embargo, la norma establece tres condiciones que se deben cumplir para que la expresión \ref{eq:pel_ad} sea aplicable, de las cuales no se cumple que el espesor $e_L$ de la pieza lateral atravesada por el tirafondo sea igual a $3,5\cdot D$. Por esto se debe mayorar el valor de la carga admisible por factores de modificación que pueden penalizar o ayudar, dependiendo de la configuración de la unión.
 
 \subparagraph{Factor de modificación por espesor de la pieza lateral.}
 El factor se obtiene a partir de la tabla 40 de la norma, debido a que $e_L \neq 3,5\cdot D$. El valor $K_{te}=0,93$ se obtiene al ingresar a la tabla con la razón $e_L/D \approx 3$.
 
 \subparagraph{Factor de modificación por penetración del vastago en la pieza principal.}
-De manera análoga, el factor se obtiene en la tabla 41 de al norma a partir de la razón la penetración del vástago en la pieza, $P_v$ y el diámetro del tirafondo. El valor de este es $P_v/D \approx 5$, lo cual da que $K_v=1,36$
+De manera análoga, el factor se obtiene en la tabla 41 de al norma a partir de la razón la penetración del vástago en la pieza, $P_v$, y el diámetro del tirafondo. El valor de este es $P_v/D \approx 5$, lo cual da que $K_v=1,36$
 
 \subparagraph{Factor de modificación por diámetro.}
 Por último, este factor se obtiene directamente del diámetro nominal del tirafondo, a través de la tabla 42 de la norma. El valor corresponde a $K_{tD}=0,97$.
+\\
 
-Además de los factores de modificación expuestos, el eje del tirafondo se encuentra en dirección paralela a las fibras de la madera de la pieza principal, por lo tanto se debe multiplicar el valor de la carga admisibles por $2/3$. En conclusión, la carga admisible es igual a :
+Además de los factores de modificación expuestos, el eje del tirafondo se encuentra en dirección paralela a las fibras de la madera de la pieza principal, por lo tanto se debe multiplicar el valor de la carga admisibles por $\frac{2}{3}$. En conclusión, la carga admisible es igual a :
 \begin{equation}
 	P_{el,ad} = \frac{2}{3}\cdot K_{te}\cdot K_{tv}\cdot K_{tD} \cdot K\cdot D^2\cdot = 391,966 \: \text{(N)}
 \end{equation}
 
 \subparagraph{Solicitaciones de extracción directa}
-Para el caso de la extracción directa es la ecuación \ref{eq:ped_ad} la que determina la carga admisible de tirafondos colocados con su eje normal a las fibras de la madera. Dado que este no es el caso, como se señaló en la sección de extracción lateral, la carga admisible a considerar se debe multiplicar por $3/4$. Por otra parte, el valor de la longitud crítica de penetración $l_{crit}=10\cdot D_R$ se obtuvo de la tabla 43 de la norma. Sin embargo, la longitud real de penetración de la zona roscada (R-P) es menor a la longitud crítica, por lo tanto en la ecuación se reemplaza $l_{crit}$ por $l = R-P$. Entonces el valor obtenido para la carga admisible es:
+Para el caso de la extracción directa es la ecuación \ref{eq:ped_ad} la que determina la carga admisible de tirafondos colocados con su eje normal a las fibras de la madera. Dado que este no es el caso, como se señaló en la sección de extracción lateral, la carga admisible a considerar se debe multiplicar por $\frac{3}{4}$. Por otra parte, el valor de la longitud crítica de penetración $l_{crit}=10\cdot D_R$ se obtuvo de la tabla 43 de la norma. Sin embargo, la longitud real de penetración de la zona roscada (R-P) es menor a la longitud crítica, por lo tanto en la ecuación se reemplaza $l_{crit}$ por $l = R-P$. Entonces el valor obtenido para la carga admisible es:
 \begin{equation}
 	P_{ed,ad} = 6,37 \: \text{(kN)}
 \end{equation} 
 
 \subsubsection{Herrajes y conectores}
-La elección de los conectores y herrajes utilizados se baso en tres aspectos principales: la disponibilidad de los productos en la región, la compatibilidad con los elementos de madera y con las cargas que pueden resistir según el fabricante. Estos consisten en un elemento de metal, acero generalmente, que permite la unión de dos o más piezas de madera para soportar determinadas cargas. Existen en distintas geometrías y el mecanismo de conexión entre acero y madera es a través de elementos de unión mecánica, es decir, pernos, clavos y tornillos, principalmente. Para este trabajo se utilizaron tres tipos, los cuales une las vigas A y B, B y D y B con el suelo del laboratorio, todos fabricados por la marca Simpson Strong-Tie.
+La elección de los conectores y herrajes utilizados se baso en tres aspectos principales: la disponibilidad de los productos en la región, la compatibilidad con los elementos de madera y con las cargas que pueden resistir según el fabricante. Estos consisten en un elemento de metal, acero generalmente, que permite la unión de dos o más piezas de madera para soportar determinadas cargas. Existen en distintas geometrías y, el mecanismos de conexión entre acero y madera, es a través de elementos de unión mecánica, es decir, pernos, clavos y tornillos, principalmente. Para este trabajo se utilizaron tres tipos, los cuales une las vigas A y B, B y D y B con el suelo del laboratorio, todos fabricados por la marca Simpson Strong-Tie.
 
-Para la primera unión se utilizó en el diseño un ángulo de apoyo modelo A66, donde cada brazo tiene una longitud de 6''. La unión mecánica utilizada son los clavos de \textcolor{red}{buscar dimensiones}. Como se puede apreciar en la figura REF, este ángulo busca responder a las fuerzas que son paralelas al plano horizontal.
+Para la unión entre A y B se utilizó en el diseño un ángulo de unión modelo A44, donde la longitud de sus brazos es de 4 \nicefrac{9 }{ 16}'' y 4 \nicefrac{3 }{ 8}'' de largo y su ancho de 1,5 pulgadas. Los elementos de unión a utilizar son clavos de 0,148'' de diámetro y 3'' de largo. Las fuerzas que soportan, de acuerdo a la imagen \ref{fig:a24}, son de $F_1=$ 3,45 kN y $F_2=$ 1,23 kN. 
 
-\textcolor{red}{imagen A66}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.3\linewidth]{Imagenes/a24.pdf}
+\caption{Representación de un ángulo de unión A44 y A66.}
+\label{fig:a24}
+\end{figure} 
 
-Para la unión del pilar B y la viga D se utilizó \textcolor{red}{colocar nombre}. Este se une a través de un perno por cada brazo de \textcolor{red}{dimensiones}. Estos buscan soportar la carga provocada por el propio peso y evitar los desplazamientos horizontales. Su disposición se puede ver en la figura REF, donde se aprecia cómo se utilizan dos ángulos por conexión.
+Para la unión del pilar B y la viga D se utilizó el ángulo A66. Este se une a través cada brazo de 5 \nicefrac{7 }{ 8}'' a través de unos pernos de diámetro de \nicefrac{3 }{ 8}''. Estos buscan soportar la carga provocada por el propio peso y evitar los desplazamientos horizontales. Su disposición se puede ver en los planos del anexo REF, donde se aprecia cómo se utilizan dos ángulos por conexión.
 
-\textcolor{red}{Detalle del diseño de la mesa}
-
-Por último, la unión entre el piso y el pilar B se escogió un ángulo de anclaje A24. Utiliza un perno de anclaje para el piso y otro normal que es adosado en el otro extremo del pilar por un segundo ángulo de anclaje, de manera similar a la unión B-D. La imagen REF muestra en detalle el diseño de la conexión.
+Por último, la unión entre el piso y el pilar B se escogió un ángulo de anclaje A24. Utiliza un perno de anclaje y uno de sujeción de \nicefrac{1 }{ 2}'' para el piso y otro normal que es adosado en el otro extremo del pilar por un segundo ángulo de anclaje, de manera similar a la unión B-D. El plano del anexo REF muestra en detalle el diseño de la conexión.
  
 \subsection{Simulaciones}
-Las simulaciones de la máquina se utilizaron como apoyo y contraparte de los cálculos realizados manualmente. Éstas se realizaron en el software Inventor AutoCAD, en el ambiente ``\textit{Stress Analysis}''. A través de esto se busco confirmar que los resultados obtenidos en los cálculos estáticos se encuentran fuera de los rangos de falla y obtener las frecuencias naturales de la estructura, utilizando ``\textit{Static and Modal Analysis}'' respectivamente.
+Las simulaciones de la máquina se utilizaron como apoyo y contraparte de los cálculos realizados manualmente. Éstas se realizaron en el software Inventor AutoCAD, en el ambiente ``\textit{Stress Analysis}''. A través de esto, se busca confirmar que los resultados obtenidos en los cálculos estáticos se encuentran fuera de los rangos de falla y obtener las frecuencias naturales de la estructura, utilizando ``\textit{Static and Modal Analysis}'' respectivamente.
 
 Debido a las limitantes del programa utiilzado, se debieron adaptar las propiedades mecánicas ortotrópicas de la madera, las cuales no era posible simular directamente. Para esto, se utilizaron los valores mínimos del Módulo de Young y las tensiones admisibles en las direcciones de mayor solicitación de cada elemento, buscando representar de manera segura las propiedades ortotrópicas en una configuración isotrópica.
 
-Como condición del problema, en ambas simulaciones, las restricciones de los pilares de apoyo B se consideran fijos (\textit{fixed}), impidiendo cualquier grado de movimiento en su base. Además, las uniones se consideraron perfectas y sin desplazamientos. La carga fue aplicada en forma de presión sobre la parte superior de la máquina de fatiga para tener una distribución adecuada del peso de la misma, tomando en consideración la masa calculada en \ref{eq:m_maq} de 200 kg.
+Como condición del problema, en ambas simulaciones, las restricciones de los pilares de apoyo B se consideran fijos (\textit{fixed}), impidiendo cualquier grado de movimiento en su base. Además, las uniones se consideraron perfectas y sin desplazamientos. La carga fue aplicada en forma de presión sobre la parte superior de la máquina de fatiga para tener una distribución adecuada del peso de la misma, tomando en consideración la masa calculada en \ref{eq:masa_maq} de 200 kg.
 
 \subsubsection{Análisis modal}
 La configuración utilizada para realizar esta simulación consistió en:
-\begin{itemize}
+\begin{itemize*}
 	\item Número de modos: 6
 	\item Rango de frecuencias: 0 - 120 Hz
 	\item Precisión mejorada (\textit{Enhanced Accuracy)}
 	\item Contactos:
-		\begin{itemize}
+		\begin{itemize*}
 			\item Tolerancia: 0,1 mm
 			\item Tipo: \textit{Bonded}
-		\end{itemize}
+		\end{itemize*}
 	\item Malla:
-		\begin{itemize}
+		\begin{itemize*}
 			\item Tamaño medio del elemento: 0,08
 			\item Tamaño mínimo del elemento: 0,15
 			\item Factor de modificación: 1,5 (default)
 			\item Ángulo máximo de giro: 60 grados (default)
 			\item Calcular modos precargados
 			\item Utilizar la medida para la malla según la pieza base del ensamblaje
-		\end{itemize}
-\end{itemize}
+		\end{itemize*}
+\end{itemize*}
 
 \subsubsection{Análisis estático}
 Para realizar la simulación estática se retiraron todos los elementos de unión, es decir, pernos, tirafondos, conectores y ángulos, conservando solo las vigas de madera y las pletinas de acero. El fin de esto es analizar específicamente los esfuerzos a los que están sometidos estos elementos a la carga de la máquina de fatiga. La configuración principal de la simulación consiste en:
-\begin{itemize}
+\begin{itemize*}
 	\item Detectar y eliminar modos de cuerpo rígido
 	\item Separar tensiones en superficies de contacto
-\end{itemize}
+\end{itemize*}
 La configuración de los contactos y la malla se conservó igual a la establecida en el análisis modal.
 
 \section{Modelo del sistema de vibratorio}

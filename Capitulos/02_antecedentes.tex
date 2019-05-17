@@ -1,5 +1,5 @@
 \chapter{Antecedentes}
-\[
+
 \section{Fenómeno de la fatiga y su medición}
 El fenómeno en el cual una estructura se daña e incluso falla por cargas fluctuantes, es llamado fatiga. El estudio de este problema comenzó tempranamente en europa durante la mitad del siglo XIX, en pleno auge de la industralización europea, producto de la falla repentina de algunos componentes en máquinas y los ejes de los trenes de la época. Estos experimentaban un gradual debilitamiento de la resistencia, fallando aún cuando su esfuerzo último no fuese alcanzado. 
 
@@ -105,6 +105,16 @@ AÑADIR IMAGEN COMPARANDO AMBOS SISTEMAS.
 \section{Máquina de fatiga a flexión}
 El desarrollo de este trabajo se centrará en la máquina de fatiga que posee el departamento de ingeniería mecánica en el laboratorio de tecnología mecánica en Valparaíso. La información existente sobre la máquina de ensayo es escasa principalmente por su antigüedad, lo que ha llevado a la perdida de documentos y la obsolescencia de la tecnología de la parte eléctrica.  
 
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.05]{Imagenes/maq_del.jpg}
+\label{fig:maq_del}
+\includegraphics[scale=0.05]{Imagenes/maqfull_post.jpg}
+\label{fig:maqfull_post}
+\caption{Máquina de fatiga en flexión en el laboratorio de tecnología mecánica}
+\label{fig:maq_fat}
+\end{figure}
+
 A partir de la información verbal entregada por el profesor Guillermo González, la máquina fue adquirida por el departamento durante la década del 50. Fue fabricada en Suiza por \textit{Alfred J. Amsler \& Co.} y su estructura completa es de acero fundido. Previo a la remodelación del piso del laboratorio durante el año 2012, la máquina se encontraba montada sobre un colchón de corcho, que a su vez se anclaba a un bloque hecho de concreto. Este fue demolido durante los trabajos, momento desde el cual se encuentra apoyada sobre la mesa de madera sin una solución definitiva. Más aún, varios equipos y máquinas de ensayo del laboratorio no se encuentran ancladas al piso ni con una instalación definitiva, impidiendo su correcto uso.
 
 La máquina consiste, en un primer acercamiento, en un disco desequilibrado de forma controlada por el usuario, el cual, al ser acelerado angularmente hasta una velocidad definida por su motor eléctrico, comienza a oscilar. Esta oscilación es transmitida, a través de un brazo de carga, hacia la probeta en forma de momento. La probeta se encuentra doblemente empotrada, por un lado está fija a la estructura de la máquina y, por el otro, empotrado al brazo de carga que le realiza el momento. Los elementos que generan el desequilibrio son pequeñas masas calibradas, como se puede apreciar en la imagen \ref{fig:contrapesos}, que se denominarán contrapesos. La máquina también entrega la posibilidad de realizar ensayos de fatiga a torsión, al girar los empotramientos 90 grados, sin embargo, esta configuración no se estudiará en este trabajo. Un estudio a mayor profundidad se realizará en la sección \ref{sec:lev_info}.
@@ -149,10 +159,18 @@ La probeta utilizada en la máquina de fatiga se fabrica actualmente de acero de
 
 Para la mayoría de los aceros, su comportamiento bajo carga se divide en una zona elástica y otra plástica, como se muestra en la figura \ref{fig:esf-def_curve}. La zona elástica se caracteriza por tener un módulo de elasticidad $E$, que en el caso de los aceros ronda entre 200 y 210 GPa. La transición de la zona elástica a plástica es gradual y comienza cuando deja de existir una relación lineal entre los esfuerzos y la deformación, es decir, llega al esfuerzo de fluencia, $\sigma_y$. Una vez en la región de deformación plástica el punto de esfuerzo máximo en una curva ingenieril de esfuerzo-deformación es llamado esfuerzo último, $\sigma_u$.
 
-\begin{figure}[b]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.6\linewidth]{Imagenes/strain-stress_curve.png}
 \caption{Curva de esfuerzo-deformación ingenieril (A) y real (B) de un acero. Los puntos representan: [1] Esfuerzo último ($\sigma_u$), [2] esfuerzo de fluencia ($\sigma_y$), [3] esfuerzo de ruptura, [4] región de endurecimiento por deformación y [5] región de estricción.}
 \label{fig:esf-def_curve}
 \end{figure}
+
+\section{Software de simulación de elementos finitos}
+Para el desarrollo de esta tesis se utilizaron software que simularon condiciones específicas a través de elementos finitos. Estos dividen un modelo CAD en un número determinado de elementos de un tamaño específico y forma geométrica específica. Los software utilizados son ANSYS y Autodesk Inventor en su módulo de análisis de esfuerzos ( \textit{Stress Analysis}). 
+
+En el caso de ANSYS, se utilizó la el análisis de ``\textit{Static Structural}'', el cual determina los desplazamientos, esfuerzos y fuerzas en la estructura que está sometida a una o varias cargas. Además permite el análisis elastoplástico de un material, siendo utilizado el modelo de plasticidad multilineal de endurecimiento isotrópico (\textit{Multilinear Isotropic Hardening}. 
+
+Inventor, por otro lado, el módulo de análisis de esfuerzos puede realizar análisis de tipo estático, para evaluar las condiciones de carga de la estructura, y de tipo modal, para evaluar los modos de frecuencia natural de la estructura.
+
 
