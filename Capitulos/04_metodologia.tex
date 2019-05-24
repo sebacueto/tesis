@@ -36,9 +36,9 @@ Velocidad                                         & 1500 {[}rev/min{]} 		\\ \hli
 
 Otro elemento distinto al original consiste en la correa de transmisión entre el motor eléctrico y el disco desbalanceado. La original consistía en una correa de cuero plana y cruzada, sin información respecto a su empalme. La correa actual consiste también en una correa plana y cruzada, sin embargo, su material es tela y el empalme es realizado a mano con hilo acerado. Cabe destacar que lo poco usual de las dimensiones, características y la necesidad de hacer el empalme dentro de la misma máquina, dificulta la búsqueda de una correa que pueda cumplir de manera óptima la transmisión de potencia. Parte de estas dificultades se deben a que el sistema de transmisión no ha sido modificado, es decir, sus poleas tienen dimensiones, tanto de diámetro como de ancho, que no están normalizadas o se encuentran fuera de catálogo de mucho proveedores. 
 
-Por otro lado, los elementos de agarre de la probeta no tienen modificaciones conocidas, tanto el brazo que recibe el movimiento como el agarre empotrado a la estructura de la máquina. La fabricación de las probetas utilizadas se realiza en el mismo laboratorio a partir de acero AISI 1020 o 1040, el cual para conseguir las dimensiones de la figura REF. se debe cortar y tornear.
+Por otro lado, los elementos de agarre de la probeta no tienen modificaciones conocidas, tanto el brazo que recibe el movimiento como el agarre empotrado a la estructura de la máquina. La fabricación de las probetas utilizadas se realiza en el mismo laboratorio a partir de acero AISI 1020 o 1040, el cual para conseguir las dimensiones de la figura \ref{fig:probeta} se debe cortar y tornear.
 
-Finalmente, para realizar los ensayos en distintas configuraciones existen distintas masas (figura REF) que desequilibran el disco rotativo, como se verá en la sección \ref{sec:funcionamiento}, y estas combinaciones se especifican en una tabla de cargas (Anexo REF). Sin embargo, se desconoce el origen, y en consecuencia, la fiabilidad de la información contenida en esta tabla.
+Finalmente, para realizar los ensayos en distintas configuraciones existen distintas masas (figura \ref{fig:contrapesos}) que desequilibran el disco rotativo, como se verá en la sección \ref{sec:funcionamiento}, y estas combinaciones se especifican en una tabla de cargas (Anexo REF). Sin embargo, se desconoce el origen, y en consecuencia, la fiabilidad de la información contenida en esta tabla.
 
 \subsection{Funcionamiento}
 \label{sec:funcionamiento}
@@ -47,17 +47,37 @@ La máquina de fatiga tiene como objetivo lograr que para cada ciclo se ejerza e
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\linewidth]{Imagenes/contrapesos.jpg}
-\label{fig:contrapesos}
 \caption{Contrapesos utilizados para desequilibrar el disco. De izquiera a derecha se aprecia el n$^{\circ}$ 5 al n$^{\circ}$ 1.}
+\label{fig:contrapesos}
 \end{figure}
 
 Los elementos utilizados para desbalancear son 6 discos pequeños de X \textcolor{red}{medir radio masas} a Y de diámetro. Estos son enumerados del 1 al 5, donde el 1 es el más liviano y el 5 el más pesado, todos de distinto peso y el quinto se encuentra repetido. Estas se colocan en los extremos del disco giratorio, como se ve en la figura REFimagendisco, dependiendo de la carga que se desee generar. Para conocer que configuración corresponde a cada esfuerzo aplicado sobre la probeta se utiliza la tabla de cargas.
+
+\begin{figure}[h]
+\centering
+	\begin{subfigure}{0.32\linewidth}
+		\centering
+		\includegraphics[angle=270, origin=c, width=\linewidth]{Imagenes/disco_anterior.jpg}
+		\caption{Vista delantera.}\label{fig:disco_ant}
+	\end{subfigure}
+	\begin{subfigure}{0.32\linewidth}
+		\centering
+		\includegraphics[angle=270, origin=c, width=\linewidth]{Imagenes/disco_posterior.jpg}
+		\caption{Vista anterior.}\label{fig:disco_post}
+	\end{subfigure}
+		\begin{subfigure}{0.32\linewidth}
+		\centering
+		\includegraphics[angle=270, origin=c, width=\linewidth]{Imagenes/disco_lateral.jpg}
+		\caption{Vista lateral.}\label{fig:disco_lat}
+	\end{subfigure}%
+\caption{Distintas vistas del disco desbalanceado de la máquina. En la imagen (b) se pueden apreciar claramente los soportes de los contrapesos en los extremos del disco, en cambio, en la imagen (c) se ven los distintos componentes que están adosados al disco.}
+\label{fig:disco_completo}
+\end{figure}
 
 Esta tabla, con 3 columnas de información como se ve en el Anexo REF, nos entrega el esfuerzo normal $\sigma$, cortante $\tau$ y la combinación necesaria para generar esos esfuerzos. Los números entre paréntesis nos indican cuantos contrapesos se deben apilar en cada perno adosado al disco giratorio, los cuales llamaremos soportes de contrapeso (SC). Así, la tabla nos señala que la fuerza es función de la diferencia de masa entre cada soporte, es decir, la suma de las masas de cada paréntesis. A modo de ejemplo, en la tabla \ref{tab:ejemplo_config} se han colocado las 4 primeras filas de la tabla de cargas, añadiendo 4 columnas a la derecha de ``Combinación'' con información sobre el peso de cada combinación. En las columnas $m_1$ y $m_2$ se aprecia la suma de cada masa colocada en sus soportes de contrapeso señalado por la columna de ``Combinación''. Las columnas siguientes representan $\Delta m = m_1-m_2$ y $m_{total}=m_1+_2$. Como se puede apreciar, los esfuerzos normales y cortantes aumentan en la medida que $\Delta m$ de cada combinación aumenta, independiente de $m_{total}$.
 
 \begin{table}[h]
 \centering
-\label{tab:ejemplo_config}
 \begin{tabular}{@{}cclllll@{}}
 \toprule
 $\sigma \left[\frac{\text{kg}_f}{\text{cm}^2}\right]$ & {$\tau \left[\frac{\text{kg}_f}{\text{cm}^2}\right]$} & Combinación     & $m_1$ {[}g{]} & $m_2$ {[}g{]} & $\Delta m$ {[}g{]} & $m_{total}$ {[}g{]} \\ \midrule
@@ -67,6 +87,7 @@ $\sigma \left[\frac{\text{kg}_f}{\text{cm}^2}\right]$ & {$\tau \left[\frac{\text
 160                                                  & 80                                                                    & (2) - (1)       & 2,2969        & 0,7582        & 1,5387             & 3,0551              \\ \bottomrule
 \end{tabular}
 \caption{Tabla de configuración de las masas modificada, mostrando el peso, su diferencia y el total para cada combinación}
+\label{tab:ejemplo_config}
 \end{table}
 
 Con esto, la probeta a ensayar estará sometida a un esfuerzo en flexión, empotrada en ambos lados por la mordaza del brazo y la mordaza empotrada a la estructura de la máquina, ambas mostradas en la figura \ref{fig:mordazas}.
@@ -100,11 +121,11 @@ Una vez que se haya escogido la configuración de masas y la probeta se encuentr
 Para realizar un correcto diseño de la estructura soportante y la comprensión de su funcionamiento, se hace vital poder contar con información confiable para obtener resultados correctos. Para esto, las mediciones se dividirán según su objetivo en el desarrollo de este trabajo.
 \subsubsection{Diseño de estructura}
 Las medidas de la mesa actual son: 
-\begin{itemize}
+\begin{itemize*}
 	\item Ancho = 74,5 cm
 	\item Largo = 177 cm
 	\item Altura = 91 cm
-\end{itemize}
+\end{itemize*}
 Por otro lado, para diseñar correctamente la estructura se deben conocer las dimensiones de la máquina, su peso y la ubicación de los pernos de anclaje, así como también el tipo de perno utilizado. La figura \ref{fig:diag_maqfat} es un esquema representativo de la máquina, mostrando sus dimensiones de ancho, alto y largo, las dimensiones de su base y la ubicación de sus pernos. La masa de toda la máquina se aproximó a partir de las dimensiones externas, estimando el grosor de sus paredes y considerando el peso específico del acero fundido, sobrestimando el valor del espesor de sus paredes como factor de seguridad. Considerando el peso específico del acero $\rho_{acfund} = 7850 \, [Kg/m^3]$, entonces la masa total calculada es:
 
 \[ \left. 
@@ -145,8 +166,8 @@ Configuración            & Cruzada 			\\ \bottomrule
 \label{tab:sist_transmision}
 \end{table}
 
-\subparagraph{Barras de acero.}
-El conjunto de barras de acero que sostienen el disco en empotrado-libre, tienen medidas levemente distintas para las superiores respecto a las inferiores, separadas por una distancia de 32 mm. La tabla \ref{tab:medidas_barrasacero} muestra las medidas de cada una.
+\subparagraph{Sistema de vigas en voladizo}
+El conjunto de barras en voladizo que sostienen el disco en empotrado-libre, tienen medidas levemente distintas para las superiores respecto a las inferiores, separadas por una distancia de 32 mm. La tabla \ref{tab:medidas_barrasacero} muestra las medidas de cada una.
 \begin{table}[h]
 \centering
 \begin{tabular}{@{}lll@{}}
@@ -160,7 +181,7 @@ Largo        & 333                        & 333                        \\ \botto
 \label{tab:medidas_barrasacero}
 \end{table}
 
-Con estos datos, es posible calcular el segundo momento de área respecto a un eje central horizontal equidistante entre las barras superiores e inferiores, según el cual se obtiene $I=asfaf$. 
+Con estos datos, es posible calcular el segundo momento de área respecto a un eje central horizontal equidistante entre las barras superiores e inferiores, según el cual se obtiene $\bar{I}_{barras}=$ 5,67$\cdot$ 10$^{-8} \text{ m}^4$. 
 
 \subparagraph{Sistema de transmisión de fuerzas.}
 El brazo principal (figura \ref{fig:brazo_carga}) que ejerce la fuerza sobre la probeta proveniente del disco desbalanceado, está constituido por tres partes principales. La primera de ellas es la parte trasera, con forma regular rectangular, está hecho de una aleación de aluminio y dos tercios de su longitud es ahuecada. La segunda y principal, está hecha de acero fundido y añade el mayor porcentaje de masa al total del brazo. Finalmente, la última parte consiste en la mordaza, unida a la sección principal con dos pernos que permiten ajustar su posición. La longitud total del brazo es de 359 mm y su masa total 2,305 kg.
@@ -256,12 +277,12 @@ Por ende, el cálculo de la reacción en sus apoyos, el momento y esfuerzo flect
 \end{subequations}
 
 Así, los valores obtenidos son:
-\begin{itemize}
+\begin{itemize*}
 	\item $R_A = 754,85$ [N]
 	\item $M_A = 100,97$ [Nm]
 	\item $I_{pl} = 4266,6$ [mm$^4$]
 	\item $\sigma_{max} = 94,66$ [MPa]
-\end{itemize}
+\end{itemize*}
 
 Con relación a la cargas fluctuantes que recibirán las pletinas como parte del funcionamiento de la máquina, se considerará la carga mayor que es capaz de producir la máquina de todas sus configuraciones, de acuerdo a lo que se obtenga por medio del modelo que se expondrá en la sección \ref{sec:mod_sist}. Esta carga alternante sobre la pletina, $F_{a,pl}$, se considerará igual a la mitad de la carga máxima posible producida por el disco desbalanceado. Por lo tanto, considerando la configuración utilizada en las cargas estáticas, la carga distribuida alternante será $q_{a,pl} = F_{a,pl}/c$ y el momento flector máximo en el punto $A$ es la primera expresión de la ecuación \ref{eq:mtofleca_acero} y el esfuerzo sobre el mismo punto igual a la expresión \ref{eq:esfmax_acero}, quedando:
 \begin{gather}
@@ -353,10 +374,10 @@ El diagrama y la distribución de la carga se puede apreciar en la figura \ref{f
 \end{gather}
 \end{subequations}
 Donde los valores obtenidos son:
-\begin{itemize}
+\begin{itemize*}
 	\item $R_0 = Q = 795$ [N]
 	\item $M_0 = M_{max} = 122,26$ [Nm]
-\end{itemize}
+\end{itemize*}
 Así, la tensión de trabajo $f_f$ se calcula según la ecuación \ref{eq:f_f}, obteniendose el valor:
 \begin{equation}
 	f_f = 0,551 \quad \text{(MPa)}
@@ -576,16 +597,30 @@ Luego del levantamiento de información, se busca analizar y predecir el comport
 
 Para obtener el comportamiento y la fuerza que produce el desbalanceo en el disco sobre la probeta, se modelará un sistema de dos grados de libertad para representar el movimiento de la máquina y sus componentes, realizando ciertas simplificaciones y suposiciones. Se utilizará el método de energía para resolver el sistema.
 
-A través de esto, se pretende obtener la posición en reposo de la máquina y la deformación máxima que sufre la probeta según la combinación de contrapesos. En concreto, la posición en reposo de la máquina, en otras palabras, la deformación producto de la masa de los elementos, entregará información sobre cual es la carga media y esfuerzo medio que sufre la probeta. En cambio, la deformación máxima es la información relativa al esfuerzo alternante que se le aplica a la probeta según la configuración utilizada. Por ello, el modelo deberá partir de una posición a conveniencia en un tiempo inicial y sin fuerzas externas interviniendo. Posteriormente, una vez que se haya alcanzado la posición de equilibrio, la fuerza externa producida por el disco desbalanceado comenzará a funcionar hasta que vibre de manera estacionaria. Al respecto, al ser la fuerza dependiente de la velocidad angular del disco, se introducirá una función que llamaremos $\phi$ la cual controlará la aceleración y velocidad del disco.
+A través de esto, se pretende obtener la posición en reposo de la máquina y la deformación máxima que sufre la probeta según cada configuración. En concreto, la posición en reposo de la máquina, es decir, la deformación producto de la gravedad, entregará información sobre cual es la carga media y esfuerzo medio que sufre la probeta. En cambio, la deformación máxima es la información relativa a la carga alternante que se le aplica a la probeta y su correspondiente esfuerzo alternante. Por ello, el modelo deberá partir de una posición a conveniencia en un tiempo inicial y sin fuerzas externas interviniendo. Posteriormente, una vez que se haya alcanzado la posición de equilibrio, la fuerza externa producida por el disco desbalanceado comenzará a funcionar hasta que vibre de manera estacionaria. Al respecto, al ser la fuerza dependiente de la velocidad angular del disco, se introducirá una función que llamaremos $\phi$ la cual controlará la aceleración y velocidad del disco.
 
 \subsection{Elementos del sistema}
-La imagen REF muestra todas los elementos que participan en el funcionamiento de la máquina y que afectan su comportamiento. Sin embargo, estos se llevarán a un diagrama que representará los elementos y las simplificaciones utilizadas para modelar el movimiento de la máquina, en específico, del brazo de carga.  
+La imagen \ref{fig:elementos_modelo} muestra todas los elementos que participan en el funcionamiento de la máquina y que afectan su comportamiento. Sin embargo, estos se llevarán a un diagrama que representará los elementos y las simplificaciones utilizadas para modelar el movimiento de la máquina, en específico, del brazo de carga.  
 
-\textcolor{red}{Foto de la máquina abierta}
+\begin{figure}[p]
+\centering
+	\begin{subfigure}{1\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{Imagenes/brazo_carga.pdf}
+		\caption{Barra de carga y sus elementos}\label{fig:elementos_brazo}
+	\end{subfigure}
+	\begin{subfigure}{1\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{Imagenes/disco_barra.pdf}
+		\caption{Disco desbalanceado en voladizo}\label{fig:elementos_disco}
+	\end{subfigure}
+\caption{En las imagenes (a) y (b) se enumeran los elementos que fueron considerados al modelar el sistema vibratorio. [1] Barra de carga. [2] Probeta ($k_2$), que se encuentra cubierta por ambas mordazas. [3] Mordaza sujeta al brazo de carga. [4] Mordaza empotrada a la máquina. [5] Barra de transmisión de la carga. [6] Disco desbalanceado. [7] Soportes de contrapeso. [8] Sistema de vigas en voladizo ($k_1$).}
+\label{fig:elementos_modelo}
+\end{figure}
 
 \subsection{Modelo del sistema}
 \label{sec:mod_sist}
-Como se señaló, para poder crear un modelo del sistema y obtener soluciones, se realizaron simplificaciones y suposiciones que permiten llegar a una solución. Así, la figura REF muestra el diagrama que se modelará con las ecuaciones de movimiento. Parte de estas simplificaciones es la exclusión de las fuerzas horizontales, en dirección de la coordenada $x$, de acuerdo a la referencia utilizada. Para esto, también es necesario quitarle los grados de libertad a la barra de transmisión de la carga y simplificar la carga producida por la rotación del disco, explicado en la sección siguiente. Por último, se asumirá que el movimiento angular del brazo de carga será lo suficientemente pequeño como linealizar la función trigonométrica del ángulo $\theta$, aproximándose los valores de $\sin(\theta) = \theta$ y $\cos(\theta)=1$.
+Como se señaló, para poder crear un modelo del sistema y obtener soluciones, se realizaron simplificaciones y suposiciones que permiten llegar a una solución. Así, la figura \ref{fig:diag_modelo} muestra el diagrama que se modelará con las ecuaciones de movimiento. Parte de estas simplificaciones es la exclusión de las fuerzas horizontales, en dirección de la coordenada $x$, de acuerdo a la referencia utilizada. Para esto, también es necesario quitarle los grados de libertad a la barra de transmisión de la carga y simplificar la carga producida por la rotación del disco, explicado en la sección siguiente. Por último, se asumirá que el movimiento angular del brazo de carga será lo suficientemente pequeño como linealizar la función trigonométrica del ángulo $\theta$, aproximándose los valores de $\sin(\theta) = \theta$ y $\cos(\theta)=1$.
 
 \begin{figure}[h]
 \centering
@@ -599,7 +634,7 @@ Los sistemas de coordenadas $y(t)$ y $\theta (t)$ definen la posición y el movi
 	y_1(t) = y(t) - l_1\theta(t) \label{eq:y1}\\
 	y_2(t) = y(t) + l_2\theta(t) \label{eq:y2}
 \end{gather}
-Cuando $y(t_0) = 0$ y $\theta(t_0) = 0$ la deformación en ambos resortes será cero, por lo tanto las variables $y_1$ e $y_2$ son equivalentes a la deformación de los resortes. La rigidez de cada resorte se denotarán como $k_1$, relativo a las barras de acero, y $k_2$, relativo a la probeta.
+Si $t_0=0$, entonces cuando $y(t_0) = 0$ y $\theta(t_0) = 0$ la deformación en ambos resortes será cero, por lo tanto las variables $y_1$ e $y_2$ son equivalentes a la deformación de los resortes. La rigidez de cada resorte se denotarán como $k_1$, relativo a las barras de acero, y $k_2$, relativo a la probeta.
 
 Por otro lado, la velocidad de las coordenadas se definirán como $\dot{y}(t)$ y $\dot{\theta}(t)$ y, de manera análoga, la aceleración como $\ddot{y}(t)$ y $\ddot{\theta}(t)$. A partir de las ecuaciones \ref{eq:y1} y \ref{eq:y2} se obtiene que:
 \begin{gather}
@@ -625,25 +660,25 @@ La variable $e_{ga}$ corresponde a la excentricidad del centro de masa del disco
 \subsubsection{Ecuaciones de movimiento}
 Utilizando el diagrama expuesto, entonces es posible escribir las ecuaciones que describen el movimiento del sistema utilizando el método de energía. Para esto, es necesario identificar los sistemas que actúan como parte de la energía cinética y potencial del sistema, además de las fuerzas externas que interactúan.
 
-A partir de la ecuación REF, se sabe que los elementos que actúan como resortes tienen el comportamiento de almacenar energía potencial. La ecuación REF, expresa los elementos que interactúan en el sistema:
+Se sabe que los elementos que actúan como resortes tienen el comportamiento de almacenar energía potencial, como se definió en la sección de rigidez. Por lo tanto, a partir de la ecuación \ref{eq:e_potelas}, expresa los elementos que interactúan en el sistema:
 \begin{equation}
 	U_k = \frac{1}{2} \left(k_1\cdot y_1^2 + k_2\cdot y_2^2\right)
 \end{equation}
-La energía potencial gravitatoria se obtiene al utilizar la ecuación REF, por lo tanto, se obtiene:
+La energía potencial gravitatoria se obtiene al utilizar la ecuación \ref{eq:e_potgrav}, por lo tanto, se obtiene:
 \begin{equation}
 	U_g = g\cdot \left(M_a\, y_1 + M_b\, y\right)
 \end{equation}
-Por otro lado, la energía cinética se calcula según la ecuación REF para cada masa del sistema.
+Por otro lado, la energía cinética se calcula según la ecuación \ref{eq:e_cinetica} para cada masa del sistema.
 \begin{equation}
 	T = \frac{1}{2} \left(M_a\, \dot{y_1}^2 + M_b\, \dot{y}^2\right)
 \end{equation}
-La energía disipada por el amortiguamiento viscoso se modela utilizando la ecuación REF, llamada función de disipación de Reyleigh. 
+La energía disipada por el amortiguamiento viscoso se modela utilizando la ecuación \ref{eq:rayleigh_function}, llamada función de disipación de Reyleigh. 
 \begin{equation}
 	R = \frac{1}{2} \left(c_1\, \dot{y_1}^2 + c_2\, \dot{y_2}^2\right)
 \end{equation}
 Por último, la fuerza generalizada $Q_i$ es la fuerza variable \ref{eq:fza_gen} proveniente del disco desbalanceado.
 
-Con esto, el método de Lagrange define al lagrangiano $L$ como la resta entre la energía cinética $T$ y la energía potencial total $U$, la cual según la ecuación REF, es la suma de la energía potencial elástica y gravitatoria. Así, la ecuación de energía para un sistema con amortiguamiento y forzado, a través del método de Lagrange es:
+Con esto, el método de Lagrange define al lagrangiano $L$ como la resta entre la energía cinética $T$ y la energía potencial total $U$, la cual según la ecuación \ref{eq:der_lag}, es la suma de la energía potencial elástica y gravitatoria. Así, la ecuación de energía para un sistema con amortiguamiento y forzado, a través del método de Lagrange es:
 \begin{equation}
 	\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{q_i}}\right) - \frac{\partial L}{\partial q_i} = Q_i - \frac{\partial R}{\partial \dot{q_i}}
 \end{equation}
@@ -704,16 +739,16 @@ Estas se pueden reescribir de forma matricial:
 
 \subsection{Cálculo y obtención de constantes características del sistema}
  
-\subsubsection{Rigidez y amortiguamiento} Las constantes de rigidez de las barras de acero $k_1$ y de la probeta $k_2$ se obtuvieron simulando su deformación elástica a través del software Inventor Autodesk. Para ello, se empotraron en un extremo y se les aplicaron distintas niveles de carga en el otro. Con los datos obtenidos fue posible ajustar una curva en una gráfica de deformación versus fuerza aplicada, donde la pendiente obtenida es la constante de rigidez del elemento. 
+\subsubsection{Rigidez y amortiguamiento} Las constantes de rigidez de las barras en voladizo $k_1$ y de la probeta $k_2$ se obtuvieron simulando su deformación elástica a través del software Inventor Autodesk. Para ello, se empotraron en un extremo y se les aplicaron distintas niveles de carga en el otro. Con los datos obtenidos fue posible ajustar una curva en una gráfica de deformación versus fuerza aplicada, donde la pendiente obtenida es la constante de rigidez del elemento. 
 
-Además, se realizaron cálculos para comprobar el orden de magnitud obtenido a través del software. Para esto se utilizó la ecuación \ref{eq:k_cantilever}, para una viga en voladizo.   La tabla REF muestra los resultados de ambos métodos.
+Además, se realizaron cálculos para comprobar el orden de magnitud obtenido a través del software. Para esto se utilizó la ecuación \ref{eq:k_cantilever}, para una viga en voladizo. La tabla \ref{tab:k_valor} muestra los resultados de ambos métodos.
 \begin{table}[h]
 \centering
 \begin{tabular}{ccc}
 \hline
-Método & Barras de acero & Probeta \\ \hline
-Simulación Inventor &  &  \\
-Cálculo &  &  \\ \hline
+Método & Barras en voladizo & Probeta \\ \hline
+Simulación Inventor & $98890.45$ [N/m] & $1809049.41$ [N/m] \\
+Cálculo & $9.216\cdot 10^5$ [N/m] & -- \\ \hline
 \end{tabular}
 \caption{Valores obtenidos de la rigidez de las barras de acero y la probeta de acero}
 \label{tab:k_valor}
@@ -721,10 +756,10 @@ Cálculo &  &  \\ \hline
 Los datos utilizados en el modelo corresponden a los obtenidos por simulación.
 
 Por otro lado, los valores de $c_1$ y $c_2$ se estimaron de manera cualitativa, visualizando la curvas de $y(t)$ y $\theta(t)$ para buscar que la vibración inicial se disipara antes del inicio de la función de aceleración del disco. Así, los valores utilizados son:
-\begin{itemize}
+\begin{itemize*}
 	\item $c_1= 100$
 	\item $c_2= 100$ 
-\end{itemize}
+\end{itemize*}
 \subsubsection{Segundo momento de área}
 El segundo momento de área o segundo momento de inercia, se calculó para obtener la rigidez de los dos elementos anteriores. Para el segundo momento de inercia de la probeta se utilizará la sección transversal de la sección media de la probeta. Así, su valor es:
 \begin{equation}
@@ -732,28 +767,28 @@ El segundo momento de área o segundo momento de inercia, se calculó para obten
 \end{equation}
 
 \subsubsection{Momento de inercia del brazo de carga}
-El momento de inercia del brazo de carga se obtuvo a través del modelo CAD del mismo, respecto a su centro de masa. Su valor es 
+El momento de inercia del brazo de carga se obtuvo a través del modelo CAD del mismo, respecto a su centro de masa. Su valor es $I_{gb} = 5.6718\cdot 10^{-8} \text{ kg}\cdot \text{m}^2$ . 
 
 \subsubsection{Longitud, masa y módulo de elasticidad}
 Los elementos del sistema explicados en la sección \ref{sec:mod_sist}, tienen un valor definido que fue medido como parte del levantamiento de información. La distancia correspondiente a cada extremo respecto al centro de masa es:
-\begin{itemize}
+\begin{itemize*}
 	\item $l_1=$ 42,43 mm
 	\item $l_2=$ 158,07 mm
-\end{itemize}
+\end{itemize*}
 Además, la masa $M_b$ corresponde a la masa medida del brazo de carga, como se especificó en la sección
-\begin{itemize}
+\begin{itemize*}
 	\item $M_b=$ 2,305 Kg
-\end{itemize}
+\end{itemize*}
 Por otro lado, la masa $M_a$ como se señaló en la ecuación \ref{eq:m_a}, corresponde a la suma de tres elementos. El primero de ellos, la masa del disco, tiene un valor de:
-\begin{itemize}
+\begin{itemize*}
 	\item $M_d=$ 19,2029 kg
-\end{itemize}
+\end{itemize*}
 Los valores correspondientes a $m_1$ y $m_2$ son variables y pueden ir desde 0 g hasta 92,3469 g de acuerdo a la configuración escogida. Las distintas combinaciones y valores que pueden tener se encuetran en la tabla del anexo REF.
 
 Finalmente, el modulo de elasticidad utilizado corresponde al del material de la probeta que actualmente se utiliza. Al ser acero, su valor es:
-\begin{itemize}
+\begin{itemize*}
 	\item $E_p=$ 200 GPa
-\end{itemize}
+\end{itemize*}
 \subsubsection{Excentricidad}
 La excentricidad del centro de masa $e_{ga}$ se calculó utilizando los datos del disco, la distancia de los soportes y la configuración de masas. Por lo tanto, se define como:
 \begin{equation}
@@ -789,7 +824,7 @@ Para obtener la función de la velocidad $\dot{\phi}(t)$ se debe integrar la fun
 El resultado de la función $\dot{\phi}(t)$, se muestra en la imagen \ref{fig:anglep}.
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.3,trim={5cm 0cm 4cm 0cm},clip]{Imagenes/anglep_function.pdf}
+\includegraphics[width=0.7\linewidth, trim={8cm 5cm 12cm 3cm},clip]{Imagenes/anglep_function.pdf}
 \caption{Función por parte de la velocidad angular del disco}
 \label{fig:anglep}
 \end{figure}
@@ -803,7 +838,7 @@ Para concluir, se repite el mismo procedimiento anterior para obtener la funció
 	\omega_{max}\, t - \omega_{max}(T + T_i)															&	T_i + 2T < t\\
 \end{dcases} 
 \]
-La función $\phi_3$ correspondiente al dominio cuando $t$ es mayor $T_i + T$ y menor a $T_i  + 2T$ es:
+La función $\phi_3$ correspondiente al dominio cuando $t$ es mayor a $T_i + T$ y menor a $T_i  + 2T$ es:
 \begin{multline*}
 \Phi_3 = \left(\frac{\omega_{max}}{T}\right)\left(t^2 - 2T_i\cdot t - 3T\cdot t + \left(\frac{1}{2T}\right)\left(4T^2\cdot t - T_i^2\cdot t - \frac{t^3}{3} + T_i\cdot t^2\right)\right)\dots \\
  + \left(\frac{1}{6T^2}\right) \left(2\omega_{max}T^3 + 6\omega_{max}T^2T_i + 6\omega_{max}T\,T_i + \omega_{max}T_i^3\right)
@@ -814,7 +849,7 @@ Para el desarrollo de este trabajo, el tiempo de retraso de la aceleración del 
 \subsection{Solución del modelo}
 Para resolver el sistema de ecuaciones que se obtuvo en \ref{eq:mov_matriz}, se utilizó el solver de ecuaciones diferenciales ordinarias de MATLAB, ode45, que se basa en el método de Runge-Kutta con un espacio de tiempo variable para resolver sistemas de EDOs de primer orden y con condición inicial. 
 
-Es necesario ingresar datos de entrada que permitan resolver el sistema. Primero se debe escoger la configuración de contrapesos $m_1$ y $m_2$ a partir de la tabla de cargas. El segundo de ellos es el tiempo que define los límites de integración de la función, el que se escogerá según la cantidad de información que se desee obtener. En tercer lugar, se deben ingresar los valores de la condición inicial correspondiente a cada variable. Por último, es opcional añadir valores de tolerancia relativa y absoluta.
+Para resolverlo es necesario ingresar datos de entrada al sistema. Para esto, primero se debe escoger la configuración de contrapesos $m_1$ y $m_2$ a partir de la tabla de cargas. El segundo de ellos es el tiempo que define los límites de integración de la función, el que se escogerá según la cantidad de información que se desee obtener. En tercer lugar, se deben ingresar los valores de la condición inicial correspondiente a cada variable. Por último, es opcional añadir valores de tolerancia relativa y absoluta.
 
 Al ser el sistema de ecuaciones de segundo orden, es necesario realizar un cambio de variables para poder resolverlo. Se añadirán las nuevas variables $\gamma$ y $\beta$, realizando la siguiente derivación:
 \[ \left. 
@@ -835,15 +870,199 @@ Para esto es necesario despejar los valores de $\ddot{y}$ y $\ddot{\theta}$, ent
 \subsection{Matriz de carga sobre la probeta según velocidad del motor}
 Una vez que se puede resolver el sistema de ecuaciones para un configuración y velocidad del motor específica, entonces es posible obtener una matriz del valor de la fuerza máxima ($F_{max}$), media ($F_m$) y su amplitud ($F_a$) para cada una de las configuraciones existentes en la tabla de carga a una velocidad angular $\,\omega_{max}\,$ determinada.
 
-Para esto se itera la solución anterior para cada una de las 201 configuraciones de contrapeso existentes para distintas velocidades. De estas iteraciones se almacenan los valores de $F_{max}$, $F_m$, $F_a$, la diferencia de masa de los contrapeso $\Delta m$ y la multiplicación entre la masa total $M_a$ y la excentricidad del centro de masa del disco $e_{ga}$.
+Para esto se itera la solución anterior para cada una de las 201 configuraciones de contrapeso existentes para distintas velocidades. De estas iteraciones se almacenan los valores de $F_{max}$, $F_m$, $F_a$, la diferencia de masa de los contrapeso $\Delta m$ y la multiplicación entre la masa total $M_a$ y la excentricidad del centro de masa del disco $e_{ga}$, la cual se definirá como la variable $\Psi=M_a \cdot e_{ga}$.
 
 \subsubsection{Carga máxima, media y amplitud}
-Los información que se busca de estos resultados corresponde a la carga que es producto de la fuerza del disco desbalanceado, es decir, $F_d(t)$. Producto del comportamiento con el que se diseñó el modelo donde el sistema se deja caer hasta su posición de equilibrio,  se utiliza una variable auxiliar $F_{aux}$ que extrae los datos de $F(t)$ desde el inicio de la aceleración angular del disco hasta el final de la integración para evitar que las fuerzas de la transición entre la posición inicial y el reposo den resultados incorrectos. Así, la carga máxima, media y la amplitud se definen:
+Los información que se busca de estos resultados corresponde a la carga que es producto de la fuerza del disco desbalanceado sobre la probeta, es decir, $F(t)$. Producto del comportamiento con el que se diseñó el modelo donde el sistema se deja caer hasta su posición de equilibrio,  se utiliza una variable auxiliar $F_{aux}$ que extrae los datos de $F(t)$ desde el inicio de la aceleración angular del disco hasta el final de la integración para evitar que las fuerzas de la transición entre la posición inicial y el reposo den resultados incorrectos. Así, la carga máxima, media y la amplitud se definen:
 \begin{gather} 
 	F_{max} = \text{max}(|F_{aux}|) \label{eq:f_max}\\
 	F_m = \frac{\text{max}(F_{aux}) + \text{min}(F_{aux})}{2} \label{eq:f_m}\\
 	F_a = \frac{\text{max}(F_{aux}) - \text{min}(F_{aux})}{2} \label{eq:f_a}
 \end{gather}
 
-\section{Simulación de cargas}
-Con los datos de las cargas obtenidos a partir de la solución del modelo expuesto anteriormente, se obtendrán el esfuerzo máximo equivalente (de von Mises)y el esfuerzo cortante máximo a través de un softare de elementos finitos. Con esto, es posible saber los esfuerzos a los que está sometido la probeta a partir de cada configuración de los contrapesos. Finalmente, estos resultados son comparables a la tabla de carga que existe previamente. 
+\section{Simulación de carga máxima}
+Con los datos de la carga máxima $F_{max}$, obtenidos a partir de la solución del modelo expuesto anteriormente, para cada combinación de contrapesos, se realizará un análisis estático de los esfuerzos asociados a cada configuración, en otras palabras, se buscará relacionar cada combinación con los esfuerzos respectivos a una velocidad angular máximo $\omega_{max}$ de 25 [rad/s]. Para esto, se simulará la probeta a través del software de elementos finitos ANSYS, con el fin de obtener el esfuerzo máximo equivalente (o de von Mises), el esfuerzo máximo cortante, normal y sus respectivas deformaciones. Finalmente, se compararán los resultados de este análisis con la tabla de cargas existente. Debido a lo alto de las cargas obtenidas, sólo se considerarán las simulaciones que lleven a la probeta lo más cercano al punto de esfuerzo último, por lo tanto, la probeta será sometida a 77 cargas distintas. 
+
+\subsection{Tipo de simulación}
+Al llevar a la probeta a cargas que sobrepasan el esfuerzo de fluencia del material, es necesario utilizar un modelo elasto-plástico para el correcto desarrollo de la simulación. En consecuencia, se utilizará el modelo de plasticidad multilineal de endurecimiento isotrópico (MISO, utilizado comúnmente para el análisis en grandes deformaciones. Este modelo se debe alimentar con los datos de distintos puntos de esfuerzo y deformación plástica real de un ensayo de tracción del material, creando una curva con los distintos puntos introducidos donde la primera pendiente es la zona elástica. Este modelo no permite que en la zona plástica hayan pendientes más grandes que en la zona elástica ni pendientes negativas. 
+
+\subsection{Propiedades del material}
+\subsubsection{Medición de la dureza}
+Para conocer a que acero correspondía el utilizado en las probetas que existen actualmente, se realizó un ensayo de dureza del material. Este ensayo se realizó en los laboratorios de tecnología mecánica en un medidor de dureza de escala Rockwell, marca Wilson del año \textcolor{red}{Colocar año}. Se realizaron tres mediciones en distintas caras de la probeta en la configuración de Rockwell B, de las cuales se obtuvieron:
+\begin{gather*}
+	H_1 = 54 \text{ HRB} \qquad \qquad H_2 = 56 \text{ HRB} \qquad \qquad H_3 = 54 \text{ HRB}
+\end{gather*}
+Por lo tanto se considerará una dureza del material de $H = 54.6$ HRB. Sin embargo, debido a la antiguedad del equipo, la norma \textbf{ISO 18265:2013 - Conversion of hardness values} establece que se debe realizar una corrección a estos valores debido al cambio de indentador utilizado y la reducción del tiempo de fuerza aplicado durante la medición. De esta forma, la dureza final promedio que se obtuvo corresponde a $H = 54.8$ HRB. Por último, en base a esta misma norma, se puede realizar la conversión a dureza Vickers, siendo $H = 98.3 \approx 100$ HV y obtener el valor de un esfuerzo último de referencia $\sigma_u(\texttt{@}\text{HV}=100) = 315 \; \text{MPa}$.
+
+\subsubsection{Curva de esfuerzo-deformación del acero}
+A causa de lo bajo del valor de dureza obtenido, sumado al hecho que en los únicos aceros utilizados en el laboratorio son SAE 1020 y 1040, es que se decide tomar las propiedades mecánicas del primero de estos. Los datos utilizados se obtuvieron de un ensayo de tracción realizado por la Universidad de Washington de un acero SAE 1020 laminado en caliente (AISI 1020 HR)\textcolor{red}{citar}. Estos datos contienen la fuerza aplicada, la deformación sufrida y el diámetro original de la probeta, para los cuales se utilizaron las ecuaciones \ref{eq:true_esf} y \ref{eq:true_strain} para obtener los esfuerzos y deformaciones reales y el factor de corrección de Bridgman \ref{eq:bridgman}. En la imagen REF, se pueden apreciar la curva original de esfuerzo-deformación y la curva de esfuerzo-deformación real. 
+
+\textcolor{red}{imagen de ambas curvas}
+
+Sin embargo, debido a las características del modelo MISO, se utilizaron exclusivamente los puntos de la zona plástica y que su pendiente no fuese menor a cero entre dos puntos, por lo tanto, la tabla \ref{tab:esfdef_util} muestra los datos utilizados y la imagen REF representa estos puntos.
+
+\begin{table}[]
+\centering
+\begin{tabular}{@{}cc@{}}
+\toprule
+\begin{tabular}[c]{@{}c@{}}Deformación unitaria plástica real\\ $\tilde{\varepsilon}$ (-)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Esfuerzo real corregido\\ $\tilde{\sigma}_B$ (MPa)\end{tabular} \\ \midrule
+0 & 293,5 \\
+0,0462 & 334,3 \\
+0,1157 & 418,5 \\
+0,1949 & 465,3 \\
+0,2079 & 469,8 \\
+0,3547 & 505,0 \\
+0,5271 & 540,9 \\
+0,7190 & 576,2 \\
+0,9278 & 611,5 \\
+1,0877 & 649,1 \\ \bottomrule
+\end{tabular}
+\caption{Datos utilizados del ensayo de esfuerzo-deformación del acero AISI 1020 HR en el modelo MISO. Fuente: }
+\label{tab:esfdef_util}
+\end{table}
+
+Por otro lado, para la deformación elástica se usará un modelo de elasticidad $E =$ 200 GPa y el esfuerzo de fluencia $\sigma_y=$ 293,5 MPa.
+
+\subsection{Configuración de la simulación estática}
+\subsubsection{Condiciones de contorno}
+El doble empotramiento al cual está sometida la probeta se aplicará restringiendo el movimiento en cada cara de uno de sus extremos. Utilizando la imagen \ref{fig:cond_borde} como referencia, las caras amarilla se encuentran restringidas de desplazamiento en el eje normal a su plano. Así, ambas caras paralelas al plano $xz$ tienen una restricción de desplazamiento de $\Delta y = 0$, las caras del plano $xy$ están restringidas de desplazamiento en el eje $z$ con $\Delta z = 0$ y la cara posterior del plano $yz$ su desplazamiento es $\Delta x = 0$.
+
+Por otro lado, el otro extremo empotrado se le aplicarán las cargas máximas que se obtuvieron del modelo del sistema vibratorio, $F_{max}$. Sin embargo, no se aplicará como una carga puntual, sino como una presión sobre la cara roja de la probeta, según la imagen \ref{fig:cond_borde}. Para esto, se trasnformará la carga puntual a presión utilizando la relación:
+\begin{equation}
+	P_{max} = \frac{F_{max}}{A_{c,l}}
+\end{equation}
+Donde $P_{max}$ es la presión aplicada sobre la cara y $A_{c,l}$ el área de la cara lateral sobre el cual se aplica la carga, es decir la sección roja. Al medir esta área a través del modelo CAD, se obtiene $A_{c,l} = 402.792 \text{ mm}^2$
+
+\begin{figure}[]
+\centering
+\includegraphics[width=0.7\linewidth]{Imagenes/cond_borde.png}
+\caption{Condiciones de contorno aplicadas en la probeta. Las caras amarillas representan las restricciones de desplazamiento y la cara roja la presión aplicada.}
+\label{fig:cond_borde}
+\end{figure}
+
+\subsubsection{Malla}
+Producto de lo irregular de la geometría de la probeta y la importancia que tienen para los resultados la zona media, por sobre los agarres, es que se opta por mallar para cada sección. En los parámetros generales del mallado se utilizaron parámetros que buscaran mejorar su calidad. \textcolor{red}{referencia al manual de ansys}
+
+\begin{itemize*}
+	\item Sizing
+		\begin{itemize*}
+			\item Transition: Slow
+			\item Span Angle Center: Fine
+		\end{itemize*}
+	\item Quality
+		\begin{itemize*}
+			\item Error Limits: Aggressive Mechanical
+			\item Targer Quality: 1 (-)
+			\item Smoothing: High
+		\end{itemize*}
+\end{itemize*}
+
+Para obtener los resultados de una malla que se adaptara a los requisitos, primero se utiliza el \textit{body sizing} y el \textit{face sizing}. Así, la configuración utilizada para cada sección es la siguiente:
+\begin{itemize*}
+	\item Probeta completa
+		\begin{itemize*}
+			\item Body sizing
+			\item Tamaño elemento: 0,01 mm
+		\end{itemize*}
+	\item Sección media
+		\begin{itemize*}
+			\item Face sizing
+			\item Tamaño elemento: 0,001 mm
+		\end{itemize*}
+	\item Sección transversal media
+		\begin{itemize*}
+			\item Face sizing
+			\item Tamaño elemento: 0,0001 mm
+		\end{itemize*}
+\end{itemize*}
+
+\begin{figure}[h]
+\centering
+	\begin{subfigure}{0.5\linewidth}
+		\centering
+		\includegraphics[width=0.82\linewidth]{Imagenes/zona_media.PNG}
+		\caption{}\label{fig:zona_media}
+	\end{subfigure}%
+	\begin{subfigure}{0.5\linewidth}
+		\centering
+		\includegraphics[width=0.6\linewidth]{Imagenes/cara_corte.PNG}
+		\caption{}\label{fig:cara_corte}
+	\end{subfigure}%
+\caption{La zona verde de la imagen (a) corresponde a la zona media de la probeta y la zona azul de la imagen (b) a la sección transversal en la mitad de la probeta.}
+\label{fig:zona_probeta}
+\end{figure}
+
+%\begin{figure}[p]
+%\centering
+%	\begin{subfigure}{0.5\linewidth}
+%		\centering
+%		\includegraphics[width=1\linewidth]{Imagenes/mgen_iso.png}
+%		\caption{}\label{fig:mgen_iso}
+%	\end{subfigure}%
+%	\begin{subfigure}{0.5\linewidth}
+%		\centering
+%		\includegraphics[width=1\linewidth]{Imagenes/mdet_iso.png}
+%		\caption{}\label{fig:mdet_iso}
+%	\end{subfigure}
+%	\par\bigskip
+%	\par\bigskip
+%	\begin{subfigure}{0.5\linewidth}
+%		\centering
+%		\includegraphics[width=0.9\linewidth]{Imagenes/mcorte.png}
+%		\caption{}\label{fig:mcorte}
+%	\end{subfigure}%
+%		\begin{subfigure}{0.5\linewidth}
+%		\centering
+%		\includegraphics[width=0.7\linewidth]{Imagenes/mcorte_det.png}
+%		\caption{}\label{fig:mcorte_det}
+%	\end{subfigure}
+%	\par\bigskip
+%\caption{(a) Vista isométrica general de la malla. (b) Detalle en isométrico de la zona media y la sección transversal. (c) Malla de la sección transversal media. (d) Detalle de la malla de la sección transversal media.}
+%\label{fig:malla}
+%\end{figure}
+
+\subsubsection{Selección de elementos}
+Dado que los esfuerzos máximos se encuentran en la sección media de la probeta, los resultados de la simulaciones se tomarán en los puntos específicos P, Q y R, cuya ubicación es mostrada en la imagen \ref{fig:diag_pqr}. Para esto, se seleccionarán los elementos que están en esa ubicación para posteriormente graficar sus resultados respecto a cada carga.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.3\linewidth]{Imagenes/diagelem_pqr.pdf}
+\caption{Ubicación de los elementos seleccionados}
+\label{fig:diag_pqr}
+\end{figure}
+
+\newpage
+
+\subsubsection{Obtención de resultados}
+En base a los elementos seleccionados, los resultados que se necesitan son:
+\begin{itemize*}
+	\item Esfuerzo equivalente o de von Mises ($\sigma_{vm}$)
+	\item Esfuerzo máximo cortante ($\tau_{max}$)
+	\item Esfuerzo máximo normal en dirección \textit{x} ($\sigma_{xx}$), según referencia \ref{fig:cond_borde}.
+	\item Deformación unitaria equivalente total ($\varepsilon_{vm,t}$)
+	\item Deformación unitaria equivalente elástica ($\varepsilon_{vm,e}$)
+	\item Deformación unitaria normal elástica ($\varepsilon_{xx}$)
+\end{itemize*}
+
+Además, a modo de referencia se utilizarán los resultados globales:
+\begin{itemize*}
+	\item Esfuerzo equivalente
+	\item Esfuerzo máximo cortante
+	\item Esfuerzo máximo normal en dirección\textit{x}
+	\item Deformación unitaria equivalente total
+	\item Deformación en dirección \textit{y}, según referencia \ref{fig:cond_borde}
+\end{itemize*}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
