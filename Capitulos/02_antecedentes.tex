@@ -5,30 +5,40 @@ El fenómeno en el cual una estructura se daña e incluso falla por cargas fluct
 
 Así, en 1837 fueron publicados los resultados del primer ensayo de fatiga, realizado a una cadena transportadora utilizada en minas de hierro en Alemania. Wilhelm Albert, quien realizó esta investigación, se vió motivado a realizar los estudios por los altos costos que significaba la falla de este componente producto de las cargas cílicas a las que estaba sometida. Los pocos conocimientos existentes del fenómeno en esa época, llevo a que la solución al problema fuese la invención del cable de acero.
 
-Por otro lado, las primeras investigaciones enfocadas a comprender el fenómeno comenzaron en 1858 con August Wölher. Su acucioso estudio lo llevó a conclusiones que siguen teniendo importancia y validez hasta el día de hoy. Diseñó, durante la década de 1860, una máquina de ensayos de flexión y flexión rotativa. En 1870 presentó un informe en el cual parte de sus conclusiones cualitativas son llamadas ``Ley de Wöhler'', al establecer el esfuerzo alternante como el parámetro más importante para la vida de un componente, señalanado que ``the stress amplitudes are decisives for the destruction of the cohesion of the material. The maximum stress is of influence only in so far as the higher it is, the lower are the stress amplitudes which lead to failure''\textcolor{red}{citar schutz history of fatigue}, aunque destacando también que el esfuerzo medio tiene una influencia perjudicial en el material. 
+Por otro lado, las primeras investigaciones enfocadas a comprender el fenómeno comenzaron en 1858 con August Wölher. Su acucioso estudio lo llevó a conclusiones que siguen teniendo importancia y validez hasta el día de hoy. Diseñó, durante la década de 1860, una máquina de ensayos de flexión y flexión rotativa. En 1870 presentó un informe en el cual parte de sus conclusiones cualitativas son llamadas ``Ley de Wöhler'', al establecer el esfuerzo alternante como el parámetro más importante para la vida de un componente, señalanado que ``the stress amplitudes are decisives for the destruction of the cohesion of the material. The maximum stress is of influence only in so far as the higher it is, the lower are the stress amplitudes which lead to failure''\cite{schutz1996history}, aunque destacando también que el esfuerzo medio tiene una influencia perjudicial en el material. 
 
 Es decir, desde 1853 hasta hoy, han transcurrido más de 160 años de investigación sobre la fatiga, logrando comprender distintas aristas del fenómeno, pero con muchas preguntas aún sin resolver. Por eso, la fatiga sigue siendo un problema necesario de abordar y seguir comprendiendo, por sus grandes implicaciones de costo que tiene en la industria y en distintos elementos que utilizamos en la vida diaria. Por otro lado, si bien muchas preguntas no han sido resueltas científicamente, diversas empresas han logrado evitar las fallas por fatiga y optimizar los diseños de manera operativa, sin comprender cabalmente el trasfondo de estos.
 
 \subsection{Medición de la fatiga}
-Existen distintas técnicas para cuantificar la respuesta de un material o componente frente a esfuerzos o deformaciones fluctuantes. La primera de ellas, como se habló anteriormente, corresponde a una viga giratoria sometida a flexión en voladizo, diseñada por A. Wöhler. Con respecto a la información existente en la literatura la mayoría de los datos disponibles de resistencia a la fatiga se encuentra en las pruebas de viga giratoria (\textit{rotating bending}, en inglés) en ciclo de flexión invertida, seguido por cargas axiales (\textit{push-pull}, en inglés), flexión en voladizo (\textit{alternating bending}, en inglés) y en menor medida, en las pruebas de fatiga por torsión. \textcolor{red}{citar norton seccion 45}
+Existen distintas técnicas para cuantificar la respuesta de un material o componente frente a esfuerzos o deformaciones fluctuantes. La primera de ellas, como se habló anteriormente, corresponde a una viga giratoria sometida a flexión en voladizo, diseñada por A. Wöhler. Con respecto a la información existente en la literatura la mayoría de los datos disponibles de resistencia a la fatiga se encuentra en las pruebas de viga giratoria (\textit{rotating bending}, en inglés) en ciclo de flexión invertida, seguido por cargas axiales (\textit{push-pull}, en inglés), flexión en voladizo (\textit{alternating bending}, en inglés) y en menor medida, en las pruebas de fatiga por torsión. \cite{norton2011machine}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\linewidth, trim={11cm 2cm 6cm 4cm}, clip]{Imagenes/comp_medfat.pdf}
+\caption{Comparación entre las distintas curvas caracterísitcas de cada forma de medición de la fatiga. \cite{lee2005fatigue}\cite{esin1980method}}
+\label{fig:comp_medfat}
+\end{figure}
+
 
 \subsubsection{Ensayo de fatiga con una viga giratoria en flexión} 
-Su uso es el más extendido para determinar la vida a fatiga de un material. La principal ventaja frente a otros sistemas radica en su capacidad de aplicar ciclos de cargas a altas velocidades, es decir, realizar pruebas de fatiga a altas frecuencias. Sin embargo, no es posible aplicar una carga media distinta de cero, por lo tanto, su uso principal se encuentra en la obtención de datos para el rango HCF y de ciclo invertido. Los datos obtenidos son más altos respecto a otros tipos de medición, como se puede ver en la figura REF.
+Su uso es el más extendido para determinar la vida a fatiga de un material. La principal ventaja frente a otros sistemas radica en su capacidad de aplicar ciclos de cargas a altas velocidades, es decir, realizar pruebas de fatiga a altas frecuencias. Sin embargo, no es posible aplicar una carga media distinta de cero, por lo tanto, su uso principal se encuentra en la obtención de datos para el rango HCF y de ciclo invertido. Los datos obtenidos son inferiores a los obtenidos por medio de \textit{alternating bending}, como se puede ver en la figura \ref{fig:comp_medfat}.
 
 
 \subsubsection{Ensayo de fatiga axial}
-Esta configuración de prueba es más flexible que el resto, siendo posible cualquier combinación de esfuerzo alternante y medio, además de poder realizar ensayos con el modelo de deformación-vida. Su principal diferencia respecto al método de viga giratoria se encuentra en que la sección transversal está sometida a esfuerzos de manera uniforme, provocando que los resultados de resistencia a la fatiga obtenidos sean usualmente menores que las obtenidas por \textit{rotating bending} y \textit{alternating bending}. Se considera que esto se debe a la  probabilidad más alta de hallar una microgrieta en un campo de esfuerzos más grande. Asimismo, la superposición de momentos de flexión sobre las cargas axiales, producto de la dificultad de crear cargas axiales sin excentricidad, son un factor en la disminución en la obtención de valores de resistencia menores. En concreto, la reducción de las resistencias a la fatiga obtenidos pueden variar entre un 10$\%$ y un 30$\%$ o más si hay flexión producto de la excentricidad de las cargas. La figura REF \textcolor{red}{sacar imagen de paper A Esin} muestra las diferencias de los datos obtenidos entre un ensayo de fatiga axial y uno de viga giratorio.
+Esta configuración de prueba es más flexible que el resto, siendo posible cualquier combinación de esfuerzo alternante y medio, además de poder realizar ensayos con el modelo de deformación-vida. Su principal diferencia respecto al método de viga giratoria se encuentra en que la sección transversal está sometida a esfuerzos de manera uniforme, provocando que los resultados de resistencia a la fatiga obtenidos sean usualmente menores que las obtenidas por \textit{rotating bending} y \textit{alternating bending}. Se considera que esto se debe a la  probabilidad más alta de hallar una microgrieta en un campo de esfuerzos más grande. Asimismo, la superposición de momentos de flexión sobre las cargas axiales, producto de la dificultad de crear cargas axiales sin excentricidad, son un factor en la disminución en la obtención de valores de resistencia menores. En concreto, la reducción de las resistencias a la fatiga obtenidos pueden variar entre un 10$\%$ y un 30$\%$ o más si hay flexión producto de la excentricidad de las cargas. La figura \ref{fig:comp_medfat} muestra las diferencias de los datos obtenidos entre un ensayo de fatiga axial y el resto de las formas de medición.
 
 \subsubsection{Ensayo de fatiga de flexión en voladizo}
-Esta prueba consiste en someter a una viga en voladizo a oscilaciones en su extremo libre a través de algún mecanismo, pudiendo lograr combinaciones de esfuerzos medios y alternantes. La máquina analizada en esta memoria, utiliza este método para la obtención de los datos de vida de fatiga del material a analizar. Los resultados de este tipo de prueba son inferiores a los obtenidos por \textit{rotating bending} y mayores a los obtenidos por \textit{push-pull}.
+Esta prueba consiste en someter a una viga en voladizo a oscilaciones en su extremo libre a través de algún mecanismo, pudiendo lograr combinaciones de esfuerzos medios y alternantes. La máquina analizada en esta memoria, utiliza este método para la obtención de los datos de vida de fatiga del material a analizar. Los resultados de este tipo de prueba son los más altos respecto a otros tipos de medición de fatiga.
+
+\newpage
 
 \subsection{Correlación entre distintos métodos de medición de la fatiga}
-Como se señaló anteriormente y se aprecia en la imagen REF, cada prueba entrega valores distintos aún cuando los niveles de esfuerzo sean iguales. Por esto, existen distintos intentos en la literatura de crear correlaciones entre los datos, evitando los costos asociados a realizar nuevos ensayos experimentales del mismo material o componente. La forma en que se ha abordado esta problemática es la utilización de un factor de corrección ($\phi$) calculado con distintas propuestas.
+Como se señaló anteriormente y se aprecia en la imagen \ref{fig:comp_medfat}, cada prueba entrega valores distintos aún cuando los niveles de esfuerzo sean iguales. Por esto, existen distintos intentos en la literatura de crear correlaciones entre los datos, evitando los costos asociados a realizar nuevos ensayos experimentales del mismo material o componente. La forma en que se ha abordado esta problemática es la utilización de un factor de corrección ($\phi$) calculado con distintas propuestas.
 
-Algunos de estos modelos son: Manson y Muralidharan, Philipp, Lee y Esin. Cada metodología aborda de distinta forma el cálculo del factor de corrección $\phi$, ahora bien, se abordarán los modelos de Lee y Esin en este trabajo, ya que, de acuerdo a \textcolor{red}{agregar cita de analysis of axial papre}, son los modelos que se ajustan mejor al comportamiento de los datos empíricos entre ensayos de \textit{rotating bending} y de \textit{push-pull}. \textcolor{red}{corregir}
+Algunos de estos modelos son: Philipp, Lee, Esin y Manson y Muralidharan. Cada metodología aborda de distinta forma el cálculo del factor de corrección $\phi$, ahora bien, se abordarán los modelos de Lee y Esin en este trabajo, ya que son los modelos que se ajustan mejor al comportamiento de los datos empíricos de ensayos de fatiga.\cite{strzelecki2018analysis}
 
 \subsubsection{Modelo de Esin}
-El modelo propuesto por Esin en \textit{``A method for correlating different types of fatigue curve"}, relaciona las curvas $S$-$N$ de los ensayos \textit{push-pull}, \textit{alternating bending} y \textit{rotating bending}. Éste depende del esfuerzo alternante, asumiendo que la curva base y la calculada por este método se intersectarán en el punto ($S_e,N_f$), es decir, el factor de correción es $\phi=1$ en esa posición. 
+El modelo propuesto por Esin \cite{esin1980method} relaciona las curvas $S$-$N$ de los ensayos \textit{push-pull}, \textit{alternating bending} y \textit{rotating bending}. Éste depende del esfuerzo alternante, asumiendo que la curva base y la calculada por este método se intersectarán en el punto ($S_e,N_f$), es decir, el factor de correción es $\phi=1$ en esa posición. 
 
 El método se basa en el análisis de la dependencia de la micro-plasticidad en la distribución de esfuerzos en la sección transversal, definiéndose la micro-plasticidad como el flujo plástico de un material sin haber alcanzado su punto de fluencia. Ésta ocurre sobre cierto nivel de esfuerzos en el rango elástico, llamado límite elástico real (\textit{true elastic limit}, en inglés o \textit{TEL}) y bajo el límite de resistencia a la fatiga, $S_e$. Así, siempre se cumplirá que:
 \begin{align*}
@@ -37,7 +47,6 @@ El método se basa en el análisis de la dependencia de la micro-plasticidad en 
 
 La micro-plasticidad es un fenómeno altamente localizado que depende de las propiedades probabilísticas micro-estructurales del material como su micro-inhomogeneidad, anisotropía y micro-concentraciones de esfuerzos, los cuales explican la dispersión de datos en los ensayos de fatiga. Así, cuando los esfuerzos alternantes están sobre valor del  \textit{TEL}, la micro-plasticidad influye en los macro-elementos. Dicho de otra forma, el comportamiento mecánico observado a un nivel macro es el comportamiento integrado de los micro-elementos.
 
-\textcolor{red}{Hacer imagen igual a esta}
 \begin{figure}[h]
 \centering
 \includegraphics[scale=1]{Imagenes/affectedarea_fatigue.pdf}
@@ -79,7 +88,7 @@ Los valores de $\theta$, $r$ y $R$ son propios de la geometría de la probeta ut
 \end{align}
 Finalmente, con estos elementos es posible tomar del diagrama $S$-$N$ un punto ($S_i$,$N_i$) y, a través de las correlaciones, obtener un nuevo punto ($S_i'$,$N_i'$) que equivale a la curva $S$-$N$ de otro tipo de ensayo.
 
-La metodología consiste en tomar un valor de esfuerzo alternante conveniente $S$ y calcular su esfuerzo alternante equivalente, $S_{eq}$. Utilizando este valor, se determinará a partir de la curva $S$-$N$ original el número de ciclos a la falla que se llamará vida a fatiga equivalente, $N_{eq}$. Este valor debe ser multiplicado por el factor de fatiga $FF$, obteniendo la vida a fatiga modificada, $N$. Así, el punto $P=(S,N)$, como se muestra en la figura REF \textcolor{red}{Crear fig 3 del paper de Esin} es el valor equivalente obtenido, teniendo que repetirse el procedimiento para todos los puntos que se requieran.
+La metodología consiste en tomar un valor de esfuerzo alternante conveniente $S$ y calcular su esfuerzo alternante equivalente, $S_{eq}$. Utilizando este valor, se determinará a partir de la curva $S$-$N$ original el número de ciclos a la falla que se llamará vida a fatiga equivalente, $N_{eq}$. Este valor debe ser multiplicado por el factor de fatiga $FF$, obteniendo la vida a fatiga modificada, $N$. Así, el punto $P=(S,N)$ es el valor equivalente obtenido, teniendo que repetirse el procedimiento para todos los puntos que se requieran.
 
 \subsubsection{Modelo de Lee}
 La estimación del límite de fatiga, $S_e$, se calcula a través de distintos factores de modificación según el tipo de carga, calidad superficial, tamaño y confiabilidad de la muestra. El factor de modificación según el tipo de carga $C_L$ varía entre 0,7 y 0,9 para probetas sin muescas. Las recomendaciones para cada valor de $C_L$ se realizaron considerando los efectos del gradiente de esfuerzos y el tipo de esfuerzo involucrado, es decir, cortantes y normales. Estos también varían según el tipo de material, los cuales fueron obtenidos de manera empírica. Así la tabla \ref{tab:lee_factor} muestra los factores de modificación para algunos tipos de carga.
@@ -88,29 +97,45 @@ La estimación del límite de fatiga, $S_e$, se calcula a través de distintos f
 \centering
 \begin{tabular}{@{}llc@{}}
 \toprule
-Tipo de Carga                & $C_L$ & \multicolumn{1}{l}{Observaciones} \\ \midrule
+Tipo de Carga                & $C_L$ & Observaciones \\ \midrule
 Carga axial pura             & 0,9   & -                                 \\
 Carga axial con leve flexión & 0,7   & -                                 \\
 Rotating bending             & 1,0   & -                                 \\
-Torsional                    & 0,58  & \multicolumn{1}{l}{Para aceros}   \\ \bottomrule
+Torsional                    & 0,58  & Para aceros   \\ \bottomrule
 \end{tabular}
 \caption{Factores de modificación por tipo de carga, según el modelo de Lee.}
 \label{tab:lee_factor}
 \end{table}
 
-Además, es posible apreciar en la imagen REF \textcolor{red}{hacer imagen como la 416 del texto de Lee pag 150} las diferencias que se generan por la aplicación del factor de corrección para los distintos tipos de carga que se buscan. 
+En definitiva, ambos métodos toman en consideración distintos elementos, lo que lleva a que exista una diferencia entre ambos. La imagen \ref{fig:comp_modfat} muestra las diferencias de sus curvas de manera representativa, en las cuales se puede ver claramente la diferencia de los resultados esperados al utilizar el factor de corrección de cada método.
 
-AÑADIR IMAGEN COMPARANDO AMBOS SISTEMAS.
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\linewidth, trim={6cm 1cm 5cm 2cm}, clip]{Imagenes/comp_modfat.pdf}
+\caption{Representación entre una curva característica de un ensayo de fatiga y los métodos de Lee y Esin para correlacionar distintos tipos de ensayos. \cite{strzelecki2018analysis}}
+\label{fig:comp_modfat}
+\end{figure}
 
 \section{Máquina de fatiga a flexión}
 El desarrollo de este trabajo se centrará en la máquina de fatiga que posee el departamento de ingeniería mecánica en el laboratorio de tecnología mecánica en Valparaíso. La información existente sobre la máquina de ensayo es escasa principalmente por su antigüedad, lo que ha llevado a la perdida de documentos y la obsolescencia de su tecnología.  
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.05]{Imagenes/maq_del.jpg}
-\label{fig:maq_del}
-\includegraphics[scale=0.05]{Imagenes/maqfull_post.jpg}
-\label{fig:maqfull_post}
+	\begin{subfigure}{0.49\linewidth}
+		\centering	
+		\includegraphics[width=1\linewidth]{Imagenes/maq_del.jpg}
+		\caption{Vista delantera}\label{fig:maq_del}
+	\end{subfigure}
+	\begin{subfigure}{0.49\linewidth}
+		\centering		
+		\includegraphics[width=1\linewidth]{Imagenes/maqfull_post.jpg}
+		\caption{Vista posterior}\label{fig:maqfull_post}
+	\end{subfigure}
+	\begin{subfigure}{0.5\linewidth}
+		\centering		
+		\includegraphics[width=1\linewidth]{Imagenes/maq_iso.jpg}
+		\caption{Vista en perspectiva}\label{fig:maq_iso}		
+	\end{subfigure}
 \caption{Máquina de fatiga en flexión en el laboratorio de tecnología mecánica}
 \label{fig:maq_fat}
 \end{figure}
@@ -128,11 +153,11 @@ Existen cientos de variedades de madera, donde cada una tiene propiedades distin
 La madera es un material que es fabricado naturalmente por los vegetales leñosos, con un alto grado de especialización y complejidad. Esto lo vuelva altamente heterogéneo, al estar especializado en llevar a cabo las funciones fundamentales del vegetal, lo que se ve reflejado en sus propiedades físicas y mecánicas. 
 
 Una consecuencia de esta heterogeneidad es el comportamiento anisotrópico, teniendo un comportamiento distinto según la dirección en que se trabaja. Se establecen tres planos de referencia respecto a su propiedades físicas.
-\begin{itemize}
+\begin{itemize*}
 	\item Longitudinal: Sigue la misma dirección de la fibra o el eje del tronco.
 	\item Radial: Pasa por el eje del tronco y es perpendicular a los anillos de crecimiento.
 	\item Tangencial: Paralela a un plano tangente a los anillos de crecimiento.
-\end{itemize}
+\end{itemize*}
 En relación a sus propiedades mecánicas se habla de dos direcciones, la paralela (longitudinal) y normal o perpendicular (englobando radial y tangencial). Esta diferencia hace que la madera sea capaz de soportar cargas de compresión de hasta 4 veces en dirección paralela respecto a la normal. Esto quiere decir que siempre que sea posible, se deben instalar las piezas madereras para que resistan las cargas en su dirección longitudinal para un uso eficiente del material. De esta forma, se habla que las propiedades mecánicas de la madera son ortotrópicas.
 
 Por último, es considerado un material higroscópico por su capacidad de captar o ceder agua del exterior, tanto en forma líquida como vapor. La cantidad de agua que contiene tenderá a estar en equilibrio con su entorno, lo que afectará sus propiedades físicas, mecánicas y en su posible degradación.
@@ -143,14 +168,14 @@ Junto a la ortotropía de la madera, existen otras particularidades que influyen
 La tracción y compresión tienen resistencias distintas, además de las diferencias existentes entre las cargas paralelas y perpendiculares a la madera. La resistencia a la tracción paralelamente es comúnmente más alta que la compresión paralela, en la cual se debe calcular además la inestabilidad lateral. En el caso de la compresión y tracción perpendicular, los valore de resistencia son considerablemente más bajos, llegando a ser 9 y 20 veces menos resistente que su par paralelo, respectivamente. Esto se debe a la eficiencia de construcción de los árboles al no estar solicitados fuertemente en estas direcciones. 
 
 Esta diferencia de resistencia y comportamiento entre la tracción y compresión de la madera implica que en el cálculo de la flexión se deban separar las zonas flexo-comprimidas y flexo-traccionadas, a pesar que la resistencia a la flexión de una madera sea única. Por otro lado, los esfuerzos cortante en un elemento de madera puede tener diversos modos:
-\begin{itemize}
+\begin{itemize*}
 	\item Cortadura: las fibras son cortadas transversalmente.
 	\item Deslizamiento: las fibras se desplazan longitudinalmente.
 	\item Rodadura: las fibras se desplazan una sobre otra.
-\end{itemize}
+\end{itemize*}
 Donde la rotura se produce por deslizamiento al ser el plano más débil.
 
-En última instancia, la resistencia a la fatiga de la madera es muy buena en comparación a otros materiales estructurales con estructura cristalina como el acero\textcolor{red}{citar libro guia de madera}, siendo resistente a la acción cíclica de las cargas y al amortiguamiento de estas. 
+En última instancia, la resistencia a la fatiga de la madera es muy buena en comparación a otros materiales estructurales con estructura cristalina como el acero \cite{sanchez2014guia}, siendo resistente a la acción cíclica de las cargas y al amortiguamiento de estas. 
 
 \section{Acero}
 El acero es una aleación basada principalmente en fierro y carbono, pudiendo tener concentraciones de otros elementos incluso. Sus propiedades mecánicas son fuertemente sensitivas al contenido de carbono, por lo que muchas veces es clasificado a partir de su porcentaje, como aceros de bajo, media y alto en carbono. También inciden en sus propiedades mecánicas las características de fabricación y si reciben algún tipo de tratamiento térmico.
@@ -162,9 +187,10 @@ Para la mayoría de los aceros, su comportamiento bajo carga se divide en una zo
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.6\linewidth]{Imagenes/strain-stress_curve.png}
-\caption{Curva de esfuerzo-deformación ingenieril (A) y real (B) de un acero. Los puntos representan: [1] Esfuerzo último ($\sigma_u$), [2] esfuerzo de fluencia ($\sigma_y$), [3] esfuerzo de ruptura, [4] región de endurecimiento por deformación y [5] región de estricción.}
+\caption{Curva de esfuerzo-deformación ingenieril (A) y real (B) de un acero. Los puntos representan: (1) Esfuerzo último ($\sigma_u$), (2) esfuerzo de fluencia ($\sigma_y$), (3) esfuerzo de ruptura, (4) región de endurecimiento por deformación y (5) región de estricción. \cite{richfield}}
 \label{fig:esf-def_curve}
 \end{figure}
+
 
 \section{Software de simulación de elementos finitos}
 Para el desarrollo de esta tesis se utilizaron software que simularon condiciones específicas a través de elementos finitos. Estos dividen un modelo CAD en un número determinado de elementos de un tamaño específico y forma geométrica específica. Los software utilizados son ANSYS y Autodesk Inventor en su módulo de análisis de esfuerzos ( \textit{Stress Analysis}). 

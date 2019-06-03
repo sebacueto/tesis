@@ -1,10 +1,7 @@
 \babel@toc {spanish}{}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Crecimiento de una grieta durante un ciclo de carga perpendicular, dando origen a las marcas de playa. Fuente: Fatigue of structures and materials.\relax }}{5}{figure.caption.4}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Diagrama $S$-$N$ obtenido a partir de los resultados de ensayos a fatiga axial con carga invertida. Se pueden apreciar las zonas LCF, HCF y la zona de vida infinita. Fuente: Dise\IeC {\~n}o en ingenier\IeC {\'\i }a mec\IeC {\'a}nica de Shigley\relax }}{8}{figure.caption.6}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Diagrama $S$-$N$ de ensayos de fatiga axial con distintos esfuerzos medios. Fuente: Mechanical Behavior of Materials.\relax }}{9}{figure.caption.7}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Diagrama de vida constante para aluminio 7075-T6. Fuente: Mechanical Behavior of Materials.\relax }}{10}{figure.caption.8}
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Curvas de estimaci\IeC {\'o}n de falla a fatiga de Goodman, Gerber y Soderberg. Fuente: Dise\IeC {\~n}o de m\IeC {\'a}quina - Norton.\relax }}{10}{figure.caption.10}
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Diagrama \textit {CFL} normalizado. Fuente: Mechanical Behavior of Materials.\relax }}{12}{figure.caption.12}
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Todos los posibles grados de libertad que puede tener una masa, los cuales se dividen en 3 grados de libertad rotacionales ($\theta _i$) y 3 lineales ($x_i$). Fuente: Engineering Vibration - Inman.\relax }}{17}{figure.caption.13}
-\contentsline {figure}{\numberline {1.8}{\ignorespaces Endurecimiento isotr\IeC {\'o}pico por deformaci\IeC {\'o}n pl\IeC {\'a}stica. Se puede apreciar como se conserva la distancia del esfuerzo m\IeC {\'a}ximo respecto a la abscisa.\relax }}{22}{figure.caption.14}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Designaciones de espaciamientos y bordes. \citep {nch1198}\relax }}{15}{figure.caption.9}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Valor de $h_e$, para los distintos elementos de uni\IeC {\'o}n. \citep {nch1198}\relax }}{16}{figure.caption.12}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Uniones en cizalle doble. \citep {nch1198}\relax }}{19}{figure.caption.15}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Espaciamientos m\IeC {\'\i }nimos ntre pernos, barras de acero, tirafondos y a los bordes. \citep {nch1198}\relax }}{21}{figure.caption.17}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Esquema de un tirafondo. \citep {nch1198}\relax }}{22}{figure.caption.18}

@@ -1,4 +1,4 @@
- \documentclass[oneside,authoryear,spanish,a4paper]{ezthesis}
+\documentclass[oneside,numbers,spanish,a4paper]{ezthesis}
 %\documentclass[oneside,authoryear,draft,spanish]{ezthesis}
 %\documentclass[oneside,authoryear,draftmarks,spanish]{ezthesis}
 %% # Opciones disponibles para el documento #
@@ -72,6 +72,7 @@
 \usepackage{times}
 \usepackage{color}
 \usepackage{units}
+\usepackage{rotating}
 \definecolor{lightblue}{rgb}{0, 0.7, .7}
 \definecolor{gray97}{gray}{.97}
 \definecolor{gray75}{gray}{.75}
@@ -167,6 +168,8 @@ backgroundcolor=\color{gray75},
 
 \geometry{top=35mm,bottom=35mm,inner=30mm,outer=30mm}
 
+%\DeclareUnicodeCharacter{202F}{FIX ME!!!!}
+
 %% El siguiente comando agrega ligas activas en el documento para las
 %% referencias cruzadas y citas bibliogr'aficas. Tiene que ser *la 'ultima*
 %% instrucci'on antes de \begin{document}.
@@ -220,7 +223,7 @@ backgroundcolor=\color{gray75},
 %
 %\include{Capitulos/02_antecedentes}
 %
-\include{Capitulos/03_marco_teorico}
+%\include{Capitulos/03_marco_teorico}
 %
 %\include{Capitulos/04_metodologia}
 %
@@ -232,9 +235,10 @@ backgroundcolor=\color{gray75},
 %%%% Cap'itulos incluidos despues del comando \appendix aparecen como ap'endices
 %%%% de la tesis.
 
-%\include{Anexos/Apendice_A}
-%\include{Anexos/Apendice_B}
+\include{Anexos/Apendice_A}
 %\include{Anexos/Apendice_C}
+%\include{Anexos/Apendice_B}
+
 %
 
 %%% Incluir la bibliograf'ia. Mirar el archivo "biblio.bib" para m'as detales
@@ -242,5 +246,5 @@ backgroundcolor=\color{gray75},
 %
 
 \nocite{*}     %incluir en la bibliografia articulos no citados
-%\bibliography{Bibliografia/biblio}
+\bibliography{Bibliografia/biblio}
 \end{document}

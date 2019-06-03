@@ -1,9 +1,9 @@
 \chapter{Metodología}
 \section{Levantamiento de información}
 \label{sec:lev_info}
-Parte del trabajo de esta memoria se centra en lograr rescatar información y su posterior comprensión de la máquina de fatiga a flexión para tenerla operativa para su uso en el laboratorio. El levantamiento de información consistirá en detallar su estado actual, describir el funcionamiento para realizar los ensayos y, finalmente, en poder cuantificar y medir los distintos componentes de la máquina.
+Parte del trabajo de esta memoria se centra en lograr rescatar información y su posterior comprensión de la máquina de fatiga, en su configuración a flexión, para tenerla operativa para su uso en el laboratorio. El levantamiento de información consistirá en detallar su estado actual, describir el funcionamiento para realizar los ensayos y, finalmente, en poder cuantificar y medir los distintos componentes de la máquina.
 
-La medición de fatiga es realizada a través del método de \textit{esfuerzo-vida}, utilizando la configuración de \textit{alternating bending}, ambos descritos en los antecedentes.
+La máquina tiene la versatilidad de poder realizar ensayos en dos configuraciones, ambas a través del método de \textit{esfuerzo-vida}. El primero de ellos es utilizando la configuración de \textit{alternating bending}, es decir, fatiga en flexión y será la que se estudiará en este trabajo. La configuración secundaria consiste en fatiga por torsión, la cual no será profundizada. 
 
 \subsection{Estado actual}
 Actualmente la máquina no puede ser utilizada por no estar anclada, estando apoyada sobre dos listones de madera, que a su vez, están sobre una mesa de madera como se aprecia en la figura \ref{fig:maq_fat}. Por consiguiente, la máquina al ser utilizada comienza a vibrar, saltar y desplazarse lateralmente, lo que impide su uso prolongado por motivos de seguridad. Es decir, no es posible realizar correctamente un ensayo de fatiga de ningún material ni en ninguna configuración.
@@ -51,7 +51,7 @@ La máquina de fatiga tiene como objetivo lograr que para cada ciclo se ejerza e
 \label{fig:contrapesos}
 \end{figure}
 
-Los elementos utilizados para desbalancear son 6 discos pequeños de X \textcolor{red}{medir radio masas} a Y de diámetro. Estos son enumerados del 1 al 5, donde el 1 es el más liviano y el 5 el más pesado, todos de distinto peso y el quinto se encuentra repetido. Estas se colocan en los extremos del disco giratorio, como se ve en la figura REFimagendisco, dependiendo de la carga que se desee generar. Para conocer que configuración corresponde a cada esfuerzo aplicado sobre la probeta se utiliza la tabla de cargas.
+Los elementos utilizados para desbalancear son 6 discos pequeños, enumerados del 1 al 5, donde el 1 es el más liviano y el 5 el más pesado, todos de distinto peso y el quinto se encuentra repetido. Estas se colocan en los extremos del disco giratorio, como se ve en la figura \ref{fig:disco_completo}, dependiendo de la carga que se desee generar. Para conocer que configuración corresponde a cada esfuerzo aplicado sobre la probeta se utiliza la tabla de cargas.
 
 \begin{figure}[h]
 \centering
@@ -74,7 +74,7 @@ Los elementos utilizados para desbalancear son 6 discos pequeños de X \textcolo
 \label{fig:disco_completo}
 \end{figure}
 
-Esta tabla, con 3 columnas de información como se ve en el Anexo REF, nos entrega el esfuerzo normal $\sigma$, cortante $\tau$ y la combinación necesaria para generar esos esfuerzos. Los números entre paréntesis nos indican cuantos contrapesos se deben apilar en cada perno adosado al disco giratorio, los cuales llamaremos soportes de contrapeso (SC). Así, la tabla nos señala que la fuerza es función de la diferencia de masa entre cada soporte, es decir, la suma de las masas de cada paréntesis. A modo de ejemplo, en la tabla \ref{tab:ejemplo_config} se han colocado las 4 primeras filas de la tabla de cargas, añadiendo 4 columnas a la derecha de ``Combinación'' con información sobre el peso de cada combinación. En las columnas $m_1$ y $m_2$ se aprecia la suma de cada masa colocada en sus soportes de contrapeso señalado por la columna de ``Combinación''. Las columnas siguientes representan $\Delta m = m_1-m_2$ y $m_{total}=m_1+_2$. Como se puede apreciar, los esfuerzos normales y cortantes aumentan en la medida que $\Delta m$ de cada combinación aumenta, independiente de $m_{total}$.
+Esta tabla, con 3 columnas de información como se ve en el Anexo REF, nos entrega el esfuerzo normal $\sigma$, cortante $\tau$ y la combinación necesaria para generar esos esfuerzos. Los números entre paréntesis nos indican cuantos contrapesos se deben apilar en cada perno adosado al disco giratorio, los cuales llamaremos soportes de contrapeso (SC). Así, la tabla nos señala que la fuerza es función de la diferencia de masa entre cada soporte, es decir, la suma de las masas de cada paréntesis. A modo de ejemplo, en la tabla \ref{tab:ejemplo_config} se han colocado las 4 primeras filas de la tabla de cargas, añadiendo 4 columnas a la derecha de ``Combinación'' con información sobre el peso de cada una. En las columnas $m_1$ y $m_2$ se aprecia la suma de cada masa colocada en sus soportes de contrapeso señalado por la columna de ``Combinación''. Las columnas siguientes representan $\Delta m = m_1-m_2$ y $m_{total}=m_1+_2$. Como se puede apreciar, los esfuerzos normales y cortantes aumentan en la medida que $\Delta m$ de cada combinación aumenta, independiente de $m_{total}$.
 
 \begin{table}[h]
 \centering
@@ -101,7 +101,7 @@ Con esto, la probeta a ensayar estará sometida a un esfuerzo en flexión, empot
 
 Una vez que se haya escogido la configuración de masas y la probeta se encuentre en su posición, una pequeña barra de bloqueo con una manilla ubicada entre las barras de acero, como se aprecia en la figura \ref{fig:freno_auto}, eleva ambas barras con el objetivo de evitar que oscile en su frecuencia natural durante el encendido y aceleración del motor hasta su velocidad final, dejando a la barra en una configuración de empotrado y apoyo simple. Una vez que el motor alcanza una velocidad estable, el sostén es girado nuevamente para dejar al disco giratorio en posición de empotrado-libre. Este sostén, permite que el ensayo de fatiga se realice siempre a una frecuencia constante y evitar la transición inicial del motor. Una vez que la probeta se fracture, provocarán un aumento en la amplitud de las oscilaciones del disco las cuales activarán el freno automático (figura \ref{fig:barra_bloqueo}) para detener el motor y, por lo tanto, el ensayo. Gracias a este sistema, es posible conocer la cantidad de ciclos que realizados hasta el momento de fractura sin la necesidad de supervisar de manera continua el ensayo.
 
-\begin{figure}[H]
+\begin{figure}[h]
 \centering
 	\begin{subfigure}{0.55\linewidth}
 		\centering
@@ -195,20 +195,20 @@ El brazo principal (figura \ref{fig:brazo_carga}) que ejerce la fuerza sobre la 
 
 La transmisión de la carga entre el disco desbalanceado y el brazo de carga se da a través de dos barras de acero redondas, uno a cada lado del disco, de diámetro 6,2 mm y largo de 169 mm.
 
-\subparagraph{Disco desbalanceado.}
+\subparagraph{Disco desbalanceado y contrapesos.}
 En base a las características visuales y auditivas del disco, se cree que está construido en alguna aleación de aluminio. Su radio $R_d =$ 112 mm y espesor de 6,4 mm. 
 
-La masa de cada contrapeso, medidos en el laboratorio de metalúrgica con pesas blablabla.
+La masa de cada contrapeso (figura \ref{fig:contrapesos}) fue medida en el laboratorio de ingeniería metalúrgica con una balanza analítica.
 \begin{table}[H]
 \centering
-\begin{tabular}{@{}cc@{}}
+\begin{tabular}{@{}cccc@{}}
 \toprule
-Contrapeso & Masa {[}g{]} \\ \midrule
-1          & 0,7582       \\
-2          & 2,2969       \\
-3          & 6,8541       \\
-4          & 20,5979      \\
-5          & 30,9199      \\ \bottomrule
+Contrapeso & Masa {[}g{]}	& Diámetro {[}mm{]}	&	Espesor {[}mm{]} \\ \midrule
+1          & 0,7582			& 20,55				&	1,00	         \\
+2          & 2,2969       	& 27,00				&	1,50			 \\
+3          & 6,8541       	& 27,00				& 	1,70			 \\
+4          & 20,5979      	& 27,90				& 	5,00			 \\
+5          & 30,9199      	& 29,90				&	4,40			 \\ \bottomrule
 \end{tabular}
 \caption{Masa de cada contrapeso utilizado}
 \label{tab:masa_contrapesos}
@@ -218,7 +218,7 @@ Por otra parte, no fue posible medir directamente la masa del disco al no poder 
 
 \subparagraph{Probeta.} La probeta utilizada actualmente para el ensayo de fatiga es de acero AISI 1020. Su geometría, como se aprecia en la figura \ref{fig:probeta}, consiste en una pequeña viga de largo 3\nicefrac{1}{2}'', de sección cuadrada en sus extremos y una entalladura en el medio de sección circular, de lado \nicefrac{1}{2}'' de lado y 0,3'' de diámetro respectivamente.
  
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=1\linewidth, trim={2cm 13cm 4cm 1cm},clip]{Imagenes/Probeta.pdf}
 \caption{Vista en corte, lateral y frontal de la probeta con sus respectivas dimensiones.}
@@ -230,8 +230,7 @@ El proceso de diseñar la estructura hasta su resultado final pasó por distinta
 
 \begin{figure}[h]
 \centering
-
-\includegraphics[width=0.9\linewidth, trim={5cm 5cm 5cm 5cm},clip]{Imagenes/mesa_persp.pdf}
+\includegraphics[width=0.9\linewidth, trim={5cm 3cm 5cm 3cm},clip]{Imagenes/mesa_persp.pdf}
 \caption{Diseño en perspectiva de la estructura.}
 \label{fig:mesa_persp}
 \end{figure}
@@ -290,14 +289,14 @@ Con relación a la cargas fluctuantes que recibirán las pletinas como parte del
 	\sigma_{a,A} = \frac{M_{a,pl,A} \cdot h_p}{2I_{pl}}
 \end{gather}
 
-Para obtener el factor de seguridad, se utilizará la ecuación de Goodman modificada (\ref{eq:good_mod}). Para esto, el límite de resistencia a la fatiga de un acero se puede estimar como $S_e = 0,5S_{ut}$ cuando el esfuerzo último es menor a 1400 MPa REFERNCIA. Como el material utilizado es un acero A270ES, entonces su equivalente en la antigua nomenclatura chilena de acero es A42-27ES REFERENCIA, donde el esfuerzo último del material es $S_{ut} =$420 MPa, por lo tanto, $S_e = 210$ MPa. También, el esfuerzo medio será igual al esfuerzo estático calculado anteriormente, donde, $S_m = \sigma_{max,pl}$. Así, el factor de seguridad es:
+Para obtener el factor de seguridad, se utilizará la ecuación de Goodman modificada (\ref{eq:good_mod}). Para esto, el límite de resistencia a la fatiga de un acero se puede estimar como $S_e = 0,5S_{ut}$ cuando el esfuerzo último es menor a 1400 MPa \cite{budynas2008shigley}. Como el material utilizado es un acero A270ES, entonces su equivalente en la antigua nomenclatura chilena de acero es A42-27ES \cite{nch203}, donde el esfuerzo último del material es $S_{ut} =$420 MPa, por lo tanto, $S_e = 210$ MPa. También, el esfuerzo medio será igual al esfuerzo estático calculado anteriormente, donde, $S_m = \sigma_{max,pl}$. Así, el factor de seguridad es:
 \begin{equation}
 	FS = \left(\frac{S_e\cdot S_{ut}}{S_a\cdot S_{ut} + S_m\cdot S_e}\right)
 \end{equation}
 
 
 \subsection{Diseño en madera}
-La elección de la madera como elemento principal de construcción se debió por su capacidad de disipar las vibraciones y la relación entre su resistencia y el peso, volviendo la estructura más liviana y útil para las necesidades. Para realizar los cálculos de la madera y sus uniones, se utilizó la norma \textbf{NCh 1198 Of. 91 -- Madera: Construcciones en madera -- Cálculo}, mostrada en el anexo \ref{ch:anexo_a}. Las dimensiones del diseño de la estructura se realizaron considerando dejar el espacio necesario para la operación de la máquina, conservando la altura actual de 900 [mm]. Si bien en el presente trabajo se expondrán los cálculos de una especia maderera y sus respectivas dimensiones, se realizaron cálculos con otras especies y en otros formatos para añadir flexibilidad al diseño propuesto. Las maderas consideradas en el trabajo son el pino Oregón, pino Radiata y la línea de pino radiata encolado Hilam de Arauco. Los resultados mostrados en la sección siguiente son los obtenidos al escoger el pino Oregón en formato de 110x110 [mm]. Los valores de las tensiones admisibles para distintas especies madereras se obtienen de la tabla 4 de la sección 6.2 de la NCh 1198, sin embargo, para la madera laminada encolada se encuentran en la norma NCh 2165. Finalmente, para la sección de diseño en madera se utilizará la nomenclatura utilizada por la norma NCh 1198, para evitar confusiones al momento de consultar el anexo o la norma misma.
+La elección de la madera como elemento principal de construcción se debió por su capacidad de disipar las vibraciones y la relación entre su resistencia y el peso, volviendo la estructura más liviana y útil para las necesidades. Para realizar los cálculos de la madera y sus uniones, se utilizó la norma \textbf{NCh 1198 Of. 91 -- Madera: Construcciones en madera -- Cálculo} \cite{nch1198}, mostrada en el anexo \ref{ch:anexo_a}. Las dimensiones del diseño de la estructura se realizaron considerando dejar el espacio necesario para la operación de la máquina, conservando la altura actual de 900 [mm]. Si bien en el presente trabajo se expondrán los cálculos de una especia maderera y sus respectivas dimensiones, se realizaron cálculos con otras especies y en otros formatos para añadir flexibilidad al diseño propuesto. Las maderas consideradas en el trabajo son el pino Oregón, pino Radiata y la línea de pino radiata encolado Hilam de Arauco. Los resultados mostrados en la sección siguiente son los obtenidos al escoger el pino Oregón en formato de 110x110 [mm]. Los valores de las tensiones admisibles para distintas especies madereras se obtienen de la tabla 4 de la sección 6.2 de la NCh 1198, sin embargo, para la madera laminada encolada se encuentran en la norma NCh 2165. Finalmente, para la sección de diseño en madera se utilizará la nomenclatura utilizada por la norma NCh 1198, para evitar confusiones al momento de consultar el anexo o la norma misma.
 
 \subsection{Cálculo de cargas en estructura de madera}
 Para identificar las distintas partes de madera en la estructura, se utilizará la figura \ref{fig:mesa_iso} como referencia. Tanto las vigas A, C, D y el pilar B, están diseñados en base a la misma especie maderera y las vigas A, C y el pilar B del mismo formato. En el anexo REF se pueden apreciar los planos del diseño de la estructura propuesta y sus uniones.
@@ -321,7 +320,7 @@ Como se nombró anteriormente, la madera utilizada será pino oregón, el cual b
 Pino oregón                                                                  & 410                                                             & 326                                                                          & 441                                                                 & 350                                                                          \\ \bottomrule
 \end{tabular}%
 }
-\caption{Valores de la densidad normal y anhidra del pino oregón. $^{\dagger}$: Definido con el percentil 5\% de exclusión.}
+\caption{Valores de la densidad normal y anhidra del pino oregón. $^{\dagger}$: Definido con el percentil 5\% de exclusión. \cite{nch1198}}
 \label{tab:densidad_oregon}
 \end{table}
 
@@ -337,7 +336,7 @@ Para la determinación de estos valores es necesario catalogar el grado de calid
 F8                                                          & 8,6 (MPa)                                               & 6,6 (MPa)                                                              & 4,1 (MPa)                                                            & 5,2 (MPa)                                                             & 0,86 (MPa)                                                 & 6,9 (GPa)                                                                          \\ \bottomrule
 \end{tabular}%
 }
-\caption{Tensiones admisibles y módulo de elasticidad en flexión para madera de pino oregón según su clase estructural.}
+\caption{Tensiones admisibles y módulo de elasticidad en flexión para madera de pino oregón según su clase estructural. \cite{nch1198}}
 \label{tab:tadm_oregon}
 \end{table}
 
@@ -467,6 +466,9 @@ Así, la tensión de diseño en flexión de esta viga es de:
 \begin{equation}
 	F_f = 3,9235 \: \text{(MPa)}
 \end{equation}
+
+\newpage 												% Corregir en última revisión.
+
 \subsection{Uniones}
 Las uniones en madera se deben diseñar siguiendo las indicaciones establecidas en la sección 10 de la norma NCh1198, uniones en la madera estructural. Esta considera la condición de la madera en operación, el tipo de unión, la dirección de la solicitación repecto a la dirección de la fibra, el número de elementos de unión, el distanciamiento entre los elementos de unión y el tipo de cizalle. Para el diseño de la estructura se utilizaron tres elementos de unión distintos: tirafondos, pernos y, en menor medida, clavos.
 
@@ -547,7 +549,7 @@ Para la unión entre A y B se utilizó en el diseño un ángulo de unión modelo
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.3\linewidth]{Imagenes/a24.pdf}
-\caption{Representación de un ángulo de unión A44 y A66.}
+\caption{Representación de un ángulo de unión A44 y A66. \cite{angleconnector}}
 \label{fig:a24}
 \end{figure} 
 
@@ -563,7 +565,7 @@ Debido a las limitantes del programa utiilzado, se debieron adaptar las propieda
 Como condición del problema, en ambas simulaciones, las restricciones de los pilares de apoyo B se consideran fijos (\textit{fixed}), impidiendo cualquier grado de movimiento en su base. Además, las uniones se consideraron perfectas y sin desplazamientos. La carga fue aplicada en forma de presión sobre la parte superior de la máquina de fatiga para tener una distribución adecuada del peso de la misma, tomando en consideración la masa calculada en \ref{eq:masa_maq} de 200 kg.
 
 \subsubsection{Análisis modal}
-La configuración utilizada para realizar esta simulación consistió en:
+La configuración utilizada para realizar esta simulación consistió en\footnotemark . 
 \begin{itemize*}
 	\item Número de modos: 6
 	\item Rango de frecuencias: 0 - 120 Hz
@@ -585,14 +587,15 @@ La configuración utilizada para realizar esta simulación consistió en:
 \end{itemize*}
 
 \subsubsection{Análisis estático}
-Para realizar la simulación estática se retiraron todos los elementos de unión, es decir, pernos, tirafondos, conectores y ángulos, conservando solo las vigas de madera y las pletinas de acero. El fin de esto es analizar específicamente los esfuerzos a los que están sometidos estos elementos a la carga de la máquina de fatiga. La configuración principal de la simulación consiste en:
+Para realizar la simulación estática se retiraron todos los elementos de unión, es decir, pernos, tirafondos, conectores y ángulos, conservando solo las vigas de madera y las pletinas de acero. El fin de esto es analizar específicamente los esfuerzos a los que están sometidos estos elementos a la carga de la máquina de fatiga. La configuración principal de la simulación consiste en\footnotemark[\value{footnote}]:
+\footnotetext{La definición de cada opción se encuentra en el manual de Autodesk Inventor. \cite{autodesk}}
 \begin{itemize*}
 	\item Detectar y eliminar modos de cuerpo rígido
 	\item Separar tensiones en superficies de contacto
 \end{itemize*}
 La configuración de los contactos y la malla se conservó igual a la establecida en el análisis modal.
 
-\section{Modelo del sistema de vibratorio}
+\section{Modelo del sistema vibratorio}
 Luego del levantamiento de información, se busca analizar y predecir el comportamiento de la máquina en sus distintas configuraciones. Para esto se utiliza la información disponible para realizar un modelo del funcionamiento de la máquina de fatiga, en específico, de la carga aplicada a la probeta en función de la velocidad de rotación del disco y las distintas combinaciones de contrapesos. El disco se encuentra en voladizo, cuyo desequilibrio a partir de los contrapesos colocados produce una fuerza que es transmitida hacia un brazo de carga. Este, a su vez, aplica un momento de flexión sobre una probeta que está doblemente empotrada por mordazas.
 
 Para obtener el comportamiento y la fuerza que produce el desbalanceo en el disco sobre la probeta, se modelará un sistema de dos grados de libertad para representar el movimiento de la máquina y sus componentes, realizando ciertas simplificaciones y suposiciones. Se utilizará el método de energía para resolver el sistema.
@@ -614,7 +617,7 @@ La imagen \ref{fig:elementos_modelo} muestra todas los elementos que participan 
 		\includegraphics[width=\linewidth]{Imagenes/disco_barra.pdf}
 		\caption{Disco desbalanceado en voladizo}\label{fig:elementos_disco}
 	\end{subfigure}
-\caption{En las imagenes (a) y (b) se enumeran los elementos que fueron considerados al modelar el sistema vibratorio. [1] Barra de carga. [2] Probeta ($k_2$), que se encuentra cubierta por ambas mordazas. [3] Mordaza sujeta al brazo de carga. [4] Mordaza empotrada a la máquina. [5] Barra de transmisión de la carga. [6] Disco desbalanceado. [7] Soportes de contrapeso. [8] Sistema de vigas en voladizo ($k_1$).}
+\caption{En las imagenes (a) y (b) se enumeran los elementos que fueron considerados al modelar el sistema vibratorio. (1) Barra de carga. (2) Probeta ($k_2$), que se encuentra cubierta por ambas mordazas. (3) Mordaza sujeta al brazo de carga. (4) Mordaza empotrada a la máquina. (5) Barra de transmisión de la carga. (6) Disco desbalanceado. (7) Soportes de contrapeso. (8) Sistema de vigas en voladizo ($k_1$).}
 \label{fig:elementos_modelo}
 \end{figure}
 
@@ -747,8 +750,8 @@ Además, se realizaron cálculos para comprobar el orden de magnitud obtenido a 
 \begin{tabular}{ccc}
 \hline
 Método & Barras en voladizo & Probeta \\ \hline
-Simulación Inventor & $98890.45$ [N/m] & $1809049.41$ [N/m] \\
-Cálculo & $9.216\cdot 10^5$ [N/m] & -- \\ \hline
+Simulación Inventor & $9.889\cdot 10^4$ [N/m] & $1.809049\cdot 10^6$ [N/m] \\
+Cálculo & $9.216\cdot 10^4$ [N/m] & -- \\ \hline
 \end{tabular}
 \caption{Valores obtenidos de la rigidez de las barras de acero y la probeta de acero}
 \label{tab:k_valor}
@@ -794,7 +797,7 @@ La excentricidad del centro de masa $e_{ga}$ se calculó utilizando los datos de
 \begin{equation}
 	e_{ga} = \frac{R_d\cdot (m_1 - m_2)}{(m_1 + m_2)}
 \end{equation}
-\subsection{Función de la aceleración del disco}
+\subsection{Función de aceleración del disco}
 \label{sec:function_angle}
 La filosofía detrás de la función $\phi$ es poder controlar el tiempo de retraso de la rotación del disco, que se designará como $T_i$, y suavizar la aceleración del mismo hasta que llega a la velocidad de rotación máxima $\omega_{max}$. Para esto, la función de la aceleración $\ddot{\phi}(t)$ se formuló como una función por partes, como se ve en la imagen \ref{fig:anglepp}, donde el parámetro $T$ indicará la suavidad con la que es acelerado el disco. Estas tres constantes, $T_i$, $\omega_{max}$ y $T$, son valores de entrada que se eligen dependiendo de los resultados que se deseen.
 \begin{figure}[h]
@@ -847,7 +850,7 @@ La función $\phi_3$ correspondiente al dominio cuando $t$ es mayor a $T_i + T$ 
 Para el desarrollo de este trabajo, el tiempo de retraso de la aceleración del disco será de $T_i=2$, instante en el que la barra se encuentra en un estado de reposo en consecuencia del valor de los amortiguamientos $c_1$ y $c_2$. Por otro lado, se definirá $T = 2,5$ como un valor que logra suavizar la aceleración, pero sin dilatar en exceso la llegada al punto de velocidad máxima. Finalmente, $\omega_{max}\,$ el valor por defecto corresponderá a la velocidad actual de la máquina de 25 [rad/s] (1500 revoluciones por minuto), sin embargo, este se puede variar dependiendo de los resultados que se deseen obtener. 
 
 \subsection{Solución del modelo}
-Para resolver el sistema de ecuaciones que se obtuvo en \ref{eq:mov_matriz}, se utilizó el solver de ecuaciones diferenciales ordinarias de MATLAB, ode45, que se basa en el método de Runge-Kutta con un espacio de tiempo variable para resolver sistemas de EDOs de primer orden y con condición inicial. 
+Para resolver el sistema de ecuaciones que se obtuvo en \ref{eq:mov_matriz}, se utilizó el solver de ecuaciones diferenciales ordinarias de MATLAB, ode45, que se basa en el método de Runge-Kutta con un espacio de tiempo variable para resolver sistemas de EDOs de primer orden y con condición inicial. \cite{ode45}
 
 Para resolverlo es necesario ingresar datos de entrada al sistema. Para esto, primero se debe escoger la configuración de contrapesos $m_1$ y $m_2$ a partir de la tabla de cargas. El segundo de ellos es el tiempo que define los límites de integración de la función, el que se escogerá según la cantidad de información que se desee obtener. En tercer lugar, se deben ingresar los valores de la condición inicial correspondiente a cada variable. Por último, es opcional añadir valores de tolerancia relativa y absoluta.
 
@@ -884,22 +887,27 @@ Los información que se busca de estos resultados corresponde a la carga que es 
 Con los datos de la carga máxima $F_{max}$, obtenidos a partir de la solución del modelo expuesto anteriormente, para cada combinación de contrapesos, se realizará un análisis estático de los esfuerzos asociados a cada configuración, en otras palabras, se buscará relacionar cada combinación con los esfuerzos respectivos a una velocidad angular máximo $\omega_{max}$ de 25 [rad/s]. Para esto, se simulará la probeta a través del software de elementos finitos ANSYS, con el fin de obtener el esfuerzo máximo equivalente (o de von Mises), el esfuerzo máximo cortante, normal y sus respectivas deformaciones. Finalmente, se compararán los resultados de este análisis con la tabla de cargas existente. Debido a lo alto de las cargas obtenidas, sólo se considerarán las simulaciones que lleven a la probeta lo más cercano al punto de esfuerzo último, por lo tanto, la probeta será sometida a 77 cargas distintas. 
 
 \subsection{Tipo de simulación}
-Al llevar a la probeta a cargas que sobrepasan el esfuerzo de fluencia del material, es necesario utilizar un modelo elasto-plástico para el correcto desarrollo de la simulación. En consecuencia, se utilizará el modelo de plasticidad multilineal de endurecimiento isotrópico (MISO, utilizado comúnmente para el análisis en grandes deformaciones. Este modelo se debe alimentar con los datos de distintos puntos de esfuerzo y deformación plástica real de un ensayo de tracción del material, creando una curva con los distintos puntos introducidos donde la primera pendiente es la zona elástica. Este modelo no permite que en la zona plástica hayan pendientes más grandes que en la zona elástica ni pendientes negativas. 
+Al llevar a la probeta a cargas que sobrepasan el esfuerzo de fluencia del material, es necesario utilizar un modelo elasto-plástico para el correcto desarrollo de la simulación. En consecuencia, se utilizará el modelo de plasticidad multilineal de endurecimiento isotrópico (MISO), utilizado comúnmente para el análisis en grandes deformaciones. Este modelo se debe alimentar con los datos de distintos puntos de esfuerzo y deformación plástica real de un ensayo de tracción del material, creando una curva con los distintos puntos introducidos donde la primera pendiente es la zona elástica. Este modelo no permite que en la zona plástica hayan pendientes más grandes que en la zona elástica ni pendientes negativas. 
 
 \subsection{Propiedades del material}
 \subsubsection{Medición de la dureza}
-Para conocer a que acero correspondía el utilizado en las probetas que existen actualmente, se realizó un ensayo de dureza del material. Este ensayo se realizó en los laboratorios de tecnología mecánica en un medidor de dureza de escala Rockwell, marca Wilson del año \textcolor{red}{Colocar año}. Se realizaron tres mediciones en distintas caras de la probeta en la configuración de Rockwell B, de las cuales se obtuvieron:
+Para conocer a que acero correspondía el utilizado en las probetas que existen actualmente, se realizó un ensayo de dureza del material. Este ensayo se realizó en los laboratorios de tecnología mecánica en un medidor de dureza de escala Rockwell, marca Wilson del año 1970. Se realizaron tres mediciones en distintas caras de la probeta en la configuración de Rockwell B, de las cuales se obtuvieron:
 \begin{gather*}
 	H_1 = 54 \text{ HRB} \qquad \qquad H_2 = 56 \text{ HRB} \qquad \qquad H_3 = 54 \text{ HRB}
 \end{gather*}
-Por lo tanto se considerará una dureza del material de $H = 54.6$ HRB. Sin embargo, debido a la antiguedad del equipo, la norma \textbf{ISO 18265:2013 - Conversion of hardness values} establece que se debe realizar una corrección a estos valores debido al cambio de indentador utilizado y la reducción del tiempo de fuerza aplicado durante la medición. De esta forma, la dureza final promedio que se obtuvo corresponde a $H = 54.8$ HRB. Por último, en base a esta misma norma, se puede realizar la conversión a dureza Vickers, siendo $H = 98.3 \approx 100$ HV y obtener el valor de un esfuerzo último de referencia $\sigma_u(\texttt{@}\text{HV}=100) = 315 \; \text{MPa}$.
+Por lo tanto se considerará una dureza del material de $H = 54.6$ HRB. Sin embargo, debido a la antiguedad del equipo, la norma \textbf{ISO 18265:2013 - Conversion of hardness values} \cite{ISO18265} establece que se debe realizar una corrección a estos valores debido al cambio de indentador utilizado y la reducción del tiempo de fuerza aplicado durante la medición. De esta forma, la dureza final promedio que se obtuvo corresponde a $H = 54.8$ HRB. Por último, en base a esta misma norma, se puede realizar la conversión a dureza Vickers, siendo $H = 98.3 \approx 100$ HV y obtener el valor de un esfuerzo último de referencia $\sigma_u(\texttt{@}\text{HV}=100) = 315 \; \text{MPa}$.
 
 \subsubsection{Curva de esfuerzo-deformación del acero}
-A causa de lo bajo del valor de dureza obtenido, sumado al hecho que en los únicos aceros utilizados en el laboratorio son SAE 1020 y 1040, es que se decide tomar las propiedades mecánicas del primero de estos. Los datos utilizados se obtuvieron de un ensayo de tracción realizado por la Universidad de Washington de un acero SAE 1020 laminado en caliente (AISI 1020 HR)\textcolor{red}{citar}. Estos datos contienen la fuerza aplicada, la deformación sufrida y el diámetro original de la probeta, para los cuales se utilizaron las ecuaciones \ref{eq:true_esf} y \ref{eq:true_strain} para obtener los esfuerzos y deformaciones reales y el factor de corrección de Bridgman \ref{eq:bridgman}. En la imagen REF, se pueden apreciar la curva original de esfuerzo-deformación y la curva de esfuerzo-deformación real. 
+A causa de lo bajo del valor de dureza obtenido, sumado al hecho que en los únicos aceros utilizados en el laboratorio son SAE 1020 y 1040, es que se decide tomar las propiedades mecánicas del primero de estos. Los datos utilizados se obtuvieron de un ensayo de tracción realizado por la Universidad de Washington de un acero SAE 1020 laminado en caliente (AISI 1020 HR)\cite{1020data}. Estos datos contienen la fuerza aplicada, la deformación sufrida y el diámetro original de la probeta, para los cuales se utilizaron las ecuaciones \ref{eq:true_esf} y \ref{eq:true_strain} para obtener los esfuerzos y deformaciones reales y el factor de corrección de Bridgman \ref{eq:bridgman}. En la imagen \ref{fig:esf_realing}, se pueden apreciar la curva original de esfuerzo-deformación ingenieril y la curva de esfuerzo-deformación real. 
 
-\textcolor{red}{imagen de ambas curvas}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\linewidth]{Imagenes/esf_real-ing.pdf}
+\caption{Curva de esfuerzo-deformación del material AISI 1020 en valores ingenieriles y reales.}
+\label{fig:esf_realing}
+\end{figure}
 
-Sin embargo, debido a las características del modelo MISO, se utilizaron exclusivamente los puntos de la zona plástica y que su pendiente no fuese menor a cero entre dos puntos, por lo tanto, la tabla \ref{tab:esfdef_util} muestra los datos utilizados y la imagen REF representa estos puntos.
+Sin embargo, debido a las características del modelo MISO, se utilizaron exclusivamente los puntos de la zona plástica y que su pendiente no fuese menor a cero entre dos puntos, por lo tanto, la tabla \ref{tab:esfdef_util} muestra los datos utilizados.
 
 \begin{table}[]
 \centering
@@ -917,31 +925,15 @@ Sin embargo, debido a las características del modelo MISO, se utilizaron exclus
 0,9278 & 611,5 \\
 1,0877 & 649,1 \\ \bottomrule
 \end{tabular}
-\caption{Datos utilizados del ensayo de esfuerzo-deformación del acero AISI 1020 HR en el modelo MISO. Fuente: }
+\caption{Datos utilizados del ensayo de esfuerzo-deformación del acero AISI 1020 HR en el modelo MISO.}
 \label{tab:esfdef_util}
 \end{table}
 
-Por otro lado, para la deformación elástica se usará un modelo de elasticidad $E =$ 200 GPa y el esfuerzo de fluencia $\sigma_y=$ 293,5 MPa.
+Por otro lado, para la deformación elástica se usará un modelo de elasticidad $E =$ 200 GPa, el esfuerzo de fluencia es $\sigma_y=$ 293,5 MPa y el esfuerzo último $\sigma_u =$ 418,5 MPa.
 
-\subsection{Configuración de la simulación estática}
-\subsubsection{Condiciones de contorno}
-El doble empotramiento al cual está sometida la probeta se aplicará restringiendo el movimiento en cada cara de uno de sus extremos. Utilizando la imagen \ref{fig:cond_borde} como referencia, las caras amarilla se encuentran restringidas de desplazamiento en el eje normal a su plano. Así, ambas caras paralelas al plano $xz$ tienen una restricción de desplazamiento de $\Delta y = 0$, las caras del plano $xy$ están restringidas de desplazamiento en el eje $z$ con $\Delta z = 0$ y la cara posterior del plano $yz$ su desplazamiento es $\Delta x = 0$.
-
-Por otro lado, el otro extremo empotrado se le aplicarán las cargas máximas que se obtuvieron del modelo del sistema vibratorio, $F_{max}$. Sin embargo, no se aplicará como una carga puntual, sino como una presión sobre la cara roja de la probeta, según la imagen \ref{fig:cond_borde}. Para esto, se trasnformará la carga puntual a presión utilizando la relación:
-\begin{equation}
-	P_{max} = \frac{F_{max}}{A_{c,l}}
-\end{equation}
-Donde $P_{max}$ es la presión aplicada sobre la cara y $A_{c,l}$ el área de la cara lateral sobre el cual se aplica la carga, es decir la sección roja. Al medir esta área a través del modelo CAD, se obtiene $A_{c,l} = 402.792 \text{ mm}^2$
-
-\begin{figure}[]
-\centering
-\includegraphics[width=0.7\linewidth]{Imagenes/cond_borde.png}
-\caption{Condiciones de contorno aplicadas en la probeta. Las caras amarillas representan las restricciones de desplazamiento y la cara roja la presión aplicada.}
-\label{fig:cond_borde}
-\end{figure}
-
-\subsubsection{Malla}
-Producto de lo irregular de la geometría de la probeta y la importancia que tienen para los resultados la zona media, por sobre los agarres, es que se opta por mallar para cada sección. En los parámetros generales del mallado se utilizaron parámetros que buscaran mejorar su calidad. \textcolor{red}{referencia al manual de ansys}
+\subsection{Generación de la malla}
+\label{sec:gen_malla}
+Producto de lo irregular de la geometría de la probeta y la importancia que tienen para los resultados la zona media, por sobre los agarres, es que se opta por mallar para cada sección. En los parámetros generales del mallado se utilizaron parámetros que buscaran mejorar su calidad\footnote{La definición de cada opción se encuentra en el manual de ANSYS. \cite{sharcnet_mesh}}.
 
 \begin{itemize*}
 	\item Sizing
@@ -957,7 +949,7 @@ Producto de lo irregular de la geometría de la probeta y la importancia que tie
 		\end{itemize*}
 \end{itemize*}
 
-Para obtener los resultados de una malla que se adaptara a los requisitos, primero se utiliza el \textit{body sizing} y el \textit{face sizing}. Así, la configuración utilizada para cada sección es la siguiente:
+Para obtener los resultados de una malla que se adaptara a los requisitos, primero se utiliza el \textit{body sizing} y el \textit{face sizing}. Así, la configuración utilizada para cada sección es la siguiente\footnote{La definición de cada opción se encuentra en el manual de ANSYS. \cite{sharcnet_mesh}}:
 \begin{itemize*}
 	\item Probeta completa
 		\begin{itemize*}
@@ -992,34 +984,53 @@ Para obtener los resultados de una malla que se adaptara a los requisitos, prime
 \label{fig:zona_probeta}
 \end{figure}
 
-%\begin{figure}[p]
-%\centering
-%	\begin{subfigure}{0.5\linewidth}
-%		\centering
-%		\includegraphics[width=1\linewidth]{Imagenes/mgen_iso.png}
-%		\caption{}\label{fig:mgen_iso}
-%	\end{subfigure}%
-%	\begin{subfigure}{0.5\linewidth}
-%		\centering
-%		\includegraphics[width=1\linewidth]{Imagenes/mdet_iso.png}
-%		\caption{}\label{fig:mdet_iso}
-%	\end{subfigure}
-%	\par\bigskip
-%	\par\bigskip
-%	\begin{subfigure}{0.5\linewidth}
-%		\centering
-%		\includegraphics[width=0.9\linewidth]{Imagenes/mcorte.png}
-%		\caption{}\label{fig:mcorte}
-%	\end{subfigure}%
-%		\begin{subfigure}{0.5\linewidth}
-%		\centering
-%		\includegraphics[width=0.7\linewidth]{Imagenes/mcorte_det.png}
-%		\caption{}\label{fig:mcorte_det}
-%	\end{subfigure}
-%	\par\bigskip
-%\caption{(a) Vista isométrica general de la malla. (b) Detalle en isométrico de la zona media y la sección transversal. (c) Malla de la sección transversal media. (d) Detalle de la malla de la sección transversal media.}
-%\label{fig:malla}
-%\end{figure}
+\begin{figure}[p]
+\centering
+	\begin{subfigure}{0.5\linewidth}
+		\centering
+		\includegraphics[width=1\linewidth]{Imagenes/mgen_iso.png}
+		\caption{}\label{fig:mgen_iso}
+	\end{subfigure}%
+	\begin{subfigure}{0.5\linewidth}
+		\centering
+		\includegraphics[width=1\linewidth]{Imagenes/mdet_iso.png}
+		\caption{}\label{fig:mdet_iso}
+	\end{subfigure}
+	\par\bigskip
+	\par\bigskip
+	\begin{subfigure}{0.5\linewidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{Imagenes/mcorte.png}
+		\caption{}\label{fig:mcorte}
+	\end{subfigure}%
+		\begin{subfigure}{0.5\linewidth}
+		\centering
+		\includegraphics[width=0.7\linewidth]{Imagenes/mcorte_det.png}
+		\caption{}\label{fig:mcorte_det}
+	\end{subfigure}
+	\par\bigskip
+\caption{(a) Vista isométrica general de la malla. (b) Detalle en isométrico de la zona media y la sección transversal. (c) Malla de la sección transversal media. (d) Detalle de la malla de la sección transversal media.}
+\label{fig:malla}
+\end{figure}
+
+\newpage			% Revisar en corrección final
+
+\subsection{Configuración de la simulación estática}
+\subsubsection{Condiciones de contorno}
+El doble empotramiento al cual está sometida la probeta se aplicará restringiendo el movimiento en cada cara de uno de sus extremos. Utilizando la imagen \ref{fig:cond_borde} como referencia, las caras amarilla se encuentran restringidas de desplazamiento en el eje normal a su plano. Así, ambas caras paralelas al plano $xz$ tienen una restricción de desplazamiento de $\Delta y = 0$, las caras del plano $xy$ están restringidas de desplazamiento en el eje $z$ con $\Delta z = 0$ y la cara posterior del plano $yz$ su desplazamiento es $\Delta x = 0$.
+
+Por otro lado, el otro extremo empotrado se le aplicarán las cargas máximas que se obtuvieron del modelo del sistema vibratorio, $F_{max}$. Sin embargo, no se aplicará como una carga puntual, sino como una presión sobre la cara roja de la probeta, según la imagen \ref{fig:cond_borde}. Para esto, se trasnformará la carga puntual a presión utilizando la relación:
+\begin{equation}\label{eq:p_max}
+	P_{max} = \frac{F_{max}}{A_{c,l}}
+\end{equation}
+Donde $P_{max}$ es la presión aplicada sobre la cara y $A_{c,l}$ el área de la cara lateral sobre el cual se aplica la carga, es decir la sección roja. Al medir esta área a través del modelo CAD, se obtiene $A_{c,l} = 402.792 \text{ mm}^2$
+
+\begin{figure}[]
+\centering
+\includegraphics[width=0.7\linewidth]{Imagenes/cond_borde.png}
+\caption{Condiciones de contorno aplicadas en la probeta. Las caras amarillas representan las restricciones de desplazamiento y la cara roja la presión aplicada.}
+\label{fig:cond_borde}
+\end{figure}
 
 \subsubsection{Selección de elementos}
 Dado que los esfuerzos máximos se encuentran en la sección media de la probeta, los resultados de la simulaciones se tomarán en los puntos específicos P, Q y R, cuya ubicación es mostrada en la imagen \ref{fig:diag_pqr}. Para esto, se seleccionarán los elementos que están en esa ubicación para posteriormente graficar sus resultados respecto a cada carga.
@@ -1031,17 +1042,15 @@ Dado que los esfuerzos máximos se encuentran en la sección media de la probeta
 \label{fig:diag_pqr}
 \end{figure}
 
-\newpage
-
 \subsubsection{Obtención de resultados}
 En base a los elementos seleccionados, los resultados que se necesitan son:
 \begin{itemize*}
 	\item Esfuerzo equivalente o de von Mises ($\sigma_{vm}$)
 	\item Esfuerzo máximo cortante ($\tau_{max}$)
-	\item Esfuerzo máximo normal en dirección \textit{x} ($\sigma_{xx}$), según referencia \ref{fig:cond_borde}.
+	\item Esfuerzo máximo normal en dirección \textit{x} ($\sigma_{x}$), según referencia \ref{fig:cond_borde}.
 	\item Deformación unitaria equivalente total ($\varepsilon_{vm,t}$)
 	\item Deformación unitaria equivalente elástica ($\varepsilon_{vm,e}$)
-	\item Deformación unitaria normal elástica ($\varepsilon_{xx}$)
+	\item Deformación unitaria normal elástica ($\varepsilon_{x}$)
 \end{itemize*}
 
 Además, a modo de referencia se utilizarán los resultados globales:
@@ -1052,17 +1061,3 @@ Además, a modo de referencia se utilizarán los resultados globales:
 	\item Deformación unitaria equivalente total
 	\item Deformación en dirección \textit{y}, según referencia \ref{fig:cond_borde}
 \end{itemize*}
-
-
-
-
-
-
-
-
-
-
-
-
-
-

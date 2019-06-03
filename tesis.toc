@@ -1,29 +1,33 @@
 \babel@toc {spanish}{}
-\contentsline {chapter}{\numberline {1}Marco Te\IeC {\'o}rico}{4}{chapter.1}
-\contentsline {section}{\numberline {1.1}Fatiga}{4}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Definiciones}{4}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Curva S-N o de W\IeC {\"o}hler}{7}{subsection.1.1.2}
-\contentsline {subsection}{\numberline {1.1.3}Esfuerzo medio, $S_m$}{9}{subsection.1.1.3}
-\contentsline {subsubsection}{Dise\IeC {\~n}o para esfuerzos uniaxiales fluctuantes}{10}{section*.9}
-\contentsline {subsubsection}{Diagramas de esfuerzos alternantes normalizados y medios}{11}{section*.11}
-\contentsline {section}{\numberline {1.2}Din\IeC {\'a}mica}{12}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Ecuaciones de movimiento de un cuerpo r\IeC {\'\i }gido}{12}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Energ\IeC {\'\i }a cin\IeC {\'e}tica de un cuerpo r\IeC {\'\i }gido}{13}{subsection.1.2.2}
-\contentsline {section}{\numberline {1.3}Vibraciones}{13}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Rigidez}{14}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Damping}{14}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}Vibraciones forzadas}{15}{subsection.1.3.3}
-\contentsline {subsection}{\numberline {1.3.4}Modeling}{16}{subsection.1.3.4}
-\contentsline {subsection}{\numberline {1.3.5}Sistema de m\IeC {\'u}ltiples grados de libertad}{17}{subsection.1.3.5}
-\contentsline {subsection}{\numberline {1.3.6}M\IeC {\'e}todo de energ\IeC {\'\i }a}{18}{subsection.1.3.6}
-\contentsline {subsection}{\numberline {1.3.7}Ecuaciones de energ\IeC {\'\i }a para un sistema con amortiguamiento y forzado}{19}{subsection.1.3.7}
-\contentsline {section}{\numberline {1.4}Plasticidad}{20}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}Esfuerzo y deformaci\IeC {\'o}n real}{21}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}Factor de correcci\IeC {\'o}n de Bridgman}{21}{subsection.1.4.2}
-\contentsline {subsection}{\numberline {1.4.3}Endurecimiento por deformaci\IeC {\'o}n isotr\IeC {\'o}pico}{22}{subsection.1.4.3}
-\contentsline {section}{\numberline {1.5}M\IeC {\'e}todo de elementos finitos}{22}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Ecuaci\IeC {\'o}n del momentum lineal}{22}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}Esfuerzo y deformaci\IeC {\'o}n}{23}{subsection.1.5.2}
-\contentsline {subsubsection}{Esfuerzo y deformaci\IeC {\'o}n unitaria de von Mises}{23}{section*.15}
-\contentsline {subsubsection}{Esfuerzo m\IeC {\'a}ximo cortante}{24}{section*.16}
-\contentsline {subsubsection}{Esfuerzo y deformaci\IeC {\'o}n normal}{24}{section*.17}
+\contentsline {chapter}{\numberline {A}Norma de c\IeC {\'a}lculo en madera - NCh1198}{4}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Propiedades de la madera y factores de modificaci\IeC {\'o}n}{4}{section.Alph1.1}
+\contentsline {subsection}{\numberline {A.1.1}Contenido de humedad}{4}{subsection.Alph1.1.1}
+\contentsline {subsection}{\numberline {A.1.2}Densidad}{5}{subsection.Alph1.1.2}
+\contentsline {subsection}{\numberline {A.1.3}Tensiones admisibles y m\IeC {\'o}dulo de elasticidad}{6}{subsection.Alph1.1.3}
+\contentsline {subsection}{\numberline {A.1.4}Factores de modificaci\IeC {\'o}n}{6}{subsection.Alph1.1.4}
+\contentsline {section}{\numberline {A.2}Dise\IeC {\~n}o de piezas}{6}{section.Alph1.2}
+\contentsline {subsection}{\numberline {A.2.1}Flexi\IeC {\'o}n}{7}{subsection.Alph1.2.1}
+\contentsline {subsubsection}{Factor de modificaci\IeC {\'o}n por altura, $K_{hf}.$}{7}{section*.5}
+\contentsline {subsubsection}{Factor de modificaci\IeC {\'o}n por volcamiento, $K_V.$}{8}{section*.6}
+\contentsline {subsection}{\numberline {A.2.2}Cizalle en vigas simples}{8}{subsection.Alph1.2.2}
+\contentsline {subsection}{\numberline {A.2.3}Compresi\IeC {\'o}n paralela a la fibra}{9}{subsection.Alph1.2.3}
+\contentsline {subsection}{\numberline {A.2.4}Compresi\IeC {\'o}n normal a la fibra}{10}{subsection.Alph1.2.4}
+\contentsline {section}{\numberline {A.3}Nomenclatura y tipos de madera}{10}{section.Alph1.3}
+\contentsline {section}{\numberline {A.4}Uniones en la madera estrutural}{12}{section.Alph1.4}
+\contentsline {subsection}{\numberline {A.4.1}Generalidades}{12}{subsection.Alph1.4.1}
+\contentsline {subsection}{\numberline {A.4.2}Verificaciones tensionales}{14}{subsection.Alph1.4.2}
+\contentsline {subsubsection}{Secci\IeC {\'o}n transversal neta}{14}{section*.10}
+\contentsline {subsubsection}{Tensiones de cizalle}{14}{section*.11}
+\contentsline {subsection}{\numberline {A.4.3}N\IeC {\'u}mero de elementos de uni\IeC {\'o}n}{17}{subsection.Alph1.4.3}
+\contentsline {subsubsection}{Carga admisible y factor de modificaci\IeC {\'o}n por longitud de hilera}{17}{section*.13}
+\contentsline {subsection}{\numberline {A.4.4}Uniones con perno}{17}{subsection.Alph1.4.4}
+\contentsline {subsubsection}{Cargas admisibles para un perno}{18}{section*.14}
+\contentsline {subsubsection}{Espaciamientos m\IeC {\'\i }nimos para pernos}{20}{section*.16}
+\contentsline {subsection}{\numberline {A.4.5}Uniones con tirafondos}{20}{subsection.Alph1.4.5}
+\contentsline {subsubsection}{Perforaciones gu\IeC {\'\i }a}{22}{section*.19}
+\contentsline {subsubsection}{Arandelas}{23}{section*.20}
+\contentsline {subsubsection}{Solicitaciones de extracci\IeC {\'o}n lateral}{23}{section*.21}
+\contentsline {subsubsection}{Solicitaciones de extracci\IeC {\'o}n directa}{24}{section*.22}
+\contentsline {subsubsection}{Combinaci\IeC {\'o}n de solicitaciones de extracci\IeC {\'o}n directa y lateral}{25}{section*.23}
+\contentsline {subsubsection}{Espaciamiento}{25}{section*.24}
+\contentsline {chapter}{Bibliograf\'{\i }a}{26}{section*.25}

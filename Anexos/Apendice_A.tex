@@ -27,7 +27,7 @@ Así la tabla \ref{tab:tabla3_1198} se utiliza de criterio para clasificar la ma
 \end{tabular}%
 }
 \caption{Condiciones que se deben considerar en la determinación de tensiones admisibles y módulo de
-elasticidad}
+elasticidad. \cite{nch1198}}
 \label{tab:tabla3_1198}
 \end{table}
 
@@ -127,7 +127,7 @@ La tensión de trabajo de una columna simple sometida a compresión paralela a s
 	f_{cp}= \frac{N}{A} \cdot 10^{-3} \qquad \text{(MPa)}
 \end{equation}
 
-Donde N es la carga axial aplicada en kN, y A el área de la sección transversal en mm$^2$. \\
+Donde N es la carga axial aplicada en kN, y A el área de la sección transversal en mm$^2$. 
 
 El cálculo de la tensión de diseño en compresión paralela ($F_{cp,dis}$) dependerá de la inestabilidad lateral ($\lambda$), la cual, dependiendo de su valor, será necesario calcular un factor de modificación por esbeltez, como también pondrá restricciones al diseño. Así, se puede obtener $F_{cp,dis}$ a partir de las ecuaciones \ref{eq:cp_dis} y \ref{eq:cp_dislambda}. 
 
@@ -164,8 +164,9 @@ La tensión de trabajo por aplastamiento en superficies de apoyo, solicitadas or
 \begin{equation}
 	f_{cn}= \frac{R}{A_n} \qquad \text{(MPa)}
 \end{equation}
-Donde $R$ es la carga aplicada, en N y $A_n$ la sección neta aplastada, en mm$^2$.
-\\
+
+Donde $R$ es la carga aplicada y $A_n$ la sección neta aplastada.
+
 La tensión de diseño en compresión normal, se calcula a partir de la siguiente expresión:
 \begin{equation}
 	F_{cn,dis} = F_{cn} \cdot K_H \cdot K_C \cdot K_{cn}
@@ -181,7 +182,7 @@ Más allá de la especie, en el mercado es posible encontrar madera con distinta
 	\item Madera laminada: También conocida como laminada-encolada, es la unión de tablas similares, de canto o de tope, manteniendo la misma dirección de las fibras, utulizando adhesivos sobre sus caras.
 \end{itemize}
 
-Por otro lado, existen distintas configuraciones dependiendo de la escuadría y la forma de la sección:
+Por otro lado, existen distintas configuraciones dependiendo de la escuadría y la forma de la sección \cite{sistemasconstructivos}:
 \begin{itemize}
 	\item Listón: Elemento de escuadría 1x2'', 2x2'', 2x3'' y 2x4''.
 	\item Tabla: Elemento donde prevalece el alto por sobre el espesor, comúnmente de escuadrías 1x4'', 1x5'' o 1x6''.
@@ -202,7 +203,7 @@ Todas las dimensiones, independiente del formato o el tipo, son respecto a la ma
 2                                 & 48                   & 45                 & 41                 \\ \midrule
 Tolerancia {[}mm{]}               & 0/+2                 & 0/+3               & 0/+2               \\ \bottomrule
 \end{tabular}
-\caption{Espesor nominal y real de la madera según el tratamiento recibido}
+\caption{Espesor nominal y real de la madera según el tratamiento recibido.}
 \label{tab:espdim}
 \end{table}
 
@@ -221,7 +222,7 @@ Tolerancia {[}mm{]}               & 0/+2                 & 0/+3               & 
 10                                      & 248                  & 235                & 230                \\ \midrule
 Tolerancia {[}mm{]}                     & 0/+2                 & 0/+3               & 0/+2               \\ \bottomrule
 \end{tabular}
-\caption{Ancho nominal y real de la madera según el tratamiento recibido}
+\caption{Ancho nominal y real de la madera según el tratamiento recibido.}
 \label{tab:anchodim}
 \end{table}
 
@@ -257,16 +258,12 @@ Antes de comenzar a hablar de las expresiones que determinan el comportamiento d
 
 Las cargas admisibles especificadas en el capítulo 10 de la norma son para uniones colocadas en madera seca y que se mantendrá seca después de su construcción. Para madera semiseca o verde durante su construcción y madera seca que durante su servicio aumenta su contenido de humedad por sobre el 19\%, se le deberá aplicar el factor de modificación $K_{UH}$ señalado en las tablas 28 y 29, de la sección \textbf{10.1.7} de la norma.
 
-\newpage
-
-\begin{figure}[H]
+\begin{figure}[p]
 \centering
-\includegraphics[width=1\linewidth]{Imagenes/figura_17.pdf}
-\caption{Designaciones de espaciamientos y bordes. Fuente: NCh1198 - Madera - Construcciones en madera - Cálculo.}
+\includegraphics[width=1\linewidth, angle=1,origin=c]{Imagenes/figura_17.pdf}
+\caption{Designaciones de espaciamientos y bordes. \cite{nch1198}}
 \label{fig:nch_17}
 \end{figure}
-
-\newpage
 
 \subsection{Verificaciones tensionales}
 \subsubsection{Sección transversal neta}
@@ -299,7 +296,7 @@ Los valores $h$ y $h_e$ se muestran en la figura \ref{fig:nch_19}. El valor $h_e
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.45\linewidth]{Imagenes/figura_19.pdf}
-\caption{Valor de $h_e$, para los distintos elementos de unión. Fuente: NCh1198 - Madera - Construcciones en madera - Cálculo.}
+\caption{Valor de $h_e$, para los distintos elementos de unión. \cite{nch1198}}
 \label{fig:nch_19}
 \end{figure}
 
@@ -351,9 +348,9 @@ Donde:
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.5\linewidth]{Imagenes/figura_23A.pdf}%
-\includegraphics[width=0.5\linewidth]{Imagenes/figura_23B.pdf}
-\caption{Uniones en cizalle doble. Fuente: NCh1198 - Madera - Construcciones en madera - Cálculo.}
+\includegraphics[width=0.5\linewidth, angle=1,origin=c]{Imagenes/figura_23A.pdf}%
+\includegraphics[width=0.5\linewidth, angle=1,origin=c]{Imagenes/figura_23B.pdf}
+\caption{Uniones en cizalle doble. \cite{nch1198}}
 \label{fig:nch_23}
 \end{figure}
 
@@ -379,12 +376,10 @@ El segundo caso, cuando las piezas son de igual espesor, la carga admisible equi
 \label{sec:espaciamiento_pernos}
 Los espaciamientos mínimos que se deben respetar en las uniones con pernos se esquematizan en la figura \ref{fig:nch_26}. El espaciamiento mínimo entre los pernos y los bordes cargados o descargados se establecen en función del diámetro del mismo, determinados por la tabla 36 de la sección \textbf{10.5.4} de la norma. El espaciamiento mínimo ente los pernos mismos, se establecen en la tabla 37 de la misma sección. 
 
-\newpage
-
-\begin{figure}[H]
+\begin{figure}[p]
 \centering
-\includegraphics[width=1\linewidth]{Imagenes/figura_26.pdf}%
-\caption{Espaciamientos mínimos ntre pernos, barras de acero, tirafondos y a los bordes. Fuente: NCh1198 - Madera - Construcciones en madera - Cálculo.}
+\includegraphics[width=1\linewidth, angle=1,origin=c]{Imagenes/figura_26.pdf}%
+\caption{Espaciamientos mínimos ntre pernos, barras de acero, tirafondos y a los bordes. \cite{nch1198}}
 \label{fig:nch_26}
 \end{figure}
 
@@ -397,7 +392,7 @@ Para obtener los valores de diseño para este tipo de unión, es necesario clasi
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\linewidth]{Imagenes/figura_28.pdf}%
-\caption{Esquema de un tirafondo. Fuente: NCh1198 - Madera - Construcciones en madera - Cálculo.}
+\caption{Esquema de un tirafondo. \cite{nch1198}}
 \label{fig:nch_28}
 \end{figure}
 

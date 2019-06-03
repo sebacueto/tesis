@@ -11,38 +11,45 @@ En la segunda etapa, las microgrietas pasan a ser macrogrietas, es decir, son vi
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.5\linewidth, trim={0cm 2cm 0cm 3cm},clip]{Imagenes/crack_fatigue.pdf}
-\caption{Crecimiento de una grieta durante un ciclo de carga perpendicular, dando origen a las marcas de playa. Fuente: Fatigue of structures and materials.}
+\caption{Crecimiento de una grieta durante un ciclo de carga perpendicular, dando origen a las marcas de playa. \cite{schijve2001fatigue}}
 \label{fig:crack_fat}
 \end{figure}
 
 Finalmente, la última etapa es la falla del material, que ocurre en el último ciclo de la carga, al no poder soportarla con el material restante. Esta fractura es rápida y es producto de una macro-deformación plástica, pudiendo ser frágil, dúctil o una combinación de ambas.
 
-Con esto en cuenta, es posible definir ciertos conceptos en base a las distintas etapas que experimenta un material. La vida a fatiga de un material (\textit{fatigue life}, $N_f$) es el número de ciclos aplicados a una probeta para lograr el criterio de falla \textcolor{red}{referencia a ISO 23718}. El límite de resistencia a la fatiga (\textit{endurance limit}) es frecuentemente explicado como la amplitud de esfuerzo para el cual la vida a fatiga tiende a infinito o a la asíntota de la curva S-N. Sin embargo, al comprender la fatiga como un proceso, es posible dar una definición más acertada para el límite a la fatiga, pasando a ser el umbral para el crecimiento de las microgrietas. Es decir, bajo este límite existe nucleación e iniciación de grites, sin embargo, su crecimiento está limitado a los bordes de grano del material.
+Con esto en cuenta, es posible definir ciertos conceptos en base a las distintas etapas que experimenta un material. La vida a fatiga de un material (\textit{fatigue life}, $N_f$) es el número de ciclos aplicados a una probeta para lograr el criterio de falla \cite{ISO23718}. El límite de resistencia a la fatiga (\textit{endurance limit}) es frecuentemente explicado como la amplitud de esfuerzo para el cual la vida a fatiga tiende a infinito o a la asíntota de la curva S-N. Sin embargo, al comprender la fatiga como un proceso, es posible dar una definición más acertada para el límite a la fatiga, pasando a ser el umbral para el crecimiento de las microgrietas. Es decir, bajo este límite existe nucleación e iniciación de grites, sin embargo, su crecimiento está limitado a los bordes de grano del material.
 
-Por otra parte, para el estudio de este fenómeno existen tres modelos de falla por fatiga: de \textit{esfuerzo-vida} ($S$-$N$), de \textit{deformación-vida }($\varepsilon$-N) y de la \textit{mecánica de fractura lineal elástica} (LEFM). Cada uno de ellos tiene ventajas y desventajas, sin embargo, la máquina que es objeto de evaluación en este trabajo utiliza el método \textit{esfuerzo-vida}. El criterio de elección entre los distintos modelos se divide principalmente por la cantidad de ciclos que se hará la medición, los que se clasifican en régimen de fatiga de ciclo bajo (\textit{low-cycle fatigue}, LCF) o un régimen de fatiga de ciclo alto (\textit{high-cycle fatigue}, HCF). La división entre ambos régimen dependerá de distintos autores, no obstante, por lo general se establece la separación en $10^3 \leq LCF$ y $10^3 > HCF$ \textcolor{red}{referencia al shigley - pag. 265}, debido a que la zona LCF está asociada a la existencia de macro-deformaciones plásticas en cada ciclo. De esta manera, el método de esfuerzo-vida se utiliza para ensayos de alto ciclaje debido a su poca precisión en casos LCF. A su vez, los métodos de deformación-vida y LEFM se aplican para casos LCF.
+Por otra parte, para el estudio de este fenómeno existen tres modelos de falla por fatiga: de \textit{esfuerzo-vida} ($S$-$N$), de \textit{deformación-vida }($\varepsilon$-N) y de la \textit{mecánica de fractura lineal elástica} (LEFM). Cada uno de ellos tiene ventajas y desventajas, sin embargo, la máquina que es objeto de evaluación en este trabajo utiliza el método \textit{esfuerzo-vida}. El criterio de elección entre los distintos modelos se divide principalmente por la cantidad de ciclos que se hará la medición, los que se clasifican en régimen de fatiga de ciclo bajo (\textit{low-cycle fatigue}, LCF) o un régimen de fatiga de ciclo alto (\textit{high-cycle fatigue}, HCF). La división entre ambos régimen dependerá de distintos autores, no obstante, por lo general se establece la separación en $10^3 \leq LCF$ y $10^3 > HCF$ \cite{budynas2008shigley}, debido a que la zona LCF está asociada a la existencia de macro-deformaciones plásticas en cada ciclo. De esta manera, el método de esfuerzo-vida se utiliza para ensayos de alto ciclaje debido a su poca precisión en casos LCF. A su vez, los métodos de deformación-vida y LEFM se aplican para casos LCF.
 
 En el método de esfuerzo-vida las muestras o probetas son sometidas a fuerzas de magnitudes especificadas, al mismo tiempo que se cuentan la cantidad de ciclos. Es por esto que es un modelo con base en el esfuerzo, con el cual se busca determinar una resistencia de fatiga o un límite de resistencia a la fatiga. 
 
 Estas fuerzas especificadas pueden ser constantes o variables en el tiempo y magnitud, sin embargo, se abordará principalmente los casos donde los esfuerzos fluctúan de manera constante en el tiempo y de una amplitud fija debido a las características de la máquina analizada en este trabajo. Esto permite trazar la curva de fatiga (S-N) del componente o material para distintas cargas con su respectivo número de ciclos que falla.
 
-Por esto, se hace necesario describir y definir elementos que surgen producto de una carga cíclica. Esta se caracteriza por el esfuerzo alternante (\textit{alternate stress} o \textit{amplitude stress}, $S_a$) y el esfuerzo medio (\textit{mean stress}, $S_m$) que se muestran en la ecuación \ref{eq:s_a} y \ref{eq:s_m}, respectivamente. A su vez, estas se definen por el esfuerzo máximo $S_{max}$ y $S_{min}$, siendo el esfuerzo máximo y mínimo alcanzado por la carga cíclica. Finalmente, el rango del esfuerzo, $\Delta S$ (eq. \ref{eq:ds}), y la razón de esfuerzos, $R$ (eq. \ref{eq:r_s}), también son opciones  para caracterizar la fatiga.
+Por esto, se hace necesario describir y definir elementos que surgen producto de una carga cíclica. Esta se caracteriza por el esfuerzo alternante (\textit{alternate stress} o \textit{amplitude stress}, $\sigma_a$) y el esfuerzo medio (\textit{mean stress}, $\sigma_m$) que se muestran en la ecuación \ref{eq:s_a} y \ref{eq:s_m}, respectivamente. A su vez, estas se definen por el esfuerzo máximo $\sigma_{max}$ y $\sigma_{min}$, siendo el esfuerzo máximo y mínimo alcanzado por la carga cíclica. Finalmente, el rango del esfuerzo, $\Delta \sigma$ o $\sigma_r$(eq. \ref{eq:ds}), y la razón de esfuerzos, $R$ (eq. \ref{eq:r_s}), también son opciones  para caracterizar la fatiga.
 
 \begin{align}
-	S_a &= \frac{S_{max} - S_{min}}{2} \label{eq:s_a} \\
-	S_m &= \frac{S_{max} + S_{min}}{2} \label{eq:s_m} \\
-	\Delta S &= S_{max} - S_{min} = 2S_a  \label{eq:ds} \\
-	R &= \frac{S_{min}}{S_{max}} \label{eq:r_s} 
+	\sigma_a &= \frac{\sigma_{max} - \sigma_{min}}{2} \label{eq:s_a} \\
+	\sigma_m &= \frac{\sigma_{max} + \sigma_{min}}{2} \label{eq:s_m} \\
+	\Delta \sigma &= \sigma_{max} - \sigma_{min} = 2\sigma_a  \label{eq:ds} \\
+	R &= \frac{\sigma_{min}}{\sigma_{max}} \label{eq:r_s} 
 \end{align}
 
-Estos términos se pueden ver claramente en la figura \textcolor{red}{Insertar imagen que muestra Sa Sm etc}. Existen dos casos específicos, el primero en donde $S_m = 0$, y así $R=-1$, se llama esfuerzo de ciclo invertido. El segundo, cuando $S_{min}=0$, y $R=0$, se llama esfuerzo repetido.
+Estos términos se pueden ver claramente en la figura \ref{fig:defesf_fat}. Existen dos casos específicos, el primero en donde $\sigma_m = 0$, y así $R=-1$, se llama esfuerzo de ciclo invertido. El segundo, cuando $\sigma_{min}=0$, y $R=0$, se llama esfuerzo repetido.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\linewidth, trim={0cm 1cm 0cm 2cm},clip]{Imagenes/defesf_fat.pdf}
+\caption{Definición de los esfuerzos alternantes, máximo, mínimo y medio. \cite{budynas2008shigley}}
+\label{fig:defesf_fat}
+\end{figure}
 
 \subsection{Curva S-N o de Wöhler}
 Como se señaló en el punto anterior, la curva S-N es el resultado de la aplicación del método esfuerzo-vida. Es quizás uno de las herramientas más importantes en el desarrollo empírico para lograr cuantificar el proceso de fatiga y poder diseñar contra este. El diagrama S-N se obtiene como resultado de un número de ensayos de fatiga a distintos niveles de esfuerzo, donde $S$ puede ser la amplitud ($S_a$), el rango de esfuerzo ($\Delta S$) o el esfuerzo máximo ($S_{max}$) que es aplicado a la probeta, siendo la amplitud lo más común. La variable $N$ hace referencia a la vida a fatiga del material, es decir, la cantidad de ciclos hasta que la probeta falle. Debido a que se desea analizar fallas en LCF y HCF, la cantidad de ciclos necesarios para fallar la probeta pueden llegar a ser demasiado altos, por esto, $N$ se grafica en escala logarítmica.
 
-La cantidad de ensayos requeridos para construir la curva S-N dependerá de distintos factores como, por ejemplo, la confiabilidad esperada, el uso final de la información o de los recursos disponibles. La norma E739-10 -- "Statistical Analysis of Linear or Linearized Stress-Life ($S$-$N$) and Strain-Life ($\varepsilon$-$N$) Fatigue Data", establece una guía dependiendo del tipo de prueba a realizar como se muestra en al tabla \ref{tab:type_test}. Además, se recomienda realizar la medición con, al menos, tres puntos de esfuerzos distintos. Con esto, es posible obtener el diagrama $S-N$ como el que se puede apreciar en la figura \ref{fig:lcf_hcf}, donde se puede apreciar la diferencia entre la zona LCF, HCF y de vida infinita, para el caso de los aceros.
+La cantidad de ensayos requeridos para construir la curva S-N dependerá de distintos factores como, por ejemplo, la confiabilidad esperada, el uso final de la información o de los recursos disponibles. La norma E739-10 -- "Statistical Analysis of Linear or Linearized Stress-Life ($S$-$N$) and Strain-Life ($\varepsilon$-$N$) Fatigue Data" \cite{E739} , establece una guía dependiendo del tipo de prueba a realizar como se muestra en al tabla \ref{tab:type_test}. Además, se recomienda realizar la medición con, al menos, tres puntos de esfuerzos distintos. Con esto, es posible obtener el diagrama $S-N$ como el que se puede apreciar en la figura \ref{fig:lcf_hcf}, donde se puede apreciar la diferencia entre la zona LCF, HCF y de vida infinita, para el caso de los aceros.
 
 
-\begin{table}[]
+\begin{table}[h]
 \begin{center}
 \begin{tabular}{@{}lc@{}}
 \toprule
@@ -52,15 +59,15 @@ La cantidad de ensayos requeridos para construir la curva S-N dependerá de dist
 Datos de diseños permisibles                                                                                              & 12 a 24                     \\
 Datos de confiabilidad                                                                                                    & 12 a 24                     \\ \bottomrule   
 \end{tabular}
-\caption{Número mínimo de pruebas según tipo de prueba}
+\caption{Número mínimo de pruebas según tipo de prueba. \cite{E739}}
 \label{tab:type_test}
 \end{center}
 \end{table}
 
-\begin{figure}[]
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.75\linewidth]{Imagenes/lcf_hcf.pdf}
-\caption{Diagrama $S$-$N$ obtenido a partir de los resultados de ensayos a fatiga axial con carga invertida. Se pueden apreciar las zonas LCF, HCF y la zona de vida infinita. Fuente: Diseño en ingeniería mecánica de Shigley}
+\caption{Diagrama $S$-$N$ obtenido a partir de los resultados de ensayos a fatiga axial con carga invertida. Se pueden apreciar las zonas LCF, HCF y la zona de vida infinita. \cite{budynas2008shigley}}
 \label{fig:lcf_hcf}
 \end{figure}
 
@@ -78,7 +85,7 @@ Como se escribió anteriormente, el esfuerzo medio tiene influencia en el result
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.6\textwidth]{Imagenes/s_n_mean.pdf}
-\caption{Diagrama $S$-$N$ de ensayos de fatiga axial con distintos esfuerzos medios. Fuente: Mechanical Behavior of Materials.}
+\caption{Diagrama $S$-$N$ de ensayos de fatiga axial con distintos esfuerzos medios. \cite{dowling2013mechanical}}
 \label{fig:s_n_mean}
 \end{figure}
 
@@ -87,7 +94,7 @@ Se utilizan distintas maneras de representar la información de un ensayo cuando
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7\textwidth]{Imagenes/diag_cfl.pdf}
-\caption{Diagrama de vida constante para aluminio 7075-T6. Fuente: Mechanical Behavior of Materials.}
+\caption{Diagrama de vida constante para aluminio 7075-T6. \cite{dowling2013mechanical}}
 \label{fig:diag_cfl}
 \end{figure}
 
@@ -97,11 +104,11 @@ Es importante tomar en consideración en el diseño de elementos la componente m
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\linewidth, trim={0cm 4.5cm 0cm 5.5cm},clip]{Imagenes/falla_fat.pdf}
-\caption{Curvas de estimación de falla a fatiga de Goodman, Gerber y Soderberg. Fuente: Diseño de máquina - Norton.}
+\caption{Curvas de estimación de falla a fatiga de Goodman, Gerber y Soderberg.\cite{norton2011machine}}
 \label{fig:falla_fat}
 \end{figure}
 
-La parábola de Gerber es la que mejor se ajusta a los datos de falla experimental, de acuerdo a la ecuación \ref{eq:gerber}; mientras que la línea de Goodman modificada, ecuación \ref{eq:good_mod}, se ajusta por debajo de la dispersión de datos. Ambas curvas utilizan en el eje $\sigma_a$ el límite de resistencia a la fatiga $S_e$ y el esfuerzo último $S_u$ en el eje $\sigma_m$. En cambio, la línea de Soderberg, ecuación \ref{eq:soderberg}, une $S_e$ con la resistencia a la fluencia del material $S_y$ y es, por lo tanto, un criterio de falla más conservador que los demás. Sin embargo, la línea punteada que une ambos $S_y$ se debe utilizar en las dos primeras curvas como límite del primer ciclo de esfuerzo para evitar que ceda o falle. \textcolor{red}{Referencia a libro norton}
+La parábola de Gerber es la que mejor se ajusta a los datos de falla experimental, de acuerdo a la ecuación \ref{eq:gerber}; mientras que la línea de Goodman modificada, ecuación \ref{eq:good_mod}, se ajusta por debajo de la dispersión de datos. Ambas curvas utilizan en el eje $\sigma_a$ el límite de resistencia a la fatiga $S_e$ y el esfuerzo último $S_u$ en el eje $\sigma_m$. En cambio, la línea de Soderberg, ecuación \ref{eq:soderberg}, une $S_e$ con la resistencia a la fluencia del material $S_y$ y es, por lo tanto, un criterio de falla más conservador que los demás. Sin embargo, la línea punteada que une ambos $S_y$ se debe utilizar en las dos primeras curvas como límite del primer ciclo de esfuerzo para evitar que ceda o falle. \cite{norton2011machine}
 
 \begin{centering}
 \begin{align}
@@ -111,6 +118,7 @@ La parábola de Gerber es la que mejor se ajusta a los datos de falla experiment
 \end{align}
 \end{centering}
 
+\newpage
 
 \subsubsection{Diagramas de esfuerzos alternantes normalizados y medios}
 
@@ -119,7 +127,7 @@ La normalización del diagrama mostrado en la figura \ref{fig:diag_cfl} responde
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7\textwidth]{Imagenes/cfl_norm.pdf}
-\caption{Diagrama \textit{CFL} normalizado. Fuente: Mechanical Behavior of Materials.}
+\caption{Diagrama \textit{CFL} normalizado. \cite{dowling2013mechanical}}
 \label{fig:cfl_norm}
 \end{figure}
 
@@ -140,6 +148,8 @@ Y una segunda modificación de la ecuación de Goodman, propuesta por J. Morrow,
 \begin{equation} \label{eq:mod_goodduct}
 	\frac{\sigma_a}{\sigma_{ar}} + \frac{\sigma_m}{\tilde{\sigma}_{fB}} = 1 
 \end{equation}
+
+\newpage
 
 \section{Dinámica}
 
@@ -162,7 +172,7 @@ Por otro lado, el principio de D\texttt{'}\kern-0.3em Alembert nos permite estab
 \begin{gather}
 	\sum \mathbf{F_i} = m\mathbf{\ddot{x_i}} \label{eq:2l_newton}\\
 	\nonumber \\
-	\sum \mathbf{M_i} = I\ddot{\theta_i} \label{eq:2l_euler}
+	\sum \mathbf{M_i} = I\mathbf{\ddot{\theta_i}} \label{eq:2l_euler}
 \end{gather}
 
 \subsection{Energía cinética de un cuerpo rígido}
@@ -223,9 +233,16 @@ Donde $n$ es el número de coordenadas generalizadas y $q$ cada coordenada gener
 
 \subsection{Vibraciones forzadas}
 \label{sec:vib_forzadas}
-Los sistemas mecánicos están sometidos a una gama bastante amplia de fuerzas externas que actúan sobre ellos, las que pueden ser aleatorias, periódicas, no periódicas o transientes. La fuente puede ser variada, pero todas ellas pueden causar vibraciones en el sistema, las cuales se denominarán $F(t)$. Para el caso de este trabajo, el sistema a analizar contiene un disco sometido a rotación constante, impulsado por un motor eléctrico, que produce una fuerza periódica producto de su desbalanceo.
+Los sistemas mecánicos están sometidos a una gama bastante amplia de fuerzas externas que actúan sobre ellos, las que pueden ser aleatorias, periódicas, no periódicas o transientes. La fuente puede ser variada, pero todas ellas causan vibraciones en el sistema, las cuales se denominarán $F(t)$. Para el caso de este trabajo, el sistema a analizar contiene un disco sometido a una velocidad de rotación constante, impulsado por un motor eléctrico, que produce una fuerza periódica producto de su desbalanceo.
 
-Si consideramos un desequilibrio de masa $m_0$, a una distancia $e$ del centro de rotación y rotando a una velocidad $\phi$, como se muestra en la figura \textcolor{red}{Hacer figura similar a 219 y 220 de Inman pag 160}, la componente vertical de la fuerza centrífuga $F(t)$ es:
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth, trim={6cm 2cm 10cm 3cm}, clip]{Imagenes/dcl_maqdes.pdf}
+\caption{Diagrama de cuerpo libre de un disco desequilibrado una masa $m_0$ a una distancia $e$.}
+\label{fig:dcl_maqdes}
+\end{figure}
+
+Si consideramos un desequilibrio de masa $m_0$, a una distancia $e$ del centro de rotación y rotando a una velocidad $\phi$, como se muestra en la figura \ref{fig:dcl_maqdes}, la componente vertical de la fuerza centrífuga $F(t)$ es:
 \begin{equation}
 	F_y(t) = m_0\ddot{y}(t)
 \end{equation}
@@ -235,13 +252,13 @@ Tomando el centro de rotación como el punto cero del sistema de coordenadas y q
 	\dot{y}(t) = e \dot{\phi}\cos \phi\\
 	\ddot{y}(t) = e(\ddot{\phi}\cos\phi - \dot{\phi}^2\sin\phi)
 \end{gather*}
-Por lo tanto, la ecuación \ref{eq:vib_forzadas}, muestra la fuerza centrífuga en dirección del eje $y$ cuando una masa desbalanceada $m_0$ gira a una velocidad angular $\dot{\phi}$ y su aceleración angular es $\ddot{\phi} \neq 0$.
+Por lo tanto, la ecuación \ref{eq:vib_forzadas}, muestra la fuerza centrífuga en dirección del eje $y$ cuando una masa desbalanceada $m_0$ gira a una velocidad angular $\dot{\phi}$ y su aceleración angular es $\ddot{\phi}$.
 \begin{equation}\label{eq:vib_forzadas}
 	F_y(t) = m_0e(\ddot{\phi}\cos\phi- \dot{\phi}^2\sin\phi)
 \end{equation}
 
 \subsection{Modeling}
-Es el proceso en el que se representan todos los detalles importantes del sistema con el objetivo de derivar las ecuaciones que  rigen el comportamiento del mismo. Para esto, los métodos existentes son la ley de movimiento de Newton, el principio de DD\texttt{'}\kern-0.3em Alembert y principio de conservación de la energía. Los primeros, vistos en la sección \ref{sec:ec_mov}, se utilizan a través de un diagrama de cuerpo libre y la correcta identificación de las fuerzas y momentos que actúan sobre un cuerpo. Por otra parte, el método de conservación de la energía tiene la capacidad de derivar las ecuaciones de movimiento de un cuerpo sin la necesidad de recurrir a un diagrama de cuerpo libre, es decir, no se requiere identificar fuerzas ni momentos en el sistema. Éste método se verá en mayor profundidad en la sección \ref{sec:metodo_energia}.
+Es el proceso en el que se representan todos los detalles importantes del sistema con el objetivo de derivar las ecuaciones que  rigen el comportamiento del mismo. Para esto, los métodos existentes son la ley de movimiento de Newton, el principio de D\texttt{'}\kern-0.3em Alembert y principio de conservación de la energía. Los primeros, vistos en la sección \ref{sec:ec_mov}, se utilizan a través de un diagrama de cuerpo libre y la correcta identificación de las fuerzas y momentos que actúan sobre un cuerpo. Por otra parte, el método de conservación de la energía tiene la capacidad de derivar las ecuaciones de movimiento de un cuerpo sin la necesidad de recurrir a un diagrama de cuerpo libre, es decir, no se requiere identificar fuerzas ni momentos en el sistema. Éste método se verá en mayor profundidad en la sección \ref{sec:metodo_energia}.
 
 Si consideramos un sistema amortiguado forzado y de un solo grado de libertad, $x(t)$ o $\theta(t)$ según sea el caso, entonces la ecuación que describe el movimiento tendrá la siguiente forma:
 \begin{subequations}
@@ -258,10 +275,9 @@ El número de grados de libertad de un sistema es la cantidad de parámetros ind
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.5\linewidth]{Imagenes/dof.pdf}
-\caption{Todos los posibles grados de libertad que puede tener una masa, los cuales se dividen en 3 grados de libertad rotacionales ($\theta_i$) y 3 lineales ($x_i$). Fuente: Engineering Vibration - Inman.}
+\caption{Todos los posibles grados de libertad que puede tener una masa, los cuales se dividen en 3 grados de libertad rotacionales ($\theta_i$) y 3 lineales ($x_i$). \cite{inman2014engineering}}
 \label{fig:dof}
 \end{figure}
-
 
 La forma de describir el movimiento de cada masa es a través del uso de matrices y vectores, de tal forma que es posible agrupar los distintos componentes que se vieron en las ecuaciones \ref{eq:onedeglineal_damp} y \ref{eq:ondegangular_damp} de un solo grado de libertad. De esta manera, las coordenadas $x_i(t)$ pueden ser escritas como un vector $\mathbf{x}(t)$ de $n \times 1$, donde $n$ es la cantidad de grados de libertad del sistema. Asimismo, se puede representar matricialmente la información de la masa del sistema y la rigidez de cada resorte, donde $\mathit{M}$ es la matriz de masas y $\mathit{K}$ es la matriz rigidez, ambas de dimensión $n \times n$. 
 \begin{equation}\label{eq:multi_degree}
@@ -382,8 +398,8 @@ B = 0\text{,}0684x^3 + 0\text{,}0461x^2 - 0\text{,}205x + 0\text{,}825
 \end{equation}
 La corrección se aplica en el rango $0\text{,}12 \leq \tilde{\varepsilon} \leq 3$.
 
-\subsection{Endurecimiento por deformación isotrópico}
-Se le denomina al incremento en la resistencia del material a medida que su deformación crece, luego de superar el punto de fluencia. En el caso del endurecimiento isotrópico, el esfuerzo de fluencia del material permanece centrado respecto al eje central aún cuando crezca producto de la deformación plástica, como se muestra en la figura REF.
+\subsection{Endurecimiento isotrópico por deformación}
+Se le denomina al incremento en la resistencia del material a medida que su deformación crece, luego de superar el punto de fluencia. En el caso del endurecimiento isotrópico, el esfuerzo de fluencia del material permanece centrado respecto al eje central aún cuando crezca producto de la deformación plástica, como se muestra en la figura \ref{fig:iso_hard}.
 
 \begin{figure}[h]
 \centering
@@ -393,14 +409,70 @@ Se le denomina al incremento en la resistencia del material a medida que su defo
 \end{figure}
 
 
-
-
 \section{Método de elementos finitos}
+El método de elementos finitos (FEM, por sus siglas en inglés) y el análisis de elementos finitos (FEA, por sus siglas en inglés) son herramientas utilizadas para proporcionar soluciones aproximadas a problemas complejos en fenómenos mecánicos. Este consiste en toma un componente real con una estructura continua y dividirla en pequeñas subestructuras finitas de geometría mucho más simple. A este proceso se le llama  discretización, a las subestructuras elementos y a los puntos de unión nodos. Las propiedades del material, las ecuaciones gobernantes y las cargas son posible aplicarlas dentro del elemento, en la cara de los mismos o incluso en los nodos. De esta forma, los nodos pasan a ser fundamentales al ser donde se conectan los elementos, se asignan las condiciones de frontera y se aplican las fuerza de contacto o cuerpo \cite{budynas2008shigley}. Los nodos poseen grados de libertad (DOF, por sus siglas en inglés) de la misma forma en la que se establecieron para una masa, como se puede ver en la imagen \ref{fig:dof}. Para cada nodo se escribe su correspondiente ecuación de balance y luego se puede llegar a un sistema de ecuaciones que resuelve el problema para todos los nodos simultáneamente.Las soluciones de estas ecuaciones da como resultado una aproximación del comportamiento elástico del componente a analizar. En el caso de este trabajo, este procedimiento entregará los desplazamientos de cada nodo, a partir de los cuales se pueden determinar los esfuerzos por medio de las ecuaciones constitutivas de elasticidad.
 
+El FEA se divide en tres etapas: (a) pre-procesamiento, (b) procesamiento y (c) post-procesamiento. El primero incluye toda la preparación de los datos, la generación de la malla, la determinación del sistema coordenado, las conexiones, las condiciones de frontera, las propiedades del material y las cargas. El procesamiento en la resolución del sistema de ecuaciones y otras relaciones anexas. Para este trabajo, se deberá resolver las ecuaciones del momentum lineal para carga estática, por lo tanto. se buscarán las soluciones de la ecuación de equilibrio.  Finalmente, el post-proceso es la etapa donde se trabaja con la presentación de los resultados, es decir, los desplazamientos, la deformación y los esfuerzos requeridos son calculados durante esta etapa. 
 
+\subsection{Mallado}
+Se le llama malla a la red de elementos y nodos que discretizan un componente o una región. Para esto, los elementos pueden tener distintas formas geométricas que dependerán del tipo de problema a resolver, los grados de libertad o la capacidad computacional. La geometría dependerá de la cantidad de nodos por elementos, que para el caso de este trabajo, se utilizará el tetraedro, un elemento de 4 nodos.
+
+Existen distintas formas de saber si la malla construida dará los resultados esperados en un tiempo óptimo. A esto se le denomina calidad de la malla, donde una mejor calidad entregará resultados más precisos en un menor tiempo. Para determinar su calidad, existen distintos parámetros que indican como está compuesta la malla generada \footnote{La definición de estos parámetros se obtuvieron en lecturas y el manual de ANSYS \cite{sharcnet_2017}\cite{ansys_2015}}.
+
+\subsubsection{Relación de aspecto}
+Es la relación entre el lado más largo y el más corto de un elemento. En este caso corresponde a que tan cercano el triángulo es equilátero, teniendo un valor de 1, y no se encuentra deformado, lo que aumenta su valor. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\linewidth, trim={12cm 7cm 6.5cm 7.5cm}, clip]{Imagenes/asp_ratio.pdf}
+\caption{Relación de aspecto para triángulos.}
+\label{fig:asp_ratio}
+\end{figure}
+
+\subsubsection{Calidad del elemento}
+Se basa en la razón entre el volumen del elementos y la longitud de los bordes del elemento. Se evalúa del 1 al 0, donde 1 indica un elemento perfecto mientras que cero que el elemento no tiene volumen. Además, una constante $C$ tendrá un valor definido según el tipo de elemento. Esta métrica se define como:
+\begin{equation}
+	\text{Calidad del elemento} = C \cdot \frac{\text{Volumen}}{\sqrt{\left[\sum \text{longitud borde}^2\right]^3}}
+\end{equation}
+Para tetraedros la constante tiene el valor de $C=124.70765802$.
+
+\subsubsection{Calidad ortogonal}
+Este parámetro se mide entre 0 y 1, donde 0 es un mal resultado y 1 el mejor. Se calcula según la ecuación \ref{eq:cal_ort}, donde $\mathbf{A_i}$ es el vector normal a la cara $i$, $\mathbf{B_i}$ el vector que parte del centroide del elemento y termina en el centroide del elemento colindante a la cara $i$ y $\mathbf{C_i}$ es el vector que va desde el centroide del elemento hacia el centro de la cara $i$.
+
+\begin{equation} \label{eq:cal_ort}
+	\text{Calidad Ortogonal} = \text{MIN}\left\lbrace \frac{\mathbf{A_i}\cdot \mathbf{B_i}}{|\mathbf{A_i}||\mathbf{B_i}|} , \frac{\mathbf{A_i}\cdot \mathbf{C_i}}{|\mathbf{A_i}||\mathbf{C_i}|} \right\rbrace
+\end{equation}
+
+\subsubsection{Oblicuidad}
+Es una de las medidas de calidad primarias para una malla. La oblicuidad, también llamada asimetría, determina que tan cerca está de la figura ideal está el elemento o su cara (triángulo equilátero para un tetraedro). A partir de su definición \ref{eq:skewness}, un valor 0 indica que el tamaño del elemento es igual a un triángulo equilátero y un valor de 1 indica un triángulo completamente deformado. 
+\begin{equation} \label{eq:skewness}
+	\text{Oblicuidad} = \frac{\text{Tamaño óptimo del elemento} - \text{Tamaño del elemento}}{\text{Tamaño óptimo del elemento}}
+\end{equation}
+
+El manual de ANSYS, entrega la tabla \ref{tab:skewness}, que sirve de guía para los valores de la oblicuidad y su respectiva calidad.
+
+\begin{table}[]
+\centering
+\begin{tabular}{@{}cc@{}}
+\toprule
+Valor de la oblicuidad & Calidad del elemento \\ \midrule
+1 & Inaceptable \\
+0,9 - <1 & Muy mala \\
+0,75 - 0,9 & Mala \\
+0,5 - 0,75 & Buena \\
+0,25 - 0,5 & Muy buena \\
+>0 - 0,25 & Excelente \\
+0 & Equilátero \\ \bottomrule
+\end{tabular}
+\caption{Lista de los rangos de los valores de la oblicuidad y la respectiva calidad del elemento.\cite{sharcnet_2017}}
+\label{tab:skewness}
+\end{table}
+
+\newpage
 
 \subsection{Ecuación del momentum lineal}
-La conservación del momentum lineal es una consecuencia de la aplicación de la segunda ley de Newton. Una forma de escribir la conservación de momentum lineal es fijar un volumen de control en el espacio y considerar el flujo de momentum que entra y sale del volumen. Para esto, denominaremos \textbf{t} como la fuerza superficial por unidad de área y \textbf{b} será la fuerza del cuerpo por unidad de masa, aplicado a un volumen $v(t)$ encerrado por un área $a(t)$. Así, se obtiene:
+
+La conservación del momentum lineal es una consecuencia de la aplicación de la segunda ley de Newton. Una forma de escribir la conservación de momentum lineal es fijar un volumen de control en el espacio y considerar el flujo de momentum que entra y sale del volumen. Para esto, denominaremos \textbf{t} como la fuerza superficial por unidad de área, llamada tracción, y \textbf{b} será la fuerza del cuerpo por unidad de masa, aplicado a un volumen $v(t)$ encerrado por un área $a(t)$. Así, se obtiene:
 \begin{equation}
 	\int_{\text{a}(t)} \mathbf{t} \text{da} + \int_{\text{v}(t)} \rho \mathbf{b} \text{dv} = \frac{d}{dt} \int_{\text{v}(t)} \rho \mathbf{v} \text{dv}
 \end{equation}
@@ -423,18 +495,21 @@ Expresando que la suma de las fuerzas son iguales a cero. Por lo tanto, a partir
 \subsubsection{Esfuerzo y deformación unitaria de von Mises}
 El esfuerzo de von Mises, llamado también equivalente, es una forma de representar un estado de esfuerzos en tres dimensiones en un valor escalar positivo. Este es calculado de la siguiente forma:
 \begin{equation}
-	\sigma_{vm} = \left( \frac{(\sigma_1 - \sigma_2)^2 + (\sigma_2 - \sigma_3)^2 + (\sigma_3 - \sigma_1)^2}{2}\right)^{1/2}
+	\sigma_{vm} = \left[ \frac{(\sigma_1 - \sigma_2)^2 + (\sigma_2 - \sigma_3)^2 + (\sigma_3 - \sigma_1)^2}{2}\right]^{1/2}
 \end{equation}
-La deformación de von Mises, es calculada como:
+La deformación de von Mises total, es calculada como:
 \begin{equation}
-	\varepsilon_{vm,total} = \frac{1}{1+\nu'} \left(\frac{(\varepsilon_1 - \varepsilon_2)^2 + (\varepsilon_2 - \varepsilon_3)^2 + (\varepsilon_3 - \varepsilon_1)^2}{2}\right)^{1/2}
+	\varepsilon_{vm,t} = \frac{1}{1+\nu'} \left[\frac{(\varepsilon_1 - \varepsilon_2)^2 + (\varepsilon_2 - \varepsilon_3)^2 + (\varepsilon_3 - \varepsilon_1)^2}{2}\right]^{1/2}
 \end{equation}
 Donde $\nu'$ es el coeficiente de Poisson efectivo, que se define según:
 \begin{itemize*}
 	\item Para la zona elástica como el coeficiente de Poisson del material $\nu$.
 	\item Para la zona plástica como $\nu=0.5$
 \end{itemize*}
-Por lo tanto, la deformación unitaria equivalente total del material es: $\varepsilon_{vm,total} = \varepsilon_{vm,plástica} + \varepsilon_{vm,elástica}$.
+Por lo tanto, la deformación unitaria equivalente total del material es la suma de la deformación plástica más la deformación elástica. 
+\begin{equation}
+	\varepsilon_{vm,t} = \varepsilon_{vm,p} + \varepsilon_{vm,e}
+\end{equation}
 
 \subsubsection{Esfuerzo máximo cortante}
 El esfuerzo máximo cortante es el punto más alejado al eje de los esfuerzos normales en el círculo de Mohr, por lo tanto se define como:
@@ -445,12 +520,26 @@ El esfuerzo máximo cortante es el punto más alejado al eje de los esfuerzos no
 \subsubsection{Esfuerzo y deformación normal}
 Este corresponde al esfuerzo que se produce por la carga normal a la superficie. En este caso, el esfuerzo $\sigma_{x}$ corresponde a la carga (\textit{P}) en dirección $x$ provocada sobre la superficie del plano $yz$. Por lo tanto, se define como:
 \begin{equation}
-	\sigma_{x} = \frac{P}{A_{yz}}
+	\sigma_{x} = \frac{P}{A}
 \end{equation}
-Así mismo, la deformación unitaria en la dirección $x$ es:
+Así mismo, la deformación elástica en la dirección $x$ es:
 \begin{equation}
-	\varepsilon_x = \frac{1}{E}\left[\sigma_x - \nu (\sigma_y + \sigma_z)\right]
+	\varepsilon_{x,e} = \frac{1}{E}\left[\sigma_x - \nu (\sigma_y + \sigma_z)\right]
 \end{equation}
-
-
+Y la deformación plástica es:
+\begin{equation}
+	\varepsilon_{x,p} = \frac{1}{E_{pl}} \left[ \sigma_x - 0.5(\sigma_y + \sigma_z)\right]
+\end{equation}
+Donde $E_{pl}$ es el módulo plástico que se define como:
+\begin{equation}
+	E_{pl} = \frac{\tilde{\sigma}}{\tilde{\varepsilon}_p}
+\end{equation}
+Es decir, como la pendiente provocada por una recta entre el origen y el punto de esfuerzo real y la deformación real plástica. Sin embargo, es posible reescribir ambos módulos, $E$ y $E_{pl}$, como el módulo secante $E_t$, quedando la deformación total unitaria en la dirección $x$ como:
+\begin{equation}
+	\varepsilon_x = \frac{1}{E_t} \left[\sigma + \tilde{\nu}(\sigma_y + \sigma_z)\right]
+\end{equation}
+Donde el módulo secante y coeficiente de Poisson generalizado, $\tilde{\nu}$, se definen como:
+\begin{gather*}
+	E_t = \frac{\tilde{\sigma}}{\tilde{\varepsilon}} \qquad ; \qquad \tilde{\nu} = \frac{\nu\sigma + 0.5E\tilde{\varepsilon}_p}{E\varepsilon}
+\end{gather*}
 

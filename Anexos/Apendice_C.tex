@@ -7,6 +7,7 @@
 \label{sec:sol_part}
 
 \subsection{Función}
+\label{sec:fun_part}
 
 \begin{lstlisting}
 
@@ -72,6 +73,7 @@ DERVAR = DERVAR';
 
 
 \subsection{Solver}
+\label{sec:solver_part}
 
 \begin{lstlisting}
 
@@ -94,6 +96,7 @@ F2 = (x(:,1)+l2*x(:,3))*k2;
 \end{lstlisting}
 
 \section{Función de la aceleración, velocidad y posición angular del disco}
+\label{sec:phi_fun}
 
 \begin{lstlisting}
 function [t,tp,tpp] = vinput(time)
@@ -129,6 +132,8 @@ end
 \end{lstlisting}
 
 \section{Script para cargas máxima, media y alternante}
+\label{sec:sol_gen}
+
 \begin{lstlisting}
 MassT;
 F25 = zeros(length(M),1);

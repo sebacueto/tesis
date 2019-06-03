@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: tesis.aux
+The style file: ezspanish.bst
+A level-1 auxiliary file: Anexos/Apendice_A.aux
+Database file #1: Bibliografia/biblio.bib
+Warning--entry type for "beer2010mecanica" isn't style-file defined
+--line 335 of file Bibliografia/biblio.bib
+Warning--empty year in autodesk
+Warning--empty year in chandrupatla2002introduction
+Warning--missing institution in ISO18265
+Warning--missing institution in ISO23718
+Warning--missing institution in E739
+Warning--empty year in ode45
+Warning--empty year in richfield
+Warning--empty year in 1020data
+Warning--can't use both volume and number fields in strzelecki2018analysis
+You've used 42 entries,
+            2833 wiz_defined-function locations,
+            813 strings with 10428 characters,
+and the built_in function-call counts, 18626 in all, are:
+= -- 1429
+> -- 529
+< -- 49
++ -- 211
+- -- 162
+* -- 985
+:= -- 2996
+add.period$ -- 131
+call.type$ -- 42
+change.case$ -- 250
+chr.to.int$ -- 39
+cite$ -- 51
+duplicate$ -- 1591
+empty$ -- 1608
+format.name$ -- 225
+if$ -- 3682
+int.to.chr$ -- 4
+int.to.str$ -- 1
+missing$ -- 341
+newline$ -- 223
+num.names$ -- 168
+pop$ -- 815
+preamble$ -- 1
+purify$ -- 221
+quote$ -- 0
+skip$ -- 635
+stack$ -- 0
+substring$ -- 604
+swap$ -- 617
+text.length$ -- 10
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 330
+warning$ -- 9
+while$ -- 138
+width$ -- 0
+write$ -- 529
+(There were 10 warnings)
