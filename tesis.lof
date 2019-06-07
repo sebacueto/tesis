@@ -1,68 +1,68 @@
 \babel@toc {spanish}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Comparaci\IeC {\'o}n entre las distintas curvas caracter\IeC {\'\i }sitcas de cada forma de medici\IeC {\'o}n de la fatiga. \citep {lee2005fatigue}\citep {esin1980method}\relax }}{17}{figure.caption.4}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Secci\IeC {\'o}n transversal de probetas sujetas a esfuerzo alternante uniaxial. \textit {a) push-pull}, \textit {b) alternating bending} y \textit {c) rotating bending}. \citep {esin1980method}\relax }}{20}{figure.caption.9}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Representaci\IeC {\'o}n entre una curva caracter\IeC {\'\i }stica de un ensayo de fatiga y los m\IeC {\'e}todos de Lee y Esin para correlacionar distintos tipos de ensayos. \citep {strzelecki2018analysis}\relax }}{22}{figure.caption.12}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces M\IeC {\'a}quina de fatiga en flexi\IeC {\'o}n en el laboratorio de tecnolog\IeC {\'\i }a mec\IeC {\'a}nica\relax }}{23}{figure.caption.13}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Curva de esfuerzo-deformaci\IeC {\'o}n ingenieril (A) y real (B) de un acero. Los puntos representan: (1) Esfuerzo \IeC {\'u}ltimo ($\sigma _u$), (2) esfuerzo de fluencia ($\sigma _y$), (3) esfuerzo de ruptura, (4) regi\IeC {\'o}n de endurecimiento por deformaci\IeC {\'o}n y (5) regi\IeC {\'o}n de estricci\IeC {\'o}n. \citep {richfield}\relax }}{27}{figure.caption.14}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Comparaci\IeC {\'o}n entre las distintas curvas caracter\IeC {\'\i }sitcas de cada forma de medici\IeC {\'o}n de la fatiga. \citep {lee2005fatigue}\citep {esin1980method}\relax }}{19}{figure.caption.4}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Secci\IeC {\'o}n transversal de probetas sujetas a esfuerzo alternante uniaxial. \textit {a) push-pull}, \textit {b) alternating bending} y \textit {c) rotating bending}. \citep {esin1980method}\relax }}{22}{figure.caption.9}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Representaci\IeC {\'o}n entre una curva caracter\IeC {\'\i }stica de un ensayo de fatiga y los m\IeC {\'e}todos de Lee y Esin para correlacionar distintos tipos de ensayos. \citep {strzelecki2018analysis}\relax }}{24}{figure.caption.12}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces M\IeC {\'a}quina de fatiga en flexi\IeC {\'o}n en el laboratorio de tecnolog\IeC {\'\i }a mec\IeC {\'a}nica\relax }}{25}{figure.caption.13}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Curva de esfuerzo-deformaci\IeC {\'o}n ingenieril (A) y real (B) de un acero. Los puntos representan: (1) Esfuerzo \IeC {\'u}ltimo ($\sigma _u$), (2) esfuerzo de fluencia ($\sigma _y$), (3) esfuerzo de ruptura, (4) regi\IeC {\'o}n de endurecimiento por deformaci\IeC {\'o}n y (5) regi\IeC {\'o}n de estricci\IeC {\'o}n. \citep {richfield}\relax }}{29}{figure.caption.14}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Crecimiento de una grieta durante un ciclo de carga perpendicular, dando origen a las marcas de playa. \citep {schijve2001fatigue}\relax }}{30}{figure.caption.15}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Definici\IeC {\'o}n de los esfuerzos alternantes, m\IeC {\'a}ximo, m\IeC {\'\i }nimo y medio. \citep {budynas2008shigley}\relax }}{32}{figure.caption.16}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Diagrama $S$-$N$ obtenido a partir de los resultados de ensayos a fatiga axial con carga invertida. Se pueden apreciar las zonas LCF, HCF y la zona de vida infinita. \citep {budynas2008shigley}\relax }}{34}{figure.caption.18}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Diagrama $S$-$N$ de ensayos de fatiga axial con distintos esfuerzos medios. \citep {dowling2013mechanical}\relax }}{35}{figure.caption.19}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagrama de vida constante para aluminio 7075-T6. \citep {dowling2013mechanical}\relax }}{36}{figure.caption.20}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Curvas de estimaci\IeC {\'o}n de falla a fatiga de Goodman, Gerber y Soderberg.\citep {norton2011machine}\relax }}{36}{figure.caption.21}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Diagrama \textit {CFL} normalizado. \citep {dowling2013mechanical}\relax }}{37}{figure.caption.23}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Diagrama de cuerpo libre de un disco desequilibrado por masa $m_0$ a una distancia $e$.\relax }}{41}{figure.caption.24}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Todos los posibles grados de libertad que puede tener una masa, los cuales se dividen en 3 grados de libertad rotacionales ($\theta _i$) y 3 lineales ($x_i$). \citep {inman2014engineering}\relax }}{43}{figure.caption.25}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Endurecimiento isotr\IeC {\'o}pico por deformaci\IeC {\'o}n pl\IeC {\'a}stica. Se puede apreciar como se conserva la distancia del esfuerzo m\IeC {\'a}ximo respecto a la abscisa.\relax }}{48}{figure.caption.26}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Relaci\IeC {\'o}n de aspecto para tri\IeC {\'a}ngulos.\relax }}{49}{figure.caption.28}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Crecimiento de una grieta durante un ciclo de carga perpendicular, dando origen a las marcas de playa. \citep {schijve2001fatigue}\relax }}{32}{figure.caption.15}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Definici\IeC {\'o}n de los esfuerzos alternantes, m\IeC {\'a}ximo, m\IeC {\'\i }nimo y medio. \citep {budynas2008shigley}\relax }}{34}{figure.caption.16}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Diagrama $S$-$N$ obtenido a partir de los resultados de ensayos a fatiga axial con carga invertida. Se pueden apreciar las zonas LCF, HCF y la zona de vida infinita. \citep {budynas2008shigley}\relax }}{36}{figure.caption.18}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Diagrama $S$-$N$ de ensayos de fatiga axial con distintos esfuerzos medios. \citep {dowling2013mechanical}\relax }}{37}{figure.caption.19}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagrama de vida constante para aluminio 7075-T6. \citep {dowling2013mechanical}\relax }}{38}{figure.caption.20}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Curvas de estimaci\IeC {\'o}n de falla a fatiga de Goodman, Gerber y Soderberg.\citep {norton2011machine}\relax }}{38}{figure.caption.21}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Diagrama \textit {CFL} normalizado. \citep {dowling2013mechanical}\relax }}{39}{figure.caption.23}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Diagrama de cuerpo libre de un disco desequilibrado por masa $m_0$ a una distancia $e$.\relax }}{43}{figure.caption.24}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Todos los posibles grados de libertad que puede tener una masa, los cuales se dividen en 3 grados de libertad rotacionales ($\theta _i$) y 3 lineales ($x_i$). \citep {inman2014engineering}\relax }}{45}{figure.caption.25}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Endurecimiento isotr\IeC {\'o}pico por deformaci\IeC {\'o}n pl\IeC {\'a}stica. Se puede apreciar como se conserva la distancia del esfuerzo m\IeC {\'a}ximo respecto a la abscisa.\relax }}{50}{figure.caption.26}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Relaci\IeC {\'o}n de aspecto para tri\IeC {\'a}ngulos.\relax }}{51}{figure.caption.28}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Control del contador electr\IeC {\'o}nico\relax }}{55}{figure.caption.36}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Contrapesos utilizados para desequilibrar el disco. De izquiera a derecha se aprecia el n$^{\circ }$ 5 al n$^{\circ }$ 1.\relax }}{56}{figure.caption.37}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Distintas vistas del disco desbalanceado de la m\IeC {\'a}quina. En la imagen (b) se pueden apreciar claramente los soportes de los contrapesos en los extremos del disco, en cambio, en la imagen (c) se ven los distintos componentes que est\IeC {\'a}n adosados al disco.\relax }}{57}{figure.caption.38}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces A la izquierda se aprecia la mordaza de la barra de carga, a la derecha la mordaza empotrada sin la parte superior y apoyada sobre esta, la probeta.\relax }}{58}{figure.caption.40}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces En la imagen (a) se aprecia el bot\IeC {\'o}n del freno autom\IeC {\'a}tico y la extensi\IeC {\'o}n que lo presiona. En la imagen (b) la barra de bloqueo sosteniendo las barras de acero.\relax }}{59}{figure.caption.41}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Esquema de la m\IeC {\'a}quina de fatiga y sus dimensiones externas.\relax }}{60}{figure.caption.43}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Brazo de carga junto a su mordaza y la mordaza empotrada a la derecha.\relax }}{61}{figure.caption.50}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Vista en corte, lateral y frontal de la probeta con sus respectivas dimensiones.\relax }}{62}{figure.caption.54}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces En las imagenes (a) y (b) se pueden ver los elementos que componen el sistema el\IeC {\'e}ctrico de la m\IeC {\'a}guina de fatiga.\relax }}{63}{figure.caption.57}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Dise\IeC {\~n}o en perspectiva de la estructura.\relax }}{64}{figure.caption.58}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Diagrama de las cargas soportadas por la pletina de acero.\relax }}{65}{figure.caption.59}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Identificaci\IeC {\'o}n de las disintas partes de madera de la estructura.\relax }}{68}{figure.caption.61}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Diagrama de las cargas soportadas por la viga A.\relax }}{71}{figure.caption.68}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Representaci\IeC {\'o}n de un \IeC {\'a}ngulo de uni\IeC {\'o}n A44 y A66. \citep {angleconnector}\relax }}{78}{figure.caption.82}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces En las imagenes (a) y (b) se enumeran los elementos que fueron considerados al modelar el sistema vibratorio. (1) Barra de carga. (2) Probeta ($k_2$), que se encuentra cubierta por ambas mordazas. (3) Mordaza sujeta al brazo de carga. (4) Mordaza empotrada a la m\IeC {\'a}quina. (5) Barra de transmisi\IeC {\'o}n de la carga. (6) Disco desbalanceado. (7) Soportes de contrapeso. (8) Sistema de vigas en voladizo ($k_1$).\relax }}{81}{figure.caption.85}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Diagrama del modelo utilizado y el sistema de coordenadas.\relax }}{82}{figure.caption.86}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Funci\IeC {\'o}n por parte de la aceleraci\IeC {\'o}n del disco\relax }}{87}{figure.caption.95}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Funci\IeC {\'o}n por parte de la velocidad angular del disco\relax }}{88}{figure.caption.96}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Curva de esfuerzo-deformaci\IeC {\'o}n del material AISI 1020 en valores ingenieriles y reales.\relax }}{92}{figure.caption.100}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces La zona verde de la imagen (a) corresponde a la zona media de la probeta y la zona azul de la imagen (b) a la secci\IeC {\'o}n transversal en la mitad de la probeta.\relax }}{94}{figure.caption.102}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces (a) Vista isom\IeC {\'e}trica general de la malla. (b) Detalle en isom\IeC {\'e}trico de la zona media y la secci\IeC {\'o}n transversal. (c) Malla de la secci\IeC {\'o}n transversal media. (d) Detalle de la malla de la secci\IeC {\'o}n transversal media.\relax }}{95}{figure.caption.103}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Condiciones de contorno aplicadas en la probeta. Las caras amarillas representan las restricciones de desplazamiento y la cara roja la presi\IeC {\'o}n aplicada.\relax }}{96}{figure.caption.105}
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Ubicaci\IeC {\'o}n de los elementos seleccionados\relax }}{97}{figure.caption.107}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Control del contador electr\IeC {\'o}nico\relax }}{57}{figure.caption.36}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Contrapesos utilizados para desequilibrar el disco. De izquiera a derecha se aprecia el n$^{\circ }$ 5 al n$^{\circ }$ 1.\relax }}{58}{figure.caption.37}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Distintas vistas del disco desbalanceado de la m\IeC {\'a}quina. En la imagen (b) se pueden apreciar claramente los soportes de los contrapesos en los extremos del disco, en cambio, en la imagen (c) se ven los distintos componentes que est\IeC {\'a}n adosados al disco.\relax }}{59}{figure.caption.38}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces A la izquierda se aprecia la mordaza de la barra de carga, a la derecha la mordaza empotrada sin la parte superior y apoyada sobre esta, la probeta.\relax }}{60}{figure.caption.40}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces En la imagen (a) se aprecia el bot\IeC {\'o}n del freno autom\IeC {\'a}tico y la extensi\IeC {\'o}n que lo presiona. En la imagen (b) la barra de bloqueo sosteniendo las vigas en voladizo.\relax }}{61}{figure.caption.41}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Esquema de la m\IeC {\'a}quina de fatiga y sus dimensiones externas.\relax }}{62}{figure.caption.43}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Brazo de carga junto a su mordaza y la mordaza empotrada a la derecha.\relax }}{63}{figure.caption.50}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Vista en corte, lateral y frontal de la probeta con sus respectivas dimensiones.\relax }}{64}{figure.caption.54}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces En las im\IeC {\'a}genes (a) y (b) se pueden ver los elementos que componen el sistema el\IeC {\'e}ctrico de la m\IeC {\'a}quina de fatiga.\relax }}{65}{figure.caption.57}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Dise\IeC {\~n}o en perspectiva de la estructura.\relax }}{66}{figure.caption.58}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Diagrama de las cargas soportadas por la pletina de acero.\relax }}{67}{figure.caption.59}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Identificaci\IeC {\'o}n de las distintas partes de madera de la estructura.\relax }}{70}{figure.caption.61}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Diagrama de las cargas soportadas por la viga A.\relax }}{73}{figure.caption.68}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Representaci\IeC {\'o}n de un \IeC {\'a}ngulo de uni\IeC {\'o}n A44 y A66. \citep {angleconnector}\relax }}{79}{figure.caption.82}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces En las imagenes (a) y (b) se enumeran los elementos que fueron considerados al modelar el sistema vibratorio. (1) Barra de carga. (2) Probeta ($k_2$), que se encuentra cubierta por ambas mordazas. (3) Mordaza sujeta al brazo de carga. (4) Mordaza empotrada a la m\IeC {\'a}quina. (5) Barra de transmisi\IeC {\'o}n de la carga. (6) Disco desbalanceado. (7) Soportes de contrapeso. (8) Sistema de vigas en voladizo ($k_1$).\relax }}{82}{figure.caption.85}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Diagrama del modelo utilizado y el sistema de coordenadas.\relax }}{83}{figure.caption.86}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Funci\IeC {\'o}n por parte de la aceleraci\IeC {\'o}n del disco\relax }}{89}{figure.caption.95}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Funci\IeC {\'o}n por parte de la velocidad angular del disco\relax }}{90}{figure.caption.96}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Curva de esfuerzo-deformaci\IeC {\'o}n del material AISI 1020 en valores ingenieriles y reales.\relax }}{94}{figure.caption.100}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces La zona verde de la imagen (a) corresponde a la zona intermedia de la probeta y la zona azul de la imagen (b) a la secci\IeC {\'o}n transversal en la mitad de la probeta.\relax }}{96}{figure.caption.102}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces (a) Vista isom\IeC {\'e}trica general de la malla. (b) Detalle en isom\IeC {\'e}trico de la zona media y la secci\IeC {\'o}n transversal. (c) Malla de la secci\IeC {\'o}n transversal media. (d) Detalle de la malla de la secci\IeC {\'o}n transversal media.\relax }}{97}{figure.caption.103}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Condiciones de contorno aplicadas en la probeta. Las caras amarillas representan las restricciones de desplazamiento y la cara roja la presi\IeC {\'o}n aplicada.\relax }}{98}{figure.caption.105}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Ubicaci\IeC {\'o}n de los elementos seleccionados\relax }}{99}{figure.caption.107}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces La imagen (a) muestra los esfuerzos provocados por la mesa de fatiga sobre la estructura. La imagen (b) es un detalle del esfuerzo m\IeC {\'a}ximo, que se produce en los extremos de la pletina de acero.\relax }}{104}{figure.caption.126}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Desplazamiento en el tiempo respecto al eje $y$ (a) y $\theta $ (b) del centro de masa del brazo de carga.\relax }}{105}{figure.caption.127}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Velocidad respecto la tiempo en el eje $y$ (a) y rotacional (b) del centro de masa del brazo de carga.\relax }}{106}{figure.caption.128}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Fuerza aplicada sobre la probeta $F(t)$ en el tiempo.\relax }}{107}{figure.caption.129}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Distribuci\IeC {\'o}n de la carga m\IeC {\'a}xima $F_{max}$ versus la diferencia de masas $\Delta m$ de cada combinaci\IeC {\'o}n de contrapesos.\relax }}{108}{figure.caption.130}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Curva de la carga m\IeC {\'a}xima $F_{max}$ versus la variable $Psi$.\relax }}{109}{figure.caption.131}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces sadfasdfsa\relax }}{109}{figure.caption.132}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces La imagen (a) muestra los esfuerzos provocados por la mesa de fatiga sobre la estructura. La imagen (b) es un detalle del esfuerzo m\IeC {\'a}ximo, que se produce en los extremos de la pletina de acero.\relax }}{106}{figure.caption.126}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Fuerza aplicada sobre la probeta $F(t)$ en el tiempo.\relax }}{107}{figure.caption.127}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Desplazamiento en el tiempo respecto al eje $y$ (a) y $\theta $ (b) del centro de masa del brazo de carga.\relax }}{108}{figure.caption.128}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Velocidad respecto la tiempo en el eje $y$ (a) y rotacional (b) del centro de masa del brazo de carga.\relax }}{109}{figure.caption.129}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Distribuci\IeC {\'o}n de la carga m\IeC {\'a}xima $F_{max}$ versus la diferencia de masas $\Delta m$ de cada combinaci\IeC {\'o}n de contrapesos.\relax }}{110}{figure.caption.130}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Curva de la carga m\IeC {\'a}xima $F_{max}$ versus la variable $Psi$.\relax }}{111}{figure.caption.131}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces sadfasdfsa\relax }}{111}{figure.caption.132}
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Comparaci\IeC {\'o}n de la fuerza aplicada sobre la probeta $F(t)$, de la combinaci\IeC {\'o}n (5+5+1)-(2+4), a dos velocidades angulares $\omega _{max}$ distintas.\relax }}{113}{figure.caption.133}
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Curvas de cada combinaci\IeC {\'o}n de contrapesos para distintas velocidades angulares $\omega _{max}$.\relax }}{114}{figure.5.9}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces \relax }}{115}{figure.caption.134}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Curva de las 77 cargas aplicadas sobre la probeta.\relax }}{115}{figure.caption.134}
 \contentsline {figure}{\numberline {5.11}{\ignorespaces Detalle de la distribuci\IeC {\'o}n de esfuerzos equivalentes en la zona intermedia de la probeta.\relax }}{117}{figure.caption.136}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Deformaci\IeC {\'o}n de \relax }}{118}{figure.caption.137}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Deformaci\IeC {\'o}n de \relax }}{119}{figure.caption.138}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Deformaci\IeC {\'o}n unitaria de los puntos $P$, $Q$ y $R$ \relax }}{118}{figure.caption.137}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Esfuerzos de von Mises, normal y m\IeC {\'a}ximo cortante de los puntos $P$, $Q$ y $R$.\relax }}{119}{figure.caption.138}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Designaciones de espaciamientos y bordes. \citep {nch1198}\relax }}{135}{figure.caption.144}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Valor de $h_e$, para los distintos elementos de uni\IeC {\'o}n. \citep {nch1198}\relax }}{136}{figure.caption.147}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Uniones en cizalle doble. \citep {nch1198}\relax }}{139}{figure.caption.150}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Espaciamientos m\IeC {\'\i }nimos ntre pernos, barras de acero, tirafondos y a los bordes. \citep {nch1198}\relax }}{141}{figure.caption.152}
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Esquema de un tirafondo. \citep {nch1198}\relax }}{142}{figure.caption.153}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Designaciones de espaciamientos y bordes. \citep {nch1198}\relax }}{136}{figure.caption.144}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Valor de $h_e$, para los distintos elementos de uni\IeC {\'o}n. \citep {nch1198}\relax }}{137}{figure.caption.147}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Uniones en cizalle doble. \citep {nch1198}\relax }}{140}{figure.caption.150}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Espaciamientos m\IeC {\'\i }nimos entre pernos, barras de acero, tirafondos y a los bordes. \citep {nch1198}\relax }}{142}{figure.caption.152}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Esquema de un tirafondo. \citep {nch1198}\relax }}{143}{figure.caption.153}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

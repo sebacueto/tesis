@@ -3,9 +3,9 @@
 \section{Levantamiento de información}
 Por medio del levantamiento de información es posible hacer un pequeño análisis del estado actual y los datos obtenidos. Por un lado, la estructura actual responde a la necesidad de colocar la máquina en una ubicación transitoria, debido a los trabajos realizados en el piso del laboratorio durante el año 2012. Por lo mismo, no está diseñada para la operación de la máquina bajo ningún contexto por los peligros que conlleva. Aún cuando esta podría ser modificada, se desconocen las características y propiedades de la especie maderera con la que fue fabricada, lo que obliga a diseñar y construir un nuevo soporte para la máquina. 
 
-Por otra parte, la información obtenida de la máquina de fatiga da cuenta de tres puntos importantes. La antigüedad de sus componentes y la tecnología utilizada afecta directamente en su mantenimiento ante la dificultad de encontrar piezas de repuesto, debido a que las dimensiones de sus componentes, como la polea y la correa, se encuentran fuera de catálogo o de las dimensiones de fabricación de los proveedores. También la obsolescencia de la tecnología afecta su mantenimiento, siendo difícil poder encontrar no sólo las piezas de repuesto, sino que también personas que estén técnicamente calificadas. En segundo lugar, la máquina fue fabricada con estándares o líneas de desarrollo propias de la época, como sería esperable, las cuales no evolucionaron en la misma dirección que los estándares actuales de ensayo a fatiga, dificultando la comparación de los resultados obtenidos. Finalmente, la robustez del diseño, la cual se puede apreciar fácilmente en la dimensiones de la estructura exterior de la máquina, tiene la dualidad de proveer un armazón macizo y duradero sobre el cual trabajar, sin embargo, resulta ser una estructura difícil de modificar por esta misma razón.
+Por otra parte, la información obtenida de la máquina de fatiga da cuenta de tres puntos importantes. La antigüedad de sus componentes y la tecnología utilizada afecta directamente en su mantenimiento ante la dificultad de encontrar piezas de repuesto, debido a que las dimensiones de sus componentes, como la polea y la correa, se encuentran fuera de catálogo o de las dimensiones de fabricación de los proveedores. También la obsolescencia de la tecnología tienen incidencia, siendo difícil poder encontrar no sólo las piezas de repuesto, sino que también personas que estén técnicamente calificadas. En segundo lugar, la máquina fue fabricada con estándares o líneas de desarrollo propias de la época, como sería esperable, las cuales no evolucionaron en la misma dirección que los estándares actuales de ensayo a fatiga, dificultando la comparación de los resultados obtenidos. Finalmente, la robustez del diseño, la cual se puede apreciar fácilmente en la dimensiones de la estructura exterior de la máquina, tiene la dualidad de proveer un armazón macizo y duradero sobre el cual trabajar, por el contrario, resulta ser una estructura difícil de modificar por esta misma razón.
 
-En lo relativo a la exactitud de los datos obtenidos, la imposibilidad de desarmar gran parte de la máquina afectaron la precisión de las mediciones realizadas, sobre todo en partes específicas. Así, las dimensiones y la geometría de las vigas en voladizo tuvieron que ser simplificadas ante la imposibilidad de tomar medidas en la unión barra-disco. Por la misma razón, la masa del disco desbalanceado, calculada a través de la deflexión de las barras de acero, incluye los errores de la medición anterior sumado a la masa de otros elemento que no son parte de la fuerza provocada por el desequilibrio del disco en rotación. Ante esto, surge la necesidad de poder desarmar la máquina para poder estudiarla con mayor detenimiento, obteniendo información que sea más precisa de sus elementos como también información útil para poder actualizar componentes que mejoren su desempeño y mantenibilidad. 
+En lo relativo a la exactitud de los datos obtenidos, la imposibilidad de desarmar gran parte de la máquina afectaron la precisión de las mediciones realizadas, sobre todo en partes específicas. Así, las dimensiones y la geometría de las vigas en voladizo tuvieron que ser simplificadas ante la imposibilidad de tomar medidas en la unión barra-disco. Por la misma razón, la masa del disco desbalanceado, calculada a través de la deflexión de las vigas de acero en voladizo, incluye los errores de la medición anterior sumado a la masa de otros elemento que no son parte de la fuerza provocada por el desequilibrio del disco en rotación. Ante esto, surge la necesidad de poder desarmar la máquina para poder estudiarla con mayor detenimiento, obteniendo información que sea más precisa de sus elementos como también información útil para poder actualizar componentes que mejoren su desempeño y mantenibilidad. 
  
 \section{Diseño de la estructura}
 \subsection{Diseño en acero}
@@ -27,7 +27,7 @@ N$^{\circ}$ & Dimensiones {[}mm{]} & I {[}mm$^4${]} & $R_A$ {[}N{]} & $M_A$ {[}N
 \label{tab:itest_acero}
 \end{table}
 
-Con esta información en consideración, se comprobará su comportamiento bajo las cargas dinámicas, descartando el acero número 1 por estar sobredimensionado. Utilizando la ecuación \ref{eq:mtofat_acero} se obtiene que el momento provocado por la carga alternante es $M_{a,pl,A} =$ 50,42 [Nm]. De esta manera, al aplicar las ecuaciones \ref{eq:esffat_acero} y \ref{eq:fs_fatacero} los resultados obtenidos se encuentran en la tabla \ref{tab:itfat_acero}.
+Con esta información en consideración, se comprobará su comportamiento bajo las cargas dinámicas, descartando el acero número 1 por estar sobredimensionado. Utilizando la ecuación \ref{eq:mtofat_acero} se obtiene que el momento provocado por la carga alternante es $M_{a,pl,A} =$ 50,42 [Nm]. De esta manera, al aplicar las ecuaciones \ref{eq:esffat_acero} y \ref{eq:fs_fatacero} se obtienen los resultados que se encuentran en la tabla \ref{tab:itfat_acero}
 
 \begin{table}[h]
 \centering
@@ -163,7 +163,7 @@ $1/4$ & 25,6 & 12,8 & 44,8 \\ \bottomrule
 \label{tab:res_septirafondo}
 \end{table}
 
-Se calcularon distintas longitudes de tirafondos existentes en el mercado para seleccionar el indicado. Así, la tabla \ref{tab:res_tirafondos} muestra para 3 largos distintos, si cumplen con los requisitos de penetración \footnote{La definición de la profundidad mínima de penetración y la penetración mínima del vástago se encuentran en el anexo \ref{sec:tirafondos}}, los esfuerzos admisibles y el factor de seguridad.
+Se calcularon distintas longitudes de tirafondos existentes en el mercado para seleccionar el indicado. Así, la tabla \ref{tab:res_tirafondos} muestra que para los 3 largos distintos se cumplen con los requisitos de penetración \footnote{La definición de la profundidad mínima de penetración y la penetración mínima del vástago se encuentran en el anexo \ref{sec:tirafondos}}, los esfuerzos admisibles y el factor de seguridad.
 
 \begin{table}[h]
 \centering
@@ -180,7 +180,7 @@ N$^{\circ}$ & Largo [in] & \begin{tabular}[c]{@{}c@{}}Profundidad mínima\\ de p
 \label{tab:res_tirafondos}
 \end{table}
 
-Por lo tanto, se seleccionó el tirafondo de n$^{\circ}$ 1, para no sobredimensionar los elementos de unión.
+Por lo tanto, se seleccionó el tirafondo de n$^{\circ}$ 1, para no sobredimensionar los elementos de unión. La selección de este formato es distinta a la expuesta en la sección de metodología, sin embargo, ambos cumplen con los requisitos expuestos. 
 
 %\newpage
 
@@ -199,16 +199,16 @@ Frecuencia [Hz] & 128,43 & 135,24 & 143,48 & 145,79 & 175,23 & 189,92 \\ \bottom
 \label{tab:frec_nat}
 \end{table}
 
-Del análisis estático, se pudo comprobar que las zonas críticas del diseño se encuentran en el acero, como se puede apreciar en las imágenes \ref{fig:resultados_mesa}. Esto confirma el trabajo de cálculo, expuesto anteriormente, el cual establece que el esfuerzo máximo se encuentra en el empotramiento de la pletina de acero, es decir, en el punto $A$ utilizando como referencia el diagrama de cargas \ref{fig:diagcargas_viga_acero}. Si bien los valores de los esfuerzos son mayores en los cálculos que en la simulación, se debe tener en cuenta que en la simulación se utilizó una carga puntual aplicada sobre la máquina de fatiga. Además, fueron los cálculos los que se utilizaron para justificar las dimensiones del diseño, lo cual frente a esta diferencia de resultados, se resume en un posible sobredimensionamiento de la pletina de acero.
+Del análisis estático, se pudo comprobar que las zonas críticas del diseño se encuentran en el acero, como se puede apreciar en las imágenes \ref{fig:resultados_mesa}. Esto confirma el trabajo de cálculo, expuesto anteriormente, el cual establece que el esfuerzo máximo se encuentra en el empotramiento de la pletina de acero, es decir, en el punto $A$ utilizando como referencia el diagrama de cargas \ref{fig:diagcargas_viga_acero}. Si bien los valores de los esfuerzos son mayores en los cálculos que en la simulación, se debe tener en cuenta que en la simulación se utilizó una carga distribuida aplicada sobre la máquina de fatiga. Además, fueron los cálculos los que se utilizaron para justificar las dimensiones del diseño, lo cual frente a esta diferencia de resultados, se resume en un posible sobredimensionamiento de la pletina de acero.
 
 \begin{figure}[h]
 \centering
-	\begin{subfigure}{0.5\linewidth}
+	\begin{subfigure}{0.49\linewidth}
 		\centering
 		\includegraphics[width=1\linewidth]{Imagenes/rmesa_gen.png}
 		\caption{}\label{fig:rmesa_gen}
 	\end{subfigure}%
-	\begin{subfigure}{0.5\linewidth}
+	\begin{subfigure}{0.49\linewidth}
 		\centering
 		\includegraphics[width=1\linewidth]{Imagenes/rmesa_det.png}
 		\caption{}\label{fig:rmesa_det}
@@ -222,7 +222,18 @@ En definitiva, tanto los resultados obtenidos por la simulación como los obteni
 \section{Modelo del sistema}
 
 \subsection{Comportamiento del modelo}
-Con la caracterización y el levantamiento de información de los distintos componentes, junto a la elección de $c_1$, $c_2$ y de las variables de la función $\phi$, nos permite resolver y obtener valores del movimiento lineal, angular y la carga a la que está sometida la probeta. El tiempo de integración para cada una de las soluciones será entre 0 y 10 segundos. Se utilizará una tolerancia relativa y absoluta de $10^{-8}$. En consecuencia, al resolver el sistema de ecuaciones \ref{eq:mov_matriz} a través de los códigos de la sección \ref{sec:sol_part}, se obtiene la posición ($y,\theta$) y la velocidad ($\dot{y},\dot{\theta}$) del brazo de carga respecto a su centro de masa. Las imágenes \ref{fig:y_2}, \ref{fig:t_2}, \ref{fig:yp_2} y \ref{fig:tp_2} muestran las curvas de cada coordenada.
+Con la caracterización y el levantamiento de información de los distintos componentes, junto a la elección de $c_1$, $c_2$ y de las variables de la función $\phi$, nos permite resolver y obtener valores del movimiento lineal, angular y la carga a la que está sometida la probeta. El tiempo de integración para cada una de las soluciones será entre 0 y 10 segundos. Se utilizará una tolerancia relativa y absoluta de $10^{-8}$. En consecuencia, al resolver el sistema de ecuaciones \ref{eq:mov_matriz} a través de los códigos de la sección \ref{sec:sol_part}, se obtiene la posición ($y,\theta$) y la velocidad ($\dot{y},\dot{\theta}$) del brazo de carga respecto a su centro de masa. Las imágenes \ref{fig:yt_2} y \ref{fig:ytp_2} muestran las curvas de cada coordenada.
+
+Utilizando la ecuación \ref{eq:fuerza_probeta} para cada valor de $y_2(t)$, se obtiene la carga aplicada sobre la probeta $F(t)$ a lo largo del tiempo. La figura \ref{fig:f_2} muestra la curva de esta fuerza para la misma configuración de las imágenes anteriores.  
+
+En este conjunto de imágenes se aprecia como el sistema tiene dos etapas principales: (a) la estabilización y reposo del sistema y (b) el inicio de la función $\phi$. (a) La primera etapa comienza en $t=0$, cuando se encuentra en un estado inicial $(y, \dot{y}, \theta, \dot{\theta}) = (0,0,0,0)$. Tanto la probeta y las barras en voladizo se encuentran sólo bajo la acción de la gravedad, por lo tanto caen y comienzan a oscilar en torno a su posición de reposo, sin embargo, este movimiento decae a medida que avanza el tiempo producto de los amortiguadores. La velocidad de decaimiento de la vibración inicial está determinado por el valor de $c_1$ y $c_2$, teniendo un comportamiento subamortiguado. (b) A continuación, desde el segundo 2 la función $\phi$ comienza a acelerar suavemente hasta llegar a la velocidad $\omega_{max} = 25$ [rad/s], punto en el cual la vibración es constante y estable en el tiempo. A partir de este punto, se extraen la información respectiva de la fuerza máxima, media y alternante, utilizando las ecuaciones \ref{eq:f_max}, \ref{eq:f_m} y \ref{eq:f_a}. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.95\linewidth, trim={0cm 1cm 2cm 1cm},clip]{Imagenes/f_2.pdf}
+\caption{Fuerza aplicada sobre la probeta $F(t)$ en el tiempo.}
+\label{fig:f_2}
+\end{figure}
 
 \begin{figure}[p]
 \centering
@@ -256,7 +267,7 @@ Con la caracterización y el levantamiento de información de los distintos comp
 	\end{subfigure}
 \par\bigskip
 \caption{Velocidad respecto la tiempo en el eje $y$ (a) y rotacional (b) del centro de masa del brazo de carga.}
-\label{fig:t_12}
+\label{fig:ytp_2}
 \end{figure}
 
 %\begin{figure}[h]
@@ -292,18 +303,9 @@ Con la caracterización y el levantamiento de información de los distintos comp
 %\caption{sadfafssafdasf}
 %\label{fig:velt_12}
 %\end{figure}
-
-Utilizando la ecuación \ref{eq:fuerza_probeta} para cada valor de $y_2(t)$, se obtiene la carga aplicada sobre la probeta $F(t)$ a lo largo del tiempo. La figura \ref{fig:f_2} muestra la curva de esta fuerza para la misma configuración de las imágenes anteriores.  
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=\linewidth, trim={0cm 1cm 2cm 1cm},clip]{Imagenes/f_2.pdf}
-\caption{Fuerza aplicada sobre la probeta $F(t)$ en el tiempo.}
-\label{fig:f_2}
-\end{figure}
  
-En este conjunto de imágenes se aprecia como el sistema tiene dos etapas principales: (a) la estabilización y reposo del sistema y (b) el inicio de la función $\phi$. (a) La primera etapa comienza en $t=0$, cuando se encuentra en un estado inicial $(y, \dot{y}, \theta, \dot{\theta}) = (0,0,0,0)$. Tanto la probeta y las barras en voladizo se encuentran sólo bajo la acción de la gravedad, por lo tanto caen y comienzan a oscilar en torno a su posición de reposo, sin embargo, este movimiento decae a medida que avanza el tiempo producto de los amortiguadores. La velocidad de decaimiento de la vibración inicial está determinado por el valor de $c_1$ y $c_2$, teniendo un comportamiento subamortiguado. (b) A continuación, desde el segundo 2 la función $\phi$ comienza a acelerar suavemente hasta llegar a la velocidad $\omega_{max} = 25$ [rad/s], punto en el cual la vibración es constante y estable en el tiempo. A partir de este punto, se extraen la información respectiva de la fuerza máxima, media y alternante, utilizando las ecuaciones \ref{eq:f_max}, \ref{eq:f_m} y \ref{eq:f_a}. 
-
+\newpage
+ 
 \subsection{Carga máxima y media para cada configuración} 
 
 En la sección anterior, se mostraron los resultados y el comportamiento del modelo para una configuración en específico. En esta sección, a través del código de la sección \ref{sec:sol_gen}, se mostrarán los resultados de fuerza máxima y media para cada combinación de contrapesos expuesta en la tabla de carga. Al ordenar los resultados de la fuerza máxima con el mismo orden de la tabla de carga, es decir, respecto a $\Delta m$, se obtiene la curva que se muestra en la figura \ref{fig:fmax_dm}. A partir de la imagen, se puede establecer que no existe una relación entre la carga máxima $F_{max}$ y $\Delta m$ como sí lo estipula la tabla de carga. Por lo tanto, existe una diferencia sustancial entre la información entregada por la tabla de carga y lo que predice el modelo desarrollado en este trabajo. 
@@ -315,7 +317,11 @@ En la sección anterior, se mostraron los resultados y el comportamiento del mod
 \label{fig:fmax_dm}
 \end{figure}
 
-En consecuencia, se propone tomar nuevamente $F_{max}$, pero ordenado respecto a la variable $\Psi = M_a \cdot e_{ga}$. Como resultado de esto, se obtiene la curva que se ve en la figura \ref{fig:fmax_psi}. En esta se puede ver que existe una relación entre ambas variables, por lo tanto, la carga máxima de cualquier combinación de contrapesos, a una velocidad $\omega_{max}$ constante, estará determinada por $\Psi$.
+En consecuencia, se propone tomar nuevamente $F_{max}$, pero ordenado respecto a la variable $\Psi = M_a \cdot e_{ga}$. Como resultado de esto, se obtiene la curva que se ve en la figura \ref{fig:fmax_psi}. En esta se puede ver que existe una relación entre ambas variables, por lo tanto, la carga máxima de cualquier combinación de contrapesos, a una velocidad $\omega_{max}$ constante, estará determinada por $\Psi$. En ese sentido, se puede definir la siguiente relación:
+\begin{equation}\label{eq:func_psi}
+	F(t) = f(\Psi)
+\end{equation}
+Así, la relación original que establece la tabla de carga, donde $F(t) = f(\Delta m)$, es contradictoria con los resultados del modelo de vibración propuesto. Si bien es necesario realizar un estudio que incluya mediciones de la máquina de fatiga para determinar la validez o el rechazo de las dos relaciones, cabe destacar que la única fuerza externa del sistema es provocada por el desequilibrio del motor, el cual, se define físicamente como $F_d(t) = \Psi \cdot (\dot{\phi}^2 \sin\phi - \ddot{\phi} \cos\phi)$. Es decir, en el desarrollo de este trabajo no se encontraron elementos que hagan pensar en $\Delta m$ como una variable fundamental que defina la obtención de la carga sobre la probeta.
 
 \begin{figure}[]
 \centering
@@ -337,7 +343,9 @@ Por otro lado, la carga media tiene variaciones muy pequeñas, como se puede ver
 
 De manera análoga, se puede estudiar la influencia de la velocidad de giro máxima del disco desbalanceado sobre el movimiento del sistema. Las imágenes en \ref{fig:f_w520}, muestran $F(t)$ para dos velocidad distintas, $\omega_{max,a} = 5$ [rad/s] y $\omega_{max,b}=20$ [rad/s]. 
 
-\begin{figure}[h]
+Ambas gráficas muestran no sólo como la frecuencia de la oscilación es menor en la imagen \ref{fig:f_w5} respecto a \ref{fig:f_w20}, como es esperable, sino que también la fuerza sobre la probeta aumenta en la medida que la velocidad de rotación del disco es mayor. Esta información, junto a la expuesta en la sección anterior, muestra que el modelo responde a las distintas variables de la fuerza provocada por el disco $F_d(t)$. 
+
+\begin{figure}[p]
 \centering
 	\begin{subfigure}{1\linewidth}
 		\centering
@@ -355,43 +363,36 @@ De manera análoga, se puede estudiar la influencia de la velocidad de giro máx
 \label{fig:f_w520}
 \end{figure}
 
+A continuación, es posible comparar la fuerza máxima de cada combinación de contrapesos para distintas velocidades angulares $\omega_{max}$. Aquí se confirma el comportamiento descrito anteriormente para una configuración específica, pero de manera general para cada una de las 201 combinaciones existentes, como se puede ver en la imagen \ref{fig:fs_psi}. Al realizarse el conjunto de ensayos de fatiga para crear la curva $S$-$N$ a una velocidad fija, pero variando los contrapesos, se puede definir que la fuerza sobre la probeta como:
+\begin{equation}\label{eq:func_psiomega}
+	F(t) = f(\Psi,\: \omega_{max})
+\end{equation}
 
-Ambas gráficas muestran no sólo como la frecuencia de la oscilación es menor en la imagen \ref{fig:f_w5} respecto a \ref{fig:f_w20}, como es esperable, sino que también la fuerza sobre la probeta aumenta en la medida que la velocidad de rotación del disco es mayor. Esta información, junto a la expuesta en la sección anterior, muestra que el modelo responde a las distintas variables de la fuerza provocada por el disco $F_d(t)$. 
+Como consecuencia de los resultados que se obtuvieron del modelo, es que se hará una propuesta para corregir la tabla de carga actual, debiendo ser corroborada empíricamente a posteriori, como parte del trabajo futuro. En este sentido, es necesario conocer los esfuerzos asociados a cada combinación de contrapesos, de la misma forma que lo hace la tabla actual. Entonces, para esto se realizará una simulación de las cargas aplicadas sobre la probeta, que se obtuvieron en este análisis, en la siguiente sección. 
 
-A continuación, es posible comparar la fuerza máxima de cada combinación de contrapesos para distintas velocidades angulares $\omega_{max}$, las cuales se aprecian claramente en la imagen \ref{fig:fs_psi}. Aquí se confirma el comportamiento descrito anteriormente para una configuración específica, pero de manera general para cada una de las 201 combinaciones existentes. 
-
-\begin{sidewaysfigure}[h]
+\begin{sidewaysfigure}[p]
 \centering
 \includegraphics[width=1\linewidth, trim={1cm 1cm 4cm 1cm}, clip]{Imagenes/fs_psi2.pdf}
 \caption{Curvas de cada combinación de contrapesos para distintas velocidades angulares $\omega_{max}$.}
 \label{fig:fs_psi}
 \end{sidewaysfigure}
 
-Como consecuencia de los resultados que se obtuvieron del modelo, es que se hará una propuesta para corregir la tabla de carga actual, debiendo ser corroborada empíricamente a posteriori, como parte del trabajo futuro. En este sentido, es necesario conocer los esfuerzos asociados a cada combinación de contrapesos, de la misma forma que lo hace la tabla actual. Entonces, para esto se realizará una simulación de las cargas aplicadas sobre la probeta, que se obtuvieron en este análisis, en la siguiente sección. 
+\newpage
 
 \section{Simulación de carga máxima}
 
-Al tomar los datos de las cargas máximas obtenidas a través del modelo e ingresarlas al software de elementos finitos ANSYS, se obtienen los esfuerzos que sufre la probeta para cada carga. En primer lugar se verificará la calidad de la malla utilizada, expuesta en la sección \ref{sec:gen_malla}. La malla utilizada está compuesta por 951.151 nodos y 684.131 elementos y los valores promedios de los parámetros que indican su calidad son:
-\begin{align*}
-	\bullet \ &\text{Calidad del elemento} &=\quad	 &0.839 	\\
-	\bullet \ &\text{Relación de aspecto}  &=\quad 	 &1,817 	\\
-	\bullet \ &\text{Calidad ortogonal} 	 &=\quad 	 &0,772 	\\
-	\bullet \ &\text{Oblicuidad} 			 &=\quad	 &0,22667
-\end{align*}
-
-En segundo lugar, los valores de carga se pasan a presión para ser aplicado sobre una de las caras de la probeta, utilizando la ecuación \ref{eq:p_max}. La imagen REF, muestra las 77 cargas aplicadas a lo largo de la simulación. 
+Al tomar los datos de las cargas máximas obtenidas a través del modelo e ingresarlas al software de elementos finitos ANSYS, se obtienen los esfuerzos que sufre la probeta para cada carga. En primer lugar, los valores de carga se pasan a presión para ser aplicado sobre una de las caras de la probeta, utilizando la ecuación \ref{eq:p_max}. La imagen \ref{fig:f_step}, muestra las 77 cargas aplicadas a lo largo de la simulación. 
 
 \begin{figure}[h]
 \centering
-\boxed{
-\includegraphics[width=1\linewidth, trim={2cm 5.2cm 1cm 5.2cm}, clip]{Imagenes/f_step.pdf}}
-\caption{}
+\includegraphics[width=1\linewidth, trim={2cm 5.2cm 1cm 5.2cm}, clip]{Imagenes/f_step.pdf}
+\caption{Curva de las 77 cargas aplicadas sobre la probeta.}
 \label{fig:f_step}
 \end{figure}
 
-Al ver los esfuerzos generales a los que está sometida la probeta, se identifica que la zona más afectada es la intermedia, concentrándose justo en la mitad de la probeta, como se ve en las imágenes \ref{fig:r_lat} y \ref{fig:r_iso}. Al realizar un corte transversal en la mitad de la probeta (imagen \ref{fig:rcorte_iso}) se pueden apreciar más claramente la distribución de los esfuerzos equivalentes en la zona intermedia, concentrandose fuertemente en la zona inferior y superior de la cara transversal. La imagen \ref{fig:rcorte} muestra directamente la cara sometida a la carga máxima y su distribución de esfuerzos, donde además, se puede ver que la mitad de probeta no se encuentra sometida a grandes cargas. Esta información es posible verla directamente en el comportamiento que tienen los elementos, seleccionando específicamente los elementos $P$, $Q$ y $R$, según se mostró en \ref{fig:diag_pqr}.
+Al ver los esfuerzos generales a los que está sometida la probeta, se identifica que la zona más afectada es la intermedia, concentrándose justo en la mitad de la probeta, como se ve en las imágenes \ref{fig:r_lat} y \ref{fig:r_iso}. Al realizar un corte transversal en la mitad de la probeta (imagen \ref{fig:rcorte_iso}) se pueden apreciar más claramente la distribución de los esfuerzos equivalentes en la zona intermedia, concentrandose fuertemente en la zona inferior y superior de la cara transversal. La imagen \ref{fig:rcorte} muestra directamente la cara sometida a la carga máxima y su distribución de esfuerzos, donde además, se puede ver que la zona cercana al eje neutro tiene esfuerzos menores a los que se encuentran más lejos de este. Esta información es posible verla directamente en el comportamiento que tienen los elementos  $P$, $Q$ y $R$.
 
-\begin{figure}[h]
+\begin{figure}[p]
 \centering
 	\begin{subfigure}{0.8\linewidth}
 		\centering
@@ -425,8 +426,9 @@ Al ver los esfuerzos generales a los que está sometida la probeta, se identific
 \label{fig:resultados_vm}
 \end{figure}
 
+\newpage
 
-Por último, como se buscan conocer los esfuerzos a los que está sometida la probeta en estos puntos en específico, se obtienen los resultados de los esfuerzos de von Mises ($\sigma_{vm}$), normal ($\sigma_x$) y cortante máximo ($\tau_{max}$), además de la deformación unitaria normal ($\varepsilon_x$), de von Mises elástica ($\varepsilon_{vm,e}$) y total ($\varepsilon_{vm,t}$). Estos resultados se pueden ver en los gráficos REF y REF.
+Por último, como se buscan conocer los esfuerzos a los que está sometida la probeta en estos puntos en específico, se obtienen los resultados de la deformación unitaria normal ($\varepsilon_x$) y equivalente total ($\varepsilon_{vm,t}$), además de los esfuerzos de von Mises ($\sigma_{vm}$), normal ($\sigma_x$) y cortante máximo ($\tau_{max}$). Estos resultados se pueden ver en los gráficos \ref{fig:def_pqr} y \ref{fig:esf_pqr}.
 
 \begin{figure}[h]
 \centering
@@ -442,11 +444,13 @@ Por último, como se buscan conocer los esfuerzos a los que está sometida la pr
 		\caption{Deformación equivalente total de los puntos $P$, $Q$ y $R$.}
 		\label{fig:defpqr_vmt}
 	\end{subfigure}
-\caption{Deformación de }
+\caption{Deformación unitaria de los puntos $P$, $Q$ y $R$  }
 \label{fig:def_pqr}
 \end{figure}
 
-\begin{figure}[h]
+\newpage
+
+\begin{figure}[H]
 \centering
 	\begin{subfigure}{1\linewidth}
 		\centering
@@ -466,14 +470,16 @@ Por último, como se buscan conocer los esfuerzos a los que está sometida la pr
 		\caption{Esfuerzo cortante máximo de los puntos $P$, $Q$ y $R$.}
 		\label{fig:defpqr_vmt}
 	\end{subfigure}
-\caption{Deformación de }
-\label{fig:def_pqr}
+\caption{Esfuerzos de von Mises, normal y máximo cortante de los puntos $P$, $Q$ y $R$.}
+\label{fig:esf_pqr}
 \end{figure}
 
-En las figura refgrafesfvm se puede ver que el esfuerzo más alto es de 430,54 MPa en el punto $R$, correspondiente a la carga número 77. Asimismo, se puede apreciar que cuando la fuerza máxima es de 449,03 N (carga 23) se llega a un esfuerzo de 293,5 MPa, tanto en el punto $P$ como en el punto $R$, alcanzando el esfuerzo de fluencia del material. Además, se puede identificar que el esfuerzo último se alcanza entre las cargas 75 y 76, de 987,686 N y 997,152 N respectivamente. Por otra parte, el punto $Q$ alcanza el punto de fluencia de forma tardía, específicamente en la carga 68 de 830,23 N, sin llegar hasta el esfuerzo último. Respecto a este mismo punto, se aprecia como los esfuerzos normales $\sigma_x$ son cercanos a cero, como es esperable al encontrarse en el eje neutro, sin embargo, cuando la deformación plástica aumenta de manera significativa, se ve que el punto $Q$ comienza a sufrir esfuerzos de tracción como consecuencia de salirse del eje neutro de la probeta. 
+\newpage
+
+En la figura \ref{fig:esfpqr_vm} se puede ver que el esfuerzo más alto es de 430,54 MPa en el punto $R$, correspondiente a la carga número 77. Asimismo, se puede apreciar que cuando la fuerza máxima es de 449,03 N (carga 23) se llega a un esfuerzo de 293,5 MPa, tanto en el punto $P$ como en el punto $R$, alcanzando el esfuerzo de fluencia del material. Además, se puede identificar que el esfuerzo último se alcanza entre las cargas 75 y 76, de 987,686 N y 997,152 N respectivamente. Por otra parte, el punto $Q$ alcanza el punto de fluencia de forma tardía, específicamente en la carga 68 de 830,23 N, sin llegar hasta el esfuerzo último. Respecto a este mismo punto, se aprecia como los esfuerzos normales $\sigma_x$ son cercanos a cero, como es esperable al encontrarse en el eje neutro, sin embargo, cuando la deformación plástica aumenta de manera significativa, se ve que el punto $Q$ comienza a sufrir esfuerzos de tracción como consecuencia de salirse del eje neutro de la probeta. 
 
 Para poner en perspectiva la carga, el desplazamiento de la probeta con dirección al eje $y$ alcanza un valor máximo de 9,840 mm. Además al alcanzar la fluencia y el esfuerzo último su deformación corresponde a 0,255 mm y 8,311 mm, respectivamente. 
 
-En definitiva, a la luz de los resultados que se obtuvieron, los esfuerzos normal, equivalente y máximo cortante no coinciden ni se acercan a los que indica la tabla de carga. Esto, sin duda, provoca dudas sobre la información que entrega, por un lado respecto al orden que tiene y, por otro, sobre la veracidad y factibilidad de los esfuerzos que acompañan a cada combinación. Respecto a este último punto, resalta el hecho que en la tabla de cargas aparezcan esfuerzos que sean muy superiores a los que un acero pueda soportar, generando nuevos cuestionamientos en torno a la tabla. No obstante, son las mediciones y los datos lo que determinaran la veracidad de esta información, tanto del desarrollo de esta tesis como de la tabla de carga.  
+En definitiva, a la luz de los resultados que se obtuvieron de los esfuerzos normal, equivalente y máximo cortante no coinciden ni se acercan a los que indica la tabla de carga. Esto, sin duda, provoca dudas sobre la información que entrega, por un lado respecto al orden que tiene y, por otro, sobre la veracidad y factibilidad de los esfuerzos que acompañan a cada combinación. Respecto a este último punto, resalta el hecho que en la tabla de cargas aparezcan esfuerzos que sean muy superiores a los que un acero pueda soportar. No obstante, son las mediciones y los datos lo que determinaran la veracidad de esta información, tanto del desarrollo de esta tesis como de la tabla de carga.  
 
-Los resultados de los esfuerzos máximos de von Mises y cortante máximo para cada carga se encuentran en el anexo REF, relacionando cada esfuerzo a su respectiva carga y combinación de contrapesos. 
+Los resultados de los esfuerzos máximos de von Mises y cortante máximo para cada carga se encuentran en el anexo \ref{sec:anexob2}, relacionando cada esfuerzo a su respectiva carga, combinación de contrapesos y la masa de cada combinación. 

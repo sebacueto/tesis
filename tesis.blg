@@ -2,7 +2,9 @@ This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: tesis.aux
 The style file: ezspanish.bst
+A level-1 auxiliary file: Preliminares/portada.aux
 A level-1 auxiliary file: Prefacios/frase.aux
+A level-1 auxiliary file: blanco.aux
 A level-1 auxiliary file: Capitulos/01_intro.aux
 A level-1 auxiliary file: Capitulos/02_antecedentes.aux
 A level-1 auxiliary file: Capitulos/03_marco_teorico.aux
@@ -27,7 +29,7 @@ Warning--empty year in 1020data
 Warning--can't use both volume and number fields in strzelecki2018analysis
 You've used 47 entries,
             2833 wiz_defined-function locations,
-            852 strings with 11571 characters,
+            854 strings with 11605 characters,
 and the built_in function-call counts, 21915 in all, are:
 = -- 1671
 > -- 691

@@ -1,178 +1,178 @@
 \babel@toc {spanish}{}
-\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{12}{chapter.1}
-\contentsline {chapter}{\numberline {2}Antecedentes}{16}{chapter.2}
-\contentsline {section}{\numberline {2.1}Fen\IeC {\'o}meno de la fatiga y su medici\IeC {\'o}n}{16}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Medici\IeC {\'o}n de la fatiga}{17}{subsection.2.1.1}
-\contentsline {subsubsection}{Ensayo de fatiga con una viga giratoria en flexi\IeC {\'o}n}{18}{section*.5}
-\contentsline {subsubsection}{Ensayo de fatiga axial}{18}{section*.6}
-\contentsline {subsubsection}{Ensayo de fatiga de flexi\IeC {\'o}n en voladizo}{18}{section*.7}
-\contentsline {subsection}{\numberline {2.1.2}Correlaci\IeC {\'o}n entre distintos m\IeC {\'e}todos de medici\IeC {\'o}n de la fatiga}{19}{subsection.2.1.2}
-\contentsline {subsubsection}{Modelo de Esin}{19}{section*.8}
-\contentsline {subsubsection}{Modelo de Lee}{21}{section*.10}
-\contentsline {section}{\numberline {2.2}M\IeC {\'a}quina de fatiga a flexi\IeC {\'o}n}{23}{section.2.2}
-\contentsline {section}{\numberline {2.3}La madera como elemento constructivo}{24}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Anatom\IeC {\'\i }a de la madera}{25}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Propiedades mec\IeC {\'a}nicas de la madera}{25}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Acero}{26}{section.2.4}
-\contentsline {section}{\numberline {2.5}Software de simulaci\IeC {\'o}n de elementos finitos}{27}{section.2.5}
-\contentsline {chapter}{\numberline {3}Marco Te\IeC {\'o}rico}{29}{chapter.3}
-\contentsline {section}{\numberline {3.1}Fatiga}{29}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Definiciones}{29}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Curva S-N o de W\IeC {\"o}hler}{32}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Esfuerzo medio, $S_m$}{34}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Dise\IeC {\~n}o para esfuerzos uniaxiales fluctuantes}{35}{subsection.3.1.4}
-\contentsline {subsubsection}{Diagramas de esfuerzos alternantes normalizados y medios}{36}{section*.22}
-\contentsline {section}{\numberline {3.2}Din\IeC {\'a}mica}{38}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Ecuaciones de movimiento de un cuerpo r\IeC {\'\i }gido}{38}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Energ\IeC {\'\i }a cin\IeC {\'e}tica de un cuerpo r\IeC {\'\i }gido}{38}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Vibraciones}{39}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Rigidez}{39}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Damping}{40}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Vibraciones forzadas}{41}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Modelamiento}{42}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}Sistema de m\IeC {\'u}ltiples grados de libertad}{42}{subsection.3.3.5}
-\contentsline {subsection}{\numberline {3.3.6}M\IeC {\'e}todo de energ\IeC {\'\i }a}{44}{subsection.3.3.6}
-\contentsline {subsection}{\numberline {3.3.7}Ecuaciones de energ\IeC {\'\i }a para un sistema con amortiguamiento y forzado}{45}{subsection.3.3.7}
-\contentsline {section}{\numberline {3.4}Plasticidad}{46}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Esfuerzo y deformaci\IeC {\'o}n real}{46}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Factor de correcci\IeC {\'o}n de Bridgman}{47}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Endurecimiento isotr\IeC {\'o}pico por deformaci\IeC {\'o}n}{47}{subsection.3.4.3}
-\contentsline {section}{\numberline {3.5}M\IeC {\'e}todo de elementos finitos}{48}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Mallado}{49}{subsection.3.5.1}
-\contentsline {subsubsection}{Relaci\IeC {\'o}n de aspecto}{49}{section*.27}
-\contentsline {subsubsection}{Calidad del elemento}{50}{section*.29}
-\contentsline {subsubsection}{Calidad ortogonal}{50}{section*.30}
-\contentsline {subsubsection}{Oblicuidad}{50}{section*.31}
-\contentsline {subsection}{\numberline {3.5.2}Ecuaci\IeC {\'o}n del momentum lineal}{51}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Esfuerzo y deformaci\IeC {\'o}n}{52}{subsection.3.5.3}
-\contentsline {subsubsection}{Esfuerzo y deformaci\IeC {\'o}n unitaria de von Mises}{52}{section*.33}
-\contentsline {subsubsection}{Esfuerzo m\IeC {\'a}ximo cortante}{52}{section*.34}
-\contentsline {subsubsection}{Esfuerzo y deformaci\IeC {\'o}n normal}{52}{section*.35}
-\contentsline {chapter}{\numberline {4}Metodolog\IeC {\'\i }a}{54}{chapter.4}
-\contentsline {section}{\numberline {4.1}Levantamiento de informaci\IeC {\'o}n}{54}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Estado actual}{54}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Funcionamiento}{56}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Mediciones}{58}{subsection.4.1.3}
-\contentsline {subsubsection}{Dise\IeC {\~n}o de estructura}{59}{section*.42}
-\contentsline {subsubsection}{Componentes de la m\IeC {\'a}quina de fatiga}{60}{section*.44}
-\contentsline {subparagraph}{Sistema de transmisi\IeC {\'o}n.}{60}{section*.45}
-\contentsline {subparagraph}{Sistema de vigas en voladizo}{60}{section*.47}
-\contentsline {subparagraph}{Sistema de transmisi\IeC {\'o}n de fuerzas.}{61}{section*.49}
-\contentsline {subparagraph}{Disco desbalanceado y contrapesos.}{61}{section*.51}
-\contentsline {subparagraph}{Probeta.}{62}{section*.53}
-\contentsline {subparagraph}{Motor y sistema el\IeC {\'e}ctrico.}{62}{section*.55}
-\contentsline {section}{\numberline {4.2}Dise\IeC {\~n}o de estructura}{63}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Dise\IeC {\~n}o en acero}{64}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Dise\IeC {\~n}o en madera}{67}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}C\IeC {\'a}lculo de cargas en estructura de madera}{67}{subsection.4.2.3}
-\contentsline {subparagraph}{Tensiones admisibles y m\IeC {\'o}dulo de elasticidad del pino oreg\IeC {\'o}n.}{68}{section*.63}
-\contentsline {subparagraph}{Factores de modificaci\IeC {\'o}n.}{68}{section*.65}
-\contentsline {subsubsection}{Viga principal, A}{69}{section*.67}
-\contentsline {subsubsection}{Pilar de apoyo, B}{71}{section*.69}
-\contentsline {subsubsection}{Viga transversal, C}{72}{section*.70}
-\contentsline {subsection}{\numberline {4.2.4}Uniones}{74}{subsection.4.2.4}
-\contentsline {subsubsection}{Acero - madera}{74}{section*.71}
-\contentsline {subparagraph}{Espaciamiento}{75}{section*.72}
-\contentsline {subsubsection}{Madera - Madera}{75}{section*.73}
-\contentsline {subsubsection}{Tirafondos}{75}{section*.74}
-\contentsline {subparagraph}{Solicitaciones de extracci\IeC {\'o}n lateral}{76}{section*.76}
-\contentsline {subparagraph}{Factor de modificaci\IeC {\'o}n por espesor de la pieza lateral.}{76}{section*.77}
-\contentsline {subparagraph}{Factor de modificaci\IeC {\'o}n por penetraci\IeC {\'o}n del vastago en la pieza principal.}{76}{section*.78}
-\contentsline {subparagraph}{Factor de modificaci\IeC {\'o}n por di\IeC {\'a}metro.}{76}{section*.79}
-\contentsline {subparagraph}{Solicitaciones de extracci\IeC {\'o}n directa}{77}{section*.80}
-\contentsline {subsubsection}{Herrajes y conectores}{77}{section*.81}
-\contentsline {subsection}{\numberline {4.2.5}Simulaciones}{78}{subsection.4.2.5}
-\contentsline {subsubsection}{An\IeC {\'a}lisis modal}{79}{section*.83}
-\contentsline {subsubsection}{An\IeC {\'a}lisis est\IeC {\'a}tico}{79}{section*.84}
-\contentsline {section}{\numberline {4.3}Modelo del sistema vibratorio}{79}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Elementos del sistema}{80}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Modelo del sistema}{80}{subsection.4.3.2}
-\contentsline {subsubsection}{Modelo del disco}{83}{section*.87}
-\contentsline {subsubsection}{Ecuaciones de movimiento}{83}{section*.88}
-\contentsline {subsection}{\numberline {4.3.3}C\IeC {\'a}lculo y obtenci\IeC {\'o}n de constantes caracter\IeC {\'\i }sticas del sistema}{85}{subsection.4.3.3}
-\contentsline {subsubsection}{Rigidez y amortiguamiento}{85}{section*.89}
-\contentsline {subsubsection}{Segundo momento de \IeC {\'a}rea}{86}{section*.91}
-\contentsline {subsubsection}{Momento de inercia del brazo de carga}{86}{section*.92}
-\contentsline {subsubsection}{Longitud, masa y m\IeC {\'o}dulo de elasticidad}{86}{section*.93}
-\contentsline {subsubsection}{Excentricidad}{87}{section*.94}
-\contentsline {subsection}{\numberline {4.3.4}Funci\IeC {\'o}n de aceleraci\IeC {\'o}n del disco}{87}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}Soluci\IeC {\'o}n del modelo}{89}{subsection.4.3.5}
-\contentsline {subsection}{\numberline {4.3.6}Matriz de carga sobre la probeta seg\IeC {\'u}n velocidad del motor}{90}{subsection.4.3.6}
-\contentsline {subsubsection}{Carga m\IeC {\'a}xima, media y amplitud}{90}{section*.97}
-\contentsline {section}{\numberline {4.4}Simulaci\IeC {\'o}n de carga m\IeC {\'a}xima}{91}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Tipo de simulaci\IeC {\'o}n}{91}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Propiedades del material}{91}{subsection.4.4.2}
-\contentsline {subsubsection}{Medici\IeC {\'o}n de la dureza}{91}{section*.98}
-\contentsline {subsubsection}{Curva de esfuerzo-deformaci\IeC {\'o}n del acero}{92}{section*.99}
-\contentsline {subsection}{\numberline {4.4.3}Generaci\IeC {\'o}n de la malla}{93}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}Configuraci\IeC {\'o}n de la simulaci\IeC {\'o}n est\IeC {\'a}tica}{96}{subsection.4.4.4}
-\contentsline {subsubsection}{Condiciones de contorno}{96}{section*.104}
-\contentsline {subsubsection}{Selecci\IeC {\'o}n de elementos}{96}{section*.106}
-\contentsline {subsubsection}{Obtenci\IeC {\'o}n de resultados}{97}{section*.108}
-\contentsline {chapter}{\numberline {5}Resultados}{98}{chapter.5}
-\contentsline {section}{\numberline {5.1}Levantamiento de informaci\IeC {\'o}n}{98}{section.5.1}
-\contentsline {section}{\numberline {5.2}Dise\IeC {\~n}o de la estructura}{99}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Dise\IeC {\~n}o en acero}{99}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Dise\IeC {\~n}o en madera}{100}{subsection.5.2.2}
-\contentsline {subsubsection}{Viga A}{100}{section*.111}
-\contentsline {subsubsection}{Pilar B}{100}{section*.114}
-\contentsline {subsubsection}{Viga C}{101}{section*.116}
-\contentsline {subsubsection}{Selecci\IeC {\'o}n de formatos}{101}{section*.118}
-\contentsline {subsection}{\numberline {5.2.3}Uniones mec\IeC {\'a}nicas}{102}{subsection.5.2.3}
-\contentsline {subsubsection}{Pernos}{102}{section*.119}
-\contentsline {subsubsection}{Tirafondos}{102}{section*.122}
-\contentsline {subsection}{\numberline {5.2.4}Simulaci\IeC {\'o}n est\IeC {\'a}tica y modal}{103}{subsection.5.2.4}
-\contentsline {section}{\numberline {5.3}Modelo del sistema}{104}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Comportamiento del modelo}{104}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Carga m\IeC {\'a}xima y media para cada configuraci\IeC {\'o}n}{107}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Influencia de la velocidad de rotaci\IeC {\'o}n del disco desbalanceado sobre la carga en la probeta}{108}{subsection.5.3.3}
-\contentsline {section}{\numberline {5.4}Simulaci\IeC {\'o}n de carga m\IeC {\'a}xima}{110}{section.5.4}
-\contentsline {chapter}{\numberline {6}Conclusiones y trabajo futuro}{120}{chapter.6}
-\contentsline {section}{\numberline {6.1}Conclusiones}{120}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Respecto a la m\IeC {\'a}quina de fatiga}{120}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Sobre la estructura}{121}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Comportamiento del modelo de vibraci\IeC {\'o}n}{121}{subsection.6.1.3}
-\contentsline {subsection}{\numberline {6.1.4}En relaci\IeC {\'o}n a las simulaciones}{122}{subsection.6.1.4}
-\contentsline {section}{\numberline {6.2}Trabajo futuro}{123}{section.6.2}
-\contentsline {chapter}{\numberline {A}Norma de c\IeC {\'a}lculo en madera - NCh1198}{124}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Propiedades de la madera y factores de modificaci\IeC {\'o}n}{124}{section.Alph1.1}
-\contentsline {subsection}{\numberline {A.1.1}Contenido de humedad}{124}{subsection.Alph1.1.1}
-\contentsline {subsection}{\numberline {A.1.2}Densidad}{125}{subsection.Alph1.1.2}
-\contentsline {subsection}{\numberline {A.1.3}Tensiones admisibles y m\IeC {\'o}dulo de elasticidad}{126}{subsection.Alph1.1.3}
-\contentsline {subsection}{\numberline {A.1.4}Factores de modificaci\IeC {\'o}n}{126}{subsection.Alph1.1.4}
-\contentsline {section}{\numberline {A.2}Dise\IeC {\~n}o de piezas}{126}{section.Alph1.2}
-\contentsline {subsection}{\numberline {A.2.1}Flexi\IeC {\'o}n}{127}{subsection.Alph1.2.1}
-\contentsline {subsubsection}{Factor de modificaci\IeC {\'o}n por altura, $K_{hf}.$}{127}{section*.140}
-\contentsline {subsubsection}{Factor de modificaci\IeC {\'o}n por volcamiento, $K_V.$}{128}{section*.141}
-\contentsline {subsection}{\numberline {A.2.2}Cizalle en vigas simples}{128}{subsection.Alph1.2.2}
-\contentsline {subsection}{\numberline {A.2.3}Compresi\IeC {\'o}n paralela a la fibra}{129}{subsection.Alph1.2.3}
-\contentsline {subsection}{\numberline {A.2.4}Compresi\IeC {\'o}n normal a la fibra}{130}{subsection.Alph1.2.4}
-\contentsline {section}{\numberline {A.3}Nomenclatura y tipos de madera}{130}{section.Alph1.3}
-\contentsline {section}{\numberline {A.4}Uniones en la madera estrutural}{132}{section.Alph1.4}
-\contentsline {subsection}{\numberline {A.4.1}Generalidades}{132}{subsection.Alph1.4.1}
-\contentsline {subsection}{\numberline {A.4.2}Verificaciones tensionales}{134}{subsection.Alph1.4.2}
-\contentsline {subsubsection}{Secci\IeC {\'o}n transversal neta}{134}{section*.145}
-\contentsline {subsubsection}{Tensiones de cizalle}{134}{section*.146}
-\contentsline {subsection}{\numberline {A.4.3}N\IeC {\'u}mero de elementos de uni\IeC {\'o}n}{137}{subsection.Alph1.4.3}
-\contentsline {subsubsection}{Carga admisible y factor de modificaci\IeC {\'o}n por longitud de hilera}{137}{section*.148}
-\contentsline {subsection}{\numberline {A.4.4}Uniones con perno}{137}{subsection.Alph1.4.4}
-\contentsline {subsubsection}{Cargas admisibles para un perno}{138}{section*.149}
-\contentsline {subsubsection}{Espaciamientos m\IeC {\'\i }nimos para pernos}{140}{section*.151}
-\contentsline {subsection}{\numberline {A.4.5}Uniones con tirafondos}{140}{subsection.Alph1.4.5}
-\contentsline {subsubsection}{Perforaciones gu\IeC {\'\i }a}{142}{section*.154}
-\contentsline {subsubsection}{Arandelas}{143}{section*.155}
-\contentsline {subsubsection}{Solicitaciones de extracci\IeC {\'o}n lateral}{143}{section*.156}
-\contentsline {subsubsection}{Solicitaciones de extracci\IeC {\'o}n directa}{144}{section*.157}
-\contentsline {subsubsection}{Combinaci\IeC {\'o}n de solicitaciones de extracci\IeC {\'o}n directa y lateral}{145}{section*.158}
-\contentsline {subsubsection}{Espaciamiento}{145}{section*.159}
-\contentsline {chapter}{\numberline {B}Tablas de carga de la m\IeC {\'a}quina de fatiga}{146}{appendix.Alph2}
-\contentsline {section}{\numberline {B.1}Tabla de cargas original}{146}{section.Alph2.1}
-\contentsline {section}{\numberline {B.2}Tabla de cargas propuesta}{149}{section.Alph2.2}
-\contentsline {chapter}{\numberline {C}Solver, funci\IeC {\'o}n y scripts para la resoluci\IeC {\'o}n del modelo del sistema en MATLAB}{152}{appendix.Alph3}
-\contentsline {section}{\numberline {C.1}Soluci\IeC {\'o}n para un caso particular}{152}{section.Alph3.1}
-\contentsline {subsection}{\numberline {C.1.1}Funci\IeC {\'o}n}{152}{subsection.Alph3.1.1}
-\contentsline {subsection}{\numberline {C.1.2}Solver}{154}{subsection.Alph3.1.2}
-\contentsline {section}{\numberline {C.2}Funci\IeC {\'o}n de la aceleraci\IeC {\'o}n, velocidad y posici\IeC {\'o}n angular del disco}{154}{section.Alph3.2}
-\contentsline {section}{\numberline {C.3}Script para cargas m\IeC {\'a}xima, media y alternante}{155}{section.Alph3.3}
-\contentsline {chapter}{\numberline {D}Planos de la estructura}{158}{appendix.Alph4}
-\contentsline {chapter}{Bibliograf\'{\i }a}{163}{section*.160}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{14}{chapter.1}
+\contentsline {chapter}{\numberline {2}Antecedentes}{18}{chapter.2}
+\contentsline {section}{\numberline {2.1}Fen\IeC {\'o}meno de la fatiga y su medici\IeC {\'o}n}{18}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Medici\IeC {\'o}n de la fatiga}{19}{subsection.2.1.1}
+\contentsline {subsubsection}{Ensayo de fatiga con una viga giratoria en flexi\IeC {\'o}n}{20}{section*.5}
+\contentsline {subsubsection}{Ensayo de fatiga axial}{20}{section*.6}
+\contentsline {subsubsection}{Ensayo de fatiga de flexi\IeC {\'o}n en voladizo}{20}{section*.7}
+\contentsline {subsection}{\numberline {2.1.2}Correlaci\IeC {\'o}n entre distintos m\IeC {\'e}todos de medici\IeC {\'o}n de la fatiga}{21}{subsection.2.1.2}
+\contentsline {subsubsection}{Modelo de Esin}{21}{section*.8}
+\contentsline {subsubsection}{Modelo de Lee}{23}{section*.10}
+\contentsline {section}{\numberline {2.2}M\IeC {\'a}quina de fatiga a flexi\IeC {\'o}n}{25}{section.2.2}
+\contentsline {section}{\numberline {2.3}La madera como elemento constructivo}{26}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Anatom\IeC {\'\i }a de la madera}{27}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Propiedades mec\IeC {\'a}nicas de la madera}{27}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Acero}{28}{section.2.4}
+\contentsline {section}{\numberline {2.5}Software de simulaci\IeC {\'o}n de elementos finitos}{29}{section.2.5}
+\contentsline {chapter}{\numberline {3}Marco Te\IeC {\'o}rico}{31}{chapter.3}
+\contentsline {section}{\numberline {3.1}Fatiga}{31}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Definiciones}{31}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Curva S-N o de W\IeC {\"o}hler}{34}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Esfuerzo medio, $S_m$}{36}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Dise\IeC {\~n}o para esfuerzos uniaxiales fluctuantes}{37}{subsection.3.1.4}
+\contentsline {subsubsection}{Diagramas de esfuerzos alternantes normalizados y medios}{38}{section*.22}
+\contentsline {section}{\numberline {3.2}Din\IeC {\'a}mica}{40}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Ecuaciones de movimiento de un cuerpo r\IeC {\'\i }gido}{40}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Energ\IeC {\'\i }a cin\IeC {\'e}tica de un cuerpo r\IeC {\'\i }gido}{40}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Vibraciones}{41}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Rigidez}{41}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Damping}{42}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Vibraciones forzadas}{43}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Modelamiento}{44}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Sistema de m\IeC {\'u}ltiples grados de libertad}{44}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}M\IeC {\'e}todo de energ\IeC {\'\i }a}{46}{subsection.3.3.6}
+\contentsline {subsection}{\numberline {3.3.7}Ecuaciones de energ\IeC {\'\i }a para un sistema con amortiguamiento y forzado}{47}{subsection.3.3.7}
+\contentsline {section}{\numberline {3.4}Plasticidad}{48}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Esfuerzo y deformaci\IeC {\'o}n real}{48}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Factor de correcci\IeC {\'o}n de Bridgman}{49}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Endurecimiento isotr\IeC {\'o}pico por deformaci\IeC {\'o}n}{49}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}M\IeC {\'e}todo de elementos finitos}{50}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Mallado}{51}{subsection.3.5.1}
+\contentsline {subsubsection}{Relaci\IeC {\'o}n de aspecto}{51}{section*.27}
+\contentsline {subsubsection}{Calidad del elemento}{52}{section*.29}
+\contentsline {subsubsection}{Calidad ortogonal}{52}{section*.30}
+\contentsline {subsubsection}{Oblicuidad}{52}{section*.31}
+\contentsline {subsection}{\numberline {3.5.2}Ecuaci\IeC {\'o}n del momentum lineal}{53}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Esfuerzo y deformaci\IeC {\'o}n}{54}{subsection.3.5.3}
+\contentsline {subsubsection}{Esfuerzo y deformaci\IeC {\'o}n unitaria de von Mises}{54}{section*.33}
+\contentsline {subsubsection}{Esfuerzo m\IeC {\'a}ximo cortante}{54}{section*.34}
+\contentsline {subsubsection}{Esfuerzo y deformaci\IeC {\'o}n normal}{54}{section*.35}
+\contentsline {chapter}{\numberline {4}Metodolog\IeC {\'\i }a}{56}{chapter.4}
+\contentsline {section}{\numberline {4.1}Levantamiento de informaci\IeC {\'o}n}{56}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Estado actual}{56}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Funcionamiento}{58}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Mediciones}{60}{subsection.4.1.3}
+\contentsline {subsubsection}{Dise\IeC {\~n}o de estructura}{61}{section*.42}
+\contentsline {subsubsection}{Componentes de la m\IeC {\'a}quina de fatiga}{62}{section*.44}
+\contentsline {subparagraph}{Sistema de transmisi\IeC {\'o}n.}{62}{section*.45}
+\contentsline {subparagraph}{Sistema de vigas en voladizo}{62}{section*.47}
+\contentsline {subparagraph}{Sistema de transmisi\IeC {\'o}n de fuerzas.}{63}{section*.49}
+\contentsline {subparagraph}{Disco desbalanceado y contrapesos.}{63}{section*.51}
+\contentsline {subparagraph}{Probeta.}{64}{section*.53}
+\contentsline {subparagraph}{Motor y sistema el\IeC {\'e}ctrico.}{64}{section*.55}
+\contentsline {section}{\numberline {4.2}Dise\IeC {\~n}o de estructura}{65}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Dise\IeC {\~n}o en acero}{66}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Dise\IeC {\~n}o en madera}{69}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}C\IeC {\'a}lculo de cargas en estructura de madera}{69}{subsection.4.2.3}
+\contentsline {subparagraph}{Tensiones admisibles y m\IeC {\'o}dulo de elasticidad del pino oreg\IeC {\'o}n.}{70}{section*.63}
+\contentsline {subparagraph}{Factores de modificaci\IeC {\'o}n.}{70}{section*.65}
+\contentsline {subsubsection}{Viga principal, A}{71}{section*.67}
+\contentsline {subsubsection}{Pilar de apoyo, B}{73}{section*.69}
+\contentsline {subsubsection}{Viga transversal, C}{74}{section*.70}
+\contentsline {subsection}{\numberline {4.2.4}Uniones}{75}{subsection.4.2.4}
+\contentsline {subsubsection}{Acero - madera}{75}{section*.71}
+\contentsline {subparagraph}{Espaciamiento}{76}{section*.72}
+\contentsline {subsubsection}{Madera - Madera}{76}{section*.73}
+\contentsline {subsubsection}{Tirafondos}{77}{section*.74}
+\contentsline {paragraph}{Solicitaciones de extracci\IeC {\'o}n lateral}{77}{section*.76}
+\contentsline {subparagraph}{Factor de modificaci\IeC {\'o}n por espesor de la pieza lateral.}{77}{section*.77}
+\contentsline {subparagraph}{Factor de modificaci\IeC {\'o}n por penetraci\IeC {\'o}n del v\IeC {\'a}stago en la pieza principal.}{77}{section*.78}
+\contentsline {subparagraph}{Factor de modificaci\IeC {\'o}n por di\IeC {\'a}metro.}{78}{section*.79}
+\contentsline {paragraph}{Solicitaciones de extracci\IeC {\'o}n directa}{78}{section*.80}
+\contentsline {subsubsection}{Conectores}{78}{section*.81}
+\contentsline {subsection}{\numberline {4.2.5}Simulaciones}{79}{subsection.4.2.5}
+\contentsline {subsubsection}{An\IeC {\'a}lisis modal}{80}{section*.83}
+\contentsline {subsubsection}{An\IeC {\'a}lisis est\IeC {\'a}tico}{80}{section*.84}
+\contentsline {section}{\numberline {4.3}Modelo del sistema vibratorio}{81}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Elementos del sistema}{81}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Modelo del sistema}{83}{subsection.4.3.2}
+\contentsline {subsubsection}{Modelo del disco}{84}{section*.87}
+\contentsline {subsubsection}{Ecuaciones de movimiento}{85}{section*.88}
+\contentsline {subsection}{\numberline {4.3.3}C\IeC {\'a}lculo y obtenci\IeC {\'o}n de constantes caracter\IeC {\'\i }sticas del sistema}{86}{subsection.4.3.3}
+\contentsline {subsubsection}{Rigidez y amortiguamiento}{86}{section*.89}
+\contentsline {subsubsection}{Segundo momento de \IeC {\'a}rea}{87}{section*.91}
+\contentsline {subsubsection}{Momento de inercia del brazo de carga}{87}{section*.92}
+\contentsline {subsubsection}{Longitud, masa y m\IeC {\'o}dulo de elasticidad}{87}{section*.93}
+\contentsline {subsubsection}{Excentricidad}{88}{section*.94}
+\contentsline {subsection}{\numberline {4.3.4}Funci\IeC {\'o}n de aceleraci\IeC {\'o}n del disco}{88}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}Soluci\IeC {\'o}n del modelo}{90}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.6}Matriz de carga sobre la probeta seg\IeC {\'u}n velocidad del motor}{91}{subsection.4.3.6}
+\contentsline {subsubsection}{Carga m\IeC {\'a}xima, media y amplitud}{91}{section*.97}
+\contentsline {section}{\numberline {4.4}Simulaci\IeC {\'o}n de carga m\IeC {\'a}xima}{92}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Tipo de simulaci\IeC {\'o}n}{92}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Propiedades del material}{93}{subsection.4.4.2}
+\contentsline {subsubsection}{Medici\IeC {\'o}n de la dureza}{93}{section*.98}
+\contentsline {subsubsection}{Curva de esfuerzo-deformaci\IeC {\'o}n del acero}{93}{section*.99}
+\contentsline {subsection}{\numberline {4.4.3}Generaci\IeC {\'o}n de la malla}{95}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Configuraci\IeC {\'o}n de la simulaci\IeC {\'o}n est\IeC {\'a}tica}{98}{subsection.4.4.4}
+\contentsline {subsubsection}{Condiciones de contorno}{98}{section*.104}
+\contentsline {subsubsection}{Selecci\IeC {\'o}n de elementos}{99}{section*.106}
+\contentsline {subsubsection}{Obtenci\IeC {\'o}n de resultados}{99}{section*.108}
+\contentsline {chapter}{\numberline {5}Resultados}{100}{chapter.5}
+\contentsline {section}{\numberline {5.1}Levantamiento de informaci\IeC {\'o}n}{100}{section.5.1}
+\contentsline {section}{\numberline {5.2}Dise\IeC {\~n}o de la estructura}{101}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Dise\IeC {\~n}o en acero}{101}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Dise\IeC {\~n}o en madera}{102}{subsection.5.2.2}
+\contentsline {subsubsection}{Viga A}{102}{section*.111}
+\contentsline {subsubsection}{Pilar B}{102}{section*.114}
+\contentsline {subsubsection}{Viga C}{103}{section*.116}
+\contentsline {subsubsection}{Selecci\IeC {\'o}n de formatos}{103}{section*.118}
+\contentsline {subsection}{\numberline {5.2.3}Uniones mec\IeC {\'a}nicas}{104}{subsection.5.2.3}
+\contentsline {subsubsection}{Pernos}{104}{section*.119}
+\contentsline {subsubsection}{Tirafondos}{104}{section*.122}
+\contentsline {subsection}{\numberline {5.2.4}Simulaci\IeC {\'o}n est\IeC {\'a}tica y modal}{105}{subsection.5.2.4}
+\contentsline {section}{\numberline {5.3}Modelo del sistema}{106}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Comportamiento del modelo}{106}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Carga m\IeC {\'a}xima y media para cada configuraci\IeC {\'o}n}{110}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Influencia de la velocidad de rotaci\IeC {\'o}n del disco desbalanceado sobre la carga en la probeta}{112}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}Simulaci\IeC {\'o}n de carga m\IeC {\'a}xima}{115}{section.5.4}
+\contentsline {chapter}{\numberline {6}Conclusiones y trabajo futuro}{121}{chapter.6}
+\contentsline {section}{\numberline {6.1}Conclusiones}{121}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Respecto a la m\IeC {\'a}quina de fatiga}{121}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Sobre la estructura}{122}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Comportamiento del modelo de vibraci\IeC {\'o}n}{122}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}En relaci\IeC {\'o}n a las simulaciones}{123}{subsection.6.1.4}
+\contentsline {section}{\numberline {6.2}Trabajo futuro}{124}{section.6.2}
+\contentsline {chapter}{\numberline {A}Norma de c\IeC {\'a}lculo en madera - NCh1198}{125}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Propiedades de la madera y factores de modificaci\IeC {\'o}n}{125}{section.Alph1.1}
+\contentsline {subsection}{\numberline {A.1.1}Contenido de humedad}{125}{subsection.Alph1.1.1}
+\contentsline {subsection}{\numberline {A.1.2}Densidad}{126}{subsection.Alph1.1.2}
+\contentsline {subsection}{\numberline {A.1.3}Tensiones admisibles y m\IeC {\'o}dulo de elasticidad}{127}{subsection.Alph1.1.3}
+\contentsline {subsection}{\numberline {A.1.4}Factores de modificaci\IeC {\'o}n}{127}{subsection.Alph1.1.4}
+\contentsline {section}{\numberline {A.2}Dise\IeC {\~n}o de piezas}{127}{section.Alph1.2}
+\contentsline {subsection}{\numberline {A.2.1}Flexi\IeC {\'o}n}{128}{subsection.Alph1.2.1}
+\contentsline {subsubsection}{Factor de modificaci\IeC {\'o}n por altura, $K_{hf}.$}{128}{section*.140}
+\contentsline {subsubsection}{Factor de modificaci\IeC {\'o}n por volcamiento, $K_V.$}{129}{section*.141}
+\contentsline {subsection}{\numberline {A.2.2}Cizalle en vigas simples}{129}{subsection.Alph1.2.2}
+\contentsline {subsection}{\numberline {A.2.3}Compresi\IeC {\'o}n paralela a la fibra}{130}{subsection.Alph1.2.3}
+\contentsline {subsection}{\numberline {A.2.4}Compresi\IeC {\'o}n normal a la fibra}{131}{subsection.Alph1.2.4}
+\contentsline {section}{\numberline {A.3}Nomenclatura y tipos de madera}{131}{section.Alph1.3}
+\contentsline {section}{\numberline {A.4}Uniones en la madera estructural}{133}{section.Alph1.4}
+\contentsline {subsection}{\numberline {A.4.1}Generalidades}{133}{subsection.Alph1.4.1}
+\contentsline {subsection}{\numberline {A.4.2}Verificaciones tensionales}{135}{subsection.Alph1.4.2}
+\contentsline {subsubsection}{Secci\IeC {\'o}n transversal neta}{135}{section*.145}
+\contentsline {subsubsection}{Tensiones de cizalle}{135}{section*.146}
+\contentsline {subsection}{\numberline {A.4.3}N\IeC {\'u}mero de elementos de uni\IeC {\'o}n}{138}{subsection.Alph1.4.3}
+\contentsline {subsubsection}{Carga admisible y factor de modificaci\IeC {\'o}n por longitud de hilera}{138}{section*.148}
+\contentsline {subsection}{\numberline {A.4.4}Uniones con perno}{138}{subsection.Alph1.4.4}
+\contentsline {subsubsection}{Cargas admisibles para un perno}{139}{section*.149}
+\contentsline {subsubsection}{Espaciamientos m\IeC {\'\i }nimos para pernos}{141}{section*.151}
+\contentsline {subsection}{\numberline {A.4.5}Uniones con tirafondos}{143}{subsection.Alph1.4.5}
+\contentsline {subsubsection}{Perforaciones gu\IeC {\'\i }a}{144}{section*.154}
+\contentsline {subsubsection}{Arandelas}{144}{section*.155}
+\contentsline {subsubsection}{Solicitaciones de extracci\IeC {\'o}n lateral}{144}{section*.156}
+\contentsline {subsubsection}{Solicitaciones de extracci\IeC {\'o}n directa}{146}{section*.157}
+\contentsline {subsubsection}{Combinaci\IeC {\'o}n de solicitaciones de extracci\IeC {\'o}n directa y lateral}{146}{section*.158}
+\contentsline {subsubsection}{Espaciamiento}{146}{section*.159}
+\contentsline {chapter}{\numberline {B}Tablas de carga de la m\IeC {\'a}quina de fatiga}{147}{appendix.Alph2}
+\contentsline {section}{\numberline {B.1}Tabla de cargas original}{147}{section.Alph2.1}
+\contentsline {section}{\numberline {B.2}Tabla de cargas propuesta}{150}{section.Alph2.2}
+\contentsline {chapter}{\numberline {C}Solver, funci\IeC {\'o}n y scripts para la resoluci\IeC {\'o}n del modelo del sistema en MATLAB}{153}{appendix.Alph3}
+\contentsline {section}{\numberline {C.1}Soluci\IeC {\'o}n para un caso particular}{153}{section.Alph3.1}
+\contentsline {subsection}{\numberline {C.1.1}Funci\IeC {\'o}n}{153}{subsection.Alph3.1.1}
+\contentsline {subsection}{\numberline {C.1.2}Solver}{155}{subsection.Alph3.1.2}
+\contentsline {section}{\numberline {C.2}Funci\IeC {\'o}n de la aceleraci\IeC {\'o}n, velocidad y posici\IeC {\'o}n angular del disco}{155}{section.Alph3.2}
+\contentsline {section}{\numberline {C.3}Script para cargas m\IeC {\'a}xima, media y alternante}{156}{section.Alph3.3}
+\contentsline {chapter}{\numberline {D}Planos de la estructura}{159}{appendix.Alph4}
+\contentsline {chapter}{Bibliograf\'{\i }a}{164}{section*.160}
