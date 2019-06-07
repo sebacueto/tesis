@@ -17,32 +17,17 @@ La única modificación que posee la máquina, según la información recopilada
 \label{fig:cont_elect}
 \end{figure}
 
-El sistema eléctrico de la máquina permanece intacto, la cual se encuentra conectada a la red de la universidad. Conserva su motor eléctrico original junto a un conjunto eléctrico cuya función es suministrar energía de manera continua y estable al motor, para evitar que el ensayo de fatiga se pueda ver afectado por problemas y las variaciones del suministro eléctrico. El motor es de \textcolor{red}{corriente continua} con velocidad constante y sus especificaciones se pueden ver en la tabla \ref{tab:motor_maq}:
-
-\begin{table}[h]
-\centering
-\begin{tabular}{ll}
-\hline
-Especificaciones Motor                            & Valor   				\\ \hline
-Tensión                                           & 220 {[}V{]}        		\\
-Corriente                                         & 0,8 {[}A{]}        		\\
-Factor de potencia ($\cos \varphi$)				  & Sin información    		\\
-Potencia                                          & 100 {[}W{]}        		\\
-Velocidad                                         & 1500 {[}rev/min{]} 		\\ \hline
-\end{tabular}
-\caption{Especificaciones del motor de la máquina de fatiga.}
-\label{tab:motor_maq}
-\end{table}
+El sistema eléctrico de la máquina permanece intacto, la cual se encuentra conectada a la red de la universidad. Conserva su motor eléctrico original junto a un conjunto eléctrico cuya función es suministrar energía de manera continua y estable al motor, para evitar que el ensayo de fatiga se pueda ver afectado por problemas y las variaciones del suministro eléctrico. El motor es de corriente continua con velocidad constante y sus especificaciones se pueden ver en la tabla \ref{tab:motor_maq}.
 
 Otro elemento distinto al original consiste en la correa de transmisión entre el motor eléctrico y el disco desbalanceado. La original consistía en una correa de cuero plana y cruzada, sin información respecto a su empalme. La correa actual consiste también en una correa plana y cruzada, sin embargo, su material es tela y el empalme es realizado a mano con hilo acerado. Cabe destacar que lo poco usual de las dimensiones, características y la necesidad de hacer el empalme dentro de la misma máquina, dificulta la búsqueda de una correa que pueda cumplir de manera óptima la transmisión de potencia. Parte de estas dificultades se deben a que el sistema de transmisión no ha sido modificado, es decir, sus poleas tienen dimensiones, tanto de diámetro como de ancho, que no están normalizadas o se encuentran fuera de catálogo de mucho proveedores. 
 
 Por otro lado, los elementos de agarre de la probeta no tienen modificaciones conocidas, tanto el brazo que recibe el movimiento como el agarre empotrado a la estructura de la máquina. La fabricación de las probetas utilizadas se realiza en el mismo laboratorio a partir de acero AISI 1020 o 1040, el cual para conseguir las dimensiones de la figura \ref{fig:probeta} se debe cortar y tornear.
 
-Finalmente, para realizar los ensayos en distintas configuraciones existen distintas masas (figura \ref{fig:contrapesos}) que desequilibran el disco rotativo, como se verá en la sección \ref{sec:funcionamiento}, y estas combinaciones se especifican en una tabla de cargas (Anexo REF). Sin embargo, se desconoce el origen, y en consecuencia, la fiabilidad de la información contenida en esta tabla.
+Finalmente, para realizar los ensayos en distintas configuraciones existen distintas masas (figura \ref{fig:contrapesos}) que desequilibran el disco rotativo, como se verá en la sección \ref{sec:funcionamiento}, y estas combinaciones se especifican en una tabla de cargas (Anexo \ref{sec:anexob1}). Sin embargo, se desconoce el origen, y en consecuencia, la fiabilidad de la información contenida en esta tabla.
 
 \subsection{Funcionamiento}
 \label{sec:funcionamiento}
-La máquina de fatiga tiene como objetivo lograr que para cada ciclo se ejerza el mismo esfuerzo determinado sobre la probeta, en forma de flexión. Para lograr esto, el mecanismo utilizado es un disco desequilibrado girando a una velocidad constante $\dot{\theta}$, la fuerza es transmitida hasta un brazo que sostiene a su vez a la probeta, generando flexión en la probeta con un doble empotramiento. La velocidad $\dot{\theta}$ del disco se transmitida desde el motor eléctrico a través de poleas y una correa de transmisión en una relación de 1:1, a una velocidad de 1500 revoluciones por minuto. Así, para realizar las mediciones de fatiga a distintas cargas se modifica el desequilibrio del disco a través de un conjunto de masas, mostradas en la figura \ref{fig:contrapesos}, que permiten generar distintas configuraciones y, por consiguiente, esfuerzos en la probeta.
+La máquina de fatiga tiene como objetivo lograr que para cada ciclo se ejerza el mismo esfuerzo determinado sobre la probeta, en forma de flexión. Para lograr esto, el mecanismo utilizado es un disco desequilibrado girando a una velocidad constante $\omega_{max}$, la fuerza es transmitida hasta un brazo que sostiene a su vez a la probeta, generando flexión en la probeta con un doble empotramiento. La velocidad $\dot{\theta}$ del disco se transmitida desde el motor eléctrico a través de poleas y una correa de transmisión en una relación de 1:1, a una velocidad de 1500 revoluciones por minuto. Así, para realizar las mediciones de fatiga a distintas cargas se modifica el desequilibrio del disco a través de un conjunto de masas, mostradas en la figura \ref{fig:contrapesos}, que permiten generar distintas configuraciones y, por consiguiente, esfuerzos en la probeta.
 
 \begin{figure}[h]
 \centering
@@ -224,6 +209,42 @@ Por otra parte, no fue posible medir directamente la masa del disco al no poder 
 \caption{Vista en corte, lateral y frontal de la probeta con sus respectivas dimensiones.}
 \label{fig:probeta}
 \end{figure} 
+ 
+\subparagraph{Motor y sistema eléctrico.}
+Como se señaló, el motor eléctrico con el que funciona la máquina de fatiga es de corriente continua y sus características se encuentran en la tabla \ref{tab:motor_maq}. El motor tiene una velocidad angular constante, aunque como consecuencia de su antigüedad y tipo de motor, añadirle un variador de frecuencia se vuelve más complejo que cambiar el motor mismo. 
+
+\begin{table}[h]
+\centering
+\begin{tabular}{ll}
+\hline
+Especificaciones Motor                            & Valor   				\\ \hline
+Tensión                                           & 220 {[}V{]}        		\\
+Corriente                                         & 0,8 {[}A{]}        		\\
+Factor de potencia ($\cos \varphi$)				  & Sin información    		\\
+Potencia                                          & 100 {[}W{]}        		\\
+Velocidad                                         & 1500 {[}rev/min{]} 		\\ \hline
+\end{tabular}
+\caption{Especificaciones del motor de la máquina de fatiga.}
+\label{tab:motor_maq}
+\end{table}
+ 
+Por otro lado, el sistema eléctrico que se ve en la imagen \ref{fig:sist_elec}, tienen como función en mantener el suministro eléctrico del motor estable. Ahora bien, su tecnología es compleja y se encuentra obsoleta, lo que vuelve difícil mantener, reparar o actualizar sus componentes.
+
+\begin{figure}[h]
+\centering
+	\begin{subfigure}{0.5\linewidth}
+		\centering
+		\includegraphics[width=0.98\linewidth]{Imagenes/sist_elec1.jpg}
+		\caption{}\label{fig:sist_elect1}
+	\end{subfigure}%
+	\begin{subfigure}{0.5\linewidth}
+		\centering
+		\includegraphics[width=0.98\linewidth]{Imagenes/sist_elec2.jpg}
+		\caption{}\label{fig:sist_elect2}
+	\end{subfigure}%
+\caption{En las imagenes (a) y (b) se pueden ver los elementos que componen el sistema eléctrico de la máguina de fatiga.}
+\label{fig:sist_elec}
+\end{figure}
  
 \section{Diseño de estructura}
 El proceso de diseñar la estructura hasta su resultado final pasó por distintas etapas. Esto por el proceso de aprendizaje y comprensión de la norma de calculo de madera NCh 1198, como también por la restricción y disponibilidad de materiales, tecnología o medidas acorde a las necesidades. El diseño presentado en este trabajo se muestra en la figura \ref{fig:mesa_persp}, hecho principalmente de madera, junto a elementos de acero. El objetivo de esta estructura es fijar y soportar la máquina de fatiga tanto en reposo como en operación, buscando como características su durabilidad, lo modular de las piezas y la opción de modificarla en el futuro.
@@ -627,7 +648,7 @@ Como se señaló, para poder crear un modelo del sistema y obtener soluciones, s
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.13]{Imagenes/mach_diagram.jpg}
+\includegraphics[width=0.9\linewidth, trim={5cm 2cm 10cm 1cm}, clip]{Imagenes/mach_diag.pdf}
 \caption{Diagrama del modelo utilizado y el sistema de coordenadas.}
 \label{fig:diag_modelo}
 \end{figure}
@@ -640,10 +661,10 @@ Los sistemas de coordenadas $y(t)$ y $\theta (t)$ definen la posición y el movi
 Si $t_0=0$, entonces cuando $y(t_0) = 0$ y $\theta(t_0) = 0$ la deformación en ambos resortes será cero, por lo tanto las variables $y_1$ e $y_2$ son equivalentes a la deformación de los resortes. La rigidez de cada resorte se denotarán como $k_1$, relativo a las barras de acero, y $k_2$, relativo a la probeta.
 
 Por otro lado, la velocidad de las coordenadas se definirán como $\dot{y}(t)$ y $\dot{\theta}(t)$ y, de manera análoga, la aceleración como $\ddot{y}(t)$ y $\ddot{\theta}(t)$. A partir de las ecuaciones \ref{eq:y1} y \ref{eq:y2} se obtiene que:
-\begin{gather}
+\begin{gather*}
 	\dot{y_1}(t) = \dot{y}(t) - l_1\dot{\theta}(t) \quad ;\quad \ddot{y_1}(t) = \ddot{y}(t) - l_1\ddot{\theta}(t) \\
- 	\dot{y_2}(t) = \dot{y}(t) - l_2\dot{\theta}(t) \quad ;\quad \ddot{y_2}(t) = \ddot{y}(t) - l_2\ddot{\theta}(t) 
-\end{gather}
+ 	\dot{y_2}(t) = \dot{y}(t) + l_2\dot{\theta}(t) \quad ;\quad \ddot{y_2}(t) = \ddot{y}(t) + l_2\ddot{\theta}(t) 
+\end{gather*}
 La variable $M_a$ representa la masa total del disco, que se expresa como:
 \begin{equation}\label{eq:m_a}
 	M_a = M_d + m_1 + m_2
@@ -679,8 +700,7 @@ La energía disipada por el amortiguamiento viscoso se modela utilizando la ecua
 \begin{equation}
 	R = \frac{1}{2} \left(c_1\, \dot{y_1}^2 + c_2\, \dot{y_2}^2\right)
 \end{equation}
-Por último, la fuerza generalizada $Q_i$ es la fuerza variable \ref{eq:fza_gen} proveniente del disco desbalanceado.
-
+Por último, la fuerza generalizada $Q_i$ es la fuerza variable \ref{eq:fza_gen} proveniente del disco desbalanceado.\\ \\
 Con esto, el método de Lagrange define al lagrangiano $L$ como la resta entre la energía cinética $T$ y la energía potencial total $U$, la cual según la ecuación \ref{eq:der_lag}, es la suma de la energía potencial elástica y gravitatoria. Así, la ecuación de energía para un sistema con amortiguamiento y forzado, a través del método de Lagrange es:
 \begin{equation}
 	\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{q_i}}\right) - \frac{\partial L}{\partial q_i} = Q_i - \frac{\partial R}{\partial \dot{q_i}}
@@ -692,7 +712,10 @@ Al reemplazar y derivar cada término para cada coordenada generalizada, quedan 
 	I_{gb}\, \ddot{\theta} - M_a\, y_1\, l_1 - k_1\, y\, l_1 + k_2\, y_2\, l_2 - M_a\, g\, l_1 &= F_d(t)\cdot l_1 + c_1\, \dot{y_1}\, l_1 - c_2\, \dot{y_2}\, l_2 
 \end{align}
 \end{subequations}
-Al reemplazar las variables $y_1$ e $y_2$ y re acomodando los términos, se obtienen las dos ecuaciones de movimiento del brazo de carga:
+
+\newpage
+
+Al reemplazar las variables $y_1$ e $y_2$ y reacomodando los términos, se obtienen las dos ecuaciones de movimiento del brazo de carga:
 \begin{subequations}
 \begin{multline}\label{eq:mov_y}
 	\ddot{y}(M_a + M_b) - \ddot{\theta}M_al_1 + k_1(y - l_1\theta) + k_2(y + l_2\theta) + \dots \\
@@ -900,11 +923,18 @@ Por lo tanto se considerará una dureza del material de $H = 54.6$ HRB. Sin emba
 \subsubsection{Curva de esfuerzo-deformación del acero}
 A causa de lo bajo del valor de dureza obtenido, sumado al hecho que en los únicos aceros utilizados en el laboratorio son SAE 1020 y 1040, es que se decide tomar las propiedades mecánicas del primero de estos. Los datos utilizados se obtuvieron de un ensayo de tracción realizado por la Universidad de Washington de un acero SAE 1020 laminado en caliente (AISI 1020 HR)\cite{1020data}. Estos datos contienen la fuerza aplicada, la deformación sufrida y el diámetro original de la probeta, para los cuales se utilizaron las ecuaciones \ref{eq:true_esf} y \ref{eq:true_strain} para obtener los esfuerzos y deformaciones reales y el factor de corrección de Bridgman \ref{eq:bridgman}. En la imagen \ref{fig:esf_realing}, se pueden apreciar la curva original de esfuerzo-deformación ingenieril y la curva de esfuerzo-deformación real. 
 
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=0.9\linewidth]{Imagenes/esf_real-ing.pdf}
+%\caption{Curva de esfuerzo-deformación del material AISI 1020 en valores ingenieriles y reales.}
+%\label{fig:esf_realing}
+%\end{figure}
+
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.9\linewidth]{Imagenes/esf_real-ing.pdf}
+\includegraphics[width=1\linewidth, trim={2cm 6cm 2cm 5cm},clip]{Imagenes/esf_real_ing.pdf}
 \caption{Curva de esfuerzo-deformación del material AISI 1020 en valores ingenieriles y reales.}
-\label{fig:esf_realing}
+\label{fig:esf_realing1}
 \end{figure}
 
 Sin embargo, debido a las características del modelo MISO, se utilizaron exclusivamente los puntos de la zona plástica y que su pendiente no fuese menor a cero entre dos puntos, por lo tanto, la tabla \ref{tab:esfdef_util} muestra los datos utilizados.
@@ -1056,8 +1086,5 @@ En base a los elementos seleccionados, los resultados que se necesitan son:
 Además, a modo de referencia se utilizarán los resultados globales:
 \begin{itemize*}
 	\item Esfuerzo equivalente
-	\item Esfuerzo máximo cortante
-	\item Esfuerzo máximo normal en dirección\textit{x}
-	\item Deformación unitaria equivalente total
 	\item Deformación en dirección \textit{y}, según referencia \ref{fig:cond_borde}
 \end{itemize*}

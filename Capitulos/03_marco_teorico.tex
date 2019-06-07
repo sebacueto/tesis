@@ -4,7 +4,7 @@
 \subsection{Definiciones}
 La fatiga se puede definir, desde la perspectiva del material, como el proceso en el cual el daño se acumula producto de la aplicación de cargas repetitivas que se encuentran bajo el punto de fluencia. En metales, este proceso se divide en tres fases o etapas las cuales, dependiendo del autor, pueden ser llamadas: fase de iniciación de la grieta, fase de crecimiento de la grieta y fractura.
 
-La primera fase es el inicio de una o más microgrietas, la cual ocurre tempranamente en la vida a fatiga de un material y que, incluso, pueden ocurrir inmediatamente si el esfuerzo cíclico se encuentra sobre el límite de fatiga. Lo característico de esta etapa es que las grietas no pueden verse a simple vista, fase que representa una parte considerable de la vida a fatiga total. Estas crecerán lentamente y de manera errática, debido al efecto de las microestructuras como los bordes de grano. Durante este período, las concentraciones de esfuerzo juegan un importante papel, al ser los lugares donde comenzará la nucleación de las grieta, sumado a las pocas restricciones de deslizamiento de la superficie del material, hace que esta sea relevante en el inicio de este proceso.
+La primera fase es el inicio de una o más microgrietas, la cual ocurre tempranamente en la vida a fatiga de un material y que, incluso, pueden ocurrir inmediatamente si el esfuerzo cíclico se encuentra sobre el límite de fatiga. Lo característico de esta etapa es que las grietas no pueden verse a simple vista, fase que representa una parte considerable de la vida a fatiga total. Estas crecerán lentamente y de manera errática, debido al efecto de las microestructuras como los bordes de grano. Durante este período, las concentraciones de esfuerzo juegan un importante papel, al ser los lugares donde comenzará la nucleación de las grieta, sumado a las pocas restricciones de deslizamiento de la superficie del material, hace que esta zona sea relevante en el inicio de este proceso.
 
 En la segunda etapa, las microgrietas pasan a ser macrogrietas, es decir, son visibles al ojo humano. Estas grietas comienzan a tomar una dirección de crecimiento que es perpendicular a los esfuerzos principales producidos por la carga alternante. La resistencia al crecimiento de las grietas, cuando esta penetra el material, dependerá de las propiedades de grano. Así, se puede definir cualitativamente una separación entre ambas etapas, donde el periodo de iniciación o nucleación de las grietas termina cuando su crecimiento no es dependiente de las condiciones superficiales del material. Producto de la micro-deformación plástica cíclica se forman bandas de crecimiento conocidos como \textit{marcas de playa} o \textit{``striations patterns''}, abriendo, cerrandose y frotandose entre sí, como se puede ver en la imagen \ref{fig:crack_fat}, dejando en evidencia el frente de grieta, las variaciones en la carga, su velocidad de crecimiento y la naturaleza corrosiva del entorno.
 
@@ -21,11 +21,11 @@ Con esto en cuenta, es posible definir ciertos conceptos en base a las distintas
 
 Por otra parte, para el estudio de este fenómeno existen tres modelos de falla por fatiga: de \textit{esfuerzo-vida} ($S$-$N$), de \textit{deformación-vida }($\varepsilon$-N) y de la \textit{mecánica de fractura lineal elástica} (LEFM). Cada uno de ellos tiene ventajas y desventajas, sin embargo, la máquina que es objeto de evaluación en este trabajo utiliza el método \textit{esfuerzo-vida}. El criterio de elección entre los distintos modelos se divide principalmente por la cantidad de ciclos que se hará la medición, los que se clasifican en régimen de fatiga de ciclo bajo (\textit{low-cycle fatigue}, LCF) o un régimen de fatiga de ciclo alto (\textit{high-cycle fatigue}, HCF). La división entre ambos régimen dependerá de distintos autores, no obstante, por lo general se establece la separación en $10^3 \leq LCF$ y $10^3 > HCF$ \cite{budynas2008shigley}, debido a que la zona LCF está asociada a la existencia de macro-deformaciones plásticas en cada ciclo. De esta manera, el método de esfuerzo-vida se utiliza para ensayos de alto ciclaje debido a su poca precisión en casos LCF. A su vez, los métodos de deformación-vida y LEFM se aplican para casos LCF.
 
-En el método de esfuerzo-vida las muestras o probetas son sometidas a fuerzas de magnitudes especificadas, al mismo tiempo que se cuentan la cantidad de ciclos. Es por esto que es un modelo con base en el esfuerzo, con el cual se busca determinar una resistencia de fatiga o un límite de resistencia a la fatiga. 
+En el método de esfuerzo-vida las muestras o probetas son sometidas a fuerzas de magnitudes especificas, al mismo tiempo que se cuentan la cantidad de ciclos. Es por esto que es un modelo con base en el esfuerzo, con el cual se busca determinar un límite de resistencia a la fatiga. 
 
-Estas fuerzas especificadas pueden ser constantes o variables en el tiempo y magnitud, sin embargo, se abordará principalmente los casos donde los esfuerzos fluctúan de manera constante en el tiempo y de una amplitud fija debido a las características de la máquina analizada en este trabajo. Esto permite trazar la curva de fatiga (S-N) del componente o material para distintas cargas con su respectivo número de ciclos que falla.
+Estas fuerzas especificas pueden ser constantes o variables en el tiempo y magnitud, sin embargo, se abordará principalmente los casos donde los esfuerzos fluctúan de manera constante en el tiempo y de una amplitud fija debido a las características de la máquina analizada en este trabajo. Esto permite trazar la curva de fatiga $S$-$N$ del componente o material para distintas cargas con su respectivo número de ciclos en el que falla.
 
-Por esto, se hace necesario describir y definir elementos que surgen producto de una carga cíclica. Esta se caracteriza por el esfuerzo alternante (\textit{alternate stress} o \textit{amplitude stress}, $\sigma_a$) y el esfuerzo medio (\textit{mean stress}, $\sigma_m$) que se muestran en la ecuación \ref{eq:s_a} y \ref{eq:s_m}, respectivamente. A su vez, estas se definen por el esfuerzo máximo $\sigma_{max}$ y $\sigma_{min}$, siendo el esfuerzo máximo y mínimo alcanzado por la carga cíclica. Finalmente, el rango del esfuerzo, $\Delta \sigma$ o $\sigma_r$(eq. \ref{eq:ds}), y la razón de esfuerzos, $R$ (eq. \ref{eq:r_s}), también son opciones  para caracterizar la fatiga.
+Por esto, se hace necesario describir y definir conceptos que surgen producto de una carga cíclica. Esta curva se caracteriza por el esfuerzo alternante (\textit{alternate stress} o \textit{amplitude stress}, $\sigma_a$) y el esfuerzo medio (\textit{mean stress}, $\sigma_m$) que se muestran en la ecuación \ref{eq:s_a} y \ref{eq:s_m}, respectivamente. A su vez, estas se definen por el esfuerzo máximo $\sigma_{max}$ y $\sigma_{min}$, siendo el esfuerzo máximo y mínimo alcanzado por la carga cíclica. Finalmente, el rango del esfuerzo, $\Delta \sigma$ o $\sigma_r$ (\ref{eq:ds}), y la razón de esfuerzos, $R$ (\ref{eq:r_s}), también son opciones  para caracterizar la fatiga.
 
 \begin{align}
 	\sigma_a &= \frac{\sigma_{max} - \sigma_{min}}{2} \label{eq:s_a} \\
@@ -34,7 +34,11 @@ Por esto, se hace necesario describir y definir elementos que surgen producto de
 	R &= \frac{\sigma_{min}}{\sigma_{max}} \label{eq:r_s} 
 \end{align}
 
-Estos términos se pueden ver claramente en la figura \ref{fig:defesf_fat}. Existen dos casos específicos, el primero en donde $\sigma_m = 0$, y así $R=-1$, se llama esfuerzo de ciclo invertido. El segundo, cuando $\sigma_{min}=0$, y $R=0$, se llama esfuerzo repetido.
+Estos términos se pueden ver claramente en la figura \ref{fig:defesf_fat}.
+
+\newpage
+
+Existen dos casos específicos destacables, el primero en donde $\sigma_m = 0$, y así $R=-1$, se llama esfuerzo de ciclo invertido. El segundo, cuando $\sigma_{min}=0$, y $R=0$, se llama esfuerzo repetido.
 
 \begin{figure}[h]
 \centering
@@ -44,10 +48,9 @@ Estos términos se pueden ver claramente en la figura \ref{fig:defesf_fat}. Exis
 \end{figure}
 
 \subsection{Curva S-N o de Wöhler}
-Como se señaló en el punto anterior, la curva S-N es el resultado de la aplicación del método esfuerzo-vida. Es quizás uno de las herramientas más importantes en el desarrollo empírico para lograr cuantificar el proceso de fatiga y poder diseñar contra este. El diagrama S-N se obtiene como resultado de un número de ensayos de fatiga a distintos niveles de esfuerzo, donde $S$ puede ser la amplitud ($S_a$), el rango de esfuerzo ($\Delta S$) o el esfuerzo máximo ($S_{max}$) que es aplicado a la probeta, siendo la amplitud lo más común. La variable $N$ hace referencia a la vida a fatiga del material, es decir, la cantidad de ciclos hasta que la probeta falle. Debido a que se desea analizar fallas en LCF y HCF, la cantidad de ciclos necesarios para fallar la probeta pueden llegar a ser demasiado altos, por esto, $N$ se grafica en escala logarítmica.
+Como se señaló en el punto anterior, la curva $S$-$N$ es el resultado de la aplicación del método esfuerzo-vida. Es quizás uno de las herramientas más importantes en el desarrollo empírico para lograr cuantificar el proceso de fatiga y poder diseñar contra este. El diagrama $S$-$N$ se obtiene como resultado de un número de ensayos de fatiga a distintos niveles de esfuerzo, donde $S$ puede ser la amplitud ($S_a$), el rango de esfuerzo ($\Delta S$) o el esfuerzo máximo ($S_{max}$) que es aplicado a la probeta, siendo la amplitud lo más común. La variable $N$ hace referencia a la vida a fatiga del material, es decir, la cantidad de ciclos hasta que la probeta falle. Debido a que se desea analizar fallas en LCF y HCF, la cantidad de ciclos necesarios para fallar la probeta pueden llegar a ser demasiado altos, por esto, $N$ se grafica en escala logarítmica.
 
-La cantidad de ensayos requeridos para construir la curva S-N dependerá de distintos factores como, por ejemplo, la confiabilidad esperada, el uso final de la información o de los recursos disponibles. La norma E739-10 -- "Statistical Analysis of Linear or Linearized Stress-Life ($S$-$N$) and Strain-Life ($\varepsilon$-$N$) Fatigue Data" \cite{E739} , establece una guía dependiendo del tipo de prueba a realizar como se muestra en al tabla \ref{tab:type_test}. Además, se recomienda realizar la medición con, al menos, tres puntos de esfuerzos distintos. Con esto, es posible obtener el diagrama $S-N$ como el que se puede apreciar en la figura \ref{fig:lcf_hcf}, donde se puede apreciar la diferencia entre la zona LCF, HCF y de vida infinita, para el caso de los aceros.
-
+La cantidad de ensayos requeridos para construir la curva $S$-$N$ dependerá de distintos factores como, por ejemplo, la confiabilidad esperada, el uso final de la información o de los recursos disponibles. La norma E739-10 -- "Statistical Analysis of Linear or Linearized Stress-Life ($S$-$N$) and Strain-Life ($\varepsilon$-$N$) Fatigue Data" \cite{E739} , establece una guía dependiendo del tipo de prueba a realizar como se muestra en al tabla \ref{tab:type_test}. Además, se recomienda realizar la medición con al menos tres puntos de esfuerzos distintos. Con esto, es posible obtener el diagrama $S$-$N$ como el que se aprecia en la figura \ref{fig:lcf_hcf}, donde se puede notar la diferencia entre la zona LCF, HCF y de vida infinita.
 
 \begin{table}[h]
 \begin{center}
@@ -73,11 +76,11 @@ Datos de confiabilidad                                                          
 
 La curva $S$-$N$ varía ámpliamente sus resultados para distintos tipos de materiales y, a su vez, estos se ven afectados por una variedad de factores. Estos pueden ser por modificaciones en las condiciones de ensayo, de la geometría de la probeta, de la naturaleza del material o de la forma de fabricación de la probeta. Todos estos factores crean ciertas tendencias en la obtención de datos que los distinguen unos de otros. 
 
-En concreto, las condiciones medioambientales hostiles, ya sean químicas o térmicas, pueden acelerar el proceso de iniciación y crecimiento de grietas. Una probeta sometida a creep, fatiga y altas temperaturas puede disminuir drásticamente sus vida útil y, por tanto, la vida a fatiga del material. También es posible realizar ensayos en una solución de sal para homologar las condiciones marinas, afectando también su vida a fatiga. Otro factor que afecta los resultados de los ensayos es la frecuencia de los ciclos de carga ejercidos, al aumentar la temperatura de la probeta durante su ensayo.
+En concreto, las condiciones medioambientales hostiles, ya sean químicas o térmicas, pueden acelerar el proceso de iniciación y crecimiento de grietas. Una probeta sometida a creep, fatiga y altas temperaturas puede disminuir drásticamente sus vida útil y, por tanto, la vida a fatiga del material. También es posible realizar ensayos en una solución de sal para homologar las condiciones marinas, afectando su vida a fatiga. Otro factor que afecta los resultados de los ensayos es la frecuencia de los ciclos de carga ejercidos, al aumentar la temperatura de la probeta durante su ensayo.
 
-El esfuerzo residual también tiene incidencia en la curva de Wöhler, la cual puede incluso ser beneficiosa al utilizar técnicas como el granallado (\textit{shot peening}). El mecánizado de las piezas, como en el caso de la probeta utilizada por la máquina de fatiga, verá afectado los resultados de la curva $S$-$N$ dependiendo de las características con las que sea manufacturado. Como se indicó anteriormente, la primera etapa de la fatiga, la inicación de las grietas, es un fenómeno que depende de la superficie del material y como consecuencia, un mecánizado grueso o fino tendrá un impacto en esa etapa de la fatiga y no en la posterior. Así, aquellas probetas que tengan una mejor calidad superficial producto del afinado, tendrán una mejor resistencia a la fatiga respecto a otras.
+El esfuerzo residual también tiene incidencia en la curva de Wöhler, la cual puede incluso ser beneficiosa al utilizar técnicas como el granallado (\textit{shot peening}). El mecánizado de las piezas, como en el caso de la probeta utilizada por la máquina de fatiga, verá afectado los resultados de la curva $S$-$N$ dependiendo de las características con las que sea manufacturado. Como se indicó anteriormente, la primera etapa de la fatiga, la iniciación de las grietas, es un fenómeno que depende de la superficie del material y como consecuencia, un mecánizado grueso o fino tendrá un impacto en esa etapa de la fatiga y no en la posterior. Así, aquellas probetas que tengan una mejor calidad superficial producto del afinado, tendrán una mejor resistencia a la fatiga respecto a otras.
 
-Es posible encontrar otros factores que inciden en los resultados de la curva, como pueden ser la geometría de la probeta o componente, sus dimensiones, el esfuerzo último ($\sigma_{uts}$), su microestructura, tratamientos químicos y el esfuerzo medio ($S_m$). Este último será analizado en la sección siguiente, debido a la importancia que posee al estar presente en la máquina que se estudia en este trabajo.
+Es posible encontrar otros factores que inciden en los resultados de la curva, como pueden ser la geometría de la probeta o componente, sus dimensiones, el esfuerzo último ($\sigma_{u}$), su microestructura, tratamientos químicos y el esfuerzo medio ($S_m$). Este último será analizado en la sección siguiente, debido a la importancia que posee al estar presente en la máquina que se estudia en este trabajo.
 
 \subsection{Esfuerzo medio, $S_m$}
 Como se escribió anteriormente, el esfuerzo medio tiene influencia en el resultado de una curva $S$-$N$, disminuyendo el límite a la resistencia de la fatiga del material a medida que aumenta su carga media. Debido a que realizar ensayos para cada carga media resultaría muy costoso, existen ecuaciones que buscan estimar el efecto de un esfuerzo sobre un material o componente. 
@@ -89,7 +92,7 @@ Como se escribió anteriormente, el esfuerzo medio tiene influencia en el result
 \label{fig:s_n_mean}
 \end{figure}
 
-Se utilizan distintas maneras de representar la información de un ensayo cuando $S_m \neq 0$. Una forma es recolectar la información de distintos ensayos con distintos valores de carga media y graficarlos como se muestra en la figura \ref{fig:s_n_mean}. Una segunda opción es realizar un diagrama de vida constante (\textit{constant fatigue life diagram}, \textit{CFL}), mostrada en la figura \ref{fig:diag_cfl}, el cual muestra claramente que un incremento del esfuerzo medio tiene como resultado una disminución del esfuerzo alternante, para la misma vida de la probeta, $N_f$.
+Se utilizan distintas maneras para representar la información de un ensayo cuando $S_m \neq 0$. Una forma es recolectar la información de distintos ensayos con distintos valores de carga media y graficarlos como se muestra en la figura \ref{fig:s_n_mean}. Una segunda opción es realizar un diagrama de vida constante (\textit{constant fatigue life diagram}, \textit{CFL}), mostrada en la figura \ref{fig:diag_cfl}, el cual muestra claramente que un incremento del esfuerzo medio tiene como resultado una disminución del esfuerzo alternante, para la misma vida de la probeta, $N_f$.
 
 \begin{figure}[h]
 \centering
@@ -98,7 +101,9 @@ Se utilizan distintas maneras de representar la información de un ensayo cuando
 \label{fig:diag_cfl}
 \end{figure}
 
-\subsubsection{Diseño para esfuerzos uniaxiales fluctuantes}
+\newpage
+
+\subsection{Diseño para esfuerzos uniaxiales fluctuantes}
 Es importante tomar en consideración en el diseño de elementos la componente media de la carga fluctuante. Para esto, se utiliza un diagrama de esfuerzo alternante versus esfuerzo normal en el cual se ajustan distintas curvas a los datos obtenidos. Como se muestra en la figura \ref{fig:falla_fat}, existe la línea de Goodman modificada, la parábola de Gerber y la línea de Soderberg. 
 
 \begin{figure}[h]
@@ -153,7 +158,8 @@ Y una segunda modificación de la ecuación de Goodman, propuesta por J. Morrow,
 
 \section{Dinámica}
 
-El movimiento y la relación existente entre las fuerzas que actúan sobre un cuerpo rígido es estudiado por la dinámica, la cual busca predecir el movimiento y explicar su origen. En esta sección se hablará de cuerpos rígidos y no partículas, debido las características de lo que se analizará posteriormente, además, de ser la rotación un elemento importante a considerar. 
+El movimiento y la relación existente entre las fuerzas que actúan sobre un cuerpo rígido es estudiado por la dinámica, la cual busca predecir el movimiento y explicar su origen. 
+
 \subsection{Ecuaciones de movimiento de un cuerpo rígido}
 \label{sec:ec_mov}
 Para describir el movimiento de un cuerpo es necesario recurrir a la segunda ley de movimiento de Newton, la cual permite trazar y predecir el movimiento de traslación y rotación del cuerpo.
@@ -191,9 +197,9 @@ Físicamente, la vibración es la interacción entre la energía potencial y cin
 \subsection{Rigidez}
 El comportamiento como resorte se puede aplicar a distintos elementos y componentes, dependiendo de su geometría y las propiedades del material. Así, a partir de la configuración del sistema, es posible calcular una rigidez $k$ para el movimiento longitudinal, transversal o torsional. 
 
-El cálculo de la constante de rigidez para una viga de área $A$, módulo de Young $E$, largo $L$ y el segundo momento de área $I$, se puede obtener a través de las ecuaciones de energía. Así, la ecuación \ref{eq:k_cantilever}, muestra el valor de $k$ para una viga en voladizo con una carga $P$ en su extremo.
+El cálculo de la constante de rigidez para una viga de área $A$, módulo de Young $E$, largo $L$ y el segundo momento de área $\bar{I}$, se puede obtener a través de las ecuaciones de energía. Así, la ecuación \ref{eq:k_cantilever}, muestra el valor de $k$ para una viga en voladizo con una carga $P$ en su extremo.
 \begin{equation}\label{eq:k_cantilever}
-	k = \frac{3EI}{L^3}
+	k = \frac{3E\bar{I}}{L^3}
 \end{equation}
 
 Por otro lado, la ecuación \ref{eq:e_potelas}, muestra la energía potencial elástica asociada a un elemento que se comporta como un resorte.
@@ -204,7 +210,7 @@ Por otro lado, la ecuación \ref{eq:e_potelas}, muestra la energía potencial el
 
 \subsection{Damping}
 \label{sec:damping}
-Los sistemas vibratorios predicen oscilaciones indefinidas si solo se considera la rígidez del resorte y la masa del sistema, sin embargo, la experiencia nos indica que los sistemas tienden a eventualmente reducir su movimiento hasta cero si estos no están afectados por fuerzas externas. Para esto es necesario añadir un modelo físico para disipar la energía y amortiguar el sistema mecánico. Así, el modelo expresado anteriormente debe ser modificado para considerar la reducción de movimiento en el tiempo. Para esto, se añade a las ecuaciones diferenciales un término de la forma $c\dot{x}(t)$, donde $c$ es una constante, el cual da como resultado una solución donde $x(t)$ tiende a un punto de reposo. Este tipo de \textit{damping} se llama amortiguamiento viscoso, en el cual su fuerza ($f_c$) es proporcional a la velocidad del sistema en la dirección opuesta del movimiento. Por lo tanto, la ecuación \ref{eq:f_damp} muestra la fuerza de amortiguamiento, de tipo viscoso, presente en un sistema mecánico.
+Los sistemas vibratorios predicen oscilaciones indefinidas si solo se considera la rigidez del resorte y la masa del sistema, sin embargo, la experiencia nos indica que los sistemas tienden a eventualmente reducir su movimiento hasta cero si estos no están afectados por fuerzas externas. Para esto es necesario añadir un modelo físico para disipar la energía y amortiguar el sistema mecánico. Así, el modelo expresado anteriormente debe ser modificado para considerar la reducción de movimiento en el tiempo. Para esto, se añade a las ecuaciones diferenciales un término de la forma $c\dot{x}(t)$, donde $c$ es una constante, el cual da como resultado una solución donde $x(t)$ tiende a un punto de reposo. Este tipo de \textit{damping} se llama amortiguamiento viscoso, en el cual su fuerza ($f_c$) es proporcional a la velocidad del sistema en la dirección opuesta del movimiento. Por lo tanto, la ecuación \ref{eq:f_damp} muestra la fuerza de amortiguamiento, de tipo viscoso, presente en un sistema mecánico.
 \begin{equation}\label{eq:f_damp}
 	f_c = c\dot{x}(t)
 \end{equation}
@@ -213,7 +219,7 @@ Producto del amortiguamiento de la oscilación del sistema, la frecuencia es men
 \begin{enumerate}
 	\item \textbf{Subamortiguado}: El sistema continúa teniendo un movimiento oscilatorio, con un decaimiento exponencial de la amplitud hasta llegar a la posición de reposo.
 	\item \textbf{Sobreamortiguado}: El movimiento del sistema no alcanza a ser oscilatorio, sin embargo, vuelve a la posición de reposo exponencialmente.
-	\item \textbf{Críticamente amortiguado}: Es el caso que separa si el decaimiento es oscilatorio, siendo el movimiento que retorna al resposo más rápido sin oscilaciones.
+	\item \textbf{Críticamente amortiguado}: Es el caso que separa si el decaimiento es oscilatorio, siendo el movimiento que retorna al reposo más rápido sin oscilaciones.
 \end{enumerate}
 
 Por lo tanto, la ecuación que describe el movimiento de un sistema amortiguado es:
@@ -222,11 +228,11 @@ Por lo tanto, la ecuación que describe el movimiento de un sistema amortiguado 
 	m\ddot{x}(t) + c\dot{x}(t) + kx(t) = 0 
 \end{gather*}
 
-Desde la perspectiva del método de eneríga, el amortiguamiento viscoso es una fuerza no conservativa que puede ser modelada por la función de disipación de Reyleigh, que toma la forma \ref{eq:rayleigh_function}.
+Desde la perspectiva del método de energía, el amortiguamiento viscoso es una fuerza no conservativa que puede ser modelada por la función de disipación de Rayleigh, que toma la forma \ref{eq:rayleigh_function}.
 \begin{equation}\label{eq:rayleigh_function}
 	R = \frac{1}{2}c\,\dot{q_i}^2
 \end{equation} 
-Donde $n$ es el número de coordenadas generalizadas y $q$ cada coordenada generalizada. De esta manera, se puede obtener las fuerzas generalizadas para amortiguamiento viscoso derivando $R$ respecto a cada variable generalizada $q$, como se muestra en la ecuación \ref{eq:q_ri}.
+Si $q$ es cada coordenada generalizada y $n$ es el número de coordenadas generalizadas, entonces se pueden obtener las fuerzas generalizadas para amortiguamiento viscoso derivando $R$ respecto a cada variable generalizada $q$, como se muestra en la ecuación \ref{eq:q_ri}.
 \begin{equation}\label{eq:q_ri}
 	Q_{Rj} = -\frac{\partial R}{\partial \dot{q_j}}, \; \text{para cada }\, j=1,2,...,n
 \end{equation}
@@ -238,7 +244,7 @@ Los sistemas mecánicos están sometidos a una gama bastante amplia de fuerzas e
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7\textwidth, trim={6cm 2cm 10cm 3cm}, clip]{Imagenes/dcl_maqdes.pdf}
-\caption{Diagrama de cuerpo libre de un disco desequilibrado una masa $m_0$ a una distancia $e$.}
+\caption{Diagrama de cuerpo libre de un disco desequilibrado por masa $m_0$ a una distancia $e$.}
 \label{fig:dcl_maqdes}
 \end{figure}
 
@@ -252,12 +258,12 @@ Tomando el centro de rotación como el punto cero del sistema de coordenadas y q
 	\dot{y}(t) = e \dot{\phi}\cos \phi\\
 	\ddot{y}(t) = e(\ddot{\phi}\cos\phi - \dot{\phi}^2\sin\phi)
 \end{gather*}
-Por lo tanto, la ecuación \ref{eq:vib_forzadas}, muestra la fuerza centrífuga en dirección del eje $y$ cuando una masa desbalanceada $m_0$ gira a una velocidad angular $\dot{\phi}$ y su aceleración angular es $\ddot{\phi}$.
+Por lo tanto, la ecuación \ref{eq:vib_forzadas}, muestra la fuerza centrífuga en dirección al eje $y$ cuando una masa desbalanceada $m_0$ gira a una velocidad angular $\dot{\phi}$ y su aceleración angular es $\ddot{\phi}$.
 \begin{equation}\label{eq:vib_forzadas}
 	F_y(t) = m_0e(\ddot{\phi}\cos\phi- \dot{\phi}^2\sin\phi)
 \end{equation}
 
-\subsection{Modeling}
+\subsection{Modelamiento}
 Es el proceso en el que se representan todos los detalles importantes del sistema con el objetivo de derivar las ecuaciones que  rigen el comportamiento del mismo. Para esto, los métodos existentes son la ley de movimiento de Newton, el principio de D\texttt{'}\kern-0.3em Alembert y principio de conservación de la energía. Los primeros, vistos en la sección \ref{sec:ec_mov}, se utilizan a través de un diagrama de cuerpo libre y la correcta identificación de las fuerzas y momentos que actúan sobre un cuerpo. Por otra parte, el método de conservación de la energía tiene la capacidad de derivar las ecuaciones de movimiento de un cuerpo sin la necesidad de recurrir a un diagrama de cuerpo libre, es decir, no se requiere identificar fuerzas ni momentos en el sistema. Éste método se verá en mayor profundidad en la sección \ref{sec:metodo_energia}.
 
 Si consideramos un sistema amortiguado forzado y de un solo grado de libertad, $x(t)$ o $\theta(t)$ según sea el caso, entonces la ecuación que describe el movimiento tendrá la siguiente forma:
@@ -297,6 +303,8 @@ Y el vector $\mathbf{x}(t)$ es:
 	\end{bmatrix}
 \end{equation*} 
 
+\newpage
+
 Por otra parte, para sistemas con amortiguamiento viscoso se añade la matriz de amortiguamiento $\mathit{C}$ de dimensión $n \times n$. 
 \begin{equation}\label{eq:multi_degreedamp}
 	\mathit{M}\mathbf{\ddot{x}}(t) + \mathit{C}\mathbf{\dot{x}}(t) + \mathit{K}\mathbf{x}(t) = 0	
@@ -319,14 +327,14 @@ Donde los valores de $\mathbf{x}(t_0)$, $\mathbf{\dot{x}}(t_0)$ y de las matrice
 
 \subsection{Método de energía}
 \label{sec:metodo_energia}
-El método de conservación de la energía puede ser combinado con los conceptos de trabajo virtual, lo cual lleva a las ecuaciones de Lagrange que pueden ser usadas para obtener la descripción del moviemiento del sistema, incluso si son amortiguados y forzados. Sin embargo, antes de explicar su funcionamiento se debe introducir el concepto de coordenadas generalizadas.
+El método de conservación de la energía puede ser combinado con los conceptos de trabajo virtual, lo cual lleva a las ecuaciones de Lagrange que puedan ser usadas para obtener la descripción del movimiento del sistema, incluso si son amortiguados y forzados. Sin embargo, antes de explicar su funcionamiento se debe introducir el concepto de coordenadas generalizadas.
 
 Las ecuaciones de movimiento de un sistema vibratorio pueden estar compuestas por distintos sistemas de coordenadas, no obstante, aquellos sistemas de coordenadas independientes entre sí y de las condiciones de restricción se les llama coordenadas generalizadas, $q_j$. De igual forma, se designará como $Q_j$ a las fuerzas generalizadas que estén actuando sobre el sistema. Estas fuerzas se definen según la ecuación \ref{eq:fuerza_generalizada}, donde $U_j$ es el trabajo realizado al cambiar las coordenadas generalizadas $q_j$ y $\delta q_j$ la cantidad desplazada. 
 \begin{equation}\label{eq:fuerza_generalizada}
 	Q_j = \frac{U_j}{\delta q_j}
 \end{equation} 
 
-Análogamente a como se ha desarrollado anteriormente, $Q_j$ puede adquirir el valor de una fuerza o momento, así como $q_j$ puede ser una coordenada de desplazamiento lineal o angular. Así mismo, $\dot{q}_j$ y $Q_j^{(n)}$ representan la velocidad generalizada y la fuerza generalizada no conservativa, respectivamente.
+Análogo a como se ha desarrollado anteriormente, $Q_j$ puede adquirir el valor de una fuerza o momento, así como $q_j$ puede ser una coordenada de desplazamiento lineal o angular. Así mismo, $\dot{q}_j$ y $Q_j^{(n)}$ representan la velocidad generalizada y la fuerza generalizada no conservativa, respectivamente.
 
 Con esto en consideración, el método de Lagrange define el concepto de lagrangiano $L$, como la resta entre la energía cinética $T$ y la energía potencial $U$ del sistema, ambos en términos de las coordenadas generalizadas $q_i(t)$.
 \begin{equation}\label{eq:lagrangiano}
@@ -344,7 +352,7 @@ Lo que resultará en una ecuación para cada coordenada generalizada. En resumen
 
 
 \subsection{Ecuaciones de energía para un sistema con amortiguamiento y forzado}
-Finalmente, es posible obtener las ecuaciones de movimiento a través del método de conservación de energía para un sistema con dos grados de libertad, forzado y con amortiguamiento viscoso. Para esto, se utilizarán los elementos mostrados anteriormente y se derivará la ecuación. Además se añadirá el efecto de la energía potencial gravitatoria, factor importante en el caso estudiado en este trabajo, según la ecuación \ref{eq:e_potgrav}. 
+Finalmente, es posible obtener las ecuaciones de movimiento a través del método de conservación de energía para un sistema con dos grados de libertad, forzado y con amortiguamiento viscoso. Para esto, se utilizarán los elementos mostrados anteriormente y se derivará la ecuación. Además se añadirá el efecto de la energía potencial gravitatoria, factor importante en el caso estudiado en este trabajo, donde $g$ será la gravedad. Por tanto se define según la ecuación \ref{eq:e_potgrav}. 
 \begin{equation}\label{eq:e_potgrav}
 	U_g = mg\,q_i
 \end{equation}
@@ -373,11 +381,11 @@ La deformación plástica se le llama a la deformación permanente que se produc
 
 
 \subsection{Esfuerzo y deformación real}
-La curva de esfuerzo-deformación ingenieril se construye a partir de dividir la carga aplicada ($P$) en la probeta por el área transversal inicial de esta, sin embargo, esto omite la deformación sufrida. Así, el esfuerzo real (\textit{true stress}) $\tilde{\sigma}$ se define como la fuerza aplicada en la probeta dividida por el área transversal en ese instante ($A$). 
+La curva de esfuerzo-deformación ingenieril se construye a partir de dividir la carga aplicada ($P$) en la probeta por el área transversal inicial de esta, sin embargo, esto omite la deformación sufrida. Así, el esfuerzo real (\textit{true stress}, $\tilde{\sigma}$) se define como la fuerza aplicada en la probeta dividida por el área transversal en ese instante ($A$). 
 \begin{equation}
 	\tilde{\sigma} = \frac{P}{A}
 \end{equation} 
-Dada la disminución en el área $A$ el esfuerzo real crece por sobre el ingenieril y no baja al llegar al punto de esfuerzo último al considerar la estricción de la probeta. Por otro lado, la deformación real (\textit{true strain} $\tilde{\varepsilon}$) se define como:
+Dada la disminución en el área $A$ el esfuerzo real crece por sobre el ingenieril y no baja al llegar al punto de esfuerzo último al considerar la estricción de la probeta. Por otro lado, la deformación real (\textit{true strain}, $\tilde{\varepsilon}$) se define como:
 \begin{equation}
 	\tilde{\varepsilon} = \ln\frac{L}{L_i}
 \end{equation}
@@ -410,14 +418,14 @@ Se le denomina al incremento en la resistencia del material a medida que su defo
 
 
 \section{Método de elementos finitos}
-El método de elementos finitos (FEM, por sus siglas en inglés) y el análisis de elementos finitos (FEA, por sus siglas en inglés) son herramientas utilizadas para proporcionar soluciones aproximadas a problemas complejos en fenómenos mecánicos. Este consiste en toma un componente real con una estructura continua y dividirla en pequeñas subestructuras finitas de geometría mucho más simple. A este proceso se le llama  discretización, a las subestructuras elementos y a los puntos de unión nodos. Las propiedades del material, las ecuaciones gobernantes y las cargas son posible aplicarlas dentro del elemento, en la cara de los mismos o incluso en los nodos. De esta forma, los nodos pasan a ser fundamentales al ser donde se conectan los elementos, se asignan las condiciones de frontera y se aplican las fuerza de contacto o cuerpo \cite{budynas2008shigley}. Los nodos poseen grados de libertad (DOF, por sus siglas en inglés) de la misma forma en la que se establecieron para una masa, como se puede ver en la imagen \ref{fig:dof}. Para cada nodo se escribe su correspondiente ecuación de balance y luego se puede llegar a un sistema de ecuaciones que resuelve el problema para todos los nodos simultáneamente.Las soluciones de estas ecuaciones da como resultado una aproximación del comportamiento elástico del componente a analizar. En el caso de este trabajo, este procedimiento entregará los desplazamientos de cada nodo, a partir de los cuales se pueden determinar los esfuerzos por medio de las ecuaciones constitutivas de elasticidad.
+El método de elementos finitos (FEM, por sus siglas en inglés) y el análisis de elementos finitos (FEA, por sus siglas en inglés) son herramientas utilizadas para proporcionar soluciones aproximadas a problemas complejos en fenómenos mecánicos. Este consiste en toma un componente real con una estructura continua y dividirla en pequeñas subestructuras finitas de geometría mucho más simple. A este proceso se le llama  discretización, a las subestructuras elementos y a los puntos de unión nodos. Las propiedades del material, las ecuaciones gobernantes y las cargas son posible aplicarlas dentro del elemento, en la cara de los mismos o incluso en los nodos. De esta forma, los nodos pasan a ser fundamentales al ser donde se conectan los elementos, se asignan las condiciones de frontera y se aplican las fuerza de contacto o cuerpo \cite{budynas2008shigley}. Los nodos poseen grados de libertad (DOF, por sus siglas en inglés) de la misma forma en la que se establecieron para una masa, como se puede ver en la imagen \ref{fig:dof}. Para cada nodo se escribe su correspondiente ecuación de balance y luego se puede llegar a un sistema de ecuaciones que resuelve el problema para todos los nodos simultáneamente. Las soluciones de estas ecuaciones da como resultado una aproximación del comportamiento elástico del componente a analizar. En el caso de este trabajo, este procedimiento entregará los desplazamientos de cada nodo, a partir de los cuales se pueden determinar los esfuerzos por medio de las ecuaciones constitutivas de elasticidad.
 
 El FEA se divide en tres etapas: (a) pre-procesamiento, (b) procesamiento y (c) post-procesamiento. El primero incluye toda la preparación de los datos, la generación de la malla, la determinación del sistema coordenado, las conexiones, las condiciones de frontera, las propiedades del material y las cargas. El procesamiento en la resolución del sistema de ecuaciones y otras relaciones anexas. Para este trabajo, se deberá resolver las ecuaciones del momentum lineal para carga estática, por lo tanto. se buscarán las soluciones de la ecuación de equilibrio.  Finalmente, el post-proceso es la etapa donde se trabaja con la presentación de los resultados, es decir, los desplazamientos, la deformación y los esfuerzos requeridos son calculados durante esta etapa. 
 
 \subsection{Mallado}
 Se le llama malla a la red de elementos y nodos que discretizan un componente o una región. Para esto, los elementos pueden tener distintas formas geométricas que dependerán del tipo de problema a resolver, los grados de libertad o la capacidad computacional. La geometría dependerá de la cantidad de nodos por elementos, que para el caso de este trabajo, se utilizará el tetraedro, un elemento de 4 nodos.
 
-Existen distintas formas de saber si la malla construida dará los resultados esperados en un tiempo óptimo. A esto se le denomina calidad de la malla, donde una mejor calidad entregará resultados más precisos en un menor tiempo. Para determinar su calidad, existen distintos parámetros que indican como está compuesta la malla generada \footnote{La definición de estos parámetros se obtuvieron en lecturas y el manual de ANSYS \cite{sharcnet_2017}\cite{ansys_2015}}.
+Existen distintas formas de saber si la malla construida dará los resultados esperados en un tiempo óptimo. A esto se le denomina calidad de la malla, donde una mejor calidad entregará resultados más precisos en un menor tiempo. Para determinar su calidad, existen distintos parámetros que indican como está compuesta la malla generada \footnote{La definición de estos parámetros se obtuvieron de conferencias y el manual de ANSYS \cite{sharcnet_2017}\cite{ansys_2015}}.
 
 \subsubsection{Relación de aspecto}
 Es la relación entre el lado más largo y el más corto de un elemento. En este caso corresponde a que tan cercano el triángulo es equilátero, teniendo un valor de 1, y no se encuentra deformado, lo que aumenta su valor. 
@@ -464,7 +472,7 @@ Valor de la oblicuidad & Calidad del elemento \\ \midrule
 >0 - 0,25 & Excelente \\
 0 & Equilátero \\ \bottomrule
 \end{tabular}
-\caption{Lista de los rangos de los valores de la oblicuidad y la respectiva calidad del elemento.\cite{sharcnet_2017}}
+\caption{Lista de los rangos de los valores de la oblicuidad y la respectiva calidad del elemento. \cite{sharcnet_2017}}
 \label{tab:skewness}
 \end{table}
 

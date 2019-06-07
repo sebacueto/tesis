@@ -1,4 +1,4 @@
-\begin{thebibliography}{42}
+\begin{thebibliography}{47}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
@@ -78,6 +78,13 @@ Instituto~Nacional de~Normalizaci\'on~(Chile).
 \newblock Aceros estructurales para construcciones generales.
 \newblock NCh 203 {O}f. 2006, INN, Santiago, Chile, 2006.
 
+\bibitem[{D{\'\i}az-Vaz et~al.(1988)D{\'\i}az-Vaz, Cuevas, Fern{\'a}ndez, y
+  Inzunza}]{diaz1988caracteristicas}
+J.~D{\'\i}az-Vaz, H.~Cuevas, A.~Fern{\'a}ndez, y L.~Inzunza.
+\newblock Caracter{\'\i}sticas tecnol{\'o}gicas de pseudotsuga menziesii
+  creciendo en valdivia.
+\newblock \emph{Bosque}, 9(2):97--101, 1988.
+
 \bibitem[{Dowling(2013)}]{dowling2013mechanical}
 Norman~E. Dowling.
 \newblock \emph{Mechanical behavior of materials : engineering methods for
@@ -111,6 +118,12 @@ Parasuram Harihara y Dara~W Childs.
 \newblock \emph{Department of Mechanical Engineering Texas A \& M University
   College Station}, p\'ags. 11--21, 2014.
 
+\bibitem[{HECTOR(1988)}]{hector1988criterio}
+R~CUEVAS~D HECTOR.
+\newblock Un criterio de selecci{\'o}n y consideraciones de uso de la madera en
+  construcci{\'o}n.
+\newblock \emph{Bosque}, 9(2):71--76, 1988.
+
 \bibitem[{Inman(2014)}]{inman2014engineering}
 D.~J. Inman.
 \newblock \emph{Engineering vibration}.
@@ -122,6 +135,11 @@ ASTM International.
   {L}inearized {S}tress-{L}ife ({S}-{N}) and {S}train-{L}ife
   ($\varepsilon$-{N}) {F}atigue {D}ata.
 \newblock ASTM E739-10, West Conshohocken, PA, 2015.
+
+\bibitem[{Lee y Huang(2013)}]{lee2013fatigue}
+John Lee y Adam Huang.
+\newblock Fatigue analysis of fdm materials.
+\newblock \emph{Rapid prototyping journal}, 19(4):291--299, 2013.
 
 \bibitem[{Lee et~al.(2005)Lee, Pan, Hathaway, y Barkey}]{lee2005fatigue}
 Yung-Li Lee, Jwo Pan, Richard Hathaway, y Mark Barkey.
@@ -234,6 +252,21 @@ Przemys{\l}aw Strzelecki y Tomasz Tomaszewski.
 \newblock Analysis of axial load and bending load effects on the fatigue life.
 \newblock En \emph{AIP Conference Proceedings}, tomo 2028, p\'ag. 020019. AIP
   Publishing, 2018.
+
+\bibitem[{Wagner et~al.(2014)Wagner, Gonz\'alez, V\'asquez, y
+  Hern\'andez}]{calculo2014madera}
+Mario Wagner, Marcelo Gonz\'alez, Lu\'is V\'asquez, y Gonzalo Hern\'andez.
+\newblock Ejemplos de c\'alculo estructural en madera.
+\newblock Inf.\ T\'ec. 182, Instituto Forestal, 2014.
+
+\bibitem[{Zhang et~al.(2018)Zhang, Cai, Golub, Zhang, Yang, Schlarman, y
+  Zhang}]{zhang2018tensile}
+Hanyin Zhang, Linlin Cai, Michael Golub, Yi~Zhang, Xuehui Yang, Kate Schlarman,
+  y Jing Zhang.
+\newblock Tensile, creep, and fatigue behaviors of 3d-printed acrylonitrile
+  butadiene styrene.
+\newblock \emph{Journal of Materials Engineering and Performance},
+  27(1):57--62, 2018.
 
 \bibitem[{Zienkiewicz(1981)}]{zienkiewicz1981metodo}
 Olgierd~Cecil Zienkiewicz.

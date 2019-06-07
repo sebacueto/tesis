@@ -73,6 +73,7 @@
 \usepackage{color}
 \usepackage{units}
 \usepackage{rotating}
+\usepackage{pdfpages}
 \definecolor{lightblue}{rgb}{0, 0.7, .7}
 \definecolor{gray97}{gray}{.97}
 \definecolor{gray75}{gray}{.75}
@@ -194,7 +195,7 @@ backgroundcolor=\color{gray75},
 %% Por cada prefacio (p.e. agradecimientos, resumen, etc.) crear
 %% un nuevo archivo e incluirlo aqu'i.
 %% Para m'as detalles y un ejemplo mirar el archivo "gracias.tex".
-%\include{Prefacios/frase}
+\include{Prefacios/frase}
 %\include{Prefacios/gracias}
 %\include{blanco}
 %\include{Prefacios/abstract}
@@ -219,25 +220,26 @@ backgroundcolor=\color{gray75},
 %%% Mirar el archivo "intro.tex" para un ejemplo y recomendaciones para
 %%% escribir.
 %
-%\include{Capitulos/01_intro}
+\include{Capitulos/01_intro}
 %
-%\include{Capitulos/02_antecedentes}
+\include{Capitulos/02_antecedentes}
 %
-%\include{Capitulos/03_marco_teorico}
+\include{Capitulos/03_marco_teorico}
 %
-%\include{Capitulos/04_metodologia}
+\include{Capitulos/04_metodologia}
 %
-%\include{Capitulos/05_resultados}
+\include{Capitulos/05_resultados}
 %
-%\include{Capitulos/06_conclusiones}
+\include{Capitulos/06_conclusiones}
 %%
 \appendix
 %%%% Cap'itulos incluidos despues del comando \appendix aparecen como ap'endices
 %%%% de la tesis.
 
 \include{Anexos/Apendice_A}
-%\include{Anexos/Apendice_C}
-%\include{Anexos/Apendice_B}
+\include{Anexos/Apendice_B}
+\include{Anexos/Apendice_C}
+\include{Anexos/Apendice_D}
 
 %
 

@@ -1,36 +1,64 @@
-\chapter{Conclusiones}
+\chapter{Conclusiones y trabajo futuro}
 
-\subsubsection{Respecto al levantamiento de información:}
+Este capítulo se dividirá en las cuatro áreas en las que se realizó este trabajo, para posteriormente hablar del trabajo futuro. 
 
-Gran parte de la información recopilada y de las mediciones realizadas se llevaron a cabo en las condiciones necesarias, otorgando confiabilidad a los datos. Sin embargo, ciertos elementos no fue posible medirlos o determinar sus características de manera certera ante la imposibilidad de desarmar los componentes de la máquina. En específico, la masa y las dimensiones del disco desbalanceado y los elementos que lo acompañan como la polea, el eje, los agarres laterales y las barras de transmisión de la carga. Sin duda esta falta de precisión afecta los cálculos que se realizaron y los resultados obtenidos. 
+\section{Conclusiones}
 
-La robustez de la estructura de la máquina, su mecanismo de funcionamiento y la capacidad de medir fatiga en flexión y torsión, hace que su operatividad sea necesaria para su uso en ensayos de fatiga como laboratorio de una asignatura. Además, la abundancia en distintos fenómenos mecánicos y la facilidad de visualizarlos, puede ser de ayuda en la comprensión de variados conceptos en sus respectivas asignaturas. Así mismo, la operación abre la posibilidad de modificar la máquina para aumentar su flexibilidad en la configuración de los ensayos, añadir elementos de medición y por sobre todo actualizar sus componentes.
+\subsection{Respecto a la máquina de fatiga}
 
-En base a esto último, para garantizar un correcto funcionamiento de la máquina, urge reemplazar las poleas y su respectiva correa por medidas que sean estándar en la actualidad. Esto porque, el material y las dimensiones de la actual correa son difíciles de encontrar en el mercado por su obsolescencia, debiendo recurrir a alternativas que no son óptimas ni poco efectivas. 
+A partir de la información recopilada se puede concluir que:
+\begin{itemize}
+	\item Urge la necesidad actualizar los componentes del sistema de transmisión, eléctrico y el motor de la máquina de fatiga para que esta puede tener un funcionamiento correcto, continuo y con mayor flexibilidad. Es decir, que el mantenimiento se fácil de realizar y que las reparaciones o el reemplazo de sus componentes sean simples de encontrar en el mercado. Esto posibilitaría que su operación no sea vea detenida por largos periodos de tiempo ante la falta de insumos, como ocurre actualmente.
+	\item Como consecuencia del punto anterior, se debe tener acceso completo a la máquina, es decir, poder desarmar sus piezas para medir, calcular y reemplazar estos componentes. Además, el acceder a cada componente por separado ayudará a la medición de su geometría y masa, obteniéndose resultados más precisos en el modelo propuesto.
+\end{itemize}
 
-\subsubsection{Sobre la estructura y su diseño}
+\newpage
 
-La utilización de la madera como material principal de la estructura soportante de la máquina es una opción viable debido a su capacidad de amortiguar las vibraciones y su resistencia al a fatiga, como se señaló en la sección REFaAntecedentes. Por otro lado, el construir una estructura que pueda modificada y desplazada de lugar, le otorga una mayor flexibilidad en su funcionalidad, respecto a la fundación original de un bloque de concreto, lo que evitaría que vuelva a quedar sin anclar frente a posibles modificaciones futuras en el laboratorio de tecnología mecánica. 
+\subsection{Sobre la estructura}
+Con respecto al diseño de la nueva estructura soportante de la máquina y los cálculos realizados:
+\begin{itemize}
+	\item La utilización de la madera como principal material de la estructura es una opción viable debido a su capacidad de amortiguar las vibraciones y su buena relación entre el peso y la resistencia del material a la carga estática y a la fatiga. En ese sentido, la norma NCh 1198 entrega todas las herramientas para una correcta metodología de cálculo.
+	\item El diseño final, tomando en consideración la especie maderera, las dimensiones del acero y la madera y las uniones utilizadas, tienen un amplio rango de flexibilidad producto del sobredimensionamiento de algunas piezas, lo que vuelve al diseño independiente de la existencia en el mercado de los productos seleccionados, dicho de otra manera, cabe la posibilidad de utilizar elementos distintos al del diseño propuesto sin afectar su integridad.
+	\item En ese sentido, se cumplió la filosofía y los objetivos con los que se diseño la estructura: (a) soportar la máquina de fatiga en reposo y operación, (b) durabilidad, (c) piezas modulares y (d) la posibilidad de modificar la estructura en el futuro.
+	\item Las simulaciones estáticas y modal dan un respaldo al trabajo realizado. El análisis modal nos indica que no existirán problemas entre el funcionamiento de la máquina y las frecuencias naturales de la estructura.
+	\item Para poder validar los cálculos realizados se requiere de tener la máquina operativa y medir las vibraciones que produce al estar en funcionamiento. Asimismo, esto dará información sobra la necesidad de tener amortiguadores en la base de la estructura.
+\end{itemize}
 
-A lo largo de todo el diseño de la estructura se utilizó la norma NCh 1198 y el apoyo de textos de construcción en madera, para otorgar fiabilidad a la resistencia de la estructura y utilizar diseños y mecanismos de unión propios de la madera y que, por sus características ya señaladas, tienen una lógica y aproximación distinta. La norma, al ser un marco y un instructivo a la hora de calcular las cargas, utilizado actualmente para la construcción de distintas estructuras en madera, responde a todas las necesidades asociadas al diseño de la estructura soportante de la máquina. \textcolor{red}{revisar o añadir más cosas}.
+\subsection{Comportamiento del modelo de vibración}
+En relación a los resultados que se obtuvieron del modelo de vibración de la máquina de fatiga:
+\begin{itemize}
+	\item El modelo nos indica que la fuerza sobre la probeta será función de la fuerza producida por el disco desbalanceado. Dado que la máquina gira a una velocidad constante, entonces se establecerá que:
+	\begin{equation*}
+		F(t) = f(\Psi)
+	\end{equation*}
+	\item De manera análoga, entre mayor sea $\Psi$, mayores serán las cargas que se producen sobre la probeta. De igual forma, a mayor velocidad de rotación del motor ($\omega_{max}$), aumenta la carga sobre la probeta. De esta forma se puede determinar que la fuerza sobre la probeta $F(t)$ se define de la siguiente forma:
+	\begin{equation*}
+		F(t) = f (\Psi, \omega_{max}) \qquad \text{o} \qquad F(t) = f(F_d(t))
+	\end{equation*}
+	\item En base a esto, es posible realizar una carga de máxima de 1498,8 N sobre una probeta de acero AISI 1020. Este valor puede variar dependiendo de la geometría y el módulo de elasticidad del material con el que se fabricó la probeta.
+	\item La discordancia entre los resultados del modelo y la tabla de carga solo es posible resolverla realizando las mediciones del comportamiento de la máquina para distintos contrapesos, al ser ambas opuestas en la forma de relacionar la carga con respecto a las combinaciones, solo una de ellas es válida.
+	\item Estas mediciones también incidirán en la validez de los supuestos realizados para elaborar el modelo del sistema, como también en la precisión de los resultados. Es decir, el modelo puede ser congruente con la física del problema, pero inexacto en los resultados.
+\end{itemize}
 
-Los factores de seguridad obtenidos en la madera, al ser tan altos, dan un margen para la fatiga que sufrirá el material a lo largo de su uso. En el caso de COMPONENTE, su factor de seguridad de FS = CUANTO, es el más bajo obtenido en el diseño, siendo bastante alto para un diseño convencional.
-
-\subsubsection{Modelo del sistema vibratorio}
-
-Como se señaló en la sección REFaResultados, los resultados que se obtuvieron del modelo no coinciden con la forma en que se ordenan las cargas 
-
+\subsection{En relación a las simulaciones}
+Al simular los datos obtenidos por el modelo de vibración en un acero AISI 1020, se puede concluir:
+\begin{itemize}
+	\item Gran parte de las combinaciones supera ampliamente el esfuerzo último del material, es decir, sólo una fracción (77 de 201) de las combinaciones resulta útil para poder ensayar este acero en específico.
+	\item De la misma forma, una fracción aun menor se encuentra en el rango elástico, correspondiendo a 23 combinaciones posibles hasta alcanzar el esfuerzo de fluencia.
+	\item Con esto en cuenta, nuevamente la información entregada por la tabla de carga genera dudas al señalar esfuerzos muy superiores incluso al esfuerzo de ruptura del material.
+	\item En relación a las propiedades del acero, realizar ensayos de esfuerzo-deformación a partir del mismo material utilizado para las probetas, dará información más precisa en la simulación de las cargas.
+\end{itemize}
 
 
 
 \section{Trabajo futuro}
 El trabajo actual abre espacio a distintos análisis posibles en torno a la misma máquina de fatiga, tanto en diseño, construcción, corroboración empírica, análisis y simulación. Por consiguiente, se detallarán a continuación:
 \begin{itemize}
-	\item Caracterización, reparación y actualización de la máquina de fatiga. Para llevar a cabo esto, es necesario poder conocer en detalle cada una de sus partes y por lo tanto se requiere la necesidad de desarmarla. Tanto su reparación como actualización van de la mano de lo anterior, además de realizar posibles modificaciones a la estructura y a su sistema motriz.
-	\item Construcción y diseño de amortiguamiento de la estructura. Construir el diseño de la estructura propuesto para poder anclar la máquina de fatiga. Además, a partir de las pruebas realizadas una vez anclada, se debe estimar si es necesaria la colocación de amortiguadores para disipar las vibraciones producto de la operación de la máquina de fatiga, sin que afecte su entorno.
-	\item Realizar un modelo de vibración de la máquina de fatiga en su configuración en torsión, para obtener una tabla de cargas y sus respectivos esfuerzos.
-	\item Corroborar si el modelo y las simulaciones realizadas son correctas con la realidad, realizando las mediciones correspondientes en la probeta, el brazo de carga y el resto de los elementos involucrados.
-	\item Una vez que la máquina se encuentre operativa, es posible realizar ensayos de fatiga tanto de acero, como de distintos materiales o de probetas con secciones distintas, permitiendo comparar las curvas $S$-$N$ obtenidos a partir de la máquina de fatiga con los datos de otras formas de medición.
+	\item Construcción y diseño del amortiguamiento de la estructura, como también anclar y poner en marcha la máquina de fatiga. Actualización de sus componentes y desarrollar posibles mejoras de la misma.
+	\item Medición del comportamiento de la máquina de fatiga, sus componentes y la probeta para corroborar los resultados del modelo de vibraciones propuesto y contrastarlo con la tabla de cargas original y la propuesta.
+	\item Además, es posible realizar un modelo de vibraciones para la máquina en su configuración de fatiga por torsión para obtener su respectivo comportamiento y la tabla de cargas para cada combinación.
+	\item Una vez que la máquina se encuentre operativa, es posible realizar ensayos de fatiga tanto para el acero, como otros materiales o de probetas de distinta geometría, permitiendo comparar las curvas $S$-$N$ que se obtienen en flexión y torsión con los resultados de otras formas de medición.
+	\item En ese mismo sentido, realizar ensayos de plásticos impresos en 3D y caracterizar su comportamiento bajo fatiga en una curva $S$-$N$, como datos de entrada para el diseño de prótesis impresas en 3D.
 \end{itemize}
 
 
