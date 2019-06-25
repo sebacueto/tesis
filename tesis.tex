@@ -154,7 +154,7 @@ backgroundcolor=\color{gray75},
 
 \title{``ESTUDIO EXPERIMENTAL DEL COMPORTAMIENTO DE FATIGA PARA EL MATERIAL ABS IMPRESO EN 3D''}
 \degree{Ingeniería Mecánica Industrial }
-\supervisor{Phd. Alejandro Pacheco Sanjuan}
+\supervisor{Ph.D. Alejandro Pacheco Sanjuan}
 \correferent{Dra. Sheila Lascano Farak}
 \institution{UNIVERSIDAD TÉCNICA FEDERICO SANTA MARÍA}
 \faculty{Escuela de Ingeniería y Ciencias}
@@ -175,7 +175,11 @@ backgroundcolor=\color{gray75},
 %% referencias cruzadas y citas bibliogr'aficas. Tiene que ser *la 'ultima*
 %% instrucci'on antes de \begin{document}.
 \hyperlinking
+
 \begin{document}
+
+\renewcommand{\listtablename}{Índice de tablas}
+\renewcommand{\tablename}{Tabla} 
 
 \sloppy 
 
@@ -200,7 +204,7 @@ backgroundcolor=\color{gray75},
 \include{blanco}
 %\include{Prefacios/abstract}
 %\include{blanco}
-%\include{Prefacios/resumen}
+\include{Prefacios/resumen}
 %\include{blanco}
 
 %%% # 'Indices y listas de contenido #
@@ -227,18 +231,18 @@ backgroundcolor=\color{gray75},
 %
 \include{Capitulos/04_metodologia}
 %
-\include{Capitulos/05_resultados}
+%\include{Capitulos/05_resultados}
 %
-\include{Capitulos/06_conclusiones}
+%\include{Capitulos/06_conclusiones}
 %%
 \appendix
 %%%% Cap'itulos incluidos despues del comando \appendix aparecen como ap'endices
 %%%% de la tesis.
 
 \include{Anexos/Apendice_A}
-\include{Anexos/Apendice_B}
-\include{Anexos/Apendice_C}
-\include{Anexos/Apendice_D}
+%\include{Anexos/Apendice_B}
+%\include{Anexos/Apendice_C}
+%\include{Anexos/Apendice_D}
 
 %
 
@@ -247,5 +251,5 @@ backgroundcolor=\color{gray75},
 %
 
 \nocite{*}     %incluir en la bibliografia articulos no citados
-\bibliography{Bibliografia/biblio}
+%\bibliography{Bibliografia/biblio}
 \end{document}
