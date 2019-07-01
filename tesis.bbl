@@ -1,4 +1,4 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{49}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
@@ -6,5 +6,283 @@
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
+
+\bibitem[{ANSYS(2015)}]{ansys_2015}
+ANSYS.
+\newblock Lecture 7: Mesh quality \& advanced topics.
+\newblock 2015.
+
+\bibitem[{Autodesk()}]{autodesk}
+Autodesk.
+\newblock Stress analysis tutorials.
+\newblock
+  \urlprefix\url{https://knowledge.autodesk.com/support/inventor-products/getting-started/caas/CloudHelp/cloudhelp/2015/ENU/Inventor-Tutorial/files/GUID-B3102998-1A27-48AD-B3C3-E054D6E6B0F8-htm.html}.
+
+\bibitem[{BANNANTINE et~al.(1990)BANNANTINE, COMER, y
+  HANDROCK}]{bannantine1990fundamentals}
+JULIEA BANNANTINE, JESSJ COMER, y JAMESL HANDROCK.
+\newblock Fundamentals of metal fatigue analysis (book).
+\newblock \emph{Research supported by the University of Illinois. Englewood
+  Cliffs, NJ, Prentice Hall, 1990, 286}, 1990.
+
+\bibitem[{Barros y Sarabia(2016)}]{sistemasconstructivos}
+Luis Barros y Gustavo Sarabia.
+\newblock \emph{Sistemas constructivos b\'asicos}.
+\newblock Editorial USM, Chile, 2016.
+
+\bibitem[{Beer(2010{\natexlab{a}})}]{beer2010mecanica}
+Ferdinand Beer.
+\newblock Mec\'anica de materiales.
+\newblock 2010{\natexlab{a}}.
+
+\bibitem[{Beer(2010{\natexlab{b}})}]{beer2010dinamica}
+Ferdinand Beer.
+\newblock \emph{Mec\'anica vectorial para ingenieros: Din\'amica}.
+\newblock McGraw-Hill, M\'exico, 2010{\natexlab{b}}.
+
+\bibitem[{Boardman(1990)}]{boardman1990fatigue}
+Bruce Boardman.
+\newblock Fatigue resistance of steels.
+\newblock \emph{ASM International, Metals Handbook. Tenth Edition}, 1:673--688,
+  1990.
+
+\bibitem[{Budynas(2008)}]{budynas2008shigley}
+Richard Budynas.
+\newblock \emph{Shigley's mechanical engineering design}.
+\newblock McGraw-Hill, Boston, 2008.
+
+\bibitem[{Callister(2001)}]{callister2001fundamentals}
+William Callister.
+\newblock \emph{Fundamentals of materials science and engineering}.
+\newblock Wiley, New York, 2001.
+
+\bibitem[{Chandrupatla et~al.()Chandrupatla, Belegundu, Ramesh, y
+  Ray}]{chandrupatla2002introduction}
+Tirupathi~R Chandrupatla, Ashok~D Belegundu, T~Ramesh, y Chaitali Ray.
+\newblock \emph{Introduction to finite elements in engineering}, tomo~10.
+\newblock Prentice Hall Upper Saddle River, NJ.
+
+\bibitem[{de~Normalizaci\'on~(Chile)(1991{\natexlab{a}})}]{nch1198}
+Instituto~Nacional de~Normalizaci\'on~(Chile).
+\newblock Madera: {C}onstrucciones en madera -- {C}\'alculo.
+\newblock NCh 1198 {O}f. 1991, INN, Santiago, Chile, 1991{\natexlab{a}}.
+
+\bibitem[{de~Normalizaci\'on~(Chile)(1991{\natexlab{b}})}]{nch2165}
+Instituto~Nacional de~Normalizaci\'on~(Chile).
+\newblock Tensiones admisibles para la madera laminada encolada estructural de
+  pino radiata.
+\newblock NCh 2165 {O}f. 1991, INN, Santiago, Chile, 1991{\natexlab{b}}.
+
+\bibitem[{de~Normalizaci\'on~(Chile)(2006)}]{nch203}
+Instituto~Nacional de~Normalizaci\'on~(Chile).
+\newblock Aceros estructurales para construcciones generales.
+\newblock NCh 203 {O}f. 2006, INN, Santiago, Chile, 2006.
+
+\bibitem[{D{\'\i}az-Vaz et~al.(1988)D{\'\i}az-Vaz, Cuevas, Fern{\'a}ndez, y
+  Inzunza}]{diaz1988caracteristicas}
+J.~D{\'\i}az-Vaz, H.~Cuevas, A.~Fern{\'a}ndez, y L.~Inzunza.
+\newblock Caracter{\'\i}sticas tecnol{\'o}gicas de pseudotsuga menziesii
+  creciendo en valdivia.
+\newblock \emph{Bosque}, 9(2):97--101, 1988.
+
+\bibitem[{Dowling(2013)}]{dowling2013mechanical}
+Norman~E. Dowling.
+\newblock \emph{Mechanical behavior of materials : engineering methods for
+  deformation, fracture, and fatigue}.
+\newblock Pearson Pearson Education, Boston, Mass. London Harlow, 2013.
+
+\bibitem[{Esin(1980)}]{esin1980method}
+A.~Esin.
+\newblock A method for correlating different types of fatigue curve.
+\newblock \emph{International Journal of Fatigue}, 2(4):153--158, 1980.
+
+\bibitem[{for Standardization({\natexlab{a}})}]{ISO18265}
+International~Organization for Standardization.
+\newblock Metallic materials -- {C}onversion of hardness values.
+\newblock ISO 18265:2013, Geneva, Switzerland, {\natexlab{a}}.
+
+\bibitem[{for Standardization({\natexlab{b}})}]{ISO23718}
+International~Organization for Standardization.
+\newblock Metallic materials -- {M}echanical testing -- {V}ocabulary.
+\newblock ISO 23718:2007, Geneva, Switzerland, {\natexlab{b}}.
+
+\bibitem[{Franchignoni et~al.(2015)Franchignoni, Monticone, Giordano, y
+  Rocca}]{franchignoni2015rasch}
+Franco Franchignoni, Marco Monticone, Andrea Giordano, y Barbara Rocca.
+\newblock Rasch validation of the prosthetic mobility questionnaire: A new
+  outcome measure for assessing mobility in people with lower limb amputation.
+\newblock \emph{Journal of rehabilitation medicine}, 47(5):460--465, 2015.
+
+\bibitem[{Fuentes et~al.(2000)}]{fuentes2000estimacion}
+S~Fuentes et~al.
+\newblock Estimacion del punto de saturacion de la fibra (psf) de las maderas.
+\newblock Inf.\ t\'ec., Universidad Autonoma Chapingo, Chapingo (Mexico).,
+  2000.
+
+\bibitem[{Harihara y Childs(2014)}]{harihara2014solving}
+Parasuram Harihara y Dara~W Childs.
+\newblock Solving problems in dynamics and vibrations using matlab.
+\newblock \emph{Department of Mechanical Engineering Texas A \& M University
+  College Station}, p\'ags. 11--21, 2014.
+
+\bibitem[{HECTOR(1988)}]{hector1988criterio}
+R~CUEVAS~D HECTOR.
+\newblock Un criterio de selecci{\'o}n y consideraciones de uso de la madera en
+  construcci{\'o}n.
+\newblock \emph{Bosque}, 9(2):71--76, 1988.
+
+\bibitem[{Inman(2014)}]{inman2014engineering}
+D.~J. Inman.
+\newblock \emph{Engineering vibration}.
+\newblock Pearson, Boston, 2014.
+
+\bibitem[{International(2015)}]{E739}
+ASTM International.
+\newblock Standard {P}ractice for {S}tatical {A}nalysis of {L}inear or
+  {L}inearized {S}tress-{L}ife ({S}-{N}) and {S}train-{L}ife
+  ($\varepsilon$-{N}) {F}atigue {D}ata.
+\newblock ASTM E739-10, West Conshohocken, PA, 2015.
+
+\bibitem[{Lee y Huang(2013)}]{lee2013fatigue}
+John Lee y Adam Huang.
+\newblock Fatigue analysis of fdm materials.
+\newblock \emph{Rapid prototyping journal}, 19(4):291--299, 2013.
+
+\bibitem[{Lee et~al.(2005)Lee, Pan, Hathaway, y Barkey}]{lee2005fatigue}
+Yung-Li Lee, Jwo Pan, Richard Hathaway, y Mark Barkey.
+\newblock \emph{Fatigue testing and analysis: theory and practice}.
+\newblock Butterworth-Heinemann, 2005.
+
+\bibitem[{Manson(1965)}]{manson1965fatigue}
+SS~Manson.
+\newblock Fatigue: a complex subject—some simple approximations.
+\newblock \emph{Experimental mechanics}, 5(7):193--226, 1965.
+
+\bibitem[{Mathworks()}]{ode45}
+Mathworks.
+\newblock ode45.
+\newblock \urlprefix\url{https://www.mathworks.com/help/matlab/ref/ode45.html}.
+
+\bibitem[{Norton(2011)}]{norton2011machine}
+Robert~L Norton.
+\newblock \emph{Machine design: an integrated approach}.
+\newblock Pearson Education, Upper Saddle River, NJ, 2011.
+
+\bibitem[{OBE(2002)}]{obe2002timber}
+JM~Dinwoodie OBE.
+\newblock \emph{Timber: its nature and behaviour}.
+\newblock CRC Press, 2002.
+
+\bibitem[{Rao(2012)}]{rao2012vibraciones}
+Singiresu Rao.
+\newblock \emph{Vibraciones mec\'anicas}.
+\newblock Pearson educaci\'on M\'exico, M\'exico, 2012.
+
+\bibitem[{Richfield)()}]{richfield}
+[User:Slashme]~(David Richfield).
+\newblock Stress v {S}train {A}36 2.
+\newblock
+  \urlprefix\url{https://commons.wikimedia.org/wiki/File:Stress_v_strain_A36_2.svg}.
+
+\bibitem[{Roylance(2001)}]{roylance2001fatigue}
+David Roylance.
+\newblock Fatigue.
+\newblock \emph{Massachusetts Institute of Technology, Cambridge}, 1, 2001.
+
+\bibitem[{Rudnicki(2014)}]{rudnicki2014fundamentals}
+John~W Rudnicki.
+\newblock \emph{Fundamentals of continuum mechanics}.
+\newblock John Wiley \& Sons, 2014.
+
+\bibitem[{S\'anchez(2014)}]{sanchez2014guia}
+Jos\'e S\'anchez.
+\newblock \emph{Gu\'ia de la madera}.
+\newblock AITIM, Alcobendas, 2014.
+\newblock ISBN 9788487381423.
+
+\bibitem[{Schijve(2001)}]{schijve2001fatigue}
+Jaap Schijve.
+\newblock \emph{Fatigue of structures and materials}.
+\newblock Springer Science \& Business Media, 2001.
+
+\bibitem[{Sch\"utz(1996)}]{schutz1996history}
+Walter Sch\"utz.
+\newblock A history of fatigue.
+\newblock \emph{Engineering fracture mechanics}, 54(2):263--300, 1996.
+
+\bibitem[{Schwaner~\'Avila(2008)}]{schwaner2008uniones}
+Paola~A. Schwaner~\'Avila.
+\newblock Dise\~no asistido de uniones estructurales de madera, constituidos
+  por clavos y tornillos, mediante lenguaje {P}{H}{P}.
+\newblock 2008.
+\newblock Tesis para la obtenci\'on al t\'itulo de: {I}ngeniera {C}ivil en
+  {O}bras {C}iviles.
+
+\bibitem[{SHARCNET(2013)}]{sharcnet_miso}
+SHARCNET.
+\newblock Multilinear isotropic hardening.
+\newblock 2013.
+\newblock
+  \urlprefix\url{https://www.sharcnet.ca/Software/Ansys/15.0.7/en-us/help/wb_sim/ds_ex_mat_multisohard.html}.
+
+\bibitem[{SHARCNET(2015)}]{sharcnet_mesh}
+SHARCNET.
+\newblock Global mesh controls.
+\newblock 2015.
+\newblock
+  \urlprefix\url{https://www.sharcnet.ca/Software/Ansys/17.0/en-us/help/wb_msh/ds_Global_Mesh_Controls.html}.
+
+\bibitem[{SHARCNET(2017)}]{sharcnet_2017}
+SHARCNET.
+\newblock Mesh metric.
+\newblock 2017.
+\newblock
+  \urlprefix\url{https://www.sharcnet.ca/Software/Ansys/17.0/en-us/help/wb_msh/msh_metrics.html#msh_Histogram_FE}.
+
+\bibitem[{Sniadecki()}]{1020data}
+Nathan~J Sniadecki.
+\newblock Stress-{S}train {A}{I}{S}{I} 1020 {H}{R} {D}ata.
+\newblock
+  \urlprefix\url{http://faculty.washington.edu/nsniadec/ME354/W08/Ch4Example.xls}.
+
+\bibitem[{Steiger(2017)}]{steiger2017basics}
+Ludwig Steiger.
+\newblock \emph{Basics timber construction}.
+\newblock Birkh\"auser, 2017.
+
+\bibitem[{Strong-Tie(2018)}]{angleconnector}
+Simpson Strong-Tie.
+\newblock \emph{Wood Construction Connectors}, 2018.
+
+\bibitem[{Strzelecki y Tomaszewski(2018)}]{strzelecki2018analysis}
+Przemys{\l}aw Strzelecki y Tomasz Tomaszewski.
+\newblock Analysis of axial load and bending load effects on the fatigue life.
+\newblock En \emph{AIP Conference Proceedings}, tomo 2028, p\'ag. 020019. AIP
+  Publishing, 2018.
+
+\bibitem[{Vujaklija y Farina(2018)}]{vujaklija20183d}
+Ivan Vujaklija y Dario Farina.
+\newblock 3d printed upper limb prosthetics.
+\newblock \emph{Expert review of medical devices}, 15(7):505--512, 2018.
+
+\bibitem[{Wagner et~al.(2014)Wagner, Gonz\'alez, V\'asquez, y
+  Hern\'andez}]{calculo2014madera}
+Mario Wagner, Marcelo Gonz\'alez, Lu\'is V\'asquez, y Gonzalo Hern\'andez.
+\newblock Ejemplos de c\'alculo estructural en madera.
+\newblock Inf.\ T\'ec. 182, Instituto Forestal, 2014.
+
+\bibitem[{Zhang et~al.(2018)Zhang, Cai, Golub, Zhang, Yang, Schlarman, y
+  Zhang}]{zhang2018tensile}
+Hanyin Zhang, Linlin Cai, Michael Golub, Yi~Zhang, Xuehui Yang, Kate Schlarman,
+  y Jing Zhang.
+\newblock Tensile, creep, and fatigue behaviors of 3d-printed acrylonitrile
+  butadiene styrene.
+\newblock \emph{Journal of Materials Engineering and Performance},
+  27(1):57--62, 2018.
+
+\bibitem[{Zienkiewicz(1981)}]{zienkiewicz1981metodo}
+Olgierd~Cecil Zienkiewicz.
+\newblock \emph{El m\'etodo de los elementos finitos}.
+\newblock Revert\'e, 1981.
 
 \end{thebibliography}

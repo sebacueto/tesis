@@ -8,7 +8,7 @@ Este capítulo se dividirá en las cuatro áreas en las que se realizó este tra
 
 A partir de la información recopilada se puede concluir que:
 \begin{itemize}
-	\item Urge la necesidad actualizar los componentes del sistema de transmisión, eléctrico y el motor de la máquina de fatiga para que esta puede tener un funcionamiento correcto, continuo y con mayor flexibilidad. Es decir, que el mantenimiento se fácil de realizar y que las reparaciones o el reemplazo de sus componentes sean simples de encontrar en el mercado. Esto posibilitaría que su operación no sea vea detenida por largos periodos de tiempo ante la falta de insumos, como ocurre actualmente.
+	\item se requiere actualizar los componentes del sistema de transmisión, eléctrico y el motor de la máquina de fatiga para que esta puede tener un funcionamiento correcto, continuo y con mayor flexibilidad. Es decir, un mantenimiento fácil de realizar y que las reparaciones o el reemplazo de sus componentes sean simples de encontrar en el mercado. Esto posibilitaría que su operación no sea vea detenida por largos periodos de tiempo ante la falta de insumos, como ocurre actualmente.
 	\item Como consecuencia del punto anterior, se debe tener acceso completo a la máquina, es decir, poder desarmar sus piezas para medir, calcular y reemplazar estos componentes. Además, el acceder a cada componente por separado ayudará a la medición de su geometría y masa, obteniéndose resultados más precisos en el modelo propuesto.
 \end{itemize}
 
@@ -17,9 +17,9 @@ A partir de la información recopilada se puede concluir que:
 \subsection{Sobre la estructura}
 Con respecto al diseño de la nueva estructura soportante de la máquina y los cálculos realizados:
 \begin{itemize}
-	\item La utilización de la madera como principal material de la estructura es una opción viable debido a su capacidad de amortiguar las vibraciones y su buena relación entre el peso y la resistencia del material a la carga estática y a la fatiga. En ese sentido, la norma NCh 1198 entrega todas las herramientas para una correcta metodología de cálculo.
+	\item La utilización de la madera como principal material de la estructura es una opción viable debido a su capacidad de amortiguar las vibraciones y su buena relación entre el peso y la resistencia del material a las cargas estáticas y dinámicas. En ese sentido, la norma NCh 1198 entrega todas las herramientas para una correcta metodología de cálculo.
 	\item El diseño final, tomando en consideración la especie maderera, las dimensiones del acero y la madera y las uniones utilizadas, tienen un amplio rango de flexibilidad producto del sobredimensionamiento de algunas piezas, lo que vuelve al diseño independiente de la existencia en el mercado de los productos seleccionados, dicho de otra manera, cabe la posibilidad de utilizar elementos distintos al del diseño propuesto sin afectar su integridad.
-	\item En ese sentido, se cumplió la filosofía y los objetivos con los que se diseño la estructura: (a) soportar la máquina de fatiga en reposo y operación, (b) durabilidad, (c) piezas modulares y (d) la posibilidad de modificar la estructura en el futuro.
+	\item En ese sentido, se cumplió la filosofía y los objetivos con los que se diseñó la estructura: (a) soportar la máquina de fatiga en reposo y operación, (b) durabilidad, (c) piezas modulares y (d) la posibilidad de modificar la estructura en el futuro.
 	\item Las simulaciones estáticas y modal dan un respaldo al trabajo realizado. El análisis modal nos indica que no existirán problemas entre el funcionamiento de la máquina y las frecuencias naturales de la estructura.
 	\item Para poder validar los cálculos realizados se requiere de tener la máquina operativa y medir las vibraciones que produce al estar en funcionamiento. Asimismo, esto dará información sobra la necesidad de tener amortiguadores en la base de la estructura.
 \end{itemize}
@@ -27,21 +27,21 @@ Con respecto al diseño de la nueva estructura soportante de la máquina y los c
 \subsection{Comportamiento del modelo de vibración}
 En relación a los resultados que se obtuvieron del modelo de vibración de la máquina de fatiga:
 \begin{itemize}
-	\item El modelo nos indica que la fuerza sobre la probeta será función de la fuerza producida por el disco desbalanceado. Dado que la máquina gira a una velocidad constante, entonces se establecerá que:
+	\item El modelo nos indica que la fuerza sobre la probeta será función de la fuerza producida por el disco desbalanceado. Dado que la máquina gira a una velocidad constante, entonces se establece que:
 	\begin{equation*}
 		F(t) = f(\Psi)
 	\end{equation*}
-	\item De manera análoga, entre mayor sea $\Psi$, mayores serán las cargas que se producen sobre la probeta. De igual forma, a mayor velocidad de rotación del motor ($\omega_{max}$), aumenta la carga sobre la probeta. De esta forma se puede determinar que la fuerza sobre la probeta $F(t)$ se define de la siguiente forma:
+	\item De manera análoga, entre mayor sea $\Psi$, mayores serán las cargas que se producen sobre la probeta. De igual forma, a mayor velocidad de rotación del motor ($\omega_{max}$), aumenta la carga sobre la probeta. De esta forma la fuerza sobre la probeta $F(t)$ se define de la siguiente forma:
 	\begin{equation*}
 		F(t) = f (\Psi, \omega_{max}) \qquad \text{o} \qquad F(t) = f(F_d(t))
 	\end{equation*}
-	\item En base a esto, es posible realizar una carga de máxima de 1498,8 N sobre una probeta de acero AISI 1020. Este valor puede variar dependiendo de la geometría y el módulo de elasticidad del material con el que se fabricó la probeta.
+	\item Es posible aplicar una carga de máxima de 1498,8 N sobre una probeta de acero AISI 1020, basado en el análisis de esfuerzos en el modelo de elemento finitos. Este valor puede variar dependiendo de la geometría y el módulo de elasticidad del material con el que se fabricó la probeta.
 	\item La discordancia entre los resultados del modelo y la tabla de carga solo es posible resolverla realizando las mediciones del comportamiento de la máquina para distintos contrapesos, al ser ambas excluyentes en la forma de relacionar la carga con respecto a las combinaciones, solo una de ellas es válida.
 	\item Estas mediciones también incidirán en la validez de los supuestos realizados para elaborar el modelo del sistema, como también en la precisión de los resultados. Es decir, el modelo puede ser congruente con la física del problema, pero inexacto en los resultados.
 \end{itemize}
 
 \subsection{En relación a las simulaciones}
-Al simular los datos obtenidos por el modelo de vibración en un acero AISI 1020, se puede concluir:
+Al utilizar las cargas obtenidas en el modelo dinámico en un acero AISI 1020, se puede concluir:
 \begin{itemize}
 	\item Gran parte de las combinaciones supera ampliamente el esfuerzo último del material, es decir, sólo una fracción (77 de 201) de las combinaciones resulta útil para poder ensayar este acero en específico.
 	\item De la misma forma, una fracción aun menor se encuentra en el rango elástico, correspondiendo a 23 combinaciones posibles hasta alcanzar el esfuerzo de fluencia.
@@ -58,7 +58,7 @@ El trabajo actual abre espacio a distintos análisis posibles en torno a la mism
 	\item Medición del comportamiento de la máquina de fatiga, sus componentes y la probeta para corroborar los resultados del modelo de vibraciones propuesto y contrastarlo con la tabla de cargas original y la propuesta.
 	\item Además, es posible realizar un modelo de vibraciones para la máquina en su configuración de fatiga por torsión para obtener su respectivo comportamiento y la tabla de cargas para cada combinación.
 	\item Una vez que la máquina se encuentre operativa, es posible realizar ensayos de fatiga tanto para el acero, como otros materiales o de probetas de distinta geometría, permitiendo comparar las curvas $S$-$N$ que se obtienen en flexión y torsión con los resultados de otras formas de medición.
-	\item En ese mismo sentido, realizar ensayos de plásticos impresos en 3D y caracterizar su comportamiento bajo fatiga en una curva $S$-$N$, como datos de entrada para el diseño de prótesis impresas en 3D.
+	\item En ese mismo sentido, realizar ensayos de plásticos impresos en 3D y caracterizar su comportamiento bajo fatiga en una curva $S$-$N$, como datos de entrada para el diseño de prótesis obtenidas con impresión 3D.
 \end{itemize}
 
 

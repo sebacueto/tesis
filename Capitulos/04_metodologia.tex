@@ -305,14 +305,14 @@ Así, los valores obtenidos son:
 	\item $\sigma_{max} = 94,66$ [MPa]
 \end{itemize*}
 
-Con relación a la cargas fluctuantes que recibirán las pletinas como parte del funcionamiento de la máquina, se considerará la carga mayor que es capaz de producir la máquina de todas sus configuraciones, de acuerdo a lo que se obtenga por medio del modelo que se expondrá en la sección \ref{sec:mod_sist}. Esta carga alternante sobre la pletina, $F_{a,pl}$, se considerará igual a la mitad de la carga máxima posible producida por el disco desbalanceado. Por lo tanto, considerando la configuración utilizada en las cargas estáticas, la carga distribuida alternante será $q_{a,pl} = F_{a,pl}/c$ y el momento flector máximo en el punto $A$ es la primera expresión de la ec. \ref{eq:mtofleca_acero} y el esfuerzo sobre el mismo punto igual a la expresión \ref{eq:esfmax_acero}, quedando:
+Con relación a la cargas fluctuantes que recibirán las pletinas como parte del funcionamiento de la máquina, se considerará la carga mayor que es capaz de producir la máquina de todas sus configuraciones, de acuerdo a lo que se obtenga por medio del modelo que se expondrá en la sección \ref{sec:mod_sist}. Esta carga alternante sobre la pletina, $F_{a,pl}$, se considerará igual a la mitad de la carga máxima posible producida por el disco desbalanceado. Por lo tanto, considerando la configuración utilizada en las cargas estáticas, la carga distribuida alternante será $q_{a,pl} = F_{a,pl}/c$ y el momento flector máximo en el punto $A$ es la primera expresión de la ec. \ref{eq:mtofleca_acero} y el esfuerzo sobre el mismo punto igual a la expresión \ref{eq:esfmax_acero}, quedando: 
 \begin{gather}
-	M_{a,pl,A} = \left(\frac{cq_{a,pl}}{24L}\right) \left(3L^2 - 4c^2 + \frac{6bc^2}{L} - \frac{3c^3}{L}\right)\\
-	\sigma_{a,A} = \frac{M_{a,pl,A} \cdot h_p}{2\bar{I}_{pl}}
+	M_{a,pl,A} = \left(\frac{cq_{a,pl}}{24L}\right) \left(3L^2 - 4c^2 + \frac{6bc^2}{L} - \frac{3c^3}{L}\right) \label{eq:mtofat_pletacero}\\
+	\sigma_{a,A} = \frac{M_{a,pl,A} \cdot h_p}{2\bar{I}_{pl}} \label{eq:esffat_pletacero}
 \end{gather}
 
 Para obtener el factor de seguridad, se utilizará la ecuación de Goodman modificada (ec. \ref{eq:good_mod}). Para esto, el límite de resistencia a la fatiga de un acero se puede estimar como $S_e = 0,5S_{u}$ cuando el esfuerzo último es menor a 1400 MPa \cite{budynas2008shigley}. Como el material utilizado es un acero A270ES, entonces su equivalente en la antigua nomenclatura chilena de acero es A42-27ES \cite{nch203}, donde el esfuerzo último del material es $S_{u} = 420$ MPa, por lo tanto, $S_e = 210$ MPa. También, el esfuerzo medio será igual al esfuerzo estático calculado anteriormente, donde, $S_m = \sigma_{max,pl}$. Así, el factor de seguridad es:
-\begin{equation}
+\begin{equation}\label{eq:fs_fatacero}
 	\text{FS} = \left(\frac{S_e\cdot S_{ut}}{S_a\cdot S_{ut} + S_m\cdot S_e}\right)
 \end{equation}
 
@@ -806,7 +806,7 @@ Por otro lado, la masa $M_a$ como se señaló en la ecuación \ref{eq:m_a}, corr
 	\item $M_d=$ 19,2029 kg
 \end{itemize*}
 Los valores correspondientes a $m_1$ y $m_2$ son variables y pueden ir desde 0 g hasta 92,3469 g de acuerdo a la configuración escogida. Las distintas combinaciones y valores que pueden tener se encuentran en la tabla del anexo \ref{ch:anexo_b}.
-\subparagraph{Módulo de elasticidad de la probeta.}
+\subparagraph{\textit{Módulo de elasticidad de la probeta}.}
 Corresponde al del material de la probeta que actualmente se utiliza. Al ser acero, su valor es:
 \begin{itemize*}
 	\item $E_p=$ 200 GPa
@@ -814,7 +814,7 @@ Corresponde al del material de la probeta que actualmente se utiliza. Al ser ace
 \subsubsection{Excentricidad}
 La excentricidad del centro de masa $e_{ga}$ se calculó utilizando los datos del disco, la distancia de los soportes y la configuración de masas. Por lo tanto, se define como:
 \begin{equation}
-	e_{ga} = \frac{R_d\cdot (m_1 - m_2)}{(m_1 + m_2)}
+	e_{ga} = \frac{R_d\cdot (m_1 - m_2)}{(m_1 + m_2 + M_d)}
 \end{equation}
 \subsection{Función de aceleración del disco}
 \label{sec:function_angle}
@@ -892,7 +892,7 @@ Para esto es necesario despejar los valores de $\ddot{y}$ y $\ddot{\theta}$, ent
 \subsection{Matriz de carga sobre la probeta según velocidad del motor}
 Una vez que se puede resolver el sistema de ecuaciones para un configuración y velocidad del motor específica, entonces es posible obtener una matriz del valor de la fuerza máxima ($F_{max}$), media ($F_m$) y su amplitud ($F_a$) para cada una de las configuraciones existentes en la tabla de carga a una velocidad angular $\,\omega_{max}\,$ determinada.
 
-Para esto se itera la solución anterior para cada una de las 201 configuraciones de contrapeso existentes para distintas velocidades. De estas iteraciones se almacenan los valores de $F_{max}$, $F_m$, $F_a$, la diferencia de masa de los contrapeso $\Delta m$ y la multiplicación entre la masa total $M_a$ y la excentricidad del centro de masa del disco $e_{ga}$, la cual se definirá como la variable $\Psi=M_a \cdot e_{ga}$.
+Para esto se itera la solución anterior para cada una de las 201 configuraciones de contrapeso existentes para distintas velocidades. De estas iteraciones se almacenan los valores de $F_{max}$, $F_m$, $F_a$ y la diferencia de masa de los contrapeso $\Delta m$. 
 
 \subsubsection{Carga máxima, media y amplitud}
 La información que se busca de estos resultados corresponde a la carga que es producto de la fuerza del disco desbalanceado sobre la probeta, es decir, $F(t)$. Producto del comportamiento con el que se diseñó el modelo donde el sistema se deja caer hasta su posición de equilibrio,  se utiliza una variable auxiliar $F_{aux}$ que extrae los datos de $F(t)$ desde el inicio de la aceleración angular del disco hasta el final de la integración para evitar que las fuerzas de la transición entre la posición inicial y el reposo den resultados incorrectos. Así, la carga máxima, media y la amplitud se definen:
@@ -904,6 +904,8 @@ La información que se busca de estos resultados corresponde a la carga que es p
 
 \section{Simulación de carga máxima}
 Con los datos de la carga máxima $F_{max}$, obtenidos a partir de la solución del modelo expuesto anteriormente, para cada combinación de contrapesos, se realizará un análisis estático de los esfuerzos asociados a cada configuración, en otras palabras, se buscará relacionar cada combinación con los esfuerzos respectivos a una velocidad angular máxima $\omega_{max}$ de 25 [rad/s]. Para esto, se simulará la probeta a través del software de elementos finitos ANSYS con el fin de obtener el esfuerzo máximo equivalente (o de von Mises), el esfuerzo máximo cortante, normal y sus respectivas deformaciones. Finalmente, se compararán los resultados de este análisis con la tabla de cargas existente. Debido a lo alto de las cargas obtenidas, sólo se considerarán las simulaciones que lleven a la probeta lo más cercano al punto de esfuerzo último, por lo tanto, la probeta será sometida a 77 cargas distintas, donde la carga 77 excede el esfuerzo último del material.
+
+\newpage
 
 \subsection{Tipo de simulación}
 Al llevar a la probeta a cargas que sobrepasan el esfuerzo de fluencia del material, es necesario utilizar un modelo elasto-plástico para el correcto desarrollo de la simulación. En consecuencia, se utilizará el modelo de plasticidad multilineal de endurecimiento isotrópico (MISO), utilizado comúnmente para el análisis en grandes deformaciones. Este modelo se debe alimentar con los datos de distintos puntos de esfuerzo y deformación plástica real de un ensayo de tracción del material, creando una curva con los distintos puntos introducidos donde la primera pendiente es la zona elástica. Este modelo no permite que en la zona plástica hayan pendientes más grandes que en la zona elástica ni pendientes negativas. 
@@ -927,9 +929,8 @@ A causa de lo bajo del valor de dureza obtenido, sumado al hecho que en los úni
 \end{figure}
 
 Sin embargo, debido a las características del modelo MISO, se deben utilizar exclusivamente los puntos de la zona plástica y estos no pueden tener una pendiente menor a cero entre dos puntos ingresados, por lo tanto, la tabla \ref{tab:esfdef_util} muestra los datos utilizados. Por otra parte, el último punto corresponde al esfuerzo de ruptura, pero no se ingresó un modelo de ruptura al no ser relevante para el trabajo. 
-\newpage
-Por último, para la deformación elástica se usará un modulo de elasticidad $E =$ 200 GPa, el esfuerzo de fluencia es $\sigma_y=$ 293,5 MPa y el esfuerzo último $\sigma_u =$ 418,5 MPa.
 
+Por último, para la deformación elástica se usará un modulo de elasticidad $E =$ 200 GPa, el esfuerzo de fluencia es $\sigma_y=$ 293,5 MPa y el esfuerzo último $\sigma_u =$ 418,5 MPa.
 \begin{table}[h]
 \centering
 \begin{tabular}{@{}cc@{}}
@@ -949,8 +950,6 @@ Por último, para la deformación elástica se usará un modulo de elasticidad $
 \caption{Datos utilizados del ensayo de esfuerzo-deformación del acero AISI 1020 HR en el modelo MISO.}
 \label{tab:esfdef_util}
 \end{table}
-
-\newpage
 
 \subsection{Generación de la malla}
 \label{sec:gen_malla}
@@ -991,13 +990,26 @@ Para obtener los resultados de una malla que se adaptara a los requisitos, se ut
 
 \newpage
 
-Con esta configuración la malla está compuesta por 951.151 nodos y 684.131 elementos. Los valores promedios de los parámetros que indican la calidad de la malla, expuestos en la sección \ref{sec:gen_malla}, son:
-\begin{align*}
-	\bullet \ &\text{Calidad del elemento} &=\quad	 &0.839 	\\
-	\bullet \ &\text{Relación de aspecto}  &=\quad 	 &1,817 	\\
-	\bullet \ &\text{Calidad ortogonal} 	 &=\quad 	 &0,772 	\\
-	\bullet \ &\text{Oblicuidad} 			 &=\quad	 &0,22667
-\end{align*}
+Con esta configuración la malla está compuesta por 951.151 nodos y 684.131 elementos. Los valores promedios de los parámetros que indican la calidad de la malla, expuestos en la sección \ref{sec:gen_malla}, se muestran en la tabla \ref{tab:cal_malla}.
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lc@{}}
+\toprule
+Parámetro de calidad & Valor promedio \\ \midrule
+Calidad del elemento & $0.839$ \\
+Relación de aspecto & $1.817$ \\
+Calidad ortogonal & $0.772$ \\
+Oblicuidad & $0.22667$ \\ \bottomrule
+\end{tabular}
+\caption{Valores promedios de los parámetros de calidad de la malla utilizada en la probeta.}
+\label{tab:cal_malla}
+\end{table}
+%\begin{align*}
+%	\bullet \ &\text{Calidad del elemento} &=\quad	 &0.839 	\\
+%	\bullet \ &\text{Relación de aspecto}  &=\quad 	 &1,817 	\\
+%	\bullet \ &\text{Calidad ortogonal} 	 &=\quad 	 &0,772 	\\
+%	\bullet \ &\text{Oblicuidad} 			 &=\quad	 &0,22667
+%\end{align*}
 
 Estos valores muestran que la malla utilizada es aceptable. Al utilizar la tabla \ref{tab:skewness} como referencia, el valor de oblicuidad nos indica que la malla se encuentra en el rango ``\textit{Excelente}''.
 
