@@ -1,16 +1,23 @@
 \babel@toc {spanish}{}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces La imagen (a) muestra los esfuerzos provocados por la mesa de fatiga sobre la estructura. La imagen (b) es un detalle del esfuerzo de von Mises m\IeC {\'a}ximo, que se produce en los extremos de la pletina de acero.\relax }}{14}{figure.caption.23}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Fuerza aplicada sobre la probeta $F(t)$ en el tiempo.\relax }}{15}{figure.caption.24}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Desplazamiento en el tiempo respecto al eje $y$ (a) y $\theta $ (b) del centro de masa del brazo de carga.\relax }}{16}{figure.caption.25}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Velocidad respecto la tiempo en el eje $y$ (a) y rotacional (b) del centro de masa del brazo de carga.\relax }}{17}{figure.caption.26}
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Distribuci\IeC {\'o}n de la carga m\IeC {\'a}xima $F_{max}$ versus la diferencia de masas $\Delta m$ de cada combinaci\IeC {\'o}n de contrapesos.\relax }}{18}{figure.caption.27}
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Curva de la carga m\IeC {\'a}xima $F_{max}$ versus la variable $\Psi $. $\tmspace +\thickmuskip {.2777em} \omega _{max}=25$ rad/s.\relax }}{19}{figure.caption.28}
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Distribuci\IeC {\'o}n de la carga media ($F_m$) para las distintas configuraciones de contrapesos.\relax }}{20}{figure.caption.29}
-\contentsline {figure}{\numberline {1.8}{\ignorespaces Comparaci\IeC {\'o}n de la fuerza aplicada sobre la probeta $F(t)$, de la combinaci\IeC {\'o}n (5+5+1)-(2+4) de $\Delta m = 39.7032$ g, a dos velocidades angulares $\omega _{max}$ distintas.\relax }}{21}{figure.caption.30}
-\contentsline {figure}{\numberline {1.9}{\ignorespaces Curvas de cada combinaci\IeC {\'o}n de contrapesos para distintas velocidades angulares $\omega _{max}$.\relax }}{22}{figure.1.9}
-\contentsline {figure}{\numberline {1.10}{\ignorespaces Curva de las 77 cargas aplicadas sobre la probeta. Tabla en anexo \ref {sec:anexob2}\relax }}{23}{figure.caption.31}
-\contentsline {figure}{\numberline {1.11}{\ignorespaces Detalle de la distribuci\IeC {\'o}n de esfuerzos de von Mises en la zona intermedia de la probeta.\relax }}{25}{figure.caption.33}
-\contentsline {figure}{\numberline {1.12}{\ignorespaces Ubicaci\IeC {\'o}n de los elementos $P$, $Q$ y $R$\relax }}{26}{figure.caption.34}
-\contentsline {figure}{\numberline {1.13}{\ignorespaces Deformaci\IeC {\'o}n unitaria de los puntos $P$, $Q$ y $R$ \relax }}{27}{figure.caption.35}
-\contentsline {figure}{\numberline {1.14}{\ignorespaces Esfuerzos de von Mises, normal y m\IeC {\'a}ximo cortante de los puntos $P$, $Q$ y $R$.\relax }}{28}{figure.caption.36}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces La figura (a) muestra los esfuerzos de von Mises provocados por la mesa de fatiga sobre la estructura. La imagen (b) es un detalle del esfuerzo de von Mises m\IeC {\'a}ximo, que se produce en los extremos de la pletina de acero.\relax }}{15}{figure.caption.21}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Fuerza aplicada sobre la probeta $F(t)$ en el tiempo.\relax }}{16}{figure.caption.22}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Desplazamiento en el tiempo respecto al eje $y$ (a) y $\theta $ (b) del centro de masa del brazo de carga.\relax }}{17}{figure.caption.23}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Velocidad respecto la tiempo en el eje $y$ (a) y rotacional (b) del centro de masa del brazo de carga.\relax }}{18}{figure.caption.24}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Distribuci\IeC {\'o}n de la carga m\IeC {\'a}xima $F_{max}$ versus la diferencia de masas $\Delta m$ de cada combinaci\IeC {\'o}n de contrapesos, con $\omega _{max} =$ 25 Hz. Tabla en anexo \ref {sec:anexob2}\relax }}{19}{figure.caption.25}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Distribuci\IeC {\'o}n de la carga media ($F_M$) para las distintas configuraciones de contrapeso.\relax }}{20}{figure.caption.26}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Comparaci\IeC {\'o}n de la fuerza aplicada sobre la probeta $F(t)$, para una carga de $\Delta m = 8.9$ kg, a dos velocidades angulares $\omega _{max}$ distintas.\relax }}{22}{figure.caption.27}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Curvas de cada combinaci\IeC {\'o}n de contrapesos para distintas velocidades angulares $\tmspace +\thickmuskip {.2777em} \omega _{max}$.\relax }}{23}{figure.1.8}
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Curva de la pendiente $\eta $ para cada velocidad $\omega $ del disco desbalanceado.\relax }}{24}{figure.caption.28}
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Curva de las 201 cargas aplicadas sobre la probeta. Tabla en anexo \ref {sec:anexob2}\relax }}{25}{figure.caption.29}
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Ubicaci\IeC {\'o}n de los elementos $P$, $Q$ y $R$\relax }}{26}{figure.caption.30}
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Deformaci\IeC {\'o}n unitaria de los puntos $P$, $Q$ y $R$ \relax }}{27}{figure.caption.31}
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Esfuerzos de von Mises, normal y m\IeC {\'a}ximo cortante de los puntos $P$, $Q$ y $R$.\relax }}{28}{figure.caption.32}
+\contentsline {figure}{\numberline {1.14}{\ignorespaces Curva de las 77 cargas aplicadas sobre la probeta. Tabla en anexo \ref {sec:anexob3}\relax }}{29}{figure.caption.33}
+\contentsline {figure}{\numberline {1.15}{\ignorespaces Detalle de la distribuci\IeC {\'o}n de esfuerzos de von Mises en la zona intermedia de la probeta.\relax }}{31}{figure.caption.35}
+\contentsline {figure}{\numberline {1.16}{\ignorespaces Deformaci\IeC {\'o}n unitaria de los puntos $P$, $Q$ y $R$ \relax }}{33}{figure.caption.36}
+\contentsline {figure}{\numberline {1.17}{\ignorespaces Esfuerzos de von Mises, normal y m\IeC {\'a}ximo cortante de los puntos $P$, $Q$ y $R$.\relax }}{34}{figure.caption.37}
+\contentsline {figure}{\numberline {1.18}{\ignorespaces Ajuste lineal de la carga m\IeC {\'a}xima para las 201 combinaciones de contrapesos con $\omega _{max}=25$ rad/s.\relax }}{35}{figure.caption.38}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

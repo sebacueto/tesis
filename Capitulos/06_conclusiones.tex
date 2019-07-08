@@ -27,28 +27,27 @@ Con respecto al diseño de la nueva estructura soportante de la máquina y los c
 \subsection{Comportamiento del modelo de vibración}
 En relación a los resultados que se obtuvieron del modelo de vibración de la máquina de fatiga:
 \begin{itemize}
-	\item El modelo nos indica que la fuerza sobre la probeta será función de la fuerza producida por el disco desbalanceado. Dado que la máquina gira a una velocidad constante, entonces se establece que:
+	\item El modelo nos indica que la fuerza sobre la probeta será función de la fuerza producida por el desbalanceo del disco. Dado que la máquina gira a una velocidad constante, entonces se establece que:
 	\begin{equation*}
-		F(t) = f(\Psi)
+		F(t) = f(\Delta m)
 	\end{equation*}
-	\item De manera análoga, entre mayor sea $\Psi$, mayores serán las cargas que se producen sobre la probeta. De igual forma, a mayor velocidad de rotación del motor ($\omega_{max}$), aumenta la carga sobre la probeta. De esta forma la fuerza sobre la probeta $F(t)$ se define de la siguiente forma:
+	\item De manera análoga, entre mayor sea $\Delta m$, mayores serán las cargas que se producen sobre la probeta. De igual forma, a mayor velocidad de rotación del motor ($\omega_{max}$), aumenta la carga sobre la probeta. De esta manera la fuerza sobre la probeta $F(t)$ se define de la siguiente forma:
 	\begin{equation*}
-		F(t) = f (\Psi, \omega_{max}) \qquad \text{o} \qquad F(t) = f(F_d(t))
+		F(t) = f (\Delta m, \omega_{max}) \qquad \text{o} \qquad F(t) = f(F_d(t))
 	\end{equation*}
-	\item Es posible aplicar una carga de máxima de 1498,8 N sobre una probeta de acero AISI 1020, basado en el análisis de esfuerzos en el modelo de elemento finitos. Este valor puede variar dependiendo de la geometría y el módulo de elasticidad del material con el que se fabricó la probeta.
-	\item La discordancia entre los resultados del modelo y la tabla de carga solo es posible resolverla realizando las mediciones del comportamiento de la máquina para distintos contrapesos, al ser ambas excluyentes en la forma de relacionar la carga con respecto a las combinaciones, solo una de ellas es válida.
-	\item Estas mediciones también incidirán en la validez de los supuestos realizados para elaborar el modelo del sistema, como también en la precisión de los resultados. Es decir, el modelo puede ser congruente con la física del problema, pero inexacto en los resultados.
+	\item De esta forma, al lograr relacionar por medio de curva $F_{max}$, $\omega_{max}$ y $\Delta m$, se pueden controlar las variables del sistema de forma más simple, sin necesidad de resolver las ecuaciones del modelo dinámico del sistema. Además, permite interpolar y extrapolar el comportamiento del sistema para aplicar y encontrar cargas específicas, como los son $F_{max,y}$ y $F_{max,y}$.
+	\item Considerando los contrapesos existentes, es posible aplicar una carga de máxima de 19,5524 N sobre una probeta de acero AISI 1020, basado en el análisis del modelo dinámico del sistema. Este valor puede variar dependiendo de la geometría y el módulo de elasticidad del material con el que se fabricó la probeta.
+	\item La validez del modelo dinámico y los supuestos utilizados, se deben comprobar realizando mediciones del comportamiento de la máquina para distintas configuraciones que determinarán la precisión de los resultados. Es decir, se requiere de una validación experimental del modelo para corroborar la congruencia física del problema y la exactitud de los resultados obtenidos.
 \end{itemize}
 
 \subsection{En relación a las simulaciones}
 Al utilizar las cargas obtenidas en el modelo dinámico en un acero AISI 1020, se puede concluir:
 \begin{itemize}
-	\item Gran parte de las combinaciones supera ampliamente el esfuerzo último del material, es decir, sólo una fracción (77 de 201) de las combinaciones resulta útil para poder ensayar este acero en específico.
-	\item De la misma forma, una fracción aun menor se encuentra en el rango elástico, correspondiendo a 23 combinaciones posibles hasta alcanzar el esfuerzo de fluencia.
-	\item Con esto en cuenta, nuevamente la información entregada por la tabla de carga genera dudas al señalar esfuerzos muy superiores incluso al esfuerzo de ruptura del material.
+	\item Todas las combinaciones de contrapesos se encuentran en la zona elástica del acero, teniendo un rango acotado de esfuerzos que es posible aplicar sobre la probeta. El esfuerzo de von Mises más bajo corresponde a $8.81$ MPa y el más alto a $13.81$ MPa, por lo tanto, el rango de esfuerzos es de $5$ MPa. 
+	\item De acuerdo a estos resultados, existe una discrepancia importante con los valores de los esfuerzos reportados por la tabla de cargas y los obtenidos en este trabajo. Si bien la tabla de carga genera dudas al señalar esfuerzos muy superiores, incluso al esfuerzo de ruptura del material, sólo es posible resolver esta diferencia realizando una validación experimental que entregue información respecto a la deformación y, por lo tanto, el estado de esfuerzos que experimenta la probeta durante un ensayo de fatiga. 
+	\item El contrapeso $\Delta m$ necesario para alcanzar la fluencia y el esfuerzo último de la probeta corresponden a $5.68$ kg y $12.82$ kg, respectivamente, basado en el análisis de esfuerzos en el modelo de elementos finitos. Estos valores son altos respecto a los contrapesos que actualmente se utilizan en la máquina, siendo hasta 140 veces mayor, lo que podría causar daños en la máquina, alguno de sus componentes o incluso en la estructura soportante.
 	\item En relación a las propiedades del acero, realizar ensayos de esfuerzo-deformación a partir del mismo material utilizado para las probetas, dará información más precisa en la simulación de las cargas.
 \end{itemize}
-
 
 
 \section{Trabajo futuro}

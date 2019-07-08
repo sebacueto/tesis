@@ -903,9 +903,7 @@ La información que se busca de estos resultados corresponde a la carga que es p
 \end{gather}
 
 \section{Simulación de carga máxima}
-Con los datos de la carga máxima $F_{max}$, obtenidos a partir de la solución del modelo expuesto anteriormente, para cada combinación de contrapesos, se realizará un análisis estático de los esfuerzos asociados a cada configuración, en otras palabras, se buscará relacionar cada combinación con los esfuerzos respectivos a una velocidad angular máxima $\omega_{max}$ de 25 [rad/s]. Para esto, se simulará la probeta a través del software de elementos finitos ANSYS con el fin de obtener el esfuerzo máximo equivalente (o de von Mises), el esfuerzo máximo cortante, normal y sus respectivas deformaciones. Finalmente, se compararán los resultados de este análisis con la tabla de cargas existente. Debido a lo alto de las cargas obtenidas, sólo se considerarán las simulaciones que lleven a la probeta lo más cercano al punto de esfuerzo último, por lo tanto, la probeta será sometida a 77 cargas distintas, donde la carga 77 excede el esfuerzo último del material.
-
-\newpage
+Con los datos de la carga máxima $F_{max}$, obtenidos a partir de la solución del modelo expuesto anteriormente, para cada combinación de contrapesos, se realizará un análisis estático de los esfuerzos asociados a cada configuración, en otras palabras, se buscará relacionar cada combinación con los esfuerzos respectivos a una velocidad angular máxima $\omega_{max}$ de 25 [rad/s]. Para esto, se simularán las 201 cargas sobre la probeta a través del software de elementos finitos ANSYS con el fin de obtener el esfuerzo máximo equivalente (o de von Mises), el esfuerzo máximo cortante, normal y sus respectivas deformaciones. Posteriormente, se compararán los resultados de este análisis con la tabla de cargas existente. Finalmente, se buscará la carga $F_{max}$ y el respectivo $\Delta m$ que produce el esfuerzo de fluencia ($\sigma_y$) y último ($\sigma_u$) en la probeta. 
 
 \subsection{Tipo de simulación}
 Al llevar a la probeta a cargas que sobrepasan el esfuerzo de fluencia del material, es necesario utilizar un modelo elasto-plástico para el correcto desarrollo de la simulación. En consecuencia, se utilizará el modelo de plasticidad multilineal de endurecimiento isotrópico (MISO), utilizado comúnmente para el análisis en grandes deformaciones. Este modelo se debe alimentar con los datos de distintos puntos de esfuerzo y deformación plástica real de un ensayo de tracción del material, creando una curva con los distintos puntos introducidos donde la primera pendiente es la zona elástica. Este modelo no permite que en la zona plástica hayan pendientes más grandes que en la zona elástica ni pendientes negativas. 
@@ -953,7 +951,7 @@ Por último, para la deformación elástica se usará un modulo de elasticidad $
 
 \subsection{Generación de la malla}
 \label{sec:gen_malla}
-Producto de lo irregular de la geometría de la probeta y la importancia que tienen para los resultados la zona media, por sobre los agarres, es que se opta por mallar para cada sección. En configuración generaldel mallado se utilizaron parámetros que buscan mejorar su calidad\footnote{La definición de cada opción se encuentra en el manual de ANSYS. \cite{sharcnet_mesh}}.
+Producto de lo irregular de la geometría de la probeta y la importancia que tienen para los resultados la zona media, por sobre los agarres, es que se opta por mallar para cada sección. En la configuración  general del mallado se utilizaron parámetros que buscan mejorar su calidad\footnote{La definición de cada opción se encuentra en el manual de ANSYS. \cite{sharcnet_mesh}}.
 
 \begin{itemize*}
 	\item Sizing
@@ -1105,3 +1103,12 @@ Además, a modo de referencia se utilizarán los resultados globales:
 	\item Esfuerzo equivalente
 	\item Deformación en dirección \textit{y}, según referencia de la fig. \ref{fig:cond_borde}
 \end{itemize*}
+
+\newpage 
+
+\subsection{Determinación de la carga asociada al esfuerzo de fluencia y el esfuerzo último}
+Con el fin de conocer la carga necesaria para que la probeta alcance su esfuerzo de fluencia ($\sigma_y$) y último ($\sigma_u$), se probará aumentar la carga $F_{max}$ de manera progresiva hasta alcanzar ambos puntos, partiendo desde el último punto obtenido a través del modelo dinámico del sistema. El esfuerzo último se encuentran en la zona plástica, por lo tanto, se utilizará el modelo MISO para obtener las soluciones.
+
+Por medio de esta información, se ajustará una curva a los resultados de carga máxima $F_{max}$ respecto a cada $\Delta m$, para determinar el contrapeso necesario de cada punto, es decir, obtener un $\Delta m_y$ y $\Delta m_u$ para los esfuerzos $\sigma_y$ y $\sigma_u$, respectivamente.
+
+Por otro lado, se mantendrá la configuración y la malla utilizada en la sección anterior, como también los resultados de los puntos $P$, $Q$ y $R$ (fig. \ref{fig:diag_pqr}).

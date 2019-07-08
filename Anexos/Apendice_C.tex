@@ -15,9 +15,9 @@ function DERVAR = machfun(t, XVAR)
 
 % Valores de entrada
 
-% Configuracion 86
-m1= 0.7582e-3;       % m_1 y m_2 corresponden a los contrapesos.
-m2= 0;               % m_1 > m_2 [kg]
+% Configuracion n 180
+m1= 83.1959e-3;      % m_1 y m_2 corresponden a los contrapesos.
+m2= 6.8541e-3;       % m_1 > m_2 [kg]
 
 % Tipo de probeta
 E_p= 2e11;           % Mod. de Young del material de la probeta [Pa]
@@ -42,7 +42,7 @@ k2 = 1809049.41;     % Coef. de elasticidad de la probeta de acero
 
 % Calculos
 Ma = m1 + m2 + Md;
-ega = (R_d*(m1-m2))/(m1+m2);
+ega = (R_d*(m1-m2))/(Ma);
 c1 = 100;
 c2 = 100;
 
@@ -133,7 +133,7 @@ end
 
 \section{Script para cargas máxima, media y alternante}
 \label{sec:sol_gen}
-A la matriz con cada combinación de la masa de los contrapesos, escritas en el orden de la tabla de cargas, se denomina \textit{''MassT''}
+A la matriz con cada combinación de la masa de los contrapesos, escritas en el orden de la tabla de cargas, se denomina \textit{M} y está contenida en el script \textit{''MassT''}
 \begin{lstlisting}
 MassT;
 F25 = zeros(length(M),1);
@@ -145,7 +145,7 @@ Fm25 = zeros(length(M),1);
 for i = 1:1:length(M)
     i	% Contador
 
-    m1 = M(i,1); % Combinaciones contenidas en la matriz MassT
+    m1 = M(i,1); % Combinaciones contenidas en la matriz M
     m2 = M(i,2);
     
     
@@ -177,7 +177,7 @@ for i = 1:1:length(M)
     
     Rd = 0.1120 ;  
     Md = 19.2029;   
-    ega = (Rd*(m1-m2))/(m1+m2);
+    ega = (Rd*(m1-m2))/(m1+m2+Md);
     Ma = Md + m1 + m2;
     Me(i) = ega*Ma;
     
