@@ -4,8 +4,8 @@ The top-level auxiliary file: tesis.aux
 The style file: ezspanish.bst
 A level-1 auxiliary file: Preliminares/portada.aux
 A level-1 auxiliary file: Prefacios/frase.aux
-A level-1 auxiliary file: blanco.aux
 A level-1 auxiliary file: Prefacios/resumen.aux
+A level-1 auxiliary file: Prefacios/abstract.aux
 A level-1 auxiliary file: Capitulos/01_intro.aux
 A level-1 auxiliary file: Capitulos/02_antecedentes.aux
 A level-1 auxiliary file: Capitulos/03_marco_teorico.aux
@@ -18,7 +18,7 @@ A level-1 auxiliary file: Anexos/Apendice_C.aux
 A level-1 auxiliary file: Anexos/Apendice_D.aux
 Database file #1: Bibliografia/biblio.bib
 Warning--entry type for "beer2010mecanica" isn't style-file defined
---line 335 of file Bibliografia/biblio.bib
+--line 377 of file Bibliografia/biblio.bib
 Warning--empty year in autodesk
 Warning--empty year in chandrupatla2002introduction
 Warning--missing institution in ISO18265
@@ -28,45 +28,45 @@ Warning--empty year in ode45
 Warning--empty year in richfield
 Warning--empty year in 1020data
 Warning--can't use both volume and number fields in strzelecki2018analysis
-You've used 49 entries,
+You've used 53 entries,
             2833 wiz_defined-function locations,
-            869 strings with 12076 characters,
-and the built_in function-call counts, 23249 in all, are:
-= -- 1774
-> -- 747
-< -- 53
-+ -- 290
-- -- 234
-* -- 1338
-:= -- 3680
-add.period$ -- 152
-call.type$ -- 49
-change.case$ -- 309
-chr.to.int$ -- 46
-cite$ -- 58
-duplicate$ -- 1951
-empty$ -- 1953
-format.name$ -- 320
-if$ -- 4574
+            894 strings with 12685 characters,
+and the built_in function-call counts, 25419 in all, are:
+= -- 1946
+> -- 807
+< -- 57
++ -- 316
+- -- 252
+* -- 1475
+:= -- 3998
+add.period$ -- 164
+call.type$ -- 53
+change.case$ -- 335
+chr.to.int$ -- 50
+cite$ -- 62
+duplicate$ -- 2136
+empty$ -- 2140
+format.name$ -- 350
+if$ -- 5001
 int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 426
-newline$ -- 258
-num.names$ -- 196
-pop$ -- 987
+missing$ -- 466
+newline$ -- 278
+num.names$ -- 212
+pop$ -- 1069
 preamble$ -- 1
-purify$ -- 273
+purify$ -- 295
 quote$ -- 0
-skip$ -- 742
+skip$ -- 808
 stack$ -- 0
-substring$ -- 816
-swap$ -- 813
+substring$ -- 933
+swap$ -- 901
 text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 393
+type$ -- 429
 warning$ -- 9
-while$ -- 171
+while$ -- 189
 width$ -- 0
-write$ -- 620
+write$ -- 671
 (There were 10 warnings)

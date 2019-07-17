@@ -199,7 +199,7 @@ Frecuencia [Hz] & 25 & 128,43 & 135,24 & 143,48 & 145,79 & 175,23 & 189,92 \\ \b
 \label{tab:frec_nat}
 \end{table}
 
-Del análisis estático, se pudo comprobar que las zonas críticas del diseño se encuentran en el acero, como se puede apreciar en las figuras \ref{fig:resultados_mesa}. Esto confirma el trabajo de cálculo, expuesto anteriormente, el cual establece que el esfuerzo máximo se encuentra en el empotramiento de la pletina de acero, es decir, en el punto $A$ utilizando como referencia el diagrama de cargas \ref{fig:diagcargas_viga_acero}. Si bien los valores de los esfuerzos son mayores en los cálculos que en la simulación, se debe tener en cuenta que en la simulación se utilizó una carga distribuida aplicada sobre la máquina de fatiga. Además, fueron los cálculos los que se utilizaron para justificar las dimensiones del diseño, lo cual frente a esta diferencia de resultados, se resume en un posible sobredimensionamiento de la pletina de acero.
+Del análisis estático, se pudo comprobar que las zonas críticas del diseño se encuentran en el acero, como se puede apreciar en la fig. \ref{fig:resultados_mesa}. Esto confirma el trabajo de cálculo, expuesto anteriormente, el cual establece que el esfuerzo máximo se encuentra en el empotramiento de la pletina de acero, es decir, en el punto $A$ utilizando como referencia el diagrama de cargas \ref{fig:diagcargas_viga_acero}. Si bien los valores de los esfuerzos son mayores en los cálculos que en la simulación, se debe tener en cuenta que en la simulación se utilizó una carga distribuida aplicada sobre la máquina de fatiga. Además, fueron los cálculos los que se utilizaron para justificar las dimensiones del diseño, lo cual frente a esta diferencia de resultados, se resume en un posible sobredimensionamiento de la pletina de acero.
 
 \begin{figure}[h]
 \centering
@@ -314,7 +314,7 @@ En la sección anterior, se mostraron los resultados y el comportamiento del mod
 \begin{figure}[h]
 \centering
 \includegraphics[width=\linewidth, trim={0cm 0cm 2cm 0cm},clip]{Imagenes/fmax_dm_25.pdf}
-\caption{Distribución de la carga máxima $F_{max}$ versus la diferencia de masas $\Delta m$ de cada combinación de contrapesos, con $\omega_{max} =$ 25 Hz. Tabla en anexo \ref{sec:anexob2}}
+\caption{Distribución de la carga máxima $F_{max}$ versus la diferencia de masas $\Delta m$ de cada combinación de contrapesos, con $\omega_{max} =$ 25 Hz. Resultados en el anexo \ref{sec:anexob2}}
 \label{fig:fmax_dm25}
 \end{figure}
 
@@ -373,7 +373,7 @@ A continuación, es posible comparar la fuerza máxima de cada combinación de c
 	F(t) = f(\Delta m,\: \omega_{max})
 \end{equation}
 
-A partir de la fig. \ref{fig:fmax_dm}, se puede concluir que para cada velocidad de rotación del disco $\omega$ existe una relación lineal entre la carga máxima $F_{max}$ y $\Delta m$, frente a lo cual se puede asociar una pendiente $\eta$. Esta aumenta a medida que $\omega$ se incrementa, por lo tanto al gráficar ambos parámetros se puede ver como la pendiente crece de manera cuadrática respecto al aumento de la velocidad angular (fig. \ref{fig:eta_w}), en consecuencia se puede ajustar una curva al comportamiento de la pendiente $\eta$, que se define como:
+A partir de la fig. \ref{fig:fmax_dm}, se puede concluir que para cada velocidad de rotación del disco $\omega$ existe una relación lineal entre la carga máxima $F_{max}$ y $\Delta m$, frente a lo cual se puede asociar una pendiente $\eta$. Esta aumenta a medida que $\omega$ se incrementa, por lo tanto al gráficar ambos parámetros se puede ver como la pendiente crece de manera cuadrática respecto al aumento de la velocidad angular (fig. \ref{fig:eta_w}), en consecuencia se puede ajustar una curva al comportamiento de la pendiente $\eta$, dada por la siguiente ecuación cuadrática:
 \begin{equation}
 	y = 0.12\cdot x^2 + 0.00039\cdot x - 0.00087
 \end{equation}
@@ -412,41 +412,39 @@ Al tomar los datos de las cargas máximas obtenidas a través del modelo e ingre
 
 Al ver los esfuerzos generales a los que está sometida la probeta, se identifica que la zona más afectada es la intermedia, concentrándose justo en la mitad de la probeta, como se ve en las figuras \ref{fig:r_lat} y \ref{fig:r_iso}. Al realizar un corte transversal en la mitad de la probeta (fig. \ref{fig:rcorte_iso}) se pueden apreciar más claramente la distribución de los esfuerzos equivalentes en la zona intermedia, concentrandose fuertemente en la zona inferior y superior de la cara transversal. La figura \ref{fig:rcorte} muestra directamente la cara sometida a la carga máxima y su distribución de esfuerzos, donde además, se puede ver que la zona cercana al eje neutro tiene esfuerzos menores a los que se encuentran más lejos de este. Esta información es posible verla directamente en el comportamiento que tienen los elementos  $P$, $Q$ y $R$ (ver fig. \ref{fig:diag_pqr2}).
 
-% REEMPLAZAR POR IMAGENES NUEVAS
-
-%\begin{figure}[p]
-%\centering
-%	\begin{subfigure}{0.8\linewidth}
-%		\centering
-%		\includegraphics[width=\linewidth]{Imagenes/r_lat.png}
-%		\caption{Vista lateral de la zona intermedia.}
-%		\label{fig:r_lat}
-%	\end{subfigure}
-%	\begin{subfigure}{0.8\linewidth}
-%		\centering
-%		\includegraphics[width=\linewidth]{Imagenes/r_iso.png}
-%		\caption{Vista en isométrico de la zona intermedia.}
-%		\label{fig:r_iso}
-%	\end{subfigure}
-%\end{figure}
-%\begin{figure}[]
-%	\ContinuedFloat
-%	\centering
-%	\begin{subfigure}{0.6\linewidth}
-%		\centering
-%		\includegraphics[width=\linewidth]{Imagenes/rcorte_iso.png}
-%		\caption{Vista en isométrico del corte transversal.}
-%		\label{fig:rcorte_iso}
-%	\end{subfigure}		
-%	\begin{subfigure}{0.6\linewidth}
-%		\centering
-%		\includegraphics[width=\linewidth]{Imagenes/rcorte.png}
-%		\caption{Vista en detalle del corte transversal.}
-%		\label{fig:rcorte}
-%	\end{subfigure}
-%\caption{Detalle de la distribución de esfuerzos de von Mises en la zona intermedia de la probeta.}
-%\label{fig:resultados_vm}
-%\end{figure}
+\begin{figure}[p]
+\centering
+	\begin{subfigure}{0.7\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{Imagenes/esfvm_corte_lat201.pdf}
+		\caption{Vista lateral de la zona intermedia.}
+		\label{fig:corte_lat201}
+	\end{subfigure}
+	\begin{subfigure}{\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{Imagenes/esfvm_iso201}
+		\caption{Vista en isométrico de la zona intermedia.}
+		\label{fig:iso201}
+	\end{subfigure}
+\end{figure}
+\begin{figure}[]
+	\ContinuedFloat
+	\centering
+	\begin{subfigure}{0.9\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{Imagenes/esfvm_corte_iso201}
+		\caption{Vista en isométrico del corte transversal.}
+		\label{fig:corte_iso201}
+	\end{subfigure}		
+	\begin{subfigure}{0.9\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{Imagenes/esfvm_corte201}
+		\caption{Vista en detalle del corte transversal.}
+		\label{fig:corte201}
+	\end{subfigure}
+\caption{Detalle de la distribución de esfuerzos de von Mises en la zona intermedia de la probeta.}
+\label{fig:resultados_vm}
+\end{figure}
 
 \newpage
 
@@ -503,18 +501,18 @@ Por último, como se buscan conocer los esfuerzos y la deformación a los que es
 
 Al ver el comportamiento lineal de los gráficos, se concluye que en ninguna configuración se superó el esfuerzo de fluencia, como también lo confirman los datos de esfuerzo obtenidos. Los mayores esfuerzos se encuentran en el punto $P$ y $R$, siendo el primero levemente mayor, y el punto $Q$ el menor al estar cercano al eje neutro de la probeta. Así, en el punto $P$ el esfuerzo de von Mises máximo corresponde a $13.81$ MPa (combinación n$^{\circ}$ 201, $\Delta m = 92,3469$ g) y el mínimo a $8.81$ MPa (combinación n$^{\circ}$ 1, $\Delta m = 0.4128$ g). El esfuerzo máximo cortante en el punto $P$ corresponde a $7.03$ MPa (combinación n$^{\circ}$ 201) y la mínima a $4.48$ MPa. Además, la fig. \ref{fig:def_normal201} y \ref{fig:esf_normal201} muestran el comportamiento a tracción y compresión de los puntos $P$ y $R$, respectivamente. La deformación máxima sufrida por la probeta en el eje $y$ corresponde a $11.17\cdot 10^{-3}$ mm.
 
-Al comparar los resultados obtenidos (anexo \ref{sec:anexob2}) con la tabla de cargas (anexo \ref{sec:anexob1}) se encuentran diferencias en los esfuerzos obtenidos para una misma configuración. Esta diferencia aumenta de manera constante a medida que aumenta la carga, por lo tanto, la relación de $\Delta m$ y $\sigma_{vm}$ es distinta entre el modelo y la información original, dicho de otra forma, la pendiente de sus curvas son distintas. Esto, sin duda, provoca dudas sobre la información que entregada por la tabla de cargas, sobre la veracidad y factibilidad de los esfuerzos que acompañan a cada combinación. Respecto a este último punto, resalta el hecho que en la tabla de cargas aparezcan esfuerzos que sean muy superiores a los que un acero pueda soportar. No obstante, se requiere de una validación experimental que determinará la veracidad de esta información, tanto del desarrollo de esta tesis como de la tabla de carga.
+Al comparar los resultados obtenidos (anexo \ref{sec:anexob2}) con la tabla de cargas (anexo \ref{sec:anexob1}) se encuentran diferencias en los esfuerzos obtenidos para una misma configuración. Esta diferencia aumenta de manera constante a medida que aumenta la carga, por lo tanto, la relación de $\Delta m$ y $\sigma_{vm}$ es distinta entre el modelo y la información original, dicho de otra forma, la pendiente de sus curvas son distintas. Esto, sin duda, provoca dudas sobre la información que entregada por la tabla de cargas, sobre la veracidad y factibilidad de los esfuerzos que acompañan a cada combinación. Respecto a este último punto, resalta el hecho que en la tabla de cargas aparezcan esfuerzos que sean muy superiores a los que un acero pueda soportar. No obstante, se requiere de una validación experimental que determinará su veracidad, tanto del desarrollo de esta tesis como de la tabla de carga.
 
 \newpage
 
 \subsection{Determinación de la carga asociada al esfuerzo de fluencia y el esfuerzo último}
 
-Para determinar la carga necesaria para lograr la fluencia y el esfuerzo último de la probeta, se aumenta de manera constante y progresiva $F_{max}$. La fig. \ref{fig:f_step} muestra la distribución de la fuerza a la que se sometió la probeta hasta alcanzar el esfuerzo último ($\sigma_u$), que también se encuentran en el anexo \ref{sec:anexob3}.
+Para determinar la carga necesaria para lograr la fluencia y el esfuerzo último de la probeta, se aumenta de manera constante y progresiva $F_{max}$. La fig. \ref{fig:f_step} muestra la distribución de la fuerza a la que se sometió la probeta hasta alcanzar el esfuerzo último ($\sigma_u$), que se encuentran en el anexo \ref{sec:anexob3}.
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\linewidth, trim={0cm 0cm 1cm 0cm}, clip]{Imagenes/f_step.pdf}
-\caption{Curva de las 77 cargas aplicadas sobre la probeta. Tabla en anexo \ref{sec:anexob3}}
+\caption{Curva de las 76 cargas aplicadas sobre la probeta. Tabla en anexo \ref{sec:anexob3}}
 \label{fig:f_step}
 \end{figure}
 
@@ -523,31 +521,31 @@ La distribución de esfuerzos es similar a lo que ocurre en el caso anterior al 
 
 \begin{figure}[p]
 \centering
-	\begin{subfigure}{0.8\linewidth}
+	\begin{subfigure}{\linewidth}
 		\centering
-		\includegraphics[width=\linewidth]{Imagenes/r_lat.png}
+		\includegraphics[width=\linewidth]{Imagenes/r_lat.pdf}
 		\caption{Vista lateral de la zona intermedia.}
 		\label{fig:r_lat}
 	\end{subfigure}
 	\begin{subfigure}{0.8\linewidth}
 		\centering
-		\includegraphics[width=\linewidth]{Imagenes/r_iso.png}
+		\includegraphics[width=\linewidth]{Imagenes/r_iso.pdf}
 		\caption{Vista en isométrico de la zona intermedia.}
 		\label{fig:r_iso}
 	\end{subfigure}
 \end{figure}
-\begin{figure}[]
+\begin{figure}[p]
 	\ContinuedFloat
 	\centering
-	\begin{subfigure}{0.6\linewidth}
+	\begin{subfigure}{0.95\linewidth}
 		\centering
-		\includegraphics[width=\linewidth]{Imagenes/rcorte_iso.png}
+		\includegraphics[width=\linewidth]{Imagenes/rcorte_iso.pdf}
 		\caption{Vista en isométrico del corte transversal.}
 		\label{fig:rcorte_iso}
 	\end{subfigure}		
-	\begin{subfigure}{0.6\linewidth}
+	\begin{subfigure}{0.95\linewidth}
 		\centering
-		\includegraphics[width=\linewidth]{Imagenes/rcorte.png}
+		\includegraphics[width=\linewidth]{Imagenes/rcorte.pdf}
 		\caption{Vista en detalle del corte transversal.}
 		\label{fig:rcorte}
 	\end{subfigure}
@@ -619,8 +617,8 @@ Para encontrar la masa $\Delta m$ necesaria para realizar las cargas $F_{max,y}$
 \caption{Ajuste lineal de la carga máxima para las 201 combinaciones de contrapesos con $\omega_{max}=25$ rad/s.}
 \label{fig:fmax_dmec}
 \end{figure}
-Al despejar la ecuación para $\Delta m$ se obtiene:
-\begin{equation}
+Al despejar la ecuación para $\Delta m$ se obtiene: 
+\begin{equation}\label{eq:deltam}
 	\Delta m = 12.987\cdot F_{max} - 161.56 \;\; [\text{g}]
 \end{equation}
 
@@ -629,14 +627,14 @@ Por lo tanto, los contrapesos necesarios para llegar al esfuerzo de fluencia y a
 	\Delta m_y = 5682.44 \: g \\
 	\Delta m_u = 12825.44 \: g
 \end{gather*}
-Así mismo, en el anexo \ref{sec:anexob3} se encuentra la tabla con el valor $\Delta m$ para cada una de las 77 cargas aplicadas y su respectivo esfuerzo de von mises y cortante máximo.
+Así mismo, en el anexo \ref{sec:anexob3} se encuentra la tabla con el valor $\Delta m$ para cada una de las 76 cargas aplicadas y su respectivo esfuerzo de von Mises y cortante máximo.
 
+\subsection{Vida a fatiga para las cargas asociada a las combinaciones de contrapesos}
 
-%En la figura \ref{fig:esfpqr_vm} se puede ver que el esfuerzo más alto es de 430,54 MPa en el punto $R$, correspondiente a la carga número 77 (combinación (5+4)-(1+2+3) de $\Delta m = 41.6086$ g). Asimismo, se puede apreciar que cuando la fuerza máxima es de 449,03 N (carga 23) se llega a un esfuerzo de 293,5 MPa, tanto en el punto $P$ como en el punto $R$, alcanzando el esfuerzo de fluencia del material. Además, se puede identificar que el esfuerzo último se alcanza entre las cargas 75 y 76, de 987,686 N y 997,152 N respectivamente. Por otra parte, el punto $Q$ alcanza el punto de fluencia de forma tardía, específicamente en la carga 68 de 830,23 N, sin llegar hasta el esfuerzo último. Respecto a este mismo punto, se aprecia como los esfuerzos normales $\sigma_x$ son cercanos a cero, como es esperable al encontrarse en el eje neutro, sin embargo, cuando la deformación plástica aumenta de manera significativa, se ve que el punto $Q$ comienza a sufrir esfuerzos de tracción como consecuencia de salirse del eje neutro de la probeta. 
-%
-%Para poner en perspectiva la carga, el desplazamiento de la probeta con dirección al eje $y$ alcanza un valor máximo de 9,840 mm. Además al alcanzar la fluencia y el esfuerzo último su deformación corresponde a 0,255 mm y 8,311 mm, respectivamente. 
-%
-%A la luz de los resultados que se obtuvieron de los esfuerzos normal, equivalente y máximo cortante no coinciden ni se acercan a los que indica la tabla de carga. Esto, sin duda, provoca dudas sobre la información que entrega, por un lado respecto al orden que tiene y, por otro, sobre la veracidad y factibilidad de los esfuerzos que acompañan a cada combinación. Respecto a este último punto, resalta el hecho que en la tabla de cargas aparezcan esfuerzos que sean muy superiores a los que un acero pueda soportar. No obstante, se requiere de una validación experimental que determinará la veracidad de esta información, tanto del desarrollo de esta tesis como de la tabla de carga.  
-%
-%Los resultados de los esfuerzos máximos de von Mises y cortante máximo para cada carga se encuentran en el anexo \ref{sec:anexob2}, relacionando cada esfuerzo a su respectiva carga, combinación de contrapesos y la masa de cada combinación. 
+A partir de los esfuerzos de von Mises expuestos en el anexo \ref{sec:anexob2}, se estimará la vida a fatiga de la probeta. Debido a que el esfuerzo más alto es bajo respecto al límite de resistencia a la fatiga del material, se calculará con la combinación n$^{\circ}$ 201 de la tabla propuesta. Así, al utilizar la ec. \ref{eq:nf_swt} y las constantes del material AISI 1020, se obtiene:
+\begin{gather*}
+	N_f = \frac{1}{2} \left[\frac{\sqrt{\sigma_{vm}\cdot \sigma_a}}{\sigma'_f} \right]^{1/b} = \frac{1}{2} \left[\frac{\sqrt{13.81\cdot 5.06}}{896} \right]^{-1/0.12} \\
+	N_f = 4.1378 \cdot 10^{16} ciclos
+\end{gather*}
 
+Es decir, para la carga n$^{\circ}$ 201 la vida a fatiga de la probeta es infinita. Por lo tanto, para las 200 combinaciones restantes, de carga más baja, la vida a fatiga también será infinita. En base a estos resultados, se establece una clara diferencia entre los resultados obtenidos y la tabla de carga. Sin embargo, no es posible dilucidar la precisión ni el error, tanto en el modelo como en la información original, debido a la imposibilidad de realizar ensayos de fatiga que nos permitan esclarecer la validez ambos métodos.

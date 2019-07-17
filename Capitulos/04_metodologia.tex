@@ -766,7 +766,7 @@ Método & Barras en voladizo & Probeta \\ \hline
 Simulación Inventor & $9.889\cdot 10^4$ [N/m] & $1.809\cdot 10^6$ [N/m] \\
 Cálculo & $9.216\cdot 10^4$ [N/m] & -- \\ \hline
 \end{tabular}
-\caption{Valores obtenidos mediante un modelo de elementos finitos y por media de la ec. \ref{eq:k_cantilever} de la rigidez de las vigas en voladizo y la probeta de acero}
+\caption{Valores calculados mediante un modelo de elementos finitos y por medio de la ec. \ref{eq:k_cantilever}, para obtener la rigidez de las vigas en voladizo y la probeta de acero.}
 \label{tab:k_valor}
 \end{table}
 Los datos utilizados en el modelo corresponden a los obtenidos por simulación.
@@ -1111,4 +1111,20 @@ Con el fin de conocer la carga necesaria para que la probeta alcance su esfuerzo
 
 Por medio de esta información, se ajustará una curva a los resultados de carga máxima $F_{max}$ respecto a cada $\Delta m$, para determinar el contrapeso necesario de cada punto, es decir, obtener un $\Delta m_y$ y $\Delta m_u$ para los esfuerzos $\sigma_y$ y $\sigma_u$, respectivamente.
 
-Por otro lado, se mantendrá la configuración y la malla utilizada en la sección anterior, como también los resultados de los puntos $P$, $Q$ y $R$ (fig. \ref{fig:diag_pqr}).
+Por otro lado, se mantendrá la configuración y la malla utilizada en la sección anterior, como también la ubicación de los puntos $P$, $Q$ y $R$ (fig. \ref{fig:diag_pqr}).
+
+\subsection{Determinación de la vida a fatiga}
+
+A partir de la simulación de las cargas máximas, se obtuvo como resultado el esfuerzo máximo de von Mises asociado a cada combinación de contrapesos. Con esta información, se calculará la vida a fatiga estimada de la probeta que está sometida a una carga cíclica, relacionada a cada configuración de la máquina. Para esto, se utilizará la ec. \ref{eq:sn_swt}, por medio de la cual es posible calcular la vida a fatiga $N_f$ con el esfuerzo máximo $\sigma_{max}$ y su amplitud $\sigma_a$. Para este caso, el esfuerzo máximo y alternante, son reemplazados por los respectivos esfuerzos de von Mises. Al despejar la ecuación para buscar la vida a fatiga, se obtiene:
+\bigskip
+\begin{equation} \label{eq:nf_swt}
+	N_f  = \frac{1}{2} \left[\frac{\sqrt{\sigma_{vm}\cdot \sigma_a}}{\sigma'_f} \right]^{1/b}	
+\end{equation}
+
+Las constantes de la ecuación para el material AISI 1020 HR corresponden a \cite{boardman1990fatigue} \cite{anand2004parks}:
+\begin{itemize*}
+	\item $b = - 0.12$ 
+	\item $\sigma'_f = 896$ MPa
+\end{itemize*}
+El límite de resistencia a la fatiga del material es $S_e = 152$ MPa con una vida a fatiga de $N_f = 5 \cdot 10^6$ ciclos.
+

@@ -1,4 +1,4 @@
-\begin{thebibliography}{49}
+\begin{thebibliography}{53}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
@@ -6,6 +6,12 @@
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
+
+\bibitem[{Anand y Parks(2004)}]{anand2004parks}
+L.~Anand y D.~M. Parks.
+\newblock Mechanics and materials ii: Supplementary notes.
+\newblock \emph{Massachusetts Institute of Technology, Department of Mechanical
+  Engineering, Cambridge}, 2004.
 
 \bibitem[{ANSYS(2015)}]{ansys_2015}
 ANSYS.
@@ -91,10 +97,26 @@ Norman~E. Dowling.
   deformation, fracture, and fatigue}.
 \newblock Pearson Pearson Education, Boston, Mass. London Harlow, 2013.
 
+\bibitem[{Esin(1967)}]{esin1967stress}
+A~Esin.
+\newblock Stress-interaction effects in cumulative fatigue damage.
+\newblock \emph{Nuclear Engineering and Design}, 6(2):139--146, 1967.
+
 \bibitem[{Esin(1980)}]{esin1980method}
 A.~Esin.
 \newblock A method for correlating different types of fatigue curve.
 \newblock \emph{International Journal of Fatigue}, 2(4):153--158, 1980.
+
+\bibitem[{Esin y Jones(1966)}]{esin1966theory}
+A~Esin y WJ~Derrick Jones.
+\newblock A theory of fatigue based on the microstructural accumulation of
+  strain energy.
+\newblock \emph{Nuclear Engineering and Design}, 4(3):292--298, 1966.
+
+\bibitem[{Esin(1968)}]{esin1968microplastic}
+Alp Esin.
+\newblock The microplastic strain energy criterion applied to fatigue.
+\newblock \emph{Journal of Basic Engineering}, 90(1):28--36, 1968.
 
 \bibitem[{for Standardization({\natexlab{a}})}]{ISO18265}
 International~Organization for Standardization.

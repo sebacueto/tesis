@@ -1,16 +1,32 @@
 \prefacesection{Resumen}
 
-El desarrollo de este trabajo se encuentra entorno a la máquina de fatiga en flexión del laboratorio de tecnología mecánica, el cual tiene como objetivo avanzar hacia la operatividad de la máquina. Para esto, la metodología se dividió en 4 etapas: levantamiento de información, diseño de una estructura soportante, modelar el comportamiento de la máquina y contrastar los resultados con la información existente.
+Este trabajo se desarrolla entorno a la máquina de fatiga en flexión del laboratorio de tecnología mecánica, el cual tiene como objetivo avanzar hacia la operatividad de la misma. Para esto, la metodología se dividió en 4 etapas: levantamiento de información, diseño de una estructura soportante, modelar el comportamiento de la máquina y contrastar los resultados con la información existente.
 
-La máquina tiene problemas en su funcionamiento, mantenibilidad y disponibilidad de respuestos producto de su antigüedad. Su funcionamiento se basa en una tabla de cargas (anexo \ref{sec:anexob1}), que relaciona los contrapesos con los esfuerzos sobre probeta.
+Actualmente, la máquina no se encuentra operativa al presentar problemas en su funcionamiento y la disponibilidad de repuestos. Su funcionamiento se basa en aplicar una carga sobre la probeta mediante un disco desbalanceado a través de contrapesos, con una velocidad de rotación determinada para obtener un esfuerzo en específico.
 
-El diseño de la estructura se realizó de acero y madera, utilizando como guía la norma NCh 1198. Además, a través de MEF se simuló el comportamiento estático y modal de la estructura. De esta manera, la dimensión final de cada componente se exponen en los planos del anexo \ref{sec:planos}.
+La estructura soportante fue diseñada en base a madera y acero, utilizando como guía la norma NCh 1198. Se simuló mediante MEF su comportamiento estático y modal para corroborar el diseño propuesto.
 
-Para el modelamiento de la máquina, se utilizaron los datos obtenidos en el levantamiento de información y se resolvieron las ecuaciones de movimiento utilizando el método de energía. Así, se obtuvo el movimiento y la velocidad del centro de masa del brazo de carga. A través de esto, se calculó la fuerza realizada sobre la probeta para distintas configuraciones. La carga máxima posible, según el modelo, es de $1498.83$ [N], a una velocidad de rotación del disco $\omega_{max} =$ 25 [rad/s]. 
+Para caracterizar el comportamiento de la máquina, se propone un modelo dinámico del sistema. A través de este, se obtiene el movimiento y la velocidad del brazo de carga. A partir de esta información, se calcula la fuerza realizada sobre la probeta para cada configuración, logrando relacionar las variables del sistema $F_{max}$, $\omega_{max}$ y $\Delta m$. 
 
-Estos resultados de fuerza máxima se simularon usando MEF, utilizando como límite el esfuerzo último del material. Por lo tanto, se obtuvo una nueva relación entre las combinaciones de los contrapesos y los esfuerzos en la probeta, las cuales se muestran en la propuesta \ref{sec:anexob2}.  
+Los resultados de fuerza máxima se simularon utilizando MEF, para relacionar el estado de esfuerzos y deformación de la probeta con cada configuración de contrapesos, a una velocidad de rotación del disco $\omega_{max}=25$ rad/s. Además, utilizando las relaciones entre las variables, se encuentra el desbalanceo necesario para alcanzar la fluencia ($\Delta m_y$) y el esfuerzo último ($\Delta m_u$) de la probeta. Por último, se calcula la vida a fatiga ($N_f$) para cada configuración.
 
-Con la información y los resultados obtenidos, se puede concluir que es necesaria una actualización y reparación de la máquina de fatiga, como también la construcción de la estructura para lograr que la máquina este operativa. Además existen discrepancias entre el modelo propuesto y la información existente, ante lo cual es necesario hacer un trabajo posterior que valide, refute o corrija el modelo y la tabla de cargas propuesta. 
+La información recopilada y los resultados obtenidos, se puede concluir que es necesaria una actualización y reparación de la máquina de fatiga, como también la construcción de la estructura soportante para lograr su operatividad. Por otro lado, existen discrepancias entre el modelo propuesto y la información existente, ante lo cual es necesario hacer un trabajo posterior de validación experimental sobre el comportamiento de la máquina.
+
+%--------------------------------------------------------------------------------------------------------------
+
+%El desarrollo de este trabajo se encuentra entorno a la máquina de fatiga en flexión del laboratorio de tecnología mecánica, el cual tiene como objetivo avanzar hacia la operatividad de la máquina. Para esto, la metodología se dividió en 4 etapas: levantamiento de información, diseño de una estructura soportante, modelar el comportamiento de la máquina y contrastar los resultados con la información existente.
+%
+%La máquina tiene problemas en su funcionamiento, mantenibilidad y disponibilidad de respuestos producto de su antigüedad. Su funcionamiento se basa en una tabla de cargas (anexo \ref{sec:anexob1}), que relaciona los contrapesos con los esfuerzos sobre probeta.
+
+%El diseño de la estructura se realizó de acero y madera, utilizando como guía la norma NCh 1198. Además, a través de MEF se simuló el comportamiento estático y modal de la estructura. De esta manera, la dimensión final de cada componente se exponen en los planos del anexo \ref{sec:planos}.
+
+%Para el modelamiento de la máquina, se utilizaron los datos obtenidos en el levantamiento de información y se resolvieron las ecuaciones de movimiento utilizando el método de energía. Así, se obtuvo el movimiento y la velocidad del centro de masa del brazo de carga. A través de esto, se calculó la fuerza realizada sobre la probeta para distintas configuraciones. La carga máxima posible, según el modelo, es de $1498.83$ [N], a una velocidad de rotación del disco $\omega_{max} =$ 25 [rad/s]. 
+
+%Estos resultados de fuerza máxima se simularon usando MEF, utilizando como límite el esfuerzo último del material. Por lo tanto, se obtuvo una nueva relación entre las combinaciones de los contrapesos y los esfuerzos en la probeta, las cuales se muestran en la propuesta \ref{sec:anexob2}.  
+
+%Con la información y los resultados obtenidos, se puede concluir que es necesaria una actualización y reparación de la máquina de fatiga, como también la construcción de la estructura para lograr que la máquina este operativa. Además existen discrepancias entre el modelo propuesto y la información existente, ante lo cual es necesario hacer un trabajo posterior que valide, refute o corrija el modelo y la tabla de cargas propuesta. 
+
+%--------------------------------------------------------------------------------------------------------------
 
 %El desarrollo de este trabajo se encuentra entorno a la máquina de fatiga en flexión del laboratorio de tecnología mecánica, en Valparaíso. Actualmente no se encuentra operativa, por lo tanto, el objetivo de este trabajo es avanzar en la dirección que permita volver a tener operativa la máquina. Para esto, la metodología de trabajo se dividió en 4 grandes etapas: levantamiento de información, diseño de una estructura soportante para su anclaje, modelar el comportamiento de la máquina y, finalmente, contrastar los resultados con la información existente de la máquina.
 %
@@ -23,3 +39,4 @@ Con la información y los resultados obtenidos, se puede concluir que es necesar
 %Estos resultados de fuerza máxima, se simularon en elementos finitos, mediante el software ANSYS, todas las cargas hasta que la probeta alcanzó su esfuerzo último. Por lo tanto, se obtuvo una relación entre las combinaciones de los contrapesos y los esfuerzos en la probeta asociados a cada configuración, las cuales se pueden ver en la tabla de cargas propuesta, en el anexo \ref{sec:anexob2}.  
 %
 %Con la información y los resultados obtenidos, se puede concluir que es necesaria una actualización y reparación de la máquina de fatiga, como también la construcción de la estructura para lograr que la máquina este operativa. Además existen discrepancias entre el modelo propuesto y la información existente, ante lo cual es necesario hacer un trabajo posterior que valide, refute o corrija el modelo y la tabla de cargas propuesta.
+

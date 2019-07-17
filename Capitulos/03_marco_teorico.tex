@@ -146,13 +146,36 @@ La parábola de Gerber queda expresada como:
 	\frac{\sigma_a}{\sigma_{ar}} + \left(\frac{\sigma_m}{\sigma_u}\right)^2 = 1 
 \end{equation}
 
-Y una segunda modificación de la ecuación de Goodman, propuesta por J. Morrow, para metales dúctiles, en la cual se reemplaza $\sigma_u$ por el esfuerzo verdadero de fractura corregido $\tilde{\sigma}_{fB}$.
+Y una segunda modificación de la ecuación de Goodman, propuesta por J. Morrow, para metales dúctiles, en la cual se reemplaza $\sigma_u$ por (a) el coeficiente de resistencia a la fatiga $\sigma'_f$ o (b) el esfuerzo verdadero de fractura corregido $\tilde{\sigma}_{fB}$. 
 
-\begin{equation} \label{eq:mod_goodduct}
-	\frac{\sigma_a}{\sigma_{ar}} + \frac{\sigma_m}{\tilde{\sigma}_{fB}} = 1 
+\begin{subequations}
+\begin{gather}
+	\frac{\sigma_a}{\sigma_{ar}} + \frac{\sigma_m}{\sigma'_f} = 1  \label{eq:good_a}\\
+	\frac{\sigma_a}{\sigma_{ar}} + \frac{\sigma_m}{\tilde{\sigma}_{fB}} = 1 \label{good_b}
+\end{gather}
+\end{subequations}
+
+Los resultados para acero obtenidos con la constante $\sigma'_f$ o $\tilde{\sigma}_{fB}$ son aproximadamente iguales \cite{dowling2013mechanical}. Adicionalmente, se puede emplear la relación de Smith, Watson y Topper (SWT), que tiene la siguiente forma:
+\begin{equation} \label{eq:swt}
+	\sigma_{ar} = \sqrt{\sigma_{max} \cdot \sigma_a}
 \end{equation}
 
-\newpage
+\subsection{Vida a fatiga estimada}
+Los datos de la curva $S$-$N$ es posible ajustarlos a una ecuación que represente el comportamiento del material para distintos esfuerzos a una vida a fatiga en específico. En el caso de un ensayo de ciclo invertido la ecuación utilizada es:
+\begin{equation} \label{eq:sn_fit}
+	\sigma_a = \sigma'_f (2N_f)^b
+\end{equation}
+La constantes $b$ y $\sigma'_f$ son propiedades del material para fatiga de alto ciclaje y se les denomina exponente y coeficiente de resistencia a la fatiga, respectivamente. Ambos se obtienen al ajustar los resultados de los ensayos de fatiga. 
+
+En aquellos casos donde $\sigma_m$ es distinto de cero, entonces se debe reemplazar $\sigma_{ar}$ de la ec. \ref{eq:good_a} en la ec. \ref{eq:sn_fit}. De esta forma, se obtiene:
+\begin{equation}
+	\sigma_a = (\sigma'_f - \sigma_m)(2N_f)^b
+\end{equation}
+Asimismo, se puede utilizar la relación SWT en la ecuación anterior, lo cual da:
+\begin{equation} \label{eq:sn_swt}
+	\sqrt{\sigma_{max} \cdot \sigma_a} = \sigma'_f (2N_f)^b
+\end{equation}
+
 
 \section{Dinámica}
 
@@ -242,7 +265,7 @@ Los sistemas mecánicos están sometidos a una gama bastante amplia de fuerzas e
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7\textwidth, trim={6cm 2cm 10cm 3cm}, clip]{Imagenes/dcl_maqdes.pdf}
-\caption{Diagrama de cuerpo libre de un disco desequilibrado por masa $m_0$ a una distancia $e$.}
+\caption{Diagrama de cuerpo libre de un disco desequilibrado por una masa $m_0$ a una distancia $e$.}
 \label{fig:dcl_maqdes}
 \end{figure}
 
@@ -438,7 +461,7 @@ Es la relación entre el lado más largo y el más corto de un elemento. En este
 \end{figure}
 
 \subsubsection{Calidad del elemento}
-Se basa en la razón entre el volumen del elementos y la longitud de los bordes del elemento. Se evalúa del 1 al 0, donde 1 indica un elemento perfecto mientras que cero que el elemento no tiene volumen. Esta métrica se define como:
+Se basa en la razón entre el volumen del elementos y la longitud de los bordes del elemento. Se evalúa del 1 al 0, donde 1 indica un elemento perfecto mientras que cero es un elemento que no tiene volumen. Esta métrica se define como:
 \begin{equation}
 	\text{Calidad del elemento} = C \cdot \frac{\text{Volumen}}{\left[\sqrt{\sum \text{longitud borde}^2}\right]^3}
 \end{equation}
@@ -498,14 +521,16 @@ Obteniendose la ecuación de movimiento. Sin embargo, dado que no existen variac
 \end{equation}
 Expresando que la suma de las fuerzas son iguales a cero. Por lo tanto, a partir de la ec. \ref{eq:mom_lin} y las condiciones de borde de movimiento y de carga externa, es posible resolver el sistema.
 
+\newpage
+
 \subsection{Esfuerzo y deformación}
-Para esta sección, se definirá $\sigma_1$, $\sigma_2$ y $\sigma_3$ como los esfuerzos principales y $\varepsilon_1$, $\varepsilon_2$ y $\varepsilon_3$ como las deformaciones unitarias principales. 
+Para esta sección, se definirá $\sigma_1$, $\sigma_2$ y $\sigma_3$ como los esfuerzos principales y $\varepsilon_1$, $\varepsilon_2$ y $\varepsilon_3$ como las deformaciones unitarias principales. Se mostrarán las ecuaciones que utiliza ANSYS para calcular los distintos esfuerzos y la deformación unitaria.
 \subsubsection{Esfuerzo y deformación unitaria de von Mises}
 El esfuerzo de von Mises, llamado también equivalente, es una forma de representar un estado de esfuerzos en tres dimensiones en un valor escalar positivo. Este es calculado de la siguiente forma:
 \begin{equation}
 	\sigma_{vm} = \left[ \frac{(\sigma_1 - \sigma_2)^2 + (\sigma_2 - \sigma_3)^2 + (\sigma_3 - \sigma_1)^2}{2}\right]^{1/2}
 \end{equation}
-La deformación de von Mises total, es calculada como:
+La deformación total de von Mises, es calculada como:
 \begin{equation}
 	\varepsilon_{vm,t} = \frac{1}{1+\nu'} \left[\frac{(\varepsilon_1 - \varepsilon_2)^2 + (\varepsilon_2 - \varepsilon_3)^2 + (\varepsilon_3 - \varepsilon_1)^2}{2}\right]^{1/2}
 \end{equation}

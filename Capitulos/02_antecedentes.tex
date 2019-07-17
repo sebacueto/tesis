@@ -10,7 +10,7 @@ Por otro lado, las primeras investigaciones enfocadas a comprender el fenómeno 
 Es decir, desde 1853 hasta hoy, han transcurrido más de 160 años de investigación sobre la fatiga, logrando comprender distintas aristas del fenómeno, pero con muchas preguntas aún sin resolver. Por lo tanto, la fatiga sigue siendo un problema necesario de abordar y seguir comprendiendo por sus grandes implicaciones de costo que tiene en la industria y en los distintos elementos que utilizamos en la vida diaria. Por otro lado, si bien muchas preguntas no han sido resueltas científicamente, diversas empresas han logrado evitar las fallas por fatiga y optimizar los diseños de manera operativa, sin comprender cabalmente el trasfondo de estos.
 
 \subsection{Medición de la fatiga}
-Existen distintas técnicas para cuantificar la respuesta de un material o componente frente a esfuerzos o deformaciones fluctuantes. La primera de ellas, como se habló anteriormente, corresponde a una viga giratoria sometida a flexión en voladizo diseñada por A. Wöhler. Con respecto a la información existente en la literatura la mayoría de los datos disponibles de resistencia a la fatiga se encuentra en las pruebas de viga giratoria (\textit{rotating bending}, en inglés) en ciclo de flexión invertida, seguido por cargas axiales (\textit{push-pull}, en inglés), flexión en voladizo o flexión alternante (\textit{alternating bending}, en inglés) y en menor medida, en las pruebas de fatiga por torsión. \cite{norton2011machine}
+Existen distintas técnicas para cuantificar la respuesta de un material o componente frente a esfuerzos o deformaciones fluctuantes. La primera de ellas, como se habló anteriormente, corresponde a una viga giratoria sometida a flexión en voladizo diseñada por A. Wöhler. Con respecto a la información existente en la literatura, la mayoría de los datos disponibles de resistencia a la fatiga se encuentra en las pruebas de viga giratoria (\textit{rotating bending}, en inglés) en ciclo de flexión invertida, seguido por cargas axiales (\textit{push-pull}, en inglés), flexión en voladizo o flexión alternante (\textit{alternating bending}, en inglés) y en menor medida, en las pruebas de fatiga por torsión. \cite{norton2011machine}
 
 \begin{figure}[h]
 \centering
@@ -30,22 +30,23 @@ Esta configuración de prueba es más flexible que el resto, siendo posible cual
 \subsubsection{Ensayo de fatiga de flexión en voladizo o flexión alternante}
 Esta prueba consiste en someter a una viga en voladizo a oscilaciones en su extremo libre a través de algún mecanismo, pudiendo lograr combinaciones de esfuerzos medios y alternantes. La máquina analizada en esta memoria utiliza este método para la obtención de los datos de vida de fatiga del material a analizar. Los resultados de este tipo de prueba son los más altos respecto a otros tipos de medición de fatiga.
 
-\newpage
-
 \subsection{Correlación entre distintos métodos de medición de la fatiga}
 Como se señaló anteriormente y se aprecia en la fig. \ref{fig:comp_medfat}, cada prueba entrega valores distintos aún cuando los niveles de esfuerzo sean iguales. Por esto, existen distintos intentos en la literatura de crear correlaciones entre los datos, evitando los costos asociados a realizar nuevos ensayos experimentales del mismo material o componente. La forma en que se ha abordado esta problemática es la utilización de un factor de corrección ($\phi$) calculado con distintas propuestas.
 
 Algunos de estos modelos son: Philipp, Lee, Esin y Manson y Muralidharan. Cada metodología aborda de distinta forma el cálculo del factor de corrección $\phi$, ahora bien, se abordarán los modelos de Lee y Esin en este trabajo, ya que son los modelos que se ajustan mejor al comportamiento de los datos empíricos de ensayos de fatiga.\cite{strzelecki2018analysis}
 
 \subsubsection{Modelo de Esin}
-El modelo propuesto por Esin \cite{esin1980method} relaciona las curvas $S$-$N$ de los ensayos \textit{push-pull}, flexión alternante y flexión rotativa. Éste depende del esfuerzo alternante, asumiendo que la curva base y la calculada por este método se intersectarán en el punto ($S_e,N_f$), es decir, el factor de correción es $\phi=1$ en esa posición. 
+El modelo propuesto por Esin \cite{esin1980method} relaciona las curvas $S$-$N$ de los ensayos fatiga axial, flexión alternante y flexión rotativa. Éste depende de la micro-plasticidad, determinada por el esfuerzo alternante y su distribución en la sección transversal \cite{strzelecki2018analysis}. 
 
-El método se basa en el análisis de la dependencia de la micro-plasticidad en la distribución de esfuerzos en la sección transversal, definiéndose la micro-plasticidad como el flujo plástico de un material sin haber alcanzado su punto de fluencia. Ésta ocurre sobre cierto nivel de esfuerzos en el rango elástico, llamado límite elástico real (\textit{true elastic limit}, en inglés o \textit{TEL}) y bajo el límite de resistencia a la fatiga, $S_e$. Así, siempre se cumplirá que:
+Este método se basa en estudios previos del mismo autor, los cuales buscan entender y predecir el fenómeno de la fatiga a través de las propiedades mecánicas de un material. Para esto, proponen una teoría de fatiga basada en la acumulación micro-estructural de la energía de deformación \cite{esin1966theory}, mediante la cual establecen que la micro-inhomogeneidad de las propiedades mecánicas, así como del estado de esfuerzos, está relacionada con la vida a fatiga de un material.
+
+La fatiga, a niveles de alto ciclaje, es un fenómeno localizado, fuertemente influenciado por su micro-estructura, anisotría, inclusiones, su estructura cristalina, granos u otros, los cuales explican la dispersión de datos en los ensayos de fatiga \cite{esin1968microplastic}. En consecuencia, la fatiga está asociada con el deslizamiento plástico que ocurre a un nivel micro-estructural cuando el material es nominalmente elástico. Se le denomina micro-plasticidad por ocurrir a nivel de la micro-estructura y ocurre sobre cierto nivel de esfuerzos en el rango elástico llamado límite elástico real (\textit{true elastic limit}, en inglés o \textit{TEL}). Este se encuentra siempre por debajo del límite de resistencia a la fatiga ($S_e$), lo que da como resultado:
 \begin{align*}
 	\text{\textit{TEL}} \leq S_e \leq S_y
 \end{align*}
+Así, cuando los esfuerzos alternantes están sobre valor del  \textit{TEL}, la micro-plasticidad influye en los macro-elementos. Dicho de otra forma, el comportamiento mecánico observado a un nivel macro es el comportamiento integrado de los micro-elementos.
 
-La micro-plasticidad es un fenómeno altamente localizado que depende de las propiedades probabilísticas micro-estructurales del material como su micro-inhomogeneidad, anisotropía y micro-concentraciones de esfuerzos, los cuales explican la dispersión de datos en los ensayos de fatiga. Así, cuando los esfuerzos alternantes están sobre valor del  \textit{TEL}, la micro-plasticidad influye en los macro-elementos. Dicho de otra forma, el comportamiento mecánico observado a un nivel macro es el comportamiento integrado de los micro-elementos.
+La micro-plasticidad es analizada de manera probabilística, calculando el número de micro-elementos en plasticidad que se encuentran en el área transversal sometida a fatiga. El área afectada para cada tipo de ensayo se pueden apreciar en la fig. \ref{fig:affar_fat}.
 
 \begin{figure}[h]
 \centering
@@ -54,41 +55,12 @@ La micro-plasticidad es un fenómeno altamente localizado que depende de las pro
 \label{fig:affar_fat}
 \end{figure}
 
-En la figura \ref{fig:affar_fat}, se puede apreciar las áreas afectadas por fatiga para cada tipo de ensayo, los cuales, por sí mismo podrían explicar las diferencias en los resultados de cada prueba. Sin embargo, basándose en el criterio de fatiga de la deformación micro-plástica, la falla ocurre cuando la energía acumulada por la histéresis plástica, a una cantidad de ciclos $N_f$, es igual al valor de la energía de ruptura real (área bajo la curva de un diagrama $\sigma$-$\varepsilon$ real), como queda expresado en la ecuación \ref{eq:nfail_esin}.
+De esta manera, el autor sostiene que el daño por fatiga está relacionado a la acumulación, a nivel micro-estructural, de la energía de histéresis plástica y, por lo tanto, se afirma que la falla del material ocurre cuando la energía acumulada por la histéresis plástica es igual a la energía requerida para la fractura en tracción, determinada como el área bajo la curva de un diagrama de esfuerzo-deformación real ($U_{rup}$). Por lo tanto, se puede estudiar el daño de la fatiga en términos de la energía de deformación micro-plástica disipada por cada ciclo de una carga ($\Omega$) \cite{esin1967stress}. El número total de ciclos a la fractura es:
+\begin{gather}
+	N_f = \frac{U_{ruptura}}{\Omega}
+\end{gather} 
 
-\begin{equation}\label{eq:nfail_esin}
-	N_f = \frac{U \cdot T_t}{W} 
-\end{equation}
-
-Donde:
-\begin{itemize*}
-	\item $N_f$: Número de ciclos a la falla.
-	\item $U$: Energía total real bajo la curva del diagrama esfuerzo-deformación.
-	\item $W$: Energía total plástica disipada.
-	\item $T_t$: Número total de macro-elementos.
-\end{itemize*}
-
-De esta forma, el método utiliza varios factores para crear una correlación entre las distintas curvas, ocupando el esfuerzo alternante ($S$) como valor de entrada. El primero de ellos es el concepto de esfuerzo alternante equivalente, $S_{eq}$ (ecuación \ref{eq:esfalt_eq}), utilizado para denotar un esfuerzo hipotético actuando sobre todos los elementos sometidos a fatiga. 
-\begin{equation}\label{eq:esfalt_eq}
-	S_{eq} = \frac{\Sigma \sigma_i A_i}{\Sigma A_i}
-\end{equation}
-Donde $A_i$ es el número o área de los macro-elementos con igual esfuerzo equivalente. A partir de esto, el esfuerzo equivalente para ensayos de \textit{rotating bending} y \textit{alternating bending}, están dados por las ecuaciones \ref{eq:seq_rotben} y \ref{eq:seq_altben}, respectivamente. 
-\begin{align}
-	S_{eq,rt} &= \frac{2S\cdot \sin^3 \theta}{3C} \label{eq:seq_rotben}\\
-	S_{eq,ab} &= \frac{2S}{3} \cdot \left(\frac{1-c^3}{1-c^2}\right) \label{eq:seq_altben}
-\end{align}
-Donde las variables $C$ y $c$ se definen cómo:
-\begin{equation}
-	C= \left(\frac{\pi\theta}{180} - \frac{\sin(2\theta)}{2}\right)\qquad ;\qquad c=\frac{r}{R}
-\end{equation}
-Los valores de $\theta$, $r$ y $R$ son propios de la geometría de la probeta utilizada y se definen de acuerdo a la figura \ref{fig:affar_fat}. De igual forma, se debe calcular el factor de fatiga, $FF$, ecuación que representa el ratio entre el área total de la sección transversal y el área de los elementos que contribuyen al proceso de fatiga. Así, las ecuaciones \ref{eq:ff_ab} y \ref{eq:ff_rb} representan los factores de fatiga para calcular la vida a fatiga equivalente, $N_{eq}$, de \textit{alternating bending} y \textit{rotating bending}, respectivamente.
-\begin{align}
-	FF_{ab} &= \frac{\pi}{2} \left(\frac{\pi\theta}{180} - \frac{\sin(2\theta)}{2}\right) \label{eq:ff_ab}\\		
-	FF_{rb} &= \frac{R^2}{(R^2 - r^2)} \label{eq:ff_rb}
-\end{align}
-Finalmente, con estos elementos es posible tomar del diagrama $S$-$N$ un punto ($S_i$,$N_i$) y, a través de las correlaciones, obtener un nuevo punto ($S_i'$,$N_i'$) que equivale a la curva $S$-$N$ de otro tipo de ensayo.
-
-La metodología consiste en tomar un valor de esfuerzo alternante conveniente $S$ y calcular su esfuerzo alternante equivalente, $S_{eq}$. Utilizando este valor, se determinará a partir de la curva $S$-$N$ original el número de ciclos a la falla que se llamará vida a fatiga equivalente, $N_{eq}$. Este valor debe ser multiplicado por el factor de fatiga $FF$, obteniendo la vida a fatiga modificada, $N$. Así, el punto $P=(S,N)$ es el valor equivalente obtenido, teniendo que repetirse el procedimiento para todos los puntos que se requieran.
+Si para cada tipo de ensayo de fatiga se utiliza una probeta de igual geometría y dimensión, sometidas al mismo esfuerzo alternante promedio, la energía plástica disipada por cada ciclo no serán igual producto de las distintas áreas afectadas por fatiga, como se muestra en la fig. \ref{fig:affar_fat}. Para esto, el método utiliza los conceptos de esfuerzo alternante equivalente y vida a fatiga equivalente, mediante los cuales relaciones los puntos ($S$,$N$) de la curva de fatiga, la proporción entre el área total transversal y el área que contribuye a la fatiga y la distribución de esfuerzos dentro del área afectada, para entregar un punto ($S'$,$N'$) de la curva buscada. Este procedimiento se debe repetir de manera iterativa hasta conseguir ajustar los puntos a una curva.
 
 \subsubsection{Modelo de Lee}
 La estimación del límite de fatiga, $S_e$, se calcula a través de distintos factores de modificación según el tipo de carga, calidad superficial, tamaño y confiabilidad de la muestra. El factor de modificación según el tipo de carga $C_L$ varía entre 0,7 y 0,9 para probetas sin muescas. Las recomendaciones para cada valor de $C_L$ se realizaron considerando los efectos del gradiente de esfuerzos y el tipo de esfuerzo involucrado, es decir, cortantes y normales. Estos también varían según el tipo de material, los cuales fueron obtenidos de manera empírica. Así la tabla \ref{tab:lee_factor} muestra los factores de modificación para algunos tipos de carga.
@@ -107,17 +79,16 @@ Torsional                    & 0,58  & Para aceros   \\ \bottomrule
 \label{tab:lee_factor}
 \end{table}
 
-En definitiva, ambos métodos toman en consideración distintos elementos, lo que lleva a que exista una diferencia entre ambos. La fig. \ref{fig:comp_modfat} muestra las diferencias de sus curvas de manera representativa, en las cuales se puede ver claramente la diferencia de los resultados esperados al utilizar el factor de corrección de cada método.
+\subsubsection{Comparación entre ambos modelos}
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=1\linewidth, trim={6cm 1cm 5cm 2cm}, clip]{Imagenes/comp_modfat.pdf}
-\caption{Representación entre una curva característica de un ensayo de fatiga y los métodos de Lee y Esin para correlacionar distintos tipos de ensayos. \cite{strzelecki2018analysis}}
-\label{fig:comp_modfat}
-\end{figure}
+Ambos métodos toman en consideración distintos elementos y utilizan distintas formas para desarrollar sus resultados. El primero de ellos, el método de Esin es consecuencia del desarrollo de una teoría que busca predecir el comportamiento a fatiga a partir del estudio las propiedades micro-estructurales, buscando darle una base física al desarrollo de la metodología. Sin embargo, si bien el método es eficaz \cite{strzelecki2018analysis}, está limitado por no considerar los cambios de geometría ni dimensiones y por la necesidad de tener información sobre la micro-estructura del material y el límite elástico real. Por otro lado, el método de Lee utiliza la información recolectada de distintos ensayos, generando correlaciones empíricas entre las distintas curvas. Esto, trae como consecuencia la poca flexibilidad del método, al ser dependiente de que exista información previa sobre un material en particular y de los ensayos buscados.
 
 \section{Máquina de fatiga a flexión}
 El desarrollo de este trabajo se centrará en la máquina de fatiga que posee el departamento de ingeniería mecánica en el laboratorio de tecnología mecánica en Valparaíso. La información existente sobre la máquina de ensayo es escasa principalmente por su antigüedad, por lo que con el transcurso del tiempo ha llevado a la perdida de documentos y la obsolescencia de su tecnología.  
+
+A partir de la información verbal entregada por el profesor Guillermo González, la máquina fue adquirida por el departamento durante la década del 50. Fue fabricada en Suiza por \textit{Alfred J. Amsler \& Co.} y su estructura completa es de hierro fundido. Previo a la remodelación del piso del laboratorio durante el año 2012, la máquina se encontraba montada sobre un colchón de corcho, que a su vez se anclaba a un bloque hecho de concreto. Este fue demolido durante los trabajos, momento desde el cual se encuentra apoyada sobre la mesa de madera sin una solución definitiva. Más aún, varios equipos y máquinas de ensayo del laboratorio no se encuentran ancladas al piso ni con una instalación definitiva, impidiendo su correcto uso.
+
+La máquina consiste, en un primer acercamiento, en un disco desequilibrado de forma controlada por el usuario, el cual, al ser acelerado angularmente hasta una velocidad definida por su motor eléctrico, comienza a oscilar. Esta oscilación es transmitida, a través de un brazo de carga, hacia la probeta en forma de momento. La probeta se encuentra doblemente empotrada, por un lado está fija a la estructura de la máquina y, por el otro, empotrado al brazo de carga que le realiza el momento. Los elementos que generan el desequilibrio son pequeñas masas calibradas, como se puede apreciar en la fig. \ref{fig:contrapesos}, que se denominarán contrapesos. La máquina también entrega la posibilidad de realizar ensayos de fatiga a torsión al girar los empotramientos 90 grados, sin embargo, esta configuración no se estudiará en este trabajo. Un estudio a mayor profundidad de la fatiga a flexión se realizará en la sección \ref{sec:lev_info}.
 
 \begin{figure}[h]
 \centering
@@ -133,16 +104,13 @@ El desarrollo de este trabajo se centrará en la máquina de fatiga que posee el
 	\end{subfigure}
 	\begin{subfigure}{0.5\linewidth}
 		\centering		
-		\includegraphics[width=1\linewidth]{Imagenes/maq_iso.jpg}
+		\includegraphics[width=0.8\linewidth]{Imagenes/maq_iso.jpg}
 		\caption{Vista en perspectiva}\label{fig:maq_iso}		
 	\end{subfigure}
 \caption{Máquina de fatiga en flexión en el laboratorio de tecnología mecánica}
 \label{fig:maq_fat}
 \end{figure}
 
-A partir de la información verbal entregada por el profesor Guillermo González, la máquina fue adquirida por el departamento durante la década del 50. Fue fabricada en Suiza por \textit{Alfred J. Amsler \& Co.} y su estructura completa es de hierro fundido. Previo a la remodelación del piso del laboratorio durante el año 2012, la máquina se encontraba montada sobre un colchón de corcho, que a su vez se anclaba a un bloque hecho de concreto. Este fue demolido durante los trabajos, momento desde el cual se encuentra apoyada sobre la mesa de madera sin una solución definitiva. Más aún, varios equipos y máquinas de ensayo del laboratorio no se encuentran ancladas al piso ni con una instalación definitiva, impidiendo su correcto uso.
-
-La máquina consiste, en un primer acercamiento, en un disco desequilibrado de forma controlada por el usuario, el cual, al ser acelerado angularmente hasta una velocidad definida por su motor eléctrico, comienza a oscilar. Esta oscilación es transmitida, a través de un brazo de carga, hacia la probeta en forma de momento. La probeta se encuentra doblemente empotrada, por un lado está fija a la estructura de la máquina y, por el otro, empotrado al brazo de carga que le realiza el momento. Los elementos que generan el desequilibrio son pequeñas masas calibradas, como se puede apreciar en la fig. \ref{fig:contrapesos}, que se denominarán contrapesos. La máquina también entrega la posibilidad de realizar ensayos de fatiga a torsión al girar los empotramientos 90 grados, sin embargo, esta configuración no se estudiará en este trabajo. Un estudio a mayor profundidad de la fatiga a flexión se realizará en la sección \ref{sec:lev_info}.
 
 \section{La madera como elemento constructivo}
 La madera es un material de construcción simple y liviano, con ciertas características que lo vuelven particular respecto a otros materiales de construcción. Esto hace que al momento de trabajar con la madera se requiera un conocimiento especial y se tomen en consideración reglas específicas que permitan realizar diseños de calidad que aprovechen al máximo las propiedades y beneficios que provee.
@@ -184,22 +152,16 @@ La probeta utilizada en la máquina de fatiga se fabrica actualmente de acero de
 
 Para la mayoría de los aceros, su comportamiento bajo carga se divide en una zona elástica y otra plástica, como se muestra en la fig. \ref{fig:esf-def_curve}. La zona elástica se caracteriza por tener un módulo de elasticidad $E$, que en el caso de los aceros ronda entre 200 y 210 GPa. La transición de la zona elástica a plástica es gradual y comienza cuando deja de existir una relación lineal entre los esfuerzos y la deformación, es decir, llega al esfuerzo de fluencia, $\sigma_y$. Una vez en la región de deformación plástica el punto de esfuerzo máximo en una curva ingenieril de esfuerzo-deformación es llamado esfuerzo último, $\sigma_u$.
 
-\bigskip
-
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.6\linewidth]{Imagenes/strain-stress_curve.png}
+\includegraphics[width=0.5\linewidth]{Imagenes/strain-stress_curve.png}
 \caption{Curva de esfuerzo-deformación ingenieril (A) y real (B) de un acero. Los puntos representan: (1) Esfuerzo último ($\sigma_u$), (2) esfuerzo de fluencia ($\sigma_y$), (3) esfuerzo de ruptura, (4) región de endurecimiento por deformación y (5) región de estricción. \cite{richfield}}
 \label{fig:esf-def_curve}
 \end{figure}
 
-\newpage
-
 \section{Software de simulación de elementos finitos}
 
 En el desarrollo de esta tesis se utiliza el software de elementos finitos ANSYS para la simulación estática de la probeta y el software Autodesk Inventor para la simulación de la estructura soportante en su módulo de análisis de esfuerzos (\textit{Stress Analysis}).
-
-%Para el desarrollo de esta tesis se utilizaron software que simularon condiciones específicas a través de elementos finitos. Estos dividen un modelo CAD en un número determinado de elementos de un tamaño específico y forman una geométrica específica. Los software utilizados son ANSYS y Autodesk Inventor en su módulo de análisis de esfuerzos ( \textit{Stress Analysis}). 
 
 En el caso de ANSYS, se utilizó el ambiente ``\textit{Static Structural}'', el cual determina los desplazamientos, esfuerzos y fuerzas en la estructura que está sometida a una o varias cargas. Además permite el análisis elastoplástico de un material, siendo utilizado el modelo de plasticidad multilineal de endurecimiento isotrópico (\textit{Multilinear Isotropic Hardening} o MISO). 
 
