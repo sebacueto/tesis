@@ -161,21 +161,78 @@ Los resultados para acero obtenidos con la constante $\sigma'_f$ o $\tilde{\sigm
 \end{equation}
 
 \subsection{Vida a fatiga estimada}
-Los datos de la curva $S$-$N$ es posible ajustarlos a una ecuación que represente el comportamiento del material para distintos esfuerzos a una vida a fatiga en específico. En el caso de un ensayo de ciclo invertido la ecuación utilizada es:
+Los datos de la curva $S$-$N$ se pueden aproximar a una recta en un gráfico logarítmico o semilogarítmico que represente la vida a fatiga del material para distintas cargas alternantes. En el caso de un ensayo de ciclo invertido, es decir $\sigma_m = 0$, la ecuación utilizada tiene la forma:
+\begin{equation}\label{eq:fat_gen}
+	\sigma_a = A\cdot N_f^B
+\end{equation}
+Donde las constantes de ajuste de la curva se definen:
+\begin{equation}
+	A = 2^b \sigma'_f \qquad ; \qquad B = b
+\end{equation}
+Por lo tanto, la ecuación resultante es:
 \begin{equation} \label{eq:sn_fit}
 	\sigma_a = \sigma'_f (2N_f)^b
 \end{equation}
-La constantes $b$ y $\sigma'_f$ son propiedades del material para fatiga de alto ciclaje y se les denomina exponente y coeficiente de resistencia a la fatiga, respectivamente. Ambos se obtienen al ajustar los resultados de los ensayos de fatiga. 
+La constantes $b$ y $\sigma'_f$ se les denomina exponente y coeficiente de resistencia a la fatiga, respectivamente.
 
-En aquellos casos donde $\sigma_m$ es distinto de cero, entonces se debe reemplazar $\sigma_{ar}$ de la ec. \ref{eq:good_a} en la ec. \ref{eq:sn_fit}. De esta forma, se obtiene:
+En aquellos casos donde la carga media es distinta de cero ($\sigma_m \neq 0$), entonces se debe reemplazar $\sigma_a$ de la ec. \ref{eq:sn_fit} por el esfuerzo equivalente $\sigma_{ar}$ de la ecuación de Goodman normalizada \ref{eq:good_norm}. De esta forma, se obtiene:
 \begin{equation}
-	\sigma_a = (\sigma'_f - \sigma_m)(2N_f)^b
+	\sigma_{ar} = (\sigma'_f - \sigma_m)(2N_f)^b
 \end{equation}
-Asimismo, se puede utilizar la relación SWT en la ecuación anterior, lo cual da:
+Asimismo, se puede utilizar la relación SWT en la ecuación anterior, la cual nos dará resultados más conservadores:
 \begin{equation} \label{eq:sn_swt}
 	\sqrt{\sigma_{max} \cdot \sigma_a} = \sigma'_f (2N_f)^b
 \end{equation}
 
+\subsection{Correlación entre esfuerzo último y vida a fatiga}
+
+Si bien la curva $S$-$N$ es distinta para cada material y se ve afectada por distintas causas, existen correlaciones experimentales que permiten predecir el valor del esfuerzo alternante de una vida a fatiga de 1000 ciclos ($S_{10^3}$) y el límite de resistencia a la fatiga $S_e$ a $10^6$ ciclos. Además, existen factores que modifican estos valores de acuerdo a las condiciones y la geometría de la probeta utilizada.
+
+\subsubsection{Fracción de resistencia a la fatiga}
+El esfuerzo último se puede relacionar al esfuerzo alternante necesario para una vida a fatiga de $10^3$ ciclos, para esto se utiliza la fracción $f$. Para aceros con $S_u < 482$ MPa, se define $f = 0.9$.
+
+\subsubsection{Factores de modificación del límite de resistencia a la fatiga}
+El límite de resistencia a fatiga $S_e$ se puede relacionar al esfuerzo último $S_u$ del mismo material. En el caso de los aceros al carbono con un esfuerzo último inferior a 1400 MPa, la relación existente corresponde a $S_e  = 0.5 \cdot S_u$ (fig. \ref{fig:se_su}), donde $S_e$ se refiere a un ensayo de fatiga en flexión rotativa.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth, trim={1cm 2cm 1cm 2cm},clip]{Imagenes/se_su.pdf}
+\caption{Gráfica de límites de resistencia a la fatiga según el esfuerzo último del material. En el eje horizontal se puede ver el esfuerzo último ($\sigma_u$) y en el vertical el límite de resistencia a la fatiga para flexión rotativa ($\sigma_{erb}$). \cite{dowling2013mechanical}}
+\label{fig:se_su}
+\end{figure}
+
+Dado que estas relaciones nos entregan el valor de $S_e$ para una probeta de determinadas dimensiones y sometida a un ensayo de flexión rotativa, existen factores de modificación que ajustan los valores obtenidos a las distintas condiciones. Así, se utilizará la siguiente ecuación.
+\begin{equation}\label{eq:se_prima}
+	S_e' = k_{superficial} \cdot k_{tama\tilde{n}o} \cdot k_{carga} \cdot k_{confiabilidad} \cdot S_e
+\end{equation}
+Donde $S_e'$ representa el valor buscado.
+
+\paragraph{Factor de superficie, $\mathbf{k_{superficial}}$}
+El método utilizado para fabricar la probeta modificará los resultados debido a la calidad superficial obtenida. Este factor se representa mediante la siguiente ecuación:
+\begin{equation}
+	K_{superficial} = aS_u^b
+\end{equation}
+Donde $a$ y $b$ son valores empíricos para cada acabado superficial. La probeta utilizada por la máquina de fatiga es mecanizada en un torno, por lo tanto, el factor $a = 4.51$ MPa y el exponente $b = -0.265$ \cite{budynas2008shigley}.
+
+\paragraph{Factor de tamaño, $\mathbf{k_{\text{tamaño}}}$}
+La dimensión de la sección transversal de la probeta también afecta el resultado del límite de resistencia a la fatiga. Primero se debe obtener un diámetro equivalente para perfiles no rotativos, es decir, que no estén sometido a fatiga rotativa. Para una sección circular, el diámetro equivalente se define como:
+\begin{equation}
+	d_e = 0.370\cdot d
+\end{equation}
+Con este valor, el factor de modificación por tamaño dependerá del diámetro de la probeta. Para probetas con un diámetro entre $2.79$ mm y $51$ mm,  $k_{tama\tilde{n}o}$ se define:
+\begin{equation}
+	k_{tamaño} = 1.24\cdot d_e^{-0.107}
+\end{equation}
+
+\paragraph{Factor de carga, $\mathbf{k_{carga}}$}
+La forma en la que es cargada la probeta modifica los resultados obtenidos producto del área que es afectada. Sin embargo, el factor de corrección para flexión alternante es $k_{carga} = 1$.
+
+\paragraph{Factor de confiabilidad, $k_{confiabilidad}$}
+Producto de la dispersión existente en los datos obtenidos empíricamente en los ensayos de fatiga, se puede aplicar un factor de corrección de la confiabilidad de los resultados. Los resultados obtenidos por Haugen y Wirching muestran desviaciones estándar de la resistencias a la fatiga de menos del 8\%. \cite{budynas2008shigley}. Así, el factor puede escribirse como:
+\begin{equation}
+	k_{confiabilidad} = 1 - 0.08\, z_a
+\end{equation} 
+Para una confiabilidad del $99.9\%$, la variación de transformación $z_a$ es $3.091$ y el factor de modificación $k_{confiabilidad} = 0.753$.
 
 \section{Dinámica}
 
@@ -520,8 +577,6 @@ Obteniendose la ecuación de movimiento. Sin embargo, dado que no existen variac
 	\frac{\partial \sigma_{ij}}{\partial x_i} + \rho b_j = 0
 \end{equation}
 Expresando que la suma de las fuerzas son iguales a cero. Por lo tanto, a partir de la ec. \ref{eq:mom_lin} y las condiciones de borde de movimiento y de carga externa, es posible resolver el sistema.
-
-\newpage
 
 \subsection{Esfuerzo y deformación}
 Para esta sección, se definirá $\sigma_1$, $\sigma_2$ y $\sigma_3$ como los esfuerzos principales y $\varepsilon_1$, $\varepsilon_2$ y $\varepsilon_3$ como las deformaciones unitarias principales. Se mostrarán las ecuaciones que utiliza ANSYS para calcular los distintos esfuerzos y la deformación unitaria.

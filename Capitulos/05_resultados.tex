@@ -193,7 +193,7 @@ Al seleccionar y definir cada elemento de la estructura, se realizaron las simul
 \begin{tabular}{@{}cccccccc@{}}
 \toprule
 N$^{\circ}$ &  $\omega_{motor}$ & F1 & F2 & F3 & F4 & F5 & F6  \\ \midrule
-Frecuencia [Hz] & 25 & 128,43 & 135,24 & 143,48 & 145,79 & 175,23 & 189,92 \\ \bottomrule
+Frecuencia [Hz] & 3.978 & 128,43 & 135,24 & 143,48 & 145,79 & 175,23 & 189,92 \\ \bottomrule
 \end{tabular} 
 \caption{Valores de la frecuencia natural de la estructura obtenidos por medio del análisis modal del software Inventor. }
 \label{tab:frec_nat}
@@ -338,7 +338,7 @@ Por otro lado, la carga media permanece prácticamente constante, como se puede 
 		\caption{Acercamiento a la gráfica entre los 20g y 60g de $\Delta m$. }\label{fig:fm_dmsp}
 	\end{subfigure}
 \par\bigskip
-\caption{Distribución de la carga media ($F_M$) para las distintas configuraciones de contrapeso.}
+\caption{Distribución de la carga media ($F_m$) para las distintas configuraciones de contrapeso.}
 \label{fig:velt_12}
 \end{figure}
 
@@ -598,7 +598,7 @@ Para poner en perspectiva la carga, el desplazamiento de la probeta con direcci�
 	\begin{subfigure}{1\linewidth}
 		\centering
 		\includegraphics[width=\linewidth, trim={2cm 5cm 2cm 5cm},clip]{Imagenes/esfpqr_ms.pdf}
-		\caption{Esfuerzo cortante máximo de los puntos $P$, $Q$ y $R$.}
+		\caption{Esfuerzo cortante absoluto de los puntos $P$, $Q$ y $R$.}
 		\label{fig:esfpqr_ms}
 	\end{subfigure}
 \caption{Esfuerzos de von Mises, normal y máximo cortante de los puntos $P$, $Q$ y $R$.}
@@ -633,8 +633,8 @@ Así mismo, en el anexo \ref{sec:anexob3} se encuentra la tabla con el valor $\D
 
 A partir de los esfuerzos de von Mises expuestos en el anexo \ref{sec:anexob2}, se estimará la vida a fatiga de la probeta. Debido a que el esfuerzo más alto es bajo respecto al límite de resistencia a la fatiga del material, se calculará con la combinación n$^{\circ}$ 201 de la tabla propuesta. Así, al utilizar la ec. \ref{eq:nf_swt} y las constantes del material AISI 1020, se obtiene:
 \begin{gather*}
-	N_f = \frac{1}{2} \left[\frac{\sqrt{\sigma_{vm}\cdot \sigma_a}}{\sigma'_f} \right]^{1/b} = \frac{1}{2} \left[\frac{\sqrt{13.81\cdot 5.06}}{896} \right]^{-1/0.12} \\
-	N_f = 4.1378 \cdot 10^{16} ciclos
+	N_f = \frac{1}{2} \left[\frac{\sqrt{\sigma_{vm}\cdot \sigma_a}}{\sigma'_f} \right]^{1/b} = \frac{1}{2} \left[\frac{\sqrt{13.81\cdot 5.06}}{970.45} \right]^{-1/0.12467} \\
+	N_f = 1.8243 \cdot 10^{16} ciclos
 \end{gather*}
 
 Es decir, para la carga n$^{\circ}$ 201 la vida a fatiga de la probeta es infinita. Por lo tanto, para las 200 combinaciones restantes, de carga más baja, la vida a fatiga también será infinita. En base a estos resultados, se establece una clara diferencia entre los resultados obtenidos y la tabla de carga. Sin embargo, no es posible dilucidar la precisión ni el error, tanto en el modelo como en la información original, debido a la imposibilidad de realizar ensayos de fatiga que nos permitan esclarecer la validez ambos métodos.
