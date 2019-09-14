@@ -210,7 +210,7 @@ Donde $S_e'$ representa el valor buscado.
 \paragraph{Factor de superficie, $\mathbf{k_{superficial}}$}
 El método utilizado para fabricar la probeta modificará los resultados debido a la calidad superficial obtenida. Este factor se representa mediante la siguiente ecuación:
 \begin{equation}
-	K_{superficial} = aS_u^b
+	k_{superficial} = aS_u^b
 \end{equation}
 Donde $a$ y $b$ son valores empíricos para cada acabado superficial. La probeta utilizada por la máquina de fatiga es mecanizada en un torno, por lo tanto, el factor $a = 4.51$ MPa y el exponente $b = -0.265$ \cite{budynas2008shigley}.
 
@@ -221,13 +221,13 @@ La dimensión de la sección transversal de la probeta también afecta el result
 \end{equation}
 Con este valor, el factor de modificación por tamaño dependerá del diámetro de la probeta. Para probetas con un diámetro entre $2.79$ mm y $51$ mm,  $k_{tama\tilde{n}o}$ se define:
 \begin{equation}
-	k_{tamaño} = 1.24\cdot d_e^{-0.107}
+	k_{tama\tilde{n}o} = 1.24\cdot d_e^{-0.107}
 \end{equation}
 
 \paragraph{Factor de carga, $\mathbf{k_{carga}}$}
 La forma en la que es cargada la probeta modifica los resultados obtenidos producto del área que es afectada. Sin embargo, el factor de corrección para flexión alternante es $k_{carga} = 1$.
 
-\paragraph{Factor de confiabilidad, $k_{confiabilidad}$}
+\paragraph{Factor de confiabilidad, $\mathbf{k_{confiabilidad}}$}
 Producto de la dispersión existente en los datos obtenidos empíricamente en los ensayos de fatiga, se puede aplicar un factor de corrección de la confiabilidad de los resultados. Los resultados obtenidos por Haugen y Wirching muestran desviaciones estándar de la resistencias a la fatiga de menos del 8\%. \cite{budynas2008shigley}. Así, el factor puede escribirse como:
 \begin{equation}
 	k_{confiabilidad} = 1 - 0.08\, z_a

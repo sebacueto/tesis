@@ -102,7 +102,8 @@ F2 = (x(:,1)+l2*x(:,3))*k2;
 function [t,tp,tpp] = vinput(time)
 
 Ti = 2;
-WMAX = 25;
+W_rpm = 1500;
+WMAX = W_rpm*2*pi/60;
 T = 2.5;
 
 for i=1:length(time)
@@ -136,11 +137,11 @@ end
 A la matriz con cada combinación de la masa de los contrapesos, escritas en el orden de la tabla de cargas, se denomina \textit{M} y está contenida en el script \textit{''MassT''}
 \begin{lstlisting}
 MassT;
-F25 = zeros(length(M),1);
+F1500 = zeros(length(M),1);
 dm = zeros(length(M),1);
 Me = zeros(length(M),1);
-Fmax25 = zeros(length(M),1);
-Fm25 = zeros(length(M),1);
+Fmax1500 = zeros(length(M),1);
+Fm1500 = zeros(length(M),1);
 
 for i = 1:1:length(M)
     i	% Contador
@@ -167,12 +168,12 @@ for i = 1:1:length(M)
     fmax = abs(max(Faux));
     fmin = abs(min(Faux));
         if fmax > fmin
-            Fmax25(i) = fmax;
+            Fmax1500(i) = fmax;
         else
-            Fmax25(i) = fmin;
+            Fmax1500(i) = fmin;
         end
-    F25(i) = Fabs/2;
-    Fm25(i) = Fm;
+    F1500(i) = Fabs/2;
+    Fm1500(i) = Fm;
     dm(i) = m1-m2;
     
     Rd = 0.1120 ;  
@@ -181,7 +182,7 @@ for i = 1:1:length(M)
     Ma = Md + m1 + m2;
     Me(i) = ega*Ma;
     
-    save('resultados_tabla_25','F25','dm','Me','Fmax25');
+    save('resultados_tabla_1500.mat','F1500','dm','Me','Fmax1500','Fm1500');
     
 end
 \end{lstlisting}

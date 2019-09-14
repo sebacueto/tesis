@@ -193,7 +193,7 @@ Al seleccionar y definir cada elemento de la estructura, se realizaron las simul
 \begin{tabular}{@{}cccccccc@{}}
 \toprule
 N$^{\circ}$ &  $\omega_{motor}$ & F1 & F2 & F3 & F4 & F5 & F6  \\ \midrule
-Frecuencia [Hz] & 3.978 & 128,43 & 135,24 & 143,48 & 145,79 & 175,23 & 189,92 \\ \bottomrule
+Frecuencia [Hz] & 25 & 128,43 & 135,24 & 143,48 & 145,79 & 175,23 & 189,92 \\ \bottomrule
 \end{tabular} 
 \caption{Valores de la frecuencia natural de la estructura obtenidos por medio del análisis modal del software Inventor. }
 \label{tab:frec_nat}
@@ -227,7 +227,7 @@ Con la caracterización y el levantamiento de información de los distintos comp
 
 Utilizando la ec. \ref{eq:fuerza_probeta} para cada valor de $y_2(t)$, se obtiene la carga aplicada sobre la probeta $F(t)$ a lo largo del tiempo. La fig. \ref{fig:f_2} muestra la curva de esta fuerza para la misma configuración de las figuras anteriores.  
 
-En este conjunto de figuras se aprecia como el sistema tiene dos etapas principales: (a) la estabilización y reposo del sistema y (b) el inicio de la función $\phi$. (a) La primera etapa comienza en $t=0$, cuando se encuentra en un estado inicial $(y, \dot{y}, \theta, \dot{\theta}) = (0,0,0,0)$. Tanto la probeta y las barras en voladizo se encuentran sólo bajo la acción de la gravedad, por lo tanto caen y comienzan a oscilar en torno a su posición de reposo, sin embargo, este movimiento decae a medida que avanza el tiempo producto de los amortiguadores. La velocidad de decaimiento de la vibración inicial está determinado por el valor de $c_1$ y $c_2$, teniendo un comportamiento subamortiguado. (b) A continuación, desde el segundo 2 la función $\phi$ comienza a acelerar suavemente hasta llegar a la velocidad $\omega_{max} = 25$ [rad/s], punto en el cual la vibración es constante y estable en el tiempo. A partir de este punto, se extraen la información respectiva de la fuerza máxima, media y alternante, utilizando las ecuaciones \ref{eq:f_max}, \ref{eq:f_m} y \ref{eq:f_a}. 
+En este conjunto de figuras se aprecia como el sistema tiene dos etapas principales: (a) la estabilización y reposo del sistema y (b) el inicio de la función $\phi$. (a) La primera etapa comienza en $t=0$, cuando se encuentra en un estado inicial $(y, \dot{y}, \theta, \dot{\theta}) = (0,0,0,0)$. Tanto la probeta y las barras en voladizo se encuentran sólo bajo la acción de la gravedad, por lo tanto caen y comienzan a oscilar en torno a su posición de reposo, sin embargo, este movimiento decae a medida que avanza el tiempo producto de los amortiguadores. La velocidad de decaimiento de la vibración inicial está determinado por el valor de $c_1$ y $c_2$, teniendo un comportamiento subamortiguado. (b) A continuación, desde el segundo 2 la función $\phi$ comienza a acelerar suavemente hasta llegar a la velocidad $\omega_{max} = 1500$ rpm, punto en el cual la vibración es constante y estable en el tiempo. A partir de este punto, se extraen la información respectiva de la fuerza máxima, media y alternante, utilizando las ecuaciones \ref{eq:f_max}, \ref{eq:f_m} y \ref{eq:f_a}. 
 
 \begin{figure}[h]
 \centering
@@ -314,7 +314,7 @@ En la sección anterior, se mostraron los resultados y el comportamiento del mod
 \begin{figure}[h]
 \centering
 \includegraphics[width=\linewidth, trim={0cm 0cm 2cm 0cm},clip]{Imagenes/fmax_dm_25.pdf}
-\caption{Distribución de la carga máxima $F_{max}$ versus la diferencia de masas $\Delta m$ de cada combinación de contrapesos, con $\omega_{max} =$ 25 Hz. Resultados en el anexo \ref{sec:anexob2}}
+\caption{Distribución de la carga máxima $F_{max}$ versus la diferencia de masas $\Delta m$ de cada combinación de contrapesos, con $\omega_{max} =$ 1500 rpm. Resultados en el anexo \ref{sec:anexob2}}
 \label{fig:fmax_dm25}
 \end{figure}
 
@@ -609,12 +609,12 @@ Para poner en perspectiva la carga, el desplazamiento de la probeta con direcci�
 
 \subsection{Determinación $\mathbf{\Delta m}$ para la carga máxima $\mathbf{F_{max,y}}$ y $\mathbf{F_{max,u}}$}
 
-Para encontrar la masa $\Delta m$ necesaria para realizar las cargas $F_{max,y}$ y $F_{max,u}$ se hará un ajuste lineal sobre los datos que se obtuvieron a partir del modelo, para una velocidad $\omega_{max}= 25$ [rad/s], como se puede ver en la fig. \ref{fig:fmax_dmec}.
+Para encontrar la masa $\Delta m$ necesaria para realizar las cargas $F_{max,y}$ y $F_{max,u}$ se hará un ajuste lineal sobre los datos que se obtuvieron a partir del modelo, para una velocidad $\omega_{max}= 1500$ rpm, como se puede ver en la fig. \ref{fig:fmax_dmec}.
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\linewidth, trim={1cm 0cm 2cm 0cm}, clip]{Imagenes/fmax_dmec.pdf}
-\caption{Ajuste lineal de la carga máxima para las 201 combinaciones de contrapesos con $\omega_{max}=25$ rad/s.}
+\caption{Ajuste lineal de la carga máxima para las 201 combinaciones de contrapesos con $\omega_{max}=1500$ rpm.}
 \label{fig:fmax_dmec}
 \end{figure}
 Al despejar la ecuación para $\Delta m$ se obtiene: 

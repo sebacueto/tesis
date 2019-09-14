@@ -786,15 +786,15 @@ Para las vigas en voladizo, el segundo momento de área se calculó en la secci�
 	\bar{I}_{barras} = 5.67 \cdot 10^{-8} \text{m}^4
 \end{equation}
 \subsubsection{Momento de inercia del brazo de carga}
-El momento de inercia del brazo de carga se obtuvo a través del modelo CAD del mismo, respecto a su centro de masa. Su valor es $I_{gb} = 5.6718\cdot 10^{-8} \text{ kg}\cdot \text{m}^2$ . 
+El momento de inercia del brazo de carga se obtuvo a través del modelo CAD del mismo, respecto a su centro de masa. Su valor es $I_{gb} = 8.3272\cdot 10^{-6} \text{ kg}\cdot \text{m}^2$ . 
 
 \subsubsection{Longitud, masa y módulo de elasticidad}
 Los elementos del sistema explicados en la sección \ref{sec:mod_sist}, dimensiones y propiedades que se midieron como parte del levantamiento de informacioń. 
 \subparagraph{\textit{Brazo de carga.}}
 La distancia correspondiente a cada extremo respecto al centro de masa es:
 \begin{itemize*}
-	\item $l_1=$ 42,43 mm
-	\item $l_2=$ 158,07 mm
+	\item $l_1= 110.337$ mm
+	\item $l_2= 90.163$ mm
 \end{itemize*}
 Además, la masa $M_b$ corresponde a la masa medida del brazo de carga, como se especificó en la sección \ref{sec:mediciones_met}:
 \begin{itemize*}
@@ -866,7 +866,7 @@ La función $\phi_3$ correspondiente al dominio cuando $t$ es mayor a $T_i + T$ 
  + \left(\frac{1}{6T^2}\right) \left(2\omega_{max}T^3 + 6\omega_{max}T^2T_i + 6\omega_{max}T\,T_i + \omega_{max}T_i^3\right)
 \end{multline*}
 
-Para el desarrollo de este trabajo, el tiempo de retraso de la aceleración del disco será de $T_i=2$, instante en el que la barra se encuentra en un estado de reposo en consecuencia del valor de los amortiguamientos $c_1$ y $c_2$. Por otro lado, se definirá $T = 2,5$ como un valor que logra suavizar la aceleración, pero sin dilatar en exceso la llegada al punto de velocidad máxima. Finalmente, $\omega_{max}\,$ el valor por defecto corresponderá a la velocidad actual de la máquina de 25 [rad/s] (1500 revoluciones por minuto), sin embargo, este se puede variar dependiendo de los resultados que se deseen obtener. 
+Para el desarrollo de este trabajo, el tiempo de retraso de la aceleración del disco será de $T_i=2$, instante en el que la barra se encuentra en un estado de reposo en consecuencia del valor de los amortiguamientos $c_1$ y $c_2$. Por otro lado, se definirá $T = 2,5$ como un valor que logra suavizar la aceleración, pero sin dilatar en exceso la llegada al punto de velocidad máxima. Finalmente, $\omega_{max}\,$ el valor por defecto corresponderá a la velocidad actual de la máquina de 1500 revoluciones por minuto (157,08 rad/s), sin embargo, este se puede variar dependiendo de los resultados que se deseen obtener. 
 
 \subsection{Solución del modelo}
 Para resolver el sistema de ecuaciones \ref{eq:mov_matriz}, se utilizará el solver de ecuaciones diferenciales ordinarias de MATLAB, ode45, que se basa en el método de Runge-Kutta con un espacio de tiempo variable para resolver sistemas de EDOs de primer orden y con condición inicial. \cite{ode45}
@@ -903,7 +903,7 @@ La información que se busca de estos resultados corresponde a la carga que es p
 \end{gather}
 
 \section{Simulación de carga máxima}
-Con los datos de la carga máxima $F_{max}$, obtenidos a partir de la solución del modelo expuesto anteriormente, para cada combinación de contrapesos, se realizará un análisis estático de los esfuerzos asociados a cada configuración, en otras palabras, se buscará relacionar cada combinación con los esfuerzos respectivos a una velocidad angular máxima $\omega_{max}$ de 25 [rad/s]. Para esto, se simularán las 201 cargas sobre la probeta a través del software de elementos finitos ANSYS con el fin de obtener el esfuerzo máximo equivalente (o de von Mises), el esfuerzo máximo cortante, normal y sus respectivas deformaciones. Posteriormente, se compararán los resultados de este análisis con la tabla de cargas existente. Finalmente, se buscará la carga $F_{max}$ y el respectivo $\Delta m$ que produce el esfuerzo de fluencia ($\sigma_y$) y último ($\sigma_u$) en la probeta. 
+Con los datos de la carga máxima $F_{max}$, obtenidos a partir de la solución del modelo expuesto anteriormente, para cada combinación de contrapesos, se realizará un análisis estático de los esfuerzos asociados a cada configuración, en otras palabras, se buscará relacionar cada combinación con los esfuerzos respectivos a una velocidad angular máxima $\omega_{max}$ de 1500 rpm. Para esto, se simularán las 201 cargas sobre la probeta a través del software de elementos finitos ANSYS con el fin de obtener el esfuerzo máximo equivalente (o de von Mises), el esfuerzo máximo cortante, normal y sus respectivas deformaciones. Posteriormente, se compararán los resultados de este análisis con la tabla de cargas existente. Finalmente, se buscará la carga $F_{max}$ y el respectivo $\Delta m$ que produce el esfuerzo de fluencia ($\sigma_y$) y último ($\sigma_u$) en la probeta. 
 
 \subsection{Tipo de simulación}
 Al llevar a la probeta a cargas que sobrepasan el esfuerzo de fluencia del material, es necesario utilizar un modelo elasto-plástico para el correcto desarrollo de la simulación. En consecuencia, se utilizará el modelo de plasticidad multilineal de endurecimiento isotrópico (MISO), utilizado comúnmente para el análisis en grandes deformaciones. Este modelo se debe alimentar con los datos de distintos puntos de esfuerzo y deformación plástica real de un ensayo de tracción del material, creando una curva con los distintos puntos introducidos donde la primera pendiente es la zona elástica. Este modelo no permite que en la zona plástica hayan pendientes más grandes que en la zona elástica ni pendientes negativas. 
