@@ -755,9 +755,27 @@ Estas se pueden reescribir de forma matricial:
 
 \subsection{Cálculo de constantes características del sistema}
  
-\subsubsection{Rigidez y amortiguamiento} Las constantes de rigidez de las barras en voladizo $k_1$ y de la probeta $k_2$ se obtuvieron simulando su deformación elástica a través del software Inventor Autodesk. Para ello, se empotraron en un extremo y se les aplicaron distintas niveles de carga en el otro. Con los datos obtenidos fue posible ajustar una curva en una gráfica de deformación versus fuerza aplicada, donde la pendiente obtenida es la constante de rigidez del elemento. 
+\subsubsection{Rigidez y amortiguamiento} Las constantes de rigidez de las vigas en voladizo $k_1$ y de la probeta $k_2$ se obtuvieron simulando su deformación elástica a través del software Inventor Autodesk. Para las vigas en voladizo, se empotró el conjunto de las 4 vigas en un extremo y se añadió un bloque rígido en el extremo opuesto, para representar la configuración de empotrado-libre, como se aprecia en la fig. \ref{fig:viga_config}. Por medio del bloque, se aplicaron distintos niveles de carga, midiendo la deformación vertical para cada una de ellas. Así, fue posible ajustar una curva en una gráfica de deformación versus fuerza aplicada, donde la pendiente obtenida es la constante de rigidez del conjunto. Además, se realizaron cálculos analíticos para comprobar el orden de magnitud obtenido a través del software. Para esto se utilizó la ecuación \ref{eq:k_cantilever}, para una viga en voladizo.
 
-Además, se realizaron cálculos para comprobar el orden de magnitud obtenido a través del software. Para esto se utilizó la ecuación \ref{eq:k_cantilever}, para una viga en voladizo. La tabla \ref{tab:k_valor} muestra los resultados de ambos métodos.
+\begin{figure}[H]
+\centering
+	\begin{subfigure}{1\linewidth}
+		\centering
+		\includegraphics[width=0.9\linewidth, trim={0cm 0cm 4cm 0cm},clip]{Imagenes/barra_disco2.pdf}
+		\caption{}\label{fig:viga_config}
+	\end{subfigure}
+	\begin{subfigure}{1\linewidth}
+		\centering
+		\includegraphics[width=0.9\linewidth, trim={0cm 0cm 8cm 0cm},clip]{Imagenes/barradisco_fem.pdf}
+		\caption{}\label{fig:viga_fem}
+	\end{subfigure}%
+\caption{La fig. (a) muestra la configuración y la malla utilizada para calcular la rigidez del conjunto. La fig. (b) muestra los resultados de la deformación vertical (aumentada un 50\% para su visualización), en mm, producto de una carga aplicada.}
+\label{fig:viga_inventor}
+\end{figure}
+
+La constante de rigidez de la probeta se obtuvo realizando el mismo procedimiento, empotrando un extremo de la probeta y cargando el extremo opuesto, para luego ajustar una curva de deformación versus carga aplicada. Sin embargo, no se realizaron cálculos analíticos por la complejidad que existe en el área transversal de la probeta, la cual es variable.
+
+La tabla \ref{tab:k_valor} muestra los resultados de ambos métodos.
 \begin{table}[h]
 \centering
 \begin{tabular}{ccc}
@@ -785,33 +803,50 @@ Para las vigas en voladizo, el segundo momento de área se calculó en la secci�
 \begin{equation}
 	\bar{I}_{barras} = 5.67 \cdot 10^{-8} \text{m}^4
 \end{equation}
-\subsubsection{Momento de inercia del brazo de carga}
-El momento de inercia del brazo de carga se obtuvo a través del modelo CAD del mismo, respecto a su centro de masa. Su valor es $I_{gb} = 8.3272\cdot 10^{-6} \text{ kg}\cdot \text{m}^2$ . 
+\subsubsection{Centro de masa, momento de inercia y masa del brazo de carga}
+El momento de inercia y la posición del centro de masa del brazo de carga se obtuvieron a través del modelo CAD del mismo, como se puede ver en la fig. REF. El valor del momento de inercia del brazo en su respectivo centro de masa es $I_{gb} = 8.3272\cdot 10^{-6} \text{ kg}\cdot \text{m}^2$.
 
-\subsubsection{Longitud, masa y módulo de elasticidad}
-Los elementos del sistema explicados en la sección \ref{sec:mod_sist}, dimensiones y propiedades que se midieron como parte del levantamiento de informacioń. 
-\subparagraph{\textit{Brazo de carga.}}
-La distancia correspondiente a cada extremo respecto al centro de masa es:
+\begin{figure}[h]
+\centering
+	\begin{subfigure}{0.5\linewidth}
+		\centering
+		\includegraphics[width=1\linewidth, trim={4cm 0cm 1cm 0cm},clip]{Imagenes/brazocarga_iso.pdf}
+		\caption{}\label{fig:bc_iso}
+	\end{subfigure}%
+	\begin{subfigure}{0.5\linewidth}
+		\centering
+		\includegraphics[width=1\linewidth, trim={4cm 0cm 1cm 1cm},clip]{Imagenes/brazocarga_lat.pdf}
+		\caption{}\label{fig:bc_lateral}
+	\end{subfigure}%
+\caption{Representación CAD del brazo de carga y su mordaza. La posición del centro de masa está representada por el sistema de coordenadas que se ve en ambas figuras.}
+\label{fig:brazocarga_inventor}
+\end{figure}
+
+La posición y las respectivas distancias que son útiles para el desarrollo de esta tesis, corresponden a $l_1$ y $l_2$. El primero corresponde a la longitud entre el punto de pivoteo (cambio de sección de gris a verde) hasta el centro de masa y el segundo al centro de masa hasta el extremo donde se encuentra la mordaza.   Así, las distancias correspondientes son:
 \begin{itemize*}
 	\item $l_1= 110.337$ mm
 	\item $l_2= 90.163$ mm
 \end{itemize*}
-Además, la masa $M_b$ corresponde a la masa medida del brazo de carga, como se especificó en la sección \ref{sec:mediciones_met}:
+
+Finalmente, la masa $M_b$ fue medida directamente al desmontar el brazo de carga como se especificó en la sección \ref{sec:mediciones_met}, la cual corresponde a:
 \begin{itemize*}
 	\item $M_b=$ 2,305 Kg
 \end{itemize*}
+
+\subsubsection{Masa del disco y módulo de elasticidad de la probeta}
+
 \subparagraph{\textit{Masa del disco}.}
-Por otro lado, la masa $M_a$ como se señaló en la ecuación \ref{eq:m_a}, corresponde a la suma de tres elementos. El primero de ellos, la masa del disco, tiene un valor de:
+La masa $M_a$ como se señaló en la ecuación \ref{eq:m_a}, corresponde a la suma de tres elementos. El primero de ellos, la masa del disco, tiene un valor de:
 \begin{itemize*}
 	\item $M_d=$ 19,2029 kg
 \end{itemize*}
 Los valores correspondientes a $m_1$ y $m_2$ son variables y pueden ir desde 0 g hasta 92,3469 g de acuerdo a la configuración escogida. Las distintas combinaciones y valores que pueden tener se encuentran en la tabla del anexo \ref{ch:anexo_b}.
 \subparagraph{\textit{Módulo de elasticidad de la probeta}.}
-Corresponde al del material de la probeta que actualmente se utiliza. Al ser acero, su valor es:
+Corresponde al módulo de elasticidad del material a ensayar. En el caso de este trabajo, se busca conocer el comportamiento de las probetas de acero utilizadas actualmente, por lo tanto su valor es:
 \begin{itemize*}
 	\item $E_p=$ 200 GPa
 \end{itemize*}
-\subsubsection{Excentricidad del centro de masa}
+\subsubsection{Excentricidad del centro de masa del disco desbalanceado}
 La excentricidad del centro de masa $e_{ga}$ se calculó utilizando los datos del disco, la distancia de los soportes y la configuración de masas. Por lo tanto, se define como:
 \begin{equation}
 	e_{ga} = \frac{R_d\cdot (m_1 - m_2)}{(m_1 + m_2 + M_d)}
@@ -902,6 +937,8 @@ La información que se busca de estos resultados corresponde a la carga que es p
 	F_a = \frac{\text{max}(F_{aux}) - \text{min}(F_{aux})}{2} \label{eq:f_a}
 \end{gather}
 
+\newpage
+
 \section{Simulación de carga máxima}
 Con los datos de la carga máxima $F_{max}$, obtenidos a partir de la solución del modelo expuesto anteriormente, para cada combinación de contrapesos, se realizará un análisis estático de los esfuerzos asociados a cada configuración, en otras palabras, se buscará relacionar cada combinación con los esfuerzos respectivos a una velocidad angular máxima $\omega_{max}$ de 1500 rpm. Para esto, se simularán las 201 cargas sobre la probeta a través del software de elementos finitos ANSYS con el fin de obtener el esfuerzo máximo equivalente (o de von Mises), el esfuerzo máximo cortante, normal y sus respectivas deformaciones. Posteriormente, se compararán los resultados de este análisis con la tabla de cargas existente. Finalmente, se buscará la carga $F_{max}$ y el respectivo $\Delta m$ que produce el esfuerzo de fluencia ($\sigma_y$) y último ($\sigma_u$) en la probeta. 
 
@@ -986,8 +1023,6 @@ Para obtener los resultados de una malla que se adaptara a los requisitos, se ut
 		\end{itemize*}
 \end{itemize*}
 
-\newpage
-
 Con esta configuración la malla está compuesta por 951.151 nodos y 684.131 elementos. Los valores promedios de los parámetros que indican la calidad de la malla, expuestos en la sección \ref{sec:gen_malla}, se muestran en la tabla \ref{tab:cal_malla}.
 \begin{table}[h]
 \centering
@@ -1011,7 +1046,7 @@ Oblicuidad & $0.22667$ \\ \bottomrule
 
 Estos valores muestran que la malla utilizada es aceptable. Al utilizar la tabla \ref{tab:skewness} como referencia, el valor de oblicuidad nos indica que la malla se encuentra en el rango ``\textit{Excelente}''.
 
-\begin{figure}[t]
+\begin{figure}[h]
 \centering
 	\begin{subfigure}{0.5\linewidth}
 		\centering
@@ -1069,7 +1104,7 @@ Por otro lado, el otro extremo empotrado se le aplicarán las cargas máximas qu
 \end{equation}
 Donde $P_{max}$ es la presión aplicada sobre la cara y $A_{cara,l}$ el área de la cara lateral sobre el cual se aplica la carga, es decir la sección roja. Al medir esta área a través del modelo CAD, se obtiene $A_{cara,l} = 402.792 \text{ mm}^2$
 
-\begin{figure}[]
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.7\linewidth]{Imagenes/cond_borde.png}
 \caption{Condiciones de contorno aplicadas en la probeta. Las caras amarillas representan las restricciones de desplazamiento y la cara roja la presión aplicada.}
@@ -1091,11 +1126,14 @@ Dado que los esfuerzos máximos se encuentran en la sección media de la probeta
 \subsubsection{Obtención de resultados}
 En base a los elementos seleccionados, los resultados que se necesitan son:
 \begin{itemize*}
-	\item Esfuerzo equivalente o de von Mises ($\sigma_{vm}$)
-	\item Esfuerzo cortante absoluto o máximo ($\tau_{abs}$)
+	\item Esfuerzo equivalente o de von Mises ($\sigma_{vm}$).
+	\item Esfuerzo cortante absoluto ($\tau_{abs}$).
 	\item Esfuerzo máximo normal en dirección \textit{x} ($\sigma_{x}$), según referencia de la fig. \ref{fig:cond_borde}.
+	\item Esfuerzo máximo cortante en dirección \textit{YZ}, según referencia de la fig. \ref{fig:cond_borde}.
 	\item Deformación unitaria equivalente total ($\varepsilon_{vm,t}$)
-	\item Deformación unitaria normal elástica ($\varepsilon_{x}$),  según referencia de la fig. \ref{fig:cond_borde}.
+	\item Deformación unitaria normal elástica ($\varepsilon_{x}$),  según referencia de la fig. 
+\ref{fig:cond_borde}.
+	\item Deformación unitaria cortante elástica ($\gamma_{yz}$),  según referencia de la fig. \ref{fig:cond_borde}.
 \end{itemize*}
 
 Además, a modo de referencia se utilizarán los resultados globales:
@@ -1103,8 +1141,6 @@ Además, a modo de referencia se utilizarán los resultados globales:
 	\item Esfuerzo equivalente
 	\item Deformación en dirección \textit{y}, según referencia de la fig. \ref{fig:cond_borde}
 \end{itemize*}
-
-\newpage 
 
 \subsection{Determinación de la carga asociada al esfuerzo de fluencia y el esfuerzo último}
 Con el fin de conocer la carga necesaria para que la probeta alcance su esfuerzo de fluencia ($\sigma_y$) y último ($\sigma_u$), se probará aumentar la carga $F_{max}$ de manera progresiva hasta alcanzar ambos puntos, partiendo desde el último punto obtenido a través del modelo dinámico del sistema. El esfuerzo último se encuentran en la zona plástica, por lo tanto, se utilizará el modelo MISO para obtener las soluciones.
@@ -1115,7 +1151,7 @@ Por otro lado, se mantendrá la configuración y la malla utilizada en la secci�
 
 \subsection{Determinación de la vida a fatiga}
 
-A partir de los resultados de la simulación, se obtuvo el esfuerzo máximo de von Mises en la probeta asociado a cada combinación de contrapesos. Con esta información, se calculará la vida a fatiga estimada de la probeta que está sometida a una carga cíclica y una carga media. Para esto, se utilizará la ec. \ref{eq:sn_swt}, por medio de la cual es posible calcular la vida a fatiga $N_f$ con el esfuerzo máximo $\sigma_{max}$, su amplitud $\sigma_a$ y las constantes $\sigma'_f$ y $b$. Al despejar la ecuación para buscar la vida a fatiga, se obtiene:
+A partir de los resultados de la simulación, se obtuvo el esfuerzo máximo de von Mises en la probeta asociado a cada combinación de contrapesos. Con esta información, se calculará la vida a fatiga estimada de la probeta que está sometida de manera conjunta a una carga cíclica y una media. Para esto, se utilizará la ec. \ref{eq:sn_swt}, por medio de la cual es posible calcular la vida a fatiga $N_f$ con el esfuerzo máximo $\sigma_{max}$, su amplitud $\sigma_a$ y las constantes $\sigma'_f$ y $b$. Al despejar la ecuación para buscar la vida a fatiga, se obtiene:
 \bigskip
 \begin{equation} \label{eq:nf_swt}
 	N_f  = \frac{1}{2} \left[\frac{\sqrt{\sigma_{vm}\cdot \sigma_a}}{\sigma'_f} \right]^{1/b}	
@@ -1126,13 +1162,13 @@ Al ser el esfuerzo último del material inferior a 482 MPa, el valor de la fracc
 \newpage
 Para determinar el valor del límite de resistencia a la fatiga, se debe utilizar la ecuación \ref{eq:se_prima}. Los valores obtenidos para cada factor de modificación corresponden a:
 \begin{itemize*}
-	\item $k_{superficie} = 0.91$
-	\item $k_{tama\tilde{n}o} = 1.109$
+	\item Factor de superficie: $k_{superficie} = 0.91$
+	\item Factor de tamaño: $k_{tama\tilde{n}o} = 1.109$
 	\begin{itemize*}
-		\item $d_e = 2.819$ mm
+		\item Diámetro equivalente para probeta no rotativa: $d_e = 2.819$ mm
 	\end{itemize*}
-	\item $k_{carga} = 1$
-	\item $k_{confiabilidad} = 0.753$
+	\item Factor de carga: $k_{carga} = 1$
+	\item Factor de confiabilidad: $k_{confiabilidad} = 0.753$
 \end{itemize*} 
 Por lo tanto, el valor del límite de resistencia a la fatiga corresponde a:
 \begin{equation}

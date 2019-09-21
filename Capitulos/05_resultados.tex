@@ -186,7 +186,7 @@ Por lo tanto, se seleccionó el tirafondo de n$^{\circ}$ 1, para no sobredimensi
 
 \subsection{Simulación estática y modal}
 
-Al seleccionar y definir cada elemento de la estructura, se realizaron las simulaciones estática y modal de la misma. De la simulación modal, los valores de la frecuencia natural de la estructura se ven en la tabla \ref{tab:frec_nat}, de las cuales todas se encuentran por sobre el rango de vibración de la máquina de fatiga y su motor.
+Al seleccionar y definir cada elemento de la estructura, se realizaron las simulaciones estática y modal de la misma. De la simulación modal, los seis primeros valores de la frecuencia natural de la estructura se ven en la tabla \ref{tab:frec_nat}, de las cuales todas se encuentran por sobre el rango de vibración de la máquina de fatiga y su motor. Además, en las figuras \ref{fig:frecuencias_mesa} se muestra el movimiento de la estructura para cada frecuencia.
 
 \begin{table}[h]
 \centering
@@ -198,6 +198,42 @@ Frecuencia [Hz] & 25 & 128,43 & 135,24 & 143,48 & 145,79 & 175,23 & 189,92 \\ \b
 \caption{Valores de la frecuencia natural de la estructura obtenidos por medio del análisis modal del software Inventor. }
 \label{tab:frec_nat}
 \end{table}
+
+\begin{figure}[]
+\centering
+	\begin{subfigure}{0.5\linewidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{Imagenes/F1.pdf}
+		\caption{$f_1 = 128.43$ Hz}\label{fig:frecuencia_1}
+	\end{subfigure}%
+	\begin{subfigure}{0.5\linewidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{Imagenes/F2.pdf}
+		\caption{$f_2 = 135.24$ Hz}\label{fig:frecuencia_2}
+	\end{subfigure}
+		\begin{subfigure}{0.5\linewidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{Imagenes/F3.pdf}
+		\caption{$f_3 = 143.48$ Hz}\label{fig:frecuencia_3}
+	\end{subfigure}%
+	\begin{subfigure}{0.5\linewidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{Imagenes/F4.pdf}
+		\caption{$f_4 = 145.79$ Hz}\label{fig:frecuencia_4}
+	\end{subfigure}
+		\begin{subfigure}{0.5\linewidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{Imagenes/F5.pdf}
+		\caption{$f_5 = 175.23$ Hz}\label{fig:frecuencia_5}
+	\end{subfigure}%
+	\begin{subfigure}{0.5\linewidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{Imagenes/F6.pdf}
+		\caption{$f_6 = 189.92$ Hz}\label{fig:frecuencia_6}
+	\end{subfigure}
+\caption{Modos de vibración de las seis primeras frecuencias naturales de la estructura soportante.}
+\label{fig:frecuencias_mesa}
+\end{figure}
 
 Del análisis estático, se pudo comprobar que las zonas críticas del diseño se encuentran en el acero, como se puede apreciar en la fig. \ref{fig:resultados_mesa}. Esto confirma el trabajo de cálculo, expuesto anteriormente, el cual establece que el esfuerzo máximo se encuentra en el empotramiento de la pletina de acero, es decir, en el punto $A$ utilizando como referencia el diagrama de cargas \ref{fig:diagcargas_viga_acero}. Si bien los valores de los esfuerzos son mayores en los cálculos que en la simulación, se debe tener en cuenta que en la simulación se utilizó una carga distribuida aplicada sobre la máquina de fatiga. Además, fueron los cálculos los que se utilizaron para justificar las dimensiones del diseño, lo cual frente a esta diferencia de resultados, se resume en un posible sobredimensionamiento de la pletina de acero.
 
@@ -213,7 +249,7 @@ Del análisis estático, se pudo comprobar que las zonas críticas del diseño s
 		\includegraphics[width=1\linewidth]{Imagenes/rmesa_det.png}
 		\caption{}\label{fig:rmesa_det}
 	\end{subfigure}
-\caption{La figura (a) muestra los esfuerzos de von Mises provocados por la mesa de fatiga sobre la estructura. La imagen (b) es un detalle del esfuerzo de von Mises máximo, que se produce en los extremos de la pletina de acero.}
+\caption{La figura (a) muestra los esfuerzos de von Mises provocados por la mesa de fatiga sobre la estructura. La figura (b) es un detalle del esfuerzo de von Mises máximo, que se produce en los extremos de la pletina de acero.}
 \label{fig:resultados_mesa}
 \end{figure}
 El esfuerzo de von Mises máximo obtenido es de 38,74 MPa, ubicados donde muestra la fig. \ref{fig:rmesa_det}, dando como resultado un factor de seguridad igual a 3,38 (-). La deformación máxima se encuentra en la mitad de la pletina de acero, siendo 1,038 mm.
@@ -225,14 +261,14 @@ En definitiva, tanto los resultados obtenidos por la simulación como los obteni
 \subsection{Comportamiento del modelo}
 Con la caracterización y el levantamiento de información de los distintos componentes, junto a la elección de $c_1$, $c_2$ y de las variables de la función $\phi$, nos permite resolver y obtener valores del movimiento lineal, angular y la carga a la que está sometida la probeta. El tiempo de integración para cada una de las soluciones será entre 0 y 10 segundos. Se utilizará una tolerancia relativa y absoluta de $10^{-8}$. En consecuencia, al resolver el sistema de ecuaciones \ref{eq:mov_matriz} a través de los códigos de la sección \ref{sec:sol_part}, se obtiene la posición ($y,\theta$) y la velocidad ($\dot{y},\dot{\theta}$) del brazo de carga respecto a su centro de masa. Las figuras \ref{fig:yt_2} y \ref{fig:ytp_2} muestran las curvas de cada coordenada.
 
-Utilizando la ec. \ref{eq:fuerza_probeta} para cada valor de $y_2(t)$, se obtiene la carga aplicada sobre la probeta $F(t)$ a lo largo del tiempo. La fig. \ref{fig:f_2} muestra la curva de esta fuerza para la misma configuración de las figuras anteriores.  
+Utilizando la ec. \ref{eq:fuerza_probeta} para cada valor de $y_2(t)$, se obtiene la carga aplicada sobre la probeta $F(t)$ a lo largo del tiempo. La fig. \ref{fig:f_2} muestra la curva de esta fuerza a través del tiempo para la configuración n$^{\circ}$ 38 ($\Delta m = 14.5020$ g).
 
-En este conjunto de figuras se aprecia como el sistema tiene dos etapas principales: (a) la estabilización y reposo del sistema y (b) el inicio de la función $\phi$. (a) La primera etapa comienza en $t=0$, cuando se encuentra en un estado inicial $(y, \dot{y}, \theta, \dot{\theta}) = (0,0,0,0)$. Tanto la probeta y las barras en voladizo se encuentran sólo bajo la acción de la gravedad, por lo tanto caen y comienzan a oscilar en torno a su posición de reposo, sin embargo, este movimiento decae a medida que avanza el tiempo producto de los amortiguadores. La velocidad de decaimiento de la vibración inicial está determinado por el valor de $c_1$ y $c_2$, teniendo un comportamiento subamortiguado. (b) A continuación, desde el segundo 2 la función $\phi$ comienza a acelerar suavemente hasta llegar a la velocidad $\omega_{max} = 1500$ rpm, punto en el cual la vibración es constante y estable en el tiempo. A partir de este punto, se extraen la información respectiva de la fuerza máxima, media y alternante, utilizando las ecuaciones \ref{eq:f_max}, \ref{eq:f_m} y \ref{eq:f_a}. 
+En el conjunto de figuras \ref{fig:yt_2} y \ref{fig:ytp_2} se aprecia como el sistema tiene dos etapas principales: (a) la estabilización y reposo del sistema y (b) el inicio de la función $\phi$. (a) La primera etapa comienza en $t=0$, cuando se encuentra en un estado inicial $(y, \dot{y}, \theta, \dot{\theta}) = (0,0,0,0)$. Tanto la probeta y las barras en voladizo se encuentran sólo bajo la acción de la gravedad, por lo tanto caen y comienzan a oscilar en torno a su posición de reposo, sin embargo, este movimiento decae a medida que avanza el tiempo producto de los amortiguadores. La velocidad de decaimiento de la vibración inicial está determinado por el valor de $c_1$ y $c_2$, teniendo un comportamiento subamortiguado. (b) A continuación, desde el segundo 2 la función $\phi$ comienza a acelerar suavemente hasta llegar a la velocidad $\omega_{max} = 1500$ rpm, punto en el cual la vibración es constante y estable en el tiempo. A partir de este punto, se extraen la información respectiva de la fuerza máxima, media y alternante, utilizando las ecuaciones \ref{eq:f_max}, \ref{eq:f_m} y \ref{eq:f_a}. 
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.95\linewidth, trim={0cm 1cm 2cm 1cm},clip]{Imagenes/f_2.pdf}
-\caption{Fuerza aplicada sobre la probeta $F(t)$ en el tiempo.}
+\caption{Fuerza aplicada sobre la probeta $F(t)$ en el tiempo para la combinación n$^{\circ}$ 38, $\Delta m = 14.5020$ g.}
 \label{fig:f_2}
 \end{figure}
 
@@ -249,7 +285,7 @@ En este conjunto de figuras se aprecia como el sistema tiene dos etapas principa
 		\caption{}\label{fig:t_2}
 	\end{subfigure}
 \par\bigskip
-\caption{Desplazamiento en el tiempo respecto al eje $y$ (a) y $\theta$ (b) del centro de masa del brazo de carga.}
+\caption{Desplazamiento en el tiempo respecto (a) al eje $y$ y (b) al eje $\theta$ del centro de masa del brazo de carga. Gráficas para un desbalanceo $\Delta m = 92.3469$ g }
 \label{fig:yt_2}
 \end{figure}
 
@@ -267,7 +303,7 @@ En este conjunto de figuras se aprecia como el sistema tiene dos etapas principa
 		\caption{}\label{fig:tp_2}
 	\end{subfigure}
 \par\bigskip
-\caption{Velocidad respecto la tiempo en el eje $y$ (a) y rotacional (b) del centro de masa del brazo de carga.}
+\caption{Velocidad respecto la tiempo (a) en el eje $y$ y (b) el eje $\theta$ del centro de masa del brazo de carga. Gráficas para un desbalanceo $\Delta m = 92.3469$ g}
 \label{fig:ytp_2}
 \end{figure}
 
@@ -309,7 +345,7 @@ En este conjunto de figuras se aprecia como el sistema tiene dos etapas principa
  
 \subsection{Carga máxima y media para cada configuración} 
 
-En la sección anterior, se mostraron los resultados y el comportamiento del modelo para una configuración en específico. En esta sección, a través del código de la sección \ref{sec:sol_gen}, se mostrarán los resultados de fuerza máxima y media para cada combinación de contrapesos expuesta en la tabla de carga. Al ordenar los resultados de la fuerza máxima con el mismo orden de la tabla de carga, es decir, respecto a $\Delta m$, se obtiene la curva que se muestra en la fig. \ref{fig:fmax_dm25}. A partir de la figura, se puede establecer que el modelo mantiene la relación entre la carga máxima $F_{max}$ y $\Delta m$, como lo hace la tabla de carga.
+En la sección anterior, se mostraron los resultados y el comportamiento del modelo para una configuración en específico. En esta sección, a través del código de la sección \ref{sec:sol_gen}, se mostrarán los resultados de fuerza máxima y media para cada combinación de contrapesos expuesta en la tabla de carga. Al ordenar los resultados de la fuerza máxima con el mismo orden de la tabla de carga, es decir, respecto a $\Delta m$, se obtiene la curva que se muestra en la fig. \ref{fig:fmax_dm25}. La carga más baja, es decir, para la combinación n$^{\circ}$ 1 es de $F_{max,1} = 13.7102$ [N], mientras que la carga más alta de la combinación n$^{\circ}$ 201 es de $F_{max,201} = 296.9143$ [N].
 
 \begin{figure}[h]
 \centering
@@ -318,12 +354,12 @@ En la sección anterior, se mostraron los resultados y el comportamiento del mod
 \label{fig:fmax_dm25}
 \end{figure}
 
-En consecuencia, la carga máxima es función del desbalanceo existente en el disco rotatorio, por lo tanto, se puede definir la siguiente relación: 
+A partir de la figura, se puede establecer que el modelo mantiene la relación entre la carga máxima $F_{max}$ y $\Delta m$, como lo hace la tabla de carga. En consecuencia, la carga máxima es función del desbalanceo existente en el disco rotatorio, por lo tanto, se puede definir la siguiente relación: 
 \begin{equation}\label{eq:func_dm}
 	F(t) = f(\Delta m)
 \end{equation}
 
-Por otro lado, la carga media permanece prácticamente constante, como se puede ver en la fig. \ref{fig:fm_dm}, siendo la diferencia máxima de $3\cdot10^{-6}$ [N] (fig \ref{fig:fm_dmsp}). Tomando en consideración que el orden de magnitud de las cargas máxima y alternantes está en el orden de $10^1$ y $10^2$, entonces se puede asumir que la carga media que sufrirá la probeta será constante y de una magnitud de $12.438$ [N]. 
+Por otro lado, la carga media permanece prácticamente constante, como se puede ver en la fig. \ref{fig:fm_dm}, siendo la diferencia máxima de $7\cdot10^{-4}$ [N] (fig \ref{fig:fm_dmsp}). Tomando en consideración que el orden de magnitud de las cargas máxima y alternantes está en el orden de $10^1$ y $10^2$, entonces se puede asumir que la carga media que sufrirá la probeta será constante y de una magnitud de $12.438$ [N]. 
 
 \begin{figure}[H]
 \centering
@@ -335,7 +371,7 @@ Por otro lado, la carga media permanece prácticamente constante, como se puede 
 	\begin{subfigure}{1\linewidth}
 		\centering
 		\includegraphics[width=1\linewidth]{Imagenes/fm_dmsp.pdf}
-		\caption{Acercamiento a la gráfica entre los 20g y 60g de $\Delta m$. }\label{fig:fm_dmsp}
+		\caption{Acercamiento a la curva entre los 12.4380 [N] y 12.4380 [N] de $F_m$. }\label{fig:fm_dmsp}
 	\end{subfigure}
 \par\bigskip
 \caption{Distribución de la carga media ($F_m$) para las distintas configuraciones de contrapeso.}
@@ -346,25 +382,25 @@ Por otro lado, la carga media permanece prácticamente constante, como se puede 
 
 \subsection{Influencia de la velocidad de rotación del disco desbalanceado sobre la carga en la probeta}
 
-De manera análoga, se puede estudiar la influencia de la velocidad de giro máxima del disco desbalanceado sobre el movimiento del sistema. Las figuras en \ref{fig:f_w520}, muestran $F(t)$ para dos velocidad distintas, $\omega_{max,a} = 5$ [rad/s] y $\omega_{max,b}=20$ [rad/s]. 
+De manera análoga, se puede estudiar la influencia de la velocidad de giro máxima del disco desbalanceado sobre el movimiento del sistema. Las figuras en \ref{fig:f_w520}, muestran $F(t)$ para dos velocidad distintas, $\omega_{max,a} = 250$ rpm y $\omega_{max,b}=1000$ rpm. 
 
-Ambas gráficas muestran no sólo como la frecuencia de la oscilación es menor en la figura \ref{fig:f_w5} respecto a \ref{fig:f_w20}, como es esperable, sino que también la fuerza sobre la probeta aumenta en la medida que la velocidad de rotación del disco es mayor. Esta información, junto a la expuesta en la sección anterior, muestra que el modelo responde a las distintas variables de la fuerza provocada por el disco $F_d(t)$. 
+Ambas gráficas muestran no sólo como la frecuencia de la oscilación es menor en la figura \ref{fig:f_w250} respecto a \ref{fig:f_w1000}, como es esperable, sino que también la fuerza sobre la probeta aumenta en la medida que la velocidad de rotación del disco es mayor. Esta información, junto a la expuesta en la sección anterior, muestra que el modelo responde a las distintas variables de la fuerza provocada por el disco $F_d(t)$. 
 
 \begin{figure}[p]
 \centering
 	\begin{subfigure}{1\linewidth}
 		\centering
-		\includegraphics[width=\linewidth, trim={0cm 0cm 2cm 0cm},clip]{Imagenes/f_w5.pdf}
-		\caption{Fuerza sobre la probeta a través del tiempo a $\,\omega_{max}=5$ [rad/s]}
-		\label{fig:f_w5}
+		\includegraphics[width=\linewidth, trim={0cm 0cm 2cm 0cm},clip]{Imagenes/f_w250.pdf}
+		\caption{Fuerza sobre la probeta a través del tiempo a $\,\omega_{max}=250$ rpm.}
+		\label{fig:f_w250}
 	\end{subfigure}
 	\begin{subfigure}{1\linewidth}
 		\centering
-		\includegraphics[width=\linewidth, trim={0cm 0cm 2cm 0cm},clip]{Imagenes/f_w20.pdf}
-		\caption{Fuerza sobre la probeta a través del tiempo a $\omega_{max}=20$ [rad/s]}
-		\label{fig:f_w20}
+		\includegraphics[width=\linewidth, trim={0cm 0cm 2cm 0cm},clip]{Imagenes/f_w1000.pdf}
+		\caption{Fuerza sobre la probeta a través del tiempo a $\omega_{max}=1000$ rpm.}
+		\label{fig:f_w1000}
 	\end{subfigure}
-\caption{Comparación de la fuerza aplicada sobre la probeta $F(t)$, para una carga de $\Delta m = 8.9$ kg, a dos velocidades angulares $\omega_{max}$ distintas.}
+\caption{Comparación de la fuerza aplicada sobre la probeta $F(t)$, para una carga de $\Delta m = 57.6137$ g, a dos velocidades angulares $\omega_{max}$ distintas.}
 \label{fig:f_w520}
 \end{figure}
 
@@ -375,20 +411,20 @@ A continuación, es posible comparar la fuerza máxima de cada combinación de c
 
 A partir de la fig. \ref{fig:fmax_dm}, se puede concluir que para cada velocidad de rotación del disco $\omega$ existe una relación lineal entre la carga máxima $F_{max}$ y $\Delta m$, frente a lo cual se puede asociar una pendiente $\eta$. Esta aumenta a medida que $\omega$ se incrementa, por lo tanto al gráficar ambos parámetros se puede ver como la pendiente crece de manera cuadrática respecto al aumento de la velocidad angular (fig. \ref{fig:eta_w}), en consecuencia se puede ajustar una curva al comportamiento de la pendiente $\eta$, dada por la siguiente ecuación cuadrática:
 \begin{equation}
-	y = 0.12\cdot x^2 + 0.00039\cdot x - 0.00087
+	\eta = 0.0014\cdot \omega^2 - 0.0092\cdot \omega + 0.75
 \end{equation}
-Siendo $y$ la pendiente $\eta$ y $x$ la velocidad angular $\omega_{max}$. Esto nos permite poder predecir completamente el comportamiento de la máquina de fatiga, al conocer su relación entre la velocidad del motor ($\omega$), el desbalanceo en el disco ($\Delta m$), la carga media ($F_m$) y la carga máxima ($F_{max}$).
+Siendo $\eta$ la pendiente y $\omega$ la velocidad angular. Esto nos permite poder predecir completamente el comportamiento de la máquina de fatiga, al conocer su relación entre la velocidad del motor ($\omega$), el desbalanceo en el disco ($\Delta m$), la carga media ($F_m$) y la carga máxima ($F_{max}$).
 
 \begin{sidewaysfigure}[p]
 \centering
-\includegraphics[width=1\linewidth, trim={1cm 0cm 4cm 1cm}, clip]{Imagenes/fmax_dm2.pdf}
+\includegraphics[width=1\linewidth, trim={1cm 0cm 3cm 1cm}, clip]{Imagenes/fmax_dm.pdf}
 \caption{Curvas de cada combinación de contrapesos para distintas velocidades angulares $\; \omega_{max}$.}
 \label{fig:fmax_dm}
 \end{sidewaysfigure}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=1\linewidth, trim={0cm 0cm 0cm 1cm}, clip]{Imagenes/eta_w.pdf}
+\includegraphics[width=1\linewidth, trim={1cm 0cm 2cm 1cm}, clip]{Imagenes/eta_w.pdf}
 \caption{Curva de la pendiente $\eta$ para cada velocidad $\omega$ del disco desbalanceado.}
 \label{fig:eta_w}
 \end{figure}
@@ -405,7 +441,7 @@ Al tomar los datos de las cargas máximas obtenidas a través del modelo e ingre
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=1\linewidth, trim={0cm 0cm 0cm 0cm}, clip]{Imagenes/fmax_step.pdf}
+\includegraphics[width=1\linewidth, trim={1cm 0cm 1cm 0cm}, clip]{Imagenes/fmax_step.pdf}
 \caption{Curva de las 201 cargas aplicadas sobre la probeta. Tabla en anexo \ref{sec:anexob2}}
 \label{fig:fmax_step}
 \end{figure}
@@ -619,13 +655,13 @@ Para encontrar la masa $\Delta m$ necesaria para realizar las cargas $F_{max,y}$
 \end{figure}
 Al despejar la ecuación para $\Delta m$ se obtiene: 
 \begin{equation}\label{eq:deltam}
-	\Delta m = 12.987\cdot F_{max} - 161.56 \;\; [\text{g}]
+	\Delta m = 0.325\cdot F_{max} - 4.037 \;\; [\text{g}]
 \end{equation}
 
 Por lo tanto, los contrapesos necesarios para llegar al esfuerzo de fluencia y al esfuerzo último corresponden a:
 \begin{gather*}
-	\Delta m_y = 5682.44 \: g \\
-	\Delta m_u = 12825.44 \: g
+	\Delta m_y = 142.02 \: g \\
+	\Delta m_u = 320.53 \: g
 \end{gather*}
 Así mismo, en el anexo \ref{sec:anexob3} se encuentra la tabla con el valor $\Delta m$ para cada una de las 76 cargas aplicadas y su respectivo esfuerzo de von Mises y cortante máximo.
 

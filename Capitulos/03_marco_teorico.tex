@@ -520,7 +520,7 @@ Es la relación entre el lado más largo y el más corto de un elemento. En este
 \subsubsection{Calidad del elemento}
 Se basa en la razón entre el volumen del elementos y la longitud de los bordes del elemento. Se evalúa del 1 al 0, donde 1 indica un elemento perfecto mientras que cero es un elemento que no tiene volumen. Esta métrica se define como:
 \begin{equation}
-	\text{Calidad del elemento} = C \cdot \frac{\text{Volumen}}{\left[\sqrt{\sum \text{longitud borde}^2}\right]^3}
+	\text{Calidad del elemento} = C \cdot \frac{\text{Volumen}}{\left[\sqrt{\sum \text{(longitud borde)}^2}\right]^3}
 \end{equation}
 La constante $C$ tendrá un valor definido según el tipo de elemento, para escalar su calidad de 0 a 1. Para tetraedros la constante tiene el valor de $C=124.707$, al igualar la calidad del elemento a 1 para un tetraedro regular.
 
@@ -599,10 +599,10 @@ Por lo tanto, la deformación unitaria equivalente total del material es la suma
 	\varepsilon_{vm,t} = \varepsilon_{vm,p} + \varepsilon_{vm,e}
 \end{equation}
 
-\subsubsection{Esfuerzo máximo cortante}
+\subsubsection{Esfuerzo cortante absoluto}
 El esfuerzo máximo cortante es el punto más alejado al eje de los esfuerzos normales en el círculo de Mohr, por lo tanto se define como:
 \begin{equation}
-	\tau_{max} = \frac{\sigma_1 - \sigma_3}{2}
+	\tau_{abs} = \frac{\sigma_1 - \sigma_3}{2}
 \end{equation}
 
 \subsubsection{Esfuerzo y deformación normal}

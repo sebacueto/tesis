@@ -82,7 +82,7 @@ opts = odeset('RelTol',1e-8,'AbsTol',1e-8);
 
 % Solver
 
-[tp,x]=ode45(machfun,[0,10],[0;0;0;0],opts);
+[tp,x]=ode45(machfun,[0,8],[0;0;0;0],opts);
 
 
 % Valores auxiliares
@@ -152,7 +152,7 @@ for i = 1:1:length(M)
     
     opts = odeset('RelTol',1e-8,'AbsTol',1e-8);
 
-    [tp,x]=ode45((t,XVAR)machfun_test(t,XVAR,m1,m2), [0,10],[0;0;0;0],opts);
+    [tp,x]=ode45((t,XVAR)machfun_test(t,XVAR,m1,m2), [0,8],[0;0;0;0],opts);
 
     laux = length(tp);
         

@@ -3,39 +3,39 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {2.1}{\ignorespaces Factores de modificaci\IeC {\'o}n por tipo de carga, seg\IeC {\'u}n el modelo de Lee.\relax }}{27}{table.caption.17}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces N\IeC {\'u}mero m\IeC {\'\i }nimo de pruebas seg\IeC {\'u}n tipo de prueba. \citep {E739}\relax }}{37}{table.caption.23}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Lista de los rangos de los valores de la oblicuidad y la respectiva calidad del elemento. \citep {sharcnet_2017}\relax }}{58}{table.caption.45}
+\contentsline {table}{\numberline {3.1}{\ignorespaces N\IeC {\'u}mero m\IeC {\'\i }nimo de pruebas seg\IeC {\'u}n tipo de prueba. \citep {E739}\relax }}{38}{table.caption.23}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Lista de los rangos de los valores de la oblicuidad y la respectiva calidad del elemento. \citep {sharcnet_2017}\relax }}{59}{table.caption.45}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Tabla de cargas modificada, mostrando el peso de cada combinaci\IeC {\'o}n, su diferencia y el total.\relax }}{65}{table.caption.53}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Datos del sistema de transmisi\IeC {\'o}n\relax }}{68}{table.caption.60}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Medidas de las vigas en voladizo seg\IeC {\'u}n su posici\IeC {\'o}n\relax }}{68}{table.caption.62}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Masa de cada contrapeso utilizado\relax }}{70}{table.caption.66}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Especificaciones del motor de la m\IeC {\'a}quina de fatiga.\relax }}{71}{table.caption.70}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Dimensiones y caracter\IeC {\'\i }sticas de la viga de acero\relax }}{73}{table.caption.74}
-\contentsline {table}{\numberline {4.7}{\ignorespaces Valores de la densidad normal y anhidra del pino oreg\IeC {\'o}n. $^{\dagger }$: Definido con el percentil 5\% de exclusi\IeC {\'o}n. \citep {nch1198}\relax }}{77}{table.caption.76}
-\contentsline {table}{\numberline {4.8}{\ignorespaces Tensiones admisibles y m\IeC {\'o}dulo de elasticidad en flexi\IeC {\'o}n para madera de pino oreg\IeC {\'o}n seg\IeC {\'u}n su clase estructural. \citep {nch1198}\relax }}{77}{table.caption.78}
-\contentsline {table}{\numberline {4.9}{\ignorespaces Valores del factor de modificaci\IeC {\'o}n para el pino oreg\IeC {\'o}n.\relax }}{77}{table.caption.80}
-\contentsline {table}{\numberline {4.10}{\ignorespaces Dimensiones del tirafondo utilizado\relax }}{83}{table.caption.89}
-\contentsline {table}{\numberline {4.11}{\ignorespaces Valores calculados mediante un modelo de elementos finitos y por medio de la ec. \ref {eq:k_cantilever}, para obtener la rigidez de las vigas en voladizo y la probeta de acero.\relax }}{93}{table.caption.104}
-\contentsline {table}{\numberline {4.12}{\ignorespaces Datos utilizados del ensayo de esfuerzo-deformaci\IeC {\'o}n del acero AISI 1020 HR en el modelo MISO.\relax }}{100}{table.caption.118}
-\contentsline {table}{\numberline {4.13}{\ignorespaces Valores promedios de los par\IeC {\'a}metros de calidad de la malla utilizada en la probeta.\relax }}{102}{table.caption.119}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Tabla de cargas modificada, mostrando el peso de cada combinaci\IeC {\'o}n, su diferencia y el total.\relax }}{66}{table.caption.53}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Datos del sistema de transmisi\IeC {\'o}n\relax }}{69}{table.caption.60}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Medidas de las vigas en voladizo seg\IeC {\'u}n su posici\IeC {\'o}n\relax }}{69}{table.caption.62}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Masa de cada contrapeso utilizado\relax }}{71}{table.caption.66}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Especificaciones del motor de la m\IeC {\'a}quina de fatiga.\relax }}{72}{table.caption.70}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Dimensiones y caracter\IeC {\'\i }sticas de la viga de acero\relax }}{74}{table.caption.74}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Valores de la densidad normal y anhidra del pino oreg\IeC {\'o}n. $^{\dagger }$: Definido con el percentil 5\% de exclusi\IeC {\'o}n. \citep {nch1198}\relax }}{78}{table.caption.76}
+\contentsline {table}{\numberline {4.8}{\ignorespaces Tensiones admisibles y m\IeC {\'o}dulo de elasticidad en flexi\IeC {\'o}n para madera de pino oreg\IeC {\'o}n seg\IeC {\'u}n su clase estructural. \citep {nch1198}\relax }}{78}{table.caption.78}
+\contentsline {table}{\numberline {4.9}{\ignorespaces Valores del factor de modificaci\IeC {\'o}n para el pino oreg\IeC {\'o}n.\relax }}{78}{table.caption.80}
+\contentsline {table}{\numberline {4.10}{\ignorespaces Dimensiones del tirafondo utilizado\relax }}{84}{table.caption.89}
+\contentsline {table}{\numberline {4.11}{\ignorespaces Valores calculados mediante un modelo de elementos finitos y por medio de la ec. \ref {eq:k_cantilever}, para obtener la rigidez de las vigas en voladizo y la probeta de acero.\relax }}{95}{table.caption.105}
+\contentsline {table}{\numberline {4.12}{\ignorespaces Datos utilizados del ensayo de esfuerzo-deformaci\IeC {\'o}n del acero AISI 1020 HR en el modelo MISO.\relax }}{103}{table.caption.119}
+\contentsline {table}{\numberline {4.13}{\ignorespaces Valores promedios de los par\IeC {\'a}metros de calidad de la malla utilizada en la probeta.\relax }}{104}{table.caption.120}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Resultados y factor de seguridad para distintas configuraciones de pletinas de acero.\relax }}{109}{table.caption.127}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Resultados de esfuerzo alternante y factor de seguridad a fatiga para distintas configuraciones de pletinas de acero.\relax }}{110}{table.caption.128}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Resultados obtenidos para la flexi\IeC {\'o}n y cizalle de la viga A.\relax }}{110}{table.caption.130}
-\contentsline {table}{\numberline {5.4}{\ignorespaces Factores de seguridad en la viga A.\relax }}{110}{table.caption.131}
-\contentsline {table}{\numberline {5.5}{\ignorespaces Esfuerzos y factor de seguridad por compresi\IeC {\'o}n paralela en la viga B.\relax }}{111}{table.caption.133}
-\contentsline {table}{\numberline {5.6}{\ignorespaces Segundo momento de \IeC {\'a}rea y esfuerzos de carga y dise\IeC {\~n}o en la viga C.\relax }}{111}{table.caption.135}
-\contentsline {table}{\numberline {5.7}{\ignorespaces Cargas admisibles y factor de seguridad para distintos pernos hexagonales.\relax }}{112}{table.caption.138}
-\contentsline {table}{\numberline {5.8}{\ignorespaces Separaci\IeC {\'o}n del perno a borde cargado, descargado y entre pernos, a partir de su di\IeC {\'a}metro.\relax }}{112}{table.caption.139}
-\contentsline {table}{\numberline {5.9}{\ignorespaces Espaciamiento entre los bordes cargado, descargado y entre tirafondos, para un di\IeC {\'a}metro de 1/4 de pulgada.\relax }}{113}{table.caption.141}
-\contentsline {table}{\numberline {5.10}{\ignorespaces Esfuerzos admisibles y factor de seguridad para distintas longitudes de tirafondo.\relax }}{113}{table.caption.142}
-\contentsline {table}{\numberline {5.11}{\ignorespaces Valores de la frecuencia natural de la estructura obtenidos por medio del an\IeC {\'a}lisis modal del software Inventor. \relax }}{113}{table.caption.143}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Resultados y factor de seguridad para distintas configuraciones de pletinas de acero.\relax }}{112}{table.caption.128}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Resultados de esfuerzo alternante y factor de seguridad a fatiga para distintas configuraciones de pletinas de acero.\relax }}{113}{table.caption.129}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Resultados obtenidos para la flexi\IeC {\'o}n y cizalle de la viga A.\relax }}{113}{table.caption.131}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Factores de seguridad en la viga A.\relax }}{113}{table.caption.132}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Esfuerzos y factor de seguridad por compresi\IeC {\'o}n paralela en la viga B.\relax }}{114}{table.caption.134}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Segundo momento de \IeC {\'a}rea y esfuerzos de carga y dise\IeC {\~n}o en la viga C.\relax }}{114}{table.caption.136}
+\contentsline {table}{\numberline {5.7}{\ignorespaces Cargas admisibles y factor de seguridad para distintos pernos hexagonales.\relax }}{115}{table.caption.139}
+\contentsline {table}{\numberline {5.8}{\ignorespaces Separaci\IeC {\'o}n del perno a borde cargado, descargado y entre pernos, a partir de su di\IeC {\'a}metro.\relax }}{115}{table.caption.140}
+\contentsline {table}{\numberline {5.9}{\ignorespaces Espaciamiento entre los bordes cargado, descargado y entre tirafondos, para un di\IeC {\'a}metro de 1/4 de pulgada.\relax }}{116}{table.caption.142}
+\contentsline {table}{\numberline {5.10}{\ignorespaces Esfuerzos admisibles y factor de seguridad para distintas longitudes de tirafondo.\relax }}{116}{table.caption.143}
+\contentsline {table}{\numberline {5.11}{\ignorespaces Valores de la frecuencia natural de la estructura obtenidos por medio del an\IeC {\'a}lisis modal del software Inventor. \relax }}{116}{table.caption.144}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Condiciones que se deben considerar en la determinaci\IeC {\'o}n de tensiones admisibles y m\IeC {\'o}dulo de elasticidad. \citep {nch1198}\relax }}{144}{table.caption.164}
-\contentsline {table}{\numberline {A.2}{\ignorespaces Espesor nominal y real de la madera seg\IeC {\'u}n el tratamiento recibido.\relax }}{150}{table.caption.167}
-\contentsline {table}{\numberline {A.3}{\ignorespaces Ancho nominal y real de la madera seg\IeC {\'u}n el tratamiento recibido.\relax }}{151}{table.caption.168}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Condiciones que se deben considerar en la determinaci\IeC {\'o}n de tensiones admisibles y m\IeC {\'o}dulo de elasticidad. \citep {nch1198}\relax }}{148}{table.caption.166}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Espesor nominal y real de la madera seg\IeC {\'u}n el tratamiento recibido.\relax }}{154}{table.caption.169}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Ancho nominal y real de la madera seg\IeC {\'u}n el tratamiento recibido.\relax }}{155}{table.caption.170}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
