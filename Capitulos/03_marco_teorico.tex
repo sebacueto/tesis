@@ -175,9 +175,17 @@ Por lo tanto, la ecuación resultante es:
 \end{equation}
 La constantes $b$ y $\sigma'_f$ se les denomina exponente y coeficiente de resistencia a la fatiga, respectivamente.
 
-En aquellos casos donde la carga media es distinta de cero ($\sigma_m \neq 0$), entonces se debe reemplazar $\sigma_a$ de la ec. \ref{eq:sn_fit} por el esfuerzo equivalente $\sigma_{ar}$ de la ecuación de Goodman normalizada \ref{eq:good_norm}. De esta forma, se obtiene:
+En aquellos casos donde la carga media es distinta de cero ($\sigma_m \neq 0$), el esfuerzo alternante se debe reemplazar a partir de la ec. \ref{eq:good_norm} en la ec. \ref{eq:sn_fit}, de la cual se obtiene:
 \begin{equation}
-	\sigma_{ar} = (\sigma'_f - \sigma_m)(2N_f)^b
+	\sigma_{a} = (\sigma'_f - \sigma_m)(2N_f)^b
+\end{equation}
+Por otra parte, se puede considerar $\sigma_{ar}$ como el esfuerzo equivalente, de tal manera la ecuación queda:
+\begin{equation}\label{eq:sn_goodman}
+	\sigma_{ar} = \sigma'_f(2N_f)^b
+\end{equation} 
+Donde el esfuerzo equivalente es:
+\begin{equation}
+	\sigma_{ar} = \dfrac{\sigma_a}{1 - \dfrac{\sigma_m}{\sigma_u}}
 \end{equation}
 Asimismo, se puede utilizar la relación SWT en la ecuación anterior, la cual nos dará resultados más conservadores:
 \begin{equation} \label{eq:sn_swt}

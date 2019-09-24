@@ -16,7 +16,7 @@ A partir de las ec. \ref{eq:reaccion_acero}, \ref{eq:mtofleca_acero} y \ref{eq:e
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}ccccccc@{}}
 \toprule
-N$^{\circ}$ & Dimensiones {[}mm{]} & I {[}mm$^4${]} & $R_A$ {[}N{]} & $M_A$ {[}Nm{]} & $\sigma_{max,pl}$ {[}MPa{]} & Factor de Seguridad {[}-{]} \\ \midrule
+N$^{\circ}$ & Dimensiones {[}mm{]} & $\bar{I}$ {[}mm$^4${]} & $R_A$ {[}N{]} & $M_A$ {[}Nm{]} & $\sigma_{max,pl}$ {[}MPa{]} & Factor de Seguridad {[}-{]} \\ \midrule
 1 & 100x10 & 8333,33 & 23,87 & 2,46 & 60,88 & 4,43 \\
 2 & 100x6 & 1800 & 14,32 & 1,48 & 167,46 & 1,61 \\
 3 & 100x5 & 1041,66 & 11,95 & 1,23 & 240,56 & 1,12 \\
@@ -98,7 +98,7 @@ Como se señaló en metodología, la viga C no recibe mayores cargas, por lo tan
 \centering
 \begin{tabular}{@{}cclccc@{}}
 \toprule
-N$^{\circ}$ & Dimensiones & Estado & $I$ [mm] & $f_f$ [kPa] & $F_f$ [MPa] \\ \midrule
+N$^{\circ}$ & Dimensiones & Estado & $\bar{I}$ [mm$^4$] & $f_f$ [kPa] & $F_f$ [MPa] \\ \midrule
 1 & 1x8'' & Cepillada & 1,0$\cdot 10^7$ & 3,804 & 3,925 \\
 2 & 2x8'' & Cepillada & 2,16$\cdot 10^7$ & 1,763 & 3,925 \\ \bottomrule
 \end{tabular}
@@ -259,7 +259,7 @@ En definitiva, tanto los resultados obtenidos por la simulación como los obteni
 \section{Modelo del sistema}
 
 \subsection{Comportamiento del modelo}
-Con la caracterización y el levantamiento de información de los distintos componentes, junto a la elección de $c_1$, $c_2$ y de las variables de la función $\phi$, nos permite resolver y obtener valores del movimiento lineal, angular y la carga a la que está sometida la probeta. El tiempo de integración para cada una de las soluciones será entre 0 y 10 segundos. Se utilizará una tolerancia relativa y absoluta de $10^{-8}$. En consecuencia, al resolver el sistema de ecuaciones \ref{eq:mov_matriz} a través de los códigos de la sección \ref{sec:sol_part}, se obtiene la posición ($y,\theta$) y la velocidad ($\dot{y},\dot{\theta}$) del brazo de carga respecto a su centro de masa. Las figuras \ref{fig:yt_2} y \ref{fig:ytp_2} muestran las curvas de cada coordenada.
+Con la caracterización y el levantamiento de información de los distintos componentes, junto a la elección de $c_1$, $c_2$ y de las variables de la función $\phi$, nos permite resolver y obtener valores del movimiento lineal, angular y la carga a la que está sometida la probeta. El tiempo de integración para cada una de las soluciones será entre 0 y 8 segundos. Se utilizará una tolerancia relativa y absoluta de $10^{-8}$. En consecuencia, al resolver el sistema de ecuaciones \ref{eq:mov_matriz} a través de los códigos de la sección \ref{sec:sol_part}, se obtiene la posición ($y,\theta$) y la velocidad ($\dot{y},\dot{\theta}$) del brazo de carga respecto a su centro de masa. Las figuras \ref{fig:yt_2} y \ref{fig:ytp_2} muestran las curvas de cada coordenada.
 
 Utilizando la ec. \ref{eq:fuerza_probeta} para cada valor de $y_2(t)$, se obtiene la carga aplicada sobre la probeta $F(t)$ a lo largo del tiempo. La fig. \ref{fig:f_2} muestra la curva de esta fuerza a través del tiempo para la configuración n$^{\circ}$ 38 ($\Delta m = 14.5020$ g).
 
@@ -384,7 +384,7 @@ Por otro lado, la carga media permanece prácticamente constante, como se puede 
 
 De manera análoga, se puede estudiar la influencia de la velocidad de giro máxima del disco desbalanceado sobre el movimiento del sistema. Las figuras en \ref{fig:f_w520}, muestran $F(t)$ para dos velocidad distintas, $\omega_{max,a} = 250$ rpm y $\omega_{max,b}=1000$ rpm. 
 
-Ambas gráficas muestran no sólo como la frecuencia de la oscilación es menor en la figura \ref{fig:f_w250} respecto a \ref{fig:f_w1000}, como es esperable, sino que también la fuerza sobre la probeta aumenta en la medida que la velocidad de rotación del disco es mayor. Esta información, junto a la expuesta en la sección anterior, muestra que el modelo responde a las distintas variables de la fuerza provocada por el disco $F_d(t)$. 
+Ambas gráficas muestran no sólo como la frecuencia de la oscilación es menor en la figura \ref{fig:f_w250} respecto a \ref{fig:f_w1000}, como es esperable, sino que también la fuerza sobre la probeta aumenta en la medida que la velocidad de rotación del disco es mayor. Esta información, junto a la expuesta en la sección anterior, muestra que el modelo responde a las distintas variables de la fuerza producida por el disco $F_d(t)$. 
 
 \begin{figure}[p]
 \centering
@@ -450,15 +450,15 @@ Al ver los esfuerzos generales a los que está sometida la probeta, se identific
 
 \begin{figure}[p]
 \centering
-	\begin{subfigure}{0.7\linewidth}
+	\begin{subfigure}{0.8\linewidth}
 		\centering
-		\includegraphics[width=\linewidth]{Imagenes/esfvm_corte_lat201.pdf}
+		\includegraphics[width=\linewidth]{Imagenes/esfvm_lat.pdf}
 		\caption{Vista lateral de la zona intermedia.}
 		\label{fig:corte_lat201}
 	\end{subfigure}
-	\begin{subfigure}{\linewidth}
+	\begin{subfigure}{0.9\linewidth}
 		\centering
-		\includegraphics[width=\linewidth]{Imagenes/esfvm_iso201}
+		\includegraphics[width=\linewidth]{Imagenes/esfvm_iso.pdf}
 		\caption{Vista en isométrico de la zona intermedia.}
 		\label{fig:iso201}
 	\end{subfigure}
@@ -468,13 +468,13 @@ Al ver los esfuerzos generales a los que está sometida la probeta, se identific
 	\centering
 	\begin{subfigure}{0.9\linewidth}
 		\centering
-		\includegraphics[width=\linewidth]{Imagenes/esfvm_corte_iso201}
+		\includegraphics[width=\linewidth]{Imagenes/esfvm_corteiso.pdf}
 		\caption{Vista en isométrico del corte transversal.}
 		\label{fig:corte_iso201}
 	\end{subfigure}		
 	\begin{subfigure}{0.9\linewidth}
 		\centering
-		\includegraphics[width=\linewidth]{Imagenes/esfvm_corte201}
+		\includegraphics[width=\linewidth]{Imagenes/esfvm_corte.pdf}
 		\caption{Vista en detalle del corte transversal.}
 		\label{fig:corte201}
 	\end{subfigure}
@@ -484,7 +484,7 @@ Al ver los esfuerzos generales a los que está sometida la probeta, se identific
 
 \newpage
 
-Por último, como se buscan conocer los esfuerzos y la deformación a los que está sometida la probeta en estos puntos en específico, se obtienen los resultados de la deformación unitaria normal ($\varepsilon_x$) y de von Mises elástica ($\varepsilon_{vm,e}$), además de los esfuerzos de von Mises ($\sigma_{vm}$), normal ($\sigma_x$) y cortante máximo ($\tau_{max}$). Estos resultados se pueden ver en los gráficos \ref{fig:def_201} y \ref{fig:esf_201}.
+Finalmente, como se buscan conocer los esfuerzos y la deformación a los que está sometida la probeta en estos puntos en específico, se obtienen los resultados de la deformación unitaria normal, cortante ($\varepsilon_x$) y de von Mises elástica ($\varepsilon_{vm,e}$), además de los esfuerzos de von Mises ($\sigma_{vm}$), cortante absoluto ($\tau_{max}$), normal ($\sigma_x$) y cortante ($\tau_{xy}$). Estos resultados se pueden ver en los gráficos \ref{fig:def_201} y \ref{fig:esf_201}.
 
 \begin{figure}[h]
 \centering
@@ -493,57 +493,120 @@ Por último, como se buscan conocer los esfuerzos y la deformación a los que es
 \label{fig:diag_pqr2}
 \end{figure}
 
-\begin{figure}[p]
+Al ver el comportamiento lineal de los gráficos, se concluye que en ninguna configuración se superó el esfuerzo de fluencia, como también lo confirman los datos de esfuerzo obtenidos. Los resultados del esfuerzo de von Mises ($\sigma_{vm}$), absoluto ($\tau_{abs}$) y normal ($\sigma_x$) máximo se encuentran en los punto $P$ y $R$, siendo el segundo levemente mayor por $0.1$ MPa en promedio. En el caso del esfuerzo cortante ($\tau_{xy}$) máximo se encuentra en el punto $Q$, como es esperable al estar cerca del eje neutro. Los resultados de la carga, deformación y esfuerzos se muestran en la tabla \ref{tab:res_esf} para las combinaciones n$^{\circ}$ 1, 100 y 201, además de la carga media ($F_m$). En la tabla \ref{sec:anexob2} se encuentran los resultados completos para cada combinación de los esfuerzos de von Mises y absoluto.
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}ccccccc@{}}
+\toprule
+Resultados    & \multicolumn{1}{c}{Fuerza {[}N{]}} & \begin{tabular}[c]{@{}c@{}}Deformación eje $y$\\  {[}mm{]}\end{tabular} & $\sigma_{vm}$ {[}MPa{]} & $\tau_{abs}$ {[}MPa{]} & $\sigma_{x}$ {[}MPa{]} & $\tau_{xy}$ {[}MPa{]} \\ \midrule
+$F_{max,1}$   & $13.71$                            & $-0.0078$                                                               & $9.376$                 & $4.7752$               & $-9.606$               & $0.38138$             \\
+$F_{max,100}$ & $131.14$                           & $-0.0743$                                                               & $88.529$                & $45.312$               & $-91.151$              & $3.5809$              \\
+$F_{max,201}$ & $296.914$                          & $-0.16969$                                                              & $203.13$                & $103.46$               & $-208.12$              & $8.2478$              \\
+$F_m$         & $12.438$                           & $-0.0071$                                                               & $9.124$                 & $4.6315$               & $-9.4519$              & $1.9199$              \\ \bottomrule
+\end{tabular}%
+}
+\caption{Carga, deformación y esfuerzos obtenidos por medio de la simulación para la combinación n$^{\circ}$ 1, 100 y 201, además de los esfuerzos provocados por la carga media.}
+\label{tab:res_esf}
+\end{table}
+
+\newpage
+
+\begin{figure}[H]
 \centering
 	\begin{subfigure}{1\linewidth}
 		\centering
-		\includegraphics[width=\linewidth, trim={1cm 5cm 0cm 5cm},clip]{Imagenes/def_normal.pdf}
+		\includegraphics[width=\linewidth, trim={1cm 0cm 2cm 0cm},clip]{Imagenes/def_vm.pdf}
+		\caption{Deformación de von Mises de los puntos $P$, $Q$ y $R$.}
+		\label{fig:def_normal201}
+	\end{subfigure}
+		\begin{subfigure}{1\linewidth}
+		\centering
+		\includegraphics[width=\linewidth, trim={1cm 0cm 2cm 0cm},clip]{Imagenes/def_ms.pdf}
+		\caption{Deformación cortante absoluta de los puntos $P$, $Q$ y $R$.}
+		\label{fig:def_vm201}
+	\end{subfigure}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+\ContinuedFloat
+	\begin{subfigure}{1\linewidth}
+		\centering
+		\includegraphics[width=\linewidth, trim={1cm 0cm 2cm 0cm},clip]{Imagenes/def_normal.pdf}
 		\caption{Deformación normal, en dirección $x$, de los puntos $P$, $Q$ y $R$.}
 		\label{fig:def_normal201}
 	\end{subfigure}
 		\begin{subfigure}{1\linewidth}
 		\centering
-		\includegraphics[width=\linewidth, trim={1cm 5cm 0cm 5cm},clip]{Imagenes/def_vm.pdf}
-		\caption{Deformación equivalente total de los puntos $P$, $Q$ y $R$.}
+		\includegraphics[width=\linewidth, trim={1cm 0cm 2cm 0cm},clip]{Imagenes/def_cortante.pdf}
+		\caption{Deformación cortante, en dirección $y$ del plano \textit{YZ}, de los puntos $P$, $Q$ y $R$.}
 		\label{fig:def_vm201}
 	\end{subfigure}
 \caption{Deformación unitaria de los puntos $P$, $Q$ y $R$  }
 \label{fig:def_201}
 \end{figure}
 
-\begin{figure}[p]
+\begin{figure}[H]
 \centering
 	\begin{subfigure}{1\linewidth}
 		\centering
-		\includegraphics[width=\linewidth, trim={1cm 5cm 0cm 5cm},clip]{Imagenes/esf_vm.pdf}
+		\includegraphics[width=\linewidth, trim={1cm 0cm 2cm 0cm},clip]{Imagenes/esf_vm.pdf}
 		\caption{Esfuerzo de von Mises de los puntos $P$, $Q$ y $R$.}
 		\label{fig:esf_vm201}
 	\end{subfigure}
 	\begin{subfigure}{1\linewidth}
 		\centering
-		\includegraphics[width=\linewidth, trim={1cm 5cm 0cm 5cm},clip]{Imagenes/esf_normal.pdf}
+		\includegraphics[width=\linewidth, trim={1cm 0cm 2cm 0cm},clip]{Imagenes/esf_ms.pdf}
+		\caption{Esfuerzo cortante absoluto de los puntos $P$, $Q$ y $R$.}
+		\label{fig:esf_ms201}
+	\end{subfigure}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+	\ContinuedFloat
+	\begin{subfigure}{1\linewidth}
+		\centering
+		\includegraphics[width=\linewidth, trim={0cm 0cm 2cm 0cm},clip]{Imagenes/esf_normal.pdf}
 		\caption{Esfuerzo normal, en dirección $x$, de los puntos $P$, $Q$ y $R$.}
 		\label{fig:esf_normal201}
 	\end{subfigure}
 	\begin{subfigure}{1\linewidth}
 		\centering
-		\includegraphics[width=\linewidth, trim={1cm 5cm 0cm 5cm},clip]{Imagenes/esf_ms.pdf}
-		\caption{Esfuerzo cortante máximo de los puntos $P$, $Q$ y $R$.}
+		\includegraphics[width=\linewidth, trim={1cm 0cm 2cm 0cm},clip]{Imagenes/esf_cortante.pdf}
+		\caption{Esfuerzo cortante, en dirección $y$ del plano \textit{YZ}, de los puntos $P$, $Q$ y $R$.}
 		\label{fig:esf_ms201}
 	\end{subfigure}
-\caption{Esfuerzos de von Mises, normal y máximo cortante de los puntos $P$, $Q$ y $R$.}
+\caption{Esfuerzos de von Mises, cortante absoluto, normal y cortante de los puntos $P$, $Q$ y $R$.}
 \label{fig:esf_201}
 \end{figure}
 
-Al ver el comportamiento lineal de los gráficos, se concluye que en ninguna configuración se superó el esfuerzo de fluencia, como también lo confirman los datos de esfuerzo obtenidos. Los mayores esfuerzos se encuentran en el punto $P$ y $R$, siendo el primero levemente mayor, y el punto $Q$ el menor al estar cercano al eje neutro de la probeta. Así, en el punto $P$ el esfuerzo de von Mises máximo corresponde a $13.81$ MPa (combinación n$^{\circ}$ 201, $\Delta m = 92,3469$ g) y el mínimo a $8.81$ MPa (combinación n$^{\circ}$ 1, $\Delta m = 0.4128$ g). El esfuerzo máximo cortante en el punto $P$ corresponde a $7.03$ MPa (combinación n$^{\circ}$ 201) y la mínima a $4.48$ MPa. Además, la fig. \ref{fig:def_normal201} y \ref{fig:esf_normal201} muestran el comportamiento a tracción y compresión de los puntos $P$ y $R$, respectivamente. La deformación máxima sufrida por la probeta en el eje $y$ corresponde a $11.17\cdot 10^{-3}$ mm.
-
-Al comparar los resultados obtenidos (anexo \ref{sec:anexob2}) con la tabla de cargas (anexo \ref{sec:anexob1}) se encuentran diferencias en los esfuerzos obtenidos para una misma configuración. Esta diferencia aumenta de manera constante a medida que aumenta la carga, por lo tanto, la relación de $\Delta m$ y $\sigma_{vm}$ es distinta entre el modelo y la información original, dicho de otra forma, la pendiente de sus curvas son distintas. Esto, sin duda, provoca dudas sobre la información que entregada por la tabla de cargas, sobre la veracidad y factibilidad de los esfuerzos que acompañan a cada combinación. Respecto a este último punto, resalta el hecho que en la tabla de cargas aparezcan esfuerzos que sean muy superiores a los que un acero pueda soportar. No obstante, se requiere de una validación experimental que determinará su veracidad, tanto del desarrollo de esta tesis como de la tabla de carga.
-
 \newpage
+
+Al comparar los resultados obtenidos (anexo \ref{sec:anexob2}) con la tabla de cargas (anexo \ref{sec:anexob1}) se encuentran diferencias en los esfuerzos obtenidos para una misma configuración. Esta diferencia aumenta de manera constante a medida que aumenta la carga, por lo tanto, la relación de $\Delta m$ y $\sigma_{vm}$ es distinta entre el modelo y la información original, dicho de otra forma, la pendiente de sus curvas son distintas, como se ve en la fig. \ref{fig:comp_modtab}. Esto, sin duda, provoca dudas sobre la información que entregada por la tabla de cargas, sobre la veracidad y factibilidad de los esfuerzos que acompañan a cada combinación. Respecto a este último punto, resalta el hecho que en la tabla de cargas aparezcan esfuerzos que sean muy superiores a los que un acero pueda soportar. No obstante, se requiere de una validación experimental que determinará su precisión, tanto del desarrollo de esta tesis como de la tabla de carga.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\linewidth, trim={1cm 0cm 2cm 0cm},clip]{Imagenes/comp_modtab.pdf}
+\caption{Comparación entre la curva de esfuerzos $\sigma$ mostrada en la tabla de cargas y el esfuerzo de von Mises $\sigma_{vm}$ del modelo dinámico de acuerdo al contrapeso aplicado $\Delta m$.}
+\label{fig:comp_modtab}
+\end{figure}
+
+Al realizar un ajuste lineal a los datos, se obtiene que la ecuación para cada fuente de información es:
+\begin{align}
+	&\text{Modelo dinámico:}& \sigma_{vm} = 2107\cdot \Delta m + 8.496 \\
+	&\text{Tabla de carga:} & \sigma = 10282\cdot \Delta m - 0.087 
+\end{align}
+Por lo tanto, se puede apreciar como la pendiente de la recta de la tabla de carga es casi 5 veces mayor a la obtenida mediante el modelo dinámico. Además, se aprecia como no se incluye la fuerza media en la tabla de carga, al ser el intercepto de la ecuación cercano a cero. De esta forma, se definirá y calculará el error del modelo respecto a la tabla de carga de la siguiente manera:
+\begin{equation}
+	\text{\% Error} = \frac{10282 - 2107}{2017} \cdot 100\% = 388.0 \%
+\end{equation}
 
 \subsection{Determinación de la carga asociada al esfuerzo de fluencia y el esfuerzo último}
 
-Para determinar la carga necesaria para lograr la fluencia y el esfuerzo último de la probeta, se aumenta de manera constante y progresiva $F_{max}$. La fig. \ref{fig:f_step} muestra la distribución de la fuerza a la que se sometió la probeta hasta alcanzar el esfuerzo último ($\sigma_u$), que se encuentran en el anexo \ref{sec:anexob3}.
+Para determinar la carga necesaria para lograr la fluencia y el esfuerzo último de la probeta, se aumenta de manera constante y progresiva la carga $F_{max}$. La fig. \ref{fig:f_step} muestra la distribución de la fuerza a la que se sometió la probeta hasta alcanzar el esfuerzo último ($\sigma_u$), que se encuentran en el anexo \ref{sec:anexob3}.
 
 \begin{figure}[h]
 \centering
@@ -667,10 +730,69 @@ Así mismo, en el anexo \ref{sec:anexob3} se encuentra la tabla con el valor $\D
 
 \subsection{Vida a fatiga para las cargas asociada a las combinaciones de contrapesos}
 
-A partir de los esfuerzos de von Mises expuestos en el anexo \ref{sec:anexob2}, se estimará la vida a fatiga de la probeta. Debido a que el esfuerzo más alto es bajo respecto al límite de resistencia a la fatiga del material, se calculará con la combinación n$^{\circ}$ 201 de la tabla propuesta. Así, al utilizar la ec. \ref{eq:nf_swt} y las constantes del material AISI 1020, se obtiene:
-\begin{gather*}
-	N_f = \frac{1}{2} \left[\frac{\sqrt{\sigma_{vm}\cdot \sigma_a}}{\sigma'_f} \right]^{1/b} = \frac{1}{2} \left[\frac{\sqrt{13.81\cdot 5.06}}{970.45} \right]^{-1/0.12467} \\
-	N_f = 1.8243 \cdot 10^{16} ciclos
-\end{gather*}
+A partir de los esfuerzos de von Mises expuestos en el anexo \ref{sec:anexob2}, se estimará la vida a fatiga de la probeta. Se conoce el límite de resistencia a la fatiga que corresponde a $S_e = 159.013$ MPa, el esfuerzo medio $\sigma_m = 9.124$ MPa y el esfuerzo último del material $S_u = 418.5$ MPa, por lo tanto se buscará el esfuerzo alternante ($\sigma_a$) que es el punto de inflexión entre una vida finita y una infinita. 
+\begin{equation}
+ \sigma_a = S_e\left(1 - \frac{\sigma_m}{S_u}\right) = 149.677 \text{ MPa}
+\end{equation} 
 
-Es decir, para la carga n$^{\circ}$ 201 la vida a fatiga de la probeta es infinita. Por lo tanto, para las 200 combinaciones restantes, de carga más baja, la vida a fatiga también será infinita. En base a estos resultados, se establece una clara diferencia entre los resultados obtenidos y la tabla de carga. Sin embargo, no es posible dilucidar la precisión ni el error, tanto en el modelo como en la información original, debido a la imposibilidad de realizar ensayos de fatiga que nos permitan esclarecer la validez ambos métodos.
+Al buscar el esfuerzo alternante más cercano obtenido por las simulaciones, se obtiene la combinación n$^{\circ}$ 173, con $\sigma_{a,173} = 148.986$ MPa. Al reemplazarlo en la ec. \ref{eq:nf_goodman} de Goodman y la ec. \ref{eq:nf_swt} de SWT, se obtiene que la vida a fatiga esperada es de $1.4\cdot 10^6$ ciclos y $1.32\cdot 10^6$ ciclos, respectivamente. Por otra parte, al utilizar la carga máxima n$^{\circ}$ 201 y reemplazar en las ecuaciones se obtiene para la relación de Goodman:
+\begin{gather*}
+	N_f = \frac{1}{2} \left[\frac{1}{970.45} \frac{418.5\cdot 194.01}{418.5 - 9.124}\right]^{-1/0.12467} \\
+	N_f = 1.69 \cdot 10^{5} ciclos
+\end{gather*}
+Y para la relación SWT:
+\begin{gather*}
+	N_f = \frac{1}{2} \left[\frac{\sqrt{203.13\cdot 194.01}}{970.45} \right]^{-1/0.12467} \\
+	N_f = 1.68 \cdot 10^{5} ciclos
+\end{gather*}
+Es decir, al utilizar el parámetro de ambas ecuaciones es posible esperar una vida a fatiga finita entre las combinaciones n$^{\circ}$ 173 y 201. Sin embargo, la fatiga al ser un fenómeno con altas fluctuaciones en sus los ensayos realizados, es posible obtener vida finita incluso a cargas menores. En la sección \textcolor{red}{AÑADIR TABLA B4 Y REFERENCIA CORRESPONDIENTE} se encuentra la vida a fatiga esperada bajo el criterio de Goodman y SWT para las combinaciones 140 hasta 201.
+
+%Sin embargo, no es posible dilucidar la precisión ni el error, tanto en el modelo como en la información original, debido a la imposibilidad de realizar ensayos de fatiga que nos permitan esclarecer la validez ambos métodos.
+
+\subsection{Corroboración de la vida a fatiga y su estimación a partir de la carga alternante y media.}
+
+A modo de corroboración de la vida a fatiga obtenida, se realizarán cálculos analíticos del esfuerzo producido sobre la probeta a partir de las ecuaciones de una viga en flexión y vida a fatiga con las relaciones de Goodman y SWT.
+
+Para esto se definirá el esfuerzo en flexión de la probeta como:
+\begin{equation}
+	\sigma_f = \frac{M_f \cdot c}{I} = \frac{32 f\cdot L'}{\pi \cdot d^^3}
+\end{equation}  
+
+Donde $L' = 38.83$ mm corresponde a la distancia entre el lado empotrado de la probeta y la aplicación de la fuerza, $d$ el diámetro de la probeta y $f$ la fuerza que se aplicará sobre la probeta. De esta forma podemos definir que el esfuerzo sobre la probeta será aproximadamente:
+\begin{equation}
+	\sigma = \alpha \cdot f
+\end{equation}
+Donde $\alpha = 0.8939$ [1/mm$^2$]. Además, la carga media debe ser constante al realizar un ensayo de fatiga, por ende, se puede establecer una relación entre la carga alternante y la carga media que soportará la probeta:
+\begin{equation}
+	f_a = \beta \cdot f_m
+\end{equation}
+Por lo tanto, se estimará la vida a fatiga de la probeta utilizando el esfuerzo equivalente proveniente de (a) la ecuación de Goodman normalizada y (b) la relación SWT. Al escribir ambas ecuaciones en términos de las fuerzas, se obtiene:
+\begin{subequations}
+\begin{align}
+	\sigma_{eq} &= \frac{\alpha \cdot \beta \cdot f_m}{\left(1 - \frac{\alpha \cdot f_m}{S_u}\right)} \\
+	\sigma_{eq} &= \left[ \alpha^2 \cdot \beta \cdot f_m^2 (1 + \beta)\right]^{1/2}
+\end{align}
+\end{subequations}
+
+%\begin{gather}
+%	\frac{\alpha \cdot \beta \cdot f_m}{\sigma_{eq}} + \frac{\alpha \cdot f_m}{S_u} = 1 \\
+%	\sigma_{eq} = \frac{\alpha \cdot \beta \cdot f_m}{\left(1 - \frac{\alpha \cdot f_m}{S_u}\right)}
+%\end{gather}
+%
+%Para la ecuación (b):
+%\begin{gather}
+%	\sigma_{eq} = \left[ \alpha^2 \cdot \beta \cdot f_m^2 (1 + \beta)\right]^{1/2}
+%\end{gather}
+ 
+En consecuancia, la vida a fatiga expresada en términos de la carga media y el factor $\beta$ para las relación de Goodman ($N_{f,g}$) y SWT ($N_{f,swt}$):
+\begin{subequations}
+\begin{align}
+	N_{f,g} &= \frac{1}{2} \left[\frac{\alpha \cdot \beta \cdot f_m}{\sigma_f' \cdot \left(1 - \frac{\alpha \cdot f_m}{S_u}\right)}\right]^{1/b} \\
+	N_{f,swt} &= \frac{1}{2}\left[\frac{\left[ \alpha^2 \cdot \beta \cdot f_m^2 (1 + \beta)\right]^{1/2}}{\sigma_f'}\right]^{1/b}
+\end{align}
+\end{subequations}
+
+%\begin{gather}
+%	N_f = \frac{1}{2} \left[\frac{\alpha \cdot \beta \cdot f_m}{\sigma_f' \cdot \left(1 - \frac{\alpha \cdot f_m}{S_u}\right)}\right]^{1/b} \\
+%	N_f = \frac{1}{2}\left[\frac{\left[ \alpha^2 \cdot \beta \cdot f_m^2 (1 + \beta)\right]^{1/2}}{\sigma_f'}\right]^{1(b}
+%\end{gather}
