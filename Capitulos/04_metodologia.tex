@@ -775,21 +775,18 @@ Para las vigas en voladizo, se empotró el conjunto de las 4 vigas en un extremo
 \label{fig:viga_inventor}
 \end{figure}
 
-La constante de rigidez de la probeta se obtuvo utilizando la misma metodología, empotrando un extremo de la probeta y cargando el extremo opuesto, para luego ajustar una curva de deformación versus carga aplicada. El procedimiento y la configuración usada en el software ANSYS corresponde a la utilizada en la sección \ref{sec:sim_probeta}.  Por el contrario, no se realizaron cálculos analíticos por la complejidad que existe en el área transversal de la probeta, la cual es variable.
-
-La tabla \ref{tab:k_valor} muestra los resultados de ambos métodos.
+La constante de rigidez de la probeta se obtuvo utilizando la misma metodología, empotrando un extremo de la probeta y cargando el extremo opuesto, para luego ajustar una curva de deformación versus carga aplicada. El procedimiento y la configuración usada en el software ANSYS corresponde a la utilizada en la sección \ref{sec:sim_probeta}.  Por el contrario, no se realizaron cálculos analíticos por la complejidad que existe en el área transversal de la probeta, la cual es variable. La tabla \ref{tab:k_valor} muestra los resultados de ambos métodos, sin embargo, los datos utilizados en el modelo corresponden a los obtenidos por simulación
 \begin{table}[h]
 \centering
 \begin{tabular}{ccc}
 \hline
 Método & Barras en voladizo & Probeta \\ \hline
-Simulación MEF & $9.889\cdot 10^4$ [N/m] & $1.798\cdot 10^6$ [N/m] \\
+Simulación & $9.889\cdot 10^4$ [N/m] & $1.798\cdot 10^6$ [N/m] \\
 Cálculo & $9.216\cdot 10^4$ [N/m] & -- \\ \hline
 \end{tabular}
 \caption{Valores calculados mediante un modelo de elementos finitos y por medio de la ec. \ref{eq:k_cantilever}, para obtener la rigidez de las vigas en voladizo y la probeta de acero.}
 \label{tab:k_valor}
 \end{table}
-Los datos utilizados en el modelo corresponden a los obtenidos por simulación.
 
 Por otro lado, los valores de $c_1$ y $c_2$ se estimaron de manera cualitativa, visualizando la curvas de $y(t)$ y $\theta(t)$ para buscar que la vibración inicial se disipara antes del inicio de la función de aceleración del disco. Así, los valores utilizados son:
 \begin{itemize*}
@@ -1156,12 +1153,12 @@ Por otro lado, se mantendrá la configuración y la malla utilizada en la secci�
 
 \subsection{Determinación de la vida a fatiga}
 
-A partir de los resultados de la simulación, se obtuvo el esfuerzo máximo de von Mises en la probeta asociado a cada combinación de contrapesos. Con esta información, se calculará la vida a fatiga estimada de la probeta que está sometida de manera conjunta a una carga cíclica y una media. Para esto, se utilizarán las ecuaciones \ref{eq:sn_goodman} y \ref{eq:sn_swt}, por medio de las cuales es posible calcular la vida a fatiga $N_f$ con el esfuerzo máximo $\sigma_{max}$, su amplitud $\sigma_a$, el esfuerzo medio $\sigma_m$ y las constantes $\sigma'_f$, $b$ y $S_u$. Al despejar la ecuación para buscar la vida a fatiga, se obtiene:
+A partir de los resultados de la simulación, se obtuvo el esfuerzo máximo de von Mises en la probeta asociado a cada combinación de contrapesos. Con esta información, se calculará la vida a fatiga estimada de la probeta que está sometida de manera conjunta a una carga cíclica y una media. Para esto, se utilizarán las ecuaciones \ref{eq:sn_goodman} y \ref{eq:sn_swt}, por medio de las cuales es posible calcular la vida a fatiga $N_f$ con el esfuerzo máximo $\sigma_{max}$, su amplitud $\sigma_a$, el esfuerzo medio $\sigma_m$ y las constantes $\sigma'_f$, $b$ y $S_u$. Al despejar la ecuación se obtiene la vida a fatiga para la relación de Goodman (ec. \ref{eq:nf_goodman}, $N_{f,g}$) y la relación de SWT (ec. \ref{eq:nf_swt}, $N_{f,swt}$).
 \bigskip
 \begin{subequations}
 \begin{align}
-	N_f  &= \frac{1}{2} \left[\frac{\sqrt{\sigma_{vm}\cdot \sigma_a}}{\sigma'_f} \right]^{1/b} \label{eq:nf_swt} \\[10pt]
-	N_f &= \frac{1}{2} \left[\frac{1}{\sigma'_f} \left(\frac{S_u \cdot \sigma_a}{S_u - \sigma_m}\right)\right]^{1/b} \label{eq:nf_goodman}
+	N_{f,g}  &= \frac{1}{2} \left[\frac{\sqrt{\sigma_{vm}\cdot \sigma_a}}{\sigma'_f} \right]^{1/b} \label{eq:nf_swt} \\[10pt]
+	N_{f,swt} &= \frac{1}{2} \left[\frac{1}{\sigma'_f} \left(\frac{S_u \cdot \sigma_a}{S_u - \sigma_m}\right)\right]^{1/b} \label{eq:nf_goodman}
 \end{align}
 \end{subequations}
 \bigskip

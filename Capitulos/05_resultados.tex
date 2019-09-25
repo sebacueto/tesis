@@ -371,7 +371,7 @@ Por otro lado, la carga media permanece prácticamente constante, como se puede 
 	\begin{subfigure}{1\linewidth}
 		\centering
 		\includegraphics[width=1\linewidth]{Imagenes/fm_dmsp.pdf}
-		\caption{Acercamiento a la curva entre los 12.4380 [N] y 12.4380 [N] de $F_m$. }\label{fig:fm_dmsp}
+		\caption{Acercamiento a la curva entre los 12.4380 [N] y 12.4390 [N] de $F_m$. }\label{fig:fm_dmsp}
 	\end{subfigure}
 \par\bigskip
 \caption{Distribución de la carga media ($F_m$) para las distintas configuraciones de contrapeso.}
@@ -452,7 +452,7 @@ Al ver los esfuerzos generales a los que está sometida la probeta, se identific
 \centering
 	\begin{subfigure}{0.8\linewidth}
 		\centering
-		\includegraphics[width=\linewidth]{Imagenes/esfvm_lat.pdf}
+		\includegraphics[width=0.9\linewidth]{Imagenes/esfvm_lat.pdf}
 		\caption{Vista lateral de la zona intermedia.}
 		\label{fig:corte_lat201}
 	\end{subfigure}
@@ -737,41 +737,73 @@ A partir de los esfuerzos de von Mises expuestos en el anexo \ref{sec:anexob2}, 
 
 Al buscar el esfuerzo alternante más cercano obtenido por las simulaciones, se obtiene la combinación n$^{\circ}$ 173, con $\sigma_{a,173} = 148.986$ MPa. Al reemplazarlo en la ec. \ref{eq:nf_goodman} de Goodman y la ec. \ref{eq:nf_swt} de SWT, se obtiene que la vida a fatiga esperada es de $1.4\cdot 10^6$ ciclos y $1.32\cdot 10^6$ ciclos, respectivamente. Por otra parte, al utilizar la carga máxima n$^{\circ}$ 201 y reemplazar en las ecuaciones se obtiene para la relación de Goodman:
 \begin{gather*}
-	N_f = \frac{1}{2} \left[\frac{1}{970.45} \frac{418.5\cdot 194.01}{418.5 - 9.124}\right]^{-1/0.12467} \\
-	N_f = 1.69 \cdot 10^{5} ciclos
+	N_{f,g} = \frac{1}{2} \left[\frac{1}{970.45} \left(\frac{418.5\cdot 194.01}{418.5 - 9.124}\right)\right]^{-1/0.12467} \\[10pt]
+	N_{f,g} = 1.69 \cdot 10^{5} ciclos
 \end{gather*}
 Y para la relación SWT:
 \begin{gather*}
-	N_f = \frac{1}{2} \left[\frac{\sqrt{203.13\cdot 194.01}}{970.45} \right]^{-1/0.12467} \\
-	N_f = 1.68 \cdot 10^{5} ciclos
+	N_{f,swt} = \frac{1}{2} \left[\frac{\sqrt{203.13\cdot 194.01}}{970.45} \right]^{-1/0.12467} \\[10pt]
+	N_{f,swt} = 1.68 \cdot 10^{5} ciclos
 \end{gather*}
-Es decir, al utilizar el parámetro de ambas ecuaciones es posible esperar una vida a fatiga finita entre las combinaciones n$^{\circ}$ 173 y 201. Sin embargo, la fatiga al ser un fenómeno con altas fluctuaciones en sus los ensayos realizados, es posible obtener vida finita incluso a cargas menores. En la sección \textcolor{red}{AÑADIR TABLA B4 Y REFERENCIA CORRESPONDIENTE} se encuentra la vida a fatiga esperada bajo el criterio de Goodman y SWT para las combinaciones 140 hasta 201.
+Es decir, al utilizar el parámetro de ambas ecuaciones es posible esperar una vida a fatiga finita entre las combinaciones n$^{\circ}$ 173 y 201. Sin embargo, la fatiga al ser un fenómeno con altas fluctuaciones en sus los ensayos realizados, es posible obtener vida finita incluso a cargas menores. En la sección \ref{sec:anexob4} se encuentra la vida a fatiga esperada bajo el criterio de Goodman y SWT para las combinaciones 140 hasta 201. De manera complementaria, la fig. \ref{fig:vf_swtgd} muestra la curva de los resultados obtenidos y la tabla \ref{tab:res_vf} muestra ciertos puntos de la vida a fatiga.
+
+\begin{table}[]
+\centering
+\begin{tabular}{@{}cccccc@{}}
+\toprule
+\begin{tabular}[c]{@{}c@{}}N$^{\circ}$ \\ Combinación\end{tabular} & $N_{f,g}$        & $N_{f,swt}$      & $\sigma_{max}$ {[}MPa{]} & $f_{a}$ {[}N{]} & $f_{max}$ {[}N{]} \\ \midrule
+$201$                                                              & $1.69\cdot 10^5$ & $1.68\cdot 10^5$ & $203.13$                 & $284.476$       & $296.914$         \\
+$185$                                                              & $5.27\cdot 10^5$ & $5.10\cdot 10^5$ & $177.39$                 & $246.876$       & $259.314$         \\
+$176$                                                              & $1.08\cdot 10^6$ & $1.08\cdot 10^6$ & $162.94$                 & $225.761$       & $238.199$         \\
+$155$                                                              & $5.74\cdot 10^6$ & $5.19\cdot 10^6$ & $133.98$                 & $183.424$       & $195.862$         \\
+$142$                                                              & $1.16\cdot 10^7$ & $1.02\cdot 10^7$ & $123.5$                  & $168.114$       & $180.552$         \\
+$140$                                                              & $1.30\cdot 10^7$ & $1.14\cdot 10^7$ & $121.9$                  & $165.779$       & $178.217$         \\ \bottomrule
+\end{tabular}
+\caption{Resultados de vida a fatiga para distintas combinaciones de contrapesos.}
+\label{tab:res_vf}
+\end{table}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{Imagenes/vidafat_swt_gd.pdf}
+\caption{Curva semilogaritmica $S$-$N$ con la vida a fatiga obtenida por medio de la relación de Goodman y SWT para los esfurezos obtenidos mediante las combinaciones 140 hasta 201.}
+\label{fig:vf_swtgd}
+\end{figure}
 
 %Sin embargo, no es posible dilucidar la precisión ni el error, tanto en el modelo como en la información original, debido a la imposibilidad de realizar ensayos de fatiga que nos permitan esclarecer la validez ambos métodos.
 
 \subsection{Corroboración de la vida a fatiga y su estimación a partir de la carga alternante y media.}
 
-A modo de corroboración de la vida a fatiga obtenida, se realizarán cálculos analíticos del esfuerzo producido sobre la probeta a partir de las ecuaciones de una viga en flexión y vida a fatiga con las relaciones de Goodman y SWT.
+A modo de corroborar la vida a fatiga obtenida, se realizarán cálculos analíticos del esfuerzo producido sobre la probeta a partir de las ecuaciones de una viga en flexión y vida a fatiga con las relaciones de Goodman y SWT.
 
 Para esto se definirá el esfuerzo en flexión de la probeta como:
 \begin{equation}
-	\sigma_f = \frac{M_f \cdot c}{I} = \frac{32 f\cdot L'}{\pi \cdot d^^3}
+	\sigma_f = \frac{M_f \cdot c}{I} = \frac{32 f\cdot L'}{\pi \cdot d^3}
 \end{equation}  
 
-Donde $L' = 38.83$ mm corresponde a la distancia entre el lado empotrado de la probeta y la aplicación de la fuerza, $d$ el diámetro de la probeta y $f$ la fuerza que se aplicará sobre la probeta. De esta forma podemos definir que el esfuerzo sobre la probeta será aproximadamente:
+Donde $L' = 38.83$ mm corresponde a la distancia entre el lado empotrado de la probeta y la aplicación de la fuerza, $d$ el diámetro de la probeta y $f$ la fuerza que se aplicará sobre la probeta, como se muestra en la fig. \ref{fig:prob_vf}. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\linewidth, trim={-2cm -1cm -2cm 0cm}, clip]{Imagenes/probeta_carga.pdf}
+\caption{Diagrama de las consideraciones utilizadas en la probeta para el cálculo del momento y el esfuerzo flector.}
+\label{fig:prob_vf}
+\end{figure}
+
+De esta forma podemos definir que el esfuerzo sobre la probeta será:
 \begin{equation}
 	\sigma = \alpha \cdot f
 \end{equation}
 Donde $\alpha = 0.8939$ [1/mm$^2$]. Además, la carga media debe ser constante al realizar un ensayo de fatiga, por ende, se puede establecer una relación entre la carga alternante y la carga media que soportará la probeta:
-\begin{equation}
+\begin{equation} \label{eq:fa_bfm}
 	f_a = \beta \cdot f_m
 \end{equation}
-Por lo tanto, se estimará la vida a fatiga de la probeta utilizando el esfuerzo equivalente proveniente de (a) la ecuación de Goodman normalizada y (b) la relación SWT. Al escribir ambas ecuaciones en términos de las fuerzas, se obtiene:
+De esta forma, se estimará la vida a fatiga de la probeta utilizando el esfuerzo equivalente proveniente de la ec. \ref{eq:sn_goodman} de Goodman normalizada ($\sigma_{eq,g}$) y la ec. \ref{eq:sn_swt} de la relación de SWT ($\sigma_{eq,swt}$) . Al escribir ambas relaciones en términos de las fuerzas se obtienen las ecuaciones \ref{eq:eq_good} y \ref{eq:eq_swt}, respectivamente:
 \begin{subequations}
-\begin{align}
-	\sigma_{eq} &= \frac{\alpha \cdot \beta \cdot f_m}{\left(1 - \frac{\alpha \cdot f_m}{S_u}\right)} \\
-	\sigma_{eq} &= \left[ \alpha^2 \cdot \beta \cdot f_m^2 (1 + \beta)\right]^{1/2}
-\end{align}
+\begin{gather}
+	\sigma_{eq,g} = \frac{\alpha \cdot \beta \cdot f_m}{\left(1 - \frac{\alpha \cdot f_m}{S_u}\right)} \label{eq:eq_good} \\[10pt]
+	\sigma_{eq,swt} = \left[ \alpha^2 \cdot \beta \cdot f_m^2 (1 + \beta)\right]^{1/2} \label{eq:eq_swt}
+\end{gather}
 \end{subequations}
 
 %\begin{gather}
@@ -784,15 +816,41 @@ Por lo tanto, se estimará la vida a fatiga de la probeta utilizando el esfuerzo
 %	\sigma_{eq} = \left[ \alpha^2 \cdot \beta \cdot f_m^2 (1 + \beta)\right]^{1/2}
 %\end{gather}
  
-En consecuancia, la vida a fatiga expresada en términos de la carga media y el factor $\beta$ para las relación de Goodman ($N_{f,g}$) y SWT ($N_{f,swt}$):
+En consecuencia, la vida a fatiga expresada en términos de la carga media y el factor $\beta$ para las relación de Goodman ($N_{f,g}$) y SWT ($N_{f,swt}$):
 \begin{subequations}
-\begin{align}
-	N_{f,g} &= \frac{1}{2} \left[\frac{\alpha \cdot \beta \cdot f_m}{\sigma_f' \cdot \left(1 - \frac{\alpha \cdot f_m}{S_u}\right)}\right]^{1/b} \\
-	N_{f,swt} &= \frac{1}{2}\left[\frac{\left[ \alpha^2 \cdot \beta \cdot f_m^2 (1 + \beta)\right]^{1/2}}{\sigma_f'}\right]^{1/b}
-\end{align}
+\begin{gather}
+	N_{f,g} = \frac{1}{2} \left[\frac{\alpha \cdot \beta \cdot f_m}{\sigma_f' \cdot \left(1 - \frac{\alpha \cdot f_m}{S_u}\right)}\right]^{1/b} \\[10pt]
+	N_{f,swt} = \frac{1}{2}\left[\frac{\left[ \alpha^2 \cdot \beta \cdot f_m^2 (1 + \beta)\right]^{1/2}}{\sigma_f'}\right]^{1/b}
+\end{gather}
 \end{subequations}
 
-%\begin{gather}
-%	N_f = \frac{1}{2} \left[\frac{\alpha \cdot \beta \cdot f_m}{\sigma_f' \cdot \left(1 - \frac{\alpha \cdot f_m}{S_u}\right)}\right]^{1/b} \\
-%	N_f = \frac{1}{2}\left[\frac{\left[ \alpha^2 \cdot \beta \cdot f_m^2 (1 + \beta)\right]^{1/2}}{\sigma_f'}\right]^{1(b}
-%\end{gather}
+Así, ambas ecuaciones se pueden resolver para distintos valores de vida a fatiga en conjunto a la ec. \ref{eq:fa_bfm}. Los valores de las distintas constantes son:
+\begin{multicols}{2}
+\begin{itemize*}
+	\item $\alpha = 0.8939\:$ [1/mm$^2$]
+	\item $f_m = 12.438\:$ [N]
+	\item $\sigma'_f = 970.45\:$ [MPa]
+	\item $S_u = 418.5\:$ [MPa]
+	\item $b = -0.12467\:$ [-]
+\end{itemize*}
+\end{multicols}
+
+Finalmente, al reemplazar y resolver ambas ecuaciones, se obtienen los resultados expuestos en la tabla \ref{tab:resfuerza_vf}.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}ccccccc@{}}
+\toprule
+       & \multicolumn{3}{c}{Goodman}                  & \multicolumn{3}{c}{SWT}                      \\ \cmidrule(l){2-7} 
+$N_f$  & $\beta$  & $f_a$ {[}N{]} & $f_{max}$ {[}N{]} & $\beta$  & $f_a$ {[}N{]} & $f_{max}$ {[}N{]} \\ \midrule
+$10^4$ & $24.719$ & $307.454$     & $319.892$         & $24.898$ & $309.688$     & $322.126$         \\
+$10^5$ & $18.550$ & $230.733$     & $243.171$         & $18.563$ & $230.893$     & $243.331$         \\
+$10^6$ & $13.922$ & $173.157$     & $185.595$         & $13.810$ & $171.773$     & $184.210$         \\
+$10^7$ & $10.447$ & $129.948$     & $142.386$         & $10.244$ & $127.421$     & $139.859$         \\ \bottomrule
+\end{tabular}
+\caption{Fuerza alternante, máxima y el coeficiente $\beta$ obtenido para distintos valores de vida a fatiga para la relación de Goodman y SWT.}
+\label{tab:resfuerza_vf}
+\end{table}
+
+Al comparar los resultados de las tablas \ref{tab:res_vf} y \ref{tab:resfuerza_vf} se aprecia que existe una diferencia entre ambos resultados, sin embargo, el orden de magnitud de los resultados es cercano y nos permite corroborar los datos mostrados en la tabla \ref{sec:anexob4}. Por otro lado, al comparar los resultados de los métodos utilizados de Goodman y SWT, estos son bastante cercanos en sus límites de aplicación, es decir, entre $10^4$ y $10^7$ ciclos. A pesar de que la relación SWT es más conservadora que la relación de Goodman, la elección de uno por sobre otro no afecta considerablemente la vida a fatiga esperable al encontrarse ambos métodos siempre en el mismo orden de magnitud. Finalmente, es necesario realizar una validación experimental que permita contrastar estos resultados y, de esta manera, conocer el error de la metodología utilizada, como también lograr identificar aquellos elementos que permitan realizar predicciones más precisas.
+

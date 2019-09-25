@@ -110,11 +110,12 @@
 \BOOKMARK [1][-]{section.Alph2.1}{Tabla de cargas original}{appendix.Alph2}% 110
 \BOOKMARK [1][-]{section.Alph2.2}{Tabla de cargas propuesta}{appendix.Alph2}% 111
 \BOOKMARK [1][-]{section.Alph2.3}{Tabla de cargas de la simulaci\363n elasto-pl\341stica}{appendix.Alph2}% 112
-\BOOKMARK [0][-]{appendix.Alph3}{Solver, funci\363n y scripts para la resoluci\363n del modelo del sistema en MATLAB}{}% 113
-\BOOKMARK [1][-]{section.Alph3.1}{Soluci\363n para un caso particular}{appendix.Alph3}% 114
-\BOOKMARK [2][-]{subsection.Alph3.1.1}{Funci\363n}{section.Alph3.1}% 115
-\BOOKMARK [2][-]{subsection.Alph3.1.2}{Solver}{section.Alph3.1}% 116
-\BOOKMARK [1][-]{section.Alph3.2}{Funci\363n de la aceleraci\363n, velocidad y posici\363n angular del disco}{appendix.Alph3}% 117
-\BOOKMARK [1][-]{section.Alph3.3}{Script para cargas m\341xima, media y alternante}{appendix.Alph3}% 118
-\BOOKMARK [0][-]{appendix.Alph4}{Planos de la estructura}{}% 119
-\BOOKMARK [0][-]{section*.191}{Bibliograf\355a}{}% 120
+\BOOKMARK [1][-]{section.Alph2.4}{Tabla de vida a fatiga esperada}{appendix.Alph2}% 113
+\BOOKMARK [0][-]{appendix.Alph3}{Solver, funci\363n y scripts para la resoluci\363n del modelo del sistema en MATLAB}{}% 114
+\BOOKMARK [1][-]{section.Alph3.1}{Soluci\363n para un caso particular}{appendix.Alph3}% 115
+\BOOKMARK [2][-]{subsection.Alph3.1.1}{Funci\363n}{section.Alph3.1}% 116
+\BOOKMARK [2][-]{subsection.Alph3.1.2}{Solver}{section.Alph3.1}% 117
+\BOOKMARK [1][-]{section.Alph3.2}{Funci\363n de la aceleraci\363n, velocidad y posici\363n angular del disco}{appendix.Alph3}% 118
+\BOOKMARK [1][-]{section.Alph3.3}{Script para cargas m\341xima, media y alternante}{appendix.Alph3}% 119
+\BOOKMARK [0][-]{appendix.Alph4}{Planos de la estructura}{}% 120
+\BOOKMARK [0][-]{section*.195}{Bibliograf\355a}{}% 121

@@ -38,7 +38,7 @@ L_p = 0.0724;        % Largo de probeta [m]
 g = 9.806;           % Gravedad [m/s2]
 
 k1 = 98890.45;       % Coef. de elasticidad de las barras de acero
-k2 = 1809049.41;     % Coef. de elasticidad de la probeta de acero
+k2 = 1.798e6;        % Coef. de elasticidad de la probeta de acero
 
 % Calculos
 Ma = m1 + m2 + Md;
@@ -87,7 +87,7 @@ opts = odeset('RelTol',1e-8,'AbsTol',1e-8);
 
 % Valores auxiliares
 l2 = 0.090163;				
-k2 = 1809049.41;			
+k2 = 1.798e6;			
 
 % Fuerza sobre la probeta
 F2 = (x(:,1)+l2*x(:,3))*k2;						
@@ -157,7 +157,7 @@ for i = 1:1:length(M)
     laux = length(tp);
         
     l2 = 0.090163;
-    k2 = 1809049.41;
+    k2 = 1.798e6;
     l1 = 0.110337;
         
     dy = x(:,1) + l2*x(:,3);

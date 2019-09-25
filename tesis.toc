@@ -148,53 +148,54 @@
 \contentsline {subsection}{\numberline {5.4.3}Determinaci\IeC {\'o}n $\mathbf {\Delta m}$ para la carga m\IeC {\'a}xima $\mathbf {F_{max,y}}$ y $\mathbf {F_{max,u}}$}{145}{subsection.5.4.3}
 \contentsline {subsection}{\numberline {5.4.4}Vida a fatiga para las cargas asociada a las combinaciones de contrapesos}{146}{subsection.5.4.4}
 \contentsline {subsection}{\numberline {5.4.5}Corroboraci\IeC {\'o}n de la vida a fatiga y su estimaci\IeC {\'o}n a partir de la carga alternante y media.}{147}{subsection.5.4.5}
-\contentsline {chapter}{\numberline {6}Conclusiones y trabajo futuro}{149}{chapter.6}
-\contentsline {section}{\numberline {6.1}Conclusiones}{149}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Respecto a la m\IeC {\'a}quina de fatiga}{149}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Sobre la estructura}{150}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Comportamiento del modelo de vibraci\IeC {\'o}n}{150}{subsection.6.1.3}
-\contentsline {subsection}{\numberline {6.1.4}En relaci\IeC {\'o}n a las simulaciones}{151}{subsection.6.1.4}
-\contentsline {section}{\numberline {6.2}Trabajo futuro}{153}{section.6.2}
-\contentsline {chapter}{\numberline {A}Norma de c\IeC {\'a}lculo en madera - NCh1198}{154}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Propiedades de la madera y factores de modificaci\IeC {\'o}n}{154}{section.Alph1.1}
-\contentsline {subsection}{\numberline {A.1.1}Contenido de humedad}{154}{subsection.Alph1.1.1}
-\contentsline {subsection}{\numberline {A.1.2}Densidad}{155}{subsection.Alph1.1.2}
-\contentsline {subsection}{\numberline {A.1.3}Tensiones admisibles y m\IeC {\'o}dulo de elasticidad}{156}{subsection.Alph1.1.3}
-\contentsline {subsection}{\numberline {A.1.4}Factores de modificaci\IeC {\'o}n}{156}{subsection.Alph1.1.4}
-\contentsline {section}{\numberline {A.2}Dise\IeC {\~n}o de piezas}{156}{section.Alph1.2}
-\contentsline {subsection}{\numberline {A.2.1}Flexi\IeC {\'o}n}{157}{subsection.Alph1.2.1}
-\contentsline {subsubsection}{Factor de modificaci\IeC {\'o}n por altura, $K_{hf}.$}{157}{section*.171}
-\contentsline {subsubsection}{Factor de modificaci\IeC {\'o}n por volcamiento, $K_V.$}{158}{section*.172}
-\contentsline {subsection}{\numberline {A.2.2}Cizalle en vigas simples}{158}{subsection.Alph1.2.2}
-\contentsline {subsection}{\numberline {A.2.3}Compresi\IeC {\'o}n paralela a la fibra}{159}{subsection.Alph1.2.3}
-\contentsline {subsection}{\numberline {A.2.4}Compresi\IeC {\'o}n normal a la fibra}{160}{subsection.Alph1.2.4}
-\contentsline {section}{\numberline {A.3}Nomenclatura y tipos de madera}{160}{section.Alph1.3}
-\contentsline {section}{\numberline {A.4}Uniones en la madera estructural}{162}{section.Alph1.4}
-\contentsline {subsection}{\numberline {A.4.1}Generalidades}{162}{subsection.Alph1.4.1}
-\contentsline {subsection}{\numberline {A.4.2}Verificaciones tensionales}{164}{subsection.Alph1.4.2}
-\contentsline {subsubsection}{Secci\IeC {\'o}n transversal neta}{164}{section*.176}
-\contentsline {subsubsection}{Tensiones de cizalle}{164}{section*.177}
-\contentsline {subsection}{\numberline {A.4.3}N\IeC {\'u}mero de elementos de uni\IeC {\'o}n}{167}{subsection.Alph1.4.3}
-\contentsline {subsubsection}{Carga admisible y factor de modificaci\IeC {\'o}n por longitud de hilera}{167}{section*.179}
-\contentsline {subsection}{\numberline {A.4.4}Uniones con perno}{167}{subsection.Alph1.4.4}
-\contentsline {subsubsection}{Cargas admisibles para un perno}{168}{section*.180}
-\contentsline {subsubsection}{Espaciamientos m\IeC {\'\i }nimos para pernos}{170}{section*.182}
-\contentsline {subsection}{\numberline {A.4.5}Uniones con tirafondos}{172}{subsection.Alph1.4.5}
-\contentsline {subsubsection}{Perforaciones gu\IeC {\'\i }a}{173}{section*.185}
-\contentsline {subsubsection}{Arandelas}{173}{section*.186}
-\contentsline {subsubsection}{Solicitaciones de extracci\IeC {\'o}n lateral}{173}{section*.187}
-\contentsline {subsubsection}{Solicitaciones de extracci\IeC {\'o}n directa}{175}{section*.188}
-\contentsline {subsubsection}{Combinaci\IeC {\'o}n de solicitaciones de extracci\IeC {\'o}n directa y lateral}{175}{section*.189}
-\contentsline {subsubsection}{Espaciamiento}{175}{section*.190}
-\contentsline {chapter}{\numberline {B}Tablas de carga de la m\IeC {\'a}quina de fatiga}{176}{appendix.Alph2}
-\contentsline {section}{\numberline {B.1}Tabla de cargas original}{176}{section.Alph2.1}
-\contentsline {section}{\numberline {B.2}Tabla de cargas propuesta}{179}{section.Alph2.2}
-\contentsline {section}{\numberline {B.3}Tabla de cargas de la simulaci\IeC {\'o}n elasto-pl\IeC {\'a}stica}{183}{section.Alph2.3}
-\contentsline {chapter}{\numberline {C}Solver, funci\IeC {\'o}n y scripts para la resoluci\IeC {\'o}n del modelo del sistema en MATLAB}{185}{appendix.Alph3}
-\contentsline {section}{\numberline {C.1}Soluci\IeC {\'o}n para un caso particular}{185}{section.Alph3.1}
-\contentsline {subsection}{\numberline {C.1.1}Funci\IeC {\'o}n}{185}{subsection.Alph3.1.1}
-\contentsline {subsection}{\numberline {C.1.2}Solver}{187}{subsection.Alph3.1.2}
-\contentsline {section}{\numberline {C.2}Funci\IeC {\'o}n de la aceleraci\IeC {\'o}n, velocidad y posici\IeC {\'o}n angular del disco}{187}{section.Alph3.2}
-\contentsline {section}{\numberline {C.3}Script para cargas m\IeC {\'a}xima, media y alternante}{188}{section.Alph3.3}
-\contentsline {chapter}{\numberline {D}Planos de la estructura}{191}{appendix.Alph4}
-\contentsline {chapter}{Bibliograf\'{\i }a}{196}{section*.191}
+\contentsline {chapter}{\numberline {6}Conclusiones y trabajo futuro}{150}{chapter.6}
+\contentsline {section}{\numberline {6.1}Conclusiones}{150}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Respecto a la m\IeC {\'a}quina de fatiga}{150}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Sobre la estructura}{151}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Comportamiento del modelo de vibraci\IeC {\'o}n}{151}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}En relaci\IeC {\'o}n a las simulaciones}{152}{subsection.6.1.4}
+\contentsline {section}{\numberline {6.2}Trabajo futuro}{154}{section.6.2}
+\contentsline {chapter}{\numberline {A}Norma de c\IeC {\'a}lculo en madera - NCh1198}{155}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Propiedades de la madera y factores de modificaci\IeC {\'o}n}{155}{section.Alph1.1}
+\contentsline {subsection}{\numberline {A.1.1}Contenido de humedad}{155}{subsection.Alph1.1.1}
+\contentsline {subsection}{\numberline {A.1.2}Densidad}{156}{subsection.Alph1.1.2}
+\contentsline {subsection}{\numberline {A.1.3}Tensiones admisibles y m\IeC {\'o}dulo de elasticidad}{157}{subsection.Alph1.1.3}
+\contentsline {subsection}{\numberline {A.1.4}Factores de modificaci\IeC {\'o}n}{157}{subsection.Alph1.1.4}
+\contentsline {section}{\numberline {A.2}Dise\IeC {\~n}o de piezas}{157}{section.Alph1.2}
+\contentsline {subsection}{\numberline {A.2.1}Flexi\IeC {\'o}n}{158}{subsection.Alph1.2.1}
+\contentsline {subsubsection}{Factor de modificaci\IeC {\'o}n por altura, $K_{hf}.$}{158}{section*.175}
+\contentsline {subsubsection}{Factor de modificaci\IeC {\'o}n por volcamiento, $K_V.$}{159}{section*.176}
+\contentsline {subsection}{\numberline {A.2.2}Cizalle en vigas simples}{159}{subsection.Alph1.2.2}
+\contentsline {subsection}{\numberline {A.2.3}Compresi\IeC {\'o}n paralela a la fibra}{160}{subsection.Alph1.2.3}
+\contentsline {subsection}{\numberline {A.2.4}Compresi\IeC {\'o}n normal a la fibra}{161}{subsection.Alph1.2.4}
+\contentsline {section}{\numberline {A.3}Nomenclatura y tipos de madera}{161}{section.Alph1.3}
+\contentsline {section}{\numberline {A.4}Uniones en la madera estructural}{163}{section.Alph1.4}
+\contentsline {subsection}{\numberline {A.4.1}Generalidades}{163}{subsection.Alph1.4.1}
+\contentsline {subsection}{\numberline {A.4.2}Verificaciones tensionales}{165}{subsection.Alph1.4.2}
+\contentsline {subsubsection}{Secci\IeC {\'o}n transversal neta}{165}{section*.180}
+\contentsline {subsubsection}{Tensiones de cizalle}{165}{section*.181}
+\contentsline {subsection}{\numberline {A.4.3}N\IeC {\'u}mero de elementos de uni\IeC {\'o}n}{168}{subsection.Alph1.4.3}
+\contentsline {subsubsection}{Carga admisible y factor de modificaci\IeC {\'o}n por longitud de hilera}{168}{section*.183}
+\contentsline {subsection}{\numberline {A.4.4}Uniones con perno}{168}{subsection.Alph1.4.4}
+\contentsline {subsubsection}{Cargas admisibles para un perno}{169}{section*.184}
+\contentsline {subsubsection}{Espaciamientos m\IeC {\'\i }nimos para pernos}{171}{section*.186}
+\contentsline {subsection}{\numberline {A.4.5}Uniones con tirafondos}{173}{subsection.Alph1.4.5}
+\contentsline {subsubsection}{Perforaciones gu\IeC {\'\i }a}{174}{section*.189}
+\contentsline {subsubsection}{Arandelas}{174}{section*.190}
+\contentsline {subsubsection}{Solicitaciones de extracci\IeC {\'o}n lateral}{174}{section*.191}
+\contentsline {subsubsection}{Solicitaciones de extracci\IeC {\'o}n directa}{176}{section*.192}
+\contentsline {subsubsection}{Combinaci\IeC {\'o}n de solicitaciones de extracci\IeC {\'o}n directa y lateral}{176}{section*.193}
+\contentsline {subsubsection}{Espaciamiento}{176}{section*.194}
+\contentsline {chapter}{\numberline {B}Tablas de carga de la m\IeC {\'a}quina de fatiga}{177}{appendix.Alph2}
+\contentsline {section}{\numberline {B.1}Tabla de cargas original}{177}{section.Alph2.1}
+\contentsline {section}{\numberline {B.2}Tabla de cargas propuesta}{180}{section.Alph2.2}
+\contentsline {section}{\numberline {B.3}Tabla de cargas de la simulaci\IeC {\'o}n elasto-pl\IeC {\'a}stica}{184}{section.Alph2.3}
+\contentsline {section}{\numberline {B.4}Tabla de vida a fatiga esperada}{186}{section.Alph2.4}
+\contentsline {chapter}{\numberline {C}Solver, funci\IeC {\'o}n y scripts para la resoluci\IeC {\'o}n del modelo del sistema en MATLAB}{187}{appendix.Alph3}
+\contentsline {section}{\numberline {C.1}Soluci\IeC {\'o}n para un caso particular}{187}{section.Alph3.1}
+\contentsline {subsection}{\numberline {C.1.1}Funci\IeC {\'o}n}{187}{subsection.Alph3.1.1}
+\contentsline {subsection}{\numberline {C.1.2}Solver}{189}{subsection.Alph3.1.2}
+\contentsline {section}{\numberline {C.2}Funci\IeC {\'o}n de la aceleraci\IeC {\'o}n, velocidad y posici\IeC {\'o}n angular del disco}{189}{section.Alph3.2}
+\contentsline {section}{\numberline {C.3}Script para cargas m\IeC {\'a}xima, media y alternante}{190}{section.Alph3.3}
+\contentsline {chapter}{\numberline {D}Planos de la estructura}{193}{appendix.Alph4}
+\contentsline {chapter}{Bibliograf\'{\i }a}{198}{section*.195}
