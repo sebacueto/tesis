@@ -507,7 +507,7 @@ $F_{max,201}$ & $296.914$                          & $-0.16969$                 
 $F_m$         & $12.438$                           & $-0.0071$                                                               & $9.124$                 & $4.6315$               & $-9.4519$              & $1.9199$              \\ \bottomrule
 \end{tabular}%
 }
-\caption{Carga, deformación y esfuerzos obtenidos por medio de la simulación para la combinación n$^{\circ}$ 1, 100 y 201, además de los esfuerzos provocados por la carga media.}
+\caption{Carga, deformación y esfuerzos máximos obtenidos por medio de la simulación para la combinación n$^{\circ}$ 1, 100 y 201, además de los esfuerzos provocados por la carga media. La deformación en el eje $y$ corresponde al total de la probeta. Los esfuerzos $\sigma_{vm}$, $\tau_{abs}$ y $\sigma_x$ corresponden al punto $R$ y $\tau_{xy}$ al punto $Q$, segun la fig. \ref{fig:diag_pqr2}.}
 \label{tab:res_esf}
 \end{table}
 
@@ -772,9 +772,9 @@ $140$                                                              & $1.30\cdot 
 
 %Sin embargo, no es posible dilucidar la precisión ni el error, tanto en el modelo como en la información original, debido a la imposibilidad de realizar ensayos de fatiga que nos permitan esclarecer la validez ambos métodos.
 
-\subsection{Corroboración de la vida a fatiga y su estimación a partir de la carga alternante y media.}
+\subsection{Verificación de la vida a fatiga y su estimación a partir de la carga alternante y media.}
 
-A modo de corroborar la vida a fatiga obtenida, se realizarán cálculos analíticos del esfuerzo producido sobre la probeta a partir de las ecuaciones de una viga en flexión y vida a fatiga con las relaciones de Goodman y SWT.
+A modo de verificar la vida a fatiga obtenida, se realizarán cálculos analíticos del esfuerzo producido sobre la probeta a partir de las ecuaciones de una viga en flexión y vida a fatiga con las relaciones de Goodman y SWT.
 
 Para esto se definirá el esfuerzo en flexión de la probeta como:
 \begin{equation}
@@ -792,7 +792,7 @@ Donde $L' = 38.83$ mm corresponde a la distancia entre el lado empotrado de la p
 
 De esta forma podemos definir que el esfuerzo sobre la probeta será:
 \begin{equation}
-	\sigma = \alpha \cdot f
+	\sigma_f = \alpha \cdot f
 \end{equation}
 Donde $\alpha = 0.8939$ [1/mm$^2$]. Además, la carga media debe ser constante al realizar un ensayo de fatiga, por ende, se puede establecer una relación entre la carga alternante y la carga media que soportará la probeta:
 \begin{equation} \label{eq:fa_bfm}
