@@ -63,6 +63,7 @@ Esta tabla, con 3 columnas de información como se ve en el anexo \ref{sec:anexo
 
 \begin{table}[h]
 \centering
+\caption{Tabla de cargas modificada, mostrando el peso de cada combinación, su diferencia y el total.}
 \begin{tabular}{@{}cclllll@{}}
 \toprule
 $\sigma \left[\frac{\text{kg}_f}{\text{cm}^2}\right]$ & {$\tau \left[\frac{\text{kg}_f}{\text{cm}^2}\right]$} & Combinación     & $m_1$ {[}g{]} & $m_2$ {[}g{]} & $\Delta m$ {[}g{]} & $m_{total}$ {[}g{]} \\ \midrule
@@ -71,7 +72,6 @@ $\sigma \left[\frac{\text{kg}_f}{\text{cm}^2}\right]$ & {$\tau \left[\frac{\text
 120                                                  & 60                                                                    & (5) - (4+2+3)   & 30,9199       & 29,7489       & 1,171              & 60,6688             \\
 160                                                  & 80                                                                    & (2) - (1)       & 2,2969        & 0,7582        & 1,5387             & 3,0551              \\ \bottomrule
 \end{tabular}
-\caption{Tabla de cargas modificada, mostrando el peso de cada combinación, su diferencia y el total.}
 \label{tab:ejemplo_config}
 \end{table}
 
@@ -138,6 +138,7 @@ El sistema de transmisión está compuesto por el motor eléctrico, cuyas caract
 
 \begin{table}[h]
 \centering
+\caption{Datos del sistema de transmisión}
 \begin{tabular}{@{}lr@{}}
 \toprule
 Características          & Valor   			\\ \midrule
@@ -148,7 +149,6 @@ Ancho correa             & 10 mm   			\\
 Longitud correa          & 1235 mm 			\\
 Configuración            & Cruzada 			\\ \bottomrule
 \end{tabular}
-\caption{Datos del sistema de transmisión}
 \label{tab:sist_transmision}
 \end{table}
 
@@ -156,6 +156,7 @@ Configuración            & Cruzada 			\\ \bottomrule
 El conjunto de barras en voladizo que sostienen el disco en empotrado-libre, tienen medidas levemente distintas para las superiores respecto a las inferiores, separadas por una distancia de 32 mm. La tabla \ref{tab:medidas_barrasacero} muestra las medidas de cada una.
 \begin{table}[h]
 \centering
+\caption{Medidas de las vigas en voladizo según su posición}
 \begin{tabular}{@{}lcc@{}}
 \toprule
 Medida  & Barras superiores {[}mm{]} & Barras inferiores {[}mm{]} \\ \midrule
@@ -163,7 +164,6 @@ Espesor      & 5,7                        & 5,8                        \\
 Ancho        & 25,1                       & 25,2                       \\
 Largo        & 333                        & 333                        \\ \bottomrule
 \end{tabular}
-\caption{Medidas de las vigas en voladizo según su posición}
 \label{tab:medidas_barrasacero}
 \end{table}
 
@@ -187,6 +187,7 @@ En base a las características visuales y auditivas del disco, se cree que está
 La masa de cada contrapeso (fig. \ref{fig:contrapesos}) fue medida en el laboratorio de ingeniería metalúrgica con una balanza analítica.
 \begin{table}[H]
 \centering
+\caption{Masa de cada contrapeso utilizado}
 \begin{tabular}{@{}cccc@{}}
 \toprule
 Contrapeso & Masa {[}g{]}	& Diámetro {[}mm{]}	&	Espesor promedio {[}mm{]} \\ \midrule
@@ -196,7 +197,6 @@ Contrapeso & Masa {[}g{]}	& Diámetro {[}mm{]}	&	Espesor promedio {[}mm{]} \\ \m
 4          & 20,5979      	& 27,90				& 	5,00			 		  \\
 5          & 30,9199      	& 29,90				&	4,40			 		  \\ \bottomrule
 \end{tabular}
-\caption{Masa de cada contrapeso utilizado}
 \label{tab:masa_contrapesos}
 \end{table}
 
@@ -216,6 +216,7 @@ Como se señaló, el motor eléctrico con el que funciona la máquina de fatiga 
 
 \begin{table}[h]
 \centering
+\caption{Especificaciones del motor de la máquina de fatiga.}
 \begin{tabular}{ll}
 \hline
 Especificaciones Motor                            & Valor   				\\ \hline
@@ -225,7 +226,6 @@ Factor de potencia ($\cos \varphi$)				  & Sin información    		\\
 Potencia                                          & 100 {[}W{]}        		\\
 Velocidad                                         & 1500 {[}rev/min{]} 		\\ \hline
 \end{tabular}
-\caption{Especificaciones del motor de la máquina de fatiga.}
 \label{tab:motor_maq}
 \end{table}
  
@@ -258,8 +258,9 @@ El proceso de diseñar la estructura hasta su resultado final pasó por distinta
 \end{figure}
 
 La metodología de su diseño, se separará en las distintas etapas que se realizó y los requerimientos que surgieron a partir de estas. Finalmente, se realizó una simulación estática y modal para comparar los cálculos realizados y conocer su frecuencia natural, respectivamente.
+
 \subsection{Diseño de pletinas de acero}
-La estructura se diseño para que la conexión con la máquina de fatiga fuera a través de pletinas de acero, utilizando los pernos existentes. Las pletinas, a su vez , están conectadas mediante pernos a las vigas principales de madera de cada extremo. Para llevar acabo los cálculo, se hará como suposición que cada pletina esta con un empotramiento en cada extremo, con dos cargas distribuidas. La primera de ellas es el apoyo de la maquina sobre la pletina y, la segunda, el peso propio del acero. Por lo tanto, la fig. \ref{fig:diagcargas_viga_acero} muestra el diagrama de las cargas que actúan y las distancias a utilizar. 
+La estructura se diseño para que la conexión con la máquina de fatiga fuera a través de pletinas de acero, utilizando los pernos existentes. Las pletinas, a su vez , están conectadas mediante pernos a las vigas principales de madera de cada extremo. Para llevar acabo los cálculos, se hará como suposición que cada pletina esta con un empotramiento en cada extremo, con dos cargas distribuidas. La primera de ellas es el apoyo de la máquina sobre la pletina y, la segunda, el peso propio del acero. Por lo tanto, la fig. \ref{fig:diagcargas_viga_acero} muestra el diagrama de las cargas que actúan y las distancias a utilizar. 
 
 \begin{figure}[h]
 \centering
@@ -275,6 +276,7 @@ Por otro lado, al no conocerse la distribución de masa de la maquina de fatiga,
 Donde $m_{maq}$ es la masa estimada en la ec. \ref{eq:masa_maq}, multiplicada por 0,75 como factor de seguridad por la distribución irregular de peso de la máquina. Para obtener el esfuerzo máximo flector es necesario conocer la geometría de la viga, motivo por la cual se iteró entre las distintas opciones disponibles en el mercado de pletinas o barras planas de acero. Por razones estipuladas en la norma NCh 1198, la conexión entre la pletina de acero y la viga principal de madera se debe realizar con un mínimo de dos pernos, por lo tanto, se escogió el ancho máximo del mercado. Así, la tabla \ref{tab:dimycar_pletina} muestra las dimensiones de la pletina escogida.
 \begin{table}[h]
 \centering
+\caption{Dimensiones y características de la viga de acero}
 \begin{tabular}{@{}ll@{}}
 \toprule
 Características pletina			       			& Valor        \\ \midrule
@@ -283,7 +285,6 @@ Ancho ($b_p$) {[}mm{]}               		    & 100          \\
 Material    		                		    & A270ES	   \\
 Carga distribuida ($q_{ac}$) {[}kg/m{]}		    & 6,28         \\ \bottomrule
 \end{tabular}
-\caption{Dimensiones y características de la viga de acero}
 \label{tab:dimycar_pletina}
 \end{table}
 
@@ -334,6 +335,7 @@ Como se nombró anteriormente, la madera utilizada será pino oregón, el cual b
 
 \begin{table}[h]
 \centering
+\caption{Valores de la densidad normal y anhidra del pino oregón. $^{\dagger}$: Definido con el percentil 5\% de exclusión. \cite{nch1198}}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}ccccc@{}}
 \toprule
@@ -342,7 +344,6 @@ Como se nombró anteriormente, la madera utilizada será pino oregón, el cual b
 Pino oregón                                                                  & 410                                                             & 326                                                                          & 441                                                                 & 350                                                                          \\ \bottomrule
 \end{tabular}%
 }
-\caption{Valores de la densidad normal y anhidra del pino oregón. $^{\dagger}$: Definido con el percentil 5\% de exclusión. \cite{nch1198}}
 \label{tab:densidad_oregon}
 \end{table}
 
@@ -351,6 +352,7 @@ Para la determinación de estos valores es necesario catalogar el grado de calid
 
 \begin{table}[h]
 \centering
+\caption{Tensiones admisibles y módulo de elasticidad en flexión para madera de pino oregón según su clase estructural. \cite{nch1198}}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}ccccccc@{}}
 \toprule
@@ -358,7 +360,6 @@ Para la determinación de estos valores es necesario catalogar el grado de calid
 F8                                                          & 8,6 (MPa)                                               & 6,6 (MPa)                                                              & 4,1 (MPa)                                                            & 5,2 (MPa)                                                             & 0,86 (MPa)                                                 & 6,9 (GPa)                                                                          \\ \bottomrule
 \end{tabular}%
 }
-\caption{Tensiones admisibles y módulo de elasticidad en flexión para madera de pino oregón según su clase estructural. \cite{nch1198}}
 \label{tab:tadm_oregon}
 \end{table}
 
@@ -366,6 +367,7 @@ F8                                                          & 8,6 (MPa)         
 Dada las condiciones en las que trabajará la madera, se deben calcular dos factores de modificación que afectan de manera global a la madera. La modificación por contenido de humedad se calcula con un factor $\Delta R$ y por la diferencia entre la humedad de la madera y una humedad del 12\%, $\Delta H$. Considerando una humedad de la madera del 15\%, entonces los valores de $K_H$ para cada solicitación se muestran en la tabla \ref{tab:kh_oregon}.
 \begin{table}[h]
 \centering
+\caption{Valores del factor de modificación para el pino oregón.}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{ccccccc}
 \hline
@@ -373,7 +375,6 @@ Dada las condiciones en las que trabajará la madera, se deben calcular dos fact
 $K_H$                                                                           & 0,999385                                                & 0,999385                                                               & 0,999385                                                             & 0,99952                                                               & 0,999199                                                   & 0,999556                                                                           \\ \hline
 \end{tabular}%
 }
-\caption{Valores del factor de modificación para el pino oregón.}
 \label{tab:kh_oregon}
 \end{table}
 
@@ -399,11 +400,11 @@ Donde los valores obtenidos son:
 	\item $R_0 = Q = 795$ [N]
 	\item $M_0 = M_{max} = 122,26$ [Nm]
 \end{itemize*}
-Así, la tensión de trabajo $f_f$ se calcula según la ec. \ref{eq:f_f}, obteniendose el valor:
+Así, la tensión de trabajo $f_f$ se calcula según la ec. \ref{eq:f_f}, obteniéndose el valor:
 \begin{equation}
 	f_f = 0,551 \quad \text{(MPa)}
 \end{equation}
-De este modo, la tensión de diseño en la zona flexo-traccionada y flexo-comprimida que se calcula a partir de las ecuaciones \ref{eq:ft_dis} y \ref{eq:fv_dis}, respectivamente. Para la zona flexo-traccionada se debe calcular el factor de modificación por altura y para la flexo-traccionada el factor de modificación por volcamiento. El primero se obtiene con la ec. \ref{eq:khf}, obteniendose el valor de $K_{hf} = 0,916$. Para el factor de volcamiento, se deben verificar el caso que corresponde como se señala en el anexo \ref{ch:anexo_a}, el cual da un valor de $K_v=1$. Por lo tanto, el valor de $F_{ft,dis}$ y $F_{fv,dis}$ son:
+De este modo, la tensión de diseño en la zona flexo-traccionada y flexo-comprimida que se calcula a partir de las ecuaciones \ref{eq:ft_dis} y \ref{eq:fv_dis}, respectivamente. Para la zona flexo-traccionada se debe calcular el factor de modificación por altura y para la flexo-traccionada el factor de modificación por volcamiento. El primero se obtiene con la ec. \ref{eq:khf}, con un $K_{hf} = 0,916$. Para el factor de volcamiento, se deben verificar el caso que corresponde como se señala en el anexo \ref{ch:anexo_a}, el cual da un valor de $K_v=1$. Por lo tanto, el valor de $F_{ft,dis}$ y $F_{fv,dis}$ son:
 \begin{subequations}
 \begin{gather}
 	F_{ft,dis} = 7,08 \quad \text{(MPa)}\\
@@ -451,7 +452,7 @@ Para el segundo, el cálculo de la tensión de diseño dependerá de la inestabi
 	i = \sqrt{\frac{\bar{I}}{A}} = \sqrt{\frac{0,11^4}{12\cdot 0,11^2}} = 0,032 \: \text{(m)}\\
 	\lambda = \frac{l_p}{i} = 37,32 \: \text{(-)}
 \end{gather*}
-Como $\lambda > 5$, entonces la tensión de trabajo de compresión paralela se debe calcular según la ec. \ref{eq:cp_dislambda} y se debe evaluar el factor de modificación por esbeltez $K_{\lambda}$ a partir de la ec. \ref{eq:k_lambda}. El coeficiente de proporcionalidad para una madera de grado n$^{\circ}$ 4 es $c = 0,8$ y el módulo de elástico de diseño es $E_{dis} = 6206,2\: \text{(MPa)}$. Por otro lado, la tensión de diseño $F_{cp,dis}$ se obtiene a partir de los factores de modificación $K_D$ y $K_H$ y la ecuación \ref{eq:cp_dis}.
+Como $\lambda > 5$, entonces la tensión de trabajo de compresión paralela se debe calcular según la ec. \ref{eq:cp_dislambda} y se debe evaluar el factor de modificación por esbeltez $K_{\lambda}$ a partir de la ec. \ref{eq:k_lambda}. El coeficiente de proporcionalidad para una madera de grado n$^{\circ}$ 4 es $c = 0,8$ y el módulo de elástico de diseño es $E_{dis} = 6,206\: \text{(GPa)}$. Por otro lado, la tensión de diseño $F_{cp,dis}$ se obtiene a partir de los factores de modificación $K_D$ y $K_H$ y la ecuación \ref{eq:cp_dis}.
 \begin{equation}
 	F_{cp,dis} = 5,936 \quad \text{(MPa)}
 \end{equation}
@@ -461,7 +462,7 @@ Con esto, los valores de las constantes serán $A = 2,852$ (-), $B = 3,754$ (-) 
 \end{equation}
 
 \subsubsection{Viga transversal, C}
-Para esta viga se realizará el mismo procedimiento que para la viga A, sin embargo, las solicitaciones son menores y la única carga a la que está sometida es la de su propio peso. Las dimensiones nominales de la tabla son 1x8'' cepillada, es decir, según las tablas \ref{tab:anchodim} y \ref{tab:espdim} son de 19x185 mm y su largo es de 800 milímetro. La carga distribuida de su peso es $q_{tabla}=1,5$ [kg/m].
+Para esta viga se realizará el mismo procedimiento que para la viga A, sin embargo, las solicitaciones son menores y la única carga a la que está sometida es la de su propio peso. Las dimensiones nominales de la tabla son 1x8'' cepillada, es decir, según las tablas \ref{tab:anchodim} y \ref{tab:espdim} son de 19x185 mm y su largo es de 800 mm. La carga distribuida de su peso es $q_{tabla}=1,5$ [kg/m].
 
 Debido a lo bajo de las solicitudes, las tensiones de trabajo en flexión son:
 \begin{equation}
@@ -488,7 +489,7 @@ Las uniones en madera se deben diseñar siguiendo las indicaciones establecidas 
 \subsubsection{Acero - madera}
 Para la unión entre la pletina de acero y la viga principal de madera, se utilizaron dos pernos de grado 2 de 5 \nicefrac{1}{2}'' de largo y  $1/4''$ de diámetro. Como se explica en la sección \ref{sec:union_perno}, el mínimo de pernos por unión debe ser dos, con la excepción de que el único perno no esté solicitado en un porcentaje superior al 50\% de su capacidad de diseño. La unión está compuesta por la pletina de acero, seguido por la viga de madera con la dirección de sus fibras normal a las solicitaciones y nuevamente una placa de acero. Finalmente, para el cálculo de la capacidad de carga admisible y tensión admisible de aplastamiento nominal, se recurrirá a las ecuaciones \ref{eq:padm_ad} y \ref{eq:f_ap}, respectivamente. 
 
-Para calcular la capacidad de carga admisible, $P_{ad}$, se utilizaron las indicaciones para cizalle simple, las cuales indican que se determina como el menor valor de la mitad de la carga admisible de cizalle doble entre una pieza central de espesor igual a la pieza más grande y una pieza central igual al doble del espesor de la pieza más delgada. Para este diseño el valor menor consiste en considerar el espesor central ficticio $e*$ como dos veces el espesor menor, es decir, el espesor lateral $e_l$, así el valor de esbeltez del perno es:  
+Para calcular la capacidad de carga admisible, $P_{ad}$, se utilizaron las indicaciones para cizalle simple mostradas en la sección 10.5.2.3 de la norma, las cuales indican que se determina como el menor valor de la mitad de la carga admisible de cizalle doble entre una pieza central de espesor igual a la pieza más grande y una pieza central igual al doble del espesor de la pieza más delgada. Para este diseño el valor menor consiste en considerar el espesor central ficticio $e*$ como dos veces el espesor menor, es decir, el espesor lateral $e_l$, así el valor de esbeltez del perno es:  
 \begin{equation*}
 	\lambda_u = \frac{2\cdot e*}{D} = \frac{2\cdot 8\, \text{mm}}{9,525\, \text{mm}} = 1,679\: \text{(-)}
 \end{equation*}
@@ -518,6 +519,7 @@ Existen distintos componentes de unión para la conexión de elementos de madera
 Las indicaciones para el cálculo, espaciamiento e instalación de los tirafondos se encuentran en la sección \ref{sec:tirafondos}. Al igual que el proceso de selección de vigas de madera, se iteró con distintas dimensiones de largo y diámetro. De esta manera, el tirafondo escogido fue de $1/4$ x 1\nicefrac{1}{2}'', lo cual se traduce a partir del anexo M de la norma en las medidas expuestas en la tabla \ref{tab:tirafondo}.
 \begin{table}[h]
 \centering
+\caption{Dimensiones del tirafondo utilizado}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}cccccl@{}}
 \toprule
@@ -525,11 +527,11 @@ Las indicaciones para el cálculo, espaciamiento e instalación de los tirafondo
 $1/4$ x 3\nicefrac{1}{2}''                                         & 6,4                                                                            & 4,4                                                                       & 51                                                                & 38                                                               & 4,8                                                            \\ \bottomrule
 \end{tabular}%
 }
-\caption{Dimensiones del tirafondo utilizado}
 \label{tab:tirafondo}
 \end{table}
 
 Para su instalación, la norma indica que es necesario realizar perforaciones guías, las cuales están en función de sus características. Así el agujero tendrá dimensiones para la zona del vástago y otra para la zona con rosca. Para la zona del vástago, el agujero deberá tener las dimensiones del diámetro nominal $D_v$ y el largo V. Para la segunda zona, la madera de pino oregón se categoriza en el grupo B según su densidad anhidra, a partir de la tabla 38 de la norma. Con esta información el largo del agujero debe ser de R - P  y el diámetro del entre el 60\% y el 70\% de $D_v$.
+
 \paragraph{Solicitaciones de extracción lateral}
 La carga admisible de extracción lateral se calcula según la ecuación \ref{eq:pel_ad}. El valor K se obtiene a partir de la tabla 39 de la norma dependiendo de si la madera utilizada es conífera o latifoliada y su densidad anhidra. El pino oregón es una madera conífera y, según su densidad, el valor de K es de 11,7. Así el valor obtenido es de $P_{el,ad} = 0,48$ (kN). Sin embargo, la norma establece tres condiciones que se deben cumplir para que la expresión \ref{eq:pel_ad} sea aplicable, de las cuales no se cumple que el espesor $e_L$ de la pieza lateral atravesada por el tirafondo sea igual a $3,5\cdot D$. Por esto se debe mayorar el valor de la carga admisible por factores de modificación que pueden penalizar o ayudar, dependiendo de la configuración de la unión.
 
@@ -543,7 +545,7 @@ De manera análoga, el factor se obtiene en la tabla 41 de al norma a partir de 
 Por último, este factor se obtiene directamente del diámetro nominal del tirafondo, a través de la tabla 42 de la norma. El valor corresponde a $K_{tD}=0,97$.
 \\
 
-Además de los factores de modificación expuestos, el eje del tirafondo se encuentra en dirección paralela a las fibras de la madera de la pieza principal, por lo tanto se debe multiplicar el valor de la carga admisibles por $\frac{2}{3}$. En conclusión, la carga admisible es igual a :
+Además de los factores de modificación expuestos, el eje del tirafondo se encuentra en dirección paralela a las fibras de la madera de la pieza principal, por lo tanto se debe multiplicar el valor de la carga admisible por $\frac{2}{3}$. En conclusión, la carga admisible es igual a :
 \begin{equation}
 	P_{el,ad} = \frac{2}{3}\cdot K_{te}\cdot K_{tv}\cdot K_{tD} \cdot K\cdot D^2\cdot = 391,966 \: \text{(N)}
 \end{equation}
@@ -778,13 +780,13 @@ Para las vigas en voladizo, se empotró el conjunto de las 4 vigas en un extremo
 La constante de rigidez de la probeta se obtuvo utilizando la misma metodología, empotrando un extremo de la probeta y cargando el extremo opuesto, para luego ajustar una curva de deformación versus carga aplicada. El procedimiento y la configuración usada en el software ANSYS corresponde a la utilizada en la sección \ref{sec:sim_probeta}.  Por el contrario, no se realizaron cálculos analíticos por la complejidad que existe en el área transversal de la probeta, la cual es variable. La tabla \ref{tab:k_valor} muestra los resultados de ambos métodos, sin embargo, los datos utilizados en el modelo corresponden a los obtenidos por simulación
 \begin{table}[h]
 \centering
+\caption{Valores calculados mediante un modelo de elementos finitos y por medio de la ec. \ref{eq:k_cantilever}, para obtener la rigidez de las vigas en voladizo y la probeta de acero.}
 \begin{tabular}{ccc}
 \hline
 Método & Barras en voladizo & Probeta \\ \hline
 Simulación & $9.889\cdot 10^4$ [N/m] & $1.798\cdot 10^6$ [N/m] \\
 Cálculo & $9.216\cdot 10^4$ [N/m] & -- \\ \hline
 \end{tabular}
-\caption{Valores calculados mediante un modelo de elementos finitos y por medio de la ec. \ref{eq:k_cantilever}, para obtener la rigidez de las vigas en voladizo y la probeta de acero.}
 \label{tab:k_valor}
 \end{table}
 
@@ -968,6 +970,7 @@ Sin embargo, debido a las características del modelo MISO, se deben utilizar ex
 Por último, para la deformación elástica se usará un modulo de elasticidad $E =$ 200 GPa, el esfuerzo de fluencia es $\sigma_y=$ 293,5 MPa y el esfuerzo último $\sigma_u =$ 418,5 MPa.
 \begin{table}[h]
 \centering
+\caption{Datos utilizados del ensayo de esfuerzo-deformación del acero AISI 1020 HR en el modelo MISO.}
 \begin{tabular}{@{}cc@{}}
 \toprule
 \begin{tabular}[c]{@{}c@{}}Deformación unitaria plástica real\\ $\tilde{\varepsilon}$ (-)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Esfuerzo real corregido\\ $\tilde{\sigma}_B$ (MPa)\end{tabular} \\ \midrule
@@ -982,7 +985,6 @@ Por último, para la deformación elástica se usará un modulo de elasticidad $
 0,9278 & 611,5 \\
 1,0877 & 649,1 \\ \bottomrule
 \end{tabular}
-\caption{Datos utilizados del ensayo de esfuerzo-deformación del acero AISI 1020 HR en el modelo MISO.}
 \label{tab:esfdef_util}
 \end{table}
 
@@ -1026,6 +1028,7 @@ Para obtener los resultados de una malla que se adaptara a los requisitos, se ut
 Con esta configuración la malla está compuesta por 951.151 nodos y 684.131 elementos. Los valores promedios de los parámetros que indican la calidad de la malla, expuestos en la sección \ref{sec:gen_malla}, se muestran en la tabla \ref{tab:cal_malla}.
 \begin{table}[h]
 \centering
+\caption{Valores promedios de los parámetros de calidad de la malla utilizada en la probeta.}
 \begin{tabular}{@{}lc@{}}
 \toprule
 Parámetro de calidad & Valor promedio \\ \midrule
@@ -1034,9 +1037,9 @@ Relación de aspecto & $1.817$ \\
 Calidad ortogonal & $0.772$ \\
 Oblicuidad & $0.22667$ \\ \bottomrule
 \end{tabular}
-\caption{Valores promedios de los parámetros de calidad de la malla utilizada en la probeta.}
 \label{tab:cal_malla}
 \end{table}
+
 %\begin{align*}
 %	\bullet \ &\text{Calidad del elemento} &=\quad	 &0.839 	\\
 %	\bullet \ &\text{Relación de aspecto}  &=\quad 	 &1,817 	\\
@@ -1096,9 +1099,9 @@ Estos valores muestran que la malla utilizada es aceptable. Al utilizar la tabla
 
 \subsection{Configuración de la simulación estática}
 \subsubsection{Condiciones de contorno}
-El doble empotramiento al cual está sometida la probeta se aplicará restringiendo el movimiento en cada cara de uno de sus extremos. Utilizando la fig, \ref{fig:cond_borde} como referencia, las caras amarilla se encuentran restringidas de desplazamiento en el eje normal a su plano. Así, ambas caras paralelas al plano $xz$ tienen una restricción de desplazamiento de $\Delta y = 0$, las caras del plano $xy$ están restringidas de desplazamiento en el eje $z$ con $\Delta z = 0$ y la cara posterior del plano $yz$ su desplazamiento es $\Delta x = 0$.
+El doble empotramiento al cual está sometida la probeta se aplicará restringiendo el movimiento en cada cara de uno de sus extremos. Utilizando la fig, \ref{fig:cond_borde} como referencia, las caras amarillas se encuentran restringidas de desplazamiento en el eje normal a su plano. Así, ambas caras paralelas al plano $xz$ tienen una restricción de desplazamiento de $\Delta y = 0$, las caras del plano $xy$ están restringidas de desplazamiento en el eje $z$ con $\Delta z = 0$ y la cara posterior del plano $yz$ su desplazamiento es $\Delta x = 0$.
 
-Por otro lado, el otro extremo empotrado se le aplicarán las cargas máximas que se obtuvieron del modelo del sistema vibratorio, $F_{max}$. Sin embargo, no se aplicará como una carga puntual, sino como una presión sobre la cara roja de la probeta, según la fig. \ref{fig:cond_borde}. Para esto, se transformará la carga puntual a presión utilizando la relación:
+Por otro lado, en el otro extremo empotrado se le aplicarán las cargas máximas que se obtuvieron del modelo del sistema vibratorio, $F_{max}$. Sin embargo, no se aplicará como una carga puntual, sino como una presión sobre la cara roja de la probeta, según la fig. \ref{fig:cond_borde}. Para esto, se transformará la carga puntual a presión utilizando la relación:
 \begin{equation}\label{eq:p_max}
 	P_{max} = \frac{F_{max}}{A_{cara,l}}
 \end{equation}

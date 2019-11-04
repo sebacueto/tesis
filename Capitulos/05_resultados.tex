@@ -3,9 +3,9 @@
 \section{Levantamiento de información}
 Por medio del levantamiento de información es posible hacer un pequeño análisis del estado actual y los datos obtenidos. Por un lado, la estructura actual responde a la necesidad de colocar la máquina en una ubicación transitoria, debido a los trabajos realizados en el piso del laboratorio durante el año 2012. Por lo mismo, no está diseñada para la operación de la máquina bajo ningún contexto por los peligros que conlleva. Aún cuando esta podría ser modificada, se desconocen las características y propiedades de la especie maderera con la que fue fabricada, lo que obliga a diseñar y construir un nuevo soporte para la máquina. 
 
-Por otra parte, la información obtenida de la máquina de fatiga da cuenta de tres puntos importantes. La antigüedad de sus componentes y la tecnología utilizada afecta directamente en su mantenimiento ante la dificultad de encontrar piezas de repuesto, debido a que las dimensiones de sus componentes, como la polea y la correa, se encuentran fuera de catálogo o de las dimensiones de fabricación de los proveedores. También la obsolescencia de la tecnología tienen incidencia, siendo difícil poder encontrar no sólo las piezas de repuesto, sino que también personas que estén técnicamente calificadas. En segundo lugar, la máquina fue fabricada con estándares o líneas de desarrollo propias de la época, como sería esperable, las cuales no evolucionaron en la misma dirección que los estándares actuales de ensayo a fatiga, dificultando la comparación de los resultados obtenidos. Finalmente, la robustez del diseño, la cual se puede apreciar fácilmente en la dimensiones de la estructura exterior de la máquina, tiene la dualidad de proveer un armazón macizo y duradero sobre el cual trabajar, por el contrario, resulta ser una estructura difícil de modificar por esta misma razón.
+Por otra parte, la información obtenida de la máquina de fatiga da cuenta de tres puntos importantes. La antigüedad de sus componentes y la tecnología utilizada afecta directamente en su mantenimiento ante la dificultad de encontrar piezas de repuesto, debido a que las dimensiones de sus componentes, como la polea y la correa, se encuentran fuera de catálogo o de las dimensiones de fabricación de los proveedores. También la obsolescencia de la tecnología tiene incidencia, siendo difícil poder encontrar no sólo las piezas de repuesto, sino que también personas que estén técnicamente calificadas. En segundo lugar, la máquina fue fabricada con estándares o líneas de desarrollo propias de la época, como sería esperable, las cuales no evolucionaron en la misma dirección que los estándares actuales de ensayo a fatiga, dificultando la comparación de los resultados obtenidos. Finalmente, la robustez del diseño, la cual se puede apreciar fácilmente en la dimensiones de la estructura exterior de la máquina, tiene la dualidad de proveer un armazón macizo y duradero sobre el cual trabajar, por el contrario, resulta ser una estructura difícil de modificar por esta misma razón.
 
-En lo relativo a la exactitud de los datos obtenidos, la imposibilidad de desarmar gran parte de la máquina afectaron la precisión de las mediciones realizadas, sobre todo en partes específicas. Así, las dimensiones y la geometría de las vigas en voladizo tuvieron que ser simplificadas ante la imposibilidad de tomar medidas en la unión barra-disco. Por la misma razón, la masa del disco desbalanceado, calculada a través de la deflexión de las vigas de acero en voladizo, incluye los errores de la medición anterior sumado a la masa de otros elemento que no son parte de la fuerza provocada por el desequilibrio del disco en rotación. Ante esto, surge la necesidad de poder desarmar la máquina para poder estudiarla con mayor detenimiento, obteniendo información que sea más precisa de sus elementos como también información útil para poder actualizar componentes que mejoren su desempeño y mantenibilidad. 
+En lo relativo a la exactitud de los datos obtenidos, la imposibilidad de desarmar gran parte de la máquina afectaron la precisión de las mediciones realizadas, sobre todo en partes específicas. Así, las dimensiones y la geometría de las vigas en voladizo tuvieron que ser simplificadas ante la imposibilidad de tomar medidas en la unión barra-disco. Por la misma razón, la masa del disco desbalanceado, calculada a través de la deflexión de las vigas de acero en voladizo, incluye los errores de la medición anterior sumado a la masa de otros elementos que no son parte de la fuerza provocada por el desequilibrio del disco en rotación. Ante esto, surge la necesidad de poder desarmar la máquina para poder estudiarla con mayor detenimiento, obteniendo información que sea más precisa de sus elementos como también información útil para poder actualizar componentes que mejoren su desempeño y mantenibilidad. 
  
 \section{Diseño de la estructura}
 \subsection{Diseño de pletinas de acero}
@@ -13,6 +13,7 @@ A partir de las ec. \ref{eq:reaccion_acero}, \ref{eq:mtofleca_acero} y \ref{eq:e
 
 \begin{table}[h]
 \centering
+\caption{Resultados y factor de seguridad para distintas configuraciones de pletinas de acero.}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}ccccccc@{}}
 \toprule
@@ -23,7 +24,6 @@ N$^{\circ}$ & Dimensiones {[}mm{]} & $\bar{I}$ {[}mm$^4${]} & $R_A$ {[}N{]} & $M
 4 & 100x8 & 4266,66 & 19,09 & 1,97 & 94,66 & 2,85 \\ \bottomrule
 \end{tabular}%
 }
-\caption{Resultados y factor de seguridad para distintas configuraciones de pletinas de acero.}
 \label{tab:itest_acero}
 \end{table}
 
@@ -31,6 +31,7 @@ Con esta información en consideración, se comprobará su comportamiento bajo l
 
 \begin{table}[h]
 \centering
+\caption{Resultados de esfuerzo alternante y factor de seguridad a fatiga para distintas configuraciones de pletinas de acero.}
 \begin{tabular}{@{}cccc@{}}
 \toprule
 N$^{\circ}$ & Dimensiones [mm] & $\sigma_{a,A}$ [MPa] & Factor de Seguridad [-] \\ \midrule
@@ -38,7 +39,6 @@ N$^{\circ}$ & Dimensiones [mm] & $\sigma_{a,A}$ [MPa] & Factor de Seguridad [-] 
 3 & 100x5 & 80,73 & 1,04 \\
 4 & 100x8 & 31,53 & 2,66 \\ \bottomrule
 \end{tabular}
-\caption{Resultados de esfuerzo alternante y factor de seguridad a fatiga para distintas configuraciones de pletinas de acero.}
 \label{tab:itfat_acero}
 \end{table}
 
@@ -50,6 +50,7 @@ Para este caso, los resultados se dividirán por cada uno de los componentes que
 \subsubsection{Viga A} Los cálculos de reacción y momento flector máximo se obtiene a través de las ecuaciones \ref{eq:reac_vigappal} y \ref{eq:mto_vigappal}. Así, los resultados obtenidos para la sección flexo-comprimida, flexo-traccionada y los esfuerzos cortantes son:
 \begin{table}[h]
 \centering
+\caption{Resultados obtenidos para la flexión y cizalle de la viga A.}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{ccccccccc}
 \hline
@@ -58,7 +59,6 @@ N$^{\circ}$ & Dimensiones [mm] & $R_o$ [N] & $M_o$ [Nm] & $f_f$ [MPa] & $F_{ft,d
 2 & 85x85 & 781,24 & 119,57 & 1,168 & 7,29 & 7,73 & 0,16 & 0,77 \\ \hline
 \end{tabular}%
 }
-\caption{Resultados obtenidos para la flexión y cizalle de la viga A.}
 \label{tab:res_viga_a1}
 \end{table}
 \\
@@ -66,13 +66,13 @@ En base a estos resultados, el factor de seguridad de cada formato es:
 
 \begin{table}[H]
 \centering
+\caption{Factores de seguridad en la viga A.}
 \begin{tabular}{@{}ccccl@{}}
 \toprule
 N$^{\circ}$ & Dimensiones [mm] & $FS_{ft}$ & $FS_{fv}$ & $FS_{cz}$ \\ \midrule
 1 & 110x110 & 12,85 & 14,03 & 7,84 \\
 2 & 85x85 & 6,24 & 6,62 & 4,77 \\ \bottomrule
 \end{tabular}
-\caption{Factores de seguridad en la viga A.}
 \label{tab:res_viga_a2}
 \end{table}
 
@@ -81,13 +81,13 @@ Esta viga se encuentra en compresión paralela a la fibra, al soportar toda la c
 
 \begin{table}[h]
 \centering
+\caption{Esfuerzos y factor de seguridad por compresión paralela en la viga B.}
 \begin{tabular}{@{}ccccccc@{}}
 \toprule
 N$^{\circ}$ & Dimensiones [mm] & $\lambda$ & $f_{cp}$ [MPa] & $F_{cp,dis}$ [MPa] & $F_{cp,\lambda,dis}$ [MPa] & $FS_{cp,\lambda}$ \\ \midrule
 1 & 110x110 & 37,32 & 0,0742 & 5,936 & 4,506 & 66,6 \\
 2 & 85x85 & 49,82 & 0,129 & 5,936 & 3,872 & 28,9 \\ \bottomrule
 \end{tabular}
-\caption{Esfuerzos y factor de seguridad por compresión paralela en la viga B.}
 \label{tab:res_viga_b}
 \end{table}
 
@@ -96,13 +96,13 @@ Como se señaló en metodología, la viga C no recibe mayores cargas, por lo tan
 
 \begin{table}[h]
 \centering
+\caption{Segundo momento de área y esfuerzos de carga y diseño en la viga C.}
 \begin{tabular}{@{}cclccc@{}}
 \toprule
 N$^{\circ}$ & Dimensiones & Estado & $\bar{I}$ [mm$^4$] & $f_f$ [kPa] & $F_f$ [MPa] \\ \midrule
 1 & 1x8'' & Cepillada & 1,0$\cdot 10^7$ & 3,804 & 3,925 \\
 2 & 2x8'' & Cepillada & 2,16$\cdot 10^7$ & 1,763 & 3,925 \\ \bottomrule
 \end{tabular}
-\caption{Segundo momento de área y esfuerzos de carga y diseño en la viga C.}
 \label{tab:res_viga_c}
 \end{table}
 
@@ -124,6 +124,7 @@ Al seleccionar el perno número 1, la tabla \ref{tab:res_seppernos} muestra las 
 
 \begin{table}[h]
 \centering
+\caption{Cargas admisibles y factor de seguridad para distintos pernos hexagonales.}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}cccccccc@{}}
 \toprule
@@ -133,18 +134,17 @@ $N^{\circ}$ & Diámetro [in] & $\lambda_u$ & $F_{ap}$ [MPa] & $P_{ad,simple}$ [M
 3 & $3/8$ & 1,68 & 3,40 & 259,24 & 2131,94 & Sí & 12,28 \\ \bottomrule
 \end{tabular}%
 }
-\caption{Cargas admisibles y factor de seguridad para distintos pernos hexagonales.}
 \label{tab:res_perno}
 \end{table}
 
 \begin{table}[h]
 \centering
+\caption{Separación del perno a borde cargado, descargado y entre pernos, a partir de su diámetro.}
 \begin{tabular}{@{}cccc@{}}
 \toprule
 Diámetro [in] & $S_{bcn}$ [mm] & $S_{bdn}$ [mm] & $S_p$ [mm] \\ \midrule
 $1/4$ & 25,4 & 12,7 & 44,45 \\ \bottomrule
 \end{tabular}
-\caption{Separación del perno a borde cargado, descargado y entre pernos, a partir de su diámetro.}
 \label{tab:res_seppernos}
 \end{table}
 
@@ -154,12 +154,12 @@ En el caso de los tirafondos, se fijará un diámetro de \nicefrac{1 }{ 4}'' par
 
 \begin{table}[h]
 \centering
+\caption{Espaciamiento entre los bordes cargado, descargado y entre tirafondos, para un diámetro de 1/4 de pulgada.}
 \begin{tabular}{@{}cccc@{}}
 \toprule
 Diámetro [in] & $S_{bcn}$ [mm] & $S_{bdn}$ [mm] & $S_p$ [mm] \\ \midrule
 $1/4$ & 25,6 & 12,8 & 44,8 \\ \bottomrule
 \end{tabular}
-\caption{Espaciamiento entre los bordes cargado, descargado y entre tirafondos, para un diámetro de 1/4 de pulgada.}
 \label{tab:res_septirafondo}
 \end{table}
 
@@ -167,6 +167,7 @@ Se calcularon distintas longitudes de tirafondos existentes en el mercado para s
 
 \begin{table}[h]
 \centering
+\caption{Esfuerzos admisibles y factor de seguridad para distintas longitudes de tirafondo.}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}ccccccc@{}}
 \toprule
@@ -176,7 +177,6 @@ N$^{\circ}$ & Largo [in] & \begin{tabular}[c]{@{}c@{}}Profundidad mínima\\ de p
 3 & 2 $1/2$ & Cumple & Cumple & 1452,58 & 15,52 & 3,87 \\ \bottomrule
 \end{tabular}%
 }
-\caption{Esfuerzos admisibles y factor de seguridad para distintas longitudes de tirafondo.}
 \label{tab:res_tirafondos}
 \end{table}
 
@@ -190,12 +190,12 @@ Al seleccionar y definir cada elemento de la estructura, se realizaron las simul
 
 \begin{table}[h]
 \centering
+\caption{Valores de la frecuencia natural de la estructura obtenidos por medio del análisis modal del software Inventor. }
 \begin{tabular}{@{}cccccccc@{}}
 \toprule
 N$^{\circ}$ &  $\omega_{motor}$ & F1 & F2 & F3 & F4 & F5 & F6  \\ \midrule
 Frecuencia [Hz] & 25 & 128,43 & 135,24 & 143,48 & 145,79 & 175,23 & 189,92 \\ \bottomrule
 \end{tabular} 
-\caption{Valores de la frecuencia natural de la estructura obtenidos por medio del análisis modal del software Inventor. }
 \label{tab:frec_nat}
 \end{table}
 
@@ -235,7 +235,7 @@ Frecuencia [Hz] & 25 & 128,43 & 135,24 & 143,48 & 145,79 & 175,23 & 189,92 \\ \b
 \label{fig:frecuencias_mesa}
 \end{figure}
 
-Del análisis estático, se pudo comprobar que las zonas críticas del diseño se encuentran en el acero, como se puede apreciar en la fig. \ref{fig:resultados_mesa}. Esto confirma el trabajo de cálculo, expuesto anteriormente, el cual establece que el esfuerzo máximo se encuentra en el empotramiento de la pletina de acero, es decir, en el punto $A$ utilizando como referencia el diagrama de cargas \ref{fig:diagcargas_viga_acero}. Si bien los valores de los esfuerzos son mayores en los cálculos que en la simulación, se debe tener en cuenta que en la simulación se utilizó una carga distribuida aplicada sobre la máquina de fatiga. Además, fueron los cálculos los que se utilizaron para justificar las dimensiones del diseño, lo cual frente a esta diferencia de resultados, se resume en un posible sobredimensionamiento de la pletina de acero.
+Del análisis estático, se pudo comprobar que las zonas críticas del diseño se encuentran en el acero, como se puede apreciar en la fig. \ref{fig:resultados_mesa}. Esto confirma el trabajo de cálculo, expuesto anteriormente, el cual establece que el esfuerzo máximo se encuentra en el empotramiento de la pletina de acero, es decir, en el punto $A$ utilizando como referencia el diagrama de cargas \ref{fig:diagcargas_viga_acero}. Si bien los valores de los esfuerzos son mayores en los cálculos que en la simulación, se debe tener en cuenta que en esta última se utilizó una carga distribuida aplicada sobre la máquina de fatiga. Además, fueron los cálculos los que se utilizaron para justificar las dimensiones del diseño, lo cual frente a esta diferencia de resultados, se resume en un posible sobredimensionamiento de la pletina de acero.
 
 \begin{figure}[h]
 \centering
@@ -446,7 +446,7 @@ Al tomar los datos de las cargas máximas obtenidas a través del modelo e ingre
 \label{fig:fmax_step}
 \end{figure}
 
-Al ver los esfuerzos generales a los que está sometida la probeta, se identifica que la zona más afectada es la intermedia, concentrándose justo en la mitad de la probeta, como se ve en las figuras \ref{fig:r_lat} y \ref{fig:r_iso}. Al realizar un corte transversal en la mitad de la probeta (fig. \ref{fig:rcorte_iso}) se pueden apreciar más claramente la distribución de los esfuerzos equivalentes en la zona intermedia, concentrandose fuertemente en la zona inferior y superior de la cara transversal. La figura \ref{fig:rcorte} muestra directamente la cara sometida a la carga máxima y su distribución de esfuerzos, donde además, se puede ver que la zona cercana al eje neutro tiene esfuerzos menores a los que se encuentran más lejos de este. Esta información es posible verla directamente en el comportamiento que tienen los elementos  $P$, $Q$ y $R$ (ver fig. \ref{fig:diag_pqr2}).
+Al ver los esfuerzos generales a los que está sometida la probeta, se identifica que la zona más afectada es la intermedia, concentrándose justo en la mitad de la probeta, como se ve en las figuras \ref{fig:r_lat} y \ref{fig:r_iso}. Al realizar un corte transversal en la mitad de la probeta (fig. \ref{fig:rcorte_iso}) se pueden apreciar más claramente la distribución de los esfuerzos equivalentes en la zona intermedia, concentrándose fuertemente en la zona inferior y superior de la cara transversal. La figura \ref{fig:rcorte} muestra directamente la cara sometida a la carga máxima y su distribución de esfuerzos, donde además, se puede ver que la zona cercana al eje neutro tiene esfuerzos menores a los que se encuentran más lejos de este. Esta información es posible verla directamente en el comportamiento que tienen los elementos  $P$, $Q$ y $R$ (ver fig. \ref{fig:diag_pqr2}).
 
 \begin{figure}[p]
 \centering
@@ -497,6 +497,7 @@ Al ver el comportamiento lineal de los gráficos, se concluye que en ninguna con
 
 \begin{table}[h]
 \centering
+\caption{Carga, deformación y esfuerzos máximos obtenidos por medio de la simulación para la combinación n$^{\circ}$ 1, 100 y 201, además de los esfuerzos provocados por la carga media. La deformación en el eje $y$ corresponde al total de la probeta. Los esfuerzos $\sigma_{vm}$, $\tau_{abs}$ y $\sigma_x$ corresponden al punto $R$ y $\tau_{xy}$ al punto $Q$, segun la fig. \ref{fig:diag_pqr2}.}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}ccccccc@{}}
 \toprule
@@ -507,7 +508,6 @@ $F_{max,201}$ & $296.914$                          & $-0.16969$                 
 $F_m$         & $12.438$                           & $-0.0071$                                                               & $9.124$                 & $4.6315$               & $-9.4519$              & $1.9199$              \\ \bottomrule
 \end{tabular}%
 }
-\caption{Carga, deformación y esfuerzos máximos obtenidos por medio de la simulación para la combinación n$^{\circ}$ 1, 100 y 201, además de los esfuerzos provocados por la carga media. La deformación en el eje $y$ corresponde al total de la probeta. Los esfuerzos $\sigma_{vm}$, $\tau_{abs}$ y $\sigma_x$ corresponden al punto $R$ y $\tau_{xy}$ al punto $Q$, segun la fig. \ref{fig:diag_pqr2}.}
 \label{tab:res_esf}
 \end{table}
 
@@ -585,7 +585,7 @@ $F_m$         & $12.438$                           & $-0.0071$                  
 
 \newpage
 
-Al comparar los resultados obtenidos (anexo \ref{sec:anexob2}) con la tabla de cargas (anexo \ref{sec:anexob1}) se encuentran diferencias en los esfuerzos obtenidos para una misma configuración. Esta diferencia aumenta de manera constante a medida que aumenta la carga, por lo tanto, la relación de $\Delta m$ y $\sigma_{vm}$ es distinta entre el modelo y la información original, dicho de otra forma, la pendiente de sus curvas son distintas, como se ve en la fig. \ref{fig:comp_modtab}. Esto, sin duda, provoca dudas sobre la información que entregada por la tabla de cargas, sobre la veracidad y factibilidad de los esfuerzos que acompañan a cada combinación. Respecto a este último punto, resalta el hecho que en la tabla de cargas aparezcan esfuerzos que sean muy superiores a los que un acero pueda soportar. No obstante, se requiere de una validación experimental que determinará su precisión, tanto del desarrollo de esta tesis como de la tabla de carga.
+Al comparar los resultados obtenidos (anexo \ref{sec:anexob2}) con la tabla de cargas (anexo \ref{sec:anexob1}) se encuentran diferencias en los esfuerzos obtenidos para una misma configuración. Esta diferencia aumenta de manera constante a medida que aumenta la carga, por lo tanto, la relación de $\Delta m$ y $\sigma_{vm}$ es distinta entre el modelo y la información original, dicho de otra forma, la pendiente de sus curvas son distintas, como se ve en la fig. \ref{fig:comp_modtab}. Esto, sin duda, provoca dudas sobre la información entregada por la tabla de cargas, sobre la veracidad y factibilidad de los esfuerzos que acompañan a cada combinación. Respecto a este último punto, resalta el hecho que en la tabla de cargas aparezcan esfuerzos que sean muy superiores a los que un acero pueda soportar, los que posiblemente sean resultado de la extrapolación de los datos. No obstante, se requiere de una validación experimental que determinará su precisión, tanto del desarrollo de esta tesis como de la tabla de carga.
 
 \begin{figure}[h]
 \centering
@@ -749,6 +749,7 @@ Es decir, al utilizar el parámetro de ambas ecuaciones es posible esperar una v
 
 \begin{table}[]
 \centering
+\caption{Resultados de vida a fatiga para distintas combinaciones de contrapesos.}
 \begin{tabular}{@{}cccccc@{}}
 \toprule
 \begin{tabular}[c]{@{}c@{}}N$^{\circ}$ \\ Combinación\end{tabular} & $N_{f,g}$        & $N_{f,swt}$      & $\sigma_{max}$ {[}MPa{]} & $f_{a}$ {[}N{]} & $f_{max}$ {[}N{]} \\ \midrule
@@ -759,7 +760,6 @@ $155$                                                              & $5.74\cdot 
 $142$                                                              & $1.16\cdot 10^7$ & $1.02\cdot 10^7$ & $123.5$                  & $168.114$       & $180.552$         \\
 $140$                                                              & $1.30\cdot 10^7$ & $1.14\cdot 10^7$ & $121.9$                  & $165.779$       & $178.217$         \\ \bottomrule
 \end{tabular}
-\caption{Resultados de vida a fatiga para distintas combinaciones de contrapesos.}
 \label{tab:res_vf}
 \end{table}
 
@@ -839,6 +839,7 @@ Finalmente, al reemplazar y resolver ambas ecuaciones, se obtienen los resultado
 
 \begin{table}[h]
 \centering
+\caption{Fuerza alternante, máxima y el coeficiente $\beta$ obtenido para distintos valores de vida a fatiga para la relación de Goodman y SWT.}
 \begin{tabular}{@{}ccccccc@{}}
 \toprule
        & \multicolumn{3}{c}{Goodman}                  & \multicolumn{3}{c}{SWT}                      \\ \cmidrule(l){2-7} 
@@ -848,7 +849,6 @@ $10^5$ & $18.550$ & $230.733$     & $243.171$         & $18.563$ & $230.893$    
 $10^6$ & $13.922$ & $173.157$     & $185.595$         & $13.810$ & $171.773$     & $184.210$         \\
 $10^7$ & $10.447$ & $129.948$     & $142.386$         & $10.244$ & $127.421$     & $139.859$         \\ \bottomrule
 \end{tabular}
-\caption{Fuerza alternante, máxima y el coeficiente $\beta$ obtenido para distintos valores de vida a fatiga para la relación de Goodman y SWT.}
 \label{tab:resfuerza_vf}
 \end{table}
 

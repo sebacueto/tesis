@@ -38,8 +38,8 @@ Luis Barros y Gustavo Sarabia.
 
 \bibitem[{Beer(2010{\natexlab{a}})}]{beer2010mecanica}
 Ferdinand Beer.
-\newblock Mec\'anica de materiales.
-\newblock 2010{\natexlab{a}}.
+\newblock \emph{Mec\'anica de materiales}.
+\newblock McGraw-Hill, M\'exico, 2010{\natexlab{a}}.
 
 \bibitem[{Beer(2010{\natexlab{b}})}]{beer2010dinamica}
 Ferdinand Beer.

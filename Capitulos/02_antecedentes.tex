@@ -25,7 +25,7 @@ Su uso es el más extendido para determinar la vida a fatiga de un material. La 
 
 
 \subsubsection{Ensayo de fatiga axial}
-Esta configuración de prueba es más flexible que el resto, siendo posible cualquier combinación de esfuerzo alternante y medio 	\cite{norton2011machine}. Su principal diferencia respecto al método de viga giratoria se encuentra en que la sección transversal está sometida a esfuerzos de manera uniforme, provocando que los resultados de resistencia a la fatiga obtenidos sean usualmente menores que las obtenidas por viga giratoria y flexión alternante. Se considera que esto se debe a la  probabilidad más alta de hallar una microgrieta en un campo de esfuerzos más grande. Asimismo, la superposición de momentos de flexión sobre las cargas axiales, producto de la dificultad de crear cargas axiales sin excentricidad, son un factor en la disminución en la obtención de valores de resistencia menores. En concreto, la reducción de las resistencias a la fatiga obtenidas pueden variar entre un 10$\%$ y un 30$\%$ o más si hay flexión producto de la excentricidad de las cargas \cite{bannantine1990fundamentals}. La fig. \ref{fig:comp_medfat} muestra las diferencias de los datos obtenidos entre un ensayo de fatiga axial y el resto de las formas de medición.
+Esta configuración de prueba es más flexible que el resto, siendo posible cualquier combinación de esfuerzo alternante y medio 	\cite{norton2011machine}. Su principal diferencia respecto al método de viga giratoria se encuentra en que la sección transversal está sometida a esfuerzos de manera uniforme, provocando que los resultados de resistencia a la fatiga obtenidos sean usualmente menores a aquellos obtenidos por viga giratoria y flexión alternante. Se considera que esto se debe a la  probabilidad más alta de hallar una micro-grieta en un campo de esfuerzos más grande. Asimismo, la superposición de momentos de flexión sobre las cargas axiales, producto de la dificultad de crear cargas axiales sin excentricidad, son un factor en la disminución en la obtención de valores de resistencia menores. En concreto, la reducción de la resistencia a la fatiga obtenidas pueden variar entre un 10$\%$ y un 30$\%$ o más si hay flexión producto de la excentricidad de las cargas \cite{bannantine1990fundamentals}. La fig. \ref{fig:comp_medfat} muestra las diferencias de los datos obtenidos entre un ensayo de fatiga axial y el resto de las formas de medición.
 
 \subsubsection{Ensayo de fatiga de flexión en voladizo o flexión alternante}
 Esta prueba consiste en someter a una viga en voladizo a oscilaciones en su extremo libre a través de algún mecanismo, pudiendo lograr combinaciones de esfuerzos medios y alternantes. La máquina analizada en esta memoria utiliza este método para la obtención de los datos de vida de fatiga del material a analizar. Los resultados de este tipo de prueba son los más altos respecto a otros tipos de medición de fatiga.
@@ -46,7 +46,7 @@ La fatiga, a niveles de alto ciclaje, es un fenómeno localizado, fuertemente in
 \end{align*}
 Así, cuando los esfuerzos alternantes están sobre valor del  \textit{TEL}, la micro-plasticidad influye en los macro-elementos. Dicho de otra forma, el comportamiento mecánico observado a un nivel macro es el comportamiento integrado de los micro-elementos.
 
-La micro-plasticidad es analizada de manera probabilística, calculando el número de micro-elementos en plasticidad que se encuentran en el área transversal sometida a fatiga. El área afectada para cada tipo de ensayo se pueden apreciar en la fig. \ref{fig:affar_fat}.
+La micro-plasticidad es analizada de manera probabilística, calculando el número de micro-elementos en plasticidad que se encuentran en el área transversal sometida a fatiga. El área afectada para cada tipo de ensayo se puede apreciar en la fig. \ref{fig:affar_fat}.
 
 \begin{figure}[h]
 \centering
@@ -60,13 +60,14 @@ De esta manera, el autor sostiene que el daño por fatiga está relacionado a la
 	N_f = \frac{U_{ruptura}}{\Omega}
 \end{gather} 
 
-Si para cada tipo de ensayo de fatiga se utiliza una probeta de igual geometría y dimensión, sometidas al mismo esfuerzo alternante promedio, la energía plástica disipada por cada ciclo no serán igual producto de las distintas áreas afectadas por fatiga, como se muestra en la fig. \ref{fig:affar_fat}. Para esto, el método utiliza los conceptos de esfuerzo alternante equivalente y vida a fatiga equivalente, mediante los cuales relaciones los puntos ($S$,$N$) de la curva de fatiga, la proporción entre el área total transversal y el área que contribuye a la fatiga y la distribución de esfuerzos dentro del área afectada, para entregar un punto ($S'$,$N'$) de la curva buscada. Este procedimiento se debe repetir de manera iterativa hasta conseguir ajustar los puntos a una curva.
+Si para cada tipo de ensayo de fatiga se utiliza una probeta de igual geometría y dimensión, sometidas al mismo esfuerzo alternante promedio, la energía plástica disipada por cada ciclo no serán igual producto de las distintas áreas afectadas por fatiga, como se muestra en la fig. \ref{fig:affar_fat}. Para esto, el método utiliza los conceptos de esfuerzo alternante equivalente y vida a fatiga equivalente, los cuales se relacionan mediante puntos ($S$,$N$) de la curva de fatiga, la proporción entre el área total transversal y el área que contribuye a la fatiga y la distribución de esfuerzos dentro del área afectada, para entregar un punto ($S'$,$N'$) de la curva buscada. Este procedimiento se debe repetir de manera iterativa hasta conseguir ajustar los puntos a una curva.
 
 \subsubsection{Modelo de Lee}
 La estimación del límite de fatiga, $S_e$, se calcula a través de distintos factores de modificación según el tipo de carga, calidad superficial, tamaño y confiabilidad de la muestra. El factor de modificación según el tipo de carga $C_L$ varía entre 0,7 y 0,9 para probetas sin muescas. Las recomendaciones para cada valor de $C_L$ se realizaron considerando los efectos del gradiente de esfuerzos y el tipo de esfuerzo involucrado, es decir, cortantes y normales. Estos también varían según el tipo de material, los cuales fueron obtenidos de manera empírica. Así la tabla \ref{tab:lee_factor} muestra los factores de modificación para algunos tipos de carga.
 
 \begin{table}[h]
 \centering
+\caption{Factores de modificación por tipo de carga, según el modelo de Lee.}
 \begin{tabular}{@{}llc@{}}
 \toprule
 Tipo de Carga                & $C_L$ & Observaciones \\ \midrule
@@ -75,22 +76,21 @@ Carga axial con leve flexión & 0,7   & -                                 \\
 Rotating bending             & 1,0   & -                                 \\
 Torsional                    & 0,58  & Para aceros   \\ \bottomrule
 \end{tabular}
-\caption{Factores de modificación por tipo de carga, según el modelo de Lee.}
 \label{tab:lee_factor}
 \end{table}
 
 \subsubsection{Comparación entre ambos modelos}
 
-Ambos métodos toman en consideración distintos elementos y utilizan distintas formas para desarrollar sus resultados. El primero de ellos, el método de Esin es consecuencia del desarrollo de una teoría que busca predecir el comportamiento a fatiga a partir del estudio las propiedades micro-estructurales, buscando darle una base física al desarrollo de la metodología. Sin embargo, si bien el método es eficaz \cite{strzelecki2018analysis}, está limitado por no considerar los cambios de geometría ni dimensiones y por la necesidad de tener información sobre la micro-estructura del material y el límite elástico real. Por otro lado, el método de Lee utiliza la información recolectada de distintos ensayos, generando correlaciones empíricas entre las distintas curvas. Esto, trae como consecuencia la poca flexibilidad del método, al ser dependiente de que exista información previa sobre un material en particular y de los ensayos buscados.
+Ambos métodos toman en consideración distintos elementos y utilizan distintas formas para desarrollar sus resultados. El primero de ellos, el método de Esin es consecuencia del desarrollo de una teoría que busca predecir el comportamiento a fatiga a partir del estudio las propiedades micro-estructurales \cite{esin1966theory}, buscando darle una base física al desarrollo de la metodología. Sin embargo, si bien el método es eficaz \cite{strzelecki2018analysis}, está limitado por no considerar los cambios de geometría ni dimensiones y por la necesidad de tener información sobre la micro-estructura del material y el límite elástico real. Por otro lado, el método de Lee utiliza la información recolectada de distintos ensayos, generando correlaciones empíricas entre las distintas curvas \cite{lee2005fatigue}. Esto, trae como consecuencia la poca flexibilidad del método, al ser dependiente de que exista información previa sobre un material en particular y de los ensayos buscados.
 
 \newpage
 
 \section{Máquina de fatiga a flexión}
-El desarrollo de este trabajo se centrará en la máquina de fatiga que posee el departamento de ingeniería mecánica en el laboratorio de tecnología mecánica en Valparaíso. La información existente sobre la máquina de ensayo es escasa principalmente por su antigüedad, por lo que con el transcurso del tiempo ha llevado a la perdida de documentos y la obsolescencia de su tecnología.  
+El desarrollo de este trabajo se centrará en la máquina de fatiga que posee el departamento de ingeniería mecánica en el laboratorio de tecnología mecánica en Valparaíso. La información existente sobre la máquina de ensayo es escasa principalmente por su antigüedad, por lo que con el transcurso del tiempo ha llevado a la perdida de documentación y la obsolescencia de su tecnología.  
 
 A partir de la información verbal entregada por el profesor Guillermo González, la máquina fue adquirida por el departamento durante la década del 50. Fue fabricada en Suiza por \textit{Alfred J. Amsler \& Co.} y su estructura completa es de hierro fundido. Previo a la remodelación del piso del laboratorio durante el año 2012, la máquina se encontraba montada sobre un colchón de corcho, que a su vez se anclaba a un bloque hecho de concreto. Este fue demolido durante los trabajos, momento desde el cual se encuentra apoyada sobre la mesa de madera sin una solución definitiva. Más aún, varios equipos y máquinas de ensayo del laboratorio no se encuentran ancladas al piso ni con una instalación definitiva, impidiendo su correcto uso.
 
-La máquina consiste, en un primer acercamiento, en un disco desequilibrado de forma controlada por el usuario, el cual, al ser acelerado angularmente hasta una velocidad definida por su motor eléctrico, comienza a oscilar. Esta oscilación es transmitida, a través de un brazo de carga, hacia la probeta en forma de momento. La probeta se encuentra doblemente empotrada, por un lado está fija a la estructura de la máquina y, por el otro, empotrado al brazo de carga que le realiza el momento. Los elementos que generan el desequilibrio son pequeñas masas calibradas, como se puede apreciar en la fig. \ref{fig:contrapesos}, que se denominarán contrapesos. La máquina también entrega la posibilidad de realizar ensayos de fatiga a torsión al girar los empotramientos 90 grados, sin embargo, esta configuración no se estudiará en este trabajo. Un estudio a mayor profundidad de la fatiga a flexión se realizará en la sección \ref{sec:lev_info}.
+La máquina consiste en un disco desequilibrado de forma controlada por el usuario, el cual, al ser acelerado angularmente hasta una velocidad definida por su motor eléctrico, comienza a oscilar. Esta oscilación es transmitida, a través de un brazo de carga, hacia la probeta en forma de momento. La probeta se encuentra doblemente empotrada, por un lado está fija a la estructura de la máquina y, por el otro, empotrado al brazo de carga que realiza el momento. Los elementos que generan el desequilibrio son pequeñas masas calibradas, como se puede apreciar en la fig. \ref{fig:contrapesos}, que se denominarán contrapesos. Además, la máquina permite realizar ensayos de fatiga a torsión al girar los empotramientos 90 grados, sin embargo, esta configuración no se estudiará en este trabajo. Un estudio a mayor profundidad de la fatiga a flexión se realizará en la sección \ref{sec:lev_info}.
 
 \begin{figure}[h]
 \centering
@@ -129,7 +129,7 @@ Una consecuencia de esta heterogeneidad es el comportamiento anisotrópico, teni
 	\item Radial: Pasa por el eje del tronco y es perpendicular a los anillos de crecimiento.
 	\item Tangencial: Paralela a un plano tangente a los anillos de crecimiento.
 \end{itemize*}
-En relación a sus propiedades mecánicas se habla de dos direcciones, la paralela (longitudinal) y normal o perpendicular (englobando radial y tangencial). Esta diferencia hace que la madera sea capaz de soportar cargas de compresión de hasta 4 veces en dirección paralela respecto a la normal. Esto quiere decir que siempre que sea posible, se deben instalar las piezas madereras para que resistan las cargas en su dirección longitudinal para un uso eficiente del material. De esta forma, se habla que las propiedades mecánicas de la madera son ortotrópicas.
+En relación a sus propiedades mecánicas se habla de dos direcciones, la paralela (longitudinal) y normal o perpendicular (englobando radial y tangencial). Esta diferencia hace que la madera sea capaz de soportar cargas de compresión de hasta 4 veces en dirección paralela respecto a la normal \cite{obe2002timber}. Esto quiere decir que siempre que sea posible, se deben instalar las piezas madereras para que resistan las cargas en su dirección longitudinal para un uso eficiente del material. De esta forma, se habla que las propiedades mecánicas de la madera son ortotrópicas.
 
 Por último, es considerado un material higroscópico por su capacidad de captar o ceder agua del exterior, tanto en forma líquida como vapor. La cantidad de agua que contiene tenderá a estar en equilibrio con su entorno, lo que afectará sus propiedades físicas, mecánicas y en su posible degradación.
 
@@ -144,16 +144,16 @@ Esta diferencia de resistencia y comportamiento entre la tracción y compresión
 	\item Deslizamiento: las fibras se desplazan longitudinalmente.
 	\item Rodadura: las fibras se desplazan una sobre otra.
 \end{itemize*}
-Donde la rotura se produce por deslizamiento al ser el plano más débil.
+Donde la rotura se produce por deslizamiento al ser el plano más débil \cite{steiger2017basics}.
 
 En última instancia, la resistencia a la fatiga de la madera es muy buena en comparación a otros materiales estructurales con estructura cristalina como el acero \cite{sanchez2014guia}, siendo resistente a la acción cíclica de las cargas y al amortiguamiento de estas. 
 
 \section{Acero}
-El acero es una aleación basada principalmente en fierro y carbono, pudiendo tener concentraciones de otros elementos incluso. Sus propiedades mecánicas son fuertemente sensitivas al contenido de carbono, por lo que muchas veces es clasificado a partir de su porcentaje, como aceros de bajo, media y alto en carbono. También inciden en sus propiedades mecánicas las características de fabricación y si reciben algún tipo de tratamiento térmico.
+El acero es una aleación basada principalmente en fierro y carbono, pudiendo tener concentraciones de otros elementos incluso. Sus propiedades mecánicas son fuertemente sensitivas al contenido de carbono, por lo que muchas veces es clasificado a partir de su porcentaje, como aceros de bajo, media y alto en carbono. También inciden en sus propiedades mecánicas las características de fabricación y si reciben algún tipo de tratamiento térmico \cite{callister2001fundamentals}.
 
 La probeta utilizada en la máquina de fatiga se fabrica actualmente de acero de bajo carbono, los cuales bajo nomenclatura AISI/SAE se denominan 1020 y 1040, es decir, son aceros que sólo contienen concentraciones residuales de otros elementos distintos al carbono y su concentración es del 0,20\% y 0,40\% respectivamente. Los aceros de bajo carbono se caracterizan por ser más débiles, pero con una alta tenacidad. Además, son maquineables, soldables y más baratos respecto a otros tipos de aceros.
 
-Para la mayoría de los aceros, su comportamiento bajo carga se divide en una zona elástica y otra plástica, como se muestra en la fig. \ref{fig:esf-def_curve}. La zona elástica se caracteriza por tener un módulo de elasticidad $E$, que en el caso de los aceros ronda entre 200 y 210 GPa. La transición de la zona elástica a plástica es gradual y comienza cuando deja de existir una relación lineal entre los esfuerzos y la deformación, es decir, llega al esfuerzo de fluencia, $\sigma_y$. Una vez en la región de deformación plástica el punto de esfuerzo máximo en una curva ingenieril de esfuerzo-deformación es llamado esfuerzo último, $\sigma_u$.
+Para la mayoría de los aceros, su comportamiento bajo carga se divide en una zona elástica y otra plástica, como se muestra en la fig. \ref{fig:esf-def_curve}. La zona elástica se caracteriza por tener un módulo de elasticidad $E$, que en el caso de los aceros ronda entre 200 y 210 GPa. La transición de la zona elástica a plástica es gradual y comienza cuando deja de existir una relación lineal entre los esfuerzos y la deformación, es decir, llega al esfuerzo de fluencia, $\sigma_y$. Una vez en la región de deformación plástica el punto de esfuerzo máximo en una curva ingenieril de esfuerzo-deformación es llamado esfuerzo último, $\sigma_u$ \cite{beer2010mecanica}.
 
 \begin{figure}[h!]
 \centering

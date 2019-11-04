@@ -15,6 +15,8 @@ Así la tabla \ref{tab:tabla3_1198} se utiliza de criterio para clasificar la ma
 
 \begin{table}[h]
 \centering
+\caption{Condiciones que se deben considerar en la determinación de tensiones admisibles y módulo de
+elasticidad. \cite{nch1198}}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}ccccc@{}}
 \toprule
@@ -26,8 +28,6 @@ Así la tabla \ref{tab:tabla3_1198} se utiliza de criterio para clasificar la ma
 4                     & $H_c \leq 12\%$                                      & $H_s \geq 12\%$                              & Verde                                                          & Seca (H=12\%)                                                   \\ \bottomrule
 \end{tabular}%
 }
-\caption{Condiciones que se deben considerar en la determinación de tensiones admisibles y módulo de
-elasticidad. \cite{nch1198}}
 \label{tab:tabla3_1198}
 \end{table}
 
@@ -195,6 +195,7 @@ Todas las dimensiones, independiente del formato o el tipo, son respecto a la ma
 
 \begin{table}[H]
 \centering
+\caption{Espesor nominal y real de la madera según el tratamiento recibido.}
 \begin{tabular}{@{}cccc@{}}
 \toprule
 \multirow{2}{*}{Espesor Nominal {[}in{]}} & \multicolumn{2}{c}{Dimensionado {[}mm{]}} & Cepillado {[}mm{]} \\ \cmidrule(l){2-4} 
@@ -203,12 +204,12 @@ Todas las dimensiones, independiente del formato o el tipo, son respecto a la ma
 2                                 & 48                   & 45                 & 41                 \\ \midrule
 Tolerancia {[}mm{]}               & 0/+2                 & 0/+3               & 0/+2               \\ \bottomrule
 \end{tabular}
-\caption{Espesor nominal y real de la madera según el tratamiento recibido.}
 \label{tab:espdim}
 \end{table}
 
 \begin{table}[H]
 \centering
+\caption{Ancho nominal y real de la madera según el tratamiento recibido.}
 \begin{tabular}{@{}cccc@{}}
 \toprule
 \multirow{2}{*}{Ancho Nominal {[}in{]}} & \multicolumn{2}{c}{Dimensionado {[}mm{]}} & Cepillado {[}mm{]} \\ \cmidrule(l){2-4} 
@@ -222,7 +223,6 @@ Tolerancia {[}mm{]}               & 0/+2                 & 0/+3               & 
 10                                      & 248                  & 235                & 230                \\ \midrule
 Tolerancia {[}mm{]}                     & 0/+2                 & 0/+3               & 0/+2               \\ \bottomrule
 \end{tabular}
-\caption{Ancho nominal y real de la madera según el tratamiento recibido.}
 \label{tab:anchodim}
 \end{table}
 
@@ -321,7 +321,7 @@ Para su correcta instalación es necesario que los agujeros y las arandelas cump
 Respecto a las características del perno, su diámetro nominal debe estar entre los 10 y 30 mm. Además, se exige una disposición mínima de dos pernos, exceptuando los casos donde un único perno no queda solicitado en un porcentaje superior al 50\% de su capacidad de diseño.
 
 \subsubsection{Cargas admisibles para un perno}
-Las cargas admisibles para este tipo de unión solo son aplicables cuando la dirección de la solicitación es perpendicular a su eje para duración normal y de madera seca que permanecerá seca en servicio. Para casos distintos es necesario aplicar los factores de modificación correspondientes. Por otro lado, en esta norma existen condiciones distintas para cizalle simple, doble o múltiple, sin embargo, cizalle simple y múltiple se calculan realizando modificaciones al cizalle doble, por lo tanto, sólo se efectuara una explicación de este caso.
+Las cargas admisibles para este tipo de unión solo son aplicables cuando la dirección de la solicitación es perpendicular a su eje para duración normal y de madera seca que permanecerá seca en servicio. Para casos distintos es necesario aplicar los factores de modificación correspondientes. Por otro lado, en esta norma existen condiciones distintas para cizalle simple, doble o múltiple, sin embargo, cizalle simple y múltiple se calculan realizando modificaciones al cizalle doble, por lo tanto, sólo se efectuará una explicación de este caso.
 
 La capacidad de carga admisible ($P_{ad}$) se calcula estableciendo que la unión está establecida por la unión de tres piezas de la misma especia, con las piezas laterales paralelas entre sí y cada una de ellas de espesor igual a la mitad del espesor de la pieza central, e, como se muestra en la figura \ref{fig:nch_23}. Así, es posible obtenerla a través de la tensión admisible de aplastamiento nominal ,$F_{ap}$ (\ref{eq:f_ap}) , la esbeltez de la unión $\lambda_u$ y el diámetro del perno ($D$), de acuerdo a la siguiente expresión:
 \begin{equation} \label{eq:padm_ad}
@@ -422,7 +422,7 @@ La carga admisible de extracción lateral de tirafondos colocados en su eje norm
 \begin{equation}\label{eq:pel_ad}
 	P_{el,ad}=K\cdot D^2 \cdot 10^{-3} \qquad \text{(kN)}
 \end{equation}
-Donde $P_{el,ad}$ es la carga admisible de extracción lateral, $D$ el diámetro del vástago del tirafondo, en mm, y $K$ es la constante que depende de la densidad anhidra y cuyo valor se puede obtener de la tabla 39 de la norma.
+Donde $P_{el,ad}$ es la carga admisible de extracción lateral, $D$ el diámetro del vástago del tirafondo, en mm, y $K$ es la constante que depende de la densidad anhidra y cuyo valor se puede obtener de la tabla 39 de la norma NCh 1198.
 Las cargas admisibles son aplicables sólo si se cumplen las siguientes condiciones:
 \begin{enumerate}
 	\item El espesor $e_L$ de la pieza lateral atravesada por el tirafondo es igual a $3,5D$.
